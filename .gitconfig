@@ -1,0 +1,26 @@
+[user]
+	name = Conrad Beach
+	email = conradbeach@gmail.com
+[core]
+	excludesfile = /Users/conradbeach/.gitignore_global
+	autocrlf = input
+	editor = nvim
+[push]
+	default = simple
+[alias]
+	co = checkout
+	s = status
+	lg = log --oneline --decorate --all --graph
+  commend = commit --amend --no-edit
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
+[branch]
+	autosetuprebase = always
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
