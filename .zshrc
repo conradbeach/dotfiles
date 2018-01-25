@@ -102,7 +102,6 @@ alias cls="colorls --group-directories-first --git-status --almost-all -1"
 source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/plugins/history-substring-search/history-substring-search.zsh
 source $ZSH/z.sh
-# source ~/.oh-my-zsh/git-prompt.sh # Use zsh-git-prompt instead.
 source $ZSH/zsh-git-prompt/zshrc.sh
 
 . $HOME/.asdf/asdf.sh
