@@ -39,6 +39,7 @@ Plug 'rizzatti/dash.vim'
 Plug 'roman/golden-ratio'
 Plug 'Chiel92/vim-autoformat'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'AndrewRadev/splitjoin.vim'
 call plug#end()
 
 " Deoplete
@@ -63,6 +64,12 @@ runtime macros/matchit.vim
 if has("autocmd")
   filetype indent plugin on
 endif
+
+" splitjoin.vim
+let g:splitjoin_split_mapping = ''
+let g:splitjoin_join_mapping = ''
+nmap <Leader>J :SplitjoinJoin<cr>
+nmap <Leader>j :SplitjoinSplit<cr>
 
 """""""""""""""""
 " Theme
