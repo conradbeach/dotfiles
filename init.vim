@@ -209,14 +209,16 @@ map <Leader>as :call RunAllSpecs()<CR>
 
 " Open a new tab.
 map <Leader>t :tabnew<CR>
+" Close the current window.
+map <Leader>q :q<CR>
 " Close the current tab.
-map <Leader>tc :tabclose<cr>
+map <Leader>tc :tabclose<CR>
 " Delete Ruby comment lines.
 map <Leader>drc :g/^\s*#/d<CR>:noh<CR>
 " Delete empty lines.
 map <Leader>del :g/^\s*$/d<CR>:noh<CR>
 " Remove search highlights.
-map <Leader>nh :noh<cr>
+map <Leader>nh :noh<CR>
 " Open Netrw.
 map <Leader>x :Explore!<CR>
 
