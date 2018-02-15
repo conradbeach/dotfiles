@@ -193,7 +193,7 @@ nmap <Leader>t<C-l> :TestLast<CR>
 nmap <Leader>t<C-g> :TestVisit<CR>
 
 " Allow for easy .vimrc editing and reloading.
-map <Leader>eiv :tabe ~/.config/nvim/init.vim<cr>
+map <Leader>eiv :tabe ~/Development/dotfiles/init.vim<cr>
 map <Leader>siv :source ~/.config/nvim/init.vim<cr>
 
 " vim-autoformat
