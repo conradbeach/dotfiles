@@ -65,11 +65,12 @@ if has("autocmd")
   filetype indent plugin on
 endif
 
+" DISABLED: It kept freezing up my editor. Report an issue when you have time.
 " splitjoin.vim
-let g:splitjoin_split_mapping = ''
-let g:splitjoin_join_mapping = ''
-nmap <Leader>J :SplitjoinJoin<cr>
-nmap <Leader>j :SplitjoinSplit<cr>
+" let g:splitjoin_split_mapping = ''
+" let g:splitjoin_join_mapping = ''
+" nmap <Leader>J :SplitjoinJoin<cr>
+" nmap <Leader>j :SplitjoinSplit<cr>
 
 """""""""""""""""
 " Theme
