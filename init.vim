@@ -202,7 +202,7 @@ map <Leader>f :Autoformat<CR>
 map <Leader>i migg=G`i
 
 " RSpec.vim mappings
-" let g:rspec_command = '!bundle exec spring rspec {spec}'
+let g:rspec_command = '!spring rspec {spec}'
 map <Leader>fs :call RunCurrentSpecFile()<CR>
 map <Leader>ns :call RunNearestSpec()<CR>
 map <Leader>ls :call RunLastSpec()<CR>
