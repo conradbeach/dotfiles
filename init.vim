@@ -221,7 +221,7 @@ map <Leader>del :g/^\s*$/d<CR>:noh<CR>
 " Remove search highlights.
 map <Leader>nh :noh<CR>
 " Open Netrw.
-map <Leader>x :Explore!<CR>
+map <Leader>x :tabnew<CR>:Explore!<CR>
 
 " zoom a vim pane, <C-w>= to re-balance
 nnoremap <leader>z :wincmd _<cr>:wincmd \|<cr>
