@@ -84,14 +84,14 @@ let g:lightline = {
       \ 'colorscheme': 'onedark',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
+      \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
       \   'right': [ [ 'lineinfo' ],
       \              [ 'percent' ],
       \              [ 'linter_errors', 'linter_warnings', 'linter_ok' ] ],
       \ },
       \ 'inactive': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
+      \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
       \   'right': [ [ 'lineinfo' ],
       \              [ 'percent' ] ],
       \ },
