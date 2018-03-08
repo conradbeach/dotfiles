@@ -96,6 +96,9 @@ alias bsrails="browser-sync start --proxy localhost:3000 --files \"app\""
 alias gg="bundle exec guard -c"
 # colorls
 alias cls="colorls --group-directories-first --git-status --almost-all -1"
+# Daily Journal
+alias load_prod_daily_journal="pg_restore --verbose --clean --no-acl --no-owner -h localhost -d dailyJournal_development '/Users/cbeach/Downloads/73a62e53-df61-484f-a3d1-08312b2b204e'"
+alias force_import_elasticsearch="bundle exec rake environment elasticsearch:import:all FORCE=y"
 
 ## Plugins
 source $ZSH/plugins/history-substring-search/history-substring-search.zsh
