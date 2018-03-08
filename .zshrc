@@ -5,7 +5,8 @@ export PATH="/usr/local/opt/python@2/bin:/usr/local/bin:/usr/local/sbin:/usr/loc
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell-altered-by-conrad"
+# ZSH_THEME="robbyrussell-altered-by-conrad"
+ZSH_THEME=""
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -96,10 +97,15 @@ alias gg="bundle exec guard -c"
 # colorls
 alias cls="colorls --group-directories-first --git-status --almost-all -1"
 
-source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+## Plugins
 source $ZSH/plugins/history-substring-search/history-substring-search.zsh
 source $ZSH/z.sh
 source $ZSH/zsh-git-prompt/zshrc.sh
+source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Pure Prompt
+autoload -U promptinit; promptinit
+prompt pure
 
 . $HOME/.asdf/asdf.sh
 
