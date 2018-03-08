@@ -72,11 +72,11 @@ endif
 " vim-test
 let test#strategy = "vtr"
 let test#ruby#rspec#executable = "spring rspec"
-nmap <Leader>tn :TestNearest<CR>
-nmap <Leader>tf :TestFile<CR>
-nmap <Leader>ts :TestSuite<CR>
-nmap <Leader>tl :TestLast<CR>
-nmap <Leader>tv :TestVisit<CR>
+map <Leader>tn :TestNearest<CR>
+map <Leader>tf :TestFile<CR>
+map <Leader>ts :TestSuite<CR>
+map <Leader>tl :TestLast<CR>
+map <Leader>tv :TestVisit<CR>
 
 " DISABLED: It kept freezing up my editor. Report an issue when you have time.
 " splitjoin.vim
