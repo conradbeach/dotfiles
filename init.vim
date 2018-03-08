@@ -8,7 +8,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'thoughtbot/vim-rspec'
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 Plug 'tpope/vim-surround'
@@ -39,7 +38,9 @@ Plug 'rizzatti/dash.vim'
 Plug 'roman/golden-ratio'
 Plug 'Chiel92/vim-autoformat'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-runner'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'janko-m/vim-test'
 call plug#end()
 
 " Deoplete
@@ -56,6 +57,9 @@ let g:ctrlp_use_caching = 0
 
 " ALE
 let g:ale_sign_column_always = 1
+nnoremap ]r :ALENextWrap<CR>
+nnoremap [r :ALEPreviousWrap<CR>
+
 
 " matchit
 runtime macros/matchit.vim
@@ -64,6 +68,15 @@ runtime macros/matchit.vim
 if has("autocmd")
   filetype indent plugin on
 endif
+
+" vim-test
+let test#strategy = "vtr"
+let test#ruby#rspec#executable = "spring rspec"
+nmap <Leader>tn :TestNearest<CR>
+nmap <Leader>tf :TestFile<CR>
+nmap <Leader>ts :TestSuite<CR>
+nmap <Leader>tl :TestLast<CR>
+nmap <Leader>tv :TestVisit<CR>
 
 " DISABLED: It kept freezing up my editor. Report an issue when you have time.
 " splitjoin.vim
@@ -181,17 +194,6 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" Move between linting errors
-nnoremap ]r :ALENextWrap<CR>
-nnoremap [r :ALEPreviousWrap<CR>
-
-" vim-test
-nmap <Leader>t<C-n> :TestNearest<CR>
-nmap <Leader>t<C-f> :TestFile<CR>
-nmap <Leader>t<C-s> :TestSuite<CR>
-nmap <Leader>t<C-l> :TestLast<CR>
-nmap <Leader>t<C-g> :TestVisit<CR>
-
 " Allow for easy .vimrc editing and reloading.
 map <Leader>eiv :tabe ~/Development/dotfiles/init.vim<cr>
 map <Leader>siv :source ~/.config/nvim/init.vim<cr>
@@ -201,19 +203,12 @@ map <Leader>f :Autoformat<CR>
 " Indent the whole file.
 map <Leader>i migg=G`i
 
-" RSpec.vim mappings
-let g:rspec_command = '!spring rspec {spec}'
-map <Leader>fs :call RunCurrentSpecFile()<CR>
-map <Leader>ns :call RunNearestSpec()<CR>
-map <Leader>ls :call RunLastSpec()<CR>
-map <Leader>as :call RunAllSpecs()<CR>
-
 " Open a new tab.
-map <Leader>t :tabnew<CR>
+map <Leader>nt :tabnew<CR>
+" Close the current tab.
+map <Leader>ct :tabclose<CR>
 " Close the current window.
 map <Leader>q :q<CR>
-" Close the current tab.
-map <Leader>tc :tabclose<CR>
 " Delete Ruby comment lines.
 map <Leader>drc :g/^\s*#/d<CR>:noh<CR>
 " Delete empty lines.
