@@ -78,6 +78,18 @@ map <Leader>ts :TestSuite<CR>
 map <Leader>tl :TestLast<CR>
 map <Leader>tv :TestVisit<CR>
 
+" vim-tmux-runner
+map <Leader>ro :VtrOpenRunner<CR>
+map <Leader>ra :VtrAttachToPane<CR>
+map <Leader>rf :VtrFocusRunner<CR>
+map <Leader>rsl :VtrSendLinesToRunner<CR>
+map <Leader>rk :VtrKillRunner<CR>
+map <Leader>rd :VtrDetachRunner<CR>
+map <Leader>rr :VtrReattachRunner<CR>
+map <Leader>rc :VtrClearRunner<CR>
+map <Leader>rsd :VtrSendCtrlD<CR>
+map <Leader>rsf :VtrSendFile<CR>
+
 " DISABLED: It kept freezing up my editor. Report an issue when you have time.
 " splitjoin.vim
 " let g:splitjoin_split_mapping = ''
