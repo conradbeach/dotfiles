@@ -92,6 +92,7 @@ alias sed="sed -E"
 # Ruby & Rails
 alias be="bundle exec"
 alias bsrails="browser-sync start --proxy localhost:3000 --files \"app\""
+alias hr="heroku run"
 # Guard
 alias gg="bundle exec guard -c"
 # colorls
