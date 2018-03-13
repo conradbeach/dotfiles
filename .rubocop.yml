@@ -38,3 +38,12 @@ Style/TrailingCommaInLiteral:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
   EnforcedStyleForMultiline: comma
   Enabled: true
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+  Enabled: true
+
+Layout/MultilineOperationIndentation:
+  Description: Checks indentation of binary operations that span more than one line.
+  EnforcedStyle: indented
+  Enabled: true
