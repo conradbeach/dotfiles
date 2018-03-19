@@ -47,3 +47,11 @@ Layout/MultilineOperationIndentation:
   Description: Checks indentation of binary operations that span more than one line.
   EnforcedStyle: indented
   Enabled: true
+
+Style/RegexpLiteral:
+  EnforcedStyle: slashes
+  Enabled: true
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+  Enabled: true
