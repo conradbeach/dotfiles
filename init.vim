@@ -41,6 +41,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'janko-m/vim-test'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
 
 " Deoplete
@@ -229,9 +231,9 @@ map <Leader>drc :g/^\s*#/d<CR>:noh<CR>
 map <Leader>del :g/^\s*$/d<CR>:noh<CR>
 " Remove search highlights.
 map <Leader>nh :noh<CR>
-" Open Netrw.
-map <Leader>x :tabnew<CR>:Explore!<CR>
-map <Leader>hx :Explore!<CR>
+" Open NERDtree.
+map <Leader>x :NERDTree<CR>
+map <Leader>nx :tabnew<CR>:NERDTree<CR>
 
 " zoom a vim pane, <C-w>= to re-balance
 nnoremap <leader>z :wincmd _<cr>:wincmd \|<cr>
