@@ -204,6 +204,9 @@ map 0 ^
 map k gk
 map j gj
 
+" Make Y behave comparably to C and D.
+map Y y$
+
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
