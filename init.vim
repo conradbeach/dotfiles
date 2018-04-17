@@ -193,6 +193,9 @@ set diffopt+=vertical
 let g:netrw_browse_split = 3 " Open files in new tab.
 let g:netrw_liststyle = 3 " Use tree view.
 
+" Markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
 """""""""""""""""
 " Maps
 """""""""""""""""
