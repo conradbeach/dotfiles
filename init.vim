@@ -7,7 +7,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 Plug 'tpope/vim-surround'
@@ -43,6 +42,9 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'janko-m/vim-test'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'godlygeek/tabular'
+Plug 'gabrielelana/vim-markdown'
+Plug 'kchmck/vim-coffee-script'
 call plug#end()
 
 " Deoplete
@@ -217,7 +219,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 " Allow for easy .vimrc editing and reloading.
-map <Leader>eiv :tabe ~/Development/dotfiles/init.vim<cr>
+map <Leader>oiv :tabe ~/Development/dotfiles/init.vim<cr>
 map <Leader>siv :source ~/.config/nvim/init.vim<cr>
 
 " vim-autoformat
