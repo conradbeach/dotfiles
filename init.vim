@@ -105,45 +105,6 @@ nmap <Leader>J :SplitjoinJoin<cr>
 nmap <Leader>j :SplitjoinSplit<cr>
 
 """""""""""""""""
-" Theme
-"""""""""""""""""
-syntax on
-colorscheme onedark
-
-let g:onedark_terminal_italics=1
-
-let g:lightline = {
-      \ 'colorscheme': 'onedark',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
-      \   'right': [ [ 'lineinfo' ],
-      \              [ 'percent' ],
-      \              [ 'linter_errors', 'linter_warnings', 'linter_ok' ] ],
-      \ },
-      \ 'inactive': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
-      \   'right': [ [ 'lineinfo' ],
-      \              [ 'percent' ] ],
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'fugitive#head'
-      \ },
-      \ }
-
-let g:lightline.component_expand = {
-      \  'linter_warnings': 'lightline#ale#warnings',
-      \  'linter_errors': 'lightline#ale#errors',
-      \  'linter_ok': 'lightline#ale#ok',
-      \ }
-
-let g:lightline.component_type = {
-      \     'linter_warnings': 'warning',
-      \     'linter_errors': 'error',
-      \ }
-
-"""""""""""""""""
 " Sets
 """""""""""""""""
 let mapleader = "\<Space>"
@@ -250,3 +211,42 @@ map <Leader>nx :tabnew<CR>:NERDTree<CR>
 " zoom a vim pane, <C-w>= to re-balance
 nnoremap <leader>z :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
+
+"""""""""""""""""
+" Theme
+"""""""""""""""""
+syntax on
+colorscheme onedark
+
+let g:onedark_terminal_italics=1
+
+let g:lightline = {
+      \ 'colorscheme': 'onedark',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
+      \   'right': [ [ 'lineinfo' ],
+      \              [ 'percent' ],
+      \              [ 'linter_errors', 'linter_warnings', 'linter_ok' ] ],
+      \ },
+      \ 'inactive': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
+      \   'right': [ [ 'lineinfo' ],
+      \              [ 'percent' ] ],
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ }
+
+let g:lightline.component_expand = {
+      \  'linter_warnings': 'lightline#ale#warnings',
+      \  'linter_errors': 'lightline#ale#errors',
+      \  'linter_ok': 'lightline#ale#ok',
+      \ }
+
+let g:lightline.component_type = {
+      \     'linter_warnings': 'warning',
+      \     'linter_errors': 'error',
+      \ }
