@@ -196,6 +196,9 @@ set diffopt+=vertical
 let g:netrw_browse_split = 3 " Open files in new tab.
 let g:netrw_liststyle = 3 " Use tree view.
 
+" NERDTree
+let NERDTreeShowHidden=1 " Show hidden files.
+
 " Markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
