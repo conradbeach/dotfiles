@@ -45,6 +45,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'godlygeek/tabular'
 Plug 'gabrielelana/vim-markdown'
 Plug 'kchmck/vim-coffee-script'
+Plug 'keith/rspec.vim'
 call plug#end()
 
 " Deoplete
