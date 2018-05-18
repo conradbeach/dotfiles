@@ -104,6 +104,9 @@ let g:splitjoin_join_mapping = ''
 nmap <Leader>J :SplitjoinJoin<cr>
 nmap <Leader>j :SplitjoinSplit<cr>
 
+" vim-gutter
+let g:gitgutter_map_keys = 0
+
 """""""""""""""""
 " Sets
 """""""""""""""""
