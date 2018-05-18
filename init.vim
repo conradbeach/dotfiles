@@ -220,7 +220,12 @@ noremap <Leader>6 6gt
 noremap <Leader>7 7gt
 noremap <Leader>8 8gt
 noremap <Leader>9 9gt
-noremap <Leader>0 :tablast<cr>
+" Switch to last viewed tab.
+if !exists('g:lasttab')
+  let g:lasttab = 1
+endif
+nmap <Leader>0 :exe "tabn ".g:lasttab<CR>
+au TabLeave * let g:lasttab = tabpagenr()
 
 " Close the current window.
 map <Leader>q :q<CR>
