@@ -244,6 +244,10 @@ map <Leader>nx :tabnew<CR>:NERDTree<CR>
 nnoremap <leader>z :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
+" Easier quotation switching.
+map <Leader>' cs"'
+map <Leader>" cs'"
+
 """""""""""""""""
 " Theme
 """""""""""""""""
