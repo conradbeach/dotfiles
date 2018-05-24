@@ -46,6 +46,7 @@ Plug 'godlygeek/tabular'
 Plug 'gabrielelana/vim-markdown'
 Plug 'kchmck/vim-coffee-script'
 Plug 'keith/rspec.vim'
+Plug 'stephpy/vim-yaml'
 call plug#end()
 
 " Deoplete
