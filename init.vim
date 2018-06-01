@@ -179,6 +179,11 @@ autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checkti
 autocmd FileChangedShellPost *
   \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
+" Source init.vim on startup. Some of my commands weren't working after starting
+" without resourcing init.vim. I'm guessing there's a better solution than this
+" but it works for now.
+autocmd VimEnter * source ~/.config/nvim/init.vim
+
 """""""""""""""""
 " Maps
 """""""""""""""""
