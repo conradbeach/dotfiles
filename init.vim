@@ -136,6 +136,9 @@ set cursorline
 set number
 set relativenumber
 
+" Enable mouse scrolling
+set mouse=a
+
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
