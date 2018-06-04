@@ -85,7 +85,7 @@ map <Leader>tl :TestLast<CR>
 map <Leader>tv :TestVisit<CR>
 
 " vim-tmux-runner
-let g:VtrPercentage = 30
+let g:VtrPercentage = 20
 let g:VtrOrientation = "v"
 let g:VtrGitCdUpOnOpen = 1
 map <Leader>ro :VtrOpenRunner<CR>
