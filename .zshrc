@@ -92,6 +92,7 @@ alias sed="sed -E"
 # Ruby & Rails
 alias be="bundle exec"
 alias hr="heroku run"
+alias ss="spring stop"
 # Guard
 alias gg="bundle exec guard -c"
 # colorls
