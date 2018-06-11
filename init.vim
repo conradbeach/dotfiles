@@ -136,9 +136,6 @@ set cursorline
 set number
 set relativenumber
 
-" All yank and delete operations copy to system clipboard.
-set clipboard=unnamedplus
-
 " Enable mouse scrolling
 set mouse=a
 
