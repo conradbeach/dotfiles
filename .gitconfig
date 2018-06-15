@@ -2,7 +2,7 @@
 	name = Conrad Beach
 	email = conradbeach@gmail.com
 [core]
-	excludesfile = /Users/conradbeach/.gitignore_global
+	excludesfile = /Users/cbeach/.gitignore_global
 	autocrlf = input
 	editor = nvim
 [push]
