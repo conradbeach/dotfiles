@@ -37,16 +37,21 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
-" Languages, Frameworks, etc.
-Plug 'tpope/vim-bundler'
-Plug 'gabrielelana/vim-markdown'
-Plug 'vim-ruby/vim-ruby'
-Plug 'slashmili/alchemist.vim'
-Plug 'tpope/vim-rake'
+" Coffeescript
 Plug 'kchmck/vim-coffee-script'
-Plug 'keith/rspec.vim'
-Plug 'stephpy/vim-yaml'
+" Elixir
+Plug 'elixir-editors/vim-elixir'
+Plug 'slashmili/alchemist.vim'
+" Markdown
+Plug 'gabrielelana/vim-markdown'
+" Ruby & Rails
+Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
+Plug 'keith/rspec.vim'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-rake'
+" YAML
+Plug 'stephpy/vim-yaml'
 call plug#end()
 
 " Deoplete
