@@ -203,12 +203,6 @@ map j gj
 " Make Y behave comparably to C and D.
 map Y y$
 
-" Quicker window movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
-
 " Allow for easy .vimrc editing and reloading.
 map <Leader>oiv :tabe ~/Development/dotfiles/init.vim<cr>
 map <Leader>siv :source ~/.config/nvim/init.vim<cr>
