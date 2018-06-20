@@ -156,6 +156,7 @@ set splitbelow
 set splitright
 
 " Save folds
+au BufRead * normal zR
 au BufWinLeave * silent! mkview
 au BufWinEnter * silent! loadview
 
