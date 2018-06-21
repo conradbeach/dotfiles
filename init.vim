@@ -251,6 +251,8 @@ map <Leader>nx :tabnew<CR>:NERDTree<CR>
 " zoom a vim pane, <C-w>= to re-balance
 nnoremap <Leader>z :wincmd _<CR>:wincmd \|<CR>
 nnoremap <Leader>= :wincmd =<CR>
+" Rotate pane positions.
+nmap <Leader>pr <C-w>R
 
 " Easier quotation switching.
 map <Leader>' cs"'
