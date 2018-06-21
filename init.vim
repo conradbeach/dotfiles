@@ -107,8 +107,8 @@ map <Leader>rsf :VtrSendFile<CR>
 " splitjoin.vim
 let g:splitjoin_split_mapping = ''
 let g:splitjoin_join_mapping = ''
-nmap <Leader>J :SplitjoinJoin<cr>
-nmap <Leader>j :SplitjoinSplit<cr>
+nmap <Leader>J :SplitjoinJoin<CR>
+nmap <Leader>j :SplitjoinSplit<CR>
 
 " vim-gutter
 let g:gitgutter_map_keys = 0
@@ -205,8 +205,8 @@ map j gj
 map Y y$
 
 " Allow for easy .vimrc editing and reloading.
-map <Leader>oiv :tabe ~/Development/dotfiles/init.vim<cr>
-map <Leader>siv :source ~/.config/nvim/init.vim<cr>
+map <Leader>oiv :tabe ~/Development/dotfiles/init.vim<CR>
+map <Leader>siv :source ~/.config/nvim/init.vim<CR>
 
 " vim-autoformat
 map <Leader>f :Autoformat<CR>
@@ -249,8 +249,8 @@ map <Leader>x :NERDTree<CR>
 map <Leader>nx :tabnew<CR>:NERDTree<CR>
 
 " zoom a vim pane, <C-w>= to re-balance
-nnoremap <leader>z :wincmd _<cr>:wincmd \|<cr>
-nnoremap <leader>= :wincmd =<cr>
+nnoremap <Leader>z :wincmd _<CR>:wincmd \|<CR>
+nnoremap <Leader>= :wincmd =<CR>
 
 " Easier quotation switching.
 map <Leader>' cs"'
