@@ -255,8 +255,9 @@ nnoremap <Leader>= :wincmd =<CR>
 nmap <Leader>pr <C-w>R
 
 " Easier quotation switching.
-map <Leader>' cs"'
-map <Leader>" cs'"
+map <Leader>' cs"'cs`'
+map <Leader>" cs'"cs`"
+map <Leader>` cs'`cs"`
 
 """""""""""""""""
 " Theme
