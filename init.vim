@@ -90,6 +90,7 @@ map <Leader>ts :TestSuite<CR>
 map <Leader>tl :TestLast<CR>
 map <Leader>tv :TestVisit<CR>
 map <Leader>tof :VtrSendCommandToRunner clear; echo -e 'spring rspec --only-failures'; spring rspec --only-failures<CR>
+map <Leader>toof :VtrSendCommandToRunner clear; echo -e 'spring rspec --next-failure'; spring rspec --next-failure<CR>
 
 " vim-tmux-runner
 let g:VtrPercentage = 30
