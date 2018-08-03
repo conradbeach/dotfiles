@@ -51,6 +51,7 @@ Plug 'tpope/vim-rails'
 Plug 'keith/rspec.vim'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rake'
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 " YAML
 Plug 'stephpy/vim-yaml'
 call plug#end()
@@ -113,6 +114,15 @@ nmap <Leader>j :SplitjoinSplit<CR>
 
 " vim-gutter
 let g:gitgutter_map_keys = 0
+
+" autozimu/LanguageClient-neovim
+let g:LanguageClient_serverCommands = {
+  \ 'ruby': ['orbaclerun', 'file-server'],
+  \ }
+nnoremap <Leader>sj :call LanguageClient_textDocument_definition()<CR>
+nnoremap T :call LanguageClient_textDocument_hover()<CR>
+" timeout has to be bigger than time needed to index your project
+let g:LanguageClient_waitOutputTimeout = 240
 
 """""""""""""""""
 " Sets
@@ -207,7 +217,7 @@ map Y y$
 
 " Allow for easy .vimrc editing and reloading.
 map <Leader>oiv :tabe ~/Development/dotfiles/init.vim<CR>
-map <Leader>siv :source ~/.config/nvim/init.vim<CR>
+map <Leader>giv :source ~/.config/nvim/init.vim<CR>
 
 " vim-autoformat
 map <Leader>f :Autoformat<CR>
