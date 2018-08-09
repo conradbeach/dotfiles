@@ -43,6 +43,9 @@ Plug 'kchmck/vim-coffee-script'
 " Elixir
 Plug 'elixir-editors/vim-elixir'
 Plug 'slashmili/alchemist.vim'
+" JavaScript
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 " Markdown
 Plug 'gabrielelana/vim-markdown'
 " Ruby & Rails
