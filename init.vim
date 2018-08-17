@@ -108,6 +108,7 @@ map <Leader>rd :VtrDetachRunner<CR>
 map <Leader>rr :VtrReattachRunner<CR>
 map <Leader>rc :VtrClearRunner<CR>
 map <Leader>rsd :VtrSendCtrlD<CR>
+map <Leader>rsk :VtrSendCommandToRunner !!!<CR>
 map <Leader>rsf :VtrSendFile<CR>
 
 " splitjoin.vim
