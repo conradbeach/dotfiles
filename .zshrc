@@ -98,6 +98,8 @@ alias sss="spring stop; rake tmp:clear; bundle exec rails s"
 alias gg="bundle exec guard -c"
 # colorls
 alias cls="colorls --group-directories-first --git-status --almost-all -1"
+# CPU Profiling
+alias record-cpu-usage="TODAY=`date '+%Y-%m-%d'` && top -l 28800 -ocpu -R -F -s 1 | grep 'CPU usage' --line-buffered | tee -a '/Users/cbeach/CPU Usage/raw_data/$TODAY.txt'"
 
 ## Plugins
 source $ZSH/plugins/history-substring-search/history-substring-search.zsh
