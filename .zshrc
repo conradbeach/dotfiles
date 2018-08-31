@@ -89,6 +89,7 @@ alias cp="cp -iv"
 alias rm="rm -iv"
 alias mv="mv -iv"
 alias sed="sed -E"
+alias help="tldr"
 # Overrides (Remember that you can run the original command by prepending it
 # with a \. e.g. `\cat` will run the real cat instead of bat.)
 alias ls="colorls --group-directories-first --git-status --almost-all -1"
