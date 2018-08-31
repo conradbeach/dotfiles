@@ -110,6 +110,12 @@ source $ZSH/z.sh
 source $ZSH/zsh-git-prompt/zshrc.sh
 source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+
 # Pure Prompt
 autoload -U promptinit; promptinit
 prompt pure
