@@ -93,6 +93,7 @@ alias sed="sed -E"
 # with a \. e.g. `\cat` will run the real cat instead of bat.)
 alias ls="colorls --group-directories-first --git-status --almost-all -1"
 alias cat="bat"
+alias ping="prettyping --nolegend"
 # Ruby & Rails
 alias be="bundle exec"
 alias hr="heroku run"
