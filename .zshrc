@@ -2,6 +2,8 @@ export ZSH=/Users/cbeach/.oh-my-zsh # Path to your oh-my-zsh installation.
 
 export PATH="/usr/local/opt/python@2/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/qt@5.5/bin:$PATH"
 
+export SHELL="/usr/local/bin/zsh"
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -118,6 +120,9 @@ source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
+
+# tmuxinator
+source ~/.tmuxinator.zsh
 
 # Pure Prompt
 autoload -U promptinit; promptinit
