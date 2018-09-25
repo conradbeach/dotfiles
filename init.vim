@@ -313,6 +313,9 @@ map <Leader>' cs"'cs`'
 map <Leader>" cs'"cs`"
 map <Leader>` cs'`cs"`
 
+" vim-anywhere
+map <Leader>md :set syntax=markdown textwidth=0 wrapmargin=0 wrap<CR>
+
 """""""""""""""""
 " Theme
 """""""""""""""""
