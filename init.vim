@@ -130,6 +130,9 @@ nnoremap T :call LanguageClient_textDocument_hover()<CR>
 " timeout has to be bigger than time needed to index your project
 let g:LanguageClient_waitOutputTimeout = 240
 
+" liuchengxu/vim-which-key
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+
 """""""""""""""""
 " Sets
 """""""""""""""""
