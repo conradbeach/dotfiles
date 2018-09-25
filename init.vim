@@ -56,6 +56,7 @@ Plug 'keith/rspec.vim'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rake'
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+Plug 'christoomey/vim-rfactory'
 " YAML
 Plug 'stephpy/vim-yaml'
 call plug#end()
@@ -132,6 +133,9 @@ let g:LanguageClient_waitOutputTimeout = 240
 
 " liuchengxu/vim-which-key
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+
+" christoomey/vim-rfactory
+nmap <Leader>gf :RVfactory<CR>
 
 """""""""""""""""
 " Sets
