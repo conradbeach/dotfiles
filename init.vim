@@ -14,6 +14,7 @@ Plug 'rizzatti/dash.vim'
 Plug 'roman/golden-ratio'
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
+Plug 'iamcco/markdown-preview.vim'
 Plug 'Shougo/neco-syntax'
 Plug 'Shougo/neosnippet.vim'
 Plug 'scrooloose/nerdtree'
@@ -160,6 +161,8 @@ let g:neosnippet#scope_aliases['ruby'] = 'ruby,rails'
 " christoomey/vim-rfactory
 nmap <Leader>gf :RVfactory<CR>
 
+" iamcco/markdown-preview.vim
+let g:mkdp_path_to_chrome = "open -a 'Google Chrome'"
 
 """""""""""""""""
 " Sets
@@ -315,8 +318,10 @@ map <Leader>' cs"'cs`'
 map <Leader>" cs'"cs`"
 map <Leader>` cs'`cs"`
 
-" vim-anywhere
+" Markdown
 map <Leader>md :set syntax=markdown textwidth=0 wrapmargin=0 wrap linebreak<CR>
+map <Leader>mp :MarkdownPreview<CR>
+map <Leader>mps :MarkdownPreviewStop<CR>
 
 """""""""""""""""
 " Theme
