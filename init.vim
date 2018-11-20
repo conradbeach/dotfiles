@@ -173,7 +173,6 @@ set guifont=Hack:h24
 
 set nocompatible " Don't worry about Vi compatibility.
 set scrolloff=10 " Specifies number of lines to keep above and below the cursor.
-set number
 set tabstop=2
 set shiftwidth=2
 set shiftround
