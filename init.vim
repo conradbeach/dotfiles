@@ -164,6 +164,9 @@ nmap <Leader>gf :RVfactory<CR>
 " iamcco/markdown-preview.vim
 let g:mkdp_path_to_chrome = "open -a 'Google Chrome'"
 
+" rizatti/dash.vim
+:nmap <Leader>dash <Plug>DashSearch
+
 """""""""""""""""
 " Sets
 """""""""""""""""
