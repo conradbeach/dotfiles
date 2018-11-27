@@ -191,8 +191,8 @@ set foldmethod=syntax
 set ignorecase " Case insensitive searching.
 set smartcase " Case sensitive searching when an uppercase letter is included in the search term.
 set cursorline
-set number
-set relativenumber
+set number " Show line numbers
+set relativenumber " Show relative line numbers
 
 " Enable mouse scrolling
 set mouse=a
