@@ -1,8 +1,8 @@
 bundler
-pry
-neovim
 colorls
-ruby-beautify
-rubocop
+neovim
 orbacle
+pry
+rubocop
+ruby-beautify
 tmuxinator
