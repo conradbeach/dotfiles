@@ -278,6 +278,8 @@ map <Leader>i migg=G`i
 map <Leader>nt :tabnew<CR>
 " Close the current tab.
 map <Leader>ct :tabclose<CR>
+" Close other tabs.
+map <Leader>cot :tabonly<CR>
 " Tab Switching
 noremap <Leader>h gT
 noremap <Leader>l gt
