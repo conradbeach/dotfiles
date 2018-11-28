@@ -102,8 +102,8 @@ alias find="fd -H"
 # Ruby & Rails
 alias be="bundle exec"
 alias hr="heroku run"
-alias ss="spring stop"
-alias sss="spring stop; rake tmp:clear"
+alias ss="bundle exec spring stop"
+alias sss="bundle exec spring stop; rake tmp:clear"
 # Guard
 alias gg="bundle exec guard -c"
 # CPU Profiling
