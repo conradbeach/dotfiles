@@ -23,7 +23,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'godlygeek/tabular'
 Plug '907th/vim-auto-save'
-Plug 'Chiel92/vim-autoformat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -269,8 +268,6 @@ map Y y$
 map <Leader>oiv :tabe ~/Development/dotfiles/init.vim<CR>
 map <Leader>giv :source ~/.config/nvim/init.vim<CR>
 
-" vim-autoformat
-map <Leader>f :Autoformat<CR>
 " Indent the whole file.
 map <Leader>i migg=G`i
 
