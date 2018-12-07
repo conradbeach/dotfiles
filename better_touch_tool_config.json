@@ -1,12 +1,101 @@
 {
   "BTTPresetName" : "Default",
-  "BTTPresetUUID" : "A63E814B-B015-4BD3-ACCB-DF2D05F8A4C9",
+  "BTTPresetUUID" : "433DDFAC-8F42-4AC1-A07D-7DD5707395A3",
   "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "com.brave.Browser.beta",
+      "BTTAppName" : "Brave Browser Beta",
+      "BTTAppProcessMatchMode" : 2,
+      "BTTAppProcessName" : "Brave Browser Beta",
+      "BTTTriggers" : [
+        {
+          "BTTTriggerType" : 112,
+          "BTTTriggerTypeDescription" : "3 Finger Click",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 2,
+          "BTTPredefinedActionName" : "CMD(⌘)+Click",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 121,
+          "BTTTriggerTypeDescription" : "4 Finger Click",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 111,
+          "BTTPredefinedActionName" : "CMD(⌘)+Shift(⇧)-Click",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 1
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.jetbrains.rubymine",
+      "BTTAppName" : "RubyMine",
+      "BTTAppProcessMatchMode" : 2,
+      "BTTAppProcessName" : "RubyMine",
+      "BTTTriggers" : [
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "58,4",
+          "BTTAdditionalConfiguration" : "262145",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 4,
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 0
+        }
+      ]
+    },
     {
       "BTTAppBundleIdentifier" : "com.electron.brave",
       "BTTAppName" : "Brave",
       "BTTAppProcessMatchMode" : 2,
       "BTTAppProcessName" : "Brave",
+      "BTTTriggers" : [
+        {
+          "BTTTriggerType" : 121,
+          "BTTTriggerTypeDescription" : "4 Finger Click",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 111,
+          "BTTPredefinedActionName" : "CMD(⌘)+Shift(⇧)-Click",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 1
+        },
+        {
+          "BTTTriggerType" : 112,
+          "BTTTriggerTypeDescription" : "3 Finger Click",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 2,
+          "BTTPredefinedActionName" : "CMD(⌘)+Click",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 0
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "org.efounders.BrowserX",
+      "BTTAppName" : "Station",
+      "BTTAppProcessMatchMode" : 2,
+      "BTTAppProcessName" : "Station",
+      "BTTTriggers" : [
+        {
+          "BTTTriggerType" : 112,
+          "BTTTriggerTypeDescription" : "3 Finger Click",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 2,
+          "BTTPredefinedActionName" : "CMD(⌘)+Click",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 0
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "org.mozilla.firefox",
+      "BTTAppName" : "Firefox",
+      "BTTAppProcessMatchMode" : 2,
+      "BTTAppProcessName" : "Firefox",
       "BTTTriggers" : [
         {
           "BTTTriggerType" : 121,
@@ -86,13 +175,89 @@
       },
       "BTTTriggers" : [
         {
-          "BTTTriggerType" : 102,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Up",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 21,
-          "BTTPredefinedActionName" : "Maximize Window",
+          "BTTTriggerType" : -1,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 10,
+          "BTTPredefinedActionName" : "Open Finder",
           "BTTEnabled" : 1,
-          "BTTOrder" : 0
+          "BTTShortcutKeyCode" : 3,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 5
+        },
+        {
+          "BTTTriggerType" : 100,
+          "BTTTriggerTypeDescription" : "3 Finger Swipe Left",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 19,
+          "BTTPredefinedActionName" : "Maximize Window Left",
+          "BTTEnabled" : 1,
+          "BTTRequiredModifierKeys" : 1048576,
+          "BTTOrder" : 3
+        },
+        {
+          "BTTTriggerType" : -1,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "123",
+          "BTTAdditionalConfiguration" : "8388608",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 4,
+          "BTTShortcutModifierKeys" : 8388608,
+          "BTTOrder" : 20
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Firefox%20Developer%20Edition.app",
+          "BTTAdditionalConfiguration" : "1572864",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 8,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 2
+        },
+        {
+          "BTTTriggerType" : -1,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Utilities\/Terminal.app",
+          "BTTAdditionalConfiguration" : "1572864",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 45,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 11
+        },
+        {
+          "BTTTriggerType" : 106,
+          "BTTTriggerTypeDescription" : "4 Finger Swipe Right",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 47,
+          "BTTPredefinedActionName" : "Move Window to Next Monitor",
+          "BTTEnabled" : 1,
+          "BTTRequiredModifierKeys" : 1572864,
+          "BTTOrder" : 15
+        },
+        {
+          "BTTTriggerType" : 105,
+          "BTTTriggerTypeDescription" : "4 Finger Swipe Left",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 114,
+          "BTTPredefinedActionName" : "Move Right a Space",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 13
+        },
+        {
+          "BTTTriggerType" : 101,
+          "BTTTriggerTypeDescription" : "3 Finger Swipe Right",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 93,
+          "BTTPredefinedActionName" : "Resize Window to Bottom Right Quarter \/ Corner",
+          "BTTEnabled" : 1,
+          "BTTRequiredModifierKeys" : 1310720,
+          "BTTOrder" : 6
         },
         {
           "BTTTriggerType" : 102,
@@ -122,117 +287,105 @@
           "BTTEnabled" : 1,
           "BTTShortcutKeyCode" : 17,
           "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 15
+          "BTTOrder" : 16
         },
         {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "126",
-          "BTTAdditionalConfiguration" : "8388608",
-          "BTTTriggerOnDown" : 0,
+          "BTTTriggerType" : 101,
+          "BTTTriggerTypeDescription" : "3 Finger Swipe Right",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 20,
+          "BTTPredefinedActionName" : "Maximize Window Right",
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 40,
-          "BTTShortcutModifierKeys" : 8388608,
-          "BTTOrder" : 20
+          "BTTRequiredModifierKeys" : 1048576,
+          "BTTOrder" : 2
+        },
+        {
+          "BTTTriggerType" : 106,
+          "BTTTriggerTypeDescription" : "4 Finger Swipe Right",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 113,
+          "BTTPredefinedActionName" : "Move Left a Space",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 14
         },
         {
           "BTTTriggerType" : -1,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : 49,
           "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Google%20Play%20Music%20Desktop%20Player.app",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Dash.app",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 2,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 3
+        },
+        {
+          "BTTTriggerType" : -1,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "124",
+          "BTTAdditionalConfiguration" : "8388608",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 37,
+          "BTTShortcutModifierKeys" : 8388608,
+          "BTTOrder" : 24
+        },
+        {
+          "BTTTriggerType" : 101,
+          "BTTTriggerTypeDescription" : "3 Finger Swipe Right",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 92,
+          "BTTPredefinedActionName" : "Resize Window to Top Right Quarter \/ Corner",
+          "BTTEnabled" : 1,
+          "BTTRequiredModifierKeys" : 1572864,
+          "BTTOrder" : 7
+        },
+        {
+          "BTTTriggerType" : -1,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/GitKraken.app",
           "BTTAdditionalConfiguration" : "1572864",
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 35,
+          "BTTShortcutKeyCode" : 5,
           "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 12
+          "BTTOrder" : 6
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Numbers.app",
+          "BTTAdditionalConfiguration" : "1572864",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 7,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 18
         },
         {
           "BTTTriggerType" : 100,
           "BTTTriggerTypeDescription" : "3 Finger Swipe Left",
           "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 90,
-          "BTTPredefinedActionName" : "Resize Window to Top Left Quarter \/ Corner",
+          "BTTPredefinedActionType" : 91,
+          "BTTPredefinedActionName" : "Resize Window to Bottom Left Quarter \/ Corner",
           "BTTEnabled" : 1,
           "BTTRequiredModifierKeys" : 1310720,
           "BTTOrder" : 8
         },
         {
-          "BTTTriggerType" : -1,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Reminders.app",
-          "BTTAdditionalConfiguration" : "1572864",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 15,
-          "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 13
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 10,
-          "BTTPredefinedActionName" : "Open Finder",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 3,
-          "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 4
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Station.app",
-          "BTTAdditionalConfiguration" : "1572864",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 1,
-          "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 14
-        },
-        {
-          "BTTTriggerType" : 103,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Down",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 106,
-          "BTTPredefinedActionName" : "Minimize Window Below Cursor",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 1
-        },
-        {
-          "BTTTriggerType" : 100,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Left",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 19,
-          "BTTPredefinedActionName" : "Maximize Window Left",
-          "BTTEnabled" : 1,
-          "BTTRequiredModifierKeys" : 1048576,
-          "BTTOrder" : 3
-        },
-        {
-          "BTTTriggerType" : 100,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Left",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
           "BTTPredefinedActionType" : -1,
           "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "56,55,30",
+          "BTTShortcutToSend" : "56,123",
+          "BTTAdditionalConfiguration" : "8519680",
+          "BTTTriggerOnDown" : 0,
           "BTTEnabled" : 1,
-          "BTTOrder" : 12
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Postman.app",
-          "BTTAdditionalConfiguration" : "1572864",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 31,
-          "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 11
+          "BTTShortcutKeyCode" : 4,
+          "BTTShortcutModifierKeys" : 8519680,
+          "BTTOrder" : 21
         },
         {
           "BTTTriggerType" : 102,
@@ -248,78 +401,177 @@
           "BTTTriggerType" : 101,
           "BTTTriggerTypeDescription" : "3 Finger Swipe Right",
           "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 93,
-          "BTTPredefinedActionName" : "Resize Window to Bottom Right Quarter \/ Corner",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "56,55,33",
           "BTTEnabled" : 1,
-          "BTTRequiredModifierKeys" : 1572864,
-          "BTTOrder" : 7
+          "BTTOrder" : 11
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/RubyMine.app",
+          "BTTAdditionalConfiguration" : "1572864",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 0,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 0
+        },
+        {
+          "BTTTriggerType" : -1,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 122,
+          "BTTPredefinedActionName" : "Show Notification Center",
+          "BTTAdditionalConfiguration" : "1572864",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 41,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 27
+        },
+        {
+          "BTTTriggerType" : -1,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "125",
+          "BTTAdditionalConfiguration" : "8388608",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 38,
+          "BTTShortcutModifierKeys" : 8388608,
+          "BTTOrder" : 22
+        },
+        {
+          "BTTTriggerType" : -1,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 200,
+          "BTTPredefinedActionName" : "Toggle Do Not Disturb On\/Off",
+          "BTTAdditionalConfiguration" : "1572864",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 18,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 28
+        },
+        {
+          "BTTTriggerType" : 103,
+          "BTTTriggerTypeDescription" : "3 Finger Swipe Down",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 106,
+          "BTTPredefinedActionName" : "Minimize Window Below Cursor",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 1
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/iTerm.app",
+          "BTTAdditionalConfiguration" : "1572864",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 6,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 19
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "56,124",
+          "BTTAdditionalConfiguration" : "8519680",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 37,
+          "BTTShortcutModifierKeys" : 8519680,
+          "BTTOrder" : 25
         },
         {
           "BTTTriggerType" : -1,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : 49,
           "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Utilities\/Terminal.app",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Messages.app",
           "BTTAdditionalConfiguration" : "1572864",
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 45,
+          "BTTShortcutKeyCode" : 46,
           "BTTShortcutModifierKeys" : 1572864,
           "BTTOrder" : 10
         },
         {
-          "BTTTriggerType" : -1,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : 49,
           "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Numi.app",
-          "BTTAdditionalConfiguration" : "1572864",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 7,
-          "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 17
-        },
-        {
-          "BTTTriggerType" : 105,
-          "BTTTriggerTypeDescription" : "4 Finger Swipe Left",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 114,
-          "BTTPredefinedActionName" : "Move Right a Space",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 13
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Calendar.app",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Notes.app",
           "BTTAdditionalConfiguration" : "1572864",
           "BTTTriggerOnDown" : 0,
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 37,
+          "BTTShortcutKeyCode" : 11,
           "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 6
+          "BTTOrder" : 1
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Google%20Chrome.app",
+          "BTTAdditionalConfiguration" : "1572864",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 14,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 4
+        },
+        {
+          "BTTTriggerType" : -1,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "126",
+          "BTTAdditionalConfiguration" : "8388608",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 40,
+          "BTTShortcutModifierKeys" : 8388608,
+          "BTTOrder" : 23
         },
         {
           "BTTTriggerType" : -1,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : 49,
           "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Dash.app",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app",
+          "BTTAdditionalConfiguration" : "1572864",
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 2,
+          "BTTShortcutKeyCode" : 40,
           "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 2
+          "BTTOrder" : 9
         },
         {
-          "BTTTriggerType" : 101,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Right",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 92,
-          "BTTPredefinedActionName" : "Resize Window to Top Right Quarter \/ Corner",
+          "BTTTriggerType" : -1,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Reminders.app",
+          "BTTAdditionalConfiguration" : "1572864",
           "BTTEnabled" : 1,
-          "BTTRequiredModifierKeys" : 1310720,
-          "BTTOrder" : 6
+          "BTTShortcutKeyCode" : 15,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 14
+        },
+        {
+          "BTTTriggerType" : -1,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Station.app",
+          "BTTAdditionalConfiguration" : "1572864",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 1,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 15
         },
         {
           "BTTTriggerType" : 103,
@@ -334,144 +586,26 @@
         {
           "BTTTriggerType" : -1,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 200,
-          "BTTPredefinedActionName" : "Toggle Do Not Disturb On\/Off",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Google%20Play%20Music%20Desktop%20Player.app",
           "BTTAdditionalConfiguration" : "1572864",
-          "BTTTriggerOnDown" : 0,
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 18,
+          "BTTShortcutKeyCode" : 35,
           "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 24
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 122,
-          "BTTPredefinedActionName" : "Show Notification Center",
-          "BTTAdditionalConfiguration" : "1572864",
-          "BTTTriggerOnDown" : 0,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 41,
-          "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 23
+          "BTTOrder" : 13
         },
         {
           "BTTTriggerType" : -1,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : 49,
           "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Postman.app",
           "BTTAdditionalConfiguration" : "1572864",
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 40,
+          "BTTShortcutKeyCode" : 31,
           "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 8
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Messages.app",
-          "BTTAdditionalConfiguration" : "1572864",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 46,
-          "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 9
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/VLC.app",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 38,
-          "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 7
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Firefox%20Developer%20Edition.app",
-          "BTTAdditionalConfiguration" : "1572864",
-          "BTTTriggerOnDown" : 0,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 14,
-          "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 3
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/iTerm.app",
-          "BTTAdditionalConfiguration" : "1572864",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 0,
-          "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 0
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "123",
-          "BTTAdditionalConfiguration" : "8388608",
-          "BTTTriggerOnDown" : 0,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 4,
-          "BTTShortcutModifierKeys" : 8388608,
-          "BTTOrder" : 18
-        },
-        {
-          "BTTTriggerType" : 101,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Right",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "56,55,33",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 11
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/GitKraken.app",
-          "BTTAdditionalConfiguration" : "1572864",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 5,
-          "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 5
-        },
-        {
-          "BTTTriggerType" : 100,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Left",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 91,
-          "BTTPredefinedActionName" : "Resize Window to Bottom Left Quarter \/ Corner",
-          "BTTEnabled" : 1,
-          "BTTRequiredModifierKeys" : 1572864,
-          "BTTOrder" : 9
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Google%20Chrome.app",
-          "BTTAdditionalConfiguration" : "1572864",
-          "BTTTriggerOnDown" : 0,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 13,
-          "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 16
+          "BTTOrder" : 12
         },
         {
           "BTTTriggerType" : -1,
@@ -484,142 +618,84 @@
           "BTTEnabled" : 1,
           "BTTShortcutKeyCode" : 39,
           "BTTShortcutModifierKeys" : 262144,
-          "BTTOrder" : 22
+          "BTTOrder" : 26
+        },
+        {
+          "BTTTriggerType" : 102,
+          "BTTTriggerTypeDescription" : "3 Finger Swipe Up",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 21,
+          "BTTPredefinedActionName" : "Maximize Window",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 100,
+          "BTTTriggerTypeDescription" : "3 Finger Swipe Left",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "56,55,30",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 12
         },
         {
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : 49,
           "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/Applications\/Firefox%20Developer%20Edition.app",
-          "BTTAdditionalConfiguration" : "1572864",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/System%20Preferences.app",
+          "BTTAdditionalConfiguration" : "1179648",
+          "BTTTriggerOnDown" : 0,
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 8,
+          "BTTShortcutKeyCode" : 43,
+          "BTTShortcutModifierKeys" : 1179648,
+          "BTTOrder" : 29
+        },
+        {
+          "BTTTriggerType" : 100,
+          "BTTTriggerTypeDescription" : "3 Finger Swipe Left",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 90,
+          "BTTPredefinedActionName" : "Resize Window to Top Left Quarter \/ Corner",
+          "BTTEnabled" : 1,
+          "BTTRequiredModifierKeys" : 1572864,
+          "BTTOrder" : 9
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Safari.app",
+          "BTTAdditionalConfiguration" : "1572864",
+          "BTTTriggerOnDown" : 0,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 13,
           "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 1
+          "BTTOrder" : 17
         },
         {
           "BTTTriggerType" : -1,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "124",
-          "BTTAdditionalConfiguration" : "8388608",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/VLC.app",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 38,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 8
+        },
+        {
+          "BTTTriggerType" : -1,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Open Application \/ File \/ Apple Script …",
+          "BTTLaunchPath" : "file:\/\/\/Applications\/Calendar.app",
+          "BTTAdditionalConfiguration" : "1572864",
           "BTTTriggerOnDown" : 0,
           "BTTEnabled" : 1,
           "BTTShortcutKeyCode" : 37,
-          "BTTShortcutModifierKeys" : 8388608,
-          "BTTOrder" : 21
-        },
-        {
-          "BTTTriggerType" : 101,
-          "BTTTriggerTypeDescription" : "3 Finger Swipe Right",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 20,
-          "BTTPredefinedActionName" : "Maximize Window Right",
-          "BTTEnabled" : 1,
-          "BTTRequiredModifierKeys" : 1048576,
-          "BTTOrder" : 2
-        },
-        {
-          "BTTTriggerType" : -1,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : -1,
-          "BTTPredefinedActionName" : "No Action",
-          "BTTShortcutToSend" : "125",
-          "BTTAdditionalConfiguration" : "8388608",
-          "BTTTriggerOnDown" : 0,
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 38,
-          "BTTShortcutModifierKeys" : 8388608,
-          "BTTOrder" : 19
-        },
-        {
-          "BTTTriggerType" : 106,
-          "BTTTriggerTypeDescription" : "4 Finger Swipe Right",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 47,
-          "BTTPredefinedActionName" : "Move Window to Next Monitor",
-          "BTTEnabled" : 1,
-          "BTTRequiredModifierKeys" : 1572864,
-          "BTTOrder" : 15
-        },
-        {
-          "BTTTriggerType" : 106,
-          "BTTTriggerTypeDescription" : "4 Finger Swipe Right",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 113,
-          "BTTPredefinedActionName" : "Move Left a Space",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 14
-        }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.brave.Browser.beta",
-      "BTTAppName" : "Brave Browser Beta",
-      "BTTAppProcessMatchMode" : 2,
-      "BTTAppProcessName" : "Brave Browser Beta",
-      "BTTTriggers" : [
-        {
-          "BTTTriggerType" : 121,
-          "BTTTriggerTypeDescription" : "4 Finger Click",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 111,
-          "BTTPredefinedActionName" : "CMD(⌘)+Shift(⇧)-Click",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 1
-        },
-        {
-          "BTTTriggerType" : 112,
-          "BTTTriggerTypeDescription" : "3 Finger Click",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 2,
-          "BTTPredefinedActionName" : "CMD(⌘)+Click",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 0
-        }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "org.efounders.BrowserX",
-      "BTTAppName" : "Station",
-      "BTTAppProcessMatchMode" : 2,
-      "BTTAppProcessName" : "Station",
-      "BTTTriggers" : [
-        {
-          "BTTTriggerType" : 112,
-          "BTTTriggerTypeDescription" : "3 Finger Click",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 2,
-          "BTTPredefinedActionName" : "CMD(⌘)+Click",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 0
-        }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "org.mozilla.firefox",
-      "BTTAppName" : "Firefox",
-      "BTTAppProcessMatchMode" : 2,
-      "BTTAppProcessName" : "Firefox",
-      "BTTTriggers" : [
-        {
-          "BTTTriggerType" : 112,
-          "BTTTriggerTypeDescription" : "3 Finger Click",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 2,
-          "BTTPredefinedActionName" : "CMD(⌘)+Click",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 0
-        },
-        {
-          "BTTTriggerType" : 121,
-          "BTTTriggerTypeDescription" : "4 Finger Click",
-          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
-          "BTTPredefinedActionType" : 111,
-          "BTTPredefinedActionName" : "CMD(⌘)+Shift(⇧)-Click",
-          "BTTEnabled" : 1,
-          "BTTOrder" : 1
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 7
         }
       ]
     }
