@@ -294,9 +294,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 782 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>464 424 918 514 0 0 1680 1050 </string>
+	<string>926 741 796 486 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 104 1330 762 0 0 2560 1440 </string>
+	<string>350 265 1330 762 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>343 214 1330 762 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -955,7 +955,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>6E11FD5F-A546-499F-9AB7-9CBCB04B6123</string>
 	<key>NoSyncLastTipTime</key>
-	<real>565208108.06939602</real>
+	<real>565890322.87837696</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -970,6 +970,12 @@
 		<string>0000</string>
 		<string>0001</string>
 		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -1019,7 +1025,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-11-28T16:16:39Z</date>
+	<date>2018-12-06T20:35:39Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
