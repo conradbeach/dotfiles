@@ -12,6 +12,7 @@ brew install fzf
 $(brew --prefix)/opt/fzf/install
 brew install git
 brew install heroku
+brew install htop
 brew install mas
 brew install neovim
 brew tap rogual/neovim-dot-app
@@ -24,6 +25,8 @@ brew install the_silver_searcher
 brew install tldr
 brew install tmux
 brew install trash
+brew install tree
+brew install yarn
 brew install zsh
 brew install zsh-completions
 
