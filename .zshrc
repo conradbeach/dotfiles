@@ -1,9 +1,7 @@
 export ZSH=/Users/cbeach/.oh-my-zsh # Path to your oh-my-zsh installation.
 
-export PATH="/usr/local/opt/python@2/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 
 export SHELL="/usr/local/bin/zsh"
 
