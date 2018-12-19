@@ -37,7 +37,6 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 Plug 'janko-m/vim-test'
 Plug 'kana/vim-textobj-user'
-Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
@@ -61,6 +60,7 @@ Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rake'
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'christoomey/vim-rfactory'
+Plug 'nelstrom/vim-textobj-rubyblock'
 " YAML
 Plug 'stephpy/vim-yaml'
 call plug#end()
