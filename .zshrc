@@ -102,6 +102,8 @@ alias ss="bundle exec spring stop"
 alias rs="bundle exec spring stop && bundle exec rails server"
 alias rc="bundle exec rails console"
 alias sss="bundle exec spring stop; rake tmp:clear"
+# Git
+alias grm="git rebase -i master"
 # Guard
 alias gg="bundle exec guard -c"
 # CPU Profiling
