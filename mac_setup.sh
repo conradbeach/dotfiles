@@ -30,6 +30,8 @@ brew install yarn
 brew install zsh
 brew install zsh-completions
 
+npm install -g emoj
+
 ## Fonts
 brew tap caskroom/fonts
 brew cask install font-hack-nerd-font
