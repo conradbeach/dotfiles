@@ -89,8 +89,7 @@ alias sed="sed -E"
 alias help="tldr"
 alias n="nvim"
 alias k9="kill -9"
-# Overrides (Remember that you can run the original command by prepending it
-# with a \. e.g. `\cat` will run the real cat instead of bat.)
+# Overrides (Remember that you can run the original command by prepending it with a \. e.g. `\cat` will run the real cat instead of bat.)
 alias ls="colorls --group-directories-first --git-status --almost-all -1"
 alias cat="bat"
 alias ping="prettyping --nolegend"
