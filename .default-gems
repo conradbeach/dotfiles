@@ -5,6 +5,9 @@ orbacle
 pry
 pry-doc
 rails
+reek
 rubocop
 ruby-beautify
+rubycritic
+solargraph
 tmuxinator
