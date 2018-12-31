@@ -54,7 +54,12 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # Allow [ or ] whereever you want
- unsetopt nomatch
+unsetopt nomatch
+
+# Don't verify commands with history expansion. Normally, I would prefer the
+# extra safety this option offers, but I want to be able to easily run previous
+# commands with vim-tmux-runner, so I'm turning it off.
+unsetopt histverify
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

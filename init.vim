@@ -116,6 +116,7 @@ map <Leader>rc :VtrClearRunner<CR>
 map <Leader>rsd :VtrSendCtrlD<CR>
 map <Leader>rsk :VtrSendCommandToRunner !!!<CR>
 map <Leader>rsf :VtrSendFile<CR>
+map <Leader>rl :VtrSendCommandToRunner !!<CR><CR>
 
 " splitjoin.vim
 let g:splitjoin_split_mapping = ''
