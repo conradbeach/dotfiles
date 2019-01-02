@@ -294,9 +294,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 782 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>926 741 796 486 0 0 2560 1440 </string>
+	<string>926 790 796 486 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>350 265 1330 762 0 0 2560 1440 </string>
+	<string>400 634 1330 762 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>343 214 1330 762 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -955,7 +955,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>6E11FD5F-A546-499F-9AB7-9CBCB04B6123</string>
 	<key>NoSyncLastTipTime</key>
-	<real>565890322.87837696</real>
+	<real>568134076.57035804</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -976,6 +976,21 @@
 		<string>0006</string>
 		<string>0007</string>
 		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
+		<string>0018</string>
+		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -1025,8 +1040,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-12-06T20:35:39Z</date>
+	<date>2019-01-01T12:55:29Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>Secure Input</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
