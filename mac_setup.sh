@@ -8,6 +8,7 @@ brew install ack
 brew install bat
 brew install cmake
 brew install diff-so-fancy
+brew install fd
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 brew install git
