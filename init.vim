@@ -260,6 +260,9 @@ autocmd FileChangedShellPost *
 " but it works for now.
 autocmd VimEnter * source ~/.config/nvim/init.vim
 
+" Set these options so Vim will be able to actually save the crontab.
+autocmd filetype crontab setlocal nobackup nowritebackup
+
 """""""""""""""""
 " Maps
 """""""""""""""""
