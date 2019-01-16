@@ -244,7 +244,7 @@ let g:netrw_liststyle = 3 " Use tree view.
 let NERDTreeShowHidden=1 " Show hidden files.
 
 " Markdown
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown syntax=markdown textwidth=0 wrapmargin=0 wrap linebreak
 
 " Triger `autoread` when files changes on disk
 " https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim/383044#383044
