@@ -1,3 +1,17 @@
 detectors:
   IrresponsibleModule:
     enabled: false
+  TooManyStatements:
+    max_statements: 10
+
+directories:
+  "app/dashboards":
+    UtilityFunction:
+      enabled: false
+  "db/migrate":
+    FeatureEnvy:
+      enabled: false
+    TooManyStatements:
+      enabled: false
+    UncommunicativeVariableName:
+      enabled: false
