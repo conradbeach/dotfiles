@@ -6,11 +6,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'w0rp/ale'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
-Plug 'Shougo/deoplete-rct'
 Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-Plug 'rizzatti/dash.vim'
 Plug 'roman/golden-ratio'
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
@@ -45,12 +41,11 @@ Plug 'christoomey/vim-tmux-runner'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
-" Coffeescript
-Plug 'kchmck/vim-coffee-script'
 " Elixir
 Plug 'elixir-editors/vim-elixir'
 Plug 'slashmili/alchemist.vim'
 " JavaScript
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 " Markdown
