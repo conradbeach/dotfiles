@@ -146,7 +146,7 @@
 	eIOMlJegsrW6AAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAALw=
 	</data>
 	<key>CommandString</key>
-	<string>cd ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents &amp;&amp; nvim</string>
+	<string></string>
 	<key>CursorType</key>
 	<integer>2</integer>
 	<key>Font</key>
@@ -161,7 +161,7 @@
 	<key>ProfileCurrentVersion</key>
 	<real>2.0600000000000001</real>
 	<key>RunCommandAsShell</key>
-	<false/>
+	<true/>
 	<key>SelectionColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
