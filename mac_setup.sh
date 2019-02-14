@@ -27,6 +27,7 @@ brew install tldr
 brew install tmux
 brew install trash
 brew install tree
+brew install cask vagrant
 brew install yarn
 brew install zsh
 brew install zsh-completions
