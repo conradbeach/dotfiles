@@ -7,6 +7,7 @@
 brew install ack
 brew install bat
 brew install cmake
+brew install ctags
 brew install diff-so-fancy
 brew install fd
 brew install fzf
