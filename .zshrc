@@ -110,6 +110,7 @@ alias rc="bundle exec rails console"
 alias sss="bundle exec spring stop; rake tmp:clear"
 # Git
 alias grm="git rebase master -i --autosquash"
+alias gri="git rebase -i --autosquash"
 alias gcf="git commit --fixup"
 # Guard
 alias gg="bundle exec guard -c"
