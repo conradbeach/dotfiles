@@ -1,5 +1,27 @@
 #!/bin/bash
 
+# Symlink Dotfiles
+ln -s ~/Development/dotfiles/nvim ~/.config
+ln -s ~/Development/dotfiles/tmuxinator ~/.config
+ln -s ~/Development/dotfiles/.agignore ~
+ln -s ~/Development/dotfiles/.asdfrc ~
+ln -s ~/Development/dotfiles/.ctags ~
+ln -s ~/Development/dotfiles/.default-gems ~
+ln -s ~/Development/dotfiles/.fzf.zsh ~
+ln -s ~/Development/dotfiles/.gitconfig ~
+ln -s ~/Development/dotfiles/.gitignore_global ~
+ln -s ~/Development/dotfiles/.ideavimrc ~
+ln -s ~/Development/dotfiles/.irbrc ~
+ln -s ~/Development/dotfiles/.psqlrc ~
+ln -s ~/Development/dotfiles/.reek.yml ~
+ln -s ~/Development/dotfiles/.rspec ~
+ln -s ~/Development/dotfiles/.rubocop.yml ~
+ln -s ~/Development/dotfiles/.tmux.conf ~
+ln -s ~/Development/dotfiles/.tmuxinator.zsh ~
+ln -s ~/Development/dotfiles/.tool-versions ~
+ln -s ~/Development/dotfiles/.vimrc ~
+ln -s ~/Development/dotfiles/.zshrc ~
+
 # Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
