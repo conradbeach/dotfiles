@@ -59,7 +59,7 @@ windows:
         - console:
         - logs:
   - misc:
-      layout: even-horizontal
+      layout: dee1,173x50,0,0{146x50,0,0,5,26x50,147,0,9}
       panes:
         - workers:
           - bundle exec rails jobs:work
