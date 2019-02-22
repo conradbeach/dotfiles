@@ -289,6 +289,8 @@ map <Leader>ct :tabclose<CR>
 map <Leader>cot :tabonly<CR>
 " Close other windows.
 map <Leader>on :on<CR>
+" Close all other tabs and windows.
+map <Leader>ce :on<CR>:tabonly<CR>
 " Tab Switching
 noremap <Leader>h gT
 noremap <Leader>l gt
