@@ -21,6 +21,9 @@ ln -s ~/Development/dotfiles/.tmuxinator.zsh ~
 ln -s ~/Development/dotfiles/.tool-versions ~
 ln -s ~/Development/dotfiles/.vimrc ~
 ln -s ~/Development/dotfiles/.zshrc ~
+mkdir -p ~/.oh-my-zsh/plugins/z.lua
+ln -s ~/Development/dotfiles/z.lua ~/.oh-my-zsh/plugins/z.lua
+ln -s ~/Development/dotfiles/z.lua.plugin.zsh ~/.oh-my-zsh/plugins/z.lua
 
 # Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

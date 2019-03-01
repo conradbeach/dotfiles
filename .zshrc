@@ -125,10 +125,9 @@ alias open_am="open -n -a 'Activity Monitor'"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages)
+plugins=(git colored-man-pages z.lua)
 
 source $ZSH/plugins/history-substring-search/history-substring-search.zsh
-source $ZSH/z.sh
 source $ZSH/zsh-git-prompt/zshrc.sh
 source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
