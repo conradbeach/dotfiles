@@ -1,0 +1,7 @@
+Host *
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa
+Host mopit
+ HostName sipsjc1-07.nexcess.net
+ User mopitflo
