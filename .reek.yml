@@ -1,4 +1,6 @@
 detectors:
+  DuplicateMethodCall:
+    enabled: false
   IrresponsibleModule:
     enabled: false
   TooManyStatements:
