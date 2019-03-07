@@ -109,6 +109,7 @@ alias ss="bundle exec spring stop"
 alias rs="bundle exec spring stop && bundle exec rails server"
 alias rc="bundle exec rails console"
 alias sss="bundle exec spring stop; rake tmp:clear"
+alias fix_pg="trash /usr/local/var/postgres/postmaster.pid; brew services restart postgresql; brew services list"
 # Git
 alias grm="git rebase master -i --autosquash"
 alias gri="git rebase -i --autosquash"
