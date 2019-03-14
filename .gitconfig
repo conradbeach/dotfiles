@@ -1,6 +1,7 @@
 [user]
 	name = Conrad Beach
 	email = conradbeach@protonmail.com
+	signingKey = 46C0230C743BB9A75BFA25270E8CE29231202535
 [core]
 	excludesfile = /Users/cbeach/.gitignore_global
 	autocrlf = input
@@ -41,5 +42,8 @@
 	whitespace = red reverse
 [commit]
 	verbose = true
+	gpgSign = true
 [rebase]
 	autosquash = true
+[tag]
+	forceSignAnnotated = true
