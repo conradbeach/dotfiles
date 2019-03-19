@@ -24,9 +24,6 @@ ln -s ~/Development/dotfiles/.tool-versions ~
 ln -s ~/Development/dotfiles/.vimrc ~
 ln -s ~/Development/dotfiles/.zshrc ~
 ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-zsh/themes
-mkdir -p ~/.oh-my-zsh/plugins/z.lua
-ln -s ~/Development/dotfiles/z.lua ~/.oh-my-zsh/plugins/z.lua
-ln -s ~/Development/dotfiles/z.lua.plugin.zsh ~/.oh-my-zsh/plugins/z.lua
 
 # Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
