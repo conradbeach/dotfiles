@@ -71,6 +71,22 @@ brew cask install font-hack-nerd-font
 brew install postgresql
 brew services start postgresql
 
+# asdf
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.0
+
+## Ruby
+xcode-select --install
+brew install openssl libyaml libffi
+asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+
+## Erlang
+asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
+brew install autoconf wxmac
+
+## Elixir
+asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
+
+# Apps
 echo "TODO: Install the following softwares."
 echo "**************************************"
 echo "* [ ] DisplayLink macOS Driver"
