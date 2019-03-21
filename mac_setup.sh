@@ -31,6 +31,7 @@ ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 
 ## Packages
 brew install ack
+brew install asciinema
 brew install bat
 brew install cmake
 brew install ctags
