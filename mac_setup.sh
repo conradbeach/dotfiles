@@ -24,6 +24,7 @@ ln -s ~/Development/dotfiles/.tool-versions ~
 ln -s ~/Development/dotfiles/.vimrc ~
 ln -s ~/Development/dotfiles/.zshrc ~
 ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-zsh/themes
+ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 
 # Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -44,6 +45,7 @@ brew install mas
 brew install neovim
 brew tap rogual/neovim-dot-app
 brew install neovim-dot-app
+brew install pinentry-mac
 brew install python
 brew install python@2
 brew install rcm
