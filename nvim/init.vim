@@ -338,6 +338,9 @@ map <Leader>md :set syntax=markdown textwidth=0 wrapmargin=0 wrap linebreak<CR>
 map <Leader>mp :MarkdownPreview<CR>
 map <Leader>mps :MarkdownPreviewStop<CR>
 
+" Convert tabs to spaces.
+map <Leader>ft :set expandtab<CR>:retab<CR>
+
 """""""""""""""""
 " Theme
 """""""""""""""""
