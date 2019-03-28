@@ -89,6 +89,7 @@ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 
 # Other Tools
 npm install -g emoj
+npm install --global pure-prompt
 
 
 # Apps
