@@ -26,6 +26,7 @@ ln -s ~/Development/dotfiles/.zshrc ~
 ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-zsh/themes
 ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 
+
 # Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -61,8 +62,6 @@ brew install yarn
 brew install zsh
 brew install zsh-completions
 
-npm install -g emoj
-
 ## Fonts
 brew tap caskroom/fonts
 brew cask install font-hack-nerd-font
@@ -70,6 +69,7 @@ brew cask install font-hack-nerd-font
 ## Services
 brew install postgresql
 brew services start postgresql
+
 
 # asdf
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.0
@@ -85,6 +85,11 @@ brew install autoconf wxmac
 
 ## Elixir
 asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
+
+
+# Other Tools
+npm install -g emoj
+
 
 # Apps
 echo "TODO: Install the following softwares."
