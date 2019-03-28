@@ -95,6 +95,7 @@ alias n="nvim"
 alias k9="kill -9"
 alias notes="cd ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && nvim"
 alias cl="clear"
+alias src="source ~/.zshrc"
 # Overrides (Remember that you can run the original command by prepending it with a \. e.g. `\cat` will run the real cat instead of bat.)
 alias ls="colorls --group-directories-first --git-status --almost-all -1"
 alias cat="bat"
