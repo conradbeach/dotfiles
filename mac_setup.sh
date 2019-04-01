@@ -2,9 +2,9 @@
 
 # Symlink Dotfiles
 ln -s ~/Development/dotfiles/nvim ~/.config
-ln -s ~/Development/dotfiles/tmuxinator ~/.config
 ln -s ~/Development/dotfiles/ssh/config ~/.ssh
 ln -s ~/Development/dotfiles/ssh/known_hosts ~/.ssh
+ln -s ~/Development/dotfiles/tmuxinator ~/.config
 ln -s ~/Development/dotfiles/.agignore ~
 ln -s ~/Development/dotfiles/.asdfrc ~
 ln -s ~/Development/dotfiles/.ctags ~
@@ -95,7 +95,6 @@ npm install --global pure-prompt
 # Apps
 echo "TODO: Install the following softwares."
 echo "**************************************"
-echo "* [ ] DisplayLink macOS Driver"
 echo "* [ ] Neovim.app"
 echo "* [ ] Atom"
 echo "* [ ] Balena Etcher"
