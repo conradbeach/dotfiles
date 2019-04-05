@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Symlink Dotfiles
+# Dotfiles
 ln -s ~/Development/dotfiles/nvim ~/.config
 ln -s ~/Development/dotfiles/ssh/config ~/.ssh
 ln -s ~/Development/dotfiles/ssh/known_hosts ~/.ssh
@@ -19,13 +19,13 @@ ln -s ~/Development/dotfiles/.reek.yml ~
 ln -s ~/Development/dotfiles/.rspec ~
 ln -s ~/Development/dotfiles/.rubocop.yml ~
 ln -s ~/Development/dotfiles/.tmux.conf ~
-ln -s ~/Development/dotfiles/.tmuxinator.zsh ~
 ln -s ~/Development/dotfiles/.tool-versions ~
 ln -s ~/Development/dotfiles/.vimrc ~
 ln -s ~/Development/dotfiles/.zshrc ~
 ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-zsh/themes
 ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 
+curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -o ~/.tmuxinator.zsh
 
 # Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
