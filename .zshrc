@@ -108,6 +108,7 @@ alias ping="prettyping --nolegend"
 alias top="htop"
 alias find="fd -H"
 # Ruby & Rails
+alias cra="bundle exec rspec && rubocop && bundle audit check --update && brakeman && rubycritic app" # Short for 'check rails app'
 alias be="bundle exec"
 alias hr="heroku run"
 alias ss="bundle exec spring stop"
