@@ -342,6 +342,11 @@ map <Leader>mps :MarkdownPreviewStop<CR>
 " Convert tabs to spaces.
 map <Leader>ft :set expandtab<CR>:retab<CR>
 
+" Open a tag in a horizontal split, vertical split and new tab respectively.
+map <Leader>[ :split <CR>:exec("tag ".expand("<cword>"))<CR>
+map <Leader>] :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
+map <Leader>\ :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
 """""""""""""""""
 " Theme
 """""""""""""""""
