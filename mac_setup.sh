@@ -116,6 +116,8 @@ ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 
 
 # Apps
+echo "TODO: Run :checkhealth in Neovim."
+echo ""
 echo "TODO: Hit <prefix>+I in tmux to install plugins."
 echo ""
 echo "TODO: Set vim-anywhere keybinding to Command-Option-V. (System Preferences > Keyboard > Shortcuts > Services > Vim Anywhere)"
