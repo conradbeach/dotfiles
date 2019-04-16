@@ -73,6 +73,7 @@ npm install --global neovim
 
 # Link Files
 ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Development ~
+ln -s ~/Development/dotfiles/gitkraken/config ~/.gitkraken
 ln -s ~/Development/dotfiles/nvim ~/.config
 ln -s ~/Development/dotfiles/ssh/config ~/.ssh
 ln -s ~/Development/dotfiles/ssh/known_hosts ~/.ssh
@@ -99,6 +100,8 @@ ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 
 
 # Apps
+echo "TODO: Symlink dotfiles/gitkraken/profile to ~/.gitkraken/profiles/???/"
+echo ""
 echo "TODO: Install the following softwares."
 echo "**************************************"
 echo "* [ ] Neovim.app"

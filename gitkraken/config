@@ -1,0 +1,47 @@
+{
+  "lastUpgradeScriptRun": "v5.0.0",
+  "appId": "c4aeb44b8749dd9774b2abad6bf82a30461595e7",
+  "registration": {
+    "email": "conradbeach@protonmail.com",
+    "status": "activated",
+    "trialStatus": null,
+    "loginType": "username_and_password",
+    "providerToken": null,
+    "date": "2017-12-27T18:26:43.451Z",
+    "EULA": {
+      "version": "1.5.0",
+      "status": "agree_verified"
+    }
+  },
+  "userId": "33b4c4b9-2b0e-46de-bd87-e6f4bb441639",
+  "licensedFeatures": [
+    "pro"
+  ],
+  "windowSettings": {
+    "x": 0,
+    "y": 53,
+    "width": 1680,
+    "height": 985,
+    "fullScreen": false,
+    "maximized": true
+  },
+  "hasSeenNewUserOnboarding": true,
+  "profileGuid": "d6e5a8ca26e14325a4275fc33b17e16f",
+  "userFeatures": [
+    {
+      "betaFeaturesEnabled": false,
+      "name": "gitkraken"
+    },
+    {
+      "betaFeaturesEnabled": false,
+      "name": "glo"
+    }
+  ],
+  "plugins": {},
+  "ui": {
+    "spellcheck": true,
+    "showToolbarLabels": true,
+    "wideLayout": true
+  },
+  "hasNotConfirmedNonCommercialUseWithExpiredProLicense": false
+}
