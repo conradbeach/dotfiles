@@ -72,6 +72,7 @@ npm install --global neovim
 
 
 # Link Files
+ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Development ~
 ln -s ~/Development/dotfiles/nvim ~/.config
 ln -s ~/Development/dotfiles/ssh/config ~/.ssh
 ln -s ~/Development/dotfiles/ssh/known_hosts ~/.ssh
