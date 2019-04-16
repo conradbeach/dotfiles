@@ -77,6 +77,10 @@ curl https://raw.githubusercontent.com/thoughtbot/dotfiles/master/bin/tat -o /us
 ## Tmux Plugin Manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+## vim-anywhere
+curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
+echo '/usr/local/opt/neovim-dot-app/bin/gnvim' > ~/.vim-anywhere/.path
+
 ## Other Other
 npm install --global emoj
 npm install --global pure-prompt
@@ -113,6 +117,8 @@ ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 
 # Apps
 echo "TODO: Hit <prefix>+I in tmux to install plugins."
+echo ""
+echo "TODO: Set vim-anywhere keybinding to Command-Option-V. (System Preferences > Keyboard > Shortcuts > Services > Vim Anywhere)"
 echo ""
 echo "TODO: Symlink dotfiles/gitkraken/profile to ~/.gitkraken/profiles/???/"
 echo ""
