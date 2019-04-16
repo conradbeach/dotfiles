@@ -74,6 +74,9 @@ curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/t
 ## tat
 curl https://raw.githubusercontent.com/thoughtbot/dotfiles/master/bin/tat -o /usr/local/bin/tat && chmod +x /usr/local/bin/tat
 
+## Tmux Plugin Manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 ## Other Other
 npm install --global emoj
 npm install --global pure-prompt
@@ -109,6 +112,8 @@ ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 
 
 # Apps
+echo "TODO: Hit <prefix>+I in tmux to install plugins."
+echo ""
 echo "TODO: Symlink dotfiles/gitkraken/profile to ~/.gitkraken/profiles/???/"
 echo ""
 echo "TODO: Install the following softwares."
