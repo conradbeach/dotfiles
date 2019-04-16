@@ -62,6 +62,9 @@ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 
 # Other Tools
 
+## Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 ## Tmuxinator
 curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -o ~/.tmuxinator.zsh
 
