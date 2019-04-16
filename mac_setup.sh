@@ -1,32 +1,5 @@
 #!/bin/bash
 
-# Dotfiles
-ln -s ~/Development/dotfiles/nvim ~/.config
-ln -s ~/Development/dotfiles/ssh/config ~/.ssh
-ln -s ~/Development/dotfiles/ssh/known_hosts ~/.ssh
-ln -s ~/Development/dotfiles/tmuxinator ~/.config
-ln -s ~/Development/dotfiles/.agignore ~
-ln -s ~/Development/dotfiles/.asdfrc ~
-ln -s ~/Development/dotfiles/.ctags ~
-ln -s ~/Development/dotfiles/.default-gems ~
-ln -s ~/Development/dotfiles/.fzf.zsh ~
-ln -s ~/Development/dotfiles/.gitconfig ~
-ln -s ~/Development/dotfiles/.gitignore_global ~
-ln -s ~/Development/dotfiles/.ideavimrc ~
-ln -s ~/Development/dotfiles/.irbrc ~
-ln -s ~/Development/dotfiles/.psqlrc ~
-ln -s ~/Development/dotfiles/.reek.yml ~
-ln -s ~/Development/dotfiles/.rspec ~
-ln -s ~/Development/dotfiles/.rubocop.yml ~
-ln -s ~/Development/dotfiles/.tmux.conf ~
-ln -s ~/Development/dotfiles/.tool-versions ~
-ln -s ~/Development/dotfiles/.vimrc ~
-ln -s ~/Development/dotfiles/.zshrc ~
-ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-zsh/themes
-ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
-
-curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -o ~/.tmuxinator.zsh
-
 # Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -88,8 +61,40 @@ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 
 
 # Other Tools
-npm install -g emoj
+
+## Tmuxinator
+curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -o ~/.tmuxinator.zsh
+
+## Other Other
+npm install --global emoj
 npm install --global pure-prompt
+npm install --global neovim
+
+
+# Link Files
+ln -s ~/Development/dotfiles/nvim ~/.config
+ln -s ~/Development/dotfiles/ssh/config ~/.ssh
+ln -s ~/Development/dotfiles/ssh/known_hosts ~/.ssh
+ln -s ~/Development/dotfiles/tmuxinator ~/.config
+ln -s ~/Development/dotfiles/.agignore ~
+ln -s ~/Development/dotfiles/.asdfrc ~
+ln -s ~/Development/dotfiles/.ctags ~
+ln -s ~/Development/dotfiles/.default-gems ~
+ln -s ~/Development/dotfiles/.fzf.zsh ~
+ln -s ~/Development/dotfiles/.gitconfig ~
+ln -s ~/Development/dotfiles/.gitignore_global ~
+ln -s ~/Development/dotfiles/.ideavimrc ~
+ln -s ~/Development/dotfiles/.irbrc ~
+ln -s ~/Development/dotfiles/.psqlrc ~
+ln -s ~/Development/dotfiles/.reek.yml ~
+ln -s ~/Development/dotfiles/.rspec ~
+ln -s ~/Development/dotfiles/.rubocop.yml ~
+ln -s ~/Development/dotfiles/.tmux.conf ~
+ln -s ~/Development/dotfiles/.tool-versions ~
+ln -s ~/Development/dotfiles/.vimrc ~
+ln -s ~/Development/dotfiles/.zshrc ~
+ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-zsh/themes
+ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 
 
 # Apps
@@ -120,7 +125,7 @@ echo "* [ ] Google Chrome"
 echo "* [ ] Google Play Music Desktop Player"
 echo "* [ ] HandBrake"
 echo "* [ ] iTerm"
-echo "    * Load config "
+echo "    * Load config"
 echo "* [ ] Kap"
 echo "* [ ] Keka"
 echo "* [ ] Lacona"
