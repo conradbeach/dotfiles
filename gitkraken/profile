@@ -1,0 +1,70 @@
+{
+  "userEmail": "conradbeach@protonmail.com",
+  "userName": "Conrad Beach",
+  "lastOpenedRepository": "/Users/cbeach/Library/Mobile Documents/com~apple~CloudDocs/Development/dotfiles/.git",
+  "layout": {
+    "RefPanel": {
+      "open": true,
+      "width": 400
+    },
+    "DetailPanel": {
+      "width": 400,
+      "height": 492
+    },
+    "HistoryPanel": {
+      "width": 450
+    }
+  },
+  "services": {
+    "github": {
+      "ssh": {
+        "keyState": "external",
+        "privateKeyPath": "/Users/cbeach/.ssh/id_rsa",
+        "publicKeyPath": "/Users/cbeach/.ssh/id_rsa.pub"
+      }
+    }
+  },
+  "favoriteRepositories": [
+    "/Users/cbeach/Development/case-notifications",
+    "/Users/cbeach/Development/jct-accounting",
+    "/Users/cbeach/Development/cloud-directory",
+    "/Users/cbeach/Development/dotfiles"
+  ],
+  "defaultTerminal": "iTerm2",
+  "useCustomTerminalCmd": false,
+  "actions": {
+    "commit": {
+      "ignoreWhiteSpace": false
+    },
+    "feedback": {
+      "feedback": null,
+      "subject": ""
+    },
+    "support": {
+      "question": null,
+      "subject": ""
+    }
+  },
+  "fileView": {
+    "diffDisplayMode": "hunk"
+  },
+  "ui": {
+    "theme": "dark",
+    "useAuthorInitialsForAvatars": true
+  },
+  "fileNodeList": {
+    "viewMode": "full_path"
+  },
+  "editor": {
+    "fontFamily": "Hack Nerd Font",
+    "fontSize": "14"
+  },
+  "profileIcon": "gravatar",
+  "profileName": "Default Profile",
+  "zoom": 1,
+  "gpg": {
+    "userSigningKey": "46C0230C743BB9A75BFA25270E8CE29231202535",
+    "commitGpgSign": true,
+    "tagForceSignAnnotated": true
+  }
+}
