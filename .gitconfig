@@ -1,7 +1,7 @@
 [user]
 	name = Conrad Beach
 	email = conradbeach@protonmail.com
-	signingKey = 46C0230C743BB9A75BFA25270E8CE29231202535
+	signingKey = 12E5F1100CCC1B8DC2D2F994CA3316FE89C6AE09
 [core]
 	excludesfile = /Users/cbeach/.gitignore_global
 	autocrlf = input
