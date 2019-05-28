@@ -159,6 +159,8 @@ ln -s ~/Development/dotfiles/.rubocop.yml ~
 ln -s ~/Development/dotfiles/.tmux.conf ~
 ln -s ~/Development/dotfiles/.tool-versions ~
 ln -s ~/Development/dotfiles/.vimrc ~
+rm ~/.zsh_history
+ln -s ~/Development/dotfiles/.zsh_history ~
 rm ~/.zshrc
 ln -s ~/Development/dotfiles/.zshrc ~
 ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-zsh/themes
