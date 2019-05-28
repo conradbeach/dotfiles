@@ -139,7 +139,7 @@ plugins=(git colored-man-pages)
 source $ZSH/plugins/history-substring-search/history-substring-search.zsh
 source $ZSH/z.sh
 source $ZSH/zsh-git-prompt/zshrc.sh
-source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
