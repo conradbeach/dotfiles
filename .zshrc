@@ -1,4 +1,4 @@
-export ZSH=/Users/cbeach/.oh-my-zsh # Path to your oh-my-zsh installation.
+export ZSH=~/.oh-my-zsh # Path to your oh-my-zsh installation.
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
@@ -125,7 +125,7 @@ alias gcnv="git commit --no-verify"
 # Guard
 alias gg="bundle exec guard -c"
 # CPU Profiling
-alias record-cpu-usage="TODAY=`date '+%Y-%m-%d'` && top -l 28800 -ocpu -R -F -s 1 | grep 'CPU usage' --line-buffered | tee -a '/Users/cbeach/CPU Usage/raw_data/$TODAY.txt'"
+alias record-cpu-usage="TODAY=`date '+%Y-%m-%d'` && top -l 28800 -ocpu -R -F -s 1 | grep 'CPU usage' --line-buffered | tee -a '~/CPU Usage/raw_data/$TODAY.txt'"
 alias open_am="open -n -a 'Activity Monitor'"
 
 ## Plugins
@@ -162,7 +162,7 @@ prompt pure
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # heroku autocomplete setup
-HEROKU_AC_ZSH_SETUP_PATH=/Users/cbeach/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
 ## Functions/Scripts
 function mcd() {
