@@ -136,7 +136,6 @@ yarn global add neovim
 
 # Link Files
 echo "** Symlinking Files **"
-ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Development ~
 ln -s ~/Development/dotfiles/nvim ~/.config
 ln -s ~/Development/dotfiles/ssh/config ~/.ssh
 rm ~/.ssh/known_hosts
