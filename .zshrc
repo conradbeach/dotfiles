@@ -128,6 +128,12 @@ alias gg="bundle exec guard -c"
 alias record-cpu-usage="TODAY=`date '+%Y-%m-%d'` && top -l 28800 -ocpu -R -F -s 1 | grep 'CPU usage' --line-buffered | tee -a '~/CPU Usage/raw_data/$TODAY.txt'"
 alias open_am="open -n -a 'Activity Monitor'"
 
+## Functions
+mkcd () {
+  mkdir "$1"
+  cd "$1"
+}
+
 ## Plugins
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
