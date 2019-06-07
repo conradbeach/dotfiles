@@ -272,9 +272,9 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>289 258 796 486 0 0 1440 900 </string>
+	<string>289 206 918 512 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 113 1330 762 0 0 1440 900 </string>
+	<string>0 115 1330 762 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>110 53 1330 762 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -542,7 +542,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string></string>
+			<string>tat</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -929,7 +929,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>95340145-F4EC-45DD-80C2-542AF77A454D</string>
 	<key>NoSyncLastTipTime</key>
-	<real>581272009.13355398</real>
+	<real>581615281.36822402</real>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -938,6 +938,8 @@
 	<array>
 		<string>000</string>
 		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -991,7 +993,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-06-03T16:26:49Z</date>
+	<date>2019-06-07T15:47:59Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
