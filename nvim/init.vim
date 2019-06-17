@@ -315,6 +315,8 @@ au TabLeave * let g:lasttab = tabpagenr()
 map <Leader>q :q<CR>
 " Delete Ruby comment lines.
 map <Leader>drc :g/^\s*#/d<CR>:noh<CR>
+" Run the Elixir formatter on the current file.
+map <Leader>fe :!mix format %<CR>
 " Delete empty lines.
 map <Leader>del :g/^\s*$/d<CR>:noh<CR>
 " Remove search highlights.
