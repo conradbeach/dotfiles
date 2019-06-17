@@ -180,6 +180,8 @@ echo "TODO: Set vim-anywhere keybinding to Command-Option-V. (System Preferences
 echo ""
 echo "TODO: Symlink dotfiles/gitkraken/profile to ~/.gitkraken/profiles/???/"
 echo ""
+echo "TODO: Copy ~/.atom config folder from Time Machine backup onto this machine."
+echo ""
 echo "TODO: Install the following softwares."
 echo "**************************************"
 echo "* [ ] Neovim.app"
