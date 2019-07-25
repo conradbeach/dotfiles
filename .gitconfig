@@ -50,4 +50,4 @@
 [tag]
 	forceSignAnnotated = true
 [gpg]
-	program = gpg
+	program = /usr/local/Cellar/gnupg/2.2.15/bin/gpg
