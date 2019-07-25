@@ -43,6 +43,8 @@
 [commit]
 	verbose = true
 	gpgSign = true
+	template = /Users/conrad/git-commit-template.txt
+	cleanup = strip
 [rebase]
 	autosquash = true
 [tag]
