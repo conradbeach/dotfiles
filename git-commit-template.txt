@@ -1,12 +1,9 @@
 
 # <type>: (If applied, this commit will...) <subject>
 
-
 # Explain why this change is being made. Explain what and why vs. how.
+# Provide links or keys to any relevant tickets, articles or other resources.
 
-
-# Provide links or keys to any relevant tickets, articles or other resources
-# Example: Github issue #23
 
 # --- COMMIT END ---
 # Before committing:
