@@ -9,6 +9,7 @@ echo "** Installing Brew Packages **"
 brew install ack
 brew install asciinema
 brew install bat
+brew install circleci
 brew install cmake
 brew install ctags
 brew install diff-so-fancy
@@ -143,6 +144,7 @@ ln -s ~/Development/dotfiles/ssh/known_hosts ~/.ssh
 ln -s ~/Development/dotfiles/tmuxinator ~/.config
 ln -s ~/Development/dotfiles/.agignore ~
 ln -s ~/Development/dotfiles/.asdfrc ~
+ln -s ~/Development/dotfiles/.circleci ~
 ln -s ~/Development/dotfiles/.ctags ~
 ln -s ~/Development/dotfiles/.default-gems ~
 rm ~/.fzf.zsh
