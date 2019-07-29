@@ -3,7 +3,7 @@
 	email = conradbeach@protonmail.com
 	signingKey = 12E5F1100CCC1B8DC2D2F994CA3316FE89C6AE09
 [core]
-	excludesfile = /Users/cbeach/.gitignore_global
+	excludesfile = /Users/conrad/.gitignore_global
 	autocrlf = input
 	editor = nvim
 	pager = diff-so-fancy | less --tabs=2 -RFX
