@@ -51,7 +51,7 @@ windows:
           - bundle exec rails console
           - pry
   - yard-langserver:
-      layout: dee1,173x50,0,0{146x50,0,0,5,26x50,147,0,9}
+      layout: even-horizontal
       panes:
         - yard:
           - yard server --reload
