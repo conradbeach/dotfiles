@@ -82,3 +82,5 @@ RSpec
 Postgres
 Clearstream
 performant
+Switchfoot
+IEx
