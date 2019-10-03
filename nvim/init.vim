@@ -4,6 +4,7 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'w0rp/ale'
+Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
@@ -27,6 +28,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'takac/vim-hardtime'
 Plug 'machakann/vim-highlightedyank'
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-repeat'
