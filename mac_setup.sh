@@ -49,9 +49,11 @@ brew services start postgresql
 # Link Files
 echo "\n** Symlinking Files **"
 ln -s ~/Development/dotfiles/nvim ~/.config
-ln -s ~/Development/dotfiles/ssh/config ~/.ssh
+mkdir ~/.ssh
+rm ~/.ssh/config
+ln -s ~/Development/dotfiles/ssh/config ~/.ssh/
 rm ~/.ssh/known_hosts
-ln -s ~/Development/dotfiles/ssh/known_hosts ~/.ssh
+ln -s ~/Development/dotfiles/ssh/known_hosts ~/.ssh/
 ln -s ~/Development/dotfiles/tmuxinator ~/.config
 ln -s ~/Development/dotfiles/.agignore ~
 ln -s ~/Development/dotfiles/.asdfrc ~
