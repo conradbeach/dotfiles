@@ -45,10 +45,14 @@ Plug 'tpope/vim-vinegar'
 " Elixir
 Plug 'elixir-editors/vim-elixir'
 Plug 'slashmili/alchemist.vim'
+" HTML
+Plug 'mattn/emmet-vim'
 " JavaScript
+Plug 'othree/es.next.syntax.vim'
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'othree/yajs.vim'
 " Markdown
 Plug 'gabrielelana/vim-markdown'
 " Ruby & Rails
@@ -129,6 +133,7 @@ let g:gitgutter_map_keys = 0
 
 " autozimu/LanguageClient-neovim
 let g:LanguageClient_serverCommands = {
+  \ 'javascript': ['javascript-typescript-stdio'],
   \ 'ruby': ['orbaclerun', 'file-server'],
   \ }
 nnoremap <Leader>sj :call LanguageClient_textDocument_definition()<CR>
@@ -172,6 +177,13 @@ let g:hardtime_default_on = 1
 let g:hardtime_timeout = 1000
 let g:hardtime_allow_different_key = 1
 let g:hardtime_maxcount = 5
+
+" emmet-vim
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
 
 """""""""""""""""
 " Sets
