@@ -187,6 +187,7 @@ echo "\nTODO: Generate new SSH key. (Use GitHub's guide: https://help.github.com
 echo "\nTODO: Add the new GPG and SSH keys to your GitHub account."
 echo "\nTODO: Copy ~/.atom config folder from Time Machine backup onto this machine."
 echo "\nTODO: Copy ~/Development folder from Time Machine backup onto this machine."
+echo "\nTODO: Copy '~/VirtualBox VMs' folder from Time Machine backup onto this machine."
 echo "\nTODO: Check if there are any other files you should copy from Time Machine. Shouldn't be."
 echo "\nTODO: Turn on FileVault. Go through other MacOS settings as well."
 echo "\n\nTODO: Install the following softwares."
