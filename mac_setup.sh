@@ -173,7 +173,8 @@ echo "\n** Installing Other Various Tools **"
 yarn global add emoj
 yarn global add pure-prompt
 yarn global add neovim
-
+yarn global add prettier
+yarn global add eslint
 
 
 # Apps
