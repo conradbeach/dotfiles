@@ -176,7 +176,7 @@ let g:mkdp_path_to_chrome = "open -a 'Firefox Developer Edition'"
 let g:hardtime_default_on = 1
 let g:hardtime_timeout = 1000
 let g:hardtime_allow_different_key = 1
-let g:hardtime_maxcount = 5
+let g:hardtime_maxcount = 10
 
 " emmet-vim
 let g:user_emmet_settings = {
