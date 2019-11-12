@@ -25,7 +25,6 @@ Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'takac/vim-hardtime'
 Plug 'machakann/vim-highlightedyank'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-endwise'
@@ -175,12 +174,6 @@ let g:mkdp_path_to_chrome = "open -a 'Firefox Developer Edition'"
 
 " rizatti/dash.vim
 :nmap <Leader>dash <Plug>DashSearch
-
-" takac/vim-hardtime
-let g:hardtime_default_on = 1
-let g:hardtime_timeout = 1000
-let g:hardtime_allow_different_key = 1
-let g:hardtime_maxcount = 10
 
 " emmet-vim
 let g:user_emmet_settings = {
