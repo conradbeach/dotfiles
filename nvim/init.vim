@@ -4,7 +4,6 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'w0rp/ale'
-Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
