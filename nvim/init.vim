@@ -211,6 +211,7 @@ set smartcase " Case sensitive searching when an uppercase letter is included in
 set cursorline
 set number " Show line numbers
 set relativenumber " Show relative line numbers
+set lazyredraw " Do not redraw screen in the middle of a macro. Makes them complete faster.
 set undofile " Persist undo history after closing and reopening.
 
 " Enable mouse scrolling
