@@ -18,6 +18,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'joshdick/onedark.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'godlygeek/tabular'
+Plug 'mbbill/undotree'
 Plug 'tpope/vim-abolish'
 Plug '907th/vim-auto-save'
 Plug 'tpope/vim-bundler'
@@ -181,6 +182,9 @@ let g:user_emmet_settings = {
     \  },
   \}
 
+" undotree
+nnoremap <Leader>u :UndotreeToggle<cr>
+
 """""""""""""""""
 " Sets
 """""""""""""""""
@@ -207,6 +211,7 @@ set smartcase " Case sensitive searching when an uppercase letter is included in
 set cursorline
 set number " Show line numbers
 set relativenumber " Show relative line numbers
+set undofile " Persist undo history after closing and reopening.
 
 " Enable mouse scrolling
 set mouse=a
