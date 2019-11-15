@@ -80,6 +80,7 @@ ln -s ~/Development/dotfiles/.zshrc ~
 ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-zsh/themes
 mkdir ~/.gnupg/
 ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
+ln -s ~/Development/dotfiles/git-commit-template.txt ~
 
 
 # asdf
