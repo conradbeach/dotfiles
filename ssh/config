@@ -5,3 +5,6 @@ Host *
 Host mopit
  HostName sipsjc1-07.nexcess.net
  User mopitflo
+Host act-beta
+  HostName 3.82.129.129
+  User ubuntu
