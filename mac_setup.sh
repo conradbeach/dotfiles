@@ -116,6 +116,10 @@ brew install jq
 brew install coreutils
 asdf plugin-add java https://github.com/halcyon/asdf-java.git
 
+## Elasticsearch
+echo "\n** Installing Elasticsearch **"
+asdf plugin-add elasticsearch https://github.com/mikestephens/asdf-elasticsearch.git
+
 ## Install Global Versions
 echo "\n** Installing All Global Versions of Languages **"
 asdf install
