@@ -110,6 +110,12 @@ brew install coreutils gpg
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
+## Java
+echo "\n** Installing Java **"
+brew install jq
+brew install coreutils
+asdf plugin-add java https://github.com/halcyon/asdf-java.git
+
 ## Install Global Versions
 echo "\n** Installing All Global Versions of Languages **"
 asdf install
