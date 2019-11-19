@@ -120,6 +120,12 @@ asdf plugin-add java https://github.com/halcyon/asdf-java.git
 echo "\n** Installing Elasticsearch **"
 asdf plugin-add elasticsearch https://github.com/mikestephens/asdf-elasticsearch.git
 
+## PostgreSQL
+### The primary installation of Postgres is done with Brew. Alternative versions
+### are installed with asdf.
+echo "\n** Installing PostgreSQL **"
+asdf plugin-add postgres
+
 ## Install Global Versions
 echo "\n** Installing All Global Versions of Languages **"
 asdf install
