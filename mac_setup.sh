@@ -89,6 +89,10 @@ rm -rf ~/.asdf
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.5
 source ~/.zshrc
 
+## Dependencies
+echo "\n** Installing Dependencies **"
+xcode-select --install
+
 ## Ruby
 echo "\n** Installing Ruby **"
 xcode-select --install
