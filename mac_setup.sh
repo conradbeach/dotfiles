@@ -19,6 +19,7 @@ $(brew --prefix)/opt/fzf/install
 brew install git
 brew tap heroku/brew && brew install heroku
 brew install htop
+brew install httpie
 brew install mas
 brew install neovim
 brew install pinentry-mac
