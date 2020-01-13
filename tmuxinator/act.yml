@@ -49,12 +49,14 @@ windows:
           - bundle exec rails console
           - pry
   - servers:
-      layout: even-horizontal
+      layout: 5057,231x67,0,0{115x67,0,0,27,115x67,116,0[115x33,116,0,28,115x33,116,34,29]}
       panes:
         - rails_server:
           - bundle exec rails server -p 3050
         - yarn_hot:
           - yarn hot
+        - que:
+          - bundle exec que -w 1 ./config/environment.rb
   - helpers:
       - solargraph
       - solargraph stdio
