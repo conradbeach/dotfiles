@@ -56,7 +56,7 @@ windows:
         - yarn_hot:
           - yarn hot
         - que:
-          - bundle exec que ./config/environment.rb
+          - bundle exec que -w 1 ./config/environment.rb
   - helpers:
       - solargraph
       - solargraph stdio
