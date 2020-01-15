@@ -16,7 +16,7 @@ Metrics/BlockLength:
   Exclude: ['spec/**/*', 'config/**/*']
   Enabled: true
 
-Metrics/LineLength:
+Layout/LineLength:
   Description: 'Limit lines to 80 characters.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#80-character-limits'
   Max: 100
@@ -61,7 +61,7 @@ Style/RegexpLiteral:
   EnforcedStyle: slashes
   Enabled: true
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
   Enabled: true
 
