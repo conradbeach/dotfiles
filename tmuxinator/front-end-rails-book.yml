@@ -53,7 +53,8 @@ windows:
       panes:
         - rails_server:
           - bundle exec rails server
-        -
+        - webpack:
+          - bin/webpack-dev-server
   - helpers:
       - solargraph
       - solargraph stdio
