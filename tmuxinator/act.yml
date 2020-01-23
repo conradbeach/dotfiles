@@ -45,6 +45,7 @@ windows:
       layout: even-horizontal
       panes:
         - terminal:
+          - mux start catalyst
         - rails_console:
           - bundle exec rails console
           - pry
