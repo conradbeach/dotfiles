@@ -275,9 +275,6 @@ autocmd VimEnter * source ~/.config/nvim/init.vim
 " Set these options so Vim will be able to actually save the crontab.
 autocmd filetype crontab setlocal nobackup nowritebackup
 
-" If a tags file exists, update that tags file when Vim starts.
-autocmd VimEnter * :silent !test -e tags && ctags
-
 """""""""""""""""
 " Maps
 """""""""""""""""
