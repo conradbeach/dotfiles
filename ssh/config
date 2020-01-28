@@ -8,3 +8,6 @@ Host mopit
 Host act-beta
   HostName 3.82.129.129
   User ubuntu
+Host act-prod
+  HostName 34.225.132.216
+  User ubuntu
