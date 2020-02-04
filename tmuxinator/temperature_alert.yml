@@ -41,15 +41,20 @@ root: ~/Development/temperature_alert
 
 windows:
   - editor: nvim
-  - rails-server-console:
-      layout: 5057,231x67,0,0{115x67,0,0,27,115x67,116,0[115x33,116,0,28,115x33,116,34,29]}
+  - terminal-console:
+      layout: even-horizontal
       panes:
         - terminal:
-        - rails_server:
-          - bundle exec rails server
         - rails_console:
           - bundle exec rails console
           - pry
+  - servers:
+      layout: even-horizontal
+      panes:
+        - rails_server:
+          - bundle exec rails server
+        - webpack:
+          - bin/webpack-dev-server
   - yard-langserver:
       layout: even-horizontal
       panes:
