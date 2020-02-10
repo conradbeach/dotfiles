@@ -168,6 +168,9 @@ prompt pure
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
+## asdf-java
+. $HOME/.asdf/plugins/java/set-java-home.sh
+
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
