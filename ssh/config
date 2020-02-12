@@ -5,6 +5,15 @@ Host *
 Host act-beta
   HostName 52.70.205.192
   User ubuntu
+Host act-dev
+  HostName 50.252.131.234
+  User ubuntu
 Host act-prod
   HostName 34.225.132.216
+  User ubuntu
+Host act-prod-au
+  HostName 54.153.242.52
+  User ubuntu
+Host act-prod-ie
+  HostName 54.171.98.83
   User ubuntu
