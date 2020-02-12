@@ -3,7 +3,7 @@ Host *
  UseKeychain yes
  IdentityFile ~/.ssh/id_rsa
 Host act-beta
-  HostName 3.82.129.129
+  HostName 52.70.205.192
   User ubuntu
 Host act-prod
   HostName 34.225.132.216
