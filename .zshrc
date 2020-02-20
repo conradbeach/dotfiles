@@ -133,6 +133,8 @@ alias open_am="open -n -a 'Activity Monitor'"
 alias aalint="bundle exec pronto run -r eslint_npm rubocop"
 
 ## Functions
+
+# $1 - The name of the new directory.
 mkcd () {
   mkdir "$1"
   cd "$1"
