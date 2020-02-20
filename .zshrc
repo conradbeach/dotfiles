@@ -140,6 +140,19 @@ mkcd () {
   cd "$1"
 }
 
+# $1 - The name of the file.
+# $2 (optional) - The path to create the file at.
+new_md () {
+  if [ -z "$2" ]
+  then # No path was given.
+    new_file_path=$1.md
+  else
+    mkdir -p $2
+    new_file_path=$2/$1.md
+  fi
+  echo "# $1" >> $new_file_path
+}
+
 ## Plugins
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
