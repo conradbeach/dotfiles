@@ -24,9 +24,9 @@ brew install mas
 brew install neovim
 brew install pinentry-mac
 brew install python
-brew install python@2
 brew tap thoughtbot/formulae && brew install rcm
 brew install ripgrep
+brew install speedtest-cli
 brew install the_silver_searcher
 brew install tldr
 brew install tmux
@@ -50,6 +50,7 @@ brew services start postgresql
 # Link Files
 echo "\n** Symlinking Files **"
 ln -s ~/Development/dotfiles/nvim ~/.config
+ln -s ~/Development/dotfiles/.circleci ~
 mkdir ~/.ssh
 rm ~/.ssh/config
 ln -s ~/Development/dotfiles/ssh/config ~/.ssh/
@@ -58,7 +59,6 @@ ln -s ~/Development/dotfiles/ssh/known_hosts ~/.ssh/
 ln -s ~/Development/dotfiles/tmuxinator ~/.config
 ln -s ~/Development/dotfiles/.agignore ~
 ln -s ~/Development/dotfiles/.asdfrc ~
-ln -s ~/Development/dotfiles/.circleci ~
 ln -s ~/Development/dotfiles/.ctags ~
 ln -s ~/Development/dotfiles/.default-gems ~
 rm ~/.fzf.zsh
@@ -241,9 +241,10 @@ echo "* [ ] Google Play Music Desktop Player"
 echo "* [ ] HandBrake"
 echo "* [ ] iTerm"
 echo "    * Load config from this repo."
+echo "* [ ] Jabra Direct"
 echo "* [ ] Kap"
 echo "* [ ] Keka"
-echo "* [ ] Kindle"
+echo "* [ ] KeyboardCleanTool"
 echo "* [ ] Lacona"
 echo "    * Change keybinding to command-space."
 echo "    * Change Spotlight keybinding to option-space. (In Settings > Keyboard > Shortcuts > Spotlight"
@@ -251,7 +252,6 @@ echo "    * Install addons: Caffeniate, Convert Currency, GitHub, Shell Commands
 echo "* [ ] Noizio (Mac App Store)"
 echo "* [ ] Numi"
 echo "* [ ] Oni"
-echo "* [ ] OnionShare"
 echo "* [ ] Postman"
 echo "    * Login to get saved API calls."
 echo "* [ ] ProtonVPN"
