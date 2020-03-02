@@ -4,7 +4,7 @@ Execute this routine regularly.
 
 Backup the following files to this dotfiles repository:
 - Terminal.app profile
-- iTerm2 config
+- iTerm2 config (Settings > General > Preferences)
 - BetterTouchTool config
 - App List (add to mac_setup.sh)
 - Brew packages (add to mac_setup.sh)
