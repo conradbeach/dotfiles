@@ -72,5 +72,10 @@ RSpec/ExampleLength:
 
 RSpec/MultipleExpectations:
   Description: Checks if examples contain too many expect calls.
-  Max: 3
+  Max: 5
+  Enabled: true
+
+RSpec/NotToNot:
+  Description: Checks for consistent method usage for negating expectations.
+  EnforcedStyle: to_not
   Enabled: true
