@@ -9,6 +9,8 @@ echo "\n** Installing Brew Packages **"
 brew install ack
 brew install asciinema
 brew install bat
+brew tap homebrew/cask
+brew cask install chromedriver
 brew install circleci
 brew install cmake
 brew install ctags
