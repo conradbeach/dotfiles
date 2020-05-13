@@ -89,7 +89,7 @@ ln -s ~/Development/dotfiles/git-commit-template.txt ~
 # asdf
 echo "\n** Installing asdf **"
 rm -rf ~/.asdf
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.6
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.8
 source ~/.zshrc
 
 ## Dependencies
