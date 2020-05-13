@@ -183,9 +183,9 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
-
+. $(brew --prefix asdf)/asdf.sh
+## asdf-ruby
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 ## asdf-java
 . $HOME/.asdf/plugins/java/set-java-home.sh
 
