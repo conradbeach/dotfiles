@@ -32,6 +32,7 @@ brew install speedtest-cli
 brew install the_silver_searcher
 brew install tldr
 brew install tmux
+brew install tmuxinator
 brew install trash
 brew install tree
 brew cask install virtualbox && brew cask install vagrant && brew cask install vagrant-manager
@@ -175,7 +176,7 @@ echo "\n** Installing z **"
 curl https://raw.githubusercontent.com/rupa/z/master/z.sh -o ~/.oh-my-zsh/z.sh
 
 ## Tmuxinator
-echo "\n** Installing Tmuxinator **"
+echo "\n** Installing Tmuxinator Completions **"
 curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -o ~/.tmuxinator.zsh
 
 ## tat
