@@ -64,6 +64,7 @@ ln -s ~/Development/dotfiles/.agignore ~
 ln -s ~/Development/dotfiles/.asdfrc ~
 ln -s ~/Development/dotfiles/.ctags ~
 ln -s ~/Development/dotfiles/.default-gems ~
+ln -s ~/Development/dotfiles/.default-npm-packages ~
 rm ~/.fzf.zsh
 ln -s ~/Development/dotfiles/.fzf.zsh ~
 ln -s ~/Development/dotfiles/.gitconfig ~
@@ -193,12 +194,6 @@ echo "\n** Installing vim-anywhere **"
 brew install macvim
 curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
 echo '/usr/local/opt/neovim-dot-app/bin/gnvim' > ~/.vim-anywhere/.path
-
-## Other Other
-echo "\n** Installing Other Various Tools **"
-yarn global add emoj
-yarn global add pure-prompt
-yarn global add neovim
 
 
 # Apps
