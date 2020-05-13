@@ -90,12 +90,13 @@ ln -s ~/Development/dotfiles/git-commit-template.txt ~
 # asdf
 echo "\n** Installing asdf **"
 rm -rf ~/.asdf
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.8
+brew install asdf
 source ~/.zshrc
 
 ## Dependencies
 echo "\n** Installing Dependencies **"
 xcode-select --install
+brew install coreutils curl git
 
 ## Ruby
 echo "\n** Installing Ruby **"
