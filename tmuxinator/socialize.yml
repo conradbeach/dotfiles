@@ -58,5 +58,10 @@ windows:
         - que:
           - bundle exec que -w 1 ./config/environment.rb
   - helpers:
-      - solargraph
-      - solargraph stdio
+      layout: even-horizontal
+      panes:
+        - solargraph:
+          - solargraph
+          - solargraph stdio
+        - postgres:
+          - pg_ctl start
