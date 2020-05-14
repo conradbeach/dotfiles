@@ -188,7 +188,7 @@ prompt pure
 ## asdf-ruby
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 ## asdf-java
-. $HOME/.asdf/plugins/java/set-java-home.sh
+. ~/.asdf/plugins/java/set-java-home.zsh
 
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
