@@ -338,8 +338,9 @@ map <Leader>del :g/^\s*$/d<CR>:noh<CR>
 " Remove search highlights.
 map <Leader>nh :noh<CR>
 " Open NERDtree.
-map <Leader>x :NERDTree<CR>
+map <Leader>x :NERDTreeToggle<CR>
 map <Leader>nx :tabnew<CR>:NERDTree<CR>
+map <Leader>fx :NERDTreeFind<CR>
 
 " zoom a vim pane, <C-w>= to re-balance
 nnoremap <Leader>z :wincmd _<CR>:wincmd \|<CR>
