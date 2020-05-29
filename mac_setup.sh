@@ -195,6 +195,9 @@ brew install macvim
 curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
 echo '/usr/local/opt/neovim-dot-app/bin/gnvim' > ~/.vim-anywhere/.path
 
+# Settings
+echo "\n\nTODO: Go through MacOS settings and update as needed."
+echo "\nTODO: Next time you do this. Make a note here in this script of everything that you change."
 
 # Apps
 echo "\n\nTODO: Run :checkhealth in Neovim."
@@ -253,6 +256,7 @@ echo "* [ ] Oni"
 echo "* [ ] Postman"
 echo "    * Login to get saved API calls."
 echo "* [ ] ProtonVPN"
+echo "* [ ] Quitter (https://marco.org/apps)"
 echo "* [ ] Slack"
 echo "* [ ] Snip (Mac App Store)"
 echo "    * Set shortcut to command-control-n"
