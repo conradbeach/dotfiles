@@ -3,6 +3,7 @@
 
 # Explain why this change is being made. Explain what and why vs. how.
 # Provide links or keys to any relevant tickets, articles or other resources.
+# |<----   Try To Limit Each Line to a Maximum Of 72 Characters   ---->|
 
 
 # --- COMMIT END ---
