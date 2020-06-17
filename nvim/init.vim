@@ -110,7 +110,7 @@ map <Leader>tof :VtrSendCommandToRunner clear; echo -e 'spring rspec --only-fail
 map <Leader>toof :VtrSendCommandToRunner clear; echo -e 'spring rspec --next-failure'; bundle exec spring rspec --next-failure<CR>
 
 " vim-tmux-runner
-let g:VtrPercentage = 30
+let g:VtrPercentage = 35
 let g:VtrOrientation = "v"
 let g:VtrGitCdUpOnOpen = 1
 map <Leader>ro :VtrOpenRunner<CR>
