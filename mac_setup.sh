@@ -191,7 +191,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ## vim-anywhere
 echo "\n** Installing vim-anywhere **"
-brew install macvim
 curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
 echo '/usr/local/opt/neovim-dot-app/bin/gnvim' > ~/.vim-anywhere/.path
 
@@ -203,7 +202,7 @@ echo "\nTODO: Next time you do this. Make a note here in this script of everythi
 echo "\n\nTODO: Run :checkhealth in Neovim."
 echo "\nTODO: Run :PlugInstall in Neovim."
 echo "\nTODO: Hit <prefix>+I in tmux to install plugins."
-echo "\nTODO: Set vim-anywhere keybinding to Command-Option-V. (System Preferences > Keyboard > Shortcuts > Services > Vim Anywhere)"
+echo "\nTODO: Set vim-anywhere keybinding to Command-Control-V. (System Preferences > Keyboard > Shortcuts > Services > Vim Anywhere)"
 echo "\nTODO: Symlink dotfiles/gitkraken/profile to ~/.gitkraken/profiles/???/"
 echo "\nTODO: Generate new GPG key. (Using GitKraken is the easiest. GitHub has a good guide that works too.)"
 echo "\nTODO: Generate new SSH key. (Use GitHub's guide: https://help.github.com/en/articles/about-ssh)"
