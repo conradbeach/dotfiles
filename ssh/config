@@ -2,11 +2,11 @@ Host *
  AddKeysToAgent yes
  UseKeychain yes
  IdentityFile ~/.ssh/id_rsa
-Host act-beta
-  HostName 52.70.205.192
-  User ubuntu
 Host act-dev
   HostName 50.252.131.234
+  User ubuntu
+Host act-beta
+  HostName 52.70.205.192
   User ubuntu
 Host act-prod
   HostName 34.225.132.216
