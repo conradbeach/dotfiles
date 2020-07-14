@@ -229,7 +229,9 @@ set wrapmargin=0
 " Wrap text, but not in the middle of a word.
 set wrap
 set linebreak
-set nolist
+
+" Show whitespace characters.
+set list
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
