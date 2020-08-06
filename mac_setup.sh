@@ -49,6 +49,39 @@ echo "\n** Installing Brew Services **"
 brew install postgresql
 brew services start postgresql
 
+## Applications
+echo "\n** Installing Applications via Brew Cask**"
+brew cask install atom
+brew cask install aware
+brew cask install balenaetcher
+brew cask install bettertouchtool
+brew cask install bitwarden
+brew cask install brave-browser
+brew cask install maccy
+brew cask install dash
+brew cask install firefox
+brew cask install homebrew/cask-versions/firefox-developer-edition
+brew cask install gimp
+brew cask install gitkraken
+brew cask install google-chrome
+brew cask install marshallofsound-google-play-music-player
+brew cask install handbrake
+brew cask install iterm2
+brew cask install homebrew/cask-drivers/jabra-direct
+brew cask install kap
+brew cask install keyboardcleantool
+brew cask install lacona
+brew cask install numi
+brew cask install oni
+brew cask install postman
+brew cask install protonvpn
+brew cask install slack
+brew cask install snip
+brew cask install tableplus
+brew cask install virtualbox
+brew cask install virtualbox-extension-pack
+brew cask install visual-studio-code
+brew cask install vlc
 
 # Link Files
 echo "\n** Symlinking Files **"
@@ -213,72 +246,27 @@ echo "\nTODO: Copy '~/VirtualBox VMs' folder from Time Machine backup onto this 
 echo "\nTODO: Check if there are any other files you should copy from Time Machine. Shouldn't be."
 echo "\nTODO: Turn on FileVault. Go through other MacOS settings as well."
 echo "\n\nTODO: Install the following softwares."
+echo "\n\nTODO: Make the following changes to applications."
 echo "**************************************"
-echo "* [ ] Atom"
-echo "* [ ] Aware (Mac App Store)"
-echo "* [ ] balenaEtcher"
 echo "* [ ] BetterTouchTool"
 echo "    * Load license."
 echo "    * Load keybindings."
-echo "* [ ] Bitwarden"
-echo "* [ ] Brave Browser"
-echo "* [ ] CopyClip2"
 echo "* [ ] Dash"
 echo "    * Load License"
 echo "    * Load sync files (in iCloud)"
 echo "    * Set up syncing. Sync files are in iCloud Drive > Dash Sync."
-echo "* [ ] Emacs (from https://emacsforosx.com/)"
-echo "    * Add evil-mode which will give you excellent Vim emulation"
-echo "    * Consider prelude (https://github.com/bbatsov/prelude/)"
-echo "    * Consider spacemacs (spacemacs.org)"
-echo "    * The guys at thoughtbot recommend against starting with prelude or spacemacs; they think it's better to learn core Emacs first. One of them wrote sensible-defaults.el though which fixes some of the clunkiness that Emacs comes with out of the box. https://github.com/hrs/sensible-defaults.el"
-echo "* [ ] Firefox Developer Edition"
-echo "* [ ] Firefox"
-echo "* [ ] GIMP"
-echo "* [ ] GitKraken"
-echo "* [ ] Google Chrome"
-echo "* [ ] Google Play Music Desktop Player"
-echo "* [ ] HandBrake"
 echo "* [ ] iTerm"
 echo "    * Load config from this repo."
-echo "* [ ] Jabra Direct"
-echo "* [ ] Kap"
-echo "* [ ] Keka"
-echo "* [ ] KeyboardCleanTool"
 echo "* [ ] Lacona"
 echo "    * Change keybinding to command-space."
-echo "    * Change Spotlight keybinding to option-space. (In Settings > Keyboard > Shortcuts > Spotlight"
-echo "    * Install addons: Caffeniate, Convert Currency, GitHub, Shell Commands, Time Zones, Timers & Alarms."
-echo "* [ ] Noizio (Mac App Store)"
-echo "* [ ] Numi"
-echo "* [ ] Oni"
-echo "* [ ] Postman"
-echo "    * Login to get saved API calls."
-echo "* [ ] ProtonVPN"
-echo "* [ ] Quitter (https://marco.org/apps)"
-echo "* [ ] Slack"
+echo "    * Change Spotlight keybinding to option-space. (In Settings > Keyboard Shortcuts > Spotlight.)"
+echo "    * Install addons: Caffeniate, Convert Currency, Time Zones, Timers & Alarms."
+echo "* [ ] Maccy (https://maccy.app/)"
+echo "    * Change keyboard shortcut to Ctrl-Space"
+echo "    * Update other settings."
 echo "* [ ] Snip (Mac App Store)"
 echo "    * Set shortcut to command-control-n"
-echo "* [ ] Sophos Home (Log into your Sophos.com dashboard to install.)"
-echo "* [ ] Station"
-echo "    * Gmail (Atomic Jolt)"
-echo "    * Harvest"
-echo "    * Slack (thebetterbeachhouse, logandevs, atomic-jolt)"
-echo "    * GitHub"
-echo "    * GitLab"
-echo "    * Pivotal Tracker"
-echo "    * Google Drive (Atomic Jolt)"
-echo "    * Google Calendar (Atomic Jolt)"
-echo "    * Trello"
-echo "    * ProtonMail"
-echo "* [ ] TablePlus"
 echo "* [ ] Terminal.app"
 echo "    * Load theme."
 echo "    * In Settings > General, set custom theme to be the default."
 echo "    * In Settings > General, change 'Shells open with:' to '/bin/zsh'."
-echo "* [ ] VirtualBox"
-echo "    * Install Extension Pack"
-echo "* [ ] Visual Studio Code"
-echo "* [ ] VLC"
-echo "* [ ] Xcode (Just install the full application even though it's massive.)"
-echo "* [ ] brew tap rogual/neovim-dot-app && brew install neovim-dot-app" # Requires Xcode
