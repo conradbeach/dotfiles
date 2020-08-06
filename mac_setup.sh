@@ -222,10 +222,6 @@ curl https://raw.githubusercontent.com/thoughtbot/dotfiles/master/bin/tat -o /us
 echo "\n** Installing Tmux Plugin Manager **"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-# Settings
-echo "\n\nTODO: Go through MacOS settings and update as needed."
-echo "\nTODO: Next time you do this. Make a note here in this script of everything that you change."
-
 # Apps
 echo "\n\nTODO: Run :checkhealth in Neovim."
 echo "\nTODO: Run :PlugInstall in Neovim."
@@ -238,8 +234,12 @@ echo "\nTODO: Copy ~/.atom config folder from Time Machine backup onto this mach
 echo "\nTODO: Copy ~/Development folder from Time Machine backup onto this machine."
 echo "\nTODO: Copy '~/VirtualBox VMs' folder from Time Machine backup onto this machine."
 echo "\nTODO: Check if there are any other files you should copy from Time Machine. Shouldn't be."
-echo "\nTODO: Turn on FileVault. Go through other MacOS settings as well."
-echo "\n\nTODO: Install the following softwares."
+
+# Settings
+echo "\n\nTODO: Go through MacOS settings and update as needed."
+echo "\nTODO: Turn on FileVault especially."
+echo "\nTODO: Next time you do this. Make a note here in this script of everything that you change."
+
 echo "\n\nTODO: Make the following changes to applications."
 echo "**************************************"
 echo "* [ ] BetterTouchTool"
