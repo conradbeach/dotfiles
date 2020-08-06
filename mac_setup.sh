@@ -222,6 +222,10 @@ curl https://raw.githubusercontent.com/thoughtbot/dotfiles/master/bin/tat -o /us
 echo "\n** Installing Tmux Plugin Manager **"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+## xcode-select
+echo "\n** Installing Xcode Command Line Tools **"
+xcode-select --install
+
 # Apps
 echo "\n\nTODO: Run :checkhealth in Neovim."
 echo "\nTODO: Run :PlugInstall in Neovim."
