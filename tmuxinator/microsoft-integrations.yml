@@ -1,0 +1,71 @@
+# /Users/conrad/.config/tmuxinator/microsoft-integrations.yml
+
+name: microsoft-integrations
+root: ~/Development/atomic_jolt/microsoft-integrations
+
+# Optional tmux socket
+# socket_name: foo
+
+# Note that the pre and post options have been deprecated and will be replaced by
+# project hooks.
+
+# Project hooks
+
+# Runs on project start, always
+# on_project_start: command
+
+# Run on project start, the first time
+# on_project_first_start: command
+
+# Run on project start, after the first time
+# on_project_restart: command
+
+# Run on project exit ( detaching from tmux session )
+# on_project_exit: command
+
+# Run on project stop
+# on_project_stop: command
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: editor
+
+# Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 1
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+windows:
+  - editor: nvim
+  - terminal-console:
+      layout: even-horizontal
+      panes:
+        - terminal:
+        - rails_console:
+          - bundle exec rails console
+  - servers:
+      layout: 5057,231x67,0,0{115x67,0,0,27,115x67,116,0[115x33,116,0,28,115x33,116,34,29]}
+      panes:
+        - rails_server:
+          - bundle exec rails server -p 3030
+        - yarn_hot:
+          - yarn hot
+        - que:
+          - bundle exec que -w 1 ./config/environment.rb
+  - helpers:
+      layout: even-horizontal
+      panes:
+        - solargraph:
+          - solargraph
+          - solargraph stdio
+        - postgres:
+          - pg_ctl start
