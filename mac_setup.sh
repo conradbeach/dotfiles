@@ -346,6 +346,8 @@ echo "    * Change Spotlight keybinding to option-space. (In Settings > Keyboard
 echo "    * Install addons: Caffeniate, Convert Currency, Time Zones, Timers & Alarms."
 echo "* [ ] Snip"
 echo "    * Set shortcut to command-control-n"
+echo "* [ ] Sophos Home"
+echo "    * Log into you dashboard to install it."
 echo "* [ ] Terminal.app"
 echo "    * Load theme. (Dracula.theme in this repo.)"
 echo "    * In Settings > General, set custom theme to be the default."
