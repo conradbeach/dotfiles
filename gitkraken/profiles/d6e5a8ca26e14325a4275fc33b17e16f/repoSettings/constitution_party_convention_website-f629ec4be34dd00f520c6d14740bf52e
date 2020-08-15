@@ -1,0 +1,16 @@
+{
+  "remoteParents": {
+    "github": {
+      "atomicjolt": {
+        "adhesion": {
+          "hostingServiceType": "github",
+          "owner": "atomicjolt",
+          "name": "adhesion"
+        }
+      }
+    }
+  },
+  "templates": {
+    "shouldRemoveComments": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "remoteParents": {
+    "github": {
+      "atomicjolt": {
+        "jsPDF": {
+          "hostingServiceType": "github",
+          "owner": "MrRio",
+          "name": "jsPDF"
+        }
+      }
+    }
+  },
+  "layout": {
+    "GraphPanel": {
+      "Tree": {
+        "width": 590
+      },
+      "RefZone": {
+        "width": 300
+      }
+    }
+  }
+}

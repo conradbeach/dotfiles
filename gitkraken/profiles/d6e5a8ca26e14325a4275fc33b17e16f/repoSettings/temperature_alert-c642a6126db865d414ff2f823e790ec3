@@ -1,0 +1,29 @@
+{
+  "remoteParents": {
+    "github": {
+      "conradbeach": {
+        "temperature_alert": {
+          "hostingServiceType": "github",
+          "owner": "conradbeach",
+          "name": "temperature_alert"
+        }
+      },
+      "atomicjolt": {
+        "atomic-fuel": {
+          "hostingServiceType": "github",
+          "owner": "atomicjolt",
+          "name": "atomic-fuel"
+        }
+      }
+    },
+    "gitlab": {
+      "atomicjolt": {
+        "catalyst": {
+          "hostingServiceType": "gitlab",
+          "owner": "atomicjolt",
+          "name": "catalyst"
+        }
+      }
+    }
+  }
+}

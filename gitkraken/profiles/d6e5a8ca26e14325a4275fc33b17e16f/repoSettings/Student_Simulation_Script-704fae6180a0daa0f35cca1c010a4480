@@ -1,0 +1,83 @@
+{
+  "remoteParents": {
+    "gitlab": {
+      "atomicjolt": {
+        "student-simulation-script": {
+          "hostingServiceType": "gitlab",
+          "owner": "atomicjolt",
+          "name": "student-simulation-script"
+        }
+      }
+    }
+  },
+  "upstreamFrecencyMetadata": {
+    "origin": {
+      "id": "remote-origin",
+      "timestamps": [
+        1583767362788,
+        1583767402893,
+        1583771192751,
+        1583779122077,
+        1584026762824,
+        1584373462590
+      ],
+      "total": 6
+    }
+  },
+  "remoteHeadCollectionByRemoteName": {
+    "origin": {
+      "HEAD": {
+        "name": "HEAD",
+        "oid": "f3afd221cba0a371937174cf3402f3b99d5841e5",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": "refs/heads/master"
+      },
+      "refs/heads/master": {
+        "name": "refs/heads/master",
+        "oid": "f3afd221cba0a371937174cf3402f3b99d5841e5",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/merge-requests/1/head": {
+        "name": "refs/merge-requests/1/head",
+        "oid": "8a3d429973299343afb5143dc65ee0532487248b",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/merge-requests/1/merge": {
+        "name": "refs/merge-requests/1/merge",
+        "oid": "4be19eb3fd5c6928a932ce8d0eca7bd219e668d7",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/merge-requests/2/head": {
+        "name": "refs/merge-requests/2/head",
+        "oid": "e59210268a983be7f7c6ef7c0872c1bdd922e62b",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/merge-requests/2/merge": {
+        "name": "refs/merge-requests/2/merge",
+        "oid": "0b7c21851c8bae18f5af91e88f6176de546c8add",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      }
+    }
+  },
+  "templates": {
+    "shouldRemoveComments": true
+  },
+  "layout": {
+    "GraphPanel": {
+      "Tree": {
+        "width": 106
+      }
+    }
+  }
+}

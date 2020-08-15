@@ -1,0 +1,13 @@
+{
+  "remoteParents": {
+    "github": {
+      "conradbeach": {
+        "conradbeach.github.io": {
+          "hostingServiceType": "github",
+          "owner": "conradbeach",
+          "name": "conradbeach.github.io"
+        }
+      }
+    }
+  }
+}

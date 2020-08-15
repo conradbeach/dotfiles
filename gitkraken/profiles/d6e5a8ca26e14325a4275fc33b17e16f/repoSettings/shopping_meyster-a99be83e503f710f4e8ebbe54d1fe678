@@ -1,0 +1,13 @@
+{
+  "remoteParents": {
+    "github": {
+      "conradbeach": {
+        "shopping-meyster": {
+          "hostingServiceType": "github",
+          "owner": "conradbeach",
+          "name": "shopping-meyster"
+        }
+      }
+    }
+  }
+}
