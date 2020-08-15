@@ -88,7 +88,7 @@ brew cask install vlc
 echo "\n** Symlinking Files **"
 ln -s ~/Development/dotfiles/nvim ~/.config
 ln -s ~/Development/dotfiles/.circleci ~
-mkdir ~/.ssh
+mkdir ~/.ssh/
 rm ~/.ssh/config
 ln -s ~/Development/dotfiles/ssh/config ~/.ssh/
 rm ~/.ssh/known_hosts
@@ -120,7 +120,6 @@ ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-z
 mkdir ~/.gnupg/
 ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 ln -s ~/Development/dotfiles/git-commit-template.txt ~
-
 
 # asdf
 echo "\n** Installing asdf **"
