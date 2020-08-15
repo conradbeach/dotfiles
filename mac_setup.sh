@@ -237,6 +237,20 @@ ssh-keygen -t rsa -b 4096 -C "conradbeach@protonmail.com"
 eval "$(ssh-agent -s)"
 echo "\nrun 'pbcopy < ~/.ssh/id_rsa.pub' and paste it into GitHub and GitLab"
 
+## Project Repos
+echo "\n** Cloning Project Repos **"
+echo "\nThis step requires you to add your new SSH key to GitHub and GitLab."
+read -p "Press [Enter] to confirm you've done this."
+git clone git@gitlab.com:atomicjolt/act.git ~/Development/atomicjolt/act
+git clone git@github.com:atomicjolt/adhesion.git ~/Development/atomicjolt/adhesion
+git clone git@gitlab.com:atomicjolt/learnosity.git ~/Development/atomicjolt/learnosity
+git clone git@github.com:atomicjolt/lti_starter_app.git ~/Development/atomicjolt/lti_starter_app
+git clone git@gitlab.com:atomicjolt/microsoft-integrations.git ~/Development/atomicjolt/microsoft-integrations
+git clone git@gitlab.com:atomicjolt/socialize.git ~/Development/atomicjolt/socialize
+git clone git@github.com:conradbeach/conradbeach.github.io.git ~/Development/conradbeach.github.io
+git clone git@github.com:conradbeach/food-storage-inventory.git ~/Development/food-storage-inventory
+git clone git@github.com:conradbeach/temperature_alert.git ~/Development/temperature_alert
+
 echo "\n\nTODO: Run :checkhealth in Neovim."
 echo "\nTODO: Run :PlugInstall in Neovim."
 echo "\nTODO: Hit <prefix>+I in tmux to install plugins."
