@@ -1,11 +1,11 @@
 {
   "localRepoCache": [
+    "/Users/conrad/Development/dotfiles/.git",
     "/Users/conrad/Development/atomic_jolt/microsoft-integrations/.git",
     "/Users/conrad/Development/atomic_jolt/lti_starter_app/.git",
     "/Users/conrad/Development/atomic_jolt/socialize/.git",
     "/Users/conrad/Development/atomic_jolt/adhesion/.git",
     "/Users/conrad/Development/atomic_jolt/learnosity/.git",
-    "/Users/conrad/Development/dotfiles/.git",
     "/Users/conrad/Development/food-storage-inventory/.git",
     "/Users/conrad/Development/atomic_jolt/microsoft-graph-tutorial/.git",
     "/Users/conrad/Development/atomic_jolt/therapymate/.git",
@@ -21,7 +21,6 @@
     "/Users/conrad/Development/atomic_jolt/atomic-assessments-qa-testing/.git",
     "/Users/conrad/Development/atomic_jolt/Student_Simulation_Script/.git",
     "/Users/conrad/Development/atomic_jolt/canvas-rce-api/.git",
-    "/Users/conrad/Development/Personal Website/source/.git",
     "/Users/conrad/Development/atomic_jolt/act/.git",
     "/Users/conrad/Development/atomic_jolt/catalyst/.git",
     "/Users/conrad/Development/atomic_jolt/cluster-setup/.git",
@@ -30,7 +29,6 @@
     "/Users/conrad/Development/atomic_jolt/nucleus/.git",
     "/Users/conrad/Development/elixir/programming_phoenix_book/rumbl/.git",
     "/Users/conrad/Development/elixir/programming_elixir_book/issues/.git",
-    "/Users/conrad/Development/senkyoshi/.git",
-    "/Users/conrad/Library/Mobile Documents/com~apple~CloudDocs/Development/dotfiles/.git"
+    "/Users/conrad/Development/senkyoshi/.git"
   ]
 }

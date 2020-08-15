@@ -32,7 +32,7 @@
     }
   },
   "fileNodeList": {
-    "viewMode": "full_path"
+    "viewMode": "tree_view"
   },
   "tabInfo": {
     "tabs": [
@@ -53,9 +53,19 @@
         "type": "REPO",
         "repoName": "lti_starter_app",
         "repoPath": "/Users/conrad/Development/atomic_jolt/lti_starter_app/"
+      },
+      {
+        "id": "a86dce02-bf81-4752-a053-c7834924e01f",
+        "type": "REPO",
+        "repoName": "dotfiles",
+        "repoPath": "/Users/conrad/Development/dotfiles/"
+      },
+      {
+        "id": "87f8bf66-c322-454f-8923-8aeedb1f24b5",
+        "type": "NEW"
       }
     ],
-    "selectedTabId": "cc88d8c5-cb4e-4e85-a195-0ab8af26a3d7"
+    "selectedTabId": "a86dce02-bf81-4752-a053-c7834924e01f"
   },
   "zoom": 1,
   "actions": {
