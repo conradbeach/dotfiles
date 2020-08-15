@@ -92,7 +92,6 @@
           {
             "id": "domain-openRepo",
             "timestamps": [
-              1594748736540,
               1596731594631,
               1596740802270,
               1596740805148,
@@ -101,9 +100,10 @@
               1597083959874,
               1597180039619,
               1597180043377,
-              1597253830245
+              1597253830245,
+              1597492892207
             ],
-            "total": 54
+            "total": 55
           }
         ],
         "pull": [
@@ -677,6 +677,15 @@
             ],
             "total": 1
           }
+        ],
+        "person": [
+          {
+            "id": "openRepo-/Users/conrad/Development/Personal Website/source",
+            "timestamps": [
+              1597492895021
+            ],
+            "total": 1
+          }
         ]
       }
     },
@@ -717,7 +726,6 @@
         "domain-openRepo": {
           "id": "domain-openRepo",
           "timestamps": [
-            1596148095704,
             1596731594630,
             1596740802269,
             1596740805148,
@@ -726,9 +734,10 @@
             1597083959873,
             1597180039619,
             1597180043376,
-            1597253830244
+            1597253830244,
+            1597492892207
           ],
-          "total": 61
+          "total": 62
         },
         "pull": {
           "id": "pull",
@@ -921,6 +930,13 @@
             1597180040408
           ],
           "total": 4
+        },
+        "openRepo-/Users/conrad/Development/Personal Website/source": {
+          "id": "openRepo-/Users/conrad/Development/Personal Website/source",
+          "timestamps": [
+            1597492895021
+          ],
+          "total": 1
         }
       }
     }
