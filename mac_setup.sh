@@ -51,7 +51,6 @@ brew services start postgresql
 
 ## Applications
 echo "\n** Installing Applications via Brew Cask**"
-brew cask install atom
 brew cask install aware
 brew cask install balenaetcher
 brew cask install bettertouchtool
