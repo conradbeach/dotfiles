@@ -35,7 +35,7 @@ brew install tmux
 brew install tmuxinator
 brew install trash
 brew install tree
-brew cask install virtualbox && brew cask install vagrant
+brew cask install vagrant
 brew install yarn
 brew install zsh
 
