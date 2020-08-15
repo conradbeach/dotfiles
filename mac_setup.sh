@@ -251,6 +251,68 @@ git clone git@github.com:conradbeach/conradbeach.github.io.git ~/Development/con
 git clone git@github.com:conradbeach/food-storage-inventory.git ~/Development/food-storage-inventory
 git clone git@github.com:conradbeach/temperature_alert.git ~/Development/temperature_alert
 
+# MacOS Settings
+## Example settings: https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+## More examples: https://github.com/pawelgrzybek/dotfiles/blob/master/setup-macos.sh
+echo "\n** Updating MacOS Settings**"
+## Expand save panel by default.
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+## Disable the “Are you sure you want to open this application?” dialog.
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+## Avoid creating .DS_Store files on network or USB volumes.
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+## Disable the warning before emptying the Trash.
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+## Show the ~/Library folder.
+chflags nohidden ~/Library
+
+## Wipe all (default) app icons from the Dock.
+defaults write com.apple.dock persistent-apps -array
+
+## Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -bool true
+
+## Don’t automatically rearrange Spaces based on most recent use.
+defaults write com.apple.dock mru-spaces -bool false
+
+## Show hidden files in finder.
+defaults write com.apple.finder AppleShowAllFiles -string YES
+
+# Show filename extensions. (Finder > Preferences > Show all filename extensions)
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Don't show warning when changing filename extension. (Finder > Preferences > Show warning before changing an extension)
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Don't show warning when removing file from iCloud Drive. (Finder > Preferences > Show warning before removing from iCloud Drive)
+defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
+
+# Set default view to list. (Finder > View > As List)
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+# Show the path bar in finder. (Finder > View > Show Path Bar)
+defaults write com.apple.finder ShowPathbar -bool true
+
+## Set dock size. (System Preferences > Dock > Size)
+defaults write com.apple.dock tilesize -int 30
+
+# Key repeat speed. (System Preferences > Keyboard. This is as fast as it will go.)
+defaults write NSGlobalDomain KeyRepeat -int 2
+
+# Delay until key repeat. (System Preferences > Keyboard. This is as fast as it will go.)
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+# Kill Dock and Finder
+for app in "Dock" "Finder"; do
+  killall "${app}" > /dev/null 2>&1
+done
+
 echo "\n\nTODO: Run :checkhealth in Neovim."
 echo "\nTODO: Run :PlugInstall in Neovim."
 echo "\nTODO: Hit <prefix>+I in tmux to install plugins."
