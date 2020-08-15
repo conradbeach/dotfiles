@@ -57,7 +57,7 @@ brew cask install balenaetcher
 brew cask install bettertouchtool
 brew cask install bitwarden
 brew cask install brave-browser
-brew cask install maccy
+brew cask install copyclip
 brew cask install dash
 brew cask install firefox
 brew cask install homebrew/cask-versions/firefox-developer-edition
@@ -249,6 +249,10 @@ echo "**************************************"
 echo "* [ ] BetterTouchTool"
 echo "    * Load license."
 echo "    * Load keybindings."
+echo "* [ ] CopyClip2"
+echo "    * Change keyboard shortcut to Ctrl-Space"
+echo "    * Load license. (In iCloud Drive > Software Licenses and Such.)"
+echo "    * Update other settings."
 echo "* [ ] Dash"
 echo "    * Load License"
 echo "    * Load sync files (in iCloud)"
