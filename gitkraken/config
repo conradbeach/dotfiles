@@ -1,13 +1,14 @@
 {
-  "lastUpgradeScriptRun": "v5.0.0",
+  "lastUpgradeScriptRun": "v6.5.0",
   "appId": "c4aeb44b8749dd9774b2abad6bf82a30461595e7",
   "registration": {
     "email": "conradbeach@protonmail.com",
+    "name": "Conrad Beach",
     "status": "activated",
     "trialStatus": null,
     "loginType": "username_and_password",
     "providerToken": null,
-    "date": "2017-12-27T18:26:43.451Z",
+    "date": "2019-05-28T18:35:15.108Z",
     "EULA": {
       "version": "1.5.0",
       "status": "agree_verified"
@@ -15,18 +16,8 @@
   },
   "userId": "33b4c4b9-2b0e-46de-bd87-e6f4bb441639",
   "licensedFeatures": [
-    "pro"
+    "individual"
   ],
-  "windowSettings": {
-    "x": 0,
-    "y": 53,
-    "width": 1680,
-    "height": 985,
-    "fullScreen": false,
-    "maximized": true
-  },
-  "hasSeenNewUserOnboarding": true,
-  "profileGuid": "d6e5a8ca26e14325a4275fc33b17e16f",
   "userFeatures": [
     {
       "betaFeaturesEnabled": false,
@@ -35,13 +26,913 @@
     {
       "betaFeaturesEnabled": false,
       "name": "glo"
+    },
+    {
+      "betaFeaturesEnabled": false,
+      "name": "timelines"
     }
   ],
-  "plugins": {},
-  "ui": {
-    "spellcheck": true,
-    "showToolbarLabels": true,
-    "wideLayout": true
+  "hasSeenNewUserOnboarding": true,
+  "hasNotConfirmedNonCommercialUseWithExpiredProLicense": false,
+  "windowSettings": {
+    "x": 0,
+    "y": 23,
+    "width": 1280,
+    "height": 1375,
+    "fullScreen": false,
+    "maximized": true
   },
-  "hasNotConfirmedNonCommercialUseWithExpiredProLicense": false
+  "lastReleaseNotesDisplayed": "7.2.0",
+  "plugins": {
+    "fullviewMount": {
+      "pluginId": "glo",
+      "mountKey": "GloAppFullView"
+    }
+  },
+  "fuzzyFinderMetadata": {
+    "queryMetadata": {
+      "TOP": {
+        "push": [
+          {
+            "id": "push",
+            "timestamps": [
+              1597333265064,
+              1597335370090,
+              1597418466389,
+              1597418772490,
+              1597418996994,
+              1597419642035,
+              1597429158246,
+              1597436745882,
+              1597436896654,
+              1597437214433
+            ],
+            "total": 1150
+          }
+        ],
+        "fet": [
+          {
+            "id": "fetchAll",
+            "timestamps": [
+              1596050347250,
+              1596148169059,
+              1596215354450,
+              1596215389661,
+              1596478406498,
+              1596556790325,
+              1596575096071,
+              1597184659820,
+              1597331028779,
+              1597331049893
+            ],
+            "total": 126
+          }
+        ],
+        "or": [
+          {
+            "id": "domain-openRepo",
+            "timestamps": [
+              1594748736540,
+              1596731594631,
+              1596740802270,
+              1596740805148,
+              1596747323605,
+              1596834652030,
+              1597083959874,
+              1597180039619,
+              1597180043377,
+              1597253830245
+            ],
+            "total": 54
+          }
+        ],
+        "pull": [
+          {
+            "id": "pull",
+            "timestamps": [
+              1564437673803,
+              1572300598334,
+              1574876652046,
+              1575301969960,
+              1578609843067,
+              1580339273759,
+              1580501615467,
+              1586202819256,
+              1589486085456,
+              1594749732427
+            ],
+            "total": 11
+          }
+        ],
+        "f": [
+          {
+            "id": "fetchAll",
+            "timestamps": [
+              1564515614234,
+              1578954785607,
+              1583502294507,
+              1593448634434
+            ],
+            "total": 4
+          }
+        ],
+        "pul": [
+          {
+            "id": "pull",
+            "timestamps": [
+              1564515618735,
+              1564517453544,
+              1575565754363,
+              1580765033055,
+              1587670109890
+            ],
+            "total": 5
+          }
+        ],
+        "p": [
+          {
+            "id": "push",
+            "timestamps": [
+              1565033659007,
+              1584640382514
+            ],
+            "total": 2
+          }
+        ],
+        "pu": [
+          {
+            "id": "push",
+            "timestamps": [
+              1565033916549,
+              1583941243973
+            ],
+            "total": 2
+          },
+          {
+            "id": "pull",
+            "timestamps": [
+              1569949737290
+            ],
+            "total": 1
+          }
+        ],
+        "ft": [
+          {
+            "id": "fetchAll",
+            "timestamps": [
+              1565388302703
+            ],
+            "total": 1
+          }
+        ],
+        "et": [
+          {
+            "id": "fetchAll",
+            "timestamps": [
+              1578946790825,
+              1582928472615,
+              1583859215649,
+              1584394742361,
+              1596037197526
+            ],
+            "total": 5
+          },
+          {
+            "id": "zoomReset",
+            "timestamps": [
+              1571689285926
+            ],
+            "total": 1
+          }
+        ],
+        "fetch": [
+          {
+            "id": "fetchAll",
+            "timestamps": [
+              1571689288614
+            ],
+            "total": 1
+          }
+        ],
+        "ush": [
+          {
+            "id": "push",
+            "timestamps": [
+              1587584882107,
+              1587651335172,
+              1588879551503,
+              1589398596187,
+              1590086721174,
+              1592944112734,
+              1593023684632,
+              1593534743448,
+              1594242862798,
+              1596468766764
+            ],
+            "total": 26
+          }
+        ],
+        "h": [
+          {
+            "id": "push",
+            "timestamps": [
+              1575493937749,
+              1578690837375,
+              1583941211053,
+              1583941773592
+            ],
+            "total": 4
+          }
+        ],
+        "pus": [
+          {
+            "id": "push",
+            "timestamps": [
+              1578326944099,
+              1585251271852,
+              1587591311082
+            ],
+            "total": 3
+          }
+        ],
+        "or ": [
+          {
+            "id": "domain-openRepo",
+            "timestamps": [
+              1580768885570
+            ],
+            "total": 1
+          }
+        ],
+        "forec": [
+          {
+            "id": "switchTheme",
+            "timestamps": [
+              1581109369839
+            ],
+            "total": 1
+          }
+        ],
+        "dark": [
+          {
+            "id": "switchTheme",
+            "timestamps": [
+              1581109375359,
+              1588787204228,
+              1588787208165,
+              1588787213497
+            ],
+            "total": 4
+          }
+        ],
+        "feta": [
+          {
+            "id": "fetchAll",
+            "timestamps": [
+              1583529996310,
+              1589908044302,
+              1593192593572,
+              1593621315677
+            ],
+            "total": 4
+          }
+        ],
+        "sh": [
+          {
+            "id": "push",
+            "timestamps": [
+              1583944357939,
+              1583944749127,
+              1585172856790
+            ],
+            "total": 3
+          }
+        ],
+        "op": [
+          {
+            "id": "domain-openRepo",
+            "timestamps": [
+              1584726740380,
+              1585244446507
+            ],
+            "total": 2
+          }
+        ],
+        "eta": [
+          {
+            "id": "fetchAll",
+            "timestamps": [
+              1585172546269,
+              1596148176994
+            ],
+            "total": 2
+          }
+        ],
+        "ousg": [
+          {
+            "id": "switchTheme",
+            "timestamps": [
+              1588787199765
+            ],
+            "total": 1
+          }
+        ],
+        "light": [
+          {
+            "id": "switchTheme",
+            "timestamps": [
+              1588787206649,
+              1588787210527
+            ],
+            "total": 2
+          }
+        ],
+        "open ": [
+          {
+            "id": "domain-openRepo",
+            "timestamps": [
+              1588798677336
+            ],
+            "total": 1
+          }
+        ],
+        "open re": [
+          {
+            "id": "domain-openRepo",
+            "timestamps": [
+              1588966635479
+            ],
+            "total": 1
+          }
+        ],
+        "open in ": [
+          {
+            "id": "openInTerminal",
+            "timestamps": [
+              1590094493709
+            ],
+            "total": 1
+          }
+        ],
+        "open in": [
+          {
+            "id": "openRepoInIde",
+            "timestamps": [
+              1590094533525
+            ],
+            "total": 1
+          }
+        ],
+        "o": [
+          {
+            "id": "domain-openRepo",
+            "timestamps": [
+              1596148095705
+            ],
+            "total": 1
+          }
+        ],
+        "fe": [
+          {
+            "id": "fetchAll",
+            "timestamps": [
+              1596831272796
+            ],
+            "total": 1
+          }
+        ]
+      },
+      "OPEN_REPO": {
+        "dot": [
+          {
+            "id": "openRepo-/Users/conrad/Development/food-storage-inventory",
+            "timestamps": [
+              1596740802979,
+              1597180040409
+            ],
+            "total": 2
+          },
+          {
+            "id": "openRepo-/Users/conrad/Development/temperature_alert",
+            "timestamps": [
+              1589342302871
+            ],
+            "total": 1
+          },
+          {
+            "id": "openRepo-/Users/conrad/Development/dotfiles",
+            "timestamps": [
+              1564421422562,
+              1564775289925,
+              1565026545734,
+              1565118511374,
+              1570809637916,
+              1572290203226,
+              1580156311823,
+              1581355224155,
+              1583784256266,
+              1583963151752
+            ],
+            "total": 12
+          }
+        ],
+        "dotf": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/atomic-fuel",
+            "timestamps": [
+              1580768886445
+            ],
+            "total": 1
+          },
+          {
+            "id": "openRepo-/Users/conrad/Development/dotfiles",
+            "timestamps": [
+              1572037889251
+            ],
+            "total": 1
+          }
+        ],
+        "soci": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/socialize",
+            "timestamps": [
+              1572466637524
+            ],
+            "total": 1
+          }
+        ],
+        "do": [
+          {
+            "id": "openRepo-/Users/conrad/Development/dotfiles",
+            "timestamps": [
+              1580156315882
+            ],
+            "total": 1
+          }
+        ],
+        "act": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/act",
+            "timestamps": [
+              1580156321272
+            ],
+            "total": 1
+          }
+        ],
+        "catalyst": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/catalyst",
+            "timestamps": [
+              1580248094038
+            ],
+            "total": 1
+          }
+        ],
+        "fron": [
+          {
+            "id": "openRepo-/Users/conrad/Development/front-end-rails-book",
+            "timestamps": [
+              1580323635952
+            ],
+            "total": 1
+          }
+        ],
+        "temper": [
+          {
+            "id": "openRepo-/Users/conrad/Development/temperature_alert",
+            "timestamps": [
+              1580499362003,
+              1584726741944,
+              1585330477196
+            ],
+            "total": 3
+          }
+        ],
+        "atomic_fu": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/atomic-fuel",
+            "timestamps": [
+              1580763859358
+            ],
+            "total": 1
+          }
+        ],
+        "cataly": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/catalyst",
+            "timestamps": [
+              1580768664199
+            ],
+            "total": 1
+          }
+        ],
+        "dotfiles": [
+          {
+            "id": "openRepo-/Users/conrad/Development/dotfiles",
+            "timestamps": [
+              1580768889688,
+              1589342307538,
+              1596740806815,
+              1597180045190
+            ],
+            "total": 4
+          }
+        ],
+        "cach": [
+          {
+            "id": "openRepo-/Users/conrad/Development/cache_county_convention",
+            "timestamps": [
+              1583246158125
+            ],
+            "total": 1
+          }
+        ],
+        "cac": [
+          {
+            "id": "openRepo-/Users/conrad/Development/cache_county_convention",
+            "timestamps": [
+              1583246195690
+            ],
+            "total": 1
+          }
+        ],
+        "stu": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/Student_Simulation_Script",
+            "timestamps": [
+              1583963211756
+            ],
+            "total": 1
+          }
+        ],
+        "adh": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/adhesion",
+            "timestamps": [
+              1584386701142
+            ],
+            "total": 1
+          }
+        ],
+        "canvas": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/canvas-lms",
+            "timestamps": [
+              1585172538212,
+              1596148098540
+            ],
+            "total": 2
+          }
+        ],
+        "atomicful": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/atomic-fuel",
+            "timestamps": [
+              1587411542163
+            ],
+            "total": 1
+          }
+        ],
+        "canvaslm": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/canvas-lms",
+            "timestamps": [
+              1588798680134
+            ],
+            "total": 1
+          }
+        ],
+        "temprer": [
+          {
+            "id": "openRepo-/Users/conrad/Development/temperature_alert",
+            "timestamps": [
+              1588966638214
+            ],
+            "total": 1
+          }
+        ],
+        "ltistar": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/lti_starter_app",
+            "timestamps": [
+              1589566906402
+            ],
+            "total": 1
+          }
+        ],
+        "learn": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/learnosity",
+            "timestamps": [
+              1590089689633,
+              1594744808461,
+              1597083961011
+            ],
+            "total": 3
+          }
+        ],
+        "adhesion": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/adhesion",
+            "timestamps": [
+              1591724891360,
+              1596834653222
+            ],
+            "total": 2
+          }
+        ],
+        "lmsgr": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/lms_graphql_api",
+            "timestamps": [
+              1594748551247
+            ],
+            "total": 1
+          }
+        ],
+        "lms_api": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/lms_api",
+            "timestamps": [
+              1594748739128
+            ],
+            "total": 1
+          }
+        ],
+        "food": [
+          {
+            "id": "openRepo-/Users/conrad/Development/food-storage-inventory",
+            "timestamps": [
+              1596731595862,
+              1596747353218
+            ],
+            "total": 2
+          }
+        ],
+        "ltista": [
+          {
+            "id": "openRepo-/Users/conrad/Development/atomic_jolt/lti_starter_app",
+            "timestamps": [
+              1597253832372
+            ],
+            "total": 1
+          }
+        ]
+      }
+    },
+    "itemMetadata": {
+      "TOP": {
+        "push": {
+          "id": "push",
+          "timestamps": [
+            1597333265064,
+            1597335370089,
+            1597418466387,
+            1597418772489,
+            1597418996994,
+            1597419642035,
+            1597429158245,
+            1597436745881,
+            1597436896653,
+            1597437214433
+          ],
+          "total": 1192
+        },
+        "fetchAll": {
+          "id": "fetchAll",
+          "timestamps": [
+            1596148176994,
+            1596215354450,
+            1596215389660,
+            1596478406498,
+            1596556790324,
+            1596575096071,
+            1596831272794,
+            1597184659819,
+            1597331028778,
+            1597331049892
+          ],
+          "total": 144
+        },
+        "domain-openRepo": {
+          "id": "domain-openRepo",
+          "timestamps": [
+            1596148095704,
+            1596731594630,
+            1596740802269,
+            1596740805148,
+            1596747323605,
+            1596834652029,
+            1597083959873,
+            1597180039619,
+            1597180043376,
+            1597253830244
+          ],
+          "total": 61
+        },
+        "pull": {
+          "id": "pull",
+          "timestamps": [
+            1575301969960,
+            1575565754362,
+            1578609843067,
+            1580339273759,
+            1580501615467,
+            1580765033054,
+            1586202819256,
+            1587670109889,
+            1589486085455,
+            1594749732427
+          ],
+          "total": 17
+        },
+        "zoomReset": {
+          "id": "zoomReset",
+          "timestamps": [
+            1571689285926
+          ],
+          "total": 1
+        },
+        "switchTheme": {
+          "id": "switchTheme",
+          "timestamps": [
+            1581109369839,
+            1581109375359,
+            1588787199764,
+            1588787204228,
+            1588787206649,
+            1588787208165,
+            1588787210527,
+            1588787213496
+          ],
+          "total": 8
+        },
+        "openInTerminal": {
+          "id": "openInTerminal",
+          "timestamps": [
+            1590094493708
+          ],
+          "total": 1
+        },
+        "openRepoInIde": {
+          "id": "openRepoInIde",
+          "timestamps": [
+            1590094533524
+          ],
+          "total": 1
+        }
+      },
+      "OPEN_REPO": {
+        "openRepo-/Users/conrad/Development/dotfiles": {
+          "id": "openRepo-/Users/conrad/Development/dotfiles",
+          "timestamps": [
+            1572290203226,
+            1580156311823,
+            1580156315881,
+            1580768889688,
+            1581355224155,
+            1583784256266,
+            1583963151752,
+            1589342307537,
+            1596740806814,
+            1597180045189
+          ],
+          "total": 18
+        },
+        "openRepo-/Users/conrad/Development/atomic_jolt/socialize": {
+          "id": "openRepo-/Users/conrad/Development/atomic_jolt/socialize",
+          "timestamps": [
+            1572466637523
+          ],
+          "total": 1
+        },
+        "openRepo-/Users/conrad/Development/atomic_jolt/act": {
+          "id": "openRepo-/Users/conrad/Development/atomic_jolt/act",
+          "timestamps": [
+            1580156321272
+          ],
+          "total": 1
+        },
+        "openRepo-/Users/conrad/Development/atomic_jolt/catalyst": {
+          "id": "openRepo-/Users/conrad/Development/atomic_jolt/catalyst",
+          "timestamps": [
+            1580248094038,
+            1580768664198
+          ],
+          "total": 2
+        },
+        "openRepo-/Users/conrad/Development/front-end-rails-book": {
+          "id": "openRepo-/Users/conrad/Development/front-end-rails-book",
+          "timestamps": [
+            1580323635952
+          ],
+          "total": 1
+        },
+        "openRepo-/Users/conrad/Development/temperature_alert": {
+          "id": "openRepo-/Users/conrad/Development/temperature_alert",
+          "timestamps": [
+            1580499362002,
+            1584726741944,
+            1585330477195,
+            1588966638213,
+            1589342302871
+          ],
+          "total": 5
+        },
+        "openRepo-/Users/conrad/Development/atomic_jolt/atomic-fuel": {
+          "id": "openRepo-/Users/conrad/Development/atomic_jolt/atomic-fuel",
+          "timestamps": [
+            1580763859358,
+            1580768886445,
+            1587411542162
+          ],
+          "total": 3
+        },
+        "openRepo-/Users/conrad/Development/cache_county_convention": {
+          "id": "openRepo-/Users/conrad/Development/cache_county_convention",
+          "timestamps": [
+            1583246158124,
+            1583246195690
+          ],
+          "total": 2
+        },
+        "openRepo-/Users/conrad/Development/atomic_jolt/Student_Simulation_Script": {
+          "id": "openRepo-/Users/conrad/Development/atomic_jolt/Student_Simulation_Script",
+          "timestamps": [
+            1583963211756
+          ],
+          "total": 1
+        },
+        "openRepo-/Users/conrad/Development/atomic_jolt/adhesion": {
+          "id": "openRepo-/Users/conrad/Development/atomic_jolt/adhesion",
+          "timestamps": [
+            1584386701142,
+            1591724891360,
+            1596834653221
+          ],
+          "total": 3
+        },
+        "openRepo-/Users/conrad/Development/atomic_jolt/canvas-lms": {
+          "id": "openRepo-/Users/conrad/Development/atomic_jolt/canvas-lms",
+          "timestamps": [
+            1585172538212,
+            1588798680134,
+            1596148098540
+          ],
+          "total": 3
+        },
+        "openRepo-/Users/conrad/Development/atomic_jolt/lti_starter_app": {
+          "id": "openRepo-/Users/conrad/Development/atomic_jolt/lti_starter_app",
+          "timestamps": [
+            1589566906402,
+            1597253832371
+          ],
+          "total": 2
+        },
+        "openRepo-/Users/conrad/Development/atomic_jolt/learnosity": {
+          "id": "openRepo-/Users/conrad/Development/atomic_jolt/learnosity",
+          "timestamps": [
+            1590089689633,
+            1594744808460,
+            1597083961011
+          ],
+          "total": 3
+        },
+        "openRepo-/Users/conrad/Development/atomic_jolt/lms_graphql_api": {
+          "id": "openRepo-/Users/conrad/Development/atomic_jolt/lms_graphql_api",
+          "timestamps": [
+            1594748551247
+          ],
+          "total": 1
+        },
+        "openRepo-/Users/conrad/Development/atomic_jolt/lms_api": {
+          "id": "openRepo-/Users/conrad/Development/atomic_jolt/lms_api",
+          "timestamps": [
+            1594748739128
+          ],
+          "total": 1
+        },
+        "openRepo-/Users/conrad/Development/food-storage-inventory": {
+          "id": "openRepo-/Users/conrad/Development/food-storage-inventory",
+          "timestamps": [
+            1596731595860,
+            1596740802978,
+            1596747353218,
+            1597180040408
+          ],
+          "total": 4
+        }
+      }
+    }
+  },
+  "notification": {
+    "toastrLocationClassname": "toast-bottom-left"
+  },
+  "lastVersion": "7.2.0",
+  "commits": {
+    "maxCommitsInGraph": 2000
+  },
+  "ui": {
+    "wideLayout": true
+  }
 }

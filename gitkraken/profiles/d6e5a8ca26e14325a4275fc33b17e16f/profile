@@ -1,0 +1,105 @@
+{
+  "profileIcon": "gravatar",
+  "profileName": "Personal",
+  "userEmail": "conradbeach@protonmail.com",
+  "userName": "Conrad Beach",
+  "gpg": {
+    "userSigningKey": "C13BE69D959019631C867534AD25A8138D545CB7",
+    "commitGpgSign": true,
+    "tagForceSignAnnotated": true,
+    "gpgProgram": "/usr/local/bin/gpg"
+  },
+  "editor": {
+    "fontFamily": "Hack Nerd Font",
+    "fontSize": "12"
+  },
+  "defaultTerminal": "iTerm2",
+  "ssh": {
+    "privateKey": "/Users/conrad/.ssh/id_rsa",
+    "publicKey": "/Users/conrad/.ssh/id_rsa.pub",
+    "useLocalAgent": false
+  },
+  "layout": {
+    "RefPanel": {
+      "width": 400,
+      "open": true
+    },
+    "CommitMessage": {
+      "rightPanelHeight": 561
+    },
+    "DetailPanel": {
+      "width": 600
+    }
+  },
+  "fileNodeList": {
+    "viewMode": "full_path"
+  },
+  "tabInfo": {
+    "tabs": [
+      {
+        "id": "e9ef2e9f-574a-4ad7-af6e-1cbc58e85e64",
+        "type": "REPO",
+        "repoName": "socialize",
+        "repoPath": "/Users/conrad/Development/atomic_jolt/socialize/"
+      },
+      {
+        "id": "cc88d8c5-cb4e-4e85-a195-0ab8af26a3d7",
+        "type": "REPO",
+        "repoName": "microsoft-integrations",
+        "repoPath": "/Users/conrad/Development/atomic_jolt/microsoft-integrations/"
+      },
+      {
+        "id": "1f2aafbf-8b9a-4c29-bcd7-07c08bd11efa",
+        "type": "REPO",
+        "repoName": "lti_starter_app",
+        "repoPath": "/Users/conrad/Development/atomic_jolt/lti_starter_app/"
+      }
+    ],
+    "selectedTabId": "cc88d8c5-cb4e-4e85-a195-0ab8af26a3d7"
+  },
+  "zoom": 1,
+  "actions": {
+    "feedback": {
+      "subject": "Commit Template Comments Being Saved in the Commit Message",
+      "feedback": "Summary: I have a Git commit template configured in my global .gitconfig. GitKraken correctly populates the commit form field with the text from this template, but it incorrectly saves the comments from that template in the commit message instead of removing them.\n\nSteps to Reproduce:\n\n  1. Configure a commit template in your global .gitconfig\n  2. [Second Step]\n  3. [and so on...]\n\nExpected behavior: [What you expect to happen]\n\nActual behavior: [What actually happens]"
+    },
+    "commit": {
+      "ignoreWhiteSpace": false
+    }
+  },
+  "fileView": {
+    "diffDisplayMode": "hunk"
+  },
+  "ui": {
+    "theme": "dark"
+  },
+  "issues": {
+    "glo": {
+      "filtersByBoardId": {
+        "5eb5c4abbda0ec00133b0e31": [
+          {
+            "id": "feb5f706-ce52-48f8-987a-35fcf59cd276",
+            "text": "column:Todo",
+            "name": "Todo"
+          },
+          {
+            "id": "6f1444bd-7df2-4925-b9ef-9915066970f6",
+            "text": "",
+            "name": "All Cards"
+          },
+          {
+            "id": "0b40a603-31f4-4081-bd9d-00d7399d30c5",
+            "text": "@conradkbeach",
+            "name": "My Cards"
+          },
+          {
+            "id": "ac6366b3-12c0-40d6-8231-7b6389dea1ed",
+            "text": "-?assignee",
+            "name": "Unassigned Cards"
+          }
+        ]
+      }
+    }
+  },
+  "externalEditor": "Visual Studio Code"
+}

@@ -1,0 +1,13 @@
+{
+  "remoteParents": {
+    "gitlab": {
+      "atomicjolt": {
+        "socialize": {
+          "hostingServiceType": "gitlab",
+          "owner": "atomicjolt",
+          "name": "socialize"
+        }
+      }
+    }
+  }
+}

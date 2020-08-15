@@ -1,0 +1,16 @@
+{
+  "remoteParents": {
+    "github": {
+      "atomicjolt": {
+        "atomic-fuel": {
+          "hostingServiceType": "github",
+          "owner": "atomicjolt",
+          "name": "atomic-fuel"
+        }
+      }
+    }
+  },
+  "templates": {
+    "shouldRemoveComments": true
+  }
+}

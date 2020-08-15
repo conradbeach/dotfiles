@@ -1,0 +1,108 @@
+{
+  "remoteParents": {
+    "github": {
+      "instructure": {
+        "canvas-rce-api": {
+          "hostingServiceType": "github",
+          "owner": "instructure",
+          "name": "canvas-rce-api"
+        }
+      }
+    }
+  },
+  "remoteHeadCollectionByRemoteName": {
+    "origin": {
+      "HEAD": {
+        "name": "HEAD",
+        "oid": "02dd15d0b46c288cd2fbe1ff58aa6125a939ce74",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": "refs/heads/master"
+      },
+      "refs/heads/dependabot/npm_and_yarn/morgan-1.9.1": {
+        "name": "refs/heads/dependabot/npm_and_yarn/morgan-1.9.1",
+        "oid": "44db0a3a75d41a114fc7ee640011d752a63b96f5",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/master": {
+        "name": "refs/heads/master",
+        "oid": "02dd15d0b46c288cd2fbe1ff58aa6125a939ce74",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/pull/4/head": {
+        "name": "refs/pull/4/head",
+        "oid": "32fb3312c115a16324ade56a85cd2500dd977c33",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/pull/5/head": {
+        "name": "refs/pull/5/head",
+        "oid": "3ea1f56b7d6874925c9beca9bed7428a3004bbe5",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/pull/5/merge": {
+        "name": "refs/pull/5/merge",
+        "oid": "29eefe349ee7a732323c146ca730cbe0461ab013",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/pull/7/head": {
+        "name": "refs/pull/7/head",
+        "oid": "44db0a3a75d41a114fc7ee640011d752a63b96f5",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/pull/7/merge": {
+        "name": "refs/pull/7/merge",
+        "oid": "8e96db60b3c8dc29d1e453b3164e4893c10d293a",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/v1.10": {
+        "name": "refs/tags/v1.10",
+        "oid": "818594ac6e493d390acf49560cb1425ecf707935",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/v1.6": {
+        "name": "refs/tags/v1.6",
+        "oid": "dbf43a4bfc2e46e1437c9e7aa35e7234fe9affee",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/v1.7": {
+        "name": "refs/tags/v1.7",
+        "oid": "dbf43a4bfc2e46e1437c9e7aa35e7234fe9affee",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/v1.8": {
+        "name": "refs/tags/v1.8",
+        "oid": "41d31febd9145531dd447d2b5bb01e4b30a849e6",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/v1.9": {
+        "name": "refs/tags/v1.9",
+        "oid": "1bee1320a930cf9ac6dc1ae744988c48894ba9c2",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "remoteParents": {
+    "gitlab": {
+      "atomicjolt": {
+        "cluster-setup": {
+          "hostingServiceType": "gitlab",
+          "owner": "atomicjolt",
+          "name": "cluster-setup"
+        }
+      }
+    }
+  }
+}
