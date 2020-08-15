@@ -120,6 +120,10 @@ ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-z
 mkdir ~/.gnupg/
 ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 ln -s ~/Development/dotfiles/git-commit-template.txt ~
+mkdir ~/.gitkraken
+ln -s ~/Development/dotfiles/gitkraken/profiles/ ~/.gitkraken
+ln -s ~/Development/dotfiles/gitkraken/service/ ~/.gitkraken
+ln -s ~/Development/dotfiles/gitkraken/config ~/.gitkraken
 
 # asdf
 echo "\n** Installing asdf **"
