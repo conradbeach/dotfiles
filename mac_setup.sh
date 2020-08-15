@@ -59,6 +59,7 @@ brew cask install bitwarden
 brew cask install brave-browser
 brew cask install copyclip
 brew cask install dash
+brew cask install dropbox
 brew cask install firefox
 brew cask install homebrew/cask-versions/firefox-developer-edition
 brew cask install gimp
