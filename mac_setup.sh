@@ -230,7 +230,13 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "\n** Installing Xcode Command Line Tools **"
 xcode-select --install
 
-# Apps
+# Other Development Setup
+## SSH
+echo "\n** Generating an SSH key **"
+ssh-keygen -t rsa -b 4096 -C "conradbeach@protonmail.com"
+eval "$(ssh-agent -s)"
+echo "\nrun 'pbcopy < ~/.ssh/id_rsa.pub' and paste it into GitHub and GitLab"
+
 echo "\n\nTODO: Run :checkhealth in Neovim."
 echo "\nTODO: Run :PlugInstall in Neovim."
 echo "\nTODO: Hit <prefix>+I in tmux to install plugins."
