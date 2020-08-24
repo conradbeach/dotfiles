@@ -310,7 +310,8 @@ for app in "Dock" "Finder"; do
 done
 
 # Manual Setup
-echo "\n\nTODO: Go through MacOS settings and update as needed."
+echo "\n\n**************************************"
+echo "\nTODO: Go through MacOS settings and update as needed."
 echo "\nTODO: Turn on FileVault especially."
 echo "\nTODO: Next time you do this. Make a note here in this script of everything that you change."
 echo "\nTODO: This article tells how to determine changes being made: https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/#the-way-to-find-the-domain--key-responsible-for-a-setting"
@@ -325,7 +326,6 @@ echo "\nTODO: Copy '~/VirtualBox VMs' folder from Time Machine backup onto this 
 echo "\nTODO: Copy '~/Downloads' folder from Time Machine backup onto this machine."
 
 echo "\n\nTODO: Make the following changes to applications."
-echo "**************************************"
 echo "* [ ] BetterTouchTool"
 echo "    * Load license. (In iCloud Drive > Software Licenses and Such.)"
 echo "    * Load configuration. (In this repo.)"
