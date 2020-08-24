@@ -5,14 +5,14 @@ detectors:
     enabled: false
   TooManyStatements:
     max_statements: 10
+  FeatureEnvy:
+    enabled: false
 
 directories:
   "app/dashboards":
     UtilityFunction:
       enabled: false
   "db/migrate":
-    FeatureEnvy:
-      enabled: false
     TooManyStatements:
       enabled: false
     UncommunicativeVariableName:
