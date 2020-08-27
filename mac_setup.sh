@@ -134,7 +134,6 @@ brew install coreutils curl git
 
 ## Ruby
 echo "\n** Installing Ruby **"
-xcode-select --install
 brew install openssl libyaml libffi
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 
