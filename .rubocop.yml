@@ -136,3 +136,8 @@ RSpec/NotToNot:
   Description: Checks for consistent method usage for negating expectations.
   EnforcedStyle: to_not
   Enabled: true
+
+RSpec/NestedGroups:
+  Description: Checks for nested example groups.
+  Max: 5
+  Enabled: true
