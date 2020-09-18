@@ -9,6 +9,7 @@ AllCops:
     - 'node_modules/**/*'
     - 'db/schema.rb'
     - 'vendor/**/*'
+  NewCops: enable
 
 Metrics/MethodLength:
   CountComments: false
