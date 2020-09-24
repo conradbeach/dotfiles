@@ -312,6 +312,8 @@ done
 echo "\n\n**************************************"
 echo "\nTODO: Go through MacOS settings and update as needed."
 echo "\nTODO: Turn on FileVault especially."
+echo "\nTODO: Change 'Favorites' sidebar list to: home folder, Development, Downloads, Applications, Air Drop."
+echo "\nTODO: Change 'Locations' sidebar list to: Conrad's MacBook Pro, Network"
 echo "\nTODO: Next time you do this. Make a note here in this script of everything that you change."
 echo "\nTODO: This article tells how to determine changes being made: https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/#the-way-to-find-the-domain--key-responsible-for-a-setting"
 echo "    * Change default web browser to Firefox Developer Edition. (In Settings > General.)"
