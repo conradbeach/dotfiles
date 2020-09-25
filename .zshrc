@@ -115,6 +115,7 @@ alias top="htop"
 alias find="fd -H"
 # Ruby & Rails
 alias cra="bundle exec rspec && rubocop --display-style-guide && bundle audit check --update && brakeman && rubycritic app" # Short for 'check rails app'
+alias crajs="bundle exec rspec && rails cypress:run && rubocop --display-style-guide && yarn eslint app/javascript cypress && bundle audit check --update && brakeman && rubycritic app" # Short for 'check rails app'
 alias crs="bundle audit check --update && brakeman --no-pager" # Short for 'check Rails security'
 alias be="bundle exec"
 alias hr="heroku run"
