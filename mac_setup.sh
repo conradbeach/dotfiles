@@ -73,7 +73,6 @@ brew cask install oni
 brew cask install postman
 brew cask install protonvpn
 brew cask install slack
-brew cask install snip
 brew cask install tableplus
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
@@ -347,8 +346,8 @@ echo "    * Load configuration. (In this repo.)"
 echo "* [ ] Lacona"
 echo "    * Change keybinding to command-space."
 echo "    * Install addons: Caffeniate, Convert Currency, Time Zones, Timers & Alarms."
-echo "* [ ] Snip"
-echo "    * Set shortcut to command-control-n"
+echo "* [ ] Screenshot App"
+echo "    * Change save location to Downloads folder."
 echo "* [ ] Sophos Home"
 echo "    * Log into you dashboard to install it."
 echo "* [ ] Terminal.app"
