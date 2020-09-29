@@ -48,8 +48,6 @@
     "origin": {
       "id": "remote-origin",
       "timestamps": [
-        1587483021365,
-        1587485914554,
         1587495534529,
         1587573582876,
         1587590403170,
@@ -57,16 +55,18 @@
         1588011704480,
         1588022888670,
         1588284239259,
-        1588613328654
+        1588613328654,
+        1598375719847,
+        1599234411780
       ],
-      "total": 38
+      "total": 40
     }
   },
   "remoteHeadCollectionByRemoteName": {
     "origin": {
       "HEAD": {
         "name": "HEAD",
-        "oid": "4f6b0cf61e1b6469834cff628479d87a339f5447",
+        "oid": "f091dcddee509858062e130c1c7d6713e49b1a5c",
         "local": 0,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": "refs/heads/master"
@@ -106,9 +106,9 @@
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
       },
-      "refs/heads/bf/update-yarn-packages": {
-        "name": "refs/heads/bf/update-yarn-packages",
-        "oid": "e34f23f21455ffe903bd438a1d1eba5544f6e952",
+      "refs/heads/bf/devise-invite": {
+        "name": "refs/heads/bf/devise-invite",
+        "oid": "d0c4c533ea62fad7ebd561b6c9d70f34e543ab43",
         "local": 1,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -122,7 +122,7 @@
       },
       "refs/heads/master": {
         "name": "refs/heads/master",
-        "oid": "4f6b0cf61e1b6469834cff628479d87a339f5447",
+        "oid": "f091dcddee509858062e130c1c7d6713e49b1a5c",
         "local": 1,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -2871,13 +2871,6 @@
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
       },
-      "refs/pull/434/merge": {
-        "name": "refs/pull/434/merge",
-        "oid": "bfb7b994cc096bd6a5309e87a8c87432fe8c7131",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
       "refs/pull/435/head": {
         "name": "refs/pull/435/head",
         "oid": "cd26b4bf749ede78f394d06b4c18535bb1097cd8",
@@ -2892,9 +2885,58 @@
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
       },
+      "refs/pull/437/head": {
+        "name": "refs/pull/437/head",
+        "oid": "a44caae237225ea5aac8d7e073c8b5ad23a014d3",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/pull/438/head": {
+        "name": "refs/pull/438/head",
+        "oid": "412ff7a22140b558c3b993210e4a96d935c0d945",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/pull/439/head": {
+        "name": "refs/pull/439/head",
+        "oid": "043222cbbcd81ae4e4318925405e889b40c409d4",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
       "refs/pull/44/head": {
         "name": "refs/pull/44/head",
         "oid": "00ee4c15aa612ae4cb1de5001117c3842de502c8",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/pull/440/head": {
+        "name": "refs/pull/440/head",
+        "oid": "8032ee9e1be8e5caf87cf9f85705473e085dd99e",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/pull/441/head": {
+        "name": "refs/pull/441/head",
+        "oid": "d4e6dc28d90330480137b607356b743586fbb1a9",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/pull/442/head": {
+        "name": "refs/pull/442/head",
+        "oid": "55ca6bf4ba7cb7ce87b554f46776e9349eaf1984",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/pull/443/head": {
+        "name": "refs/pull/443/head",
+        "oid": "f6073f10d9fadd6d32636154118c563c4e142df7",
         "local": 0,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -3511,6 +3553,568 @@
       "refs/tags/2.0.4": {
         "name": "refs/tags/2.0.4",
         "oid": "f87afab655abffd2ace8e3a172d1236db6e5b4d0",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2.0.5": {
+        "name": "refs/tags/2.0.5",
+        "oid": "f091dcddee509858062e130c1c7d6713e49b1a5c",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-02-24": {
+        "name": "refs/tags/2017-02-24",
+        "oid": "462acad74f7230abdf5effd643e8571dbe01b558",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-03-01": {
+        "name": "refs/tags/2017-03-01",
+        "oid": "928fb8a468d16ba4ea5ceb990c3b548d1dbda587",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-03-02": {
+        "name": "refs/tags/2017-03-02",
+        "oid": "1a444cd601250d1399f1644ff2388c1fe42e5895",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-03-07": {
+        "name": "refs/tags/2017-03-07",
+        "oid": "8400121cae169b5db6f86280917f29920514b37c",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-03-10": {
+        "name": "refs/tags/2017-03-10",
+        "oid": "5dbd2155393bef938d97b773e8b9a5136de124b1",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-03-10.1": {
+        "name": "refs/tags/2017-03-10.1",
+        "oid": "19f038468418a8756ba6419618032b66d842be2e",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-03-16": {
+        "name": "refs/tags/2017-03-16",
+        "oid": "c02ed2f61362199faa4bcfffa6becc3eb555a26c",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-03-22": {
+        "name": "refs/tags/2017-03-22",
+        "oid": "58349e571659664e667164db796d1f142400f8c8",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-03-29": {
+        "name": "refs/tags/2017-03-29",
+        "oid": "6f8d553470e52165dee9ce65e138bfbc69a4f499",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-03-29.1": {
+        "name": "refs/tags/2017-03-29.1",
+        "oid": "9ee48ac8b4c45a3ff6902068e085c9253e608ed0",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-04-06": {
+        "name": "refs/tags/2017-04-06",
+        "oid": "44c97cc05d1b6a620e0650587a7077a93269fd47",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-04-13": {
+        "name": "refs/tags/2017-04-13",
+        "oid": "b3dd7fd6099009f19c63ac9a1581ae2ad2403156",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-04-14": {
+        "name": "refs/tags/2017-04-14",
+        "oid": "da85e0e60ee3de42584a2f758c71ff27f3710483",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-06-01": {
+        "name": "refs/tags/2017-06-01",
+        "oid": "4fc137a5e240ff3c31f30773172e460fa1ad277b",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-06-02": {
+        "name": "refs/tags/2017-06-02",
+        "oid": "e209f98592a92858bdc7d394492be01cd5e0be5a",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-06-22": {
+        "name": "refs/tags/2017-06-22",
+        "oid": "12790e61a24eaf7910bb86ae89f532d2ea95e02e",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-09-27": {
+        "name": "refs/tags/2017-09-27",
+        "oid": "14497000f690d397db0b5b3bd4d5699eeb211a69",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-09-27.1": {
+        "name": "refs/tags/2017-09-27.1",
+        "oid": "64fb71b2d2e52fa2fcead4d02646dc60395b8dc0",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-10-02": {
+        "name": "refs/tags/2017-10-02",
+        "oid": "45f51529378d4a276fe5958fcd2426fd730fb5f9",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-10-03": {
+        "name": "refs/tags/2017-10-03",
+        "oid": "64a23ac2392e3fa0d12a6c654632a0b27c53554f",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-10-04": {
+        "name": "refs/tags/2017-10-04",
+        "oid": "6ebd749fc0135e048bf0c3a7e32da56130483033",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-10-04.1": {
+        "name": "refs/tags/2017-10-04.1",
+        "oid": "1f430e0ac10954bbbfec01f4ef71fc15743ac2d6",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-10-05": {
+        "name": "refs/tags/2017-10-05",
+        "oid": "670d771698d0e3e77624d1cec8fa41d9511f392f",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-10-12": {
+        "name": "refs/tags/2017-10-12",
+        "oid": "0567442479b8d11dc5d3a4c6175e0fb79c116069",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-10-16": {
+        "name": "refs/tags/2017-10-16",
+        "oid": "54ab7b654ec5662d75b40c0b9c132609675a5cd4",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-10-25": {
+        "name": "refs/tags/2017-10-25",
+        "oid": "a4c516f0a3da09c3d5d35999bf2b17d10b4d0979",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-11-01": {
+        "name": "refs/tags/2017-11-01",
+        "oid": "55b1ce8130b1b01eff51fa5d2e7f5e655462e10f",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-11-15": {
+        "name": "refs/tags/2017-11-15",
+        "oid": "d1af496a81b0af47bb3046c6092df457a96d31a2",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-11-29": {
+        "name": "refs/tags/2017-11-29",
+        "oid": "680b65d693d0e1e5926fa31dc7be1d6dc277668e",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-12-14": {
+        "name": "refs/tags/2017-12-14",
+        "oid": "160b2234334118d3f0dcbcd80f9ce5f9836592a0",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-12-18": {
+        "name": "refs/tags/2017-12-18",
+        "oid": "fb69f9850f766686c4d107f51d459b8a43a11a23",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-12-19": {
+        "name": "refs/tags/2017-12-19",
+        "oid": "08a7f0cb34af365b15143ec8252390e63bc47996",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-12-20": {
+        "name": "refs/tags/2017-12-20",
+        "oid": "c03f50159a9a93e2f0d663306416a0b4b3cb53a1",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-12-20.1": {
+        "name": "refs/tags/2017-12-20.1",
+        "oid": "22f1e6336ba83a2f67bcf42bd654efc679fb1bc4",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2017-12-22": {
+        "name": "refs/tags/2017-12-22",
+        "oid": "19d81684bdabe0a9cb061d3a80928dd765e70e81",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-01-09": {
+        "name": "refs/tags/2018-01-09",
+        "oid": "28caa13197f77a5d398a39482ef21cbaf55a8e47",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-02-16": {
+        "name": "refs/tags/2018-02-16",
+        "oid": "12f74fa6c859c0e24b16c228925e69737468991d",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-02-20": {
+        "name": "refs/tags/2018-02-20",
+        "oid": "1ad4b5a896adfd5f60b526d1905effb25597fbb5",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-03-27": {
+        "name": "refs/tags/2018-03-27",
+        "oid": "3d9db9a3e0588ebd6fe717e8583eac578b1c3004",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-04-02": {
+        "name": "refs/tags/2018-04-02",
+        "oid": "016b758082b0d175a57ce732b8c35da3c55a24bb",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-04-05": {
+        "name": "refs/tags/2018-04-05",
+        "oid": "6a4040f71d907507a12da7529ff3551dd132a58a",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-05-10": {
+        "name": "refs/tags/2018-05-10",
+        "oid": "009834ad0499511dd696712bcb87292a01cfb1a6",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-05-17": {
+        "name": "refs/tags/2018-05-17",
+        "oid": "d17f0924fd9950b3ac03d8d9d24b74ba2f790297",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-05-22": {
+        "name": "refs/tags/2018-05-22",
+        "oid": "652d48b78881690036bf69d20d583cc3a92516d4",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-06-19": {
+        "name": "refs/tags/2018-06-19",
+        "oid": "ad4c2c55e00040d3a1324d96ce5b57975106d342",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-06-20": {
+        "name": "refs/tags/2018-06-20",
+        "oid": "498f9f338927114e5c26246d484efa1deda6f05e",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-07-16": {
+        "name": "refs/tags/2018-07-16",
+        "oid": "11994f7fe1a85de90ea4015f59c2b2e466b6b74e",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-10-17": {
+        "name": "refs/tags/2018-10-17",
+        "oid": "dd2b29939b602271b3fcaf65b02934646115f054",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-10-23": {
+        "name": "refs/tags/2018-10-23",
+        "oid": "53ab61d275753ff517f23eaa2e233e79ddb41a03",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-10-25": {
+        "name": "refs/tags/2018-10-25",
+        "oid": "e111a8c6ae14524059de9e7e6698407bab59f873",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-10-31": {
+        "name": "refs/tags/2018-10-31",
+        "oid": "a44c551dfd6c241a2c37547babae17f73d9a320b",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/2018-11-29": {
+        "name": "refs/tags/2018-11-29",
+        "oid": "e3e20c7b4ddb713239be8dc70b9dd668c2cc5b90",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      }
+    },
+    "conradbeach": {
+      "HEAD": {
+        "name": "HEAD",
+        "oid": "8b754570b2d331403accc290871cd853d9d9d31d",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": "refs/heads/master"
+      },
+      "refs/heads/1.0": {
+        "name": "refs/heads/1.0",
+        "oid": "e8a2efe95c3770af65f7f34ee2a5c2174be869cd",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/1.1": {
+        "name": "refs/heads/1.1",
+        "oid": "91cd1370f450385f3a9c961dbfeeaaac9171bc75",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/bf-delete-old-docs": {
+        "name": "refs/heads/bf-delete-old-docs",
+        "oid": "65e5ac572e8a6bcbe06009902a36cb96efaf505d",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/bf-gem-updates": {
+        "name": "refs/heads/bf-gem-updates",
+        "oid": "2e2cdb9823eb3c3a95bd4f730ca7978acf442e62",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/bf-improve-scorm-canvas-upload": {
+        "name": "refs/heads/bf-improve-scorm-canvas-upload",
+        "oid": "96cc1930c40f43b857dc283e67e7d390c4df1180",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/bf-scorm-course-versions": {
+        "name": "refs/heads/bf-scorm-course-versions",
+        "oid": "c444725f2a42aa49084cadab4efa81f51c6c8dfb",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/bf-scorm-separate-upload": {
+        "name": "refs/heads/bf-scorm-separate-upload",
+        "oid": "7e5f0462850d6942bba7cbacf7b67043e6902c0f",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/cc_scorm_accessibility": {
+        "name": "refs/heads/cc_scorm_accessibility",
+        "oid": "18f5ba098546b5df78fb62e862c72c0f4c754f65",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/jd_public_to_private": {
+        "name": "refs/heads/jd_public_to_private",
+        "oid": "ec106add2fd9f0ee9b87157a9664ca4e251b73f6",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/master": {
+        "name": "refs/heads/master",
+        "oid": "8b754570b2d331403accc290871cd853d9d9d31d",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.0.0": {
+        "name": "refs/tags/1.0.0",
+        "oid": "e111a8c6ae14524059de9e7e6698407bab59f873",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.0.1": {
+        "name": "refs/tags/1.0.1",
+        "oid": "cdfb6e8273c6c58027e8e5ffccb163504e933e70",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.0.2": {
+        "name": "refs/tags/1.0.2",
+        "oid": "703c9defe799744c5ce728740e0980ad0f233f8e",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.0.3": {
+        "name": "refs/tags/1.0.3",
+        "oid": "34e6b7e24794e7972ddd33aa2e0d937710da9410",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.0.4": {
+        "name": "refs/tags/1.0.4",
+        "oid": "e8a2efe95c3770af65f7f34ee2a5c2174be869cd",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.1.0": {
+        "name": "refs/tags/1.1.0",
+        "oid": "fdab2fa875ad2f08f653408b0e11392eaa38705f",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.1.1": {
+        "name": "refs/tags/1.1.1",
+        "oid": "b4d77af125c5a636e87d9ad313ba8e72f278759c",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.1.10": {
+        "name": "refs/tags/1.1.10",
+        "oid": "91cd1370f450385f3a9c961dbfeeaaac9171bc75",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.1.2": {
+        "name": "refs/tags/1.1.2",
+        "oid": "8f6bd081cf2af48c910597497f996d2856568fc2",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.1.3": {
+        "name": "refs/tags/1.1.3",
+        "oid": "67727e9cd5de996722ae54eb3dd02cd0031b5a9c",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.1.4": {
+        "name": "refs/tags/1.1.4",
+        "oid": "59ec9266283fc3862872f9f6c6675c6961df997e",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.1.5": {
+        "name": "refs/tags/1.1.5",
+        "oid": "9c5d91700cc4467f1e49018804efec7d7b8c298d",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.1.6": {
+        "name": "refs/tags/1.1.6",
+        "oid": "08ebdd0cb83e9ce19134406958b1a6631184bcfc",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.1.7": {
+        "name": "refs/tags/1.1.7",
+        "oid": "33430da109ceee1af0be4ef775e179d0c3098eb1",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.1.8": {
+        "name": "refs/tags/1.1.8",
+        "oid": "199aa8f92695cc321571e64183f9d323942388ae",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/1.1.9": {
+        "name": "refs/tags/1.1.9",
+        "oid": "af2a9f178585a221fc6d4d0cba42c9fc10de4c5a",
         "local": 1,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null

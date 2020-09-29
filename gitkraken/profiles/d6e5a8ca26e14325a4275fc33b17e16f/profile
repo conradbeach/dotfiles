@@ -32,40 +32,31 @@
     }
   },
   "fileNodeList": {
-    "viewMode": "tree_view"
+    "viewMode": "tree_view",
+    "sort": "name_descending"
   },
   "tabInfo": {
     "tabs": [
       {
-        "id": "e9ef2e9f-574a-4ad7-af6e-1cbc58e85e64",
+        "id": "36304578-53a8-470f-bc13-8efee02ee6c8",
         "type": "REPO",
         "repoName": "socialize",
         "repoPath": "/Users/conrad/Development/atomic_jolt/socialize/"
       },
       {
-        "id": "cc88d8c5-cb4e-4e85-a195-0ab8af26a3d7",
+        "id": "43000816-83fa-41c6-9c99-a53b7a68bb90",
         "type": "REPO",
         "repoName": "microsoft-integrations",
         "repoPath": "/Users/conrad/Development/atomic_jolt/microsoft-integrations/"
       },
       {
-        "id": "1f2aafbf-8b9a-4c29-bcd7-07c08bd11efa",
-        "type": "REPO",
-        "repoName": "lti_starter_app",
-        "repoPath": "/Users/conrad/Development/atomic_jolt/lti_starter_app/"
-      },
-      {
-        "id": "a86dce02-bf81-4752-a053-c7834924e01f",
+        "id": "cf576d3b-edf1-48b9-b73d-b3d855893710",
         "type": "REPO",
         "repoName": "dotfiles",
         "repoPath": "/Users/conrad/Development/dotfiles/"
-      },
-      {
-        "id": "87f8bf66-c322-454f-8923-8aeedb1f24b5",
-        "type": "NEW"
       }
     ],
-    "selectedTabId": "a86dce02-bf81-4752-a053-c7834924e01f"
+    "selectedTabId": "cf576d3b-edf1-48b9-b73d-b3d855893710"
   },
   "zoom": 1,
   "actions": {
@@ -111,5 +102,6 @@
       }
     }
   },
-  "externalEditor": "Visual Studio Code"
+  "externalEditor": "Visual Studio Code",
+  "diffTool": "git-config"
 }
