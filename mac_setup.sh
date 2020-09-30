@@ -65,7 +65,6 @@ brew cask install google-chrome
 brew cask install marshallofsound-google-play-music-player
 brew cask install handbrake
 brew cask install iterm2
-brew cask install homebrew/cask-drivers/jabra-direct
 brew cask install kap
 brew cask install keyboardcleantool
 brew cask install lacona
