@@ -34,12 +34,12 @@ Next time you do this. Make a note here in this file of everything that you chan
 This article tells how to determine changes being made: https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/#the-way-to-find-the-domain--key-responsible-for-a-setting
 Add setting changes to the Mac setup script where possible.
 
+## Tmux
+- [ ] Hit <prefix>+I to install plugins.
+
 ## Neovim
 - [ ] Run :checkhealth.
 - [ ] Run :PlugInstall.
-
-## Tmux
-- [ ] Hit <prefix>+I to install plugins.
 
 ## Security
 - [ ] Generate a new GPG key. (Using GitKraken is the easiest.)
