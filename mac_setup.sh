@@ -71,7 +71,6 @@ brew cask install lacona
 brew cask install numi
 brew cask install oni
 brew cask install postman
-brew cask install protonvpn
 brew cask install slack
 brew cask install tableplus
 brew cask install virtualbox
