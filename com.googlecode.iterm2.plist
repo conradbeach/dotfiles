@@ -283,7 +283,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>880 744 799 448 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>321 165 850 482 0 0 2560 1440 </string>
+	<string>1280 41 1280 1376 0 0 2560 1440 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -862,7 +862,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Menlo-Regular 11</string>
+			<string>HackNerdFontComplete-Regular 16</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1107,6 +1107,12 @@
 	<array>
 		<string>3.3.12</string>
 	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>Hack Nerd Font Mono</string>
+		<string>Hack Nerd Font</string>
+		<string>Menlo</string>
+	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
@@ -1117,7 +1123,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>CE7D5D17-B03B-45F5-8D92-5DF7D26CFDDD</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>4</integer>
+	<integer>5</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
