@@ -51,6 +51,11 @@
           "hostingServiceType": "gitlab",
           "owner": "atomicjolt",
           "name": "microsoft-integrations"
+        },
+        "socialize": {
+          "hostingServiceType": "gitlab",
+          "owner": "atomicjolt",
+          "name": "socialize"
         }
       }
     }
@@ -61,10 +66,17 @@
   },
   "remoteHeadCollectionByRemoteName": {
     "origin": {
+      "HEAD": {
+        "name": "HEAD",
+        "oid": "9dbd73b37f07bf51fb4f18f906a8d119081e3c83",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": "refs/heads/master"
+      },
       "refs/heads/master": {
         "name": "refs/heads/master",
-        "oid": "a6b1c7fc048e881143d78ceb9a8ad7d7a35a4bde",
-        "local": 0,
+        "oid": "9dbd73b37f07bf51fb4f18f906a8d119081e3c83",
+        "local": 1,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
       }
