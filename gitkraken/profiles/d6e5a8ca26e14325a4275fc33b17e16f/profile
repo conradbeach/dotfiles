@@ -4,7 +4,7 @@
   "userEmail": "conradbeach@protonmail.com",
   "userName": "Conrad Beach",
   "gpg": {
-    "userSigningKey": "C13BE69D959019631C867534AD25A8138D545CB7",
+    "userSigningKey": "6B51B4DACA31DF7003A8CB8F587EFD2888D26B2A",
     "commitGpgSign": true,
     "tagForceSignAnnotated": true,
     "gpgProgram": "/usr/local/bin/gpg"
@@ -28,7 +28,7 @@
       "rightPanelHeight": 561
     },
     "DetailPanel": {
-      "width": 600
+      "width": 599
     }
   },
   "fileNodeList": {
@@ -38,25 +38,25 @@
   "tabInfo": {
     "tabs": [
       {
-        "id": "36304578-53a8-470f-bc13-8efee02ee6c8",
-        "type": "REPO",
-        "repoName": "socialize",
-        "repoPath": "/Users/conrad/Development/atomic_jolt/socialize/"
-      },
-      {
-        "id": "43000816-83fa-41c6-9c99-a53b7a68bb90",
-        "type": "REPO",
-        "repoName": "microsoft-integrations",
-        "repoPath": "/Users/conrad/Development/atomic_jolt/microsoft-integrations/"
-      },
-      {
-        "id": "cf576d3b-edf1-48b9-b73d-b3d855893710",
+        "id": "54252860-0702-4031-b443-4108a38e031c",
         "type": "REPO",
         "repoName": "dotfiles",
         "repoPath": "/Users/conrad/Development/dotfiles/"
+      },
+      {
+        "id": "43c1071f-df3a-4792-b589-ae58ff6e999b",
+        "type": "REPO",
+        "repoName": "socialize",
+        "repoPath": "/Users/conrad/Development/atomicjolt/socialize/"
+      },
+      {
+        "id": "55a8bf4a-1902-4d78-a5b5-14c8843484c8",
+        "type": "REPO",
+        "repoName": "microsoft-integrations",
+        "repoPath": "/Users/conrad/Development/atomic_jolt/microsoft-integrations/"
       }
     ],
-    "selectedTabId": "cf576d3b-edf1-48b9-b73d-b3d855893710"
+    "selectedTabId": "54252860-0702-4031-b443-4108a38e031c"
   },
   "zoom": 1,
   "actions": {
