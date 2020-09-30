@@ -299,7 +299,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 defaults write com.apple.finder ShowPathbar -bool true
 
 ## Set dock size. (System Preferences > Dock > Size)
-defaults write com.apple.dock tilesize -int 30
+defaults write com.apple.dock tilesize -int 24
 
 # Key repeat speed. (System Preferences > Keyboard. This is as fast as it will go.)
 defaults write NSGlobalDomain KeyRepeat -int 2
