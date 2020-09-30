@@ -36,6 +36,8 @@ Add setting changes to the Mac setup script where possible.
 - [ ] Update your Atomic Jolt wiki page with your new SSH and GPG keys.
 
 ## Application Changes
+* [ ] Xcode
+  * Install this first since it's huge.
 * [ ] Aware
   * Add it to Login Items so it loads on startup.
 * [ ] BetterTouchTool
