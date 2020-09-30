@@ -77,7 +77,6 @@ brew cask install tableplus
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install visual-studio-code
-brew cask install vlc
 
 # Link Files
 echo "\n** Symlinking Files **"
