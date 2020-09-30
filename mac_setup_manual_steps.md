@@ -72,3 +72,12 @@ Add setting changes to the Mac setup script where possible.
   * Set to launch at login.
   * Change Hint Mode shortcut to ctl-f, set custom characters to 'asdfghjkl', set text size to 12.
   * Change Scroll Mode shortcut to ctl-shift-s.
+
+## Login Items
+Add these login items:
+* Aware
+* CopyClip2
+* Dash
+* Dropbox
+* Lacona
+* Vimac
