@@ -40,7 +40,7 @@ brew install zsh
 
 ## Fonts
 echo "\n** Installing Brew Fonts **"
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 
 ## Services
