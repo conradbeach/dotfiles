@@ -22,6 +22,7 @@ brew tap heroku/brew && brew install heroku
 brew install htop
 brew install httpie
 brew install neovim
+brew install nginx
 brew install pinentry-mac
 brew install python
 brew tap thoughtbot/formulae && brew install rcm
