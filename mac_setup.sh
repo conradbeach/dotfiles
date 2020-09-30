@@ -86,6 +86,7 @@ brew cask install visual-studio-code
 
 # Link Files
 print_header "Symlinking Files"
+mkdir ~/.config
 ln -s ~/Development/dotfiles/nvim ~/.config
 ln -s ~/Development/dotfiles/.circleci ~
 mkdir ~/.ssh/
