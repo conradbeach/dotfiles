@@ -30,9 +30,8 @@
 - [ ] Set up Time Machine.
 - [ ] Check "Show Time Machine in menu bar". (In Settings > Time Machine.)
 
-Next time you do this. Make a note here in this file of everything that you change.
+TODO: It'd be great to automate most of the above in the Mac setup script where possible.
 This article tells how to determine changes being made: https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/#the-way-to-find-the-domain--key-responsible-for-a-setting
-Add setting changes to the Mac setup script where possible.
 
 ## Tmux
 - [ ] Hit <prefix>+I to install plugins.
