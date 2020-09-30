@@ -1,7 +1,4 @@
-elasticsearch 5.6.3
-elixir 1.9.4
-erlang 22.1.7
-java adopt-openjdk-13.0.2+8_openj9-0.18.0
+java adoptopenjdk-15.0.0+36.openj9-0.22.0
 nodejs 12.10.0
 postgres 12.3
 ruby 2.6.5
