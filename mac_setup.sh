@@ -151,8 +151,7 @@ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
 ## Java
 echo "\n** Installing Java **"
-brew install jq
-brew install coreutils
+brew install jq coreutils
 asdf plugin-add java https://github.com/halcyon/asdf-java.git
 
 ## Elasticsearch
