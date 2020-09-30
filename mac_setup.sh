@@ -2,12 +2,18 @@
 
 # This script is meant to be idempotent and should be safe to run multiple times.
 
+function print_header() {
+echo "**************************************************************************"
+echo "**" $1
+echo "**************************************************************************"
+}
+
 # Brew
-echo "\n** Installing Brew **"
+print_header "Installing Brew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 ## Packages
-echo "\n** Installing Brew Packages **"
+print_header "Installing Brew Packages"
 brew install ack
 brew install asciinema
 brew install bat
@@ -41,17 +47,17 @@ brew install yarn
 brew install zsh
 
 ## Fonts
-echo "\n** Installing Brew Fonts **"
+print_header "Installing Brew Fonts"
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 
 ## Services
-echo "\n** Installing Brew Services **"
+print_header "Installing Brew Services"
 brew install postgresql
 brew services start postgresql
 
 ## Applications
-echo "\n** Installing Applications via Brew Cask**"
+print_header "Installing Applications via Brew Cask"
 brew cask install aware
 brew cask install balenaetcher
 brew cask install bettertouchtool
@@ -80,7 +86,7 @@ brew cask install virtualbox-extension-pack
 brew cask install visual-studio-code
 
 # Link Files
-echo "\n** Symlinking Files **"
+print_header "Symlinking Files"
 ln -s ~/Development/dotfiles/nvim ~/.config
 ln -s ~/Development/dotfiles/.circleci ~
 mkdir ~/.ssh/
@@ -120,118 +126,118 @@ ln -s ~/Development/dotfiles/gitkraken/service/ ~/.gitkraken
 ln -s ~/Development/dotfiles/gitkraken/config ~/.gitkraken
 
 # asdf
-echo "\n** Installing asdf **"
+print_header "Installing asdf"
 rm -rf ~/.asdf
 brew install asdf
 source ~/.zshrc
 
 ## Dependencies
-echo "\n** Installing Dependencies **"
+print_header "Installing Dependencies"
 xcode-select --install
 brew install coreutils curl git
 
 ## Ruby
-echo "\n** Installing Ruby **"
+print_header "Installing Ruby"
 brew install openssl libyaml libffi
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 
 ## Erlang
-echo "\n** Installing Erlang **"
+print_header "Installing Erlang"
 brew install autoconf wxmac
 asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
 
 ## Elixir
-echo "\n** Installing Elixir **"
+print_header "Installing Elixir"
 asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 
 ## NodeJS
-echo "\n** Installing NodeJS **"
+print_header "Installing NodeJS"
 brew install coreutils gpg
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
 ## Java
-echo "\n** Installing Java **"
+print_header "Installing Java"
 brew install jq coreutils
 asdf plugin-add java https://github.com/halcyon/asdf-java.git
 
 ## Elasticsearch
-echo "\n** Installing Elasticsearch **"
+print_header "Installing Elasticsearch"
 asdf plugin-add elasticsearch https://github.com/mikestephens/asdf-elasticsearch.git
 
 ## PostgreSQL
 ### The primary installation of Postgres is done with Brew. Alternative versions
 ### are installed with asdf.
-echo "\n** Installing PostgreSQL **"
+print_header "Installing PostgreSQL"
 asdf plugin-add postgres
 
 ## Install Global Versions
-echo "\n** Installing All Global Versions of Languages **"
+print_header "Installing All Global Versions of Languages"
 asdf install
 
 
 # Zsh
 
 ## Oh My Zsh
-echo "\n** Installing Oh My Zsh **"
+print_header "Installing Oh My Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-zsh/themes
 
 ## zsh-git-prompt
-echo "\n** Installing zsh-git-prompt **"
+print_header "Installing zsh-git-prompt"
 mkdir ~/.oh-my-zsh/zsh-git-prompt
 curl https://raw.githubusercontent.com/olivierverdier/zsh-git-prompt/master/zshrc.sh -o ~/.oh-my-zsh/zsh-git-prompt/zshrc.sh
 
 ## zsh-syntax-highlighting
-echo "\n** Installing zsh-syntax-highlighting **"
+print_header "Installing zsh-syntax-highlighting"
 brew install zsh-syntax-highlighting
 
 ## zsh-completions
-echo "\n** Installing zsh-completions **"
+print_header "Installing zsh-completions"
 brew install zsh-completions
 
 # Neovim
 
 ## vim-plug
-echo "\n** Installing vim-plug **"
+print_header "Installing vim-plug"
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ## Python Support
-echo "\n** Installing Neovim Package for Python **"
+print_header "Installing Neovim Package for Python"
 pip install neovim
 
 # Other Tools
 
 ## rupa/z
-echo "\n** Installing z **"
+print_header "Installing z"
 curl https://raw.githubusercontent.com/rupa/z/master/z.sh -o ~/.oh-my-zsh/z.sh
 
 ## Tmuxinator
-echo "\n** Installing Tmuxinator Completions **"
+print_header "Installing Tmuxinator Completions"
 curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -o ~/.tmuxinator.zsh
 
 ## tat
-echo "\n** Installing tat **"
+print_header "Installing tat"
 curl https://raw.githubusercontent.com/thoughtbot/dotfiles/master/bin/tat -o /usr/local/bin/tat && chmod +x /usr/local/bin/tat
 
 ## Tmux Plugin Manager
-echo "\n** Installing Tmux Plugin Manager **"
+print_header "Installing Tmux Plugin Manager"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ## xcode-select
-echo "\n** Installing Xcode Command Line Tools **"
+print_header "Installing Xcode Command Line Tools"
 xcode-select --install
 
 # Other Development Setup
 ## SSH
-echo "\n** Generating an SSH key **"
+print_header "Generating an SSH key"
 ssh-keygen -t rsa -b 4096 -C "conradbeach@protonmail.com"
 eval "$(ssh-agent -s)"
-echo "\nrun 'pbcopy < ~/.ssh/id_rsa.pub' and paste it into GitHub and GitLab"
+echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste it into GitHub and GitLab"
 
 ## Project Repos
-echo "\n** Cloning Project Repos **"
-echo "\nThis step requires you to add your new SSH key to GitHub and GitLab."
+print_header "Cloning Project Repos"
+echo "This step requires you to add your new SSH key to GitHub and GitLab."
 read -p "Press [Enter] to confirm you've done this."
 git clone git@gitlab.com:atomicjolt/act.git ~/Development/atomicjolt/act
 git clone git@github.com:atomicjolt/adhesion.git ~/Development/atomicjolt/adhesion
@@ -247,7 +253,7 @@ git clone git@github.com:conradbeach/temperature_alert.git ~/Development/tempera
 # MacOS Settings
 ## Example settings: https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 ## More examples: https://github.com/pawelgrzybek/dotfiles/blob/master/setup-macos.sh
-echo "\n** Updating MacOS Settings**"
+print_header "Updating MacOS Setting"
 ## Expand save panel by default.
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
@@ -306,5 +312,6 @@ for app in "Dock" "Finder"; do
   killall "${app}" > /dev/null 2>&1
 done
 
+print_header "Final Steps"
 echo "Perform manual setup steps in mac_setup_manual_steps.md"
 echo "RESTART: Some changes will require a restart before taking effect."
