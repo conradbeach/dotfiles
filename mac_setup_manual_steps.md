@@ -5,19 +5,30 @@
 - [ ] Copy '~/Downloads' folder from Time Machine backup onto this machine.
 
 ## OS Settings
-- [ ] Turn on FileVault.
 - [ ] Change 'Favorites' sidebar list to: home folder, Development, Downloads, Applications, Air Drop.
 - [ ] Change 'Locations' sidebar list to: Conrad's MacBook Pro, Network
+- [ ] Change "Click in the scroll bar to" to "Jump to the spot that's clicked". (In Settings > General.)
+- [ ] Check "Ask to keep changes when closing documents". (In Settings > General).
 - [ ] Change default web browser to Firefox Developer Edition. (In Settings > General.)
-- [ ] Change Spotlight keybinding to option-space. (In Settings > Keyboard Shortcuts > Spotlight.)
+- [ ] Uncheck "Show indicators for open applications". (In Settings > Dock.)
+- [ ] Uncheck "Show recent applications in Dock". (In Settings > Dock.)
 - [ ] Enable Atomic Jolt Google account for Calendar. (In Settings > Internet Accounts.)
+- [ ] Require password after 5 seconds of sleep or screen saver. (In Settings > Security & Privacy > General.)
+- [ ] Turn on FileVault. (In Settings > Security & Privacy > FileVault.)
+- [ ] Turn on Firewall. (In Settings > Security & Privacy > Firewall.)
+- [ ] Uncheck "Show Input menu in menu bar". (In Settings > Keyboard > Input Sources.)
+- [ ] Change Spotlight keybinding to option-space. (In Settings > Keyboard Shortcuts > Spotlight.)
 - [ ] Map caps lock to escape on internal and external keyboards.
 - [ ] Change Swipe between full screen apps to four fingers.
 - [ ] Change Mission Control to four fingers.
 - [ ] Change App Expose to four fingers.
 - [ ] Change minimize windows to scale effect. (In Settings > Dock > Minimize windows using)
 - [ ] Show Bluetooth in menu bar. (In Settings > Bluetooth)
+- [ ] Connect to iPhone with Bluetooth.
 - [ ] Display folder on top in Finder. (In Finder Preferences > Advanced)
+- [ ] Display the time with seconds. (In Settings > Date & Time > Clock.)
+- [ ] Set up Time Machine.
+- [ ] Check "Show Time Machine in menu bar". (In Settings > Time Machine.)
 
 Next time you do this. Make a note here in this file of everything that you change.
 This article tells how to determine changes being made: https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/#the-way-to-find-the-domain--key-responsible-for-a-setting
