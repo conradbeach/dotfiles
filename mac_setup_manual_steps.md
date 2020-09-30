@@ -87,7 +87,7 @@ Add setting changes to the Mac setup script where possible.
   * Change Scroll Mode shortcut to ctl-shift-s.
 
 ## Login Items
-Add these login items:
+Add these login items (In Settings > Users & Groups > Login Items):
 * Aware
 * CopyClip2
 * Dash
