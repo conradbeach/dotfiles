@@ -54,7 +54,6 @@ brew cask install font-hack-nerd-font
 ## Services
 print_header "Installing Brew Services"
 brew install postgresql
-brew services start postgresql
 
 ## Applications
 print_header "Installing Applications via Brew Cask"
