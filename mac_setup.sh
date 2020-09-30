@@ -109,7 +109,6 @@ rm ~/.zsh_history
 ln -s ~/Development/dotfiles/.zsh_history ~
 rm ~/.zshrc
 ln -s ~/Development/dotfiles/.zshrc ~
-ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-zsh/themes
 mkdir ~/.gnupg/
 ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 ln -s ~/Development/dotfiles/git-commit-template.txt ~
@@ -174,6 +173,7 @@ asdf install
 ## Oh My Zsh
 echo "\n** Installing Oh My Zsh **"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+ln -s ~/Development/dotfiles/robbyrussell-altered-by-conrad.zsh-theme ~/.oh-my-zsh/themes
 
 ## zsh-git-prompt
 echo "\n** Installing zsh-git-prompt **"
