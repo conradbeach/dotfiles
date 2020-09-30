@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script is meant to be idempotent and should be safe to run multiple times.
+
 # Brew
 echo "\n** Installing Brew **"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
