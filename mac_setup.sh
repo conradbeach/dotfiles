@@ -239,13 +239,13 @@ echo "run 'pbcopy < ~/.ssh/id_rsa.pub' and paste it into GitHub and GitLab"
 print_header "Cloning Project Repos"
 echo "This step requires you to add your new SSH key to GitHub and GitLab."
 read -p "Press [Enter] to confirm you've done this."
-git clone git@gitlab.com:atomicjolt/act.git ~/Development/atomicjolt/act
-git clone git@github.com:atomicjolt/adhesion.git ~/Development/atomicjolt/adhesion
-git clone git@gitlab.com:atomicjolt/learnosity.git ~/Development/atomicjolt/learnosity
-git clone git@github.com:atomicjolt/lti_starter_app.git ~/Development/atomicjolt/lti_starter_app
-git clone git@gitlab.com:atomicjolt/microsoft-integrations.git ~/Development/atomicjolt/microsoft-integrations
-git clone git@gitlab.com:atomicjolt/socialize.git ~/Development/atomicjolt/socialize
-git clone git@gitlab.com:therapymate/therapymate.git ~/Development/atomicjolt/therapymate
+git clone git@gitlab.com:atomicjolt/act.git ~/Development/atomic_jolt/act
+git clone git@github.com:atomicjolt/adhesion.git ~/Development/atomic_jolt/adhesion
+git clone git@gitlab.com:atomicjolt/learnosity.git ~/Development/atomic_jolt/learnosity
+git clone git@github.com:atomicjolt/lti_starter_app.git ~/Development/atomic_jolt/lti_starter_app
+git clone git@gitlab.com:atomicjolt/microsoft-integrations.git ~/Development/atomic_jolt/microsoft-integrations
+git clone git@gitlab.com:atomicjolt/socialize.git ~/Development/atomic_jolt/socialize
+git clone git@gitlab.com:therapymate/therapymate.git ~/Development/atomic_jolt/therapymate
 git clone git@github.com:conradbeach/conradbeach.github.io.git ~/Development/conradbeach.github.io
 git clone git@github.com:conradbeach/food-storage-inventory.git ~/Development/food-storage-inventory
 git clone git@github.com:conradbeach/temperature_alert.git ~/Development/temperature_alert
