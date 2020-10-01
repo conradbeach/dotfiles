@@ -3,6 +3,7 @@
 ## Files
 - [ ] Copy '~/VirtualBox VMs' folder from Time Machine backup onto this machine.
 - [ ] Copy '~/Downloads' folder from Time Machine backup onto this machine.
+- [ ] Copy relevant projects onto this machine from the '~/Development' folder from Time Machine backup.
 
 ## OS Settings
 - [ ] Change 'Favorites' sidebar list to: home folder, Development, Downloads, Applications, Air Drop.
