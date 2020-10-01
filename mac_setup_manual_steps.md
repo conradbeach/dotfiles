@@ -71,6 +71,8 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
   * Install it from the Mac App Store.
   * Change keybinding to command-space.
   * Install addons: Caffeniate, Convert Currency, Time Zones, Timers & Alarms.
+* [ ] Messages
+  * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
 * [ ] Screenshot App
   * Change save location to Downloads folder.
 * [ ] Sophos Home
