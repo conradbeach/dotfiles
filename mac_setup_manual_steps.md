@@ -6,8 +6,6 @@
 - [ ] Copy relevant projects onto this machine from the '~/Development' folder from Time Machine backup.
 
 ## OS Settings
-- [ ] Change 'Favorites' sidebar list to: home folder, Development, Downloads, Applications, Air Drop.
-- [ ] Change 'Locations' sidebar list to: Conrad's MacBook Pro, Network
 - [ ] Change "Click in the scroll bar to" to "Jump to the spot that's clicked". (In Settings > General.)
 - [ ] Check "Ask to keep changes when closing documents". (In Settings > General).
 - [ ] Change default web browser to Firefox Developer Edition. (In Settings > General.)
@@ -26,10 +24,17 @@
 - [ ] Change minimize windows to scale effect. (In Settings > Dock > Minimize windows using)
 - [ ] Show Bluetooth in menu bar. (In Settings > Bluetooth)
 - [ ] Connect to iPhone with Bluetooth.
-- [ ] Display folder on top in Finder. (In Finder Preferences > Advanced)
 - [ ] Display the time with seconds. (In Settings > Date & Time > Clock.)
+- [ ] Show the date. (In Settings > Date & Time > Clock.)
 - [ ] Set up Time Machine.
 - [ ] Check "Show Time Machine in menu bar". (In Settings > Time Machine.)
+
+## Finder Settings
+- [ ] Display folder on top in Finder. (In Finder Preferences > Advanced)
+- [ ] Remove items from trash after 30 days. (In Finder Preferences > Advanced)
+- [ ] Change "New Finder window shows" to home folder. (In Finder Preferences > General.)
+- [ ] Change 'Favorites' sidebar list to: home folder, Development, Downloads, Applications, Air Drop.
+- [ ] Change 'Locations' sidebar list to: Conrad's MacBook Pro, Network
 
 TODO: It'd be great to automate most of the above in the Mac setup script where possible.
 This article tells how to determine changes being made: https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/#the-way-to-find-the-domain--key-responsible-for-a-setting
