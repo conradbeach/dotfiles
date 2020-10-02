@@ -1,5 +1,6 @@
 brakeman
 bundler
+bundler-audit
 colorls
 neovim
 orbacle
