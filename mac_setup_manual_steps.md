@@ -73,6 +73,9 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
   * Change text to Hack Nerd Font regular 16 point. (Settings > Profiles > Text)
 * [ ] Firefox Developer Edition
   * Import sessions into Tab Session Manager. The backup is in the Downloads folder.
+* [ ] Kap
+  * Turn on "Highlight clicks"
+  * Change "Save too..." to "~/Downloads".
 * [ ] Lacona
   * Install it from the Mac App Store.
   * Change keybinding to command-space.
