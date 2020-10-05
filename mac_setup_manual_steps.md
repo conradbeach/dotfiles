@@ -76,6 +76,7 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 * [ ] Lacona
   * Install it from the Mac App Store.
   * Change keybinding to command-space.
+  * Enable all features.
   * Install addons: Caffeniate, Convert Currency, Time Zones, Timers & Alarms.
 * [ ] Messages
   * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
