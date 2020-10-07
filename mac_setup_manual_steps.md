@@ -15,8 +15,11 @@
 - [ ] Require password after 5 seconds of sleep or screen saver. (In Settings > Security & Privacy > General.)
 - [ ] Turn on FileVault. (In Settings > Security & Privacy > FileVault.)
 - [ ] Turn on Firewall. (In Settings > Security & Privacy > Firewall.)
+- [ ] Change "Press Fn key to" to "Expand Control Strip". (In Settings > Keyboard > Keyboard)
 - [ ] Uncheck "Show Input menu in menu bar". (In Settings > Keyboard > Input Sources.)
 - [ ] Change Spotlight keybinding to option-space. (In Settings > Keyboard Shortcuts > Spotlight.)
+- [ ] Turn off Mission Control keyboard shortcut (control-up). (In Settings > Keyboard Shortcuts > Mission Control.)
+- [ ] Turn off Application windows keyboard shortcut (control-down). (In Settings > Keyboard Shortcuts > Mission Control.)
 - [ ] Map caps lock to escape on internal and external keyboards.
 - [ ] Change Swipe between full screen apps to four fingers.
 - [ ] Change Mission Control to four fingers.
