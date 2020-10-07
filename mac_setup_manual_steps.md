@@ -102,8 +102,8 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 ## Login Items
 Add these login items (In Settings > Users & Groups > Login Items):
 * Aware
+* BetterTouchTool
 * CopyClip2
 * Dash
 * Dropbox
 * Lacona
-* Vimac
