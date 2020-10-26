@@ -74,7 +74,6 @@ brew cask install handbrake
 brew cask install iterm2
 brew cask install kap
 brew cask install keyboardcleantool
-brew cask install lacona
 brew cask install numi
 brew cask install oni
 brew cask install postman
