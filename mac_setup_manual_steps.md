@@ -79,11 +79,6 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 * [ ] Kap
   * Turn on "Highlight clicks"
   * Change "Save too..." to "~/Downloads".
-* [ ] Lacona
-  * Install it from the Mac App Store.
-  * Change keybinding to command-space.
-  * Enable all features.
-  * Install addons: Caffeniate, Convert Currency, Time Zones, Timers & Alarms.
 * [ ] Messages
   * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
 * [ ] TablePlus
@@ -109,4 +104,3 @@ Add these login items (In Settings > Users & Groups > Login Items):
 * CopyClip2
 * Dash
 * Dropbox
-* Lacona
