@@ -11,6 +11,7 @@ Host act-beta
 Host act-prod
   HostName 34.225.132.216
   User ubuntu
+  IdentitiesOnly yes
 Host act-prod-au
   HostName 54.153.242.52
   User ubuntu
