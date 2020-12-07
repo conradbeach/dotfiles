@@ -64,6 +64,11 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 * [ ] BetterTouchTool
   * Load license. (In iCloud Drive > Software Licenses and Such.)
   * Load configuration. (In this repo.)
+* [ ] Bitdefender Virus Scanner
+  * Install it manually.
+  * Add these exceptions:
+    * /Volumes/Mac Backup
+    * /Volumes/.timemachine
 * [ ] CopyClip2
   * Change keyboard shortcut to Ctrl-Space
   * Load license. (In iCloud Drive > Software Licenses and Such.)
