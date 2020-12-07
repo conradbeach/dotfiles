@@ -38,25 +38,25 @@
   "tabInfo": {
     "tabs": [
       {
-        "id": "54252860-0702-4031-b443-4108a38e031c",
-        "type": "REPO",
-        "repoName": "dotfiles",
-        "repoPath": "/Users/conrad/Development/dotfiles/"
-      },
-      {
-        "id": "43c1071f-df3a-4792-b589-ae58ff6e999b",
-        "type": "REPO",
-        "repoName": "socialize",
-        "repoPath": "/Users/conrad/Development/atomicjolt/socialize/"
-      },
-      {
-        "id": "55a8bf4a-1902-4d78-a5b5-14c8843484c8",
+        "id": "d23beb4d-b8d4-4ce8-bfa6-4419bf511c6e",
         "type": "REPO",
         "repoName": "microsoft-integrations",
         "repoPath": "/Users/conrad/Development/atomic_jolt/microsoft-integrations/"
+      },
+      {
+        "id": "b03356db-b3df-4d76-9f5d-7b95a743101a",
+        "type": "REPO",
+        "repoName": "socialize",
+        "repoPath": "/Users/conrad/Development/atomic_jolt/socialize/"
+      },
+      {
+        "id": "bbe60952-6ae0-466f-8a78-bd1284be3ecb",
+        "type": "REPO",
+        "repoName": "dotfiles",
+        "repoPath": "/Users/conrad/Development/dotfiles/"
       }
     ],
-    "selectedTabId": "54252860-0702-4031-b443-4108a38e031c"
+    "selectedTabId": "bbe60952-6ae0-466f-8a78-bd1284be3ecb"
   },
   "zoom": 1,
   "actions": {
