@@ -1,0 +1,78 @@
+{
+  "remoteParents": {
+    "github": {
+      "testdouble": {
+        "testdouble-jest": {
+          "hostingServiceType": "github",
+          "owner": "testdouble",
+          "name": "testdouble-jest"
+        }
+      },
+      "conradbeach": {
+        "testdouble-jest": {
+          "hostingServiceType": "github",
+          "owner": "testdouble",
+          "name": "testdouble-jest"
+        }
+      }
+    }
+  },
+  "upstreamFrecencyMetadata": {
+    "origin": {
+      "id": "remote-origin",
+      "timestamps": [
+        1602606806593
+      ],
+      "total": 1
+    }
+  },
+  "remoteHeadCollectionByRemoteName": {
+    "origin": {
+      "HEAD": {
+        "name": "HEAD",
+        "oid": "66743198ef2f5625b2e7ac389c5ebf5f13958aee",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": "refs/heads/master"
+      },
+      "refs/heads/ckb/fix-typo": {
+        "name": "refs/heads/ckb/fix-typo",
+        "oid": "5fd5fb8ab560fbc09959286336c1744d404a642c",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/master": {
+        "name": "refs/heads/master",
+        "oid": "66743198ef2f5625b2e7ac389c5ebf5f13958aee",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/v1.0.0": {
+        "name": "refs/tags/v1.0.0",
+        "oid": "ea7fa3def1bb1c958a7c0704bfc8054432bc1f90",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/v1.0.1": {
+        "name": "refs/tags/v1.0.1",
+        "oid": "ea67e0d19de48f2a79bc0628d64d0f5f5dc7a795",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/v1.0.1^{}": {
+        "name": "refs/tags/v1.0.1^{}",
+        "oid": "b3b7701950e6b4af3372adb8941b266cff5390a7",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      }
+    }
+  },
+  "templates": {
+    "shouldRemoveComments": true
+  }
+}

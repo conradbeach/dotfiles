@@ -29,6 +29,20 @@
           "owner": "instructure",
           "name": "canvas-lms"
         }
+      },
+      "testdouble": {
+        "testdouble-jest": {
+          "hostingServiceType": "github",
+          "owner": "testdouble",
+          "name": "testdouble-jest"
+        }
+      },
+      "conradbeach": {
+        "testdouble.js": {
+          "hostingServiceType": "github",
+          "owner": "testdouble",
+          "name": "testdouble.js"
+        }
       }
     },
     "gitlab": {
@@ -62,7 +76,7 @@
     "origin": {
       "HEAD": {
         "name": "HEAD",
-        "oid": "93ff2cca16f4dd76dc097cfaccf0d63faa998cd0",
+        "oid": "f5a666c0be36e92d96ab4d5de1371223d1c4d713",
         "local": 0,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": "refs/heads/master"
@@ -118,7 +132,21 @@
       },
       "refs/heads/3.5": {
         "name": "refs/heads/3.5",
-        "oid": "0a5d5fffbd17398c88997ede48a2c467dfccc649",
+        "oid": "6cab57713f0661875063e526012f29866b13eb14",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/3.5.2": {
+        "name": "refs/heads/3.5.2",
+        "oid": "b8488b0fe8fe45d8ab1ccdf98cc359b378df475d",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/3.5.3": {
+        "name": "refs/heads/3.5.3",
+        "oid": "e7f3c950ddb44a9aaf348e9f9eb96fe495e49572",
         "local": 1,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -132,7 +160,7 @@
       },
       "refs/heads/bf-font-fix": {
         "name": "refs/heads/bf-font-fix",
-        "oid": "489e86458619e3d1c4b25488805416ebe966a241",
+        "oid": "900f53096eddf2cac2826b347a583d51f5a612dd",
         "local": 1,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -161,6 +189,20 @@
       "refs/heads/ckb/course-level-settings": {
         "name": "refs/heads/ckb/course-level-settings",
         "oid": "445a58579b579cfd9cda412de8f1ba585f17e364",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/ckb/polls-lti-advantage": {
+        "name": "refs/heads/ckb/polls-lti-advantage",
+        "oid": "7dcf89ecb97c927de441e8e80b1027cd61d4b89e",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/ckb/replace-wkhtmltopdf": {
+        "name": "refs/heads/ckb/replace-wkhtmltopdf",
+        "oid": "6fe6c92bbb431d813706670dcff4d5875afd72c8",
         "local": 1,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -214,6 +256,13 @@
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
       },
+      "refs/heads/jd_fix_tinymce_duplication_bug": {
+        "name": "refs/heads/jd_fix_tinymce_duplication_bug",
+        "oid": "9e4c9eef91e1af42322f52ed6c476b9088565ed4",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
       "refs/heads/jd_lint_check": {
         "name": "refs/heads/jd_lint_check",
         "oid": "945b938ea7ab4146033fcb15e7d92eac3b751d48",
@@ -245,6 +294,13 @@
       "refs/heads/jd_read_only": {
         "name": "refs/heads/jd_read_only",
         "oid": "9a76becbed73c28be4b2e65839c0a2ecf768e07f",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/jd_remove_extra_placeholder": {
+        "name": "refs/heads/jd_remove_extra_placeholder",
+        "oid": "2b7e4f3b011f1af9d2adb7d298ac76c5df1e910f",
         "local": 1,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -286,7 +342,14 @@
       },
       "refs/heads/master": {
         "name": "refs/heads/master",
-        "oid": "93ff2cca16f4dd76dc097cfaccf0d63faa998cd0",
+        "oid": "f5a666c0be36e92d96ab4d5de1371223d1c4d713",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/th/admin-facilitator": {
+        "name": "refs/heads/th/admin-facilitator",
+        "oid": "6e00327a35ec9e1e1551bc10e23d64205a679458",
         "local": 1,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -301,6 +364,13 @@
       "refs/heads/th/locked-visibility-bug": {
         "name": "refs/heads/th/locked-visibility-bug",
         "oid": "82fbd60e76dec6631ce98b7af9a1f15236c412a3",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/heads/th/report-grading": {
+        "name": "refs/heads/th/report-grading",
+        "oid": "75145033dde425ea703440ccadbe1f3f5c14e771",
         "local": 1,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -378,13 +448,6 @@
       "refs/merge-requests/105/head": {
         "name": "refs/merge-requests/105/head",
         "oid": "6317a4ecdc5806f48df4b668ed77e87ebee3f401",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/106/head": {
-        "name": "refs/merge-requests/106/head",
-        "oid": "ceaafd033e307b4434cd685cc1d95bd29e831d22",
         "local": 0,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -858,13 +921,6 @@
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
       },
-      "refs/merge-requests/169/head": {
-        "name": "refs/merge-requests/169/head",
-        "oid": "9675480dd784f3852423df86b0189b6bd75fa9ea",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
       "refs/merge-requests/17/head": {
         "name": "refs/merge-requests/17/head",
         "oid": "8adb8e1dfadb55227e72bed7ef83eec54dcc55fa",
@@ -1173,13 +1229,6 @@
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
       },
-      "refs/merge-requests/209/head": {
-        "name": "refs/merge-requests/209/head",
-        "oid": "272dac6d34afb8d90513eafaac8c5b6dddb6d0dc",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
       "refs/merge-requests/21/head": {
         "name": "refs/merge-requests/21/head",
         "oid": "f1ffcd372976aebc7d9534a1272d0fd815193223",
@@ -1232,13 +1281,6 @@
       "refs/merge-requests/216/head": {
         "name": "refs/merge-requests/216/head",
         "oid": "709b35258ace882d770d1c6f58e15dda8ad042eb",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/217/head": {
-        "name": "refs/merge-requests/217/head",
-        "oid": "945b938ea7ab4146033fcb15e7d92eac3b751d48",
         "local": 0,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -1547,20 +1589,6 @@
       "refs/merge-requests/240/merge": {
         "name": "refs/merge-requests/240/merge",
         "oid": "99fe50fa66c4b45ea4af1a86bca5f9431ab18317",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/241/head": {
-        "name": "refs/merge-requests/241/head",
-        "oid": "162a995bb0c3eb9f46a336b770e55bec02c774b8",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/241/merge": {
-        "name": "refs/merge-requests/241/merge",
-        "oid": "baaa2f3c83daad191b2b3ed6adbf5f1401e312f5",
         "local": 0,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -3485,7 +3513,7 @@
       },
       "refs/merge-requests/372/merge": {
         "name": "refs/merge-requests/372/merge",
-        "oid": "da722aec9b5493a16ed0ee588e9e5511865eb617",
+        "oid": "e5a2122a6db60fec5a8281873c19c30e599afed4",
         "local": 0,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -3518,20 +3546,6 @@
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
       },
-      "refs/merge-requests/375/head": {
-        "name": "refs/merge-requests/375/head",
-        "oid": "102d09606fa8449675d7933d87e5047ab7dc480c",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/375/merge": {
-        "name": "refs/merge-requests/375/merge",
-        "oid": "ec828711c7fe6fe1a69f9ef05cb9d2436d010d59",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
       "refs/merge-requests/376/head": {
         "name": "refs/merge-requests/376/head",
         "oid": "16ac2dbd97d42e63498499fe933d50bcd5176f70",
@@ -3556,20 +3570,6 @@
       "refs/merge-requests/377/merge": {
         "name": "refs/merge-requests/377/merge",
         "oid": "48d15113dbafae98ac4e9218d22251ff334355ca",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/378/head": {
-        "name": "refs/merge-requests/378/head",
-        "oid": "25e7d59c390912fae98b6ee04b46189a14df3ead",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/378/merge": {
-        "name": "refs/merge-requests/378/merge",
-        "oid": "f0b2811b1101df18089a045d086a78539c95aed3",
         "local": 0,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -3637,62 +3637,6 @@
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
       },
-      "refs/merge-requests/383/head": {
-        "name": "refs/merge-requests/383/head",
-        "oid": "6ab07b6251ac644cb5d13d292325abf2ae1ecfbd",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/383/merge": {
-        "name": "refs/merge-requests/383/merge",
-        "oid": "960fd61b9bf13895997b1dca90e8b62333e9ffa9",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/384/head": {
-        "name": "refs/merge-requests/384/head",
-        "oid": "82fbd60e76dec6631ce98b7af9a1f15236c412a3",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/384/merge": {
-        "name": "refs/merge-requests/384/merge",
-        "oid": "46b9a5618ce4adc7cc4f085562d6b0b333f4f8ed",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/385/head": {
-        "name": "refs/merge-requests/385/head",
-        "oid": "7cc8ec0c8b321002058c6e570d75ea0de29ee75b",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/385/merge": {
-        "name": "refs/merge-requests/385/merge",
-        "oid": "abb084814ff99d404499f25303a399c1f9e5562e",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/386/head": {
-        "name": "refs/merge-requests/386/head",
-        "oid": "ba612abbe3f9f08d625cf6c94cb2dbd9aea51b3e",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/386/merge": {
-        "name": "refs/merge-requests/386/merge",
-        "oid": "5be503111f430d08d3419fc566544a9abc0cd5e4",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
       "refs/merge-requests/39/head": {
         "name": "refs/merge-requests/39/head",
         "oid": "7bde71459da2afce1809dc3ffc091e51bd67e5f5",
@@ -3714,9 +3658,65 @@
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
       },
+      "refs/merge-requests/404/head": {
+        "name": "refs/merge-requests/404/head",
+        "oid": "900f53096eddf2cac2826b347a583d51f5a612dd",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/merge-requests/404/merge": {
+        "name": "refs/merge-requests/404/merge",
+        "oid": "f78f57059a463138c9ad8bc81e3ffb3e110b357f",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/merge-requests/407/head": {
+        "name": "refs/merge-requests/407/head",
+        "oid": "61420122028c4653f773147dcaf9281a87cc5053",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/merge-requests/407/merge": {
+        "name": "refs/merge-requests/407/merge",
+        "oid": "ab7889ebc9cbd214347d603234178981ffd702a2",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/merge-requests/408/head": {
+        "name": "refs/merge-requests/408/head",
+        "oid": "6e00327a35ec9e1e1551bc10e23d64205a679458",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/merge-requests/408/merge": {
+        "name": "refs/merge-requests/408/merge",
+        "oid": "1047ba3637e635c8991b6199bef39ad3e72bcc44",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
       "refs/merge-requests/41/head": {
         "name": "refs/merge-requests/41/head",
         "oid": "48928ca5b345f73e4682f9d9184379f34ba986f3",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/merge-requests/410/head": {
+        "name": "refs/merge-requests/410/head",
+        "oid": "70c7207478c87091d6b44fc30e3676a3b454e04f",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/merge-requests/410/merge": {
+        "name": "refs/merge-requests/410/merge",
+        "oid": "16149b48341caa92803634c8ab2f3c8f9df317b1",
         "local": 0,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -4043,20 +4043,6 @@
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
       },
-      "refs/merge-requests/84/head": {
-        "name": "refs/merge-requests/84/head",
-        "oid": "a3ac80366740aaa066fdaecad7f3c7c0840e8cee",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/85/head": {
-        "name": "refs/merge-requests/85/head",
-        "oid": "2b0e62097a8e29a5528605c9c2585701d74fa97f",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
       "refs/merge-requests/86/head": {
         "name": "refs/merge-requests/86/head",
         "oid": "9ad5951349cd46ec0d11121d5fb048abd1c9b649",
@@ -4116,13 +4102,6 @@
       "refs/merge-requests/93/head": {
         "name": "refs/merge-requests/93/head",
         "oid": "51637760fd46fa4938a0316cbfb6f3ae744805d9",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": null
-      },
-      "refs/merge-requests/94/head": {
-        "name": "refs/merge-requests/94/head",
-        "oid": "d26ec401ccca5521e74e76a1ba362aa316c1edde",
         "local": 0,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -4788,6 +4767,34 @@
       "refs/tags/3.5.0": {
         "name": "refs/tags/3.5.0",
         "oid": "7b588cd0975e59dfbed18baee44dc3f1d95affec",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/3.5.1": {
+        "name": "refs/tags/3.5.1",
+        "oid": "0a5d5fffbd17398c88997ede48a2c467dfccc649",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/3.5.2": {
+        "name": "refs/tags/3.5.2",
+        "oid": "501ee4b44afe6d20425b7b56607987422fae6381",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/3.5.3": {
+        "name": "refs/tags/3.5.3",
+        "oid": "88c200822e802a0c5dd694fa1f333e1a722489b3",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      },
+      "refs/tags/3.6.0": {
+        "name": "refs/tags/3.6.0",
+        "oid": "3027367e8f8bfe7649e8ee2efc5a370d4810afad",
         "local": 1,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
@@ -7852,22 +7859,23 @@
     "origin": {
       "id": "remote-origin",
       "timestamps": [
-        1596122978793,
-        1596125954242,
-        1596130423760,
-        1596136419010,
-        1596145508304,
-        1596215153006,
-        1596231261953,
-        1597859805738,
-        1601306026340,
-        1601306043322
+        1602616017013,
+        1602625739185,
+        1603131511339,
+        1603308697778,
+        1603994262647,
+        1603994273942,
+        1605030959486,
+        1606845138524,
+        1606932408416,
+        1606945966217
       ],
-      "total": 87
+      "total": 98
     }
   },
   "collapsedSections": [
-    "ISSUES"
+    "ISSUES",
+    "REMOTE"
   ],
   "layout": {
     "GraphPanel": {
@@ -7883,9 +7891,7 @@
     "shouldRemoveComments": true
   },
   "leftPanelQuery": "",
-  "collapsedRemotes": [
-    "origin"
-  ],
+  "collapsedRemotes": [],
   "hiddenRefs": [],
   "issues": {
     "glo": {

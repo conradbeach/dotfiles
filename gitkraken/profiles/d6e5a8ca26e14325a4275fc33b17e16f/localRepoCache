@@ -1,34 +1,15 @@
 {
   "localRepoCache": [
     "/Users/conrad/Development/dotfiles/.git",
-    "/Users/conrad/Development/atomic_jolt/socialize/.git",
     "/Users/conrad/Development/atomic_jolt/microsoft-integrations/.git",
+    "/Users/conrad/Development/atomic_jolt/socialize/.git",
     "/Users/conrad/Development/food-storage-inventory/.git",
-    "/Users/conrad/Development/atomic_jolt/adhesion/.git",
-    "/Users/conrad/Development/atomic_jolt/atomic-fuel/.git",
+    "/Users/conrad/Development/testdouble.js/.git",
     "/Users/conrad/Development/atomic_jolt/lti_starter_app/.git",
+    "/Users/conrad/Development/atomic_jolt/adhesion/.git",
     "/Users/conrad/Development/atomic_jolt/learnosity/.git",
     "/Users/conrad/Development/atomic_jolt/therapymate/.git",
-    "/Users/conrad/Development/atomic_jolt/microsoft-graph-tutorial/.git",
-    "/Users/conrad/Development/atomic_jolt/lms_api/.git",
-    "/Users/conrad/Development/atomic_jolt/lms_graphql_api/.git",
-    "/Users/conrad/Development/atomic_jolt/jsPDF/.git",
     "/Users/conrad/Development/temperature_alert/.git",
-    "/Users/conrad/Development/atomic_jolt/react_rails_starter_app/.git",
-    "/Users/conrad/Development/atomic_jolt/canvas-dev/.git",
-    "/Users/conrad/Development/cache-county-convention/.git",
-    "/Users/conrad/Development/shopping_meyster/.git",
-    "/Users/conrad/Development/atomic_jolt/atomic-assessments-qa-testing/.git",
-    "/Users/conrad/Development/atomic_jolt/Student_Simulation_Script/.git",
-    "/Users/conrad/Development/atomic_jolt/canvas-rce-api/.git",
-    "/Users/conrad/Development/atomic_jolt/act/.git",
-    "/Users/conrad/Development/atomic_jolt/catalyst/.git",
-    "/Users/conrad/Development/atomic_jolt/cluster-setup/.git",
-    "/Users/conrad/Development/front-end-rails-book/.git",
-    "/Users/conrad/Development/temp_rails_webpacker/.git",
-    "/Users/conrad/Development/atomic_jolt/nucleus/.git",
-    "/Users/conrad/Development/elixir/programming_phoenix_book/rumbl/.git",
-    "/Users/conrad/Development/elixir/programming_elixir_book/issues/.git",
-    "/Users/conrad/Development/senkyoshi/.git"
+    "/Users/conrad/Development/atomic_jolt/act/.git"
   ]
 }
