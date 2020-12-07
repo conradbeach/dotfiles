@@ -61,7 +61,6 @@ brew cask install aware
 brew cask install balenaetcher
 brew cask install bettertouchtool
 brew cask install bitwarden
-brew cask install camo-studio
 brew cask install copyclip
 brew cask install dash
 brew cask install dropbox
