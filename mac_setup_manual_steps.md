@@ -69,6 +69,7 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
   * Add these exceptions:
     * /Volumes/Mac Backup
     * /Volumes/.timemachine
+    * /Volumes/com.apple.TimeMachine.localsnapshots
 * [ ] CopyClip2
   * Change keyboard shortcut to Ctrl-Space
   * Load license. (In iCloud Drive > Software Licenses and Such.)
