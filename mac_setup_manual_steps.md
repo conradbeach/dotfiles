@@ -93,8 +93,6 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
   * Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries.
 * [ ] Screenshot App
   * Change save location to Downloads folder.
-* [ ] Sophos Home
-  * Log into you dashboard to install it.
 * [ ] Terminal.app
   * Load theme. (Dracula.theme in this repo.)
   * In Settings > General, set custom theme to be the default.
