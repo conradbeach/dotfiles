@@ -119,10 +119,6 @@ ln -s ~/Development/dotfiles/.zshrc ~
 mkdir ~/.gnupg/
 ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 ln -s ~/Development/dotfiles/git-commit-template.txt ~
-mkdir ~/.gitkraken
-ln -s ~/Development/dotfiles/gitkraken/profiles/ ~/.gitkraken
-ln -s ~/Development/dotfiles/gitkraken/service/ ~/.gitkraken
-ln -s ~/Development/dotfiles/gitkraken/config ~/.gitkraken
 
 # asdf
 print_header "Installing asdf"
