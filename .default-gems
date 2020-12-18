@@ -12,3 +12,4 @@ rubocop
 ruby-beautify
 rubycritic
 solargraph
+yard
