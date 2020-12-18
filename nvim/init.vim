@@ -4,9 +4,8 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'w0rp/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
 Plug 'roman/golden-ratio'
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
@@ -49,7 +48,6 @@ Plug 'slashmili/alchemist.vim'
 Plug 'mattn/emmet-vim'
 " JavaScript
 Plug 'othree/es.next.syntax.vim'
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'othree/yajs.vim'
@@ -61,20 +59,11 @@ Plug 'tpope/vim-rails'
 Plug 'keith/rspec.vim'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rake'
-Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'christoomey/vim-rfactory'
 Plug 'nelstrom/vim-textobj-rubyblock'
 " YAML
 Plug 'stephpy/vim-yaml'
 call plug#end()
-
-" Deoplete
-let g:deoplete#enable_at_startup = 1
-call deoplete#enable()
-
-call deoplete#custom#var('tabnine', {
-\ 'max_num_results': 4,
-\ })
 
 " vim-auto-save
 let g:auto_save = 1  " enable AutoSave on Vim startup
@@ -135,16 +124,6 @@ nmap <Leader>j :SplitjoinSplit<CR>
 " vim-gutter
 let g:gitgutter_map_keys = 0
 
-" autozimu/LanguageClient-neovim
-let g:LanguageClient_serverCommands = {
-  \ 'javascript': ['javascript-typescript-stdio'],
-  \ 'ruby': ['orbaclerun', 'file-server'],
-  \ }
-nnoremap <Leader>sj :call LanguageClient_textDocument_definition()<CR>
-nnoremap T :call LanguageClient_textDocument_hover()<CR>
-" timeout has to be bigger than time needed to index your project
-let g:LanguageClient_waitOutputTimeout = 240
-
 " liuchengxu/vim-which-key
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
@@ -186,6 +165,33 @@ let g:user_emmet_settings = {
 
 " undotree
 nnoremap <Leader>u :UndotreeToggle<cr>
+
+" coc.nvim
+" You have to remap <cr> to make sure it confirms completion when popup menu is visible since default
+" behavior of <CR> could be different regard to current completion state and completeopt option.
+" https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources#use-cr-to-confirm-completion
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" To make <cr> select the first completion item and confirm the completion when no item has been selected:
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+
+" Jump to definition.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+
+" Jump to definition in a horizontal split, vertical split and new tab respectively.
+map <Leader>[ :split <CR>:execute "normal \<Plug>(coc-definition)"<CR>
+map <Leader>] :vsplit <CR>:execute "normal \<Plug>(coc-definition)"<CR>
+map <Leader>\ :tab split <CR>:execute "normal \<Plug>(coc-definition)"<CR>
+
+" Replacing the below keybindings based on tags for coc.nvim commands.
+" I may change my mind later.
+" Open a tag in a horizontal split, vertical split and new tab respectively.
+" map <Leader>[ :split <CR>:exec("tag ".expand("<cword>"))<CR>
+" map <Leader>] :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
+" map <Leader>\ :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
 
 """""""""""""""""
 " Sets
@@ -363,11 +369,6 @@ map <Leader>mps :MarkdownPreviewStop<CR>
 
 " Convert tabs to spaces.
 map <Leader>ft :set expandtab<CR>:retab<CR>
-
-" Open a tag in a horizontal split, vertical split and new tab respectively.
-map <Leader>[ :split <CR>:exec("tag ".expand("<cword>"))<CR>
-map <Leader>] :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
-map <Leader>\ :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
 """""""""""""""""
 " Theme
