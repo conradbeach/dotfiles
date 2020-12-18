@@ -50,6 +50,14 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 ## Neovim
 - [ ] Run :checkhealth.
 - [ ] Run :PlugInstall.
+- [ ] Install the following coc.nvim extensions (command is `:CocInstall [extenson]`:
+  - coc-css
+  - coc-html
+  - coc-json
+  - coc-solargraph
+  - coc-tsserver
+  - coc-tabnine
+  - The [coc.nvim README](https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim#automation-script) has an automatic script you could set up.
 
 ## Security
 - [ ] Generate a new GPG key. (Using GitKraken is the easiest.)
