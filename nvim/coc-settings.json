@@ -1,4 +1,3 @@
 {
-  "suggest.maxCompleteItemCount": 15,
-  "codeLens.enable": true
+  "suggest.maxCompleteItemCount": 15
 }
