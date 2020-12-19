@@ -5,6 +5,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ap/vim-css-color'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'roman/golden-ratio'
 Plug 'itchyny/lightline.vim'
