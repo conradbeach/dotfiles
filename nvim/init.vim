@@ -252,6 +252,9 @@ au BufRead * normal zR
 au BufWinLeave * silent! mkview
 au BufWinEnter * silent! loadview
 
+" Turn on spellcheck
+set spell spelllang=en_us
+
 " Autocomplete with dictionary words when spell check is on
 set complete+=kspell
 
