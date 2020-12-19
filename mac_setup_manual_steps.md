@@ -53,7 +53,6 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 - [ ] Install the following coc.nvim extensions (command is `:CocInstall [extenson]`:
   - coc-css
   - coc-html
-  - coc-import-cost
   - coc-json
   - coc-solargraph
   - coc-tsserver
