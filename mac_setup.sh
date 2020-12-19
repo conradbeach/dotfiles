@@ -24,7 +24,7 @@ brew install ctags
 brew install diff-so-fancy
 brew install fd
 brew install fzf
-$(brew --prefix)/opt/fzf/install
+$(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
 brew install git
 brew tap heroku/brew && brew install heroku
 brew install htop
