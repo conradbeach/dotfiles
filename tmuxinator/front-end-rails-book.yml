@@ -56,5 +56,10 @@ windows:
         - webpack:
           - bin/webpack-dev-server
   - helpers:
-      - solargraph
-      - solargraph stdio
+      layout: even-horizontal
+      panes:
+        - yard_gems:
+          - yard gems
+        - solargraph:
+          - solargraph download-core
+

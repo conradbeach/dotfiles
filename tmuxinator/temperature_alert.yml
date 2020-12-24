@@ -56,9 +56,11 @@ windows:
         - webpack:
           - bin/webpack-dev-server
   - yard-langserver:
-      layout: even-horizontal
+      layout: 5057,231x67,0,0{115x67,0,0,27,115x67,116,0[115x33,116,0,28,115x33,116,34,29]}
       panes:
         - yard:
           - yard server --reload
-        - language_server:
-          - solargraph stdio
+        - yard_gems:
+          - yard gems
+        - solargraph:
+          - solargraph download-core
