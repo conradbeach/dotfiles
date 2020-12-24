@@ -66,8 +66,7 @@ windows:
       panes:
         - azurite:
           - azurite
+        - yard_gems:
+          - yard gems
         - solargraph:
-          - solargraph
-          - solargraph stdio
-        - postgres:
-          - pg_ctl start
+          - solargraph download-core

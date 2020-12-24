@@ -59,5 +59,9 @@ windows:
         - que:
           - bundle exec que -w 1 ./config/environment.rb
   - helpers:
-      - solargraph
-      - solargraph stdio
+      layout: even-horizontal
+      panes:
+        - yard_gems:
+          - yard gems
+        - solargraph:
+          - solargraph download-core
