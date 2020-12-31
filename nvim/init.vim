@@ -173,8 +173,6 @@ nnoremap <Leader>u :UndotreeToggle<cr>
 " behavior of <CR> could be different regard to current completion state and completeopt option.
 " https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources#use-cr-to-confirm-completion
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-" To make <cr> select the first completion item and confirm the completion when no item has been selected:
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 
 " Jump to definition.
 nmap <silent> gd <Plug>(coc-definition)
