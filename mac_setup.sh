@@ -42,7 +42,6 @@ brew install tmux
 brew install tmuxinator
 brew install trash
 brew install tree
-brew cask install vagrant
 brew install yarn
 brew install zsh
 
@@ -69,16 +68,17 @@ brew cask install homebrew/cask-versions/firefox-developer-edition
 brew cask install gimp
 brew cask install gitkraken
 brew cask install google-chrome
-brew cask install marshallofsound-google-play-music-player
 brew cask install handbrake
 brew cask install iterm2
 brew cask install kap
 brew cask install keyboardcleantool
+brew cask install marshallofsound-google-play-music-player
 brew cask install numi
 brew cask install oni
 brew cask install postman
 brew cask install slack
 brew cask install tableplus
+brew cask install vagrant
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install visual-studio-code
