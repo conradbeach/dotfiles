@@ -53,6 +53,7 @@ Plug 'othree/es.next.syntax.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'othree/yajs.vim'
+Plug 'jparise/vim-graphql'
 " Markdown
 Plug 'gabrielelana/vim-markdown'
 " Ruby & Rails
