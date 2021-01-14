@@ -92,7 +92,7 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
   * Import sessions into Tab Session Manager. The backup is in the Downloads folder.
 * [ ] Kap
   * Turn on "Highlight clicks"
-  * Change "Save too..." to "~/Downloads".
+  * Change "Save to..." to "~/Downloads".
 * [ ] Messages
   * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
 * [ ] TablePlus
