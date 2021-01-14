@@ -85,8 +85,6 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 * [ ] Dash
   * Load License (In iCloud Drive > Software Licenses and Such.)
   * Set up syncing. Sync files are in iCloud Drive > Dash Sync.
-* [ ] Dropbox
-  * Sign in with your Atomic Jolt account.
 * [ ] iTerm
   * Load configuration. (In this repo. Change in Settings > General > Preferences)
   * Change text to Hack Nerd Font regular 16 point. (Settings > Profiles > Text)
@@ -118,4 +116,3 @@ Add these login items (In Settings > Users & Groups > Login Items):
 * Camo Studio
 * CopyClip2
 * Dash
-* Dropbox
