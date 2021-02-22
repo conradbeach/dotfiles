@@ -10,7 +10,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'roman/golden-ratio'
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
-Plug 'iamcco/markdown-preview.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'Shougo/neco-syntax'
 Plug 'Shougo/neosnippet.vim'
 Plug 'scrooloose/nerdtree'
