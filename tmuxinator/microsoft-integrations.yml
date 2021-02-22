@@ -62,10 +62,8 @@ windows:
         - que:
           - bundle exec que -w 1 ./config/environment.rb
   - helpers:
-      layout: 5057,231x67,0,0{115x67,0,0,27,115x67,116,0[115x33,116,0,28,115x33,116,34,29]}
+      layout: even-horizontal
       panes:
-        - azurite:
-          - azurite
         - yard_gems:
           - yard gems
         - solargraph:
