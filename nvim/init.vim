@@ -127,6 +127,10 @@ nmap <Leader>j :SplitjoinSplit<CR>
 
 " vim-gutter
 let g:gitgutter_map_keys = 0
+" Show the changes for the hunk your cursor is on.
+nmap <Leader>gs <Plug>(GitGutterPreviewHunk)
+" Undo the changes for the hunk your cursor is on.
+nmap <Leader>gu <Plug>(GitGutterUndoHunk)
 
 " liuchengxu/vim-which-key
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
