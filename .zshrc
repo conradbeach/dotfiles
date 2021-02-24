@@ -138,6 +138,8 @@ alias record-cpu-usage="TODAY=`date '+%Y-%m-%d'` && top -l 28800 -ocpu -R -F -s 
 alias open_am="open -n -a 'Activity Monitor'"
 # Atomic Jolt
 alias aalint="bundle exec pronto run -r eslint_npm rubocop"
+# Personal
+alias stretch="cd ~/Development/speak_routine && ruby run.rb"
 
 ## Functions
 
