@@ -309,7 +309,7 @@ map j gj
 map Y y$
 
 " Allow for easy .vimrc editing and reloading.
-map <Leader>oiv :tabe ~/Development/dotfiles/init.vim<CR>
+map <Leader>oiv :tabe ~/Development/dotfiles/nvim/init.vim<CR>
 map <Leader>giv :source ~/.config/nvim/init.vim<CR>
 
 " Indent the whole file.
