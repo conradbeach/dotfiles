@@ -34,6 +34,8 @@ brew install nginx
 brew install pinentry-mac
 brew install python
 brew tap thoughtbot/formulae && brew install rcm
+brew install redis
+brew services start redis
 brew install ripgrep
 brew install speedtest-cli
 brew install the_silver_searcher
