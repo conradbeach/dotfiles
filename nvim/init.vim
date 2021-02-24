@@ -8,6 +8,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ap/vim-css-color'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'roman/golden-ratio'
+Plug 'Yggdroot/indentLine'
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
@@ -193,6 +194,8 @@ map <Leader>\ :tab split <CR>:execute "normal \<Plug>(coc-definition)"<CR>
 " map <Leader>] :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
 " map <Leader>\ :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
+" Yggdroot/indentLine
+let g:indentLine_char_list = ['|', '¦', '┆', '┊'] " Show different indentation markers at each level.
 
 """""""""""""""""
 " Sets
