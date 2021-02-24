@@ -296,6 +296,9 @@ map Y y$
 map <Leader>oiv :tabe ~/Development/dotfiles/nvim/init.vim<CR>
 map <Leader>giv :source ~/.config/nvim/init.vim<CR>
 
+" Indent the whole file.
+map <Leader>i migg=G`i
+
 " Open a new tab.
 map <Leader>nt :tabnew<CR>
 " Close the current tab.
