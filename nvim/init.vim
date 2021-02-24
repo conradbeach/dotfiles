@@ -229,6 +229,7 @@ set number " Show line numbers
 set relativenumber " Show relative line numbers
 set lazyredraw " Do not redraw screen in the middle of a macro. Makes them complete faster.
 set undofile " Persist undo history after closing and reopening.
+set clipboard+=unnamedplus " Automatically copy to the system clipboard.
 
 " Enable mouse scrolling
 set mouse=a
