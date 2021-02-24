@@ -125,7 +125,7 @@ let g:splitjoin_join_mapping = ''
 nmap <Leader>J :SplitjoinJoin<CR>
 nmap <Leader>j :SplitjoinSplit<CR>
 
-" vim-gutter
+" vim-gitgutter
 let g:gitgutter_map_keys = 0
 " Show the changes for the hunk your cursor is on.
 nmap <Leader>gs <Plug>(GitGutterPreviewHunk)
