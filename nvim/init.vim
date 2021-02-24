@@ -230,6 +230,7 @@ set relativenumber " Show relative line numbers
 set lazyredraw " Do not redraw screen in the middle of a macro. Makes them complete faster.
 set undofile " Persist undo history after closing and reopening.
 set clipboard+=unnamedplus " Automatically copy to the system clipboard.
+set updatetime=100 " Default is 4000. Reducing this makes vim-gitgutter update quicker.
 
 " Enable mouse scrolling
 set mouse=a
