@@ -347,8 +347,8 @@ map <Leader>q :q<CR>
 map <Leader>drc :g/^\s*#/d<CR>:noh<CR>
 " Run the Elixir formatter on the current file.
 map <Leader>fe :!mix format %<CR>
-" Run Python JSON formatter on the current file.
-map <Leader>fj :% !python -m json.tool<CR>
+" Run the jq JSON formatter on the current file.
+map <Leader>fj :%!jq .<CR>
 " Delete empty lines.
 map <Leader>del :g/^\s*$/d<CR>:noh<CR>
 " Remove search highlights.
