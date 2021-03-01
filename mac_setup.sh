@@ -29,6 +29,7 @@ brew install git
 brew tap heroku/brew && brew install heroku
 brew install htop
 brew install httpie
+brew install jq
 brew install neovim
 brew install nginx
 brew install pinentry-mac
@@ -154,7 +155,7 @@ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
 ## Java
 print_header "Installing Java"
-brew install jq coreutils
+brew install coreutils
 asdf plugin-add java https://github.com/halcyon/asdf-java.git
 
 ## Elasticsearch
