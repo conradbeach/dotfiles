@@ -143,12 +143,6 @@ alias stretch="cd ~/Development/speak_routine && ruby run.rb"
 
 ## Functions
 
-# $1 - The name of the new directory.
-mkcd () {
-  mkdir "$1"
-  cd "$1"
-}
-
 # $1 - The name of the file.
 # $2 (optional) - The path to create the file at.
 new_md () {
