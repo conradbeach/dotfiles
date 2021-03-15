@@ -11,7 +11,6 @@ Plug 'roman/golden-ratio'
 Plug 'Yggdroot/indentLine'
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'Shougo/neco-syntax'
 Plug 'Shougo/neosnippet.vim'
 Plug 'scrooloose/nerdtree'
@@ -157,9 +156,6 @@ let g:neosnippet#scope_aliases['ruby'] = 'ruby,rails'
 
 " christoomey/vim-rfactory
 nmap <Leader>gf :RVfactory<CR>
-
-" iamcco/markdown-preview.vim
-let g:mkdp_path_to_chrome = "open -a 'Firefox Developer Edition'"
 
 " rizatti/dash.vim
 :nmap <Leader>dash <Plug>DashSearch
@@ -371,8 +367,7 @@ map <Leader>` cs'`cs"`
 
 " Markdown
 map <Leader>md :set syntax=markdown textwidth=0 wrapmargin=0 wrap linebreak<CR>
-map <Leader>mp :MarkdownPreview<CR>
-map <Leader>msp :MarkdownPreviewStop<CR>
+map <Leader>mp :!open % -a "Google Chrome"<CR>
 
 " Convert tabs to spaces.
 map <Leader>ft :set expandtab<CR>:retab<CR>

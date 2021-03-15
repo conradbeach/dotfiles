@@ -82,6 +82,8 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
   * Change keyboard shortcut to Ctrl-Space
   * Load license. (In iCloud Drive > Software Licenses and Such.)
   * Update other settings.
+* [ ] Chrome
+  * Install the [Markdown Viewer](https://github.com/simov/markdown-viewer) extension.
 * [ ] Dash
   * Load License (In iCloud Drive > Software Licenses and Such.)
   * Set up syncing. Sync files are in iCloud Drive > Dash Sync.
