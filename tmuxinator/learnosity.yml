@@ -49,7 +49,7 @@ windows:
           - bundle exec rails console
           - pry
   - servers:
-      layout: 5057,231x67,0,0{115x67,0,0,27,115x67,116,0[115x33,116,0,28,115x33,116,34,29]}
+      layout: 8a6a,255x74,0,0{178x74,0,0,3,76x74,179,0[76x36,179,0,6,76x37,179,37,7]}
       panes:
         - rails_server:
           - bundle exec rails server -p 3040
