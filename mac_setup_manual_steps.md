@@ -78,10 +78,6 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
     * /Volumes/Mac Backup
     * /Volumes/.timemachine
     * /Volumes/com.apple.TimeMachine.localsnapshots
-* [ ] CopyClip2
-  * Change keyboard shortcut to Ctrl-Space
-  * Load license. (In iCloud Drive > Software Licenses and Such.)
-  * Update other settings.
 * [ ] Chrome
   * Install the [Markdown Viewer](https://github.com/simov/markdown-viewer) extension.
 * [ ] Dash
@@ -95,6 +91,9 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 * [ ] Kap
   * Turn on "Highlight clicks"
   * Change "Save to..." to "~/Downloads".
+* [ ] Maccy
+  * Change keyboard shortcut to Ctrl-Space
+  * Update other settings.
 * [ ] Messages
   * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
 * [ ] TablePlus
@@ -115,5 +114,5 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 Add these login items (In Settings > Users & Groups > Login Items):
 * Aware
 * BetterTouchTool
-* CopyClip2
+* Maccy
 * Dash
