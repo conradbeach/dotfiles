@@ -63,7 +63,6 @@ brew install --cask aware
 brew install --cask balenaetcher
 brew install --cask bettertouchtool
 brew install --cask bitwarden
-brew install --cask copyclip
 brew install --cask dash
 brew install --cask firefox
 brew install --cask homebrew/cask-versions/firefox-developer-edition
@@ -74,6 +73,7 @@ brew install --cask handbrake
 brew install --cask iterm2
 brew install --cask kap
 brew install --cask keyboardcleantool
+brew install --cask maccy
 brew install --cask marshallofsound-google-play-music-player
 brew install --cask numi
 brew install --cask oni
