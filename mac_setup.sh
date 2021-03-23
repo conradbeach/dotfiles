@@ -51,7 +51,7 @@ brew install zsh
 ## Fonts
 print_header "Installing Brew Fonts"
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 
 ## Services
 print_header "Installing Brew Services"
@@ -59,31 +59,31 @@ brew install postgresql
 
 ## Applications
 print_header "Installing Applications via Brew Cask"
-brew cask install aware
-brew cask install balenaetcher
-brew cask install bettertouchtool
-brew cask install bitwarden
-brew cask install copyclip
-brew cask install dash
-brew cask install firefox
-brew cask install homebrew/cask-versions/firefox-developer-edition
-brew cask install gimp
-brew cask install gitkraken
-brew cask install google-chrome
-brew cask install handbrake
-brew cask install iterm2
-brew cask install kap
-brew cask install keyboardcleantool
-brew cask install marshallofsound-google-play-music-player
-brew cask install numi
-brew cask install oni
-brew cask install postman
-brew cask install slack
-brew cask install tableplus
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
-brew cask install visual-studio-code
+brew install --cask aware
+brew install --cask balenaetcher
+brew install --cask bettertouchtool
+brew install --cask bitwarden
+brew install --cask copyclip
+brew install --cask dash
+brew install --cask firefox
+brew install --cask homebrew/cask-versions/firefox-developer-edition
+brew install --cask gimp
+brew install --cask gitkraken
+brew install --cask google-chrome
+brew install --cask handbrake
+brew install --cask iterm2
+brew install --cask kap
+brew install --cask keyboardcleantool
+brew install --cask marshallofsound-google-play-music-player
+brew install --cask numi
+brew install --cask oni
+brew install --cask postman
+brew install --cask slack
+brew install --cask tableplus
+brew install --cask vagrant
+brew install --cask virtualbox
+brew install --cask virtualbox-extension-pack
+brew install --cask visual-studio-code
 
 # Link Files
 print_header "Symlinking Files"
