@@ -372,6 +372,9 @@ map <Leader>mp :!open % -a "Google Chrome"<CR>
 " Convert tabs to spaces.
 map <Leader>ft :set expandtab<CR>:retab<CR>
 
+" Send whatever you delete next to the black hole register.
+map <Leader>dd "_
+
 """""""""""""""""
 " Theme
 """""""""""""""""
