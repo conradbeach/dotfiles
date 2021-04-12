@@ -33,6 +33,8 @@ brew install jq
 brew install neovim
 brew install nginx
 brew install pinentry-mac
+brew install postgresql
+brew services start postgresql
 brew install python
 brew tap thoughtbot/formulae && brew install rcm
 brew install redis
