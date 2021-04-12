@@ -109,6 +109,7 @@ alias restart_nginx="echo \"stopping nginx\" && sudo launchctl unload /Library/L
 alias bs="brew services"
 alias mux="tmuxinator"
 alias ms="mux start"
+alias home="cd && clear"
 # Overrides (Remember that you can run the original command by prepending it with a \. e.g. `\cat` will run the real cat instead of bat.)
 alias ls="colorls --group-directories-first --git-status --almost-all -1"
 alias cat="bat"
