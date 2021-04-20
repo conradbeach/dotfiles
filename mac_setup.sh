@@ -66,6 +66,7 @@ brew install --cask balenaetcher
 brew install --cask bettertouchtool
 brew install --cask bitwarden
 brew install --cask brave-browser
+brew install --cask coconutbattery
 brew install --cask dash
 brew install --cask firefox
 brew install --cask homebrew/cask-versions/firefox-developer-edition
