@@ -116,3 +116,4 @@ Add these login items (In Settings > Users & Groups > Login Items):
 * BetterTouchTool
 * Maccy
 * Dash
+* Jabra Direct
