@@ -35,6 +35,12 @@ Layout/LineLength:
   Max: 100
   Enabled: true
 
+Layout/ArgumentAlignment:
+  Description: 'Checks if the arguments on a multi-line method definition are aligned.'
+  StyleGuide: 'https://rubystyle.guide/#no-double-indent'
+  EnforcedStyle: with_fixed_indentation
+  Enabled: true
+
 Style/WordArray:
   Description: 'Use %w or %W for arrays of words.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-w'
@@ -127,6 +133,7 @@ RSpec/ExampleLength:
   Description: Checks for long examples. A long example is usually more difficult to understand. Consider extracting out some behaviour, e.g. with a let block, or a helper method.
   Max: 10
   Enabled: true
+  Exclude: ['spec/system/**/*']
 
 RSpec/MultipleExpectations:
   Description: Checks if examples contain too many expect calls.
