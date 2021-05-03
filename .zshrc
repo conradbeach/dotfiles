@@ -123,6 +123,7 @@ alias crs="bundle audit check --update && brakeman --no-pager" # Short for 'chec
 alias be="bundle exec"
 alias hr="heroku run"
 alias ss="bundle exec spring stop"
+alias rdm="bundle exec rails db:migrate"
 alias rs="bundle exec spring stop && bundle exec rails server"
 alias rc="bundle exec rails console"
 alias sss="bundle exec spring stop; rake tmp:clear"
