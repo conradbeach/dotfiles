@@ -41,18 +41,18 @@ root: ~/Development/codename_circle
 
 windows:
   - editor: nvim
-  - terminal-console:
-      layout: even-horizontal
+  - terminal-server:
+      layout: 0693,255x74,0,0{78x74,0,0,38,176x74,79,0,41}
       panes:
         - terminal:
+        - rails_server:
+          - bundle exec rails server
+  - console-servers:
+      layout: even-horizontal
+      panes:
         - rails_console:
           - bundle exec rails console
           - pry
-  - servers:
-      layout: even-horizontal
-      panes:
-        - rails_server:
-          - bundle exec rails server
         - webpack:
           - bin/webpack-dev-server
   - other:
