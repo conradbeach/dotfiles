@@ -35,8 +35,6 @@ brew install nginx
 brew install pinentry-mac
 brew install python
 brew tap thoughtbot/formulae && brew install rcm
-brew install redis
-brew services start redis
 brew install ripgrep
 brew install speedtest-cli
 brew install the_silver_searcher
@@ -48,13 +46,15 @@ brew install tree
 brew install yarn
 brew install zsh
 
+## Services
+print_header "Installing Brew Services"
+brew install redis
+brew services start redis
+
 ## Fonts
 print_header "Installing Brew Fonts"
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
-
-## Services
-print_header "Installing Brew Services"
 
 ## Applications
 print_header "Installing Applications via Brew Cask"
