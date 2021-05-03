@@ -100,17 +100,10 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
   * Download and install: https://postgresapp.com/downloads.html
 * [ ] TablePlus
   * Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries.
-* [ ] Screenshot App
-  * Change save location to Downloads folder.
 * [ ] Terminal.app
   * Load theme. (Dracula.theme in this repo.)
   * In Settings > General, set custom theme to be the default.
   * In Settings > General, change 'Shells open with:' to '/bin/zsh'.
-* [ ] Vimac
-  * Install it. (https://github.com/dexterleng/vimac/)
-  * Set to launch at login.
-  * Change Hint Mode shortcut to ctl-f, set custom characters to 'asdfghjkl', set text size to 12.
-  * Change Scroll Mode shortcut to ctl-shift-s.
 
 ## Login Items
 Add these login items (In Settings > Users & Groups > Login Items):
