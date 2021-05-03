@@ -75,6 +75,7 @@ brew install --cask iterm2
 brew install --cask jabra-direct
 brew install --cask kap
 brew install --cask keyboardcleantool
+brew install --cask krisp
 brew install --cask maccy
 brew install --cask numi
 brew install --cask oni
