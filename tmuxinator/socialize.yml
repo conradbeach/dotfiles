@@ -41,17 +41,17 @@ root: ~/Development/atomic_jolt/socialize
 
 windows:
   - editor: nvim
-  - terminal-console:
-      layout: even-horizontal
+  - terminal-server:
+      layout: 0693,255x74,0,0{78x74,0,0,38,176x74,79,0,41}
       panes:
         - terminal:
-        - rails_console:
-          - bundle exec rails console
-  - servers:
-      layout: 8a6a,255x74,0,0{178x74,0,0,3,76x74,179,0[76x36,179,0,6,76x37,179,37,7]}
-      panes:
         - rails_server:
           - bundle exec rails server -p 3060
+  - console-servers:
+      layout: 983c,255x74,0,0{127x74,0,0,2,127x74,128,0[127x37,128,0,5,127x36,128,38,36]}
+      panes:
+        - rails_console:
+          - bundle exec rails console
         - yarn_hot:
           - yarn hot
         - que:
