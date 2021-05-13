@@ -109,6 +109,7 @@ ln -s ~/Development/dotfiles/.gitconfig ~
 ln -s ~/Development/dotfiles/.gitignore_global ~
 ln -s ~/Development/dotfiles/.ideavimrc ~
 ln -s ~/Development/dotfiles/.irbrc ~
+ln -s ~/Development/dotfiles/.pryrc ~
 ln -s ~/Development/dotfiles/.psqlrc ~
 ln -s ~/Development/dotfiles/.reek.yml ~
 ln -s ~/Development/dotfiles/.rspec ~
