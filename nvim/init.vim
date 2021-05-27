@@ -367,7 +367,7 @@ map <Leader>` cs'`cs"`
 
 " Markdown
 map <Leader>md :set filetype=markdown syntax=markdown textwidth=0 wrapmargin=0 wrap linebreak<CR>
-map <Leader>mp :!open % -a "Google Chrome"<CR>
+map <Leader>mp :!open "%" -a "Google Chrome"<CR>
 
 " Convert tabs to spaces.
 map <Leader>ft :set expandtab<CR>:retab<CR>
