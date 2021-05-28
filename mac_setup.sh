@@ -33,8 +33,6 @@ brew install jq
 brew install neovim
 brew install nginx
 brew install pinentry-mac
-brew install postgresql
-brew services start postgresql
 brew install python
 brew tap thoughtbot/formulae && brew install rcm
 brew install redis
@@ -57,7 +55,6 @@ brew install --cask font-hack-nerd-font
 
 ## Services
 print_header "Installing Brew Services"
-brew install postgresql
 
 ## Applications
 print_header "Installing Applications via Brew Cask"
@@ -165,12 +162,6 @@ asdf plugin-add java https://github.com/halcyon/asdf-java.git
 ## Elasticsearch
 print_header "Installing Elasticsearch"
 asdf plugin-add elasticsearch https://github.com/mikestephens/asdf-elasticsearch.git
-
-## PostgreSQL
-### The primary installation of Postgres is done with Brew. Alternative versions
-### are installed with asdf.
-print_header "Installing PostgreSQL"
-asdf plugin-add postgres
 
 ## Install Global Versions
 print_header "Installing All Global Versions of Languages"
