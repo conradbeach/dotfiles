@@ -60,7 +60,7 @@ windows:
         - yarn_hot:
           - yarn hot
         - que:
-          - bundle exec que -w 1 ./config/environment.rb
+          - bundle exec que -q default -w 1 ./config/environment.rb
   - helpers:
       layout: even-horizontal
       panes:
