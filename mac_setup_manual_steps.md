@@ -109,6 +109,7 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 Add these login items (In Settings > Users & Groups > Login Items):
 * Aware
 * BetterTouchTool
-* Maccy
 * Dash
 * Jabra Direct
+* krisp
+* Maccy
