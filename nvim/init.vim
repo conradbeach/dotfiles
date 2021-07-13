@@ -388,20 +388,24 @@ let g:lightline = {
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
-      \   'right': [ [ 'lineinfo' ],
-      \              [ 'percent' ],
+      \   'right': [ [ 'lineoftotal' ],
       \              [ 'linter_errors', 'linter_warnings', 'linter_ok' ] ],
       \ },
       \ 'inactive': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
-      \   'right': [ [ 'lineinfo' ],
-      \              [ 'percent' ] ],
+      \   'right': [ [ 'lineoftotal' ]],
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'fugitive#head'
+      \   'gitbranch': 'fugitive#head',
+      \   'lineoftotal': 'LineOfTotal',
       \ },
       \ }
+
+" Found this function here: https://github.com/itchyny/lightline.vim/issues/92
+function! LineOfTotal()
+  return line('.') . '/' . line('$')
+endfunction
 
 let g:lightline.component_expand = {
       \  'linter_warnings': 'lightline#ale#warnings',
