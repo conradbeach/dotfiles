@@ -1,6 +1,8 @@
 detectors:
   DuplicateMethodCall:
     enabled: false
+  InstanceVariableAssumption: # With how Rails uses instance variables in views, this is a false positive too often for me.
+    enabled: false
   IrresponsibleModule:
     enabled: false
   TooManyStatements:
