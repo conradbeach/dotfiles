@@ -399,13 +399,13 @@ let g:lightline = {
       \ },
       \ 'component_function': {
       \   'gitbranch': 'fugitive#head',
-      \   'lineoftotal': 'LineOfTotal',
+      \   'lineoftotal': 'ColumnAndLineOfTotals',
       \ },
       \ }
 
 " Found this function here: https://github.com/itchyny/lightline.vim/issues/92
-function! LineOfTotal()
-  return line('.') . '/' . line('$')
+function! ColumnAndLineOfTotals()
+  return '('. virtcol('.') . '/' . (virtcol('$') - 1) . ') ' . line('.') . '/' . line('$')
 endfunction
 
 let g:lightline.component_expand = {
