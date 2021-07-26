@@ -54,9 +54,12 @@ windows:
           - bundle exec rails server -p 3090
   - console-servers:
       layout: 983c,255x74,0,0{127x74,0,0,2,127x74,128,0[127x37,128,0,5,127x36,128,38,36]}
+      layout: 6b46,255x74,0,0{127x74,0,0[127x37,0,0,22,127x36,0,38,32],127x74,128,0[127x37,128,0,25,127x36,128,38,26]}
       panes:
         - rails_console:
           - bundle exec rails console
+        - mock_api:
+          - yarn student-stat-server
         - yarn_hot:
           - yarn hot
         - que:
