@@ -8,8 +8,6 @@ export SHELL="/usr/local/bin/zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell-altered-by-conrad"
 ZSH_THEME="" # Pure prompt handles the theme.
 
 # Uncomment the following line to use case-sensitive completion.
