@@ -54,8 +54,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'othree/yajs.vim'
 Plug 'jparise/vim-graphql'
-" Markdown
-Plug 'gabrielelana/vim-markdown'
 " Ruby & Rails
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
