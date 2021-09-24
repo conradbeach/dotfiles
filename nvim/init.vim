@@ -173,7 +173,14 @@ nnoremap <Leader>u :UndotreeToggle<cr>
 " behavior of <CR> could be different regard to current completion state and completeopt option.
 " https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources#use-cr-to-confirm-completion
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+" format on enter, <cr> could be remapped by other vim plugin
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 let g:coc_node_path = "/usr/local/Cellar/node/*/bin/node"
+set hidden " TextEdit might fail if hidden is not set.
+set shortmess+=c " Don't pass messages to |ins-completion-menu|.
 
 " Jump to definition.
 nmap <silent> gd <Plug>(coc-definition)
