@@ -57,7 +57,7 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
   - coc-solargraph
   - coc-tsserver
   - coc-tabnine
-  - The [coc.nvim README](https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim#automation-script) has an automatic script you could set up.
+  - TODO: The [coc.nvim README](https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim#automation-script) has an automatic script you could set up.
 
 ## Security
 - [ ] Generate a new GPG key. (Using GitKraken is the easiest.)
@@ -67,13 +67,11 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 ## Application Changes
 * [ ] Xcode
   * Install this first since it's huge.
-* [ ] Aware
-  * Add it to Login Items so it loads on startup.
 * [ ] BetterTouchTool
   * Load license. (In iCloud Drive > Software Licenses and Such.)
   * Load configuration. (In this repo.)
 * [ ] Bitdefender Virus Scanner
-  * Install it manually.
+  * [Install it manually.](https://www.bitdefender.com/solutions/virus-scanner-for-mac.html)
   * Add these exceptions:
     * /Volumes/Mac Backup
     * /Volumes/.timemachine
