@@ -18,7 +18,6 @@ brew install ack
 brew install asciinema
 brew install bat
 brew tap homebrew/cask
-brew install circleci
 brew install cmake
 brew install ctags
 brew install diff-so-fancy
@@ -95,7 +94,6 @@ brew install --cask visual-studio-code
 print_header "Symlinking Files"
 mkdir ~/.config
 ln -s ~/Development/dotfiles/nvim ~/.config
-ln -s ~/Development/dotfiles/.circleci ~
 mkdir ~/.ssh/
 rm ~/.ssh/config
 ln -s ~/Development/dotfiles/ssh/config ~/.ssh/
