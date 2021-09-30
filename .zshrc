@@ -184,8 +184,6 @@ prompt pure
 
 # asdf
 . $(brew --prefix asdf)/asdf.sh
-## asdf-java
-. ~/.asdf/plugins/java/set-java-home.zsh
 
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
