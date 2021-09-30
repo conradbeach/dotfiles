@@ -184,8 +184,6 @@ prompt pure
 
 # asdf
 . $(brew --prefix asdf)/asdf.sh
-## asdf-ruby
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 ## asdf-java
 . ~/.asdf/plugins/java/set-java-home.zsh
 
