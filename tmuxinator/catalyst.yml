@@ -48,7 +48,7 @@ windows:
         - iex:
           - iex -S mix
   - servers:
-      layout: 8a6a,255x74,0,0{178x74,0,0,3,76x74,179,0[76x36,179,0,6,76x37,179,37,7]}
+      layout: ca27,255x74,0,0{153x74,0,0,42,101x74,154,0[101x36,154,0,44,101x37,154,37,45]}
       panes:
         - server:
           - mix phx.server
