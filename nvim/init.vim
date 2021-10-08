@@ -45,7 +45,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 " Elixir
 Plug 'elixir-editors/vim-elixir'
-Plug 'slashmili/alchemist.vim'
 " HTML
 Plug 'mattn/emmet-vim'
 " JavaScript
