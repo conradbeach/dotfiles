@@ -94,8 +94,6 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
   * Update other settings.
 * [ ] Messages
   * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
-* [ ] Postgres.app
-  * Download and install: https://postgresapp.com/downloads.html
 * [ ] TablePlus
   * Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries.
 * [ ] Terminal.app
