@@ -11,6 +11,7 @@
 - [ ] Change default web browser to Firefox Developer Edition. (In Settings > General.)
 - [ ] Uncheck "Show indicators for open applications". (In Settings > Dock.)
 - [ ] Uncheck "Show recent applications in Dock". (In Settings > Dock.)
+- [ ] Check "Show Percentage". (In Settings > Dock & Menu Bar > Battery.)
 - [ ] Enable Atomic Jolt Google account for Calendar. (In Settings > Internet Accounts.)
 - [ ] Require password after 5 seconds of sleep or screen saver. (In Settings > Security & Privacy > General.)
 - [ ] Turn on FileVault. (In Settings > Security & Privacy > FileVault.)
