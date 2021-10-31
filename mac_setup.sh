@@ -296,4 +296,4 @@ done
 
 print_header "Final Steps"
 echo "Perform manual setup steps in mac_setup_manual_steps.md"
-echo "RESTART: Some changes will require a restart before taking effect."
+echo "Restart your computer. Some changes won't take affect until you do."
