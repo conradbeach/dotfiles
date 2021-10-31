@@ -8,6 +8,10 @@ function print_header() {
   echo "**************************************************************************"
 }
 
+# Rosetta 2
+print_header "Installing Rosetta 2"
+sudo softwareupdate --install-rosetta
+
 # Brew
 print_header "Installing Brew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
