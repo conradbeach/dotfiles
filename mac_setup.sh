@@ -117,7 +117,6 @@ brew install --cask krisp
 brew install --cask maccy
 brew install --cask numi
 brew install --cask obsidian
-brew install --cask oni
 brew install --cask postgres-unofficial
 brew install --cask postman
 brew install --cask protonvpn
