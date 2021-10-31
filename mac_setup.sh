@@ -16,6 +16,9 @@ sudo softwareupdate --install-rosetta
 print_header "Installing Brew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/conrad/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 ## Packages
 print_header "Installing Brew Packages"
 brew install ack
