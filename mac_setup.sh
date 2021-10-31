@@ -101,37 +101,33 @@ brew install --cask visual-studio-code
 # Link Files
 print_header "Symlinking Files"
 mkdir ~/.config
-ln -s ~/Development/dotfiles/nvim ~/.config
+ln -sf ~/Development/dotfiles/nvim ~/.config
 mkdir ~/.ssh/
-rm ~/.ssh/config
-ln -s ~/Development/dotfiles/ssh/config ~/.ssh/
-rm ~/.ssh/known_hosts
-ln -s ~/Development/dotfiles/ssh/known_hosts ~/.ssh/
-ln -s ~/Development/dotfiles/tmuxinator ~/.config
-ln -s ~/Development/dotfiles/.agignore ~
-ln -s ~/Development/dotfiles/.asdfrc ~
-ln -s ~/Development/dotfiles/.ctags ~
-ln -s ~/Development/dotfiles/.default-gems ~
-ln -s ~/Development/dotfiles/.default-npm-packages ~
-rm ~/.fzf.zsh
-ln -s ~/Development/dotfiles/.fzf.zsh ~
-ln -s ~/Development/dotfiles/.gitconfig ~
-ln -s ~/Development/dotfiles/.gitignore_global ~
-ln -s ~/Development/dotfiles/.ideavimrc ~
-ln -s ~/Development/dotfiles/.irbrc ~
-ln -s ~/Development/dotfiles/.pryrc ~
-ln -s ~/Development/dotfiles/.psqlrc ~
-ln -s ~/Development/dotfiles/.reek.yml ~
-ln -s ~/Development/dotfiles/.rspec ~
-ln -s ~/Development/dotfiles/.rubocop.yml ~
-ln -s ~/Development/dotfiles/.tmux.conf ~
-ln -s ~/Development/dotfiles/.tool-versions ~
-ln -s ~/Development/dotfiles/.vimrc ~
-rm ~/.zshrc
-ln -s ~/Development/dotfiles/.zshrc ~
+ln -sf ~/Development/dotfiles/ssh/config ~/.ssh/
+ln -sf ~/Development/dotfiles/ssh/known_hosts ~/.ssh/
+ln -sf ~/Development/dotfiles/tmuxinator ~/.config
+ln -sf ~/Development/dotfiles/.agignore ~
+ln -sf ~/Development/dotfiles/.asdfrc ~
+ln -sf ~/Development/dotfiles/.ctags ~
+ln -sf ~/Development/dotfiles/.default-gems ~
+ln -sf ~/Development/dotfiles/.default-npm-packages ~
+ln -sf ~/Development/dotfiles/.fzf.zsh ~
+ln -sf ~/Development/dotfiles/.gitconfig ~
+ln -sf ~/Development/dotfiles/.gitignore_global ~
+ln -sf ~/Development/dotfiles/.ideavimrc ~
+ln -sf ~/Development/dotfiles/.irbrc ~
+ln -sf ~/Development/dotfiles/.pryrc ~
+ln -sf ~/Development/dotfiles/.psqlrc ~
+ln -sf ~/Development/dotfiles/.reek.yml ~
+ln -sf ~/Development/dotfiles/.rspec ~
+ln -sf ~/Development/dotfiles/.rubocop.yml ~
+ln -sf ~/Development/dotfiles/.tmux.conf ~
+ln -sf ~/Development/dotfiles/.tool-versions ~
+ln -sf ~/Development/dotfiles/.vimrc ~
+ln -sf ~/Development/dotfiles/.zshrc ~
 mkdir ~/.gnupg/
-ln -s ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
-ln -s ~/Development/dotfiles/git-commit-template.txt ~
+ln -sf ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
+ln -sf ~/Development/dotfiles/git-commit-template.txt ~
 
 # asdf
 print_header "Installing asdf"
