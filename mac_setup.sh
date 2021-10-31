@@ -111,7 +111,6 @@ brew install --cask gitkraken
 brew install --cask google-chrome
 brew install --cask handbrake
 brew install --cask iterm2
-brew install --cask jabra-direct
 brew install --cask kap
 brew install --cask keyboardcleantool
 brew install --cask krisp
