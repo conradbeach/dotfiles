@@ -49,8 +49,8 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 - [ ] Hit <prefix>+I to install plugins.
 
 ## Neovim
-- [ ] Run :checkhealth.
 - [ ] Run :PlugInstall.
+- [ ] Run :checkhealth.
 - [ ] Install the following coc.nvim extensions (command is `:CocInstall [extenson]`:
   - coc-css
   - coc-html
