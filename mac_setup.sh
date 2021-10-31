@@ -12,6 +12,37 @@ function print_header() {
 print_header "Installing Rosetta 2"
 sudo softwareupdate --install-rosetta
 
+# Link Files
+print_header "Symlinking Files"
+mkdir ~/.config
+ln -sf ~/Development/dotfiles/nvim ~/.config
+mkdir ~/.ssh/
+ln -sf ~/Development/dotfiles/ssh/config ~/.ssh/
+ln -sf ~/Development/dotfiles/ssh/known_hosts ~/.ssh/
+ln -sf ~/Development/dotfiles/tmuxinator ~/.config
+ln -sf ~/Development/dotfiles/.agignore ~
+ln -sf ~/Development/dotfiles/.asdfrc ~
+ln -sf ~/Development/dotfiles/.ctags ~
+ln -sf ~/Development/dotfiles/.default-gems ~
+ln -sf ~/Development/dotfiles/.default-npm-packages ~
+ln -sf ~/Development/dotfiles/.fzf.zsh ~
+ln -sf ~/Development/dotfiles/.gitconfig ~
+ln -sf ~/Development/dotfiles/.gitignore_global ~
+ln -sf ~/Development/dotfiles/.ideavimrc ~
+ln -sf ~/Development/dotfiles/.irbrc ~
+ln -sf ~/Development/dotfiles/.pryrc ~
+ln -sf ~/Development/dotfiles/.psqlrc ~
+ln -sf ~/Development/dotfiles/.reek.yml ~
+ln -sf ~/Development/dotfiles/.rspec ~
+ln -sf ~/Development/dotfiles/.rubocop.yml ~
+ln -sf ~/Development/dotfiles/.tmux.conf ~
+ln -sf ~/Development/dotfiles/.tool-versions ~
+ln -sf ~/Development/dotfiles/.vimrc ~ 
+ln -sf ~/Development/dotfiles/.zshrc ~
+mkdir ~/.gnupg/
+ln -sf ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
+ln -sf ~/Development/dotfiles/git-commit-template.txt ~
+
 # Brew
 print_header "Installing Brew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -97,37 +128,6 @@ brew install --cask vagrant
 brew install --cask virtualbox
 brew install --cask virtualbox-extension-pack
 brew install --cask visual-studio-code
-
-# Link Files
-print_header "Symlinking Files"
-mkdir ~/.config
-ln -sf ~/Development/dotfiles/nvim ~/.config
-mkdir ~/.ssh/
-ln -sf ~/Development/dotfiles/ssh/config ~/.ssh/
-ln -sf ~/Development/dotfiles/ssh/known_hosts ~/.ssh/
-ln -sf ~/Development/dotfiles/tmuxinator ~/.config
-ln -sf ~/Development/dotfiles/.agignore ~
-ln -sf ~/Development/dotfiles/.asdfrc ~
-ln -sf ~/Development/dotfiles/.ctags ~
-ln -sf ~/Development/dotfiles/.default-gems ~
-ln -sf ~/Development/dotfiles/.default-npm-packages ~
-ln -sf ~/Development/dotfiles/.fzf.zsh ~
-ln -sf ~/Development/dotfiles/.gitconfig ~
-ln -sf ~/Development/dotfiles/.gitignore_global ~
-ln -sf ~/Development/dotfiles/.ideavimrc ~
-ln -sf ~/Development/dotfiles/.irbrc ~
-ln -sf ~/Development/dotfiles/.pryrc ~
-ln -sf ~/Development/dotfiles/.psqlrc ~
-ln -sf ~/Development/dotfiles/.reek.yml ~
-ln -sf ~/Development/dotfiles/.rspec ~
-ln -sf ~/Development/dotfiles/.rubocop.yml ~
-ln -sf ~/Development/dotfiles/.tmux.conf ~
-ln -sf ~/Development/dotfiles/.tool-versions ~
-ln -sf ~/Development/dotfiles/.vimrc ~
-ln -sf ~/Development/dotfiles/.zshrc ~
-mkdir ~/.gnupg/
-ln -sf ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
-ln -sf ~/Development/dotfiles/git-commit-template.txt ~
 
 # asdf
 print_header "Installing asdf"
