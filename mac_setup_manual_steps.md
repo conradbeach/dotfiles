@@ -17,7 +17,6 @@
 - [ ] Turn on FileVault. (In Settings > Security & Privacy > FileVault.)
 - [ ] Turn on Firewall. (In Settings > Security & Privacy > Firewall.)
 - [ ] Uncheck "Show Input menu in menu bar". (In Settings > Keyboard > Input Sources.)
-- [ ] Change Spotlight keybinding to option-space. (In Settings > Keyboard > Shortcuts > Spotlight.)
 - [ ] Turn off Mission Control keyboard shortcut (control-up). (In Settings > Keyboard > Shortcuts > Mission Control.)
 - [ ] Turn off Application windows keyboard shortcut (control-down). (In Settings > Keyboard > Shortcuts > Mission Control.)
 - [ ] Turn off Move left a space (control-left). (In Settings > Keyboard > Shortcuts > Mission Control.)
