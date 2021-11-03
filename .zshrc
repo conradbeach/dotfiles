@@ -169,6 +169,9 @@ source $ZSH/z.sh
 source $ZSH/zsh-git-prompt/zshrc.sh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Homewbrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
