@@ -11,6 +11,7 @@
 - [ ] Change default web browser to Firefox Developer Edition. (In Settings > General.)
 - [ ] Uncheck "Show indicators for open applications". (In Settings > Dock.)
 - [ ] Uncheck "Show recent applications in Dock". (In Settings > Dock.)
+- [ ] Change minimize windows to scale effect. (In Settings > Dock > Minimize windows using)
 - [ ] Check "Show Percentage". (In Settings > Dock & Menu Bar > Battery.)
 - [ ] Require password after 5 seconds of sleep or screen saver. (In Settings > Security & Privacy > General.)
 - [ ] Turn on FileVault. (In Settings > Security & Privacy > FileVault.)
@@ -25,7 +26,6 @@
 - [ ] Change Swipe between full screen apps to four fingers.
 - [ ] Change Mission Control to four fingers.
 - [ ] Change App Expose to four fingers.
-- [ ] Change minimize windows to scale effect. (In Settings > Dock > Minimize windows using)
 - [ ] Show Bluetooth in menu bar. (In Settings > Bluetooth)
 - [ ] Connect to iPhone with Bluetooth.
 - [ ] Set up Time Machine.
