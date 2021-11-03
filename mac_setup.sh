@@ -186,6 +186,10 @@ brew install zsh-syntax-highlighting
 print_header "Installing zsh-completions"
 brew install zsh-completions
 
+## Pure Prompt
+mkdir -p "$HOME/.zsh"
+git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+
 # Neovim
 
 ## vim-plug
