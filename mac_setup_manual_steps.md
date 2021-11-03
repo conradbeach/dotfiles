@@ -12,11 +12,9 @@
 - [ ] Uncheck "Show indicators for open applications". (In Settings > Dock.)
 - [ ] Uncheck "Show recent applications in Dock". (In Settings > Dock.)
 - [ ] Check "Show Percentage". (In Settings > Dock & Menu Bar > Battery.)
-- [ ] Enable Atomic Jolt Google account for Calendar. (In Settings > Internet Accounts.)
 - [ ] Require password after 5 seconds of sleep or screen saver. (In Settings > Security & Privacy > General.)
 - [ ] Turn on FileVault. (In Settings > Security & Privacy > FileVault.)
 - [ ] Turn on Firewall. (In Settings > Security & Privacy > Firewall.)
-- [ ] Change "Press Fn key to" to "Expand Control Strip". (In Settings > Keyboard > Keyboard)
 - [ ] Uncheck "Show Input menu in menu bar". (In Settings > Keyboard > Input Sources.)
 - [ ] Change Spotlight keybinding to option-space. (In Settings > Keyboard > Shortcuts > Spotlight.)
 - [ ] Turn off Mission Control keyboard shortcut (control-up). (In Settings > Keyboard > Shortcuts > Mission Control.)
@@ -30,8 +28,6 @@
 - [ ] Change minimize windows to scale effect. (In Settings > Dock > Minimize windows using)
 - [ ] Show Bluetooth in menu bar. (In Settings > Bluetooth)
 - [ ] Connect to iPhone with Bluetooth.
-- [ ] Display the time with seconds. (In Settings > Date & Time > Clock.)
-- [ ] Show the date. (In Settings > Date & Time > Clock.)
 - [ ] Set up Time Machine.
 - [ ] Check "Show Time Machine in menu bar". (In Settings > Time Machine.)
 
