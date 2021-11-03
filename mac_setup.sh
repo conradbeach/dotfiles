@@ -198,7 +198,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 
 ## Python Support
 print_header "Installing Neovim Package for Python"
-pip install neovim
+pip3 install neovim
 
 # Other Tools
 
