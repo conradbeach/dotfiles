@@ -39,8 +39,8 @@ ln -sf ~/Development/dotfiles/.tmux.conf ~
 ln -sf ~/Development/dotfiles/.tool-versions ~
 ln -sf ~/Development/dotfiles/.vimrc ~ 
 ln -sf ~/Development/dotfiles/.zshrc ~
-mkdir ~/.gnupg/
-ln -sf ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
+# gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
+# in a certain way, so I need to link this file after gnupg runs once.
 ln -sf ~/Development/dotfiles/git-commit-template.txt ~
 
 # Brew
@@ -229,6 +229,10 @@ ssh-keygen -t ed25519 -C "conradbeach@protonmail.com"
 eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 echo "run 'pbcopy < ~/.ssh/id_ed25519.pub' and paste it into GitHub and GitLab"
+
+## gnupg
+gnupg --list-keys
+ln -sf ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 
 # MacOS Settings
 ## Example settings: https://github.com/mathiasbynens/dotfiles/blob/master/.macos
