@@ -74,6 +74,7 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
     * /Volumes/com.apple.TimeMachine.localsnapshots
 * [ ] Chrome
   * Install the [Markdown Viewer](https://github.com/simov/markdown-viewer) extension.
+  * Follow [After Install](https://github.com/simov/markdown-viewer#after-install) steps.
 * [ ] Dash
   * Load License (In iCloud Drive > Software Licenses and Such.)
   * Set up syncing. Sync files are in iCloud Drive > Dash Sync.
@@ -82,13 +83,19 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 * [ ] Firefox Developer Edition
   * Import sessions into Tab Session Manager. The backup is in the Downloads folder.
 * [ ] Jabra Direct
-  * Install it manually.
+  * [Install it manually.](https://www.jabra.com/software-and-services/jabra-direct)
 * [ ] Kap
   * Turn on "Highlight clicks"
+  * Turn off "Loop exports"
+  * Turn on "Start automatically"
+  * Turn on "Lossy GIF compression"
   * Change "Save to..." to "~/Downloads".
 * [ ] Maccy
-  * Change keyboard shortcut to Ctrl-Space
-  * Update other settings.
+  * Change keyboard shortcut to Option-Space
+  * Turn on "Launch at login".
+  * Turn on "Check for updates automatically"
+  * Change "Popup at" to "Cursor".
+  * Change "Menu size" to 15.
 * [ ] Messages
   * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
 * [ ] TablePlus
