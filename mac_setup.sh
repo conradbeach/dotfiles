@@ -212,7 +212,7 @@ curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/t
 
 ## tat
 print_header "Installing tat"
-curl https://raw.githubusercontent.com/thoughtbot/dotfiles/master/bin/tat -o /usr/local/bin/tat && chmod +x /usr/local/bin/tat
+sudo curl https://raw.githubusercontent.com/thoughtbot/dotfiles/master/bin/tat -o /usr/local/bin/tat && sudo chmod +x /usr/local/bin/tat
 
 ## Tmux Plugin Manager
 print_header "Installing Tmux Plugin Manager"
