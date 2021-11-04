@@ -113,3 +113,4 @@ Add these login items (In Settings > Users & Groups > Login Items):
 * Jabra Direct
 * krisp
 * Maccy
+* Postgres.app
