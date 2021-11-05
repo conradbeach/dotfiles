@@ -58,7 +58,6 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 ## Security
 - [ ] Generate a new GPG key. (Using GitKraken is the easiest. And it handles things like updating your Git profile so GPG signing will work outside of GitKraken.)
 - [ ] Add the new GPG key to your GitHub and GitLab accounts. (Use GitKraken to copy it.)
-- [ ] Update your Atomic Jolt wiki page with your new SSH and GPG keys.
 
 ## Application Changes
 * [ ] Xcode
