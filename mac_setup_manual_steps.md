@@ -83,6 +83,8 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
   * Load configuration. (In this repo. Change in Settings > General > Preferences)
 * [ ] Firefox Developer Edition
   * Import sessions into Tab Session Manager. The backup is in the Downloads folder.
+* [ ] J&J 7 Minute Workout
+  * Install the iOS version from the Mac App Store.
 * [ ] Jabra Direct
   * [Install it manually.](https://www.jabra.com/software-and-services/jabra-direct)
 * [ ] Kap
