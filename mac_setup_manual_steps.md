@@ -63,6 +63,8 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 ## Application Changes
 * [ ] Xcode
   * Install this first since it's huge.
+* [ ] Awair Home
+  * Install the iOS version from the Mac App Store.
 * [ ] BetterTouchTool
   * Load license. (In iCloud Drive > Software Licenses and Such.)
   * Load configuration. (In this repo.)
@@ -107,6 +109,7 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 
 ## Login Items
 Add these login items (In Settings > Users & Groups > Login Items):
+* Awair Home
 * Aware
 * BetterTouchTool
 * Dash
