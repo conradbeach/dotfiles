@@ -2,22 +2,3 @@ Host *
  AddKeysToAgent yes
  UseKeychain yes
  IdentityFile ~/.ssh/id_ed25519
-Host act-dev
-  HostName 196.53.97.50
-  User ubuntu
-Host act-beta
-  HostName 52.70.205.192
-  User ubuntu
-Host act-prod
-  HostName 34.225.132.216
-  User ubuntu
-  IdentitiesOnly yes
-Host act-prod-au
-  HostName 54.153.242.52
-  User ubuntu
-Host act-prod-ie
-  HostName 54.171.98.83
-  User ubuntu
-Host git-codecommit.*.amazonaws.com
-  User APKASUIACTRHJKGO6QD6
-  IdentityFile ~/.ssh/id_rsa
