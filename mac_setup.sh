@@ -68,7 +68,6 @@ brew install httpie
 brew install java
 brew install jq
 brew install neovim
-brew install nginx
 brew install pinentry-mac
 brew install python
 brew tap thoughtbot/formulae && brew install rcm
