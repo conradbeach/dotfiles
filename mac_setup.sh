@@ -94,7 +94,6 @@ brew install --cask font-hack-nerd-font
 
 ## Applications
 print_header "Installing Applications via Brew Cask"
-brew install --cask authy
 brew install --cask aware
 brew install --cask balenaetcher
 brew install --cask bettertouchtool

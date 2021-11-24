@@ -62,6 +62,8 @@ This article tells how to determine changes being made: https://pawelgrzybek.com
 ## Application Changes
 * [ ] Xcode
   * Install this first since it's huge.
+* [ ] Authy
+  * Install the iOS version from the Mac App Store. (There's an offical MacOS desktop version but I had issues with it.)
 * [ ] Awair Home
   * Install the iOS version from the Mac App Store.
 * [ ] BetterTouchTool
