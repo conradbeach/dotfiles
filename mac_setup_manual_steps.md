@@ -6,29 +6,118 @@
 - [ ] Copy relevant projects onto this machine from the '~/Development' folder from Time Machine backup.
 
 ## OS Settings
-- [ ] Change "Click in the scroll bar to" to "Jump to the spot that's clicked". (In Settings > General.)
-- [ ] Check "Ask to keep changes when closing documents". (In Settings > General).
-- [ ] Change default web browser to Firefox Developer Edition. (In Settings > General.)
-- [ ] Uncheck "Show indicators for open applications". (In Settings > Dock.)
-- [ ] Uncheck "Show recent applications in Dock". (In Settings > Dock.)
-- [ ] Change minimize windows to scale effect. (In Settings > Dock > Minimize windows using)
-- [ ] Check "Show Percentage". (In Settings > Dock & Menu Bar > Battery.)
-- [ ] Require password after 5 seconds of sleep or screen saver. (In Settings > Security & Privacy > General.)
-- [ ] Turn on FileVault. (In Settings > Security & Privacy > FileVault.)
-- [ ] Turn on Firewall. (In Settings > Security & Privacy > Firewall.)
-- [ ] Uncheck "Show Input menu in menu bar". (In Settings > Keyboard > Input Sources.)
-- [ ] Turn off Mission Control keyboard shortcut (control-up). (In Settings > Keyboard > Shortcuts > Mission Control.)
-- [ ] Turn off Application windows keyboard shortcut (control-down). (In Settings > Keyboard > Shortcuts > Mission Control.)
-- [ ] Turn off Move left a space (control-left). (In Settings > Keyboard > Shortcuts > Mission Control.)
-- [ ] Turn off Move right a space (control-right). (In Settings > Keyboard > Shortcuts > Mission Control.)
+
+### General
+- [ ] Change "Show scroll bars" to "Always".
+- [ ] Change "Click in the scroll bar to" to "Jump to the spot that's clicked".
+- [ ] Change default web browser to Firefox Developer Edition.
+- [ ] Check "Ask to keep changes when closing documents".
+
+### Dock & Menu Bar
+- [ ] Change minimize windows to scale effect.
+- [ ] Uncheck "Show indicators for open applications".
+- [ ] Uncheck "Show recent applications in Dock".
+
+#### Bluetooth
+- [ ] Check "Show in Menu Bar".
+
+#### Focus
+- [ ] Change "Show in Menu Bar" to "always".
+
+#### Sound
+- [ ] Change "Show in Menu Bar" to "always".
+
+#### Battery
+- [ ] Check "Show Percentage".
+
+#### Fast User Switching
+- [ ] Check "Show in Control Center".
+
+#### Clock
+- [ ] Check "Display the time with seconds".
+
+#### Spotlight
+- [ ] Uncheck "Show in Menu Bar".
+
+#### Siri
+- [ ] Uncheck "Show in Menu Bar".
+
+#### Time Machine
+- [ ] Check "Show Time Machine in menu bar".
+
+### Internet Accounts
+- [ ] Turn on Calendars for personal Google account.
+
+### Wallet & Apple Pay
+- [ ] Add Apple Card to Wallet.
+
+### Security & Privacy
+
+#### General
+- [ ] Require password after 5 seconds of sleep or screen saver.
+- [ ] Allow apps downloaded from: App Store and identified developers.
+
+#### FileVault
+- [ ] Turn on FileVault.
+
+#### Firewall
+- [ ] Turn on Firewall.
+
+### Software Update
+- [ ] Check "Automatically keep my Mac up to date".
+
+### Bluetooth
+- [ ] Connect to iPhone with Bluetooth.
+
+### Keybaord
+
+#### Keyboard
+
+##### Modifier Keys
 - [ ] Map caps lock to escape on internal and external keyboards.
+
+#### Shortcuts
+
+##### Launchpad & Dock
+- [ ] Turn off Turn Dock Hiding On/Off (option-command-d)
+
+##### Mission Control
+- [ ] Turn off Mission Control (control-up).
+- [ ] Turn off Move left a space (control-left).
+- [ ] Turn off Move right a space (control-right).
+- [ ] Turn off Application windows (control-down).
+
+#### Input Sources
+- [ ] Uncheck "Show Input menu in menu bar".
+
+#### Dictation
+- [ ] Turn on Dictation.
+
+### Trackpad
+
+#### More Gestures
+- [ ] Turn off Swipe between pages
 - [ ] Change Swipe between full screen apps to four fingers.
 - [ ] Change Mission Control to four fingers.
 - [ ] Change App Expose to four fingers.
-- [ ] Show Bluetooth in menu bar. (In Settings > Bluetooth)
-- [ ] Connect to iPhone with Bluetooth.
-- [ ] Set up Time Machine.
-- [ ] Check "Show Time Machine in menu bar". (In Settings > Time Machine.)
+
+### Displays
+- [ ] Adjust display positions to match their position on your desk.
+
+#### Display Settings
+- [ ] Set external monitor to be main display.
+- [ ] Scale external monitor to look like 1440p. (Assuming you're still using a
+  27ish inch 4k display.)
+
+#### Night Shift
+- [ ] Change it to run from 12:00am to 11:59pm. (All the time.)
+- [ ] Set the color temperature to be a little warmer than the middle line of
+  the scale.
+
+### Time Machine
+- [ ] Set up back up disk.
+- [ ] Set it to back up automatically.
+- [ ] Check Show Time Machine in menu bar.
 
 ## Finder Settings
 - [ ] Display folder on top in Finder. (In Finder Preferences > Advanced)
