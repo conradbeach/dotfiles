@@ -250,29 +250,8 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 ## Disable the warning before emptying the Trash.
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
-## Show the ~/Library folder.
-chflags nohidden ~/Library
-
-## Wipe all (default) app icons from the Dock.
-defaults write com.apple.dock persistent-apps -array
-
-## Disable Dashboard
-defaults write com.apple.dashboard mcx-disabled -bool true
-
-## Don’t automatically rearrange Spaces based on most recent use.
-defaults write com.apple.dock mru-spaces -bool false
-
 ## Show hidden files in finder.
 defaults write com.apple.finder AppleShowAllFiles -string YES
-
-# Show filename extensions. (Finder > Preferences > Show all filename extensions)
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
-# Don't show warning when changing filename extension. (Finder > Preferences > Show warning before changing an extension)
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-
-# Don't show warning when removing file from iCloud Drive. (Finder > Preferences > Show warning before removing from iCloud Drive)
-defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
 
 # Set default view to list. (Finder > View > As List)
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"

@@ -45,6 +45,9 @@
 #### Time Machine
 - [ ] Check "Show Time Machine in menu bar".
 
+### Mission Control
+- [ ] Uncheck "Automatically rearrange Spaces based on most recent use".
+
 ### Internet Accounts
 - [ ] Turn on Calendars for personal Google account.
 
@@ -120,14 +123,21 @@
 - [ ] Check Show Time Machine in menu bar.
 
 ## Finder Settings
-- [ ] Display folder on top in Finder. (In Finder Preferences > Advanced)
-- [ ] Remove items from trash after 30 days. (In Finder Preferences > Advanced)
-- [ ] Change "New Finder window shows" to home folder. (In Finder Preferences > General.)
-- [ ] Change 'Favorites' sidebar list to: home folder, Development, Downloads, Applications, Air Drop.
-- [ ] Change 'Locations' sidebar list to: Conrad's MacBook Pro, Network
 
-TODO: It'd be great to automate most of the above in the Mac setup script where possible.
-This article tells how to determine changes being made: https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/#the-way-to-find-the-domain--key-responsible-for-a-setting
+### General
+- [ ] Change "New Finder window shows" to home folder.
+
+### Sidebar
+- [ ] Change 'Favorites' sidebar list to: home folder, Development, Downloads, Applications, Air Drop.
+- [ ] Change 'Locations' sidebar list to: Conrad's MacBook Pro, External disks
+
+### Advanced
+- [ ] Check "Show all filename extensions".
+- [ ] Uncheck "Show warning before changing an extension".
+- [ ] Uncheck "Show warning before removing from iCloud Drive".
+- [ ] Uncheck "Show warning before emptying the Trash".
+- [ ] Check "Keep folders on top: In windows when sorting by name".
+- [ ] Check "Remove items from trash after 30 days".
 
 ## Tmux
 - [ ] Hit <prefix>+I to install plugins.
