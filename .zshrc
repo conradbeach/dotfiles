@@ -166,7 +166,7 @@ plugins=(git colored-man-pages)
 
 source $ZSH/plugins/history-substring-search/history-substring-search.zsh
 source $ZSH/z.sh
-source $ZSH/zsh-git-prompt/zshrc.sh
+
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Homewbrew
@@ -177,9 +177,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
-
-# tmuxinator
-source ~/.tmuxinator.zsh
 
 # Pure Prompt
 fpath+=$HOME/.zsh/pure
