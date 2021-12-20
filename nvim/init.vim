@@ -174,7 +174,7 @@ nnoremap <Leader>u :UndotreeToggle<cr>
 " https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources#use-cr-to-confirm-completion
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-let g:coc_node_path = "/opt/homebrew/Cellar/node/*/bin/node"
+let g:coc_node_path = "/usr/local/Cellar/node/*/bin/node"
 set hidden " TextEdit might fail if hidden is not set.
 set shortmess+=c " Don't pass messages to |ins-completion-menu|.
 
