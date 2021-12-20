@@ -171,11 +171,6 @@ asdf install
 print_header "Installing Oh My Zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
 
-## zsh-git-prompt
-print_header "Installing zsh-git-prompt"
-mkdir ~/.oh-my-zsh/zsh-git-prompt
-curl https://raw.githubusercontent.com/olivierverdier/zsh-git-prompt/master/zshrc.sh -o ~/.oh-my-zsh/zsh-git-prompt/zshrc.sh
-
 ## zsh-syntax-highlighting
 print_header "Installing zsh-syntax-highlighting"
 brew install zsh-syntax-highlighting
