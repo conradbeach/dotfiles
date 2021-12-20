@@ -184,6 +184,7 @@
   * Load configuration. (In this repo. Change in Settings > General > Preferences)
 * [ ] Firefox Developer Edition
   * Import sessions into Tab Session Manager. The backup is in the Downloads folder.
+  * Import Tab Session Manager settings as well. They're in the same folder.
 * [ ] J&J 7 Minute Workout
   * Install the iOS version from the Mac App Store.
 * [ ] Jabra Direct
