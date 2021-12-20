@@ -53,6 +53,7 @@ brew install jq
 brew install neovim
 brew install pinentry-mac
 brew install pure
+brew install rbenv
 brew install ripgrep
 brew install the_silver_searcher
 brew install tldr
@@ -79,6 +80,17 @@ brew install --cask slack
 brew install --cask tableplus
 brew install --cask visual-studio-code
 
+
+# rbenv
+print_header "Setting up rbenv"
+rbenv init
+rbenv install 3.0.3
+rbenv global 3.0.3
+rbenv rehash
+gem install bundler
+gem install colorls
+gem install neovim
+gem install orbacle
 
 # Zsh
 
