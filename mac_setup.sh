@@ -69,6 +69,7 @@ brew install java
 brew install jq
 brew install neovim
 brew install pinentry-mac
+brew install pure
 brew install python
 brew tap thoughtbot/formulae && brew install rcm
 brew install ripgrep
@@ -169,12 +170,7 @@ asdf install
 
 ## Oh My Zsh
 print_header "Installing Oh My Zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
-
-## zsh-git-prompt
-print_header "Installing zsh-git-prompt"
-mkdir ~/.oh-my-zsh/zsh-git-prompt
-curl https://raw.githubusercontent.com/olivierverdier/zsh-git-prompt/master/zshrc.sh -o ~/.oh-my-zsh/zsh-git-prompt/zshrc.sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
 
 ## zsh-syntax-highlighting
 print_header "Installing zsh-syntax-highlighting"
@@ -184,15 +180,12 @@ brew install zsh-syntax-highlighting
 print_header "Installing zsh-completions"
 brew install zsh-completions
 
-## Pure Prompt
-mkdir -p "$HOME/.zsh"
-git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 
 # Neovim
 
 ## vim-plug
 print_header "Installing vim-plug"
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 ## Python Support
 print_header "Installing Neovim Package for Python"
@@ -203,10 +196,6 @@ pip3 install neovim
 ## rupa/z
 print_header "Installing z"
 curl https://raw.githubusercontent.com/rupa/z/master/z.sh -o ~/.oh-my-zsh/z.sh
-
-## Tmuxinator
-print_header "Installing Tmuxinator Completions"
-curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -o ~/.tmuxinator.zsh
 
 ## tat
 print_header "Installing tat"
