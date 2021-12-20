@@ -69,6 +69,7 @@ brew install java
 brew install jq
 brew install neovim
 brew install pinentry-mac
+brew install pure
 brew install python
 brew tap thoughtbot/formulae && brew install rcm
 brew install ripgrep
@@ -179,9 +180,6 @@ brew install zsh-syntax-highlighting
 print_header "Installing zsh-completions"
 brew install zsh-completions
 
-## Pure Prompt
-mkdir -p "$HOME/.zsh"
-git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 
 # Neovim
 
