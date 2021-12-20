@@ -185,8 +185,8 @@ fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
-# asdf
-. $(brew --prefix asdf)/asdf.sh
+# rbenv
+eval "$(rbenv init - zsh)"
 
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
