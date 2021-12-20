@@ -178,9 +178,6 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 
-# tmuxinator
-source ~/.tmuxinator.zsh
-
 # Pure Prompt
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
