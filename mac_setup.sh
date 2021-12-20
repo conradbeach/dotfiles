@@ -197,10 +197,6 @@ pip3 install neovim
 print_header "Installing z"
 curl https://raw.githubusercontent.com/rupa/z/master/z.sh -o ~/.oh-my-zsh/z.sh
 
-## Tmuxinator
-print_header "Installing Tmuxinator Completions"
-curl https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -o ~/.tmuxinator.zsh
-
 ## tat
 print_header "Installing tat"
 sudo curl https://raw.githubusercontent.com/thoughtbot/dotfiles/master/bin/tat -o /usr/local/bin/tat && sudo chmod +x /usr/local/bin/tat
