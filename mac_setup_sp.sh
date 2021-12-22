@@ -71,6 +71,7 @@ brew install --cask font-hack-nerd-font
 ## Applications
 print_header "Installing Applications via Brew Cask"
 brew install --cask bettertouchtool
+brew install --cask copyclip
 brew install --cask dash
 brew install --cask firefox
 brew install --cask gitkraken
