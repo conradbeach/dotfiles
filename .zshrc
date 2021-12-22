@@ -193,3 +193,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
+BREW_PREFIX="$(brew --prefix)"
+export PATH="${BREW_PREFIX}/opt/openssl@3/bin:$PATH"
+export LDFLAGS="-L${BREW_PREFIX}/opt/openssl@3/lib"
+export CPPFLAGS="-I${BREW_PREFIX}/opt/openssl@3include"
+export LIBRARY_PATH="$LIBRARY_PATH:${BREW_PREFIX}/opt/openssl@3/lib"
+export PKG_CONFIG_PATH="${BREW_PREFIX}/opt/openssl@3/lib/pkgconfig"
