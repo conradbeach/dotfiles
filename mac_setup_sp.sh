@@ -104,7 +104,7 @@ brew install zsh-syntax-highlighting
 
 ## zsh-completions
 print_header "Installing zsh-completions"
-brew install zsh-completions
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 
 
 # Neovim
