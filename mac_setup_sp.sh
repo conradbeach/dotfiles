@@ -77,8 +77,6 @@ brew install --cask firefox
 brew install --cask gitkraken
 brew install --cask iterm2
 brew install --cask postman
-brew install --cask slack
-brew install --cask tableplus
 brew install --cask visual-studio-code
 
 
