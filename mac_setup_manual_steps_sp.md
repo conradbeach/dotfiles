@@ -127,7 +127,7 @@
   * Load license. (In iCloud Drive > Software Licenses and Such.)
 * [ ] Dash
   * Load License (In iCloud Drive > Software Licenses and Such.)
-  * Set up syncing. Sync files are in iCloud Drive > Dash Sync.
+  * Set up syncing. Sync files are in Google Drive (My Drive root).
 * [ ] iTerm
   * Load configuration. (In this repo. Change in Settings > General > Preferences)
 * [ ] Jabra Direct
