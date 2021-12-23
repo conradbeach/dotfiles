@@ -139,13 +139,10 @@
   * In Settings > General, set custom theme to be the default.
   * In Settings > General, change 'Shells open with:' to '/bin/zsh'.
 
-## Login Items
-Add these login items (In Settings > Users & Groups > Login Items):
-* Awair Home
-* Aware
+## Startup Items
+Set these applications to launch on login. (You have to do it through each application individually since you can't access the users and accounts preference pane.)
+
 * BetterTouchTool
 * Dash
 * Jabra Direct
-* krisp
-* Maccy
-* Postgres.app
+* CopyClip2
