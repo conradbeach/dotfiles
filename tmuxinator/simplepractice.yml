@@ -45,13 +45,15 @@ windows:
       layout: 4abd,255x74,0,0{98x74,0,0,12,156x74,99,0,15}
       panes:
         - terminal:
-        - rails_server_logs:
-          - tail -f log/development.log
-  - console:
+        - rails_server:
+          - bundle exec rails server
+  - console-sidekiq:
       layout: even-horizontal
       panes:
         - rails_console:
           - bundle exec rails console
+        - sidekiq:
+          - bundle exec sidekiq
   - other:
       layout: even-horizontal
       panes:
