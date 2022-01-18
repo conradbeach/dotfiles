@@ -35,6 +35,7 @@
 
 ### Mission Control
 - [ ] Uncheck "Automatically rearrange Spaces based on most recent use".
+- [ ] Check "Group windows by application"
 
 ### Internet Accounts
 - [ ] Turn on Calendars for work Google account.
