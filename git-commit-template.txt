@@ -6,6 +6,10 @@
 # |<----   Try To Limit Each Line to a Maximum Of 72 Characters   ---->|
 
 
+# Uncomment the below if adding co-authors:
+# Co-authored-by: CO-AUTHOR NAME 1 <co-author@example.com>
+# Co-authored-by: CO-AUTHOR NAME 2 <co-author2@example.com>
+
 # --- COMMIT END ---
 # Before committing:
 #   - Are changes tested?
