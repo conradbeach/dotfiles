@@ -27,7 +27,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'machakann/vim-highlightedyank'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'tpope/vim-obsession'
@@ -291,6 +290,10 @@ autocmd VimEnter * source ~/.config/nvim/init.vim
 
 " Set these options so Vim will be able to actually save the crontab.
 autocmd filetype crontab setlocal nobackup nowritebackup
+
+" Turn on highlighted yank.
+au TextYankPost * silent! lua vim.highlight.on_yank {timeout=500}
+
 
 """""""""""""""""
 " Maps
