@@ -24,18 +24,18 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'mustache/vim-mustache-handlebars'
 Plug 'tpope/vim-repeat'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-surround'
 Plug 'machakann/vim-swap'
 Plug 'janko-m/vim-test'
-Plug 'kana/vim-textobj-user'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 " Elixir
 Plug 'elixir-editors/vim-elixir'
+"Ember
+Plug 'mustache/vim-mustache-handlebars'
 " HTML
 Plug 'mattn/emmet-vim'
 " JavaScript
@@ -52,6 +52,7 @@ Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rake'
 Plug 'christoomey/vim-rfactory'
 Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'kana/vim-textobj-user' " nelstrom/vim-textobj-rubyblock depends on this.
 " YAML
 Plug 'stephpy/vim-yaml'
 call plug#end()
