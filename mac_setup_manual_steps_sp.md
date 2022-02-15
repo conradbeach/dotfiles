@@ -139,6 +139,10 @@
   * Load theme. (Dracula.theme in this repo.)
   * In Settings > General, set custom theme to be the default.
   * In Settings > General, change 'Shells open with:' to '/bin/zsh'.
+* [ ] Zoom
+  * Enable "Always show meeting controls". (Settings > General)
+  * Enable "Mute my mic when joining a meeting". (Settings > Audio)
+  * Enable mute/unmute keyboard shortcut globally. (Settings > Keyboard Shortcuts)
 
 ## Startup Items
 Set these applications to launch on login. (You have to do it through each application individually since you can't access the users and accounts preference pane.)
