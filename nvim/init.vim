@@ -4,6 +4,7 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'w0rp/ale'
+Plug 'Pocco81/AutoSave.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ap/vim-css-color'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -18,7 +19,6 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/taglist.vim'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-abolish'
-Plug '907th/vim-auto-save'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -55,10 +55,6 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 " YAML
 Plug 'stephpy/vim-yaml'
 call plug#end()
-
-" vim-auto-save
-let g:auto_save = 1  " enable AutoSave on Vim startup
-let g:auto_save_silent = 1  " do not display the auto-save notification
 
 " CtrlP
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
@@ -188,6 +184,19 @@ map <Leader>\ :tab split <CR>:execute "normal \<Plug>(coc-definition)"<CR>
 
 " Yggdroot/indentLine
 let g:indentLine_char_list = ['|', '¦', '┆', '┊'] " Show different indentation markers at each level.
+
+" AutoSave.nvim
+lua << EOF
+local autosave = require("autosave")
+
+autosave.setup(
+  {
+    execution_message = "",
+    events = {"InsertLeave", "TextChanged"},
+    write_all_buffers = false,
+  }
+)
+EOF
 
 """""""""""""""""
 " Sets
