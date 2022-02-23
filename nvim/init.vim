@@ -386,6 +386,7 @@ map <Leader>dd "_
 " Theme
 """""""""""""""""
 syntax on
+set termguicolors
 colorscheme one
 let g:one_allow_italics = 1
 set background=light
