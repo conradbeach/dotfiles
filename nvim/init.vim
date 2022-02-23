@@ -32,6 +32,7 @@ Plug 'machakann/vim-swap'
 Plug 'janko-m/vim-test'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'christoomey/vim-tmux-runner'
+Plug 'tpope/vim-unimpaired'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 " Elixir
 Plug 'elixir-editors/vim-elixir'
