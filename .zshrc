@@ -111,7 +111,7 @@ alias ms="mux start"
 alias home="cd && clear"
 # Overrides (Remember that you can run the original command by prepending it with a \. e.g. `\cat` will run the real cat instead of bat.)
 alias ls="colorls --group-directories-first --git-status --almost-all -1"
-alias cat="bat --theme=OneHalfLight"
+alias cat="bat"
 alias top="htop"
 alias find="fd -H"
 # Ruby & Rails
