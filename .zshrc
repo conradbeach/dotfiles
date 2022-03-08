@@ -115,8 +115,8 @@ alias cat="bat"
 alias top="htop"
 alias find="fd -H"
 # Ruby & Rails
-alias cra="bundle exec rspec && bundle exec rubocop --display-style-guide && bundle exec bundler-audit check --update && bundle exec brakeman --no-pager && rubycritic app && yarn audit" # Short for 'check rails app'
-alias crajs="bundle exec rspec && rails cypress:run && bundle exec rubocop --display-style-guide && yarn eslint app/javascript cypress && bundle exec bundler-audit check --update && bundle exec brakeman --no-pager && rubycritic app && yarn audit" # Short for 'check rails app'
+alias cra="bundle exec rspec && bundle exec rubocop --display-style-guide && bundle exec bundler-audit check --update && bundle exec brakeman --no-pager && rubycritic app" # Short for 'check rails app'
+alias crajs="bundle exec rspec && rails cypress:run && bundle exec rubocop --display-style-guide && yarn eslint app/javascript cypress && bundle exec bundler-audit check --update && bundle exec brakeman --no-pager && rubycritic app && yarn audit" # Short for 'check rails app with JS'
 alias crs="bundle audit check --update && brakeman --no-pager" # Short for 'check Rails security'
 alias be="bundle exec"
 alias hr="heroku run"
