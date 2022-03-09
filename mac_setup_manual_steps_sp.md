@@ -121,9 +121,9 @@
 ## Application Changes
 * [ ] Xcode
   * Install this first since it's huge.
-* [ ] BetterTouchTool
-  * Load license. (In iCloud Drive > Software Licenses and Such.)
-  * Load configuration. (In this repo.)
+* [ ] Alfred
+  * Set main Alfred hotkey to CMD-space.
+  * Set up config syncing (in this repo).
 * [ ] CopyClip2
   * Load license. (In iCloud Drive > Software Licenses and Such.)
 * [ ] Dash
