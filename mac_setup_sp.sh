@@ -79,17 +79,32 @@ brew install --cask iterm2
 brew install --cask postman
 brew install --cask visual-studio-code
 
+# asdf
+print_header "Installing asdf"
+rm -rf ~/.asdf
+brew install asdf
+source ~/.zshrc
 
-# rbenv
-print_header "Setting up rbenv"
-rbenv init
-rbenv install 3.0.3
-rbenv global 3.0.3
-rbenv rehash
-gem install bundler
-gem install colorls
-gem install neovim
-gem install orbacle
+## Dependencies
+print_header "Installing Dependencies"
+xcode-select --install
+brew install coreutils curl git
+
+## Ruby
+print_header "Installing Ruby"
+brew install openssl libyaml libffi
+asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+
+## NodeJS
+print_header "Installing NodeJS"
+brew install coreutils gpg
+asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+
+## Install Global Versions
+print_header "Installing All Global Versions of Languages"
+asdf instal
+
 
 # Zsh
 
