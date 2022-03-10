@@ -15,7 +15,6 @@ Plug 'maximbaz/lightline-ale'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'joshdick/onedark.vim'
-Plug 'rakr/vim-one'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/taglist.vim'
 Plug 'mbbill/undotree'
@@ -388,14 +387,13 @@ map <Leader>dd "_
 """""""""""""""""
 syntax on
 set termguicolors
-colorscheme one
 let g:one_allow_italics = 1
-set background=light
+colorscheme onedark
 
 let g:onedark_terminal_italics=1
 
 let g:lightline = {
-      \ 'colorscheme': 'ayu_light',
+      \ 'colorscheme': 'onedark',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
