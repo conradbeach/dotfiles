@@ -167,8 +167,8 @@ autoload -U compinit && compinit
 
 source $ZSH/plugins/history-substring-search/history-substring-search.zsh
 source $ZSH/z.sh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Homewbrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
