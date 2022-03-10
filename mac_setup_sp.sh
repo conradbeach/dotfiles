@@ -199,5 +199,5 @@ for app in "Dock" "Finder"; do
 done
 
 print_header "Final Steps"
-echo "Perform manual setup steps in mac_setup_manual_steps.md"
+echo "Perform manual setup steps in mac_setup_manual_steps_sp.md"
 echo "Restart your computer. Some changes won't take affect until you do."
