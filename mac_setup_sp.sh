@@ -18,7 +18,7 @@ ln -sf ~/Development/dotfiles/tmuxinator ~/.config
 ln -sf ~/Development/dotfiles/.agignore ~
 ln -sf ~/Development/dotfiles/.ctags ~
 ln -sf ~/Development/dotfiles/.fzf.zsh ~
-ln -sf ~/Development/dotfiles/.gitconfig ~
+ln -sf ~/Development/dotfiles/.gitconfig_sp ~/.gitconfig
 ln -sf ~/Development/dotfiles/.gitignore_global ~
 ln -sf ~/Development/dotfiles/.ideavimrc ~
 ln -sf ~/Development/dotfiles/.irbrc ~
