@@ -120,26 +120,6 @@ nmap <Leader>gu <Plug>(GitGutterUndoHunk)
 " liuchengxu/vim-which-key
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
-" Shougo/neosnippet
-" Note: You must use 'imap' and 'smap'.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-" To conceal markers. (Update: I turned this off because it hid quotes in JSON
-" which was super annoying, and I was concerned it might cause other issues as well.)
-" if has('conceal')
-  " set conceallevel=2 concealcursor=niv
-" endif
-let g:neosnippet#snippets_directory = '/Users/cbeach/.local/share/nvim/plugged/vim-snippets/snippets'
-let g:neosnippet#disable_runtime_snippets = {
-\   '_' : 1,
-\ }
-" Include Rails snippets in Ruby files.
-let g:neosnippet#scope_aliases = {}
-let g:neosnippet#scope_aliases['ruby'] = 'ruby,rails'
-
 " christoomey/vim-rfactory
 nmap <Leader>gf :RVfactory<CR>
 
