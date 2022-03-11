@@ -22,6 +22,8 @@ ln -sf ~/Development/dotfiles/tmuxinator ~/.config
 ln -sf ~/Development/dotfiles/.agignore ~
 ln -sf ~/Development/dotfiles/.asdfrc ~
 ln -sf ~/Development/dotfiles/.ctags ~
+ln -sf ~/Development/dotfiles/.default-gems ~
+ln -sf ~/Development/dotfiles/.default-npm-packages ~
 ln -sf ~/Development/dotfiles/.fzf.zsh ~
 ln -sf ~/Development/dotfiles/.gitconfig_sp ~/.gitconfig
 ln -sf ~/Development/dotfiles/.gitignore_global ~
@@ -31,6 +33,7 @@ ln -sf ~/Development/dotfiles/.reek.yml ~
 ln -sf ~/Development/dotfiles/.rspec ~
 ln -sf ~/Development/dotfiles/.rubocop.yml ~
 ln -sf ~/Development/dotfiles/.tmux.conf ~
+ln -sf ~/Development/dotfiles/.tool-versions ~
 ln -sf ~/Development/dotfiles/.vimrc ~ 
 ln -sf ~/Development/dotfiles/.zshrc ~
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
