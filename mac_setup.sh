@@ -46,6 +46,7 @@ ln -sf ~/Development/dotfiles/git-commit-template.txt ~
 # Brew
 print_header "Installing Brew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+source ~/.zshrc
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
