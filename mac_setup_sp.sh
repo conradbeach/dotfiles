@@ -8,6 +8,10 @@ function print_header() {
   echo "**************************************************************************"
 }
 
+# Rosetta 2
+print_header "Installing Rosetta 2"
+sudo softwareupdate --install-rosetta
+
 # Link Files
 print_header "Symlinking Files"
 mkdir ~/.config
