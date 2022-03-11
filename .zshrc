@@ -180,7 +180,7 @@ export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 
 # Pure Prompt
-fpath+=$HOME/.zsh/pure
+fpath+=$(brew --prefix)/share/zsh/site-functions
 autoload -U promptinit; promptinit
 prompt pure
 
