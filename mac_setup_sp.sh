@@ -35,6 +35,7 @@ ln -sf ~/Development/dotfiles/git-commit-template.txt ~
 # Brew
 print_header "Installing Brew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+source ~/.zshrc
 
 ## Packages
 print_header "Installing Brew Packages"
