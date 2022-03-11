@@ -159,7 +159,6 @@ Remove all unwanted apps from Dock.
 ## Startup Items
 Set these applications to launch on login. (You have to do it through each application individually since you can't access the users and accounts preference pane.)
 
-* BetterTouchTool
 * CopyClip2
 * Dash
 * Jabra Direct
