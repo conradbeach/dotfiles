@@ -100,7 +100,6 @@ asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 print_header "Installing NodeJS"
 brew install coreutils gpg
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
 ## Install Global Versions
 print_header "Installing All Global Versions of Languages"
