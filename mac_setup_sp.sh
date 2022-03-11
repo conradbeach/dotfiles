@@ -154,7 +154,7 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 echo "run 'pbcopy < ~/.ssh/id_ed25519.pub' and paste it into GitHub"
 
 ## gnupg
-gnupg --list-keys
+gpg --list-keys
 ln -sf ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 
 # MacOS Settings
