@@ -156,7 +156,6 @@ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 print_header "Installing NodeJS"
 brew install coreutils gpg
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
 ## Elasticsearch
 print_header "Installing Elasticsearch"
