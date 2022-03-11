@@ -20,6 +20,7 @@ mkdir ~/.ssh/
 ln -sf ~/Development/dotfiles/ssh/config ~/.ssh/
 ln -sf ~/Development/dotfiles/tmuxinator ~/.config
 ln -sf ~/Development/dotfiles/.agignore ~
+ln -sf ~/Development/dotfiles/.asdfrc ~
 ln -sf ~/Development/dotfiles/.ctags ~
 ln -sf ~/Development/dotfiles/.fzf.zsh ~
 ln -sf ~/Development/dotfiles/.gitconfig_sp ~/.gitconfig
