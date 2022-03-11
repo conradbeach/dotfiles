@@ -104,7 +104,7 @@ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 
 ## Install Global Versions
 print_header "Installing All Global Versions of Languages"
-asdf instal
+asdf install
 
 
 # Zsh
