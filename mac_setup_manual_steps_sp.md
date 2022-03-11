@@ -114,6 +114,7 @@
   * Set up config syncing (in this repo).
 * [ ] CopyClip2
   * Load license. (In iCloud Drive > Software Licenses and Such.)
+  * Change toggle hotkey to option-space.
 * [ ] Dash
   * Load License (In iCloud Drive > Software Licenses and Such.)
   * Set up syncing (snippets too). Sync files are in Google Drive (My Drive root).
