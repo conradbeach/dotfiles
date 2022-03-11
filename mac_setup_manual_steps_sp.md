@@ -122,7 +122,7 @@
 
 ## Security
 - [ ] Generate a new GPG key. (Using GitKraken is the easiest. And it handles things like updating your Git profile so GPG signing will work outside of GitKraken.)
-- [ ] Add the new GPG key to your GitHub and GitLab accounts. (Use GitKraken to copy it.)
+- [ ] Add the new GPG key to your GitHub account. (Use GitKraken to copy it.)
 
 ## Application Changes
 * [ ] Xcode
