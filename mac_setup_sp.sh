@@ -65,7 +65,6 @@ brew install jq
 brew install neovim
 brew install pinentry-mac
 brew install pure
-brew install rbenv
 brew install ripgrep
 brew install the_silver_searcher
 brew install tldr
