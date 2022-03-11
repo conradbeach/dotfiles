@@ -105,25 +105,6 @@
 - [ ] Check "Remove items from trash after 30 days".
 - [ ] Check "Keep folders on top: In windows when sorting by name".
 
-## Tmux
-- [ ] Hit <prefix>+I to install plugins.
-
-## Neovim
-- [ ] Run :PlugInstall.
-- [ ] Run :checkhealth.
-- [ ] Install the following coc.nvim extensions (command is `:CocInstall [extenson]`:
-  - coc-css
-  - coc-html
-  - coc-json
-  - coc-solargraph
-  - coc-tsserver
-  - coc-tabnine
-  - TODO: The [coc.nvim README](https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim#automation-script) has an automatic script you could set up.
-
-## Security
-- [ ] Generate a new GPG key. (Using GitKraken is the easiest. And it handles things like updating your Git profile so GPG signing will work outside of GitKraken.)
-- [ ] Add the new GPG key to your GitHub account. (Use GitKraken to copy it.)
-
 ## Application Changes
 * [ ] Xcode
   * Install this first since it's huge.
@@ -155,6 +136,25 @@
   * Enable mute/unmute keyboard shortcut globally. (Settings > Keyboard Shortcuts)
 
 Remove all unwanted apps from Dock.
+
+## Tmux
+- [ ] Hit <prefix>+I to install plugins.
+
+## Neovim
+- [ ] Run :PlugInstall.
+- [ ] Run :checkhealth.
+- [ ] Install the following coc.nvim extensions (command is `:CocInstall [extenson]`:
+  - coc-css
+  - coc-html
+  - coc-json
+  - coc-solargraph
+  - coc-tsserver
+  - coc-tabnine
+  - TODO: The [coc.nvim README](https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim#automation-script) has an automatic script you could set up.
+
+## Security
+- [ ] Generate a new GPG key. (Using GitKraken is the easiest. And it handles things like updating your Git profile so GPG signing will work outside of GitKraken.)
+- [ ] Add the new GPG key to your GitHub account. (Use GitKraken to copy it.)
 
 ## Startup Items
 Set these applications to launch on login. (You have to do it through each application individually since you can't access the users and accounts preference pane.)
