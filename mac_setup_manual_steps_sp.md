@@ -128,27 +128,33 @@
 * [ ] Xcode
   * Install this first since it's huge.
 * [ ] Alfred
+  * Activate Powerpack. (In iCloud Drive > Software Licenses and Such.)
   * Set main Alfred hotkey to CMD-space.
   * Set up config syncing (in this repo).
 * [ ] CopyClip2
   * Load license. (In iCloud Drive > Software Licenses and Such.)
 * [ ] Dash
   * Load License (In iCloud Drive > Software Licenses and Such.)
-  * Set up syncing. Sync files are in Google Drive (My Drive root).
+  * Set up syncing (snippets too). Sync files are in Google Drive (My Drive root).
 * [ ] iTerm
   * Load configuration. (In this repo. Change in Settings > General > Preferences)
 * [ ] Jabra Direct
   * [Install it manually.](https://www.jabra.com/software-and-services/jabra-direct)
 * [ ] TablePlus
-  * Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries.
+  * Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
 * [ ] Terminal.app
-  * Load theme. (Dracula.theme in this repo.)
-  * In Settings > General, set custom theme to be the default.
+  * Load theme. (Dracula.theme in this repo.) Change in Preferences > Profiles > ... button > Import...
+  * In Settings > General, set Dracula theme to be the default.
   * In Settings > General, change 'Shells open with:' to '/bin/zsh'.
+* [ ] Visual Studio Code
+  * Sign in to turn on Settings Sync. Sign in with GitHub.
 * [ ] Zoom
   * Enable "Always show meeting controls". (Settings > General)
+  * Enable "Automatically join computer audio when joining a meeting". (Settings > Audio)
   * Enable "Mute my mic when joining a meeting". (Settings > Audio)
   * Enable mute/unmute keyboard shortcut globally. (Settings > Keyboard Shortcuts)
+
+Remove all unwanted apps from Dock.
 
 ## Startup Items
 Set these applications to launch on login. (You have to do it through each application individually since you can't access the users and accounts preference pane.)

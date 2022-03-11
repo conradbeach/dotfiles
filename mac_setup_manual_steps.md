@@ -186,7 +186,7 @@
   * Follow [After Install](https://github.com/simov/markdown-viewer#after-install) steps.
 * [ ] Dash
   * Load License (In iCloud Drive > Software Licenses and Such.)
-  * Set up syncing. Sync files are in iCloud Drive > Dash Sync.
+  * Set up syncing (snippets too). Sync files are in iCloud Drive > Dash Sync.
 * [ ] iTerm
   * Load configuration. (In this repo. Change in Settings > General > Preferences)
 * [ ] Firefox Developer Edition
@@ -211,11 +211,15 @@
 * [ ] Messages
   * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
 * [ ] TablePlus
-  * Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries.
+  * Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
 * [ ] Terminal.app
-  * Load theme. (Dracula.theme in this repo.)
-  * In Settings > General, set custom theme to be the default.
+  * Load theme. (Dracula.theme in this repo.) Change in Preferences > Profiles > ... button > Import...
+  * In Settings > General, set Dracula theme to be the default.
   * In Settings > General, change 'Shells open with:' to '/bin/zsh'.
+* [ ] Visual Studio Code
+  * Sign in to turn on Settings Sync. Sign in with GitHub.
+
+Remove all unwanted apps from Dock.
 
 ## Login Items
 Add these login items (In Settings > Users & Groups > Login Items):
