@@ -8,9 +8,11 @@ function print_header() {
   echo "**************************************************************************"
 }
 
+
 # Rosetta 2
 print_header "Installing Rosetta 2"
 sudo softwareupdate --install-rosetta
+
 
 # Link Files
 print_header "Symlinking Files"
@@ -42,6 +44,7 @@ ln -sf ~/Development/dotfiles/.zshrc ~
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
 # in a certain way, so I need to link this file after gnupg runs once.
 ln -sf ~/Development/dotfiles/git-commit-template.txt ~
+
 
 # Brew
 print_header "Installing Brew"
@@ -128,6 +131,7 @@ brew install --cask virtualbox
 brew install --cask virtualbox-extension-pack
 brew install --cask visual-studio-code
 
+
 # asdf
 print_header "Installing asdf"
 rm -rf ~/.asdf
@@ -181,6 +185,7 @@ brew install zsh-syntax-highlighting
 print_header "Installing zsh-completions"
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 
+
 # Neovim
 
 ## vim-plug
@@ -190,6 +195,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ## Python Support
 print_header "Installing Neovim Package for Python"
 pip3 install neovim
+
 
 # Other Tools
 
@@ -209,7 +215,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 print_header "Installing Xcode Command Line Tools"
 xcode-select --install
 
+
 # Other Development Setup
+
 ## SSH
 print_header "Generating an SSH key"
 ssh-keygen -t ed25519 -C "conradbeach@protonmail.com"
@@ -221,7 +229,9 @@ echo "run 'pbcopy < ~/.ssh/id_ed25519.pub' and paste it into GitHub and GitLab"
 gpg --list-keys
 ln -sf ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
 
+
 # MacOS Settings
+
 ## Example settings: https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 ## More examples: https://github.com/pawelgrzybek/dotfiles/blob/master/setup-macos.sh
 print_header "Updating MacOS Setting"
@@ -242,25 +252,28 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 ## Show hidden files in finder.
 defaults write com.apple.finder AppleShowAllFiles -string YES
 
-# Set default view to list. (Finder > View > As List)
+## Set default view to list. (Finder > View > As List)
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
-# Show the path bar in finder. (Finder > View > Show Path Bar)
+## Show the path bar in finder. (Finder > View > Show Path Bar)
 defaults write com.apple.finder ShowPathbar -bool true
 
 ## Set dock size. (System Preferences > Dock > Size)
 defaults write com.apple.dock tilesize -int 24
 
-# Key repeat speed. (System Preferences > Keyboard. This is as fast as it will go.)
+## Key repeat speed. (System Preferences > Keyboard. This is as fast as it will go.)
 defaults write NSGlobalDomain KeyRepeat -int 2
 
-# Delay until key repeat. (System Preferences > Keyboard. This is as fast as it will go.)
+## Delay until key repeat. (System Preferences > Keyboard. This is as fast as it will go.)
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
-# Kill Dock and Finder
+## Kill Dock and Finder
 for app in "Dock" "Finder"; do
   killall "${app}" > /dev/null 2>&1
 done
+
+
+# Final Steps
 
 print_header "Final Steps"
 echo "Perform manual setup steps in mac_setup_manual_steps.md"
