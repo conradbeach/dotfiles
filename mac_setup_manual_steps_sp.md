@@ -102,8 +102,8 @@
 - [ ] Uncheck "Show warning before changing an extension".
 - [ ] Uncheck "Show warning before removing from iCloud Drive".
 - [ ] Uncheck "Show warning before emptying the Trash".
-- [ ] Check "Keep folders on top: In windows when sorting by name".
 - [ ] Check "Remove items from trash after 30 days".
+- [ ] Check "Keep folders on top: In windows when sorting by name".
 
 ## Tmux
 - [ ] Hit <prefix>+I to install plugins.
