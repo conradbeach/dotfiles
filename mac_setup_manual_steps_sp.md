@@ -3,6 +3,7 @@
 ## OS Settings
 
 ### General
+- [ ] Change "Appearance" to "Dark".
 - [ ] Change "Show scroll bars" to "Always".
 - [ ] Change "Click in the scroll bar to" to "Jump to the spot that's clicked".
 - [ ] Check "Ask to keep changes when closing documents".
@@ -40,6 +41,9 @@
 ### Internet Accounts
 - [ ] Turn on Calendars for work Google account.
 
+### Touch ID
+- [ ] Set up Touch ID.
+
 ### Keybaord
 
 #### Keyboard
@@ -54,9 +58,12 @@
 
 ##### Mission Control
 - [ ] Turn off Mission Control (control-up).
+- [ ] Turn off Application windows (control-down).
 - [ ] Turn off Move left a space (control-left).
 - [ ] Turn off Move right a space (control-right).
-- [ ] Turn off Application windows (control-down).
+
+##### Spotlight
+- [ ] Change shortcut to ctrl-space.
 
 #### Input Sources
 - [ ] Uncheck "Show Input menu in menu bar".
@@ -79,8 +86,7 @@
 
 #### Night Shift
 - [ ] Change it to run from 12:00am to 11:59pm. (All the time.)
-- [ ] Set the color temperature to be a little warmer than the middle line of
-  the scale.
+- [ ] Set the color temperature to be a little warmer than the middle line of the scale.
 
 ## Finder Settings
 
