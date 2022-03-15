@@ -110,7 +110,7 @@ alias mux="tmuxinator"
 alias ms="mux start"
 alias home="cd && clear"
 # Overrides (Remember that you can run the original command by prepending it with a \. e.g. `\cat` will run the real cat instead of bat.)
-alias ls="colorls --group-directories-first --git-status --almost-all -1"
+alias ls="exa --all --group-directories-first --icons"
 alias cat="bat --theme=OneHalfLight"
 alias top="htop"
 alias find="fd -H"
