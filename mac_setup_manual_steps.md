@@ -50,6 +50,9 @@
 - [ ] Uncheck "Automatically rearrange Spaces based on most recent use".
 - [ ] Check "Group windows by application"
 
+### Notifications & Focus
+- [ ] Check "Allow notifications: When mirroring or sharing the display"
+
 ### Internet Accounts
 - [ ] Turn on Calendars for personal Google account.
 
