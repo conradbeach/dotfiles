@@ -47,14 +47,9 @@ windows:
         - terminal:
         - rails_server:
           - bundle exec rails server
-  - console-servers:
-      layout: even-horizontal
-      panes:
-        - rails_console:
-          - bundle exec rails console
-          - pry
-        - webpack:
-          - bin/webpack-dev-server
+  - console:
+      - bundle exec rails console
+      - pry
   - other:
       layout: 5057,231x67,0,0{115x67,0,0,27,115x67,116,0[115x33,116,0,28,115x33,116,34,29]}
       panes:
