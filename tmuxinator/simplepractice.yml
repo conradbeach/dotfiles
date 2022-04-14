@@ -59,5 +59,7 @@ windows:
       panes:
         - yard_gems:
           - yard gems
+          - exit
         - solargraph:
           - solargraph download-core
+          - exit
