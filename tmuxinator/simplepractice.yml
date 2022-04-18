@@ -54,7 +54,7 @@ windows:
           - bundle exec rails console
         - sidekiq:
           - bundle exec sidekiq
-  - other:
+  - temp:
       layout: even-horizontal
       panes:
         - yard_gems:
