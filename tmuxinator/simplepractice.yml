@@ -58,8 +58,6 @@ windows:
       layout: even-horizontal
       panes:
         - yard_gems:
-          - yard gems
-          - exit
+          - yard gems && exit
         - solargraph:
-          - solargraph download-core
-          - exit
+          - solargraph download-core && exit
