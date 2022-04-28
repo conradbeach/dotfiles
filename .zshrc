@@ -131,6 +131,8 @@ alias gri="git rebase -i --autosquash"
 alias grc="git rebase --continue"
 alias gcf="git commit --fixup"
 alias gcnv="git commit --no-verify"
+# Ember
+alias et="yarn test --serve -f"
 # Guard
 alias gg="bundle exec guard -c"
 # CPU Profiling
