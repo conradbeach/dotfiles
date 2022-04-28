@@ -118,6 +118,7 @@
 * [ ] Dash
   * Load License (In iCloud Drive > Software Licenses and Such.)
   * Set up syncing (snippets too). Sync files are in Google Drive (My Drive root).
+  * Load custom docsets (In this repo. ./custom_dash_docsets)
 * [ ] iTerm
   * Load configuration. (In this repo. Change in Settings > General > Preferences)
 * [ ] Jabra Direct
