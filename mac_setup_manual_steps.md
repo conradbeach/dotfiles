@@ -174,9 +174,6 @@
   * Load custom docsets (In this repo. ./custom_dash_docsets)
 * [ ] iTerm
   * Load configuration. (In this repo. Change in Settings > General > Preferences)
-* [ ] Fig
-  * Give it the necessary permissions.
-  * Sign in with passwordless email.
 * [ ] Firefox Developer Edition
   * Import sessions into Tab Session Manager. The backup is in the Downloads folder.
   * Import Tab Session Manager settings as well. They're in the same folder.
