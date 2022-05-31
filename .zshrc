@@ -1,7 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-if [ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]; then
-  . "$HOME/.fig/shell/zshrc.pre.zsh"
-fi
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 
 export ZSH=~/.oh-my-zsh # Path to your oh-my-zsh installation.
 
@@ -212,6 +210,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
 # Fig post block. Keep at the bottom of this file.
-if [ -f "$HOME/.fig/shell/zshrc.post.zsh" ]; then
-  . "$HOME/.fig/shell/zshrc.post.zsh"
-fi
+. "$HOME/.fig/shell/zshrc.post.zsh"
