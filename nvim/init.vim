@@ -138,6 +138,16 @@ let g:user_emmet_settings = {
 nnoremap <Leader>u :UndotreeToggle<cr>
 
 " coc.nvim
+let g:coc_global_extensions = [
+  \ 'coc-css',
+  \ 'coc-ember',
+  \ 'coc-html',
+  \ 'coc-json',
+  \ 'coc-solargraph',
+  \ 'coc-tsserver',
+  \ 'coc-tabnine'
+\ ]
+
 " You have to remap <cr> to make sure it confirms completion when popup menu is visible since default
 " behavior of <CR> could be different regard to current completion state and completeopt option.
 " https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources#use-cr-to-confirm-completion
