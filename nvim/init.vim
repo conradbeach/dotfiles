@@ -37,7 +37,7 @@ Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 " Elixir
 Plug 'elixir-editors/vim-elixir'
 "Ember
-Plug 'mustache/vim-mustache-handlebars'
+Plug 'joukevandermaas/vim-ember-hbs'
 " HTML
 Plug 'mattn/emmet-vim'
 " JavaScript
