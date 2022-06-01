@@ -1,5 +1,5 @@
 """""""""""""""""
-" Plugins
+" Plugins (via (vim-plug](https://github.com/junegunn/vim-plug))
 """""""""""""""""
 
 call plug#begin('~/.local/share/nvim/plugged')
