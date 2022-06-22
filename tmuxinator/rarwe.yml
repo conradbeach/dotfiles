@@ -4,5 +4,5 @@ project_root: "/Users/conrad.beach/Development/rarwe"
 
 windows:
   - nvim: nvim
-  - server: ember serve
+  - server: ember serve --proxy=http://json-api.rockandrollwithemberjs.com
   - temp: open "../Books/Rock and Roll with Ember Octane/rock-and-roll-with-ember-octane-20211015.pdf" && exit
