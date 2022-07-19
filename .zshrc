@@ -11,6 +11,10 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 export SHELL="/bin/zsh"
 
+# Track Your Hours
+export LOCAL_IP=$(ifconfig | grep 'inet 192'| awk '{ print $2 }')
+export MAC_M1=true
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 ZSH_THEME="" # Pure prompt handles the theme.
