@@ -96,8 +96,8 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-## Aliases
-# General
+# Aliases
+## General
 alias cp="cp -iv"
 alias rm="rm -iv"
 alias mv="mv -iv"
@@ -114,12 +114,12 @@ alias bs="brew services"
 alias mux="tmuxinator"
 alias ms="mux start"
 alias home="cd && clear"
-# Overrides (Remember that you can run the original command by prepending it with a \. e.g. `\cat` will run the real cat instead of bat.)
+## Overrides (Remember that you can run the original command by prepending it with a \. e.g. `\cat` will run the real cat instead of bat.)
 alias ls="exa --all --group-directories-first --icons"
 alias cat="bat --theme=OneHalfLight"
 alias top="htop"
 alias find="fd -H"
-# Ruby & Rails
+## Ruby & Rails
 alias cra="bundle exec rspec && bundle exec rubocop --display-style-guide && bundle exec bundler-audit check --update && bundle exec brakeman --no-pager && rubycritic app" # Short for 'check rails app'
 alias crajs="bundle exec rspec && rails cypress:run && bundle exec rubocop --display-style-guide && yarn eslint app/javascript cypress && bundle exec bundler-audit check --update && bundle exec brakeman --no-pager && rubycritic app && yarn audit" # Short for 'check rails app with JS'
 alias crs="bundle audit check --update && brakeman --no-pager" # Short for 'check Rails security'
@@ -130,20 +130,20 @@ alias rdm="bundle exec rails db:migrate"
 alias rs="bundle exec spring stop && bundle exec rails server"
 alias rc="bundle exec rails console"
 alias sss="bundle exec spring stop; rake tmp:clear"
-# Git
+## Git
 alias grm="git rebase master -i --autosquash"
 alias gri="git rebase -i --autosquash"
 alias grc="git rebase --continue"
 alias gcf="git commit --fixup"
 alias gcnv="git commit --no-verify"
-# Ember
+## Ember
 alias et="yarn test --serve -f"
-# Guard
+## Guard
 alias gg="bundle exec guard -c"
-# CPU Profiling
+## CPU Profiling
 alias record-cpu-usage="TODAY=`date '+%Y-%m-%d'` && top -l 28800 -ocpu -R -F -s 1 | grep 'CPU usage' --line-buffered | tee -a '~/CPU Usage/raw_data/$TODAY.txt'"
 alias open_am="open -n -a 'Activity Monitor'"
-# Personal
+## Personal
 alias stretch="cd ~/Development/speak_routine && ruby run.rb"
 
 ## Functions
@@ -161,8 +161,7 @@ new_md () {
   echo "# $1" >> $new_file_path
 }
 
-## Plugins
-
+# Plugins
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -197,7 +196,7 @@ export ASDF_DIR="$(brew --prefix asdf)/libexec"
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# heroku autocomplete setup
+# Heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
 # Fig post block. Keep at the bottom of this file.
