@@ -80,7 +80,8 @@ endif
 
 " vim-test
 let test#strategy = "vtr"
-let test#ruby#rspec#executable = "bundle exec spring rspec --format=documentation"
+" let test#ruby#rspec#executable = "bundle exec spring rspec --format=documentation"
+let test#ruby#rspec#executable = "docker-compose run -e RAILS_ENV=test --rm web rspec --format=documentation"
 map <Leader>tn :TestNearest<CR>
 map <Leader>tf :TestFile<CR>
 map <Leader>ts :TestSuite<CR>
