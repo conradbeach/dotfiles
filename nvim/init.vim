@@ -14,6 +14,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'joshdick/onedark.vim'
 Plug 'rakr/vim-one'
 Plug 'AndrewRadev/splitjoin.vim'
@@ -188,6 +190,18 @@ autosave.setup(
     write_all_buffers = false,
   }
 )
+EOF
+
+" nvim-treesitter
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  -- A list of parser names, or "all"
+  ensure_installed = { "css", "html", "javascript", "json", "ruby", "scss", "yaml" },
+  -- Install parsers synchronously (only applied to `ensure_installed`)
+  sync_install = false,
+  -- Automatically install missing parsers when entering buffer
+  auto_install = true,
+}
 EOF
 
 """""""""""""""""
