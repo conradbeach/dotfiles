@@ -152,7 +152,7 @@ let g:coc_global_extensions = [
 " You have to remap <cr> to make sure it confirms completion when popup menu is visible since default
 " behavior of <CR> could be different regard to current completion state and completeopt option.
 " https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources#use-cr-to-confirm-completion
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>"
 
 let g:coc_node_path = "node"
 set hidden " TextEdit might fail if hidden is not set.
