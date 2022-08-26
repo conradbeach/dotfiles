@@ -80,8 +80,7 @@ endif
 
 " vim-test
 let test#strategy = "vtr"
-" let test#ruby#rspec#executable = "bundle exec spring rspec --format=documentation"
-let test#ruby#rspec#executable = "docker-compose run -e RAILS_ENV=test --rm web rspec --format=documentation"
+let test#ruby#rspec#executable = "bundle exec spring rspec --format=documentation"
 map <Leader>tn :TestNearest<CR>
 map <Leader>tf :TestFile<CR>
 map <Leader>ts :TestSuite<CR>
@@ -94,6 +93,7 @@ map <Leader>toof :VtrSendCommandToRunner clear; echo -e 'spring rspec --next-fai
 let g:VtrPercentage = 35
 let g:VtrOrientation = "v"
 let g:VtrGitCdUpOnOpen = 1
+let g:VtrInitialCommand = 'docker-compose\ run\ -e\ RAILS_ENV=test\ --rm\ web\ bash'
 map <Leader>ro :VtrOpenRunner<CR>
 map <Leader>ra :VtrAttachToPane<CR>
 map <Leader>rf :VtrFocusRunner<CR>
