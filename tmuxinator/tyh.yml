@@ -46,15 +46,8 @@ windows:
       panes:
         - terminal:
         - rails_server:
-          - docker-compose build web
-          - docker-compose up web
-  - console-selenium:
-      layout: 26f7,238x62,0,0{139x62,0,0,3,98x62,140,0,6}
-      panes:
-        - rails_console:
-          - docker-compose run --rm web bundle exec rails console
-        - sidekiq:
-          - selenium-server standalone --port 4444
+          - bundle exec rails server
+  - rails-console: bundle exec rails console
   - temp:
       layout: even-horizontal
       panes:
