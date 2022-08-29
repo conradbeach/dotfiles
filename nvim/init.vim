@@ -93,7 +93,6 @@ map <Leader>toof :VtrSendCommandToRunner clear; echo -e 'spring rspec --next-fai
 let g:VtrPercentage = 35
 let g:VtrOrientation = "v"
 let g:VtrGitCdUpOnOpen = 1
-let g:VtrInitialCommand = 'docker-compose\ run\ -e\ RAILS_ENV=test\ --rm\ web\ bash'
 map <Leader>ro :VtrOpenRunner<CR>
 map <Leader>ra :VtrAttachToPane<CR>
 map <Leader>rf :VtrFocusRunner<CR>
