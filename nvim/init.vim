@@ -5,7 +5,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'w0rp/ale'
 Plug 'Pocco81/AutoSave.nvim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ap/vim-css-color'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'roman/golden-ratio'
@@ -138,43 +137,10 @@ let g:user_emmet_settings = {
 " undotree
 nnoremap <Leader>u :UndotreeToggle<cr>
 
-" coc.nvim
-let g:coc_global_extensions = [
-  \ 'coc-css',
-  \ 'coc-ember',
-  \ 'coc-html',
-  \ 'coc-json',
-  \ 'coc-solargraph',
-  \ 'coc-tsserver',
-  \ 'coc-tabnine'
-\ ]
-
-" You have to remap <cr> to make sure it confirms completion when popup menu is visible since default
-" behavior of <CR> could be different regard to current completion state and completeopt option.
-" https://github.com/neoclide/coc.nvim/wiki/Completion-with-sources#use-cr-to-confirm-completion
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>"
-
-let g:coc_node_path = "node"
-set hidden " TextEdit might fail if hidden is not set.
-set shortmess+=c " Don't pass messages to |ins-completion-menu|.
-
-" Jump to definition.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gr <Plug>(coc-references)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-
-" Jump to definition in a horizontal split, vertical split and new tab respectively.
-map <Leader>[ :split <CR>:execute "normal \<Plug>(coc-definition)"<CR>
-map <Leader>] :vsplit <CR>:execute "normal \<Plug>(coc-definition)"<CR>
-map <Leader>\ :tab split <CR>:execute "normal \<Plug>(coc-definition)"<CR>
-
-" Replacing the below keybindings based on tags for coc.nvim commands.
-" I may change my mind later.
 " Open a tag in a horizontal split, vertical split and new tab respectively.
-" map <Leader>[ :split <CR>:exec("tag ".expand("<cword>"))<CR>
-" map <Leader>] :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
-" map <Leader>\ :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <Leader>[ :split <CR>:exec("tag ".expand("<cword>"))<CR>
+map <Leader>] :vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
+map <Leader>\ :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
 " Yggdroot/indentLine
 let g:indentLine_char_list = ['|', '¦', '┆', '┊'] " Show different indentation markers at each level.
