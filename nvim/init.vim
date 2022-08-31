@@ -4,7 +4,7 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'w0rp/ale'
-Plug 'Pocco81/AutoSave.nvim'
+Plug 'pocco81/auto-save.nvim'
 Plug 'ap/vim-css-color'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'roman/golden-ratio'
@@ -145,17 +145,15 @@ map <Leader>\ :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 " Yggdroot/indentLine
 let g:indentLine_char_list = ['|', '¦', '┆', '┊'] " Show different indentation markers at each level.
 
-" AutoSave.nvim
+" auto-save.nvim
 lua << EOF
-local autosave = require("autosave")
+  local autosave = require("auto-save")
 
-autosave.setup(
-  {
-    execution_message = "",
-    events = {"InsertLeave", "TextChanged"},
-    write_all_buffers = false,
+  autosave.setup {
+    execution_message = {
+      message = ""
+    }
   }
-)
 EOF
 
 " nvim-treesitter
