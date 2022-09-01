@@ -6,7 +6,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'w0rp/ale'
 Plug 'pocco81/auto-save.nvim'
 Plug 'ap/vim-css-color'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'roman/golden-ratio'
 Plug 'Yggdroot/indentLine'
 Plug 'itchyny/lightline.vim'
@@ -26,7 +25,6 @@ Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-repeat'
-Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-surround'
 Plug 'machakann/vim-swap'
 Plug 'janko-m/vim-test'
@@ -45,6 +43,9 @@ Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
 Plug 'rafamadriz/friendly-snippets'
+" nvim-telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 " Elixir
 Plug 'elixir-editors/vim-elixir'
 "Ember
@@ -69,11 +70,6 @@ Plug 'kana/vim-textobj-user' " nelstrom/vim-textobj-rubyblock depends on this.
 " YAML
 Plug 'stephpy/vim-yaml'
 call plug#end()
-
-" CtrlP
-let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
-let g:ctrlp_use_caching = 0
-let g:ctrlp_extensions = ['tag']
 
 " ALE
 let g:ale_sign_column_always = 1
@@ -276,6 +272,11 @@ lua <<EOF
     show_prediction_strength = false
   })
 EOF
+
+" nvim-telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
 
 
 """""""""""""""""
