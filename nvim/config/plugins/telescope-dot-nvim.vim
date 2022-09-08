@@ -1,7 +1,7 @@
 " nvim-telescope/telescope.nvim
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fg <cmd>:lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 
 " https://github.com/nvim-telescope/telescope.nvim/wiki/Configuration-Recipes#file-and-text-search-in-hidden-files-and-directories
