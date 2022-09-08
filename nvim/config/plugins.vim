@@ -46,6 +46,7 @@ Plug 'rafamadriz/friendly-snippets'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'nvim-telescope/telescope-live-grep-args.nvim'
 " Elixir
 Plug 'elixir-editors/vim-elixir'
 "Ember
