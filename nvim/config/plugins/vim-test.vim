@@ -7,5 +7,5 @@ map <Leader>tf :TestFile<CR>
 map <Leader>ts :TestSuite<CR>
 map <Leader>tl :TestLast<CR>
 map <Leader>tv :TestVisit<CR>
-map <Leader>tof :VtrSendCommandToRunner clear; echo -e 'spring rspec --only-failures'; bundle exec spring rspec --only-failures<CR>
-map <Leader>toof :VtrSendCommandToRunner clear; echo -e 'spring rspec --next-failure'; bundle exec spring rspec --next-failure<CR>
+map <Leader>tof :VtrSendCommandToRunner clear; echo -e 'bundle exec spring rspec --only-failures --format=documentation'; bundle exec spring rspec --only-failures --format=documentation<CR>
+map <Leader>toof :VtrSendCommandToRunner clear; echo -e 'bundle exec spring rspec --next-failure --format=documentation'; bundle exec spring rspec --next-failure --format=documentation<CR>
