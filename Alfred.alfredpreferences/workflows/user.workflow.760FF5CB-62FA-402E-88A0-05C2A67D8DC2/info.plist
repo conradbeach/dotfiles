@@ -6,24 +6,11 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
-		<key>5451C2BF-CB62-48A3-BBC6-9D099DF09598</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F51AFF16-38A4-4E7D-ABC7-7F31B762FE32</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>D0D170CF-42DF-4377-8032-B69D1C04AE97</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5451C2BF-CB62-48A3-BBC6-9D099DF09598</string>
+				<string>F51AFF16-38A4-4E7D-ABC7-7F31B762FE32</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -81,23 +68,6 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/System/Applications/Calendar.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>5451C2BF-CB62-48A3-BBC6-9D099DF09598</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
 					<string>/Applications/Spark.app</string>
 				</array>
 				<key>toggle</key>
@@ -115,13 +85,6 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>5451C2BF-CB62-48A3-BBC6-9D099DF09598</key>
-		<dict>
-			<key>xpos</key>
-			<integer>270</integer>
-			<key>ypos</key>
-			<integer>50</integer>
-		</dict>
 		<key>D0D170CF-42DF-4377-8032-B69D1C04AE97</key>
 		<dict>
 			<key>xpos</key>
@@ -132,9 +95,9 @@
 		<key>F51AFF16-38A4-4E7D-ABC7-7F31B762FE32</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>325</integer>
 			<key>ypos</key>
-			<integer>55</integer>
+			<integer>50</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
