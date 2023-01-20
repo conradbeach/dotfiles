@@ -4,6 +4,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " General
 Plug 'w0rp/ale'
 Plug 'pocco81/auto-save.nvim'
+Plug 'github/copilot.vim'
 Plug 'ap/vim-css-color'
 Plug 'roman/golden-ratio'
 Plug 'Yggdroot/indentLine'
