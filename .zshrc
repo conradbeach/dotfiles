@@ -113,6 +113,8 @@ alias bs="brew services"
 alias mux="tmuxinator"
 alias ms="mux start"
 alias home="cd && clear"
+alias python="python3"
+alias pip="pip3"
 ## Overrides (Remember that you can run the original command by prepending it with a \. e.g. `\cat` will run the real cat instead of bat.)
 alias ls="exa --all --group-directories-first --icons"
 alias cat="bat --theme=OneHalfLight"
