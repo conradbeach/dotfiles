@@ -69,7 +69,9 @@ brew install jq
 brew install neovim
 brew install pinentry-mac
 brew install pure
+brew install python
 brew install ripgrep
+brew install rust
 brew install the_silver_searcher
 brew install tldr
 brew install tmux
