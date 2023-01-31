@@ -80,9 +80,19 @@ lvim.builtin.which_key.mappings["sl"] = {
   "<cmd>Telescope resume<cr>", "Resume"
 }
 
-lvim.builtin.telescope.pickers.git_files.theme = nil -- I prefer the larger default theme for this picker.
-lvim.builtin.telescope.pickers.git_files.previewer = true -- I like the previewer for this picker.
-lvim.builtin.telescope.pickers.live_grep.theme = nil -- I prefer the larger default theme for this picker.
+-- I didn't like the default configuration for the below pickers so I copied the
+-- default configuration from LunarVim [1] and removed the settings I didn't like.
+-- [1]: https://github.com/LunarVim/LunarVim/blob/1.2.0/lua/lvim/core/telescope.lua
+lvim.builtin.telescope.pickers.find_files = {
+  hidden = true,
+}
+lvim.builtin.telescope.pickers.git_files = {
+  hidden = true,
+  show_untracked = true,
+}
+lvim.builtin.telescope.pickers.live_grep = {
+  only_sort_text = true, -- don't include the filename in the search results
+}
 
 
 -- ## Treesitter
