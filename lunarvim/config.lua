@@ -5,8 +5,7 @@ Linters should be filled in as strings with either a global executable or a path
 ]]
 
 -- # general
-lvim.log.level = "warn"
-lvim.format_on_save.enabled = false
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 lvim.builtin.bufferline.options = {
   mode = "tabs",
   numbers = function(opts)
@@ -14,12 +13,9 @@ lvim.builtin.bufferline.options = {
   end,
 }
 
--- ## After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
-lvim.builtin.alpha.active = true
-lvim.builtin.alpha.mode = "dashboard"
-lvim.builtin.terminal.active = true
-lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
+-- Make it obvious where 80 characters is.
+vim.opt["textwidth"] = 80
+vim.opt["colorcolumn"] = "+1"
 
 
 -- # Keymappings [view all the defaults by pressing <leader>Lk]
@@ -47,6 +43,7 @@ vim.api.nvim_create_autocmd("TabLeave",  {
 
 
 -- # Additional Plugins
+-- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.plugins = {
   { "rmehri01/onenord.nvim" },
   {
