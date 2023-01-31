@@ -31,14 +31,12 @@ lvim.builtin.which_key.mappings["nh"] = { "<cmd>noh<cr>", "Clear Search Highligh
 
 lvim.builtin.which_key.mappings["z"] = { "<cmd>wincmd _<cr><cmd>wincmd |<cr>", "Zoom Pane" }
 
-lvim.builtin.which_key.mappings["t"] = {
-  name = "Tabs",
-  n = { "<cmd>tabnew<cr>", "New Tab"},
-  c = { "<cmd>tabclose<cr>", "Close Tab"},
-  C = { "<cmd>tabonly<cr>", "Close Other Tabs"},
-  W = { "<cmd>on<cr>", "Close Other Windows"},
-  E = { "<cmd>on<cr><cmd>tabonly<cr>", "Close Other Tabs & Windows"},
-}
+-- Manipulating tabs
+lvim.builtin.which_key.mappings["nt"] = { "<cmd>tabnew<cr>", "New Tab"}
+lvim.builtin.which_key.mappings["ct"] = { "<cmd>tabclose<cr>", "Close Tab"}
+lvim.builtin.which_key.mappings["cot"] = { "<cmd>tabonly<cr>", "Close Other Tabs" }
+lvim.builtin.which_key.mappings["on"] = { "<cmd>on<cr>", "Close Other Windows"}
+lvim.builtin.which_key.mappings["ce"] = { "<cmd>on<cr><cmd>tabonly<cr>", "Close Other Tabs & Windows"}
 -- Navigating tabs
 lvim.builtin.which_key.mappings["h"] = { "gT", "Previous Tab" }
 lvim.builtin.which_key.mappings["l"] = { "gt", "Next Tab" }
