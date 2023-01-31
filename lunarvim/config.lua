@@ -22,24 +22,6 @@ lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 
 
--- # Theme
-lvim.colorscheme = "onenord"
-require("onenord").setup({
-  theme = "light", -- "dark" or "light". Alternatively, remove the option and set vim.o.background instead
-})
-
--- ## lualine
-lvim.builtin.lualine.sections.lualine_c = {
-  {
-    "filename",
-    path = 1 -- 0 = just filename, 1 = relative path, 2 = absolute path
-  }
-}
-lvim.builtin.lualine.sections.lualine_x = { "diagnostics" }
-lvim.builtin.lualine.sections.lualine_y = { "filetype" }
-lvim.builtin.lualine.sections.lualine_z = { "locatikn" }
-
-
 -- # Keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 
@@ -63,6 +45,7 @@ vim.api.nvim_create_autocmd("TabLeave",  {
     end
 })
 
+
 -- # Additional Plugins
 lvim.plugins = {
   { "rmehri01/onenord.nvim" },
@@ -85,14 +68,14 @@ lvim.plugins = {
 }
 
 
--- # Navigator.nvim
+-- ## Navigator.nvim
 lvim.keys.normal_mode["<C-h>"] = ":NavigatorLeft<cr>"
 lvim.keys.normal_mode["<C-l>"] = ":NavigatorRight<cr>"
 lvim.keys.normal_mode["<C-k>"] = ":NavigatorUp<cr>"
 lvim.keys.normal_mode["<C-j>"] = ":NavigatorDown<cr>"
 
 
--- # Telescope.nvim
+-- ## Telescope.nvim
 lvim.builtin.which_key.mappings["sl"] = {
   "<cmd>Telescope resume<cr>", "Resume"
 }
@@ -102,7 +85,7 @@ lvim.builtin.telescope.pickers.git_files.previewer = true -- I like the previewe
 lvim.builtin.telescope.pickers.live_grep.theme = nil -- I prefer the larger default theme for this picker.
 
 
--- # Treesitter
+-- ## Treesitter
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
   "css",
@@ -115,3 +98,21 @@ lvim.builtin.treesitter.ensure_installed = {
 }
 
 lvim.builtin.treesitter.highlight.enable = true
+
+
+-- # Theme
+lvim.colorscheme = "onenord"
+require("onenord").setup({
+  theme = "light", -- "dark" or "light". Alternatively, remove the option and set vim.o.background instead
+})
+
+-- ## lualine
+lvim.builtin.lualine.sections.lualine_c = {
+  {
+    "filename",
+    path = 1 -- 0 = just filename, 1 = relative path, 2 = absolute path
+  }
+}
+lvim.builtin.lualine.sections.lualine_x = { "diagnostics" }
+lvim.builtin.lualine.sections.lualine_y = { "filetype" }
+lvim.builtin.lualine.sections.lualine_z = { "locatikn" }
