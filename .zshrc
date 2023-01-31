@@ -3,7 +3,7 @@ export ZSH=~/.oh-my-zsh # Path to your oh-my-zsh installation.
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
-export PATH="/Users/conrad.beach/.local/bin:$PATH" # TODO: Replace conrad.beach with interpolated current user.
+export PATH="~/.local/bin:$PATH"
 
 export SHELL="/bin/zsh"
 
