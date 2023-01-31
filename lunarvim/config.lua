@@ -77,6 +77,8 @@ lvim.builtin.which_key.mappings["sl"] = {
   "<cmd>Telescope resume<cr>", "Resume"
 }
 
+lvim.builtin.telescope.defaults.path_display = { "truncate" }
+
 -- I didn't like the default configuration for the below pickers so I copied the
 -- default configuration from LunarVim [1] and removed the settings I didn't like.
 -- [1]: https://github.com/LunarVim/LunarVim/blob/1.2.0/lua/lvim/core/telescope.lua
