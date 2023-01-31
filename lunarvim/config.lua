@@ -124,4 +124,4 @@ lvim.builtin.lualine.sections.lualine_c = {
 }
 lvim.builtin.lualine.sections.lualine_x = { "diagnostics" }
 lvim.builtin.lualine.sections.lualine_y = { "filetype" }
-lvim.builtin.lualine.sections.lualine_z = { "locatikn" }
+lvim.builtin.lualine.sections.lualine_z = { "location" }
