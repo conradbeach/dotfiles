@@ -73,13 +73,21 @@ lvim.plugins = {
        }
     end,
   },
+  { "roman/golden-ratio" },
   {
     "numToStr/Navigator.nvim",
     config = function()
       require('Navigator').setup()
     end
   },
+  { "nvim-treesitter/nvim-treesitter-context" },
   { "rmehri01/onenord.nvim" },
+  { "AndrewRadev/splitjoin.vim" },
+  { "mbbill/undotree" },
+  { "tpope/vim-surround" },
+  { "machakann/vim-swap" },
+  { "vim-test/vim-test" },
+  { "christoomey/vim-tmux-runner" },
 }
 
 
@@ -88,7 +96,6 @@ lvim.keys.normal_mode["<C-h>"] = ":NavigatorLeft<cr>"
 lvim.keys.normal_mode["<C-l>"] = ":NavigatorRight<cr>"
 lvim.keys.normal_mode["<C-k>"] = ":NavigatorUp<cr>"
 lvim.keys.normal_mode["<C-j>"] = ":NavigatorDown<cr>"
-
 
 -- ## Telescope.nvim
 lvim.builtin.which_key.mappings["sl"] = {
@@ -111,7 +118,6 @@ lvim.builtin.telescope.pickers.live_grep = {
   only_sort_text = true, -- don't include the filename in the search results
 }
 
-
 -- ## Treesitter
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
@@ -125,6 +131,9 @@ lvim.builtin.treesitter.ensure_installed = {
 }
 
 lvim.builtin.treesitter.highlight.enable = true
+
+-- ## mbbill/undotree
+lvim.builtin.which_key.mappings["u"] = { "<cmd>UndotreeToggle<cr>", "Toggle Undotree" }
 
 
 -- # Theme
