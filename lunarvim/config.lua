@@ -4,7 +4,7 @@ lvim is the global options object
 Linters should be filled in as strings with either a global executable or a path to an executable
 ]]
 
--- # general
+-- # Options
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 lvim.builtin.bufferline.options = {
   mode = "tabs",
@@ -63,13 +63,6 @@ vim.api.nvim_create_autocmd("TabLeave",  {
 -- # Additional Plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.plugins = {
-  { "rmehri01/onenord.nvim" },
-  {
-    "numToStr/Navigator.nvim",
-    config = function()
-      require('Navigator').setup()
-    end
-  },
   {
     "Pocco81/auto-save.nvim",
     config = function()
@@ -80,6 +73,13 @@ lvim.plugins = {
        }
     end,
   },
+  {
+    "numToStr/Navigator.nvim",
+    config = function()
+      require('Navigator').setup()
+    end
+  },
+  { "rmehri01/onenord.nvim" },
 }
 
 
