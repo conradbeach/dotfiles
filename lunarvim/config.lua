@@ -7,11 +7,14 @@ lvim.builtin.bufferline.options = {
   end,
 }
 
--- Make it obvious where 80 characters is.
-vim.opt["textwidth"] = 80
-vim.opt["colorcolumn"] = "+1"
+vim.opt.foldmethod = "expr" -- Use vim.opt.foldexpr for fold method
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()" -- treesitter based folding
+vim.opt.wrap = true
+vim.opt.relativenumber = true -- set relative numbered lines
 
-vim.opt["wrap"] = true
+-- Make it obvious where 80 characters is.
+vim.opt.textwidth = 80
+vim.opt.colorcolumn = "+1"
 
 -- # Keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
