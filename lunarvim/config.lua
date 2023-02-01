@@ -83,6 +83,49 @@ lvim.plugins = {
       require('Navigator').setup()
     end
   },
+  {
+    "echasnovski/mini.map",
+    branch = "stable",
+    config = function()
+      require('mini.map').setup()
+      local map = require('mini.map')
+      map.setup({
+        integrations = {
+          map.gen_integration.builtin_search(),
+          map.gen_integration.diagnostic({
+            error = 'DiagnosticFloatingError',
+            warn  = 'DiagnosticFloatingWarn',
+            info  = 'DiagnosticFloatingInfo',
+            hint  = 'DiagnosticFloatingHint',
+          }),
+        },
+        symbols = {
+          encode = map.gen_encode_symbols.dot('4x2'),
+        },
+        window = {
+          side = 'right',
+          width = 20, -- set to 1 for a pure scrollbar :)
+          winblend = 15,
+          show_integration_count = false,
+        },
+      })
+    end
+  },
+  {
+    "norcalli/nvim-colorizer.lua",
+      config = function()
+        require("colorizer").setup({ "css", "scss", "html", "javascript" }, {
+          css = true, -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+        })
+    end,
+  },
+  {
+    "ethanholz/nvim-lastplace",
+    event = "BufRead",
+    config = function()
+      require("nvim-lastplace").setup({})
+    end,
+  },
   { "nvim-treesitter/nvim-treesitter-context" },
   { "rmehri01/onenord.nvim" },
   { "AndrewRadev/splitjoin.vim" },
@@ -97,6 +140,35 @@ lvim.plugins = {
 lvim.builtin.which_key.mappings["w"] = { "<Plug>(leap-forward-to)", "Leap Forward" }
 lvim.builtin.which_key.mappings["W"] = { "<Plug>(leap-backward-to)", "Leap Backward" }
 lvim.builtin.which_key.mappings["xw"] = { "<Plug>(leap-cross-window)", "Leap Across Window" }
+
+-- ## echasnovski/mini.map
+lvim.autocommands = {
+  {
+    {"BufEnter", "Filetype"},
+    {
+      desc = "Open mini.map and exclude some filetypes",
+      pattern = { "*" },
+      callback = function()
+        local exclude_ft = {
+          "qf",
+          "NvimTree",
+          "toggleterm",
+          "TelescopePrompt",
+          "alpha",
+          "netrw",
+        }
+
+        local map = require('mini.map')
+        if vim.tbl_contains(exclude_ft, vim.o.filetype) then
+          vim.b.minimap_disable = true
+          map.close()
+        elseif vim.o.buftype == "" then
+          map.open()
+        end
+      end,
+    },
+  },
+}
 
 -- ## Navigator.nvim
 lvim.keys.normal_mode["<C-h>"] = ":NavigatorLeft<cr>"
