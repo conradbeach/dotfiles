@@ -1,4 +1,4 @@
--- # Options
+ -------------------- Options --------------------
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 lvim.builtin.bufferline.options = {
   mode = "tabs",
@@ -18,7 +18,10 @@ vim.opt.relativenumber = true -- set relative numbered lines
 vim.opt.textwidth = 80
 vim.opt.colorcolumn = "+1"
 
--- # Keymappings [view all the defaults by pressing <leader>Lk]
+
+-------------------- Keymappings -------------------- 
+-- [view all the defaults by pressing <leader>Lk] 
+
 lvim.leader = "space"
 
 -- Remove some mappings I don't want.
@@ -64,7 +67,7 @@ vim.api.nvim_create_autocmd("TabLeave",  {
 })
 
 
--- # Additional Plugins
+-------------------- Plugins -------------------- 
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.plugins = {
   {
@@ -119,18 +122,18 @@ lvim.plugins = {
   { "christoomey/vim-tmux-runner" },
 }
 
--- ## leap.nvim
+-- ggandor/leap.nvim
 lvim.builtin.which_key.mappings["w"] = { "<Plug>(leap-forward-to)", "Leap Forward" }
 lvim.builtin.which_key.mappings["W"] = { "<Plug>(leap-backward-to)", "Leap Backward" }
 lvim.builtin.which_key.mappings["xw"] = { "<Plug>(leap-cross-window)", "Leap Across Window" }
 
--- ## Navigator.nvim
+-- numToStr/Navigator.nvim
 lvim.keys.normal_mode["<C-h>"] = ":NavigatorLeft<cr>"
 lvim.keys.normal_mode["<C-l>"] = ":NavigatorRight<cr>"
 lvim.keys.normal_mode["<C-k>"] = ":NavigatorUp<cr>"
 lvim.keys.normal_mode["<C-j>"] = ":NavigatorDown<cr>"
 
--- ## folke/persistence.nvim
+-- folke/persistence.nvim
 lvim.builtin.which_key.mappings["S"]= {
   name = "Session",
   c = { "<cmd>lua require('persistence').load()<cr>", "Restore last session for current dir" },
@@ -138,7 +141,7 @@ lvim.builtin.which_key.mappings["S"]= {
   Q = { "<cmd>lua require('persistence').stop()<cr>", "Quit without saving session" },
 }
 
--- ## Telescope.nvim
+-- nvim-telescope/telescope.nvim
 lvim.builtin.which_key.mappings["sl"] = { "<cmd>Telescope resume<cr>", "Resume" }
 
 lvim.builtin.telescope.defaults.path_display = { "truncate" }
@@ -157,7 +160,7 @@ lvim.builtin.telescope.pickers.live_grep = {
   only_sort_text = true, -- don't include the filename in the search results
 }
 
--- ## Treesitter
+-- nvim-treesitter/nvim-treesitter
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
   "css",
@@ -171,10 +174,10 @@ lvim.builtin.treesitter.ensure_installed = {
 lvim.builtin.treesitter.auto_install = true
 lvim.builtin.treesitter.highlight.enable = true
 
--- ## mbbill/undotree
+-- mbbill/undotree
 lvim.builtin.which_key.mappings["u"] = { "<cmd>UndotreeToggle<cr>", "Toggle Undotree" }
 
--- ## christoomey/vim-tmux-runner
+-- christoomey/vim-tmux-runner
 vim.cmd("let g:VtrPercentage = 35")
 vim.cmd("let g:VtrOrientation = 'v'")
 lvim.builtin.which_key.mappings["r"] = {
@@ -208,13 +211,13 @@ lvim.builtin.which_key.mappings["t"] = {
 }
 
 
--- # Theme
+-------------------- Theme -------------------- 
 lvim.colorscheme = "onenord"
 require("onenord").setup({
   theme = "light", -- "dark" or "light". Alternatively, remove the option and set vim.o.background instead
 })
 
--- ## lualine
+-- lualine
 lvim.builtin.lualine.sections.lualine_c = {
   {
     "filename",
