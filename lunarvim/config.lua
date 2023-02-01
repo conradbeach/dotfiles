@@ -1,9 +1,3 @@
---[[
-lvim is the global options object
-
-Linters should be filled in as strings with either a global executable or a path to an executable
-]]
-
 -- # Options
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 lvim.builtin.bufferline.options = {
