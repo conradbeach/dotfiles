@@ -17,6 +17,8 @@ lvim.builtin.bufferline.options = {
 vim.opt["textwidth"] = 80
 vim.opt["colorcolumn"] = "+1"
 
+vim.opt["wrap"] = true
+
 -- # Keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 
