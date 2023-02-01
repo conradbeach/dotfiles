@@ -74,6 +74,7 @@ lvim.plugins = {
     end,
   },
   { "roman/golden-ratio" },
+  { "ggandor/leap.nvim" },
   {
     "numToStr/Navigator.nvim",
     config = function()
@@ -90,6 +91,10 @@ lvim.plugins = {
   { "christoomey/vim-tmux-runner" },
 }
 
+-- ## leap.nvim
+lvim.builtin.which_key.mappings["w"] = { "<Plug>(leap-forward-to)", "Leap Forward" }
+lvim.builtin.which_key.mappings["W"] = { "<Plug>(leap-backward-to)", "Leap Backward" }
+lvim.builtin.which_key.mappings["xw"] = { "<Plug>(leap-cross-window)", "Leap Across Window" }
 
 -- ## Navigator.nvim
 lvim.keys.normal_mode["<C-h>"] = ":NavigatorLeft<cr>"
