@@ -7,6 +7,8 @@ lvim.builtin.bufferline.options = {
   end,
 }
 
+lvim.lsp.automatic_servers_installation = true
+
 vim.opt.foldmethod = "expr" -- Use vim.opt.foldexpr for fold method
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()" -- treesitter based folding
 vim.opt.wrap = true
@@ -164,9 +166,9 @@ lvim.builtin.treesitter.ensure_installed = {
   "json",
   "lua",
   "ruby",
-  "yaml",
 }
 
+lvim.builtin.treesitter.auto_install = true
 lvim.builtin.treesitter.highlight.enable = true
 
 -- ## mbbill/undotree
