@@ -22,6 +22,11 @@ vim.opt["wrap"] = true
 -- # Keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 
+-- Remove some mappings I don't want.
+lvim.builtin.which_key.mappings['w'] = {} -- Save. Just use :w.
+lvim.builtin.which_key.mappings['q'] = {} -- Quit. Just use :q.
+lvim.builtin.which_key.mappings['c'] = {} -- Close buffer. I don't worry about buffers.
+
 -- 0 goes to the first non-whitespace character.
 lvim.keys.normal_mode["0"] = "^"
 
