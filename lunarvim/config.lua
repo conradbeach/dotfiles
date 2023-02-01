@@ -113,10 +113,10 @@ lvim.plugins = {
   },
   {
     "norcalli/nvim-colorizer.lua",
-      config = function()
-        require("colorizer").setup({ "css", "scss", "html", "javascript" }, {
-          css = true, -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
-        })
+    config = function()
+      require("colorizer").setup({ "css", "scss", "html", "javascript" }, {
+        css = true, -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+      })
     end,
   },
   {
