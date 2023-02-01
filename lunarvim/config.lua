@@ -127,11 +127,20 @@ lvim.plugins = {
     end,
   },
   { "nvim-treesitter/nvim-treesitter-context" },
+  {
+    "folke/persistence.nvim",
+    event = "BufReadPre", -- this will only start session saving when an actual file is opened
+    module = "persistence",
+    config = function()
+      require("persistence").setup()
+    end,
+  },
   { "rmehri01/onenord.nvim" },
   { "AndrewRadev/splitjoin.vim" },
   { "mbbill/undotree" },
   { "tpope/vim-surround" },
   { "machakann/vim-swap" },
+  { "tpope/vim-repeat" },
   { "vim-test/vim-test" },
   { "christoomey/vim-tmux-runner" },
 }
@@ -175,6 +184,14 @@ lvim.keys.normal_mode["<C-h>"] = ":NavigatorLeft<cr>"
 lvim.keys.normal_mode["<C-l>"] = ":NavigatorRight<cr>"
 lvim.keys.normal_mode["<C-k>"] = ":NavigatorUp<cr>"
 lvim.keys.normal_mode["<C-j>"] = ":NavigatorDown<cr>"
+
+-- ## folke/persistence.nvim
+lvim.builtin.which_key.mappings["S"]= {
+  name = "Session",
+  c = { "<cmd>lua require('persistence').load()<cr>", "Restore last session for current dir" },
+  l = { "<cmd>lua require('persistence').load({ last = true })<cr>", "Restore last session" },
+  Q = { "<cmd>lua require('persistence').stop()<cr>", "Quit without saving session" },
+}
 
 -- ## Telescope.nvim
 lvim.builtin.which_key.mappings["sl"] = { "<cmd>Telescope resume<cr>", "Resume" }
