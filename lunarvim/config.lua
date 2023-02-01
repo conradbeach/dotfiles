@@ -103,9 +103,7 @@ lvim.keys.normal_mode["<C-k>"] = ":NavigatorUp<cr>"
 lvim.keys.normal_mode["<C-j>"] = ":NavigatorDown<cr>"
 
 -- ## Telescope.nvim
-lvim.builtin.which_key.mappings["sl"] = {
-  "<cmd>Telescope resume<cr>", "Resume"
-}
+lvim.builtin.which_key.mappings["sl"] = { "<cmd>Telescope resume<cr>", "Resume" }
 
 lvim.builtin.telescope.defaults.path_display = { "truncate" }
 
