@@ -135,6 +135,39 @@ lvim.builtin.treesitter.highlight.enable = true
 -- ## mbbill/undotree
 lvim.builtin.which_key.mappings["u"] = { "<cmd>UndotreeToggle<cr>", "Toggle Undotree" }
 
+-- ## christoomey/vim-tmux-runner
+vim.cmd("let g:VtrPercentage = 35")
+vim.cmd("let g:VtrOrientation = 'v'")
+lvim.builtin.which_key.mappings["r"] = {
+  name = "Tmux Runner",
+  o = { "<cmd>VtrOpenRunner<cr>", "Open Runner"},
+  a = { "<cmd>VtrAttachToPane<cr>", "Attach to Runner"},
+  f = { "<cmd>VtrFocusRunner<cr>", "Focus Runner"},
+  k = { "<cmd>VtrKillRunner<cr>", "Kill Runner"},
+  d = { "<cmd>VtrDetachRunner<cr>", "Detach Runner"},
+  r = { "<cmd>VtrReattachRunner<cr>", "Reattach Runner"},
+  c = { "<cmd>VtrClearRunner<cr>", "Clear Runner"},
+  l = { "<cmd>VtrSendCommandToRunner !!<cr>", "Unknown Runner Command"},
+  sl = { "<cmd>VtrSendLinesToRunner<cr>", "Send Lines to Runner"},
+  sd = { "<cmd>VtrSendCtrlD<cr>", "Send Ctrl-D to Runner"},
+  sk = { "<cmd>VtrSendCommandToRunner !!!<cr>", "Send Kill to Runner"},
+  sf = { "<cmd>VtrSendFile<cr>", "Send File to Runner"},
+}
+
+-- janko-m/vim-test
+vim.cmd("let test#strategy = 'vtr'")
+vim.cmd("let test#ruby#rspec#executable = 'bundle exec spring rspec --format=documentation'")
+lvim.builtin.which_key.mappings["t"] = {
+  name = "Test Runner",
+  n = { "<cmd>TestNearest<cr>", "Test Nearest"},
+  f = { "<cmd>TestFile<cr>", "Test File"},
+  s = { "<cmd>TestSuite<cr>", "Test Suite"},
+  l = { "<cmd>TestLast<cr>", "Test Last"},
+  v = { "<cmd>TestVisit<cr>", "Test Visit"},
+  of = { "<cmd>VtrSendCommandToRunner clear; echo -e 'bundle exec spring rspec --only-failures --format=documentation'; bundle exec spring rspec --only-failures --format=documentation<cr>", "Test Only Failures"},
+  oof = { "<cmd>VtrSendCommandToRunner clear; echo -e 'bundle exec spring rspec --next-failure --format=documentation'; bundle exec spring rspec --next-failure --format=documentation<cr>", "Test Only One Failure"},
+}
+
 
 -- # Theme
 lvim.colorscheme = "onenord"
