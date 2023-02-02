@@ -39,6 +39,10 @@ lvim.builtin.which_key.mappings["nh"] = { "<cmd>noh<cr>", "Clear Search Highligh
 
 lvim.builtin.which_key.mappings["z"] = { "<cmd>wincmd _<cr><cmd>wincmd |<cr>", "Zoom Pane" }
 
+-- Move line up or down
+lvim.keys.normal_mode["[e"] = "<cmd>m -2<cr>"
+lvim.keys.normal_mode["]e"] = "<cmd>m +1<cr>"
+
 -- Manipulating tabs
 lvim.builtin.which_key.mappings["nt"] = { "<cmd>tabnew<cr>", "New Tab"}
 lvim.builtin.which_key.mappings["ct"] = { "<cmd>tabclose<cr>", "Close Tab"}
