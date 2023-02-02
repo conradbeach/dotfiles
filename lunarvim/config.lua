@@ -7,8 +7,6 @@ lvim.builtin.bufferline.options = {
   end,
 }
 
-vim.opt.foldmethod = "expr" -- Use vim.opt.foldexpr for fold method
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()" -- treesitter based folding
 vim.opt.wrap = true
 vim.opt.relativenumber = true -- set relative numbered lines
 
