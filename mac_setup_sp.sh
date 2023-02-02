@@ -66,6 +66,7 @@ brew install fzf
 $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
 brew install git
 brew install gnupg
+brew install gnu-sed
 brew install jq
 brew install neovim
 brew install pinentry-mac
