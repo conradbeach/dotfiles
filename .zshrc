@@ -82,7 +82,7 @@ export KEYTIMEOUT=1 # Sets the delay when switching between normal and insert mo
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='nvim'
+  export EDITOR='lvim'
 fi
 
 # Compilation flags
