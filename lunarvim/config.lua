@@ -7,8 +7,6 @@ lvim.builtin.bufferline.options = {
   end,
 }
 
-lvim.lsp.automatic_servers_installation = true
-
 vim.opt.foldmethod = "expr" -- Use vim.opt.foldexpr for fold method
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()" -- treesitter based folding
 vim.opt.wrap = true
@@ -65,6 +63,10 @@ vim.api.nvim_create_autocmd("TabLeave",  {
         vim.api.nvim_set_keymap('n', '<Leader>0', '<cmd>tabn ' .. vim.api.nvim_tabpage_get_number(0) .. '<CR>', { noremap = true, silent = true })
     end
 })
+
+
+-------------------- LSP, Completion, Linting, etc. -------------------- 
+lvim.lsp.automatic_servers_installation = true
 
 
 -------------------- Plugins -------------------- 
