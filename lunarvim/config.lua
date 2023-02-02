@@ -26,6 +26,7 @@ lvim.leader = "space"
 lvim.builtin.which_key.mappings['w'] = {} -- Save. Just use :w.
 lvim.builtin.which_key.mappings['q'] = {} -- Quit. Just use :q.
 lvim.builtin.which_key.mappings['c'] = {} -- Close buffer. I don't worry about buffers.
+lvim.builtin.which_key.mappings['/'] = {} -- Comment toggle. It doesn't take a count, so I'd rather just use `gcc`.
 
 -- 0 goes to the first non-whitespace character.
 lvim.keys.normal_mode["0"] = "^"
