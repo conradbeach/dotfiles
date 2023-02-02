@@ -73,6 +73,7 @@ lvim.lsp.automatic_servers_installation = true
 -------------------- Plugins -------------------- 
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.plugins = {
+  { "dense-analysis/ale" },
   {
     "Pocco81/auto-save.nvim",
     config = function()
@@ -170,6 +171,11 @@ lvim.plugins = {
   { "vim-test/vim-test" },
   { "christoomey/vim-tmux-runner" },
 }
+
+-- dense-analysis/ale
+vim.cmd("let g:ale_sign_column_always = 1")
+lvim.keys.normal_mode["]r"] = ":ALENextWrap<cr>"
+lvim.keys.normal_mode["[r"] = ":ALEPreviousWrap<cr>"
 
 -- ggandor/leap.nvim
 lvim.builtin.which_key.mappings["w"] = { "<Plug>(leap-forward-to)", "Leap Forward" }
