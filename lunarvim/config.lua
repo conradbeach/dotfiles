@@ -105,6 +105,52 @@ lvim.plugins = {
       require("nvim-lastplace").setup({})
     end,
   },
+   {
+    "nvim-pack/nvim-spectre",
+    event = "BufRead",
+    config = function()
+      require("spectre").setup({
+        mapping={
+          ['send_to_qf'] = {
+              map = "<leader>ssq",
+              cmd = "<cmd>lua require('spectre.actions').send_to_qf()<CR>",
+              desc = "send all item to quickfix"
+          },
+          ['replace_cmd'] = {
+              map = "<leader>ssc",
+              cmd = "<cmd>lua require('spectre.actions').replace_cmd()<CR>",
+              desc = "input replace vim command"
+          },
+          ['show_option_menu'] = {
+              map = "<leader>sso",
+              cmd = "<cmd>lua require('spectre').show_options()<CR>",
+              desc = "show option"
+          },
+          ['run_current_replace'] = {
+            map = "<leader>ssr",
+            cmd = "<cmd>lua require('spectre.actions').run_current_replace()<CR>",
+            desc = "replace current line"
+          },
+          ['run_replace'] = {
+              map = "<leader>ssR",
+              cmd = "<cmd>lua require('spectre.actions').run_replace()<CR>",
+              desc = "replace all"
+          },
+          ['change_view_mode'] = {
+              map = "<leader>ssv",
+              cmd = "<cmd>lua require('spectre').change_view()<CR>",
+              desc = "change result view mode"
+          },
+          ['resume_last_search'] = {
+            map = "<leader>ssl",
+            cmd = "<cmd>lua require('spectre').resume_last_search()<CR>",
+            desc = "resume last search before close"
+          },
+          -- you can put your mapping here it only use normal mode
+        },
+       })
+    end,
+  },
   { "nvim-treesitter/nvim-treesitter-context" },
   {
     "folke/persistence.nvim",
@@ -141,6 +187,14 @@ lvim.builtin.which_key.mappings["S"]= {
   c = { "<cmd>lua require('persistence').load()<cr>", "Restore last session for current dir" },
   l = { "<cmd>lua require('persistence').load({ last = true })<cr>", "Restore last session" },
   Q = { "<cmd>lua require('persistence').stop()<cr>", "Quit without saving session" },
+}
+
+-- nvim-pack/nvim-spectre
+lvim.builtin.which_key.mappings["ss"]= {
+  name = "Spectre",
+  g = { "<cmd>lua require('spectre').open()<cr>", "Global Search & Replace" },
+  f = { "viw:lua require('spectre').open_file_search()<cr>", "File Search & Replace" },
+  w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Search & Replace Current Word" },
 }
 
 -- nvim-telescope/telescope.nvim
