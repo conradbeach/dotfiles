@@ -1,5 +1,4 @@
  -------------------- Options --------------------
-lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 lvim.builtin.bufferline.options = {
   mode = "tabs",
   numbers = function(opts)
@@ -230,6 +229,7 @@ lvim.builtin.telescope.pickers.live_grep = {
 }
 
 -- nvim-tree/nvim-tree.lua
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 lvim.builtin.which_key.mappings["ne"] = { "<cmd>tabnew<cr><cmd>NvimTreeToggle<cr>", "Explorer in New Tab" }
 
 -- nvim-treesitter/nvim-treesitter
