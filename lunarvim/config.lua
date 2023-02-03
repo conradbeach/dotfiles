@@ -14,6 +14,8 @@ vim.opt.relativenumber = true -- set relative numbered lines
 vim.opt.textwidth = 80
 vim.opt.colorcolumn = "+1"
 
+-- Fix troublesome tab switching behavior. https://github.com/LunarVim/LunarVim/issues/3007
+vim.api.nvim_del_augroup_by_name('_auto_resize')
 
 -------------------- Keymappings -------------------- 
 -- [view all the defaults by pressing <leader>Lk] 
