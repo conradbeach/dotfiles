@@ -280,6 +280,9 @@ lvim.builtin.which_key.mappings["t"] = {
 lvim.colorscheme = "onenord"
 require("onenord").setup({
   theme = "light", -- "dark" or "light". Alternatively, remove the option and set vim.o.background instead
+  disable = {
+    background = true,
+  }
 })
 
 -- lualine
