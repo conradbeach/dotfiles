@@ -157,6 +157,8 @@ lvim.plugins = {
        })
     end,
   },
+  { "kana/vim-textobj-user" },
+  { "nelstrom/vim-textobj-rubyblock" },
   { "nvim-treesitter/nvim-treesitter-context" },
   {
     "folke/persistence.nvim",
