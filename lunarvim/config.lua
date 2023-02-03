@@ -229,6 +229,9 @@ lvim.builtin.telescope.pickers.live_grep = {
   only_sort_text = true, -- don't include the filename in the search results
 }
 
+-- nvim-tree/nvim-tree.lua
+lvim.builtin.which_key.mappings["ne"] = { "<cmd>tabnew<cr><cmd>NvimTreeToggle<cr>", "Explorer in New Tab" }
+
 -- nvim-treesitter/nvim-treesitter
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
