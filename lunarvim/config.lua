@@ -9,6 +9,10 @@ lvim.builtin.bufferline.options = {
 vim.opt.wrap = true
 vim.opt.relativenumber = true -- set relative numbered lines
 
+-- Treesitter based folding
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+
 -- Make it obvious where 80 characters is.
 vim.opt.textwidth = 80
 vim.opt.colorcolumn = "+1"
