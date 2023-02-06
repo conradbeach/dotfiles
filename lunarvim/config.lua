@@ -20,6 +20,7 @@ vim.opt.colorcolumn = "+1"
 -- Fix troublesome tab switching behavior. https://github.com/LunarVim/LunarVim/issues/3007
 vim.api.nvim_del_augroup_by_name('_auto_resize')
 
+
 -------------------- Keymappings -------------------- 
 -- [view all the defaults by pressing <leader>Lk] 
 
@@ -52,6 +53,7 @@ lvim.builtin.which_key.mappings["ct"] = { "<cmd>tabclose<cr>", "Close Tab"}
 lvim.builtin.which_key.mappings["cot"] = { "<cmd>tabonly<cr>", "Close Other Tabs" }
 lvim.builtin.which_key.mappings["on"] = { "<cmd>on<cr>", "Close Other Windows"}
 lvim.builtin.which_key.mappings["ce"] = { "<cmd>on<cr><cmd>tabonly<cr>", "Close Other Tabs & Windows"}
+
 -- Navigating tabs
 lvim.builtin.which_key.mappings["h"] = { "gT", "Previous Tab" }
 lvim.builtin.which_key.mappings["l"] = { "gt", "Next Tab" }
@@ -245,7 +247,6 @@ lvim.builtin.treesitter.ensure_installed = {
   "lua",
   "ruby",
 }
-
 lvim.builtin.treesitter.auto_install = true
 lvim.builtin.treesitter.highlight.enable = true
 
@@ -259,9 +260,7 @@ lvim.builtin.which_key.mappings["S"]= {
 
 -- nvim-telescope/telescope.nvim
 lvim.builtin.which_key.mappings["sl"] = { "<cmd>Telescope resume<cr>", "Resume" }
-
 lvim.builtin.telescope.defaults.path_display = { "truncate" }
-
 -- I didn't like the default configuration for the below pickers so I copied the
 -- default configuration from LunarVim [1] and removed the settings I didn't like.
 -- [1]: https://github.com/LunarVim/LunarVim/blob/1.2.0/lua/lvim/core/telescope.lua
