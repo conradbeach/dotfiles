@@ -218,20 +218,38 @@ lvim.keys.normal_mode["<C-l>"] = ":NavigatorRight<cr>"
 lvim.keys.normal_mode["<C-k>"] = ":NavigatorUp<cr>"
 lvim.keys.normal_mode["<C-j>"] = ":NavigatorDown<cr>"
 
--- folke/persistence.nvim
-lvim.builtin.which_key.mappings["S"]= {
-  name = "Session",
-  r = { "<cmd>lua require('persistence').load()<cr>", "Restore last session for current dir" },
-  l = { "<cmd>lua require('persistence').load({ last = true })<cr>", "Restore last session" },
-  q = { "<cmd>lua require('persistence').stop()<cr>", "Quit without saving session" },
-}
-
 -- nvim-pack/nvim-spectre
 lvim.builtin.which_key.mappings["ss"]= {
   name = "Spectre",
   g = { "<cmd>lua require('spectre').open()<cr>", "Global Search & Replace" },
   f = { "viw:lua require('spectre').open_file_search()<cr>", "File Search & Replace" },
   w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Search & Replace Current Word" },
+}
+
+-- nvim-tree/nvim-tree.lua
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
+lvim.builtin.which_key.mappings["ne"] = { "<cmd>tabnew<cr><cmd>NvimTreeToggle<cr>", "Explorer in New Tab" }
+
+-- nvim-treesitter/nvim-treesitter
+-- if you don't want all the parsers change this to a table of the ones you want
+lvim.builtin.treesitter.ensure_installed = {
+  "css",
+  "html",
+  "javascript",
+  "json",
+  "lua",
+  "ruby",
+}
+
+lvim.builtin.treesitter.auto_install = true
+lvim.builtin.treesitter.highlight.enable = true
+
+-- folke/persistence.nvim
+lvim.builtin.which_key.mappings["S"]= {
+  name = "Session",
+  r = { "<cmd>lua require('persistence').load()<cr>", "Restore last session for current dir" },
+  l = { "<cmd>lua require('persistence').load({ last = true })<cr>", "Restore last session" },
+  q = { "<cmd>lua require('persistence').stop()<cr>", "Quit without saving session" },
 }
 
 -- nvim-telescope/telescope.nvim
@@ -252,24 +270,6 @@ lvim.builtin.telescope.pickers.git_files = {
 lvim.builtin.telescope.pickers.live_grep = {
   only_sort_text = true, -- don't include the filename in the search results
 }
-
--- nvim-tree/nvim-tree.lua
-lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
-lvim.builtin.which_key.mappings["ne"] = { "<cmd>tabnew<cr><cmd>NvimTreeToggle<cr>", "Explorer in New Tab" }
-
--- nvim-treesitter/nvim-treesitter
--- if you don't want all the parsers change this to a table of the ones you want
-lvim.builtin.treesitter.ensure_installed = {
-  "css",
-  "html",
-  "javascript",
-  "json",
-  "lua",
-  "ruby",
-}
-
-lvim.builtin.treesitter.auto_install = true
-lvim.builtin.treesitter.highlight.enable = true
 
 -- mbbill/undotree
 lvim.builtin.which_key.mappings["u"] = { "<cmd>UndotreeToggle<cr>", "Toggle Undotree" }
