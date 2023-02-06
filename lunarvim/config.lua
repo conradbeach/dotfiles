@@ -218,6 +218,11 @@ lvim.keys.normal_mode["<C-l>"] = ":NavigatorRight<cr>"
 lvim.keys.normal_mode["<C-k>"] = ":NavigatorUp<cr>"
 lvim.keys.normal_mode["<C-j>"] = ":NavigatorDown<cr>"
 
+-- hrsh7th/nvim-cmp
+-- Removing these bindings so they're available for Copilot.
+lvim.builtin.cmp.mapping["<Tab>"] = {}
+lvim.builtin.cmp.mapping["<S-Tab>"] = {}
+
 -- nvim-pack/nvim-spectre
 lvim.builtin.which_key.mappings["ss"]= {
   name = "Spectre",
