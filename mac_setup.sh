@@ -71,6 +71,7 @@ brew install gnupg
 brew tap heroku/brew && brew install heroku
 brew install htop
 brew install httpie
+brew install imagemagick
 brew install java
 brew install jq
 brew install neovim
@@ -80,12 +81,14 @@ brew install python
 brew tap thoughtbot/formulae && brew install rcm
 brew install ripgrep
 brew install speedtest-cli
+brew install stripe/stripe-cli/stripe
 brew install the_silver_searcher
 brew install tldr
 brew install tmux
 brew install tmuxinator
 brew install trash
 brew install tree
+brew install vips
 brew install yarn
 brew install zsh
 
