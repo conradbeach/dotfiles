@@ -45,17 +45,11 @@ windows:
       layout: 4abd,255x74,0,0{98x74,0,0,12,156x74,99,0,15}
       panes:
         - terminal:
-        - rails_server:
-          - bundle exec rails server
+        - rails_server: bin/rails server
   - console:
       - bundle exec rails console
-      - pry
-  - other:
-      layout: 5057,231x67,0,0{115x67,0,0,27,115x67,116,0[115x33,116,0,28,115x33,116,34,29]}
+  - jobs-assets:
+      layout: even-horizontal
       panes:
-        - yard:
-          - yard server --reload
-        - yard_gems:
-          - yard gems
-        - solargraph:
-          - solargraph download-core
+        - sidekiq: bundle exec sidekiq
+        - js-css: bin/dev
