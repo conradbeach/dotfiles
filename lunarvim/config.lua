@@ -250,8 +250,8 @@ lvim.builtin.treesitter.highlight.enable = true
 lvim.builtin.which_key.mappings["u"] = { "<cmd>UndotreeToggle<cr>", "Toggle Undotree" }
 
 -- christoomey/vim-tmux-runner
-vim.cmd("let g:VtrPercentage = 35")
-vim.cmd("let g:VtrOrientation = 'v'")
+vim.g.VtrPercentage = 35
+vim.g.VtrOrientation = 'v'
 lvim.builtin.which_key.mappings["r"] = {
   name = "Tmux Runner",
   o = { "<cmd>VtrOpenRunner<cr>", "Open Runner"},
