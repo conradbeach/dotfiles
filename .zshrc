@@ -3,7 +3,6 @@ export ZSH=~/.oh-my-zsh # Path to your oh-my-zsh installation.
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
-export PATH="~/.local/bin:$PATH"
 
 export SHELL="/bin/zsh"
 
@@ -104,6 +103,8 @@ alias mv="mv -iv"
 alias sed="sed -E"
 alias help="tldr"
 alias n="nvim"
+alias lv="~/.local/bin/lvim"
+alias lvim="~/.local/bin/lvim"
 alias k9="kill -9"
 alias notes="cd ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && lvim"
 alias cl="clear"
