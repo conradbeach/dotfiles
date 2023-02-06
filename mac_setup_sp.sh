@@ -18,6 +18,7 @@ sudo softwareupdate --install-rosetta
 print_header "Symlinking Files"
 mkdir ~/.config
 ln -sf ~/Development/dotfiles/nvim ~/.config
+ln -sf ~/Development/dotfiles/lunarvim/config.lua ~/.config/lvim
 mkdir ~/.ssh/
 ln -sf ~/Development/dotfiles/ssh/config ~/.ssh/
 ln -sf ~/Development/dotfiles/tmuxinator ~/.config
@@ -65,11 +66,14 @@ brew install fzf
 $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
 brew install git
 brew install gnupg
+brew install gnu-sed
 brew install jq
 brew install neovim
 brew install pinentry-mac
 brew install pure
+brew install python
 brew install ripgrep
+brew install rust
 brew install the_silver_searcher
 brew install tldr
 brew install tmux
@@ -136,11 +140,8 @@ print_header "Installing zsh-completions"
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 
 
-# Neovim
-
-## vim-plug
-print_header "Installing vim-plug"
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# Neovim/LunarVim
+LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/fc6873809934917b470bff1b072171879899a36b/utils/installer/install.sh) --yes
 
 
 # Other Tools

@@ -40,7 +40,7 @@ root: ~/Development/track-your-hours-rails
 # attach: false
 
 windows:
-  - editor: nvim
+  - editor: lvim
   - terminal-server:
       layout: 4abd,255x74,0,0{98x74,0,0,12,156x74,99,0,15}
       panes:
