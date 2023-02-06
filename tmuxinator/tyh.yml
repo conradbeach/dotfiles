@@ -1,6 +1,6 @@
 # /Users/conrad/.config/tmuxinator/simplepractice.yml
 
-name: tyh
+name: track-your-hours
 root: ~/Development/track-your-hours-rails
 
 # Optional tmux socket
