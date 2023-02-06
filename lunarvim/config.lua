@@ -81,6 +81,7 @@ lvim.lsp.automatic_servers_installation = true
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.plugins = {
   { "dense-analysis/ale" },
+
   {
     "Pocco81/auto-save.nvim",
     config = function()
@@ -91,14 +92,20 @@ lvim.plugins = {
        }
     end,
   },
+
+  { "github/copilot.vim" },
+
   { "roman/golden-ratio" },
+
   { "ggandor/leap.nvim" },
+
   {
     "numToStr/Navigator.nvim",
     config = function()
       require('Navigator').setup()
     end
   },
+
   {
     "norcalli/nvim-colorizer.lua",
     config = function()
@@ -107,6 +114,7 @@ lvim.plugins = {
       })
     end,
   },
+
   {
     "ethanholz/nvim-lastplace",
     event = "BufRead",
@@ -114,7 +122,8 @@ lvim.plugins = {
       require("nvim-lastplace").setup({})
     end,
   },
-   {
+
+  {
     "nvim-pack/nvim-spectre",
     event = "BufRead",
     config = function()
@@ -160,9 +169,13 @@ lvim.plugins = {
        })
     end,
   },
+
   { "kana/vim-textobj-user" },
+
   { "nelstrom/vim-textobj-rubyblock" },
+
   { "nvim-treesitter/nvim-treesitter-context" },
+
   {
     "folke/persistence.nvim",
     event = "BufReadPre", -- this will only start session saving when an actual file is opened
@@ -171,13 +184,21 @@ lvim.plugins = {
       require("persistence").setup()
     end,
   },
+
   { "rmehri01/onenord.nvim" },
+
   { "AndrewRadev/splitjoin.vim" },
+
   { "mbbill/undotree" },
+
   { "tpope/vim-surround" },
+
   { "machakann/vim-swap" },
+
   { "tpope/vim-repeat" },
+
   { "vim-test/vim-test" },
+
   { "christoomey/vim-tmux-runner" },
 }
 
