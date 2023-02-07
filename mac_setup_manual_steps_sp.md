@@ -142,8 +142,8 @@ Remove all unwanted apps from Dock.
 ## Tmux
 - [ ] Hit <prefix>+I to install plugins.
 
-## Neovim
-- [ ] Run :PlugInstall.
+## LunarVim
+- [ ] Run :PackerSync
 - [ ] Run :checkhealth.
 
 ## Security
