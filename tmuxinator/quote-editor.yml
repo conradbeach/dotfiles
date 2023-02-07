@@ -45,6 +45,6 @@ root: ~/Development/quote-editor
 # attach: false
 
 windows:
-  - editor: nvim
+  - editor: lvim
   - terminal:
   - rails_server: bin/dev
