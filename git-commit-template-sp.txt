@@ -6,6 +6,8 @@
 # |<----   Try To Limit Each Line to a Maximum Of 72 Characters   ---->|
 
 
+[skip ci] # Remove this if you actually want to run a build.
+
 # Uncomment the below if adding co-authors:
 # Co-authored-by: CO-AUTHOR NAME 1 <co-author@example.com>
 # Co-authored-by: CO-AUTHOR NAME 2 <co-author2@example.com>
@@ -28,4 +30,3 @@
 #    Capitalize the subject line
 #    Use the imperative mood in the subject line
 #    Do not end the subject line with a period
-
