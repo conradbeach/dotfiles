@@ -1,7 +1,7 @@
-# /Users/conrad/.config/tmuxinator/codename_circle.yml
+# /Users/conrad/.config/tmuxinator/sp-sso.yml
 
-name: codename_circle
-root: ~/Development/codename_circle
+name: "sp-sso"
+root: ~/Development/sp-sso-account
 
 # Optional tmux socket
 # socket_name: foo
@@ -45,11 +45,6 @@ windows:
       layout: 4abd,255x74,0,0{98x74,0,0,12,156x74,99,0,15}
       panes:
         - terminal:
-        - rails_server: bin/rails server
-  - console:
-      - bundle exec rails console
-  - jobs-assets:
-      layout: even-horizontal
-      panes:
-        - sidekiq: bundle exec sidekiq
-        - js-css: bin/dev
+        - rails_server:
+          - bundle exec rails server --port=3020
+  - rails-console: bundle exec rails console

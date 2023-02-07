@@ -81,7 +81,7 @@ export KEYTIMEOUT=1 # Sets the delay when switching between normal and insert mo
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='nvim'
+  export EDITOR='lvim'
 fi
 
 # Compilation flags
@@ -103,8 +103,10 @@ alias mv="mv -iv"
 alias sed="sed -E"
 alias help="tldr"
 alias n="nvim"
+alias lv="~/.local/bin/lvim"
+alias lvim="~/.local/bin/lvim"
 alias k9="kill -9"
-alias notes="cd ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && nvim"
+alias notes="cd ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && lvim"
 alias cl="clear"
 alias src="source ~/.zshrc"
 alias vg="vagrant"
@@ -189,7 +191,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(lvim {})+abort'"
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 
 # Pure Prompt

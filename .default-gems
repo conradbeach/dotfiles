@@ -8,6 +8,9 @@ pry-doc
 rails
 reek
 rubocop
+rubocop-performance
+rubocop-rails
+rubocop-rspec
 ruby-beautify
 rubycritic
 solargraph
