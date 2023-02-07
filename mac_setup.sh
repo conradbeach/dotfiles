@@ -42,9 +42,9 @@ ln -sf ~/Development/dotfiles/.tmux.conf ~
 ln -sf ~/Development/dotfiles/.tool-versions ~
 ln -sf ~/Development/dotfiles/.vimrc ~ 
 ln -sf ~/Development/dotfiles/.zshrc ~
+ln -sf ~/Development/dotfiles/git-commit-template.txt ~
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
 # in a certain way, so I need to link this file after gnupg runs once.
-ln -sf ~/Development/dotfiles/git-commit-template.txt ~
 
 
 # Brew
