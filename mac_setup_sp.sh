@@ -40,9 +40,9 @@ ln -sf ~/Development/dotfiles/.tmux.conf ~
 ln -sf ~/Development/dotfiles/.tool-versions ~
 ln -sf ~/Development/dotfiles/.vimrc ~ 
 ln -sf ~/Development/dotfiles/.zshrc ~
+ln -sf ~/Development/dotfiles/git-commit-template-sp.txt ~
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
 # in a certain way, so I need to link this file after gnupg runs once.
-ln -sf ~/Development/dotfiles/git-commit-template.txt ~
 
 
 # Brew
@@ -142,6 +142,7 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zs
 
 # Neovim/LunarVim
 LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/fc6873809934917b470bff1b072171879899a36b/utils/installer/install.sh) --yes
+sudo mv ~/.local/bin/lvim /usr/local/bin/
 
 
 # Other Tools

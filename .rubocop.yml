@@ -16,9 +16,6 @@ Metrics/MethodLength:
   Max: 20
   Exclude: ['db/migrate/**/*']
 
-Style/Documentation:
-  Enabled: false
-
 Style/StringLiterals:
   Description: 'Checks if uses of quotes match the configured preference.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-string-literals'
@@ -50,12 +47,14 @@ Layout/ArgumentAlignment:
 Style/WordArray:
   Description: 'Use %w or %W for arrays of words.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-w'
-  Enabled: false
+  EnforcedStyle: brackets
+  Enabled: true
 
 Style/SymbolArray:
   Description: 'Use `%i` or `%I` for an array of symbols'
   StyleGuide: 'http://www.rubydoc.info/gems/rubocop/RuboCop/Cop/Style/SymbolArray'
-  Enabled: false
+  EnforcedStyle: brackets
+  Enabled: true
 
 Style/TrailingCommaInArguments:
   Description: 'Checks for trailing comma in argument lists.'
@@ -82,52 +81,8 @@ Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
   Enabled: true
 
-Layout/EmptyLinesAroundAttributeAccessor:
-  Description: Checks for a newline after an attribute accessor or a group of them.
-  Enabled: true
-
-Layout/SpaceAroundMethodCallOperator:
-  Description: Checks method call operators to not have spaces around them.
-  Enabled: true
-
-Style/RegexpLiteral:
-  EnforcedStyle: slashes
-  Enabled: true
-
-Style/ExponentialNotation:
-  Description: This cop enforces consistency when using exponential notation for numbers in the code (eg 1.2e4).
-  Enabled: true
-
-Style/HashEachMethods:
-  Description: This cop checks for uses of each_key and each_value Hash methods.
-  Enabled: true
-
-Style/HashTransformKeys:
-  Description: This cop looks for uses of `_.each_with_object({}) {...}`, `_.map {...}.to_h`, and `Hash[_.map {...}]` that are actually just transforming the keys of a hash, and tries to use a simpler & faster call to `transform_keys` instead.
-  Enabled: true
-
-Style/HashTransformValues:
-  Description: This cop looks for uses of `_.each_with_object({}) {...}`, `_.map {...}.to_h`, and `Hash[_.map {...}]` that are actually just transforming the values of a hash, and tries to use a simpler & faster call to `transform_values` instead.
-  Enabled: true
-
-Style/SlicingWithRange:
-  Description: This cop checks that arrays are sliced with endless ranges instead of ary[start..-1] on Ruby 2.6+.
-  Enabled: true
-
 Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
-  Enabled: true
-
-Lint/DeprecatedOpenSSLConstant:
-  Description: Algorithmic constants for OpenSSL::Cipher and OpenSSL::Digest deprecated since OpenSSL version 2.2.0. Prefer passing a string instead.
-  Enabled: true
-
-Lint/RaiseException:
-  Description: This cop checks for raise or fail statements which are raising Exception class.
-  Enabled: true
-
-Lint/StructNewOverride:
-  Description: This cop checks unexpected overrides of the Struct built-in methods via Struct.new.
   Enabled: true
 
 RSpec/ExampleLength:
