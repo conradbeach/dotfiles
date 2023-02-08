@@ -70,7 +70,6 @@ $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
 brew install git
 brew install gnupg
 brew install gnu-sed
-brew tap heroku/brew && brew install heroku
 brew install htop
 brew install httpie
 brew install imagemagick
