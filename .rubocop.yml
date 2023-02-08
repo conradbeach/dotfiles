@@ -4,32 +4,17 @@ require:
   - rubocop-rspec
 
 AllCops:
+  NewCops: enable
   Exclude:
     - 'bin/**/*'
-    - 'node_modules/**/*'
     - 'db/schema.rb'
+    - 'node_modules/**/*'
     - 'vendor/**/*'
-  NewCops: enable
 
-Metrics/MethodLength:
-  CountComments: false
-  Max: 20
-  Exclude: ['db/migrate/**/*']
-
-Style/StringLiterals:
-  Description: 'Checks if uses of quotes match the configured preference.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-string-literals'
-  EnforcedStyle: double_quotes
-  Enabled: true
-
-Metrics/BlockLength:
-  Description: 'This cop checks if the length of a block exceeds some maximum value. Comment lines can optionally be ignored. The maximum allowed length is configurable. The cop can be configured to ignore blocks passed to certain methods.'
-  Exclude: ['spec/**/*', 'config/**/*', 'lib/tasks/**/*']
-  Enabled: true
-
-Naming/FileName:
-  Description: This cop makes sure that Ruby source files have snake_case names. Ruby scripts (i.e. source files with a shebang in the first line) are ignored.
-  Exclude: ['lib/tasks/**/*']
+Layout/ArgumentAlignment:
+  Description: "Checks if the arguments on a multi-line method definition are aligned."
+  StyleGuide: 'https://rubystyle.guide/#no-double-indent'
+  EnforcedStyle: with_fixed_indentation
   Enabled: true
 
 Layout/LineLength:
@@ -38,16 +23,69 @@ Layout/LineLength:
   Max: 100
   Enabled: true
 
-Layout/ArgumentAlignment:
-  Description: "Checks if the arguments on a multi-line method definition are aligned."
-  StyleGuide: 'https://rubystyle.guide/#no-double-indent'
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+  Enabled: true
+
+Layout/MultilineOperationIndentation:
+  Description: Checks indentation of binary operations that span more than one line.
+  EnforcedStyle: indented
+  Enabled: true
+
+Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
   Enabled: true
 
-Style/WordArray:
-  Description: 'Use %w or %W for arrays of words.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-w'
-  EnforcedStyle: brackets
+Metrics/BlockLength:
+  Description: 'This cop checks if the length of a block exceeds some maximum value. Comment lines can optionally be ignored. The maximum allowed length is configurable. The cop can be configured to ignore blocks passed to certain methods.'
+  Exclude: ['spec/**/*', 'config/**/*', 'lib/tasks/**/*']
+  Enabled: true
+
+Metrics/MethodLength:
+  CountComments: false
+  Max: 20
+  Exclude: ['db/migrate/**/*']
+
+Naming/FileName:
+  Description: This cop makes sure that Ruby source files have snake_case names. Ruby scripts (i.e. source files with a shebang in the first line) are ignored.
+  Exclude: ['lib/tasks/**/*']
+  Enabled: true
+
+RSpec/ExampleLength:
+  Description: Checks for long examples. A long example is usually more difficult to understand. Consider extracting out some behaviour, e.g. with a let block, or a helper method.
+  Max: 10
+  Enabled: true
+  Exclude: ['spec/system/**/*']
+
+RSpec/MultipleExpectations:
+  Description: Checks if examples contain too many expect calls.
+  Max: 5
+  Enabled: true
+  Exclude: ['spec/system/**/*']
+
+RSpec/NestedGroups:
+  Description: Checks for nested example groups.
+  Max: 5
+  Enabled: true
+
+RSpec/NotToNot:
+  Description: Checks for consistent method usage for negating expectations.
+  EnforcedStyle: to_not
+  Enabled: true
+
+# I think there are many cases where this type of documentation is useful, but I
+# don't want to enforce it in every case. Just add docs where it helps.
+Style/Documentation:
+  Enabled: false
+
+# These comments clutter every file, and I'm already on Ruby 3.0+.
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  Description: 'Checks if uses of quotes match the configured preference.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-string-literals'
+  EnforcedStyle: double_quotes
   Enabled: true
 
 Style/SymbolArray:
@@ -72,37 +110,8 @@ Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
   Enabled: true
 
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented
-  Enabled: true
-
-Layout/MultilineOperationIndentation:
-  Description: Checks indentation of binary operations that span more than one line.
-  EnforcedStyle: indented
-  Enabled: true
-
-Layout/ParameterAlignment:
-  EnforcedStyle: with_fixed_indentation
-  Enabled: true
-
-RSpec/ExampleLength:
-  Description: Checks for long examples. A long example is usually more difficult to understand. Consider extracting out some behaviour, e.g. with a let block, or a helper method.
-  Max: 10
-  Enabled: true
-  Exclude: ['spec/system/**/*']
-
-RSpec/MultipleExpectations:
-  Description: Checks if examples contain too many expect calls.
-  Max: 5
-  Enabled: true
-  Exclude: ['spec/system/**/*']
-
-RSpec/NotToNot:
-  Description: Checks for consistent method usage for negating expectations.
-  EnforcedStyle: to_not
-  Enabled: true
-
-RSpec/NestedGroups:
-  Description: Checks for nested example groups.
-  Max: 5
+Style/WordArray:
+  Description: 'Use %w or %W for arrays of words.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-w'
+  EnforcedStyle: brackets
   Enabled: true
