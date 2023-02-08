@@ -291,10 +291,13 @@ lvim.builtin.which_key.mappings["r"] = {
   r = { "<cmd>VtrReattachRunner<cr>", "Reattach Runner"},
   c = { "<cmd>VtrClearRunner<cr>", "Clear Runner"},
   l = { "<cmd>VtrSendCommandToRunner !!<cr>", "Unknown Runner Command"},
-  sl = { "<cmd>VtrSendLinesToRunner<cr>", "Send Lines to Runner"},
-  sd = { "<cmd>VtrSendCtrlD<cr>", "Send Ctrl-D to Runner"},
-  sk = { "<cmd>VtrSendCommandToRunner !!!<cr>", "Send Kill to Runner"},
-  sf = { "<cmd>VtrSendFile<cr>", "Send File to Runner"},
+  s = {
+    name = "Send",
+    l = { "<cmd>VtrSendLinesToRunner<cr>", "Send Lines to Runner"},
+    d = { "<cmd>VtrSendCtrlD<cr>", "Send Ctrl-D to Runner"},
+    k = { "<cmd>VtrSendCommandToRunner !!!<cr>", "Send Kill to Runner"},
+    f = { "<cmd>VtrSendFile<cr>", "Send File to Runner"},
+  },
 }
 
 -- janko-m/vim-test
