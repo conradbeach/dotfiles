@@ -192,6 +192,8 @@ lvim.plugins = {
 
   { "mbbill/undotree" },
 
+  { "tpope/vim-rails" },
+
   { "tpope/vim-surround" },
 
   { "machakann/vim-swap" },
