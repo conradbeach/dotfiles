@@ -18,9 +18,9 @@ Layout/ArgumentAlignment:
   Enabled: true
 
 Layout/LineLength:
-  Description: 'Limit lines to 80 characters.'
+  Description: 'Limit lines to a certain number of characters.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#80-character-limits'
-  Max: 100
+  Max: 120
   Enabled: true
 
 Layout/MultilineMethodCallIndentation:
