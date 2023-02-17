@@ -46,7 +46,7 @@ windows:
       panes:
         - terminal:
         - rails_server:
-          - bundle exec rails server --port=3010
+          - bundle exec rails server --port=3030
   - rails-console: bundle exec rails console
   - temp:
       layout: even-horizontal
