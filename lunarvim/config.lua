@@ -42,6 +42,8 @@ lvim.builtin.which_key.mappings["nh"] = { "<cmd>noh<cr>", "Clear Search Highligh
 
 lvim.builtin.which_key.mappings["z"] = { "<cmd>wincmd _<cr><cmd>wincmd |<cr>", "Zoom Pane" }
 
+lvim.builtin.which_key.mappings["st"] = { ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", "Text" }
+
 -- Move line up or down
 lvim.keys.normal_mode["[e"] = "<cmd>m -2<cr>"
 lvim.keys.normal_mode["]e"] = "<cmd>m +1<cr>"
@@ -190,6 +192,8 @@ lvim.plugins = {
 
   { "AndrewRadev/splitjoin.vim" },
 
+  { "nvim-telescope/telescope-live-grep-args.nvim" },
+
   { "mbbill/undotree" },
 
   { "tpope/vim-rails" },
@@ -275,6 +279,7 @@ lvim.builtin.telescope.pickers.git_files = {
 lvim.builtin.telescope.pickers.live_grep = {
   only_sort_text = true, -- don't include the filename in the search results
 }
+require("telescope").load_extension("live_grep_args")
 
 -- mbbill/undotree
 lvim.builtin.which_key.mappings["u"] = { "<cmd>UndotreeToggle<cr>", "Toggle Undotree" }
