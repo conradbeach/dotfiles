@@ -282,7 +282,7 @@ lvim.builtin.telescope.pickers.live_grep = {
 require("telescope").load_extension("live_grep_args")
 
 -- mbbill/undotree
-lvim.builtin.which_key.mappings["u"] = { "<cmd>UndotreeToggle<cr>", "Toggle Undotree" }
+lvim.builtin.which_key.mappings["u"] = { vim.cmd.UndotreeToggle, "Toggle Undotree" }
 
 -- christoomey/vim-tmux-runner
 vim.g.VtrPercentage = 35
