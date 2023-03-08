@@ -9,6 +9,11 @@ lvim.builtin.bufferline.options = {
 vim.opt.wrap = true
 vim.opt.relativenumber = true -- set relative numbered lines
 
+-- Remember folds.
+vim.cmd("autocmd BufRead * normal zR")
+vim.cmd("autocmd BufWinLeave * silent! mkview")
+vim.cmd("autocmd BufWinEnter * silent! loadview")
+
 -- Make it obvious where 80 characters is.
 vim.opt.textwidth = 80
 vim.opt.colorcolumn = "+1"
