@@ -9,9 +9,6 @@ lvim.builtin.bufferline.options = {
 vim.opt.wrap = true
 vim.opt.relativenumber = true -- set relative numbered lines
 
--- Folding
-vim.opt.foldmethod = "syntax"
-
 -- Make it obvious where 80 characters is.
 vim.opt.textwidth = 80
 vim.opt.colorcolumn = "+1"
@@ -179,6 +176,11 @@ lvim.plugins = {
 
   { "nvim-treesitter/nvim-treesitter-context" },
 
+   {
+     "kevinhwang91/nvim-ufo",
+     requires = { "kevinhwang91/promise-async" },
+   },
+
   {
     "folke/persistence.nvim",
     event = "BufReadPre", -- this will only start session saving when an actual file is opened
@@ -254,6 +256,64 @@ lvim.builtin.treesitter.ensure_installed = {
 }
 lvim.builtin.treesitter.auto_install = true
 lvim.builtin.treesitter.highlight.enable = true
+
+-- kevinhwang91/nvim-ufo
+vim.o.foldcolumn = "0"
+vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
+vim.keymap.set("n", "zR", require("ufo").openAllFolds)
+vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
+-- vim.keymap.set("n", "zr", require("ufo").openFoldsExceptKinds)
+-- vim.keymap.set("n", "zm", require("ufo").closeFoldsWith)
+vim.keymap.set("n", "F", function()
+  local winid = require("ufo").peekFoldedLinesUnderCursor()
+  if not winid then
+      vim.lsp.buf.hover()
+  end
+end)
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.foldingRange = {
+    dynamicRegistration = false,
+    lineFoldingOnly = true
+}
+local language_servers = require("lspconfig").util.available_servers() -- or list servers manually like {'gopls', 'clangd'}
+for _, ls in ipairs(language_servers) do
+    require("lspconfig")[ls].setup({
+        capabilities = capabilities
+        -- you can add other fields for setting up lsp server in this table
+    })
+end
+local handler = function(virtText, lnum, endLnum, width, truncate)
+  local newVirtText = {}
+  local suffix = (' +---------- %d line(s) folded -----------'):format(endLnum - lnum)
+  local sufWidth = vim.fn.strdisplaywidth(suffix)
+  local targetWidth = width - sufWidth
+  local curWidth = 0
+  for _, chunk in ipairs(virtText) do
+    local chunkText = chunk[1]
+    local chunkWidth = vim.fn.strdisplaywidth(chunkText)
+    if targetWidth > curWidth + chunkWidth then
+      table.insert(newVirtText, chunk)
+    else
+      chunkText = truncate(chunkText, targetWidth - curWidth)
+      local hlGroup = chunk[2]
+      table.insert(newVirtText, {chunkText, hlGroup})
+      chunkWidth = vim.fn.strdisplaywidth(chunkText)
+      -- str width returned from truncate() may less than 2nd argument, need padding
+      if curWidth + chunkWidth < targetWidth then
+        suffix = suffix .. (' '):rep(targetWidth - curWidth - chunkWidth)
+      end
+      break
+    end
+    curWidth = curWidth + chunkWidth
+  end
+  table.insert(newVirtText, {suffix, 'MoreMsg'})
+  return newVirtText
+end
+require("ufo").setup({
+  fold_virt_text_handler = handler
+})
 
 -- folke/persistence.nvim
 lvim.builtin.which_key.mappings["S"]= {
