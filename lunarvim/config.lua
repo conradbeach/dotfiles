@@ -285,7 +285,7 @@ require("telescope").load_extension("live_grep_args")
 lvim.builtin.which_key.mappings["u"] = { vim.cmd.UndotreeToggle, "Toggle Undotree" }
 
 -- christoomey/vim-tmux-runner
-vim.g.VtrPercentage = 35
+vim.g.VtrPercentage = 20
 vim.g.VtrOrientation = 'v'
 lvim.builtin.which_key.mappings["r"] = {
   name = "Tmux Runner",
