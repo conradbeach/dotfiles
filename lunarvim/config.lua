@@ -100,7 +100,7 @@ lvim.plugins = {
     end,
   },
 
-  { "github/copilot.vim" },
+  -- { "github/copilot.vim" },
 
   { "roman/golden-ratio" },
 
