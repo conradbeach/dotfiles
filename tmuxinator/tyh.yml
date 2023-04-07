@@ -46,7 +46,7 @@ windows:
       panes:
         - terminal:
         - rails_server:
-          - bundle exec rails server --port=3030
+          - bundle exec rails server --port=3000
   - rails-console: bundle exec rails console
   - temp:
       panes:
