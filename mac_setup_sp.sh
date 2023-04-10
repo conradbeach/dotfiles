@@ -39,6 +39,7 @@ ln -sf ~/Development/dotfiles/.solargraph.yml ~/.config/solargraph/config.yml
 ln -sf ~/Development/dotfiles/.tmux.conf ~
 ln -sf ~/Development/dotfiles/.tool-versions ~
 ln -sf ~/Development/dotfiles/.vimrc ~ 
+ln -sf ~/Development/dotfiles/.warp ~ 
 ln -sf ~/Development/dotfiles/.zshrc ~
 ln -sf ~/Development/dotfiles/git-commit-template-sp.txt ~/git-commit-template.txt
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
@@ -97,6 +98,7 @@ brew install --cask iterm2
 brew install --cask postman
 brew install --cask tableplus
 brew install --cask visual-studio-code
+brew install --cask warp
 
 
 # asdf
