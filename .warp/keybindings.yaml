@@ -1,0 +1,10 @@
+---
+"pane_group:navigate_down": ctrl-j
+"editor_view:insert_newline": none
+"input:clear_screen": none
+"ai_assistant_panel:reset_context": none
+"pane_group:navigate_up": ctrl-k
+"editor_view:cut_all_right": none
+"editor_view:backspace": none
+"pane_group:navigate_left": ctrl-h
+"pane_group:navigate_right": ctrl-l
