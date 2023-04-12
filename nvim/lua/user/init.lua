@@ -81,5 +81,13 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+
+    -- Switch to last active tab.
+    vim.api.nvim_create_autocmd("TabLeave",  {
+        pattern = "*",
+        callback = function()
+            vim.api.nvim_set_keymap('n', '<Leader>0', '<cmd>tabn ' .. vim.api.nvim_tabpage_get_number(0) .. '<CR>', { noremap = true, silent = true })
+        end
+    })
   end,
 }
