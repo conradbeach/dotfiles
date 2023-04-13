@@ -64,9 +64,6 @@ return {
     -- Switch to last active tab configured in init.lua
 
     -- Terminal
-    -- TODO: It'd be nice if I could map <C-n> to closing the terminal in
-    -- terminal mode. You can use the 't = {}' section below in this file. I
-    -- couldn't get it to work though.
     ["<C-n>"] = { ":ToggleTerm<cr>" },
     ------------- Plugins -------------
 
@@ -98,5 +95,7 @@ return {
       oof = { ':TermExec cmd="bundle exec spring rspec --next-failure --format=documentation"<cr>', "Test Only One Failure"},
     }
   },
-  t = {},
+  t = {
+    ["<C-n>"] = { "<cmd>ToggleTerm<cr>" },
+  },
 }
