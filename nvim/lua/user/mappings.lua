@@ -46,6 +46,7 @@ return {
 
     -- Manipulating tabs
     ["<leader>nt"] = { "<cmd>tabnew<cr>", desc = "New Tab"},
+    ["<leader>ne"] = { "<cmd>tabnew<cr><cmd>Neotree<cr>", desc = "Explorer in New Tab" },
     ["<leader>ct"] = { "<cmd>tabclose<cr>", desc = "Close Tab"},
     ["<leader>cot"] = { "<cmd>tabonly<cr>", desc = "Close Other Tabs" },
     ["<leader>on"] = { "<cmd>on<cr>", desc = "Close Other Windows"},
