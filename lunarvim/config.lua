@@ -80,7 +80,6 @@ vim.api.nvim_create_autocmd("TabLeave",  {
 })
 
 
--- STOPPED HERE
 -------------------- LSP, Completion, Linting, etc. -------------------- 
 lvim.lsp.automatic_servers_installation = true
 
