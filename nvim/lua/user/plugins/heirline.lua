@@ -7,6 +7,8 @@ return {
       filename = { modify = ":." },
     }
 
+    opts.tabline = nil -- remove tabline
+
     -- return the final configuration table
     return opts
   end,
