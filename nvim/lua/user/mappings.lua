@@ -26,8 +26,8 @@ return {
     ["<leader>C"] = false, -- Force close buffer. I don't worry about buffers.
     ["<leader>n"] = false, -- New file. I have a different flow.
     ["<leader>q"] = false, -- Quit. Just use :q.
-    ["<leader>w"] = false, -- Save. Just use :w.
     ["<leader>/"] = false, -- Comment toggle. It doesn't take a count, so I'd rather just use `gcc`.
+    ["<leader>tp"] = false, -- Remove Python ToggleTerm binding. I will never use this.
 
     -- First character bindings
     ["^"] = "0", -- Make the easier "0" key move to the first character in the line.
@@ -62,9 +62,41 @@ return {
     ["<leader>8"] = { "8gt", desc = "Go to Tab 8" },
     ["<leader>9"] = { "9gt", desc = "Go to Tab 9" },
     -- Switch to last active tab configured in init.lua
+
+    -- Terminal
+    -- TODO: It'd be nice if I could map <C-n> to closing the terminal in
+    -- terminal mode. You can use the 't = {}' section below in this file. I
+    -- couldn't get it to work though.
+    ["<C-n>"] = { ":ToggleTerm<cr>" },
+    ------------- Plugins -------------
+
+    -- ggandor/leap.nvim
+    ["<leader>w"] = { "<Plug>(leap-forward-to)", desc = "Leap Forward" },
+    ["<leader>W"] = { "<Plug>(leap-backward-to)", desc = "Leap Backward" },
+    ["<leader>xw"] = { "<Plug>(leap-cross-window)", desc = "Leap Across Window" },
+
+    -- nvim-pack/nvim-spectre
+    ["<leader>fs"]= {
+      name = "Search and Replace",
+      g = { "<cmd>lua require('spectre').open()<cr>", "Global Search & Replace" },
+      f = { "viw:lua require('spectre').open_file_search()<cr>", "File Search & Replace" },
+      w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Search & Replace Current Word" },
+    },
+
+    -- mbbill/undotree
+    ["<leader>u"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undotree" },
+
+    -- vim-test/vim-test
+    -- Strategy and other executables are configured in init.lua
+    ["<leader>t"] = {
+      name = "Test Runner",
+      n = { ":TestNearest<cr>", "Test Nearest"},
+      f = { ":TestFile<cr>", "Test File"},
+      s = { ":TestSuite<cr>", "Test Suite"},
+      l = { ":TestLast<cr>", "Test Last"},
+      of = { ':TermExec cmd="bundle exec spring rspec --only-failures --format=documentation"<cr>', "Test Only Failures"},
+      oof = { ':TermExec cmd="bundle exec spring rspec --next-failure --format=documentation"<cr>', "Test Only One Failure"},
+    }
   },
-  t = {
-    -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
-  },
+  t = {},
 }

@@ -89,5 +89,9 @@ return {
             vim.api.nvim_set_keymap('n', '<Leader>0', '<cmd>tabn ' .. vim.api.nvim_tabpage_get_number(0) .. '<CR>', { noremap = true, silent = true })
         end
     })
+
+    -- vim-test/vim-test
+    vim.cmd("let test#strategy = 'toggleterm'")
+    vim.cmd("let test#ruby#rspec#executable = 'bundle exec spring rspec --format=documentation'")
   end,
 }
