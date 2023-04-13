@@ -34,15 +34,15 @@ return {
     ["0"] = "^", -- Set "^" to move to the first column in the line.
 
     -- Move line up or down
-    ["[e"] = ":m -2<cr>",
-    ["]e"] = ":m +1<cr>",
+    ["[e"] = "<cmd>m -2<cr>",
+    ["]e"] = "<cmd>m +1<cr>",
 
     -- Searching for text
-    ["<leader>ft"] = { ":lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", desc = "Text" },
+    ["<leader>ft"] = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", desc = "Text" },
     ["<leader>fw"] = false,
 
     -- Panes
-    ["<leader>z"] = { ":wincmd |<cr>", desc = "Zoom Pane" },
+    ["<leader>z"] = { "<cmd>wincmd |<cr>", desc = "Zoom Pane" },
 
     -- Manipulating tabs
     ["<leader>nt"] = { "<cmd>tabnew<cr>", desc = "New Tab"},
@@ -64,7 +64,7 @@ return {
     -- Switch to last active tab configured in init.lua
 
     -- Terminal
-    ["<C-n>"] = { ":ToggleTerm<cr>" },
+    ["<C-n>"] = { "<cmd>ToggleTerm<cr>" },
     ------------- Plugins -------------
 
     -- ggandor/leap.nvim
@@ -76,7 +76,7 @@ return {
     ["<leader>fs"]= {
       name = "Search and Replace",
       g = { "<cmd>lua require('spectre').open()<cr>", "Global Search & Replace" },
-      f = { "viw:lua require('spectre').open_file_search()<cr>", "File Search & Replace" },
+      f = { "viw<cmd>lua require('spectre').open_file_search()<cr>", "File Search & Replace" },
       w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Search & Replace Current Word" },
     },
 
@@ -87,12 +87,12 @@ return {
     -- Strategy and other executables are configured in init.lua
     ["<leader>t"] = {
       name = "Test Runner",
-      n = { ":TestNearest<cr>", "Test Nearest"},
-      f = { ":TestFile<cr>", "Test File"},
-      s = { ":TestSuite<cr>", "Test Suite"},
-      l = { ":TestLast<cr>", "Test Last"},
-      of = { ':TermExec cmd="bundle exec spring rspec --only-failures --format=documentation"<cr>', "Test Only Failures"},
-      oof = { ':TermExec cmd="bundle exec spring rspec --next-failure --format=documentation"<cr>', "Test Only One Failure"},
+      n = { "<cmd>TestNearest<cr>", "Test Nearest"},
+      f = { "<cmd>TestFile<cr>", "Test File"},
+      s = { "<cmd>TestSuite<cr>", "Test Suite"},
+      l = { "<cmd>TestLast<cr>", "Test Last"},
+      of = { '<cmd>TermExec cmd="bundle exec spring rspec --only-failures --format=documentation"<cr>', "Test Only Failures"},
+      oof = { '<cmd>TermExec cmd="bundle exec spring rspec --next-failure --format=documentation"<cr>', "Test Only One Failure"},
     }
   },
   t = {
