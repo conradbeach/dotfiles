@@ -22,6 +22,22 @@ return {
     end,
   },
 
+  {
+    "akinsho/bufferline.nvim",
+    dependencies = 'nvim-tree/nvim-web-devicons',
+    lazy = false,
+    config = function()
+       require("bufferline").setup({
+          options = {
+            mode = "tabs",
+            numbers = function(opts)
+              return string.format('%s)', opts.ordinal)
+            end,
+          },
+       })
+    end,
+  },
+
   { "roman/golden-ratio", lazy = false },
 
   { "ggandor/leap.nvim", lazy = false },
