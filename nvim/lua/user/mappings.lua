@@ -82,7 +82,7 @@ return {
     },
 
     -- mbbill/undotree
-    ["<leader>u"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undotree" },
+    ["<leader>fu"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undotree" },
 
     -- vim-test/vim-test
     -- Strategy and other executables are configured in init.lua
