@@ -24,6 +24,7 @@ return {
     -- Remove some mappings I don't want.
     ["<leader>c"] = false, -- Close buffer. I don't worry about buffers.
     ["<leader>C"] = false, -- Force close buffer. I don't worry about buffers.
+    ["<leader>h"] = false, -- Home screen. I won't use this.
     ["<leader>n"] = false, -- New file. I have a different flow.
     ["<leader>q"] = false, -- Quit. Just use :q.
     ["<leader>/"] = false, -- Comment toggle. It doesn't take a count, so I'd rather just use `gcc`.
