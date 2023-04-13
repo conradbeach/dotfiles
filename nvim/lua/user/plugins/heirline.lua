@@ -6,6 +6,7 @@ return {
     opts.statusline[3] = status.component.file_info {
       filename = { modify = ":." },
     }
+    opts.statusline[12] = nil -- Remove mode indicator at the end of the status line
 
     opts.tabline = nil -- remove tabline
 
