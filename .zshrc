@@ -81,7 +81,7 @@ export KEYTIMEOUT=1 # Sets the delay when switching between normal and insert mo
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='lvim'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
@@ -102,10 +102,10 @@ alias rm="rm -iv"
 alias mv="mv -iv"
 alias sed="sed -E"
 alias help="tldr"
-alias n="lvim"
+alias n="nvim"
 alias lv="lvim"
 alias k9="kill -9"
-alias notes="cd ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && lvim"
+alias notes="cd ~/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents && nvim"
 alias cl="clear"
 alias src="source ~/.zshrc"
 alias vg="vagrant"
