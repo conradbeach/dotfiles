@@ -39,8 +39,7 @@ return {
     ["]e"] = "<cmd>m +1<cr>",
 
     -- Searching for text
-    ["<leader>ft"] = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", desc = "Text" },
-    ["<leader>fw"] = false,
+    ["<leader>fw"] = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", desc = "Text" }, -- Use live_grep_args instead of default grep plugin
 
     -- Panes
     ["<leader>z"] = { "<cmd>wincmd |<cr>", desc = "Zoom Pane" },
