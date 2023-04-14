@@ -44,6 +44,6 @@ root: ~/Development/dotfiles/
 
 windows:
   - editor:
-      - lvim
+      - nvim
   - shell:
 
