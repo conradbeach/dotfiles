@@ -82,6 +82,9 @@ return {
       w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Search & Replace Current Word" },
     },
 
+    -- nvim-telescope/telescope.nvim
+    ["<leader>ff"] = { function() require("telescope.builtin").find_files{ hidden = true } end, desc = "Find files" }, -- The default AstroNvim command doesn't include hidden files, which I want.
+
     -- mbbill/undotree
     ["<leader>fu"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undotree" },
 
