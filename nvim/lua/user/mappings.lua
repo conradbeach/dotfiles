@@ -66,6 +66,7 @@ return {
 
     -- Terminal
     ["<C-n>"] = { "<cmd>ToggleTerm<cr>" },
+
     ------------- Plugins -------------
 
     -- ggandor/leap.nvim
@@ -74,7 +75,7 @@ return {
     ["<leader>xw"] = { "<Plug>(leap-cross-window)", desc = "Leap Across Window" },
 
     -- nvim-pack/nvim-spectre
-    ["<leader>fs"]= {
+    ["<leader>fs"] = {
       name = "Search and Replace",
       g = { "<cmd>lua require('spectre').open()<cr>", "Global Search & Replace" },
       f = { "viw<cmd>lua require('spectre').open_file_search()<cr>", "File Search & Replace" },
