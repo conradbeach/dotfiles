@@ -22,6 +22,13 @@ return {
       "--glob=!.git/",
     }
 
+    opts.pickers = {
+      find_files = {
+        -- `hidden = true` will still show files inside of `.git/` as it's not `.gitignore`d.
+        find_command = { "rg", "--files", "--hidden", "--glob", "!.git/*" },
+      },
+    }
+
     return opts
   end,
 
