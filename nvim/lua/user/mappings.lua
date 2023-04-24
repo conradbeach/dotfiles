@@ -80,7 +80,6 @@ return {
     },
 
     -- nvim-telescope/telescope.nvim
-    ["<leader>ff"] = { function() require("telescope.builtin").find_files{ hidden = true } end, desc = "Find files" }, -- The default AstroNvim command doesn't include hidden files, which I want.
     ["<leader>fw"] = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", desc = "Find words" },
 
     -- mbbill/undotree
