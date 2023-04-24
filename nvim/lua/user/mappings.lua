@@ -38,9 +38,6 @@ return {
     ["[e"] = "<cmd>m -2<cr>",
     ["]e"] = "<cmd>m +1<cr>",
 
-    -- Searching for text
-    ["<leader>fw"] = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", desc = "Text" }, -- Use live_grep_args instead of default grep plugin
-
     -- Panes
     ["<leader>z"] = { "<cmd>wincmd |<cr>", desc = "Zoom Pane" },
 
@@ -84,6 +81,7 @@ return {
 
     -- nvim-telescope/telescope.nvim
     ["<leader>ff"] = { function() require("telescope.builtin").find_files{ hidden = true } end, desc = "Find files" }, -- The default AstroNvim command doesn't include hidden files, which I want.
+    ["<leader>fw"] = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", desc = "Find words" },
 
     -- mbbill/undotree
     ["<leader>fu"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undotree" },
