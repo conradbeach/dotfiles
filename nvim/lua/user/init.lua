@@ -95,6 +95,6 @@ return {
     vim.cmd("let test#ruby#rspec#executable = 'bundle exec spring rspec --format=documentation'")
 
     -- dense-analysis/ale
-    vim.cmd("let g:ale_linters = { 'ruby': ['erblint', 'reek'] }")
+    vim.cmd("let g:ale_linters = { 'ruby': ['erblint'] }")
   end,
 }
