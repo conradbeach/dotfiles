@@ -10,6 +10,7 @@ return {
     config.sources = {
       null_ls.builtins.diagnostics.reek,
     }
+
     return config -- return final config table
   end,
 }
