@@ -1,8 +1,8 @@
 -- Mapping data with "desc" stored directly by vim.keymap.set().
 --
 -- Please use this mappings table to set keyboard mapping since this is the
--- lower level configuration and more robust one. (which-key will
--- automatically pick-up stored data by this setting.)
+-- lower level configuration and more robust one.
+-- (which-key will automatically pick-up stored data by this setting.)
 return {
   -- first key is the mode
   n = {
@@ -18,8 +18,6 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     -- ["<leader>b"] = { name = "Buffers" },
-    -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     -- Remove some mappings I don't want.
     ["<leader>c"] = false, -- Close buffer. I don't worry about buffers.
