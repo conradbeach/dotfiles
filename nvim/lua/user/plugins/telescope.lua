@@ -29,6 +29,17 @@ return {
       },
     }
 
+    opts.extensions = {
+      live_grep_args = {
+        auto_quoting = true,
+        mappings = {
+          i = {
+            ["<C-f>"] = require("telescope-live-grep-args.actions").quote_prompt(),
+          },
+        },
+      },
+    }
+
     return opts
   end,
 
