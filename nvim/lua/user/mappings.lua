@@ -80,6 +80,7 @@ return {
     },
 
     -- nvim-telescope/telescope.nvim
+    ["<leader>fc"] = { require("telescope-live-grep-args.shortcuts").grep_word_under_cursor, desc = "Find word under cursor" },
     ["<leader>fw"] = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", desc = "Find words" },
 
     -- mbbill/undotree
