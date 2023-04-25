@@ -35,8 +35,8 @@ return {
     ["0"] = "^", -- Set "^" to move to the first column in the line.
 
     -- Move line up or down
-    ["[e"] = "<cmd>m -2<cr>",
-    ["]e"] = "<cmd>m +1<cr>",
+    ["[e"] = { "<cmd>m -2<cr>", desc = "Move line up" },
+    ["]e"] = { "<cmd>m +1<cr>", desc = "Move line down" },
 
     -- Panes
     ["<leader>z"] = { "<cmd>wincmd |<cr>", desc = "Zoom Pane" },
@@ -62,7 +62,7 @@ return {
     -- Switch to last active tab configured in init.lua
 
     -- Terminal
-    ["<C-n>"] = { "<cmd>ToggleTerm<cr>" },
+    ["<C-n>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
 
     ------------- Plugins -------------
 
@@ -99,6 +99,6 @@ return {
     }
   },
   t = {
-    ["<C-n>"] = { "<cmd>ToggleTerm<cr>" },
+    ["<C-n>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
   },
 }
