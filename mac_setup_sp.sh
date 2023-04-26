@@ -18,8 +18,6 @@ sudo softwareupdate --install-rosetta
 print_header "Symlinking Files"
 mkdir ~/.config
 mkdir ~/.config/solargraph
-ln -sf ~/Development/dotfiles/nvim ~/.config
-ln -sf ~/Development/dotfiles/lunarvim/config.lua ~/.config/lvim
 mkdir ~/.ssh/
 ln -sf ~/Development/dotfiles/ssh/config ~/.ssh/
 ln -sf ~/Development/dotfiles/tmuxinator ~/.config
@@ -142,9 +140,10 @@ print_header "Installing zsh-completions"
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 
 
-# Neovim/LunarVim
-LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/fc6873809934917b470bff1b072171879899a36b/utils/installer/install.sh) --yes
-sudo mv ~/.local/bin/lvim /usr/local/bin/
+# Neovim
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+ln -sf ~/Development/dotfiles/nvim/lua/user ~/.config/nvim/lua/
+nvim  --headless -c 'quitall'
 
 
 # Other Tools
