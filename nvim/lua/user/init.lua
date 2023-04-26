@@ -26,6 +26,9 @@ return {
         end
     })
 
+    -- roman/golden-ratio
+    vim.cmd("let g:golden_ratio_exclude_nonmodifiable = 1") -- I primarily added this to prevent resizing nvim-tree.
+
     -- vim-test/vim-test
     vim.cmd("let test#strategy = 'toggleterm'")
     vim.cmd("let test#ruby#rspec#executable = 'bundle exec spring rspec --format=documentation'")

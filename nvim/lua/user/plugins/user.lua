@@ -48,6 +48,22 @@ return {
 
   { "ggandor/leap.nvim", lazy = false },
 
+  {
+    "nvim-tree/nvim-tree.lua",
+    dependencies = "nvim-tree/nvim-web-devicons", -- optional
+    lazy = false,
+    config = function()
+      require("nvim-tree").setup({
+        view = {
+          width = {
+            min = 30,
+            max = 60,
+          },
+        },
+      })
+    end,
+  },
+
   { "nvim-treesitter/nvim-treesitter-context", lazy = false },
 
   {
