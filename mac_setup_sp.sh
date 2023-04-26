@@ -17,6 +17,7 @@ sudo softwareupdate --install-rosetta
 # Link Files
 print_header "Symlinking Files"
 mkdir ~/.config
+mkdir ~/.config/solargraph
 ln -sf ~/Development/dotfiles/nvim ~/.config
 ln -sf ~/Development/dotfiles/lunarvim/config.lua ~/.config/lvim
 mkdir ~/.ssh/
@@ -36,6 +37,7 @@ ln -sf ~/Development/dotfiles/.pryrc ~
 ln -sf ~/Development/dotfiles/.reek.yml ~
 ln -sf ~/Development/dotfiles/.rspec ~
 ln -sf ~/Development/dotfiles/.rubocop.yml ~
+ln -sf ~/Development/dotfiles/.solargraph.yml ~/.config/solargraph/config.yml
 ln -sf ~/Development/dotfiles/.tmux.conf ~
 ln -sf ~/Development/dotfiles/.tool-versions ~
 ln -sf ~/Development/dotfiles/.vimrc ~ 
