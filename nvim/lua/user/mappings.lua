@@ -69,6 +69,10 @@ return {
     ["<leader>W"] = { "<Plug>(leap-backward-to)", desc = "Leap Backward" },
     ["<leader>xw"] = { "<Plug>(leap-cross-window)", desc = "Leap Across Window" },
 
+    -- nvim-tree/nvim-tree.lua
+    ["<leader>e"] = { "<cmd>NvimTreeToggle<cr>", desc = "Toggle Explorer" },
+    ["<leader>fe"] = { "<cmd>NvimTreeFindFile<cr>", desc = "Find File in Explorer" },
+
     -- nvim-pack/nvim-spectre
     ["<leader>fs"] = {
       name = "Search and Replace",
