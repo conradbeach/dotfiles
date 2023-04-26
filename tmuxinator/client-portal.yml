@@ -40,5 +40,5 @@ root: ~/Development/client-portal
 # attach: false
 
 windows:
-  - editor: lvim
+  - editor: nvim
   - server: yarn start
