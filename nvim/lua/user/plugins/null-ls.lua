@@ -8,7 +8,7 @@ return {
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
     config.sources = {
-      null_ls.builtins.diagnostics.reek,
+      -- null_ls.builtins.diagnostics.reek,
     }
 
     return config -- return final config table
