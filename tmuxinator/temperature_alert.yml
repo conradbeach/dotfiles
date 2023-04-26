@@ -40,7 +40,7 @@ root: ~/Development/temperature_alert
 # attach: false
 
 windows:
-  - editor: lvim
+  - editor: nvim
   - terminal-console:
       layout: even-horizontal
       panes:
