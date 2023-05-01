@@ -41,7 +41,6 @@ return {
 
     -- Manipulating tabs
     ["<leader>nt"] = { "<cmd>tabnew<cr>", desc = "New Tab"},
-    ["<leader>ne"] = { "<cmd>tabnew<cr><cmd>Neotree<cr>", desc = "Explorer in New Tab" },
     ["<leader>ct"] = { "<cmd>tabclose<cr>", desc = "Close Tab"},
     ["<leader>cot"] = { "<cmd>tabonly<cr>", desc = "Close Other Tabs" },
     ["<leader>on"] = { "<cmd>on<cr>", desc = "Close Other Windows"},
@@ -72,6 +71,7 @@ return {
     -- nvim-tree/nvim-tree.lua
     ["<leader>e"] = { "<cmd>NvimTreeToggle<cr>", desc = "Toggle Explorer" },
     ["<leader>fe"] = { "<cmd>NvimTreeFindFile<cr>", desc = "Find File in Explorer" },
+    ["<leader>ne"] = { "<cmd>tabnew<cr><cmd>NvimTreeOpen<cr>", desc = "Explorer in New Tab" },
 
     -- nvim-pack/nvim-spectre
     ["<leader>fs"] = {
