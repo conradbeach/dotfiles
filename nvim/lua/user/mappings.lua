@@ -32,6 +32,10 @@ return {
     ["^"] = "0", -- Make the easier "0" key move to the first character in the line.
     ["0"] = "^", -- Set "^" to move to the first column in the line.
 
+    -- Allow moving through wrapped lines.
+    ["k"] = "gk",
+    ["j"] = "gj",
+
     -- Move line up or down
     ["[e"] = { "<cmd>m -2<cr>", desc = "Move line up" },
     ["]e"] = { "<cmd>m +1<cr>", desc = "Move line down" },
