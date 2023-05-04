@@ -56,3 +56,5 @@ windows:
           - solargraph download-core && exit
         - sp-sso:
           - mux sp-sso && exit
+        - simplepractice:
+          - mux simplepractice && exit
