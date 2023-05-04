@@ -138,6 +138,7 @@ alias grs="git rebase staging -i --autosquash"
 alias gri="git rebase -i --autosquash"
 alias grc="git rebase --continue"
 alias gcf="git commit --fixup"
+alias gce="git commit --allow-empty"
 alias gcnv="git commit --no-verify"
 ## Ember
 alias et="yarn test --serve -f"
