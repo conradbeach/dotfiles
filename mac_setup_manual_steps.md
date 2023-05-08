@@ -171,7 +171,7 @@
 * [ ] Dash
   * Load License (In iCloud Drive > Software Licenses and Such.)
   * Set up syncing (snippets too). Sync files are in iCloud Drive > Dash Sync.
-  * Load custom docsets (In this repo. ./custom_dash_docsets)
+  * Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
 * [ ] iTerm
   * Load configuration. (In this repo. Change in Settings > General > Preferences)
 * [ ] Firefox Developer Edition
