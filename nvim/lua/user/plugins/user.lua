@@ -44,6 +44,8 @@ return {
     end,
   },
 
+  { "mattn/emmet-vim", lazy = false },
+
   { "roman/golden-ratio", lazy = false },
 
   { "ggandor/leap.nvim", lazy = false },
