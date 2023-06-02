@@ -2,6 +2,8 @@
 return {
   opt = {
     wrap = true, -- sets vim.opt.wrap
+    textwidth = 80, -- Make it obvious where 80 characters is.
+    colorcolumn = "+1", -- Make it obvious where 80 characters is.
   },
   g = {
     autoformat_enabled = false, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
