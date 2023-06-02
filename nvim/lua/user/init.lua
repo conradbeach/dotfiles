@@ -1,5 +1,5 @@
 return {
-  colorscheme = "onenord",
+  colorscheme = "onenord-light",
 
   lsp = {
     formatting = {
