@@ -126,7 +126,6 @@ alias cra="bundle exec rspec && bundle exec rubocop --display-style-guide && bun
 alias crajs="bundle exec rspec && rails cypress:run && bundle exec rubocop --display-style-guide && yarn eslint app/javascript cypress && bundle exec bundler-audit check --update && bundle exec brakeman --no-pager && rubycritic app && yarn audit" # Short for 'check rails app with JS'
 alias crs="bundle audit check --update && brakeman --no-pager" # Short for 'check Rails security'
 alias be="bundle exec"
-alias hr="heroku run"
 alias ss="bundle exec spring stop"
 alias rdm="bundle exec rails db:migrate"
 alias rs="bundle exec spring stop && bundle exec rails server"
@@ -209,6 +208,3 @@ export ASDF_DIR="$(brew --prefix asdf)/libexec"
 
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# Heroku autocomplete setup
-HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
