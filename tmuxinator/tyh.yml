@@ -50,10 +50,6 @@ windows:
   - rails-console: bundle exec rails console
   - temp:
       panes:
-        - yard_gems:
-          - bundle && yard gems && exit
-        - solargraph:
-          - solargraph download-core && exit
         - sp-sso:
           - mux sp-sso && exit
         - simplepractice:
