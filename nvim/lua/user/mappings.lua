@@ -87,6 +87,10 @@ return {
 
     -- nvim-telescope/telescope.nvim
     ["<leader>fc"] = { require("telescope-live-grep-args.shortcuts").grep_word_under_cursor, desc = "Find word under cursor" },
+    ["<leader>fv"] = {
+      function() require("telescope.builtin").find_files { find_command = { "rg", "--files", "--glob", "spec/fixtures/vcr_cassettes/**" } } end,
+      desc = "Find VCR cassettes",
+    },
     ["<leader>fw"] = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", desc = "Find words" },
 
     -- mbbill/undotree
