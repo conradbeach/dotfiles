@@ -6,10 +6,6 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 export SHELL="/bin/zsh"
 
-# Track Your Hours
-export LOCAL_IP=$(ifconfig | grep 'inet 192'| awk '{ print $2 }')
-# export MAC_M1=true # I'm not using Docker for now, so this variable triggers the wrong testing config for Capybara.
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 ZSH_THEME="" # Pure prompt handles the theme.
