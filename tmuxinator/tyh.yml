@@ -47,4 +47,10 @@ windows:
         - terminal:
         - rails_server:
           - bundle exec rails server --port=3000
-  - rails-console: bundle exec rails console
+  - console-sidekiq:
+      layout: 80d6,238x62,0,0{139x62,0,0,26,98x62,140,0,28}
+      panes:
+        - rails_console:
+          - bundle exec rails console
+        - sidekiq:
+          - bundle exec sidekiq
