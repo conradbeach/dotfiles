@@ -45,6 +45,7 @@ return {
 
     -- Manipulating tabs
     ["<leader>nt"] = { "<cmd>tabnew<cr>", desc = "New Tab"},
+    ["<leader>nf"] = { "<cmd>enew<cr>", desc = "New File" },
     ["<leader>ct"] = { "<cmd>tabclose<cr>", desc = "Close Tab"},
     ["<leader>cot"] = { "<cmd>tabonly<cr>", desc = "Close Other Tabs" },
     ["<leader>on"] = { "<cmd>on<cr>", desc = "Close Other Windows"},
