@@ -48,9 +48,3 @@ windows:
         - rails_server:
           - bundle exec rails server --port=3000
   - rails-console: bundle exec rails console
-  - temp:
-      panes:
-        - sp-sso:
-          - mux sp-sso && exit
-        - simplepractice:
-          - mux simplepractice && exit
