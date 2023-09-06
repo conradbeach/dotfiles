@@ -18,6 +18,10 @@ return {
         "                                    ",
         "          What would Jesus do?      ",
       }
+
+      local button = require("astronvim.utils").alpha_button
+      opts.section.buttons.val[1] = button("LDR n f", "  New File  ")
+
       return opts
     end,
   },
