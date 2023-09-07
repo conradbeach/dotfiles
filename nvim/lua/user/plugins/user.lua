@@ -29,18 +29,6 @@ return {
   },
 
   {
-    "utilyre/barbecue.nvim",
-    lazy = false,
-    dependencies = {
-      "SmiteshP/nvim-navic",
-      "nvim-tree/nvim-web-devicons", -- optional dependency
-    },
-    opts = {
-      show_navic = false,
-    },
-  },
-
-  {
     "akinsho/bufferline.nvim",
     dependencies = 'nvim-tree/nvim-web-devicons',
     lazy = false,
