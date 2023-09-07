@@ -10,7 +10,6 @@ return {
     opts.statusline[12] = nil -- Remove mode indicator at the end of the status line
 
     opts.tabline = nil -- Remove tabline; using `akinsho/bufferline.nvim` instead.
-    opts.winbar = nil -- Remove winbar; using `utilyre/barbecue.nvim` instead.
 
     -- Return the final configuration table
     return opts
