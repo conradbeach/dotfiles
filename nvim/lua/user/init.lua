@@ -26,6 +26,10 @@ return {
         end
     })
 
+    -- github/copilot.vim
+    vim.cmd("let g:copilot_no_tab_map = v:true")
+    vim.cmd("imap <silent><script><expr> <C-l> copilot#Accept(\"<CR>\")")
+
     -- roman/golden-ratio
     vim.cmd("let g:golden_ratio_exclude_nonmodifiable = 1") -- I primarily added this to prevent resizing nvim-tree.
 

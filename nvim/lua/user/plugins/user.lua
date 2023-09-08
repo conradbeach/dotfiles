@@ -56,6 +56,8 @@ return {
     end,
   },
 
+  { "github/copilot.vim", lazy = false },
+
   { "mattn/emmet-vim", lazy = false },
 
   { "roman/golden-ratio", lazy = false },
