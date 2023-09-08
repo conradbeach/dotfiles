@@ -56,7 +56,26 @@ return {
     end,
   },
 
-  { "github/copilot.vim", lazy = false },
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup({
+        panel = {
+          keymap = {
+            open = "<M-l>"
+          },
+        },
+        suggestion = {
+          auto_trigger = true,
+          keymap = {
+            accept = "<C-l>",
+          },
+        },
+      })
+    end,
+  },
 
   { "mattn/emmet-vim", lazy = false },
 
