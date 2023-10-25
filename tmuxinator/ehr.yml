@@ -1,6 +1,6 @@
-# /Users/conrad/.config/tmuxinator/simplepractice.yml
+# /Users/conrad/.config/tmuxinator/ehr.yml
 
-name: simplepractice
+name: ehr
 root: ~/Development/simplepractice
 
 # Optional tmux socket
