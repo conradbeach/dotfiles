@@ -138,6 +138,7 @@ alias grc="git rebase --continue"
 alias gcf="git commit --fixup"
 alias gce="git commit --allow-empty"
 alias gcnv="git commit --no-verify"
+alias gpf="git push --force-with-lease"
 ## Ember
 alias et="yarn test --serve -f"
 ## Guard
