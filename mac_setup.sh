@@ -82,6 +82,7 @@ brew install python
 brew tap thoughtbot/formulae && brew install rcm
 brew install ripgrep
 brew install rust
+brew install spacer
 brew install speedtest-cli
 brew install stripe/stripe-cli/stripe
 brew install the_silver_searcher
@@ -137,6 +138,9 @@ brew install --cask virtualbox
 brew install --cask virtualbox-extension-pack
 brew install --cask visual-studio-code
 
+# Cargo
+print_header "Installing Cargo Packages"
+cargo install faketty
 
 # asdf
 print_header "Installing asdf"

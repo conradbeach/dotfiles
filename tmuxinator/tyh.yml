@@ -53,4 +53,4 @@ windows:
         - rails_console:
           - bundle exec rails console
         - sidekiq:
-          - bundle exec sidekiq
+          - faketty bundle exec sidekiq | spacer --after 4 --padding 2

@@ -3,6 +3,7 @@ export ZSH=~/.oh-my-zsh # Path to your oh-my-zsh installation.
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+export PATH="/Users/$USER/.cargo/bin:$PATH"
 
 export SHELL="/bin/zsh"
 

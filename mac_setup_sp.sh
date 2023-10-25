@@ -75,6 +75,7 @@ brew install pure
 brew install python
 brew install ripgrep
 brew install rust
+brew install spacer
 brew install the_silver_searcher
 brew install tldr
 brew install tmux
@@ -99,6 +100,9 @@ brew install --cask postman
 brew install --cask tableplus
 brew install --cask visual-studio-code
 
+# Cargo
+print_header "Installing Cargo Packages"
+cargo install faketty
 
 # asdf
 print_header "Installing asdf"
