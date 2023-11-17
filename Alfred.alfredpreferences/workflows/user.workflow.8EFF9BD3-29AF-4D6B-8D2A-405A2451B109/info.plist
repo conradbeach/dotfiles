@@ -25,7 +25,7 @@
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
-	<true/>
+	<false/>
 	<key>name</key>
 	<string>Open Slack</string>
 	<key>objects</key>
