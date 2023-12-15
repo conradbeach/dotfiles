@@ -66,6 +66,9 @@ return {
     -- Terminal
     ["<C-n>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
 
+    -- VSCode
+    ["<leader>K"] = { "<cmd>!code %<cr>", desc = "Open File in VSCode" },
+
     ------------- Plugins -------------
 
     -- ggandor/leap.nvim
