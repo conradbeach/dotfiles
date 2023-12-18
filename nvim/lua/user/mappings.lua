@@ -40,6 +40,10 @@ return {
     ["[e"] = { "<cmd>m -2<cr>", desc = "Move line up" },
     ["]e"] = { "<cmd>m +1<cr>", desc = "Move line down" },
 
+    -- Copy file paths to clipboard
+    ["<leader>yp"] = { "<cmd>let @+=expand('%:p')<cr>", desc = "Copy file path to clipboard" },
+    ["<leader>yr"] = { "<cmd>let @+=expand('%')<cr>", desc = "Copy relative path to clipboard" },
+
     -- Panes
     ["<leader>z"] = { "<cmd>wincmd |<cr>", desc = "Zoom Pane" },
 
