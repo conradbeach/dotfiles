@@ -71,13 +71,11 @@ brew install gnu-sed
 brew install htop
 brew install httpie
 brew install imagemagick
-brew install java
 brew install jq
 brew install neovim
 brew install pinentry-mac
 brew install pure
 brew install python
-brew tap thoughtbot/formulae && brew install rcm
 brew install ripgrep
 brew install rust
 brew install spacer
@@ -120,9 +118,7 @@ brew install --cask gitkraken
 brew install --cask google-chrome
 brew install --cask handbrake
 brew install --cask iterm2
-brew install --cask kap
 brew install --cask keyboardcleantool
-brew install --cask krisp
 brew install --cask maccy
 brew install --cask numi
 brew install --cask obsidian
@@ -131,7 +127,6 @@ brew install --cask postman
 brew install --cask protonvpn
 brew install --cask slack
 brew install --cask tableplus
-brew install --cask vagrant
 brew install --cask virtualbox
 brew install --cask virtualbox-extension-pack
 brew install --cask visual-studio-code
