@@ -233,8 +233,20 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 ## Disable the warning before emptying the Trash.
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
+## Don't show warning before removing from iCloud Drive
+defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
+
+## Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+## Don't show warning before changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
 ## Show hidden files in finder.
 defaults write com.apple.finder AppleShowAllFiles -string YES
+
+## Keep folders on top in windows when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
 ## Set default view to list. (Finder > View > As List)
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
@@ -242,8 +254,64 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 ## Show the path bar in finder. (Finder > View > Show Path Bar)
 defaults write com.apple.finder ShowPathbar -bool true
 
+## Always show scrollbars
+defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+## Possible values: `WhenScrolling`, `Automatic` and `Always`
+
+## Click in the scrollbar to: Jump to the spot that's clicked
+defaults write -globalDomain AppleScrollerPagingBehavior -bool true
+
+## Change minimize/maximize window effect
+defaults write com.apple.dock mineffect -string "scale"
+
+## Don't show indicator lights for open applications in the Dock
+defaults write com.apple.dock show-process-indicators -bool false
+
 ## Set dock size. (System Preferences > Dock > Size)
 defaults write com.apple.dock tilesize -int 24
+
+## Remove the auto-hiding Dock delay
+defaults write com.apple.dock autohide-delay -float 0
+
+## Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+## Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
+
+## Don’t automatically rearrange Spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
+
+## Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -bool true
+
+## Don’t show Dashboard as a Space
+defaults write com.apple.dock dashboard-in-overlay -bool true
+
+# Group windows by application in Mission Control
+# (i.e. use the old Exposé behavior instead)
+defaults write com.apple.dock expose-group-by-app -bool true
+
+## Show Bluetooth in menu bar
+defaults write "com.apple.controlcenter" "NSStatusItem Visible Bluetooth" -bool true
+
+## Show Sound in menu bar
+defaults write "com.apple.controlcenter" "NSStatusItem Visible Sound" -bool true
+
+## Show Focus in menu bar
+defaults write "com.apple.controlcenter" "NSStatusItem Visible Focus" -bool true
+
+## Show Time Machine in menu bar
+defaults write "com.apple.controlcenter" "NSStatusItem Visible Time Machine" -bool true
+
+## Hide Spotlight in menu bar
+defaults write "com.apple.controlcenter" "NSStatusItem Visible Spotlight" -bool false
+
+## Hide Siri in menu bar
+defaults write "com.apple.controlcenter" "NSStatusItem Visible Siri" -bool false
+
+## Hide Input Menu in menu bar
+defaults write "com.apple.controlcenter" "NSStatusItem Visible InputMenu" -bool false
 
 ## Key repeat speed. (System Preferences > Keyboard. This is as fast as it will go.)
 defaults write NSGlobalDomain KeyRepeat -int 2
@@ -260,5 +328,6 @@ done
 # Final Steps
 
 print_header "Final Steps"
+echo "Confirm MacOS settings were applied correctly"
 echo "Perform manual setup steps in mac_setup_manual_steps.md"
 echo "Restart your computer. Some changes won't take affect until you do."
