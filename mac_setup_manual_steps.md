@@ -191,8 +191,11 @@
   * Change keyboard shortcut to Option-Space
   * Turn on "Launch at login".
   * Turn on "Check for updates automatically"
-  * Change "Popup at" to "Cursor".
-  * Change "Menu size" to 15.
+  * Change "Search" to "Fuzzy"
+  * Change "Popup at" to "Screen center".
+  * Change "Number of items" to 15.
+  * Add Bitwarden to Ignore > Applications.
+  * Don't allow notifications.
 * [ ] Messages
   * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
 * [ ] TablePlus
