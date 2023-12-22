@@ -187,10 +187,6 @@ pip3 install pynvim
 
 # Other Tools
 
-## rupa/z
-print_header "Installing z"
-curl https://raw.githubusercontent.com/rupa/z/master/z.sh -o ~/.oh-my-zsh/z.sh
-
 ## tat
 print_header "Installing tat"
 sudo curl https://raw.githubusercontent.com/thoughtbot/dotfiles/master/bin/tat -o /usr/local/bin/tat && sudo chmod +x /usr/local/bin/tat
