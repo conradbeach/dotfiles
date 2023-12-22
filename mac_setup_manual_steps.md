@@ -165,9 +165,6 @@
     * /Volumes/Mac Backup
     * /Volumes/.timemachine
     * /Volumes/com.apple.TimeMachine.localsnapshots
-* [ ] Chrome
-  * Install the [Markdown Viewer](https://github.com/simov/markdown-viewer) extension.
-  * Follow [After Install](https://github.com/simov/markdown-viewer#after-install) steps.
 * [ ] Dash
   * Load License (In iCloud Drive > Software Licenses and Such.)
   * Set up syncing (snippets too). Sync files are in iCloud Drive > Dash Sync.
@@ -177,16 +174,6 @@
 * [ ] Firefox Developer Edition
   * Import sessions into Tab Session Manager. The backup is in the Downloads folder.
   * Import Tab Session Manager settings as well. They're in the same folder.
-* [ ] J&J 7 Minute Workout
-  * Install the iOS version from the Mac App Store.
-* [ ] Jabra Direct
-  * [Install it manually.](https://www.jabra.com/software-and-services/jabra-direct)
-* [ ] Kap
-  * Turn on "Highlight clicks"
-  * Turn off "Loop exports"
-  * Turn on "Start automatically"
-  * Turn on "Lossy GIF compression"
-  * Change "Save to..." to "~/Downloads".
 * [ ] Maccy
   * Change keyboard shortcut to Option-Space
   * Turn on "Launch at login".
@@ -212,8 +199,7 @@ Remove all unwanted apps from Dock.
 ## Tmux
 - [ ] Hit <prefix>+I to install plugins.
 
-## LunarVim
-- [ ] Run :PackerSync
+## AstroNvim
 - [ ] Run :checkhealth.
 
 ## Security
@@ -226,7 +212,5 @@ Add these login items (In Settings > Users & Groups > Login Items):
 * Aware
 * BetterTouchTool
 * Dash
-* Jabra Direct
-* krisp
 * Maccy
 * Postgres.app
