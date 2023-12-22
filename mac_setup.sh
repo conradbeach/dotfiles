@@ -204,7 +204,7 @@ xcode-select --install
 
 ## SSH
 print_header "Generating an SSH key"
-ssh-keygen -t ed25519 -C "conradbeach@protonmail.com"
+ssh-keygen -t ed25519 -C "conradbeach@proton.me"
 eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 echo "run 'pbcopy < ~/.ssh/id_ed25519.pub' and paste it into GitHub and GitLab"
