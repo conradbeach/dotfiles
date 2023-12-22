@@ -158,23 +158,10 @@ print_header "Installing Ruby"
 brew install openssl libyaml libffi
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 
-## Erlang
-print_header "Installing Erlang"
-brew install autoconf wxmac
-asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
-
-## Elixir
-print_header "Installing Elixir"
-asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
-
 ## NodeJS
 print_header "Installing NodeJS"
 brew install coreutils gpg
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-
-## Elasticsearch
-print_header "Installing Elasticsearch"
-asdf plugin-add elasticsearch https://github.com/mikestephens/asdf-elasticsearch.git
 
 ## Install Global Versions
 print_header "Installing All Global Versions of Languages"
