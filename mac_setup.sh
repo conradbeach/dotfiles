@@ -30,7 +30,6 @@ ln -sf ~/Development/dotfiles/.default-npm-packages ~
 ln -sf ~/Development/dotfiles/.fzf.zsh ~
 ln -sf ~/Development/dotfiles/.gitconfig ~
 ln -sf ~/Development/dotfiles/.gitignore_global ~
-ln -sf ~/Development/dotfiles/.ideavimrc ~
 ln -sf ~/Development/dotfiles/.irbrc ~
 ln -sf ~/Development/dotfiles/.pryrc ~
 ln -sf ~/Development/dotfiles/.psqlrc ~
