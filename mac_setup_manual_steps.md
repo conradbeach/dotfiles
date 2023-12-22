@@ -8,47 +8,14 @@
 ## OS Settings
 
 ### General
-- [ ] Change "Appearance" to "Dark".
-- [ ] Change "Show scroll bars" to "Always".
-- [ ] Change "Click in the scroll bar to" to "Jump to the spot that's clicked".
 - [ ] Change default web browser to Firefox Developer Edition.
 - [ ] Check "Ask to keep changes when closing documents".
-
-### Dock & Menu Bar
-- [ ] Change minimize windows to scale effect.
-- [ ] Uncheck "Show indicators for open applications".
-- [ ] Uncheck "Show recent applications in Dock".
-
-#### Bluetooth
-- [ ] Check "Show in Menu Bar".
-
-#### Focus
-- [ ] Change "Show in Menu Bar" to "always".
-
-#### Sound
-- [ ] Change "Show in Menu Bar" to "always".
 
 #### Battery
 - [ ] Check "Show Percentage".
 
-#### Fast User Switching
-- [ ] Check "Show in Control Center".
-
 #### Clock
 - [ ] Check "Display the time with seconds".
-
-#### Spotlight
-- [ ] Uncheck "Show in Menu Bar".
-
-#### Siri
-- [ ] Uncheck "Show in Menu Bar".
-
-#### Time Machine
-- [ ] Check "Show Time Machine in menu bar".
-
-### Mission Control
-- [ ] Uncheck "Automatically rearrange Spaces based on most recent use".
-- [ ] Check "Group windows by application"
 
 ### Notifications & Focus
 - [ ] Check "Allow notifications: When mirroring or sharing the display"
@@ -98,12 +65,6 @@
 - [ ] Turn off Move left a space (control-left).
 - [ ] Turn off Move right a space (control-right).
 
-##### Spotlight
-- [ ] Change shortcut to ctrl-space.
-
-#### Input Sources
-- [ ] Uncheck "Show Input menu in menu bar".
-
 #### Dictation
 - [ ] Turn on Dictation.
 
@@ -120,8 +81,6 @@
 
 #### Display Settings
 - [ ] Set external monitor to be main display.
-- [ ] Scale external monitor to look like 1440p. (Assuming you're still using a
-  27ish inch 4k display.)
 
 #### Night Shift
 - [ ] Change it to run from 12:00am to 11:59pm. (All the time.)
@@ -129,8 +88,7 @@
 
 ### Time Machine
 - [ ] Set up back up disk.
-- [ ] Set it to back up automatically.
-- [ ] Check Show Time Machine in menu bar.
+- [ ] Set it to back up automatically daily.
 
 ## Finder Settings
 
@@ -142,12 +100,7 @@
 - [ ] Change 'Locations' sidebar list to: Conrad's MacBook Pro, External disks
 
 ### Advanced
-- [ ] Check "Show all filename extensions".
-- [ ] Uncheck "Show warning before changing an extension".
-- [ ] Uncheck "Show warning before removing from iCloud Drive".
-- [ ] Uncheck "Show warning before emptying the Trash".
 - [ ] Check "Remove items from trash after 30 days".
-- [ ] Check "Keep folders on top: In windows when sorting by name".
 
 ## Application Changes
 * [ ] Xcode
