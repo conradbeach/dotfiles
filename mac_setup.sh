@@ -88,6 +88,7 @@ brew install tmuxinator
 brew install trash
 brew install tree
 brew install vips
+brew install wget
 brew install yarn
 brew install zsh
 
@@ -180,6 +181,8 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zs
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 ln -sf ~/Development/dotfiles/nvim/lua/user ~/.config/nvim/lua/
 nvim  --headless -c 'quitall'
+
+pip3 install pynvim
 
 
 # Other Tools
