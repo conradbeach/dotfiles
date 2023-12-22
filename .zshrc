@@ -132,7 +132,7 @@ alias rs="bundle exec spring stop && bundle exec rails server"
 alias rc="bundle exec rails console"
 alias sss="bundle exec spring stop; rake tmp:clear"
 ## Git
-alias grm="git rebase master -i --autosquash"
+alias grm="git rebase main -i --autosquash"
 alias grs="git rebase staging -i --autosquash"
 alias gri="git rebase -i --autosquash"
 alias grc="git rebase --continue"
