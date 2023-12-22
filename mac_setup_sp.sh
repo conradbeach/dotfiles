@@ -38,7 +38,6 @@ ln -sf ~/Development/dotfiles/.rubocop.yml ~
 ln -sf ~/Development/dotfiles/.solargraph.yml ~/.config/solargraph/config.yml
 ln -sf ~/Development/dotfiles/.tmux.conf ~
 ln -sf ~/Development/dotfiles/.tool-versions ~
-ln -sf ~/Development/dotfiles/.vimrc ~ 
 ln -sf ~/Development/dotfiles/.zshrc ~
 ln -sf ~/Development/dotfiles/git-commit-template-sp.txt ~/git-commit-template.txt
 ln -sf ~/Google\ Drive/My\ Drive/Local\ Computer\ Backup/Reminders ~/Library
