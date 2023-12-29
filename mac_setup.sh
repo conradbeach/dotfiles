@@ -55,7 +55,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ## Packages
 print_header "Installing Brew Packages"
 brew install ack
-brew install asciinema
 brew install bat
 brew tap homebrew/cask
 brew install cmake
@@ -68,10 +67,7 @@ $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
 brew install git
 brew install gnupg
 brew install gnu-sed
-brew install htop
-brew install httpie
 brew install imagemagick
-brew install jq
 brew install neovim
 brew install pinentry-mac
 brew install pure
@@ -79,15 +75,11 @@ brew install python
 brew install ripgrep
 brew install rust
 brew install spacer
-brew install speedtest-cli
-brew install stripe/stripe-cli/stripe
 brew install the_silver_searcher
 brew install tldr
 brew install tmux
 brew install tmuxinator
 brew install trash
-brew install tree
-brew install vips
 brew install wget
 brew install yarn
 brew install zsh
@@ -108,16 +100,11 @@ brew install --cask aware
 brew install --cask balenaetcher
 brew install --cask bettertouchtool
 brew install --cask bitwarden
-brew install --cask brave-browser
-brew install --cask coconutbattery
 brew install --cask dash
-brew install --cask discord
-brew install --cask firefox
 brew install --cask homebrew/cask-versions/firefox-developer-edition
 brew install --cask gimp
 brew install --cask gitkraken
 brew install --cask google-chrome
-brew install --cask handbrake
 brew install --cask iterm2
 brew install --cask keyboardcleantool
 brew install --cask maccy
@@ -128,8 +115,6 @@ brew install --cask postman
 brew install --cask protonvpn
 brew install --cask slack
 brew install --cask tableplus
-brew install --cask virtualbox
-brew install --cask virtualbox-extension-pack
 brew install --cask visual-studio-code
 
 # Cargo
