@@ -1,61 +1,71 @@
 # Manual Mac Setup
 
 ## Files
-- [ ] Copy '~/VirtualBox VMs' folder from Time Machine backup onto this machine.
 - [ ] Copy '~/Downloads' folder from Time Machine backup onto this machine.
 - [ ] Copy relevant projects onto this machine from the '~/Development' folder from Time Machine backup.
 
 ## OS Settings
 
+- [ ] Confirm MacOS settings were applied correctly by the setup script
+
+### Network
+- [ ] Enable Firewall
+
 ### General
+#### Software Update
+- [ ] In Automatic Updates, enable "Install macOS updates".
+
+#### Time Machine
+- [ ] Set up back up disk.
+- [ ] Set it to back up automatically daily.
+
+### Control Center
+#### Control Center Modules
+- [ ] Set Bluetooth to "Show in Menu Bar"
+- [ ] Set Focus to "Always Show in Menu Bar"
+- [ ] Set Sound to "Always Show in Menu Bar"
+
+#### Other Modules
+- [ ] Set Music Recognition to "Always Show in Control Center"
+
+#### Menu Bar Only
+- [ ] In Clock Options, enable "Display the time with seconds"
+- [ ] Set Spotlight to Don't Show in Menu Bar
+
+### Siri and Spotlight
+- [ ] Enable Ask Siri
+
+### Privacy and Security
+#### Sensitive Content Warning
+- [ ] Enable
+- [ ] Enable for all available apps.
+- [ ] Enable "Improve Sensitive Content Warning"
+
+### Desktop and Dock
+#### Widgets
 - [ ] Change default web browser to Firefox Developer Edition.
-- [ ] Check "Ask to keep changes when closing documents".
 
-#### Battery
-- [ ] Check "Show Percentage".
+#### Windows
+- [ ] Enable "Ask to keep changes when closing documents".
 
-#### Clock
-- [ ] Check "Display the time with seconds".
+#### Mission Control
+- [ ] Enable "Group windows by application".
 
-### Notifications & Focus
-- [ ] Check "Allow notifications: When mirroring or sharing the display"
+### Displays
+- [ ] Adjust display positions to match their position on your desk.
 
-### Internet Accounts
-- [ ] Turn on Calendars for personal Google account.
+#### Night Shift
+- [ ] Change it to run from 12:00am to 11:59pm. (All the time.)
+- [ ] Set the color temperature to be a little warmer than the middle line of the scale.
 
-### Wallet & Apple Pay
-- [ ] Add Apple Card to Wallet.
+#### Display Settings
+- [ ] Set external monitor to be main display.
 
-### Security & Privacy
-
-#### General
+### Lock Screen
 - [ ] Require password after 5 seconds of sleep or screen saver.
-- [ ] Allow apps downloaded from: App Store and identified developers.
 
-#### FileVault
-- [ ] Turn on FileVault.
-
-#### Firewall
-- [ ] Turn on Firewall.
-
-### Software Update
-- [ ] Check "Automatically keep my Mac up to date".
-
-### Bluetooth
-- [ ] Connect to iPhone with Bluetooth.
-
-### Touch ID
-- [ ] Set up Touch ID.
-
-### Keybaord
-
-#### Keyboard
-
-##### Modifier Keys
-- [ ] Map caps lock to escape on internal and external keyboards.
-
-#### Shortcuts
-
+### Keyboard
+#### Keyboard Shortcuts
 ##### Launchpad & Dock
 - [ ] Turn off Turn Dock Hiding On/Off (option-command-d)
 
@@ -65,30 +75,25 @@
 - [ ] Turn off Move left a space (control-left).
 - [ ] Turn off Move right a space (control-right).
 
+##### Modifier Keys
+- [ ] Map caps lock to escape on internal and external keyboards.
+
 #### Dictation
 - [ ] Turn on Dictation.
 
 ### Trackpad
-
 #### More Gestures
 - [ ] Turn off Swipe between pages
 - [ ] Change Swipe between full screen apps to four fingers.
 - [ ] Change Mission Control to four fingers.
 - [ ] Change App Expose to four fingers.
 
-### Displays
-- [ ] Adjust display positions to match their position on your desk.
+### Battery
+- [ ] Check "Show Percentage".
 
-#### Display Settings
-- [ ] Set external monitor to be main display.
+### Touch ID
+- [ ] Set up Touch ID.
 
-#### Night Shift
-- [ ] Change it to run from 12:00am to 11:59pm. (All the time.)
-- [ ] Set the color temperature to be a little warmer than the middle line of the scale.
-
-### Time Machine
-- [ ] Set up back up disk.
-- [ ] Set it to back up automatically daily.
 
 ## Finder Settings
 
@@ -106,7 +111,7 @@
 * [ ] Xcode
   * Install this first since it's huge.
 * [ ] Authy
-  * Install the iOS version from the Mac App Store. (There's an offical MacOS desktop version but I had issues with it.)
+  * Install manually.
 * [ ] Awair Home
   * Install the iOS version from the Mac App Store.
 * [ ] BetterTouchTool
@@ -119,14 +124,14 @@
     * /Volumes/.timemachine
     * /Volumes/com.apple.TimeMachine.localsnapshots
 * [ ] Dash
-  * Load License (In iCloud Drive > Software Licenses and Such.)
-  * Set up syncing (snippets too). Sync files are in iCloud Drive > Dash Sync.
+  * Activate subscription
+  * Set up syncing. Sync files are in iCloud Drive > Dash Sync > General Sync.
+  * Set up snippets. Sync files are in iCloud Drive > Dash Sync > Snippets.
   * Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
 * [ ] iTerm
   * Load configuration. (In this repo. Change in Settings > General > Preferences)
 * [ ] Firefox Developer Edition
-  * Import sessions into Tab Session Manager. The backup is in the Downloads folder.
-  * Import Tab Session Manager settings as well. They're in the same folder.
+  * Sign in with Firefox account.
 * [ ] Maccy
   * Change keyboard shortcut to Option-Space
   * Turn on "Launch at login".
@@ -155,9 +160,12 @@ Remove all unwanted apps from Dock.
 ## AstroNvim
 - [ ] Run :checkhealth.
 
-## Security
-- [ ] Generate a new GPG key. (Using GitKraken is the easiest. And it handles things like updating your Git profile so GPG signing will work outside of GitKraken.)
-- [ ] Add the new GPG key to your GitHub and GitLab accounts. (Use GitKraken to copy it.)
+## GPG
+- [ ] Generate a new GPG key. (Follow the GitHub docs: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+- [ ] Add the new GPG key to your GitHub account.
+
+## SSH
+- [ ] Copy your SSH key by running 'pbcopy < ~/.ssh/id_ed25519.pub' and add it to GitHub.
 
 ## Login Items
 Add these login items (In Settings > Users & Groups > Login Items):

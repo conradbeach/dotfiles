@@ -192,7 +192,6 @@ print_header "Generating an SSH key"
 ssh-keygen -t ed25519 -C "conradbeach@proton.me"
 eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
-echo "run 'pbcopy < ~/.ssh/id_ed25519.pub' and paste it into GitHub and GitLab"
 
 ## gnupg
 gpg --list-keys
@@ -291,6 +290,5 @@ done
 # Final Steps
 
 print_header "Final Steps"
-echo "Confirm MacOS settings were applied correctly"
 echo "Perform manual setup steps in mac_setup_manual_steps.md"
 echo "Restart your computer. Some changes won't take affect until you do."
