@@ -273,28 +273,6 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 ## Don’t show Dashboard as a Space
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
-# Group windows by application in Mission Control
-# (i.e. use the old Exposé behavior instead)
-defaults write com.apple.dock expose-group-by-app -bool true
-
-## Show Bluetooth in menu bar
-defaults write "com.apple.controlcenter" "NSStatusItem Visible Bluetooth" -bool true
-
-## Show Sound in menu bar
-defaults write "com.apple.controlcenter" "NSStatusItem Visible Sound" -bool true
-
-## Show Focus in menu bar
-defaults write "com.apple.controlcenter" "NSStatusItem Visible Focus" -bool true
-
-## Show Time Machine in menu bar
-defaults write "com.apple.controlcenter" "NSStatusItem Visible Time Machine" -bool true
-
-## Hide Spotlight in menu bar
-defaults write "com.apple.controlcenter" "NSStatusItem Visible Spotlight" -bool false
-
-## Hide Siri in menu bar
-defaults write "com.apple.controlcenter" "NSStatusItem Visible Siri" -bool false
-
 ## Hide Input Menu in menu bar
 defaults write "com.apple.controlcenter" "NSStatusItem Visible InputMenu" -bool false
 
