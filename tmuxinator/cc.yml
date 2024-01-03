@@ -41,13 +41,11 @@ root: ~/Development/codename_circle
 
 windows:
   - editor: nvim
-  - terminal-server:
+  - console-server:
       layout: 4abd,255x74,0,0{98x74,0,0,12,156x74,99,0,15}
       panes:
-        - terminal:
+        - rails_console: bundle exec rails console
         - rails_server: bin/rails server
-  - console:
-      - bundle exec rails console
   - jobs-assets:
       layout: even-horizontal
       panes:
