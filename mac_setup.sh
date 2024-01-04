@@ -255,12 +255,6 @@ defaults write com.apple.dock show-process-indicators -bool false
 ## Set dock size. (System Preferences > Dock > Size)
 defaults write com.apple.dock tilesize -int 24
 
-## Remove the auto-hiding Dock delay
-defaults write com.apple.dock autohide-delay -float 0
-
-## Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
-
 ## Don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
 
