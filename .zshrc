@@ -164,7 +164,7 @@ alias neck_and_shoulders="cd ~/Development/speak_routine && ruby run.rb neck_and
 
 # $1 - The name of the file.
 # $2 (optional) - The path to create the file at.
-new_md () {
+new_md() {
   if [ -z "$2" ]
   then # No path was given.
     new_file_path=$1.md
@@ -173,6 +173,10 @@ new_md () {
     new_file_path=$2/$1.md
   fi
   echo "# $1" >> $new_file_path
+}
+
+configured_spacer() {
+  faketty $@ | spacer --after 4 --padding 2
 }
 
 # Plugins
