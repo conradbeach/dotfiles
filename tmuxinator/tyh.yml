@@ -49,7 +49,7 @@ windows:
         - rails_server:
           - bundle exec rails server --port=3000
   - jobs-emails-webhooks:
-      layout: 08eb,238x62,0,0{139x62,0,0,3,98x62,140,0[98x19,140,0,5,98x42,140,20,9]}
+      layout: aa50,238x62,0,0{129x62,0,0,9,108x62,130,0[108x19,130,0,11,108x42,130,20,12]}
       panes:
         - sidekiq:
           - bundle exec sidekiq
