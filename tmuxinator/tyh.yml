@@ -56,4 +56,4 @@ windows:
         - mailcatcher:
           - mailcatcher
         - stripe_webhooks:
-          - stripe listen --forward-to localhost:3000/webhooks/stripe
+          - configured_spacer stripe listen --forward-to localhost:3000/webhooks/stripe
