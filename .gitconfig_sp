@@ -49,3 +49,5 @@
 	autosquash = true
 [tag]
 	forceSignAnnotated = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
