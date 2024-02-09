@@ -46,7 +46,7 @@ windows:
       panes:
         - terminal:
         - rails_server:
-          - bundle exec rails server --port 3030
+          - bundle exec rails server --port 3020
   - console-sidekiq:
       layout: even-horizontal
       panes:
@@ -54,3 +54,5 @@ windows:
           - bundle exec rails console
         - sidekiq:
           - bundle exec sidekiq
+  - temp:
+      - mux sp-sso && exit
