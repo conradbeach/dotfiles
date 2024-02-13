@@ -2,7 +2,7 @@
 
 ## Files
 - [ ] Copy '~/Downloads' folder from Time Machine backup onto this machine.
-- [ ] Copy relevant projects onto this machine from the '~/Development' folder from Time Machine backup.
+- [ ] Copy relevant projects onto this machine from the '~/development' folder from Time Machine backup.
 
 ## OS Settings
 
@@ -101,7 +101,7 @@
 - [ ] Change "New Finder window shows" to home folder.
 
 ### Sidebar
-- [ ] Change 'Favorites' sidebar list to: home folder, Development, Downloads, Applications, Air Drop.
+- [ ] Change 'Favorites' sidebar list to: home folder, development, Downloads, Applications, Air Drop.
 - [ ] Change 'Locations' sidebar list to: Conrad's MacBook Pro, External disks
 
 ### Advanced

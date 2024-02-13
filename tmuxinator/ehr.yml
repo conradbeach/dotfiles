@@ -1,7 +1,7 @@
 # /Users/conrad/.config/tmuxinator/ehr.yml
 
 name: ehr
-root: ~/Development/simplepractice
+root: ~/development/simplepractice
 
 # Optional tmux socket
 # socket_name: foo

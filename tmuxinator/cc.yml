@@ -1,7 +1,7 @@
 # /Users/conrad/.config/tmuxinator/codename_circle.yml
 
 name: codename_circle
-root: ~/Development/codename_circle
+root: ~/development/codename_circle
 
 # Optional tmux socket
 # socket_name: foo

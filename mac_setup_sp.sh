@@ -19,26 +19,26 @@ print_header "Symlinking Files"
 mkdir ~/.config
 mkdir ~/.config/solargraph
 mkdir ~/.ssh/
-ln -sf ~/Development/dotfiles/ssh/config ~/.ssh/
-ln -sf ~/Development/dotfiles/tmuxinator ~/.config
-ln -sf ~/Development/dotfiles/.agignore ~
-ln -sf ~/Development/dotfiles/.asdfrc ~
-ln -sf ~/Development/dotfiles/.ctags ~
-ln -sf ~/Development/dotfiles/.default-gems ~
-ln -sf ~/Development/dotfiles/.default-npm-packages ~
-ln -sf ~/Development/dotfiles/.fzf.zsh ~
-ln -sf ~/Development/dotfiles/.gitconfig_sp ~/.gitconfig
-ln -sf ~/Development/dotfiles/.gitignore_global ~
-ln -sf ~/Development/dotfiles/.irbrc ~
-ln -sf ~/Development/dotfiles/.pryrc ~
-ln -sf ~/Development/dotfiles/.reek.yml ~
-ln -sf ~/Development/dotfiles/.rspec ~
-ln -sf ~/Development/dotfiles/.rubocop.yml ~
-ln -sf ~/Development/dotfiles/.solargraph.yml ~/.config/solargraph/config.yml
-ln -sf ~/Development/dotfiles/.tmux.conf ~
-ln -sf ~/Development/dotfiles/.tool-versions ~
-ln -sf ~/Development/dotfiles/.zshrc ~
-ln -sf ~/Development/dotfiles/git-commit-template-sp.txt ~/git-commit-template.txt
+ln -sf ~/development/dotfiles/ssh/config ~/.ssh/
+ln -sf ~/development/dotfiles/tmuxinator ~/.config
+ln -sf ~/development/dotfiles/.agignore ~
+ln -sf ~/development/dotfiles/.asdfrc ~
+ln -sf ~/development/dotfiles/.ctags ~
+ln -sf ~/development/dotfiles/.default-gems ~
+ln -sf ~/development/dotfiles/.default-npm-packages ~
+ln -sf ~/development/dotfiles/.fzf.zsh ~
+ln -sf ~/development/dotfiles/.gitconfig_sp ~/.gitconfig
+ln -sf ~/development/dotfiles/.gitignore_global ~
+ln -sf ~/development/dotfiles/.irbrc ~
+ln -sf ~/development/dotfiles/.pryrc ~
+ln -sf ~/development/dotfiles/.reek.yml ~
+ln -sf ~/development/dotfiles/.rspec ~
+ln -sf ~/development/dotfiles/.rubocop.yml ~
+ln -sf ~/development/dotfiles/.solargraph.yml ~/.config/solargraph/config.yml
+ln -sf ~/development/dotfiles/.tmux.conf ~
+ln -sf ~/development/dotfiles/.tool-versions ~
+ln -sf ~/development/dotfiles/.zshrc ~
+ln -sf ~/development/dotfiles/git-commit-template-sp.txt ~/git-commit-template.txt
 ln -sf ~/Google\ Drive/My\ Drive/Local\ Computer\ Backup/Reminders ~/Library
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
 # in a certain way, so I need to link this file after gnupg runs once.
@@ -145,7 +145,7 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zs
 
 # Neovim
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-ln -sf ~/Development/dotfiles/nvim/lua/user ~/.config/nvim/lua/
+ln -sf ~/development/dotfiles/nvim/lua/user ~/.config/nvim/lua/
 nvim  --headless -c 'quitall'
 
 
@@ -179,7 +179,7 @@ echo "run 'pbcopy < ~/.ssh/id_ed25519.pub' and paste it into GitHub"
 
 ## gnupg
 gpg --list-keys
-ln -sf ~/Development/dotfiles/gpg-agent.conf ~/.gnupg/
+ln -sf ~/development/dotfiles/gpg-agent.conf ~/.gnupg/
 
 
 # MacOS Settings
