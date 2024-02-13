@@ -1,7 +1,7 @@
 # /Users/conrad/.config/tmuxinator/temperature_alert.yml
 
 name: temperature_alert
-root: ~/Development/temperature_alert
+root: ~/development/temperature_alert
 
 # Optional tmux socket
 # socket_name: foo

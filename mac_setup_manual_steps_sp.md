@@ -97,7 +97,7 @@
 - [ ] Change "New Finder window shows" to home folder.
 
 ### Sidebar
-- [ ] Change 'Favorites' sidebar list to: home folder, Development, Downloads, Applications
+- [ ] Change 'Favorites' sidebar list to: home folder, development, Downloads, Applications
 - [ ] Change 'Locations' sidebar list to: Conrad's MacBook Pro, External disks
 
 ### Advanced

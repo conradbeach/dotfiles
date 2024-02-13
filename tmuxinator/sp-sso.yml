@@ -1,7 +1,7 @@
 # /Users/conrad/.config/tmuxinator/sp-sso.yml
 
 name: "sp-sso"
-root: ~/Development/sp-sso-account
+root: ~/development/sp-sso-account
 
 # Optional tmux socket
 # socket_name: foo
