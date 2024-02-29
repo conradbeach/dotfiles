@@ -6,24 +6,11 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
-		<key>115D701A-5291-4F0B-8905-F615544419A3</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F51AFF16-38A4-4E7D-ABC7-7F31B762FE32</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>D0D170CF-42DF-4377-8032-B69D1C04AE97</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>115D701A-5291-4F0B-8905-F615544419A3</string>
+				<string>F51AFF16-38A4-4E7D-ABC7-7F31B762FE32</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -91,41 +78,11 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>env SHELL=/bin/zsh open -a "GitKraken"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>115D701A-5291-4F0B-8905-F615544419A3</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>115D701A-5291-4F0B-8905-F615544419A3</key>
-		<dict>
-			<key>xpos</key>
-			<integer>250</integer>
-			<key>ypos</key>
-			<integer>50</integer>
-		</dict>
 		<key>D0D170CF-42DF-4377-8032-B69D1C04AE97</key>
 		<dict>
 			<key>xpos</key>
@@ -136,7 +93,7 @@
 		<key>F51AFF16-38A4-4E7D-ABC7-7F31B762FE32</key>
 		<dict>
 			<key>xpos</key>
-			<integer>470</integer>
+			<integer>280</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
