@@ -148,8 +148,8 @@ Remove all unwanted apps from Dock.
 - [ ] Run :checkhealth.
 
 ## Security
-- [ ] Generate a new GPG key. (Using GitKraken is the easiest. And it handles things like updating your Git profile so GPG signing will work outside of GitKraken.)
-- [ ] Add the new GPG key to your GitHub account. (Use GitKraken to copy it.)
+- [ ] Generate a new GPG key. (Follow the GitHub docs: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+- [ ] Add the new GPG key to your GitHub account.
 
 ## Startup Items
 Set these applications to launch on login. (You have to do it through each application individually since you can't access the users and accounts preference pane.)
