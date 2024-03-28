@@ -4,6 +4,7 @@ return {
     colorcolumn = "+1", -- Make it obvious where 80 characters is.
     scrolloff = 8, -- number of lines to keep above and below the cursor
     sidescrolloff = 8, -- number of columns to keep at the sides of the cursor
+    relativenumber = false,
     textwidth = 80, -- Make it obvious where 80 characters is.
     wrap = true, -- sets vim.opt.wrap
   },
