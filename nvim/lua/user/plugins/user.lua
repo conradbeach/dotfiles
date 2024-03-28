@@ -68,7 +68,18 @@ return {
 
   { "mattn/emmet-vim", lazy = false },
 
-  { "roman/golden-ratio", lazy = false },
+  {
+    "nvim-focus/focus.nvim",
+    lazy = false,
+    config = function()
+      require("focus").setup({
+        ui = {
+          cursorline = false, -- Display a cursorline in the focussed window only
+          signcolumn = false, -- Display signcolumn in the focussed window only
+        },
+      })
+    end,
+  },
 
   { "ggandor/leap.nvim", lazy = false },
 
