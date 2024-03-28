@@ -219,6 +219,9 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 ## Delay until key repeat. (System Preferences > Keyboard. This is as fast as it will go.)
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
+## Enable key repeat in VSCode
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
 ## Kill Dock and Finder
 for app in "Dock" "Finder"; do
   killall "${app}" > /dev/null 2>&1
