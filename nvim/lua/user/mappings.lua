@@ -110,7 +110,6 @@ return {
     -- vim-test/vim-test
     -- Strategy and other executables are configured in init.lua
     ["<leader>t"] = {
-      name = "Test Runner",
       n = { "<cmd>TestNearest<cr>", "Test Nearest"},
       f = { "<cmd>TestFile<cr>", "Test File"},
       s = { "<cmd>TestSuite<cr>", "Test Suite"},
