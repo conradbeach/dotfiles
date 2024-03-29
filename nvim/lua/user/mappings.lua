@@ -78,6 +78,25 @@ return {
 
     ------------- Plugins -------------
 
+    -- CopilotChat.nvim
+    ["<leader>a"] = {
+      name = "Copilot Chat",
+      -- Toggle Copilot Chat
+      v = { "<cmd>CopilotChatToggle<cr>", "Toggle" },
+      -- Code related commands
+      e = { "<cmd>CopilotChatExplain<cr>", "Explain code" },
+      t = { "<cmd>CopilotChatTests<cr>", "Generate tests" },
+      r = { "<cmd>CopilotChatReview<cr>", "Review code" },
+      R = { "<cmd>CopilotChatRefactor<cr>", "Refactor code" },
+      n = { "<cmd>CopilotChatBetterNaming<cr>", "Better Naming" },
+      -- Fix the issue with diagnostic
+      f = { "<cmd>CopilotChatFixDiagnostic<cr>", "Fix Diagnostic" },
+      -- Clear buffer and chat history
+      l = { "<cmd>CopilotChatReset<cr>", "Clear buffer and chat history" },
+      -- Debug
+      d = { "<cmd>CopilotChatDebugInfo<cr>", "Debug Info" },
+    },
+
     -- ggandor/leap.nvim
     ["<leader>w"] = { "<Plug>(leap-forward-to)", desc = "Leap Forward" },
     ["<leader>W"] = { "<Plug>(leap-backward-to)", desc = "Leap Backward" },
@@ -124,4 +143,19 @@ return {
   t = {
     ["<C-n>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
   },
+  x = {
+    -- CopilotChat.nvim
+    ["<leader>a"] = {
+      name = "Copilot Chat",
+      p = {
+        ":lua require('CopilotChat.integrations.telescope').pick(require('CopilotChat.actions').prompt_actions({selection = require('CopilotChat.select').visual}))<CR>",
+        "Prompt actions",
+      },
+      -- Chat with Copilot in visual mode
+      s = {
+        ":CopilotChatVisualSelection<cr>",
+        "Chat about selection",
+      },
+    },
+  }
 }

@@ -134,33 +134,6 @@ return {
         end,
         desc = "Prompt actions",
       },
-      {
-        "<leader>ap",
-        ":lua require('CopilotChat.integrations.telescope').pick(require('CopilotChat.actions').prompt_actions({selection = require('CopilotChat.select').visual}))<CR>",
-        mode = "x",
-        desc = "Prompt actions",
-      },
-      -- Code related commands
-      { "<leader>ae", "<cmd>CopilotChatExplain<cr>", desc = "Explain code" },
-      { "<leader>at", "<cmd>CopilotChatTests<cr>", desc = "Generate tests" },
-      { "<leader>ar", "<cmd>CopilotChatReview<cr>", desc = "Review code" },
-      { "<leader>aR", "<cmd>CopilotChatRefactor<cr>", desc = "Refactor code" },
-      { "<leader>an", "<cmd>CopilotChatBetterNaming<cr>", desc = "Better Naming" },
-      -- Chat with Copilot in visual mode
-      {
-        "<leader>as",
-        ":CopilotChatVisualSelection<cr>",
-        mode = "x",
-        desc = "Chat about selection",
-      },
-      -- Debug
-      { "<leader>ad", "<cmd>CopilotChatDebugInfo<cr>", desc = "Debug Info" },
-      -- Fix the issue with diagnostic
-      { "<leader>af", "<cmd>CopilotChatFixDiagnostic<cr>", desc = "Fix Diagnostic" },
-      -- Clear buffer and chat history
-      { "<leader>al", "<cmd>CopilotChatReset<cr>", desc = "Clear buffer and chat history" },
-      -- Toggle Copilot Chat Vsplit
-      { "<leader>av", "<cmd>CopilotChatToggle<cr>", desc = "Toggle" },
     },
   },
 }
