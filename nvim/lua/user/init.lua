@@ -29,8 +29,5 @@ return {
     -- vim-test/vim-test
     vim.cmd("let test#strategy = 'toggleterm'")
     vim.cmd("let test#ruby#rspec#executable = 'bundle exec spring rspec --format=documentation'")
-
-    -- dense-analysis/ale
-    vim.cmd("let g:ale_linters = { 'ruby': ['erblint'] }")
   end,
 }
