@@ -11,12 +11,6 @@ return {
   -- },
 
   {
-    "dense-analysis/ale",
-    lazy = false,
-    -- Linters are configured in init.lua
-  },
-
-  {
     "Pocco81/auto-save.nvim",
     lazy = false,
     config = function()
