@@ -49,6 +49,12 @@ windows:
         - rails_server:
           - bundle exec rails server --port 3020
   - sidekiq:
-      - bundle exec sidekiq
+      layout: even-horizontal
+      panes:
+        # Running 2 instances to better mimic staging and production environments.
+        - sidekiq_1:
+          - bundle exec sidekiq
+        - sidekiq_2:
+          - bundle exec sidekiq
   - temp:
       - mux sp-sso && exit
