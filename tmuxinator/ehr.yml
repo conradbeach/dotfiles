@@ -47,7 +47,7 @@ windows:
         - rails_console:
           - bundle exec rails console
         - rails_server:
-          - bundle exec rails server --port 3020
+          - bundle exec rails server --port 3000
   - sidekiq:
       layout: even-horizontal
       panes:

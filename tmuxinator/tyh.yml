@@ -47,7 +47,7 @@ windows:
         - rails_console:
           - bundle exec rails console
         - rails_server:
-          - bundle exec rails server --port=3000
+          - bundle exec rails server --port=3020
   - jobs-emails-webhooks:
       layout: aa50,238x62,0,0{129x62,0,0,9,108x62,130,0[108x19,130,0,11,108x42,130,20,12]}
       panes:
@@ -56,4 +56,4 @@ windows:
         - mailcatcher:
           - mailcatcher
         - stripe_webhooks:
-          - configured_spacer stripe listen --forward-to localhost:3000/webhooks/stripe
+          - configured_spacer stripe listen --forward-to localhost:3020/webhooks/stripe
