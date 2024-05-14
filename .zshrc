@@ -142,6 +142,7 @@ alias gcnv="git commit --no-verify"
 alias gpf="git push --force-with-lease"
 ## Ember
 alias et="yarn test --serve -f"
+alias ehr_yarn="yarn && cd frontend && yarn && cd .."
 ## Guard
 alias gg="bundle exec guard -c"
 ## Docker
