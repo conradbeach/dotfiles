@@ -115,6 +115,10 @@ return {
       w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Search & Replace Current Word" },
     },
 
+    -- codota/tabnine-nvim
+    ["<leader>aa"] = { ":TabnineChat<cr>", desc = "Open Tabnine Chat" },
+    ["<leader>ac"] = { ":TabnineChatClose<cr>", desc = "Close Tabnine Chat" },
+
     -- nvim-telescope/telescope.nvim
     ["<leader>fc"] = { require("telescope-live-grep-args.shortcuts").grep_word_under_cursor, desc = "Find word under cursor" },
     ["<leader>fp"] = {
