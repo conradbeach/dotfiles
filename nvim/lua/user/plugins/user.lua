@@ -38,28 +38,6 @@ return {
     end,
   },
 
-  {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "InsertEnter",
-    config = function()
-      require("copilot").setup({
-        panel = {
-          keymap = {
-            open = "<M-l>"
-          },
-        },
-        suggestion = {
-          auto_trigger = true,
-          keymap = {
-            accept = "<C-l>",
-            accept_word = "<C-o>",
-          },
-        },
-      })
-    end,
-  },
-
   { "mattn/emmet-vim", lazy = false },
 
   {
@@ -107,6 +85,20 @@ return {
   },
 
   { "AndrewRadev/splitjoin.vim", lazy = false },
+
+  {
+    "supermaven-inc/supermaven-nvim",
+    lazy = false,
+    config = function()
+      require("supermaven-nvim").setup({
+        keymaps = {
+          accept_suggestion = "<C-l>",
+          accept_word = "<C-o>",
+        },
+      })
+    end,
+  },
+
 
   { "nvim-telescope/telescope-live-grep-args.nvim" },
 
