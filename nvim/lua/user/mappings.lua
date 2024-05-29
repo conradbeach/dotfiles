@@ -136,12 +136,25 @@ return {
     -- vim-test/vim-test
     -- Strategy and other executables are configured in init.lua
     ["<leader>t"] = {
+      desc = "Tests",
       n = { "<cmd>TestNearest<cr>", "Test Nearest"},
       f = { "<cmd>TestFile<cr>", "Test File"},
       s = { "<cmd>TestSuite<cr>", "Test Suite"},
       l = { "<cmd>TestLast<cr>", "Test Last"},
-      of = { '<cmd>TermExec cmd="bundle exec spring rspec --only-failures --format=documentation"<cr>', "Test Only Failures"},
-      oof = { '<cmd>TermExec cmd="bundle exec spring rspec --next-failure --format=documentation"<cr>', "Test Only One Failure"},
+      d = {
+        desc = "Dry Run",
+        n = { "<cmd>TestNearest --dry-run<cr>", "Test Nearest Dry Run"},
+        f = { "<cmd>TestFile --dry-run<cr>", "Test File Dry Run"},
+        s = { "<cmd>TestSuite --dry-run<cr>", "Test Suite Dry Run"},
+      },
+      o = {
+        desc = "Only",
+        f = { '<cmd>TermExec cmd="bundle exec spring rspec --only-failures --format=documentation"<cr>', "Test Only Failures"},
+        o = {
+          desc = "Only One",
+          f = { '<cmd>TermExec cmd="bundle exec spring rspec --next-failure --format=documentation"<cr>', "Test Only One Failure"},
+        },
+      }
     }
   },
   t = {
