@@ -42,7 +42,7 @@ return {
 
     -- Yank file paths to clipboard
     ["<leader>y"] = {
-      name = "Yank",
+      desc = "Yank",
       p = { "<cmd>let @+=expand('%:p')<cr>", "File path" },
       r = { "<cmd>let @+=expand('%')<cr>", "Relative path" },
     },
@@ -80,7 +80,7 @@ return {
 
     -- CopilotChat.nvim
     ["<leader>a"] = {
-      name = "Copilot Chat",
+      desc = "Copilot Chat",
       -- Toggle Copilot Chat
       v = { "<cmd>CopilotChatToggle<cr>", "Toggle" },
       -- Code related commands
@@ -109,7 +109,7 @@ return {
 
     -- nvim-pack/nvim-spectre
     ["<leader>fs"] = {
-      name = "Search and Replace",
+      desc = "Search and Replace",
       g = { "<cmd>lua require('spectre').open()<cr>", "Global Search & Replace" },
       f = { "viw<cmd>lua require('spectre').open_file_search()<cr>", "File Search & Replace" },
       w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Search & Replace Current Word" },
@@ -163,7 +163,7 @@ return {
   x = {
     -- CopilotChat.nvim
     ["<leader>a"] = {
-      name = "Copilot Chat",
+      desc = "Copilot Chat",
       p = {
         ":lua require('CopilotChat.integrations.telescope').pick(require('CopilotChat.actions').prompt_actions({selection = require('CopilotChat.select').visual}))<CR>",
         "Prompt actions",
