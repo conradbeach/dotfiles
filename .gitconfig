@@ -1,6 +1,6 @@
 [user]
 	name = Conrad Beach
-	email = conradbeach@proton.me
+	email = conradbeach@hey.com
 	signingKey = C66F467384853B844D6F04348FEECB3012B3CBAF
 [core]
 	excludesfile = /Users/conrad/.gitignore_global

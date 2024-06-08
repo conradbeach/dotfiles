@@ -190,7 +190,7 @@ xcode-select --install
 
 ## SSH
 print_header "Generating an SSH key"
-ssh-keygen -t ed25519 -C "conradbeach@proton.me"
+ssh-keygen -t ed25519 -C "conradbeach@hey.com"
 eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 
