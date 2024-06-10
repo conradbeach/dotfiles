@@ -103,7 +103,7 @@
 * [ ] Dash
   * Activate subscription
   * Set up syncing. Sync files are in iCloud Drive > Dash Sync > General Sync.
-  * Set up snippets. (In this repo at ./Dash/Snippets_Deseret_Book.dash)
+  * Set up snippets. (In this repo at ./Dash/Snippets.dash)
   * Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
 * [ ] iTerm
   * Load configuration. (In this repo. Change in Settings > General > Preferences)
