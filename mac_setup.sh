@@ -9,11 +9,6 @@ function print_header() {
 }
 
 
-# Rosetta 2
-print_header "Installing Rosetta 2"
-sudo softwareupdate --install-rosetta
-
-
 # Link Files
 print_header "Symlinking Files"
 mkdir ~/.config
@@ -47,7 +42,7 @@ ln -sf ~/development/dotfiles/git-commit-template.txt ~
 
 # Brew
 print_header "Installing Brew"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 source ~/.zshrc
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -106,7 +101,6 @@ brew install --cask gimp
 brew install --cask gitkraken
 brew install --cask google-chrome
 brew install --cask iterm2
-brew install --cask keyboardcleantool
 brew install --cask maccy
 brew install --cask numi
 brew install --cask obsidian
@@ -134,12 +128,11 @@ brew install coreutils curl git
 
 ## Ruby
 print_header "Installing Ruby"
-brew install openssl libyaml libffi
+brew install openssl@3 readline libyaml gmp
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 
 ## NodeJS
 print_header "Installing NodeJS"
-brew install coreutils gpg
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 
 ## Install Global Versions
