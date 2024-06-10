@@ -51,16 +51,6 @@
 #### Mission Control
 - [ ] Enable "Group windows by application".
 
-### Displays
-- [ ] Adjust display positions to match their position on your desk.
-
-#### Night Shift
-- [ ] Change it to run from 12:00am to 11:59pm. (All the time.)
-- [ ] Set the color temperature to be a little warmer than the middle line of the scale.
-
-#### Display Settings
-- [ ] Set external monitor to be main display.
-
 ### Lock Screen
 - [ ] Require password after 5 seconds of sleep or screen saver.
 
@@ -126,7 +116,7 @@
 * [ ] Dash
   * Activate subscription
   * Set up syncing. Sync files are in iCloud Drive > Dash Sync > General Sync.
-  * Set up snippets. Sync files are in iCloud Drive > Dash Sync > Snippets.
+  * Set up snippets. (In this repo at ./Dash/Snippets.dash)
   * Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
 * [ ] iTerm
   * Load configuration. (In this repo. Change in Settings > General > Preferences)
@@ -145,10 +135,6 @@
   * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
 * [ ] TablePlus
   * Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
-* [ ] Terminal.app
-  * Load theme. (Dracula.theme in this repo.) Change in Preferences > Profiles > ... button > Import...
-  * In Settings > General, set Dracula theme to be the default.
-  * In Settings > General, change 'Shells open with:' to '/bin/zsh'.
 * [ ] Visual Studio Code
   * Sign in to turn on Settings Sync. Sign in with GitHub.
 
