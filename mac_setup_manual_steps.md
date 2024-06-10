@@ -115,7 +115,7 @@
     * /Volumes/com.apple.TimeMachine.localsnapshots
 * [ ] Dash
   * Activate subscription
-  * Set up syncing. Sync files are in iCloud Drive > Dash Sync > General Sync.
+  * Set up syncing. (In this repo at ./Dash/Dash.dashsync)
   * Set up snippets. (In this repo at ./Dash/Snippets.dash)
   * Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
 * [ ] iTerm
