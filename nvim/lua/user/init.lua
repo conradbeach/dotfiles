@@ -28,7 +28,7 @@ return {
 
     -- vim-test/vim-test
     vim.cmd("let test#strategy = 'toggleterm'")
-    vim.cmd("let test#ruby#rspec#executable = 'bundle exec spring rspec --format=documentation'")
+    vim.cmd("let test#ruby#rspec#executable = 'bundle exec rspec --format=documentation'")
 
     -- codota/tabnine-nvim
     vim.api.nvim_command("TabnineDisable") -- I only want chat.
