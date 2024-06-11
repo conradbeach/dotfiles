@@ -99,6 +99,7 @@ brew install --cask google-chrome
 brew install --cask iterm2
 brew install --cask numi
 brew install --cask obsidian
+brew install --cask postgres-unofficial
 brew install --cask postman
 brew install --cask tableplus
 brew install --cask visual-studio-code
