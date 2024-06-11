@@ -135,3 +135,4 @@ Remove all unwanted apps from Dock.
 Add these login items (In Settings > Users & Groups > Login Items):
 * BetterTouchTool
 * Dash
+* Postgres.app
