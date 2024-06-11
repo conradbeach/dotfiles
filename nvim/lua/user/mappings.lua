@@ -149,10 +149,10 @@ return {
       },
       o = {
         desc = "Only",
-        f = { '<cmd>TermExec cmd="bundle exec spring rspec --only-failures --format=documentation"<cr>', "Test Only Failures"},
+        f = { '<cmd>TermExec cmd="bundle exec rspec --only-failures --format=documentation"<cr>', "Test Only Failures"},
         o = {
           desc = "Only One",
-          f = { '<cmd>TermExec cmd="bundle exec spring rspec --next-failure --format=documentation"<cr>', "Test Only One Failure"},
+          f = { '<cmd>TermExec cmd="bundle exec rspec --next-failure --format=documentation"<cr>', "Test Only One Failure"},
         },
       }
     }

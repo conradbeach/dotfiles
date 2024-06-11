@@ -126,13 +126,11 @@ alias cra="bundle exec rspec && bundle exec rubocop --display-style-guide && bun
 alias crajs="bundle exec rspec && rails cypress:run && bundle exec rubocop --display-style-guide && yarn eslint app/javascript cypress && bundle exec bundler-audit check --update && bundle exec brakeman --no-pager && rubycritic app && yarn audit" # Short for 'check rails app with JS'
 alias crs="bundle audit check --update && brakeman --no-pager" # Short for 'check Rails security'
 alias be="bundle exec"
-alias ss="bundle exec spring stop"
 alias rdm="bundle exec rails db:migrate"
 alias rdr="bundle exec rails db:rollback"
 alias rdmr="bundle exec rails db:migrate:redo"
-alias rs="bundle exec spring stop && bundle exec rails server"
+alias rs="bundle exec rails server"
 alias rc="bundle exec rails console"
-alias sss="bundle exec spring stop; rake tmp:clear"
 ## Git
 alias grm="git rebase main -i --autosquash"
 alias grs="git rebase staging -i --autosquash"
