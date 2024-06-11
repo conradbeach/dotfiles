@@ -101,7 +101,6 @@ brew install --cask gimp
 brew install --cask gitkraken
 brew install --cask google-chrome
 brew install --cask iterm2
-brew install --cask maccy
 brew install --cask numi
 brew install --cask obsidian
 brew install --cask postgres-unofficial
