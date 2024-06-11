@@ -147,7 +147,6 @@ Remove all unwanted apps from Dock.
 ## Login Items
 Add these login items (In Settings > Users & Groups > Login Items):
 * Awair Home
-* Aware
 * BetterTouchTool
 * Dash
 * Postgres.app
