@@ -106,6 +106,7 @@ brew install --cask protonvpn
 brew install --cask slack
 brew install --cask tableplus
 brew install --cask visual-studio-code
+brew install --cask whatsapp
 
 # Cargo
 print_header "Installing Cargo Packages"
