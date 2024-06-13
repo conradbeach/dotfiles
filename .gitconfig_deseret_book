@@ -1,9 +1,9 @@
 [user]
 	name = Conrad Beach
-	email = conrad.beach@simplepractice.com
-	signingKey = 5859E0A842FF4ED452F76A71EBFAB5A50A29E6AB
+	email = cbeach@deseretbook.com
+	signingKey = 14DE2B6605BEF670
 [core]
-	excludesfile = /Users/conrad.beach/.gitignore_global
+	excludesfile = /Users/cbeach/.gitignore_global
 	autocrlf = input
 	editor = nvim
 	pager = diff-so-fancy | less --tabs=2 -RFX
@@ -43,11 +43,9 @@
 [commit]
 	verbose = true
 	gpgSign = true
-	template = /Users/conrad.beach/git-commit-template.txt
+	template = /Users/cbeach/git-commit-template.txt
 	cleanup = strip
 [rebase]
 	autosquash = true
 [tag]
 	forceSignAnnotated = true
-[gpg]
-	program = /opt/homebrew/bin/gpg
