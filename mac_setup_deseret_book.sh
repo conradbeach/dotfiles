@@ -272,5 +272,5 @@ done
 # Final Steps
 
 print_header "Final Steps"
-echo "Perform manual setup steps in mac_setup_manual_steps_db.md"
+echo "Perform manual setup steps in mac_setup_manual_steps_deseret_book.md"
 echo "Restart your computer. Some changes won't take affect until you do."
