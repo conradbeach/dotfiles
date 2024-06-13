@@ -154,11 +154,6 @@ alias drt="docker-compose run -e RAILS_ENV=test --rm web rspec --format=document
 ## CPU Profiling
 alias record-cpu-usage="TODAY=`date '+%Y-%m-%d'` && top -l 28800 -ocpu -R -F -s 1 | grep 'CPU usage' --line-buffered | tee -a '~/CPU Usage/raw_data/$TODAY.txt'"
 alias open_am="open -n -a 'Activity Monitor'"
-## Personal
-alias stretch="cd ~/Development/speak_routine && ruby run.rb stretches"
-alias chiro_exercises="cd ~/Development/speak_routine && ruby run.rb chiro_exercises"
-alias chiro_stretches="cd ~/Development/speak_routine && ruby run.rb chiro_stretches"
-alias neck_and_shoulders="cd ~/Development/speak_routine && ruby run.rb neck_and_shoulders"
 
 ## Functions
 
