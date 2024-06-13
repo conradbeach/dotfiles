@@ -1,7 +1,7 @@
 # /Users/conrad/.config/tmuxinator/irms.yml
 
 name: irms
-root: ~/Development/irms-api
+root: ~/development/irms-api
 
 windows:
   - editor: nvim
