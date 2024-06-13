@@ -91,7 +91,7 @@ print_header "Installing Applications via Brew Cask"
 brew install --cask bettertouchtool
 brew install --cask bitwarden
 brew install --cask dash
-brew install --cask homebrew/cask-versions/firefox-developer-edition
+brew install --cask firefox@developer-edition
 brew install --cask gitkraken
 brew install --cask google-chrome
 brew install --cask iterm2
