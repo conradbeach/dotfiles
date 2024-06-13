@@ -9,7 +9,7 @@
 			<key>Capybara</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:41Z</date>
+				<date>2024-06-13T17:25:54Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -27,7 +27,7 @@
 			<key>Emoji</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:41Z</date>
+				<date>2024-06-13T17:25:54Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -43,7 +43,7 @@
 			<key>Git</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:41Z</date>
+				<date>2024-06-13T17:25:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -64,7 +64,7 @@
 			<key>HTTP_Status_Codes_Rails</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:41Z</date>
+				<date>2024-06-13T17:25:54Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -85,7 +85,7 @@
 			<key>PostgreSQL_CLI</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:41Z</date>
+				<date>2024-06-13T17:25:54Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -101,7 +101,7 @@
 			<key>RSpec_Expectations</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:41Z</date>
+				<date>2024-06-13T17:25:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -119,7 +119,7 @@
 			<key>Regular_Expressions</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:41Z</date>
+				<date>2024-06-13T17:25:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -138,7 +138,7 @@
 			<key>Yard</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:41Z</date>
+				<date>2024-06-13T17:25:54Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -156,7 +156,7 @@
 			<key>iTerm2</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:41Z</date>
+				<date>2024-06-13T17:25:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -216,7 +216,7 @@
 			<key>RSpec</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:44Z</date>
+				<date>2024-06-13T17:25:59Z</date>
 				<key>entry</key>
 				<dict>
 					<key>docsetGeneratorSettings</key>
@@ -302,7 +302,7 @@ $("h1").each(function() {
 			<key>ecto</key>
 			<dict>
 				<key>date</key>
-				<date>2024-03-11T14:15:06Z</date>
+				<date>2024-06-13T17:25:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -316,7 +316,7 @@ $("h1").each(function() {
 			<key>httpoison</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:46Z</date>
+				<date>2024-06-13T17:25:58Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -330,7 +330,7 @@ $("h1").each(function() {
 			<key>phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2024-04-15T14:24:54Z</date>
+				<date>2024-06-13T17:25:58Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -344,7 +344,7 @@ $("h1").each(function() {
 			<key>poison</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-10T13:07:53Z</date>
+				<date>2024-06-13T17:25:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -382,7 +382,7 @@ $("h1").each(function() {
 			<key>activeadmin</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-01T12:25:12Z</date>
+				<date>2024-06-13T19:42:10Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -396,7 +396,7 @@ $("h1").each(function() {
 			<key>activerecord-import</key>
 			<dict>
 				<key>date</key>
-				<date>2024-05-19T21:31:06Z</date>
+				<date>2024-06-13T19:42:21Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -410,7 +410,7 @@ $("h1").each(function() {
 			<key>arel</key>
 			<dict>
 				<key>date</key>
-				<date>2024-01-04T14:16:04Z</date>
+				<date>2024-06-13T19:42:26Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -424,7 +424,7 @@ $("h1").each(function() {
 			<key>capybara</key>
 			<dict>
 				<key>date</key>
-				<date>2024-01-29T15:34:01Z</date>
+				<date>2024-06-13T19:42:07Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -438,7 +438,7 @@ $("h1").each(function() {
 			<key>clearance</key>
 			<dict>
 				<key>date</key>
-				<date>2024-05-09T14:42:24Z</date>
+				<date>2024-06-13T19:42:21Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -452,7 +452,7 @@ $("h1").each(function() {
 			<key>devise</key>
 			<dict>
 				<key>date</key>
-				<date>2024-04-15T14:24:56Z</date>
+				<date>2024-06-13T19:42:16Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -466,7 +466,7 @@ $("h1").each(function() {
 			<key>factory_bot</key>
 			<dict>
 				<key>date</key>
-				<date>2024-01-31T20:17:27Z</date>
+				<date>2024-06-13T19:42:10Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -480,7 +480,7 @@ $("h1").each(function() {
 			<key>faker</key>
 			<dict>
 				<key>date</key>
-				<date>2024-05-29T18:57:04Z</date>
+				<date>2024-06-13T19:42:22Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -494,7 +494,7 @@ $("h1").each(function() {
 			<key>hotwire-rails</key>
 			<dict>
 				<key>date</key>
-				<date>2024-01-04T14:16:03Z</date>
+				<date>2024-06-13T17:39:19Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -508,7 +508,7 @@ $("h1").each(function() {
 			<key>jbuilder</key>
 			<dict>
 				<key>date</key>
-				<date>2024-04-30T22:00:18Z</date>
+				<date>2024-06-13T19:42:00Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -522,7 +522,7 @@ $("h1").each(function() {
 			<key>jwt</key>
 			<dict>
 				<key>date</key>
-				<date>2024-03-02T19:40:57Z</date>
+				<date>2024-06-13T19:42:19Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -536,7 +536,7 @@ $("h1").each(function() {
 			<key>rspec</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-12T20:19:00Z</date>
+				<date>2024-06-13T19:42:03Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -550,7 +550,7 @@ $("h1").each(function() {
 			<key>rspec_api_documentation</key>
 			<dict>
 				<key>date</key>
-				<date>2024-01-04T14:16:03Z</date>
+				<date>2024-06-13T19:42:05Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -564,7 +564,7 @@ $("h1").each(function() {
 			<key>shoulda-matchers</key>
 			<dict>
 				<key>date</key>
-				<date>2024-03-17T21:02:56Z</date>
+				<date>2024-06-13T19:42:14Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -713,7 +713,7 @@ $("h1").each(function() {
 			<key>Bulma</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:42Z</date>
+				<date>2024-06-13T17:25:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -737,7 +737,7 @@ $("h1").each(function() {
 			<key>Enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:42Z</date>
+				<date>2024-06-13T17:25:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>authorLinkHref</key>
@@ -755,7 +755,7 @@ $("h1").each(function() {
 			<key>Jest</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:42Z</date>
+				<date>2024-06-13T17:25:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -786,7 +786,7 @@ $("h1").each(function() {
 			<key>RuboCop</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:41Z</date>
+				<date>2024-06-13T17:25:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -809,7 +809,7 @@ $("h1").each(function() {
 			<key>Tailwind_CSS</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-10T13:07:52Z</date>
+				<date>2024-06-13T17:25:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -833,7 +833,7 @@ $("h1").each(function() {
 			<key>Yarn</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:41Z</date>
+				<date>2024-06-13T17:25:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -853,7 +853,7 @@ $("h1").each(function() {
 			<key>Zsh</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:41Z</date>
+				<date>2024-06-13T17:25:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -978,67 +978,67 @@ $("h1").each(function() {
 			<key>http://kapeli.com/feeds/Bash.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:48Z</date>
+				<date>2024-06-13T17:25:57Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/CSS.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:52Z</date>
+				<date>2024-06-13T17:26:16Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Elixir.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:44Z</date>
+				<date>2024-06-13T17:26:03Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/HTML.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:46Z</date>
+				<date>2024-06-13T17:26:01Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/JavaScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:52Z</date>
+				<date>2024-06-13T17:26:07Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Lo-Dash.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:53Z</date>
+				<date>2024-06-13T17:26:13Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/PostgreSQL.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:53Z</date>
+				<date>2024-06-13T17:26:12Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/React.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:54Z</date>
+				<date>2024-06-13T17:26:13Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby_2.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:57Z</date>
+				<date>2024-06-13T17:26:11Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby_3.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:58Z</date>
+				<date>2024-06-13T17:26:21Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby_on_Rails_7.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-11T21:21:08Z</date>
+				<date>2024-06-13T17:26:23Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Rust.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:01:03Z</date>
+				<date>2024-06-13T17:26:19Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/jQuery.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2023-12-29T23:00:53Z</date>
+				<date>2024-06-13T17:26:12Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
