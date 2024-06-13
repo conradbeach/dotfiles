@@ -6,6 +6,9 @@
 ## OS Settings
 - [ ] Confirm MacOS settings were applied correctly by the setup script
 
+### iCloud
+- [ ] Sign into iCloud
+
 ### Network
 - [ ] Enable Firewall
 
@@ -20,6 +23,7 @@
 - [ ] Set Sound to "Always Show in Menu Bar"
 
 #### Other Modules
+- [ ] Set Battery to "Show Percentage".
 - [ ] Set Music Recognition to "Always Show in Control Center"
 
 #### Menu Bar Only
@@ -71,9 +75,6 @@
 - [ ] Change Mission Control to four fingers.
 - [ ] Change App Expose to four fingers.
 
-### Battery
-- [ ] Check "Show Percentage".
-
 ### Touch ID
 - [ ] Set up Touch ID.
 
@@ -93,11 +94,14 @@
 ## Application Changes
 * [ ] Xcode
   * Install this first since it's huge.
+* [ ] Authy
+  * Install the iPad version from Mac App Store.
 * [ ] Awair Home
   * Install the iOS version from the Mac App Store.
 * [ ] BetterTouchTool
   * Load license. (In iCloud Drive > Software Licenses and Such.)
   * Load configuration. (In this repo.)
+  * Install process priority helper tool.
 * [ ] Bitdefender Virus Scanner
   * [Install it manually.](https://www.bitdefender.com/solutions/virus-scanner-for-mac.html)
 * [ ] Dash
@@ -106,7 +110,7 @@
   * Set up snippets. (In this repo at ./Dash/Snippets.dash)
   * Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
 * [ ] iTerm
-  * Load configuration. (In this repo. Change in Settings > General > Preferences)
+  * Load configuration. (In this repo. Change in Settings > General > Settings)
 * [ ] Firefox Developer Edition
   * Sign in with Firefox account.
 * [ ] Messages
@@ -136,6 +140,6 @@ Add these login items (In Settings > Users & Groups > Login Items):
 * Activity Monitor
 * BetterTouchTool
 * Dash
-* Outlook
+* Microsoft Outlook
+* Microsoft Teams
 * Postgres.app
-* Teams
