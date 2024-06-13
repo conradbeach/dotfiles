@@ -22,7 +22,7 @@ ln -sf ~/development/dotfiles/.ctags ~
 ln -sf ~/development/dotfiles/.default-gems ~
 ln -sf ~/development/dotfiles/.default-npm-packages ~
 ln -sf ~/development/dotfiles/.fzf.zsh ~
-ln -sf ~/development/dotfiles/.gitconfig ~
+ln -sf ~/development/dotfiles/.gitconfig_deseret_book ~/.gitconfig
 ln -sf ~/development/dotfiles/.gitignore_global ~
 ln -sf ~/development/dotfiles/.irbrc ~
 ln -sf ~/development/dotfiles/.pryrc ~
