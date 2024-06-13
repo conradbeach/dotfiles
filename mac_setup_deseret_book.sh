@@ -50,7 +50,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 print_header "Installing Brew Packages"
 brew install ack
 brew install bat
-brew tap homebrew/cask
 brew install cmake
 brew install ctags
 brew install diff-so-fancy
