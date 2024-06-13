@@ -136,4 +136,6 @@ Add these login items (In Settings > Users & Groups > Login Items):
 * Activity Monitor
 * BetterTouchTool
 * Dash
+* Outlook
 * Postgres.app
+* Teams
