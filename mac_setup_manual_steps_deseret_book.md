@@ -143,3 +143,4 @@ Add these login items (In Settings > Users & Groups > Login Items):
 * Microsoft Outlook
 * Microsoft Teams
 * Postgres.app
+* WhatsApp
