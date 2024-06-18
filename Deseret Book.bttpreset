@@ -57,7 +57,7 @@
     "BSTDontShowSnapAreasWhileModMoving" : 0,
     "BTTDrawingAreaHeight" : 626,
     "BTTLeaveSystemAppsInControlStrip" : true,
-    "BTTNumberOfStarts" : 24399,
+    "BTTNumberOfStarts" : 24413,
     "BTTTouchBarHapticFeedback" : 1,
     "BTTStageManagerLeftSnappingAreaIncreasePercentage" : 0.125,
     "showKeyboardTab" : true,
@@ -100,7 +100,7 @@
     "BTTDefaultTBIconWidth" : 22,
     "BTTTiltWheelDelay" : 0.44999998807907104,
     "BTTNotchBarNotchWidgetModeShowOriginalStatusIcons" : false,
-    "BTTClipboardFrame" : "{{399, 131}, {1130, 721}}",
+    "BTTClipboardFrame" : "{{382, 131}, {1130, 721}}",
     "BTTNotchBarNotchMenubarModeHideLeftScrollable" : true,
     "BTTNotchBarNotchWidgetModeHideRightFixed" : false,
     "showSiriRemoteTab" : true,
@@ -128,7 +128,7 @@
     "BSTMoveTreshold" : 2,
     "BTTLastScreenshotDateFormat" : "yyyy-MM-dd HH.mm.ss a",
     "BTTStageManagerIncreaseEvenIfHiding" : true,
-    "BTTLastClamshellState" : true,
+    "BTTLastClamshellState" : false,
     "BTTTwoFingerTipTapMinSpread" : 0.029999999999999999,
     "showTouchBarTab" : true,
     "BTTNotchBarNotchWidgetModeHideLeftScrollable" : false,
@@ -210,8 +210,24 @@
     "BSTSnapAreaDefaultShowPictogram" : false,
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "1A7B4A35-9AC1-473E-A366-955D0B0C5702",
+  "BTTPresetUUID" : "C5AE7734-98ED-4EB8-93C3-C87611637B9A",
   "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "BT.L",
+      "BTTAppName" : "Recently Used",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
     {
       "BTTAppBundleIdentifier" : "BT.G",
       "BTTAppName" : "Global",
@@ -222,45 +238,45 @@
       "BTTTriggers" : [
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1718393221.8303971,
+          "BTTLastUpdatedAt" : 1718744164.69786,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "91B6DC2D-8E26-41F6-873B-54059F5C4210",
+          "BTTUUID" : "65986E53-71A2-4974-97A5-33017B6A580D",
           "BTTPredefinedActionType" : 366,
           "BTTPredefinedActionName" : "Empty Placeholder",
           "BTTAdditionalConfiguration" : "1572904",
-          "BTTKeyboardShortcutKeyboardType" : 1116,
+          "BTTKeyboardShortcutKeyboardType" : 0,
           "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "l",
+          "BTTLayoutIndependentChar" : "p",
           "BTTEnabled" : 1,
           "BTTEnabled2" : 1,
-          "BTTShortcutKeyCode" : 37,
+          "BTTShortcutKeyCode" : 35,
           "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 10,
+          "BTTOrder" : 1,
           "BTTAutoAdaptToKeyboardLayout" : 0,
           "BTTAdditionalActions" : [
             {
               "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1718392982.5186291,
-              "BTTTriggerParentUUID" : "91B6DC2D-8E26-41F6-873B-54059F5C4210",
+              "BTTLastUpdatedAt" : 1718744177.9561481,
+              "BTTTriggerParentUUID" : "65986E53-71A2-4974-97A5-33017B6A580D",
               "BTTIsPureAction" : true,
               "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "9974AA6A-985A-4956-979D-521D1455185E",
+              "BTTUUID" : "355151C0-5457-4396-BC3E-A976DA3361B9",
               "BTTPredefinedActionType" : 49,
               "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
-              "BTTLaunchPath" : "\/Applications\/Microsoft Outlook.app",
+              "BTTLaunchPath" : "\/Applications\/Linear.app",
               "BTTKeyboardShortcutKeyboardType" : 0,
               "BTTEnabled" : 1,
               "BTTEnabled2" : 1,
               "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 10,
+              "BTTOrder" : 34,
               "BTTAutoAdaptToKeyboardLayout" : 0
             }
           ]
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1718393225.2110581,
+          "BTTLastUpdatedAt" : 1718744161.2881651,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "4A438EB0-6362-4E5C-A626-18A2B424944B",
@@ -274,7 +290,7 @@
           "BTTEnabled2" : 1,
           "BTTShortcutKeyCode" : 1,
           "BTTShortcutModifierKeys" : 1572864,
-          "BTTOrder" : 16,
+          "BTTOrder" : 18,
           "BTTAutoAdaptToKeyboardLayout" : 0,
           "BTTAdditionalActions" : [
             {
@@ -295,23 +311,45 @@
               "BTTAutoAdaptToKeyboardLayout" : 0
             }
           ]
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1718744161.288233,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "91B6DC2D-8E26-41F6-873B-54059F5C4210",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTAdditionalConfiguration" : "1572904",
+          "BTTKeyboardShortcutKeyboardType" : 1116,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "l",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTShortcutKeyCode" : 37,
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 11,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1718392982.5186291,
+              "BTTTriggerParentUUID" : "91B6DC2D-8E26-41F6-873B-54059F5C4210",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "9974AA6A-985A-4956-979D-521D1455185E",
+              "BTTPredefinedActionType" : 49,
+              "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
+              "BTTLaunchPath" : "\/Applications\/Microsoft Outlook.app",
+              "BTTKeyboardShortcutKeyboardType" : 0,
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 10,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
         }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "com.apple.finder",
-      "BTTAppName" : "Finder",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "BT.L",
-      "BTTAppName" : "Recently Used",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-
       ]
     }
   ],
