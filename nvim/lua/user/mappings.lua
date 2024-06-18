@@ -43,6 +43,7 @@ return {
     -- Yank file paths to clipboard
     ["<leader>y"] = {
       desc = "Yank",
+      f = { "<cmd>let @+=expand('%:t')<cr>", "File name" },
       p = { "<cmd>let @+=expand('%:p')<cr>", "File path" },
       r = { "<cmd>let @+=expand('%')<cr>", "Relative path" },
     },
