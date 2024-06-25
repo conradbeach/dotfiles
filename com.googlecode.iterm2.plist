@@ -2241,6 +2241,8 @@
 	<true/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
+	<key>ShowSecureKeyboardEntryIndicator</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StretchTabsToFillBar</key>
@@ -2255,6 +2257,8 @@
 	<integer>4</integer>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>WarnAboutSecureKeyboardInputWithOpenCommand</key>
+	<true/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findMode_iTerm</key>
