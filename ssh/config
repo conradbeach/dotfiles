@@ -2,3 +2,11 @@ Host *
  AddKeysToAgent yes
  UseKeychain yes
  IdentityFile ~/.ssh/id_ed25519
+
+Host irms-stage
+  Hostname 18.237.125.34
+  User ubuntu
+ 
+Host irms-production
+  Hostname 35.89.205.4
+  User ubuntu
