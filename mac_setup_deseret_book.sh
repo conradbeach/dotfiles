@@ -58,8 +58,8 @@ brew install fd
 brew install fzf
 $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
 brew install git
-brew install gnupg
 brew install gnu-sed
+brew install gnupg
 brew install imagemagick
 brew install neovim
 brew install pinentry-mac
@@ -95,6 +95,7 @@ brew install --cask firefox@developer-edition
 brew install --cask gitkraken
 brew install --cask google-chrome
 brew install --cask iterm2
+brew install --cask linear-linear
 brew install --cask numi
 brew install --cask obsidian
 brew install --cask postgres-unofficial
