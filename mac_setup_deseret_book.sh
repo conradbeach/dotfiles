@@ -102,7 +102,6 @@ brew install --cask postgres-unofficial
 brew install --cask postman
 brew install --cask tableplus
 brew install --cask visual-studio-code
-brew install --cask whatsapp
 
 # Cargo
 print_header "Installing Cargo Packages"
