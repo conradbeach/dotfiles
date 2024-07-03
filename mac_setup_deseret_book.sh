@@ -183,6 +183,9 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 gpg --list-keys
 ln -sf ~/development/dotfiles/gpg-agent.conf ~/.gnupg/
 
+# Power Schedule
+## Set the computer to start up at 7:30 AM and shut down at 4:30 PM
+sudo pmset repeat wakeorpoweron MTWRF 07:30:00 shutdown MTWRF 16:30:00
 
 # MacOS Settings
 
