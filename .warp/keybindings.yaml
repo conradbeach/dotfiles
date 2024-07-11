@@ -1,0 +1,12 @@
+---
+"pane_group:navigate_down": shift-cmd-J
+"input:clear_screen": none
+"pane_group:navigate_up": shift-cmd-K
+"editor_view:backspace": none
+"ai_assistant_panel:reset_context": none
+"input:open_completion_suggestions": ctrl-space
+"editor_view:cut_all_right": none
+"editor_view:insert_newline": none
+"pane_group:navigate_left": shift-cmd-H
+"pane_group:navigate_right": shift-cmd-L
+"editor_view:insert_autosuggestion": tab

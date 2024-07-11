@@ -33,6 +33,7 @@ ln -sf ~/development/dotfiles/.rubocop.yml ~
 ln -sf ~/development/dotfiles/.solargraph.yml ~/.config/solargraph/config.yml
 ln -sf ~/development/dotfiles/.tmux.conf ~
 ln -sf ~/development/dotfiles/.tool-versions ~
+ln -sf ~/Development/dotfiles/.warp ~ 
 ln -sf ~/development/dotfiles/.zshrc ~
 ln -sf ~/development/dotfiles/git-commit-template.txt ~
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
@@ -101,6 +102,7 @@ brew install --cask obsidian
 brew install --cask postgres-unofficial
 brew install --cask postman
 brew install --cask tableplus
+brew install --cask warp
 brew install --cask visual-studio-code
 
 # Cargo
