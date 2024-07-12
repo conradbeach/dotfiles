@@ -91,6 +91,7 @@ return {
     lazy = false,
     config = function()
       require("supermaven-nvim").setup({
+        log_level = "warn",
         keymaps = {
           accept_suggestion = "<C-l>",
           accept_word = "<C-o>",
