@@ -72,7 +72,7 @@ return {
     -- Switch to last active tab configured in init.lua
 
     -- Terminal
-    ["<C-n>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+    ["<C-f>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
 
     -- VSCode
     ["<leader>K"] = { "<cmd>!code %<cr>", desc = "Open File in VSCode" },
@@ -159,7 +159,7 @@ return {
     }
   },
   t = {
-    ["<C-n>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+    ["<C-f>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
   },
   x = {
     -- CopilotChat.nvim
