@@ -1369,11 +1369,15 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>6ED8945F-1BAE-4E94-B937-75922D828FBD</string>
+	<key>DoubleClickPerformsSmartSelection</key>
+	<true/>
 	<key>EnableAPIServer</key>
 	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
+	<key>NeverBlockSystemShutdown</key>
 	<true/>
 	<key>New Bookmarks</key>
 	<array>
@@ -2262,7 +2266,7 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findMode_iTerm</key>
-	<integer>4</integer>
+	<integer>0</integer>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
