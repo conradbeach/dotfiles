@@ -84,6 +84,8 @@ return {
     end,
   },
 
+  { "mrjones2014/smart-splits.nvim", lazy = false },
+
   { "AndrewRadev/splitjoin.vim", lazy = false },
 
   {
