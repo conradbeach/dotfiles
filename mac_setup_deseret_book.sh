@@ -88,6 +88,7 @@ brew install --cask font-hack-nerd-font
 
 ## Applications
 print_header "Installing Applications via Brew Cask"
+brew install --cask amazon-q
 brew install --cask bettertouchtool
 brew install --cask bitwarden
 brew install --cask dash

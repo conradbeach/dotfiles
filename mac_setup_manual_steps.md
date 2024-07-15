@@ -98,6 +98,8 @@
 ## Application Changes
 * [ ] Xcode
   * Install this first since it's huge.
+* [ ] Amazon Q
+  * Sign in with AWS Builder account.
 * [ ] Authy
   * Install the iPad version from Mac App Store.
 * [ ] Awair Home
