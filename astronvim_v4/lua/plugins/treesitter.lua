@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Treesitter
 
 ---@type LazySpec
@@ -7,9 +5,15 @@ return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
     ensure_installed = {
+      "css",
+      "diff",
+      "html",
+      "javascript",
+      "json",
       "lua",
-      "vim",
-      -- add more arguments for adding more treesitter parsers
+      "markdown",
+      "ruby",
     },
+    indent = { enable = false }, -- I was having some annoying issues with incorrect indentation; turning this off seems to have resolved it.
   },
 }
