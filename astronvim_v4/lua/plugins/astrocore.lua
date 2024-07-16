@@ -160,6 +160,9 @@ return {
           }
         }
       },
+      v = {
+        ["<leader>fv"] = { "<cmd>lua require('telescope-live-grep-args.shortcuts').grep_visual_selection()<cr>", desc = "Find word in visual selection" },
+      },
       t = {
         ["<C-f>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
       },
