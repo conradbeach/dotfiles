@@ -126,7 +126,7 @@ return {
         ["<Leader>ac"] = { ":TabnineChatClose<cr>", desc = "Close Tabnine Chat" },
 
         -- nvim-telescope/telescope.nvim
-        ["<Leader>fc"] = { require("telescope-live-grep-args.shortcuts").grep_word_under_cursor, desc = "Find word under cursor" },
+        ["<Leader>fc"] = { "<cmd>lua require('telescope-live-grep-args.shortcuts').grep_word_under_cursor()<cr>", desc = "Find word under cursor" },
         ["<Leader>fp"] = {
           function() require("telescope.builtin").find_files { find_command = { "rg", "--files", "--glob", "spec/fixtures/vcr_cassettes/**", "--glob", "**/__snapshots__/**" } } end,
           desc = "Find snapshots",
