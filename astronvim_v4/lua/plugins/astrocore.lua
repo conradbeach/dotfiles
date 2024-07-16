@@ -17,21 +17,22 @@ return {
         wrap = true, -- sets vim.opt.wrap
       },
     },
-    -- Mappings can be configured through AstroCore as well.
-    -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
+    -- These tables are a direct conversion to the vim.keymap.set({mode}, {lhs}, {rhs}, {opts}) Lua API.
+    -- The first key into the table is the {mode}, the second key into the table is the {lhs}, and the
+    -- element there is the {opts} table with the {rhs} in the first key.
+    -- Keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
     mappings = {
       -- first key is the mode
       n = {
         -- second key is the lefthand side of the map
 
         -- Remove some mappings I don't want.
-        ["<Leader>c"] = false, -- Close buffer. I don't worry about buffers.
         ["<Leader>C"] = false, -- Force close buffer. I don't worry about buffers.
         ["<Leader>h"] = false, -- Home screen. I won't use this.
-        ["<Leader>n"] = false, -- New file. I have a different flow.
-        ["<Leader>q"] = false, -- Quit. Just use :q.
-        ["<Leader>/"] = false, -- Comment toggle. It doesn't take a count, so I'd rather just use `gcc`.
+        ["<Leader>/"] = false, -- Comment toggle. I'd rather just use `gcc`.
         ["<Leader>tp"] = false, -- Remove Python ToggleTerm binding. I will never use this.
+        ["<Leader>tv"] = false, -- Remove ToggleTerm vertical split binding. I will never use this.
+        ["<Leader>th"] = false, -- Remove ToggleTerm horizontal split binding. I will never use this.
 
         -- First character bindings
         ["^"] = "0", -- Make the easier "0" key move to the first character in the line.
@@ -46,23 +47,24 @@ return {
         ["]e"] = { "<cmd>m +1<cr>", desc = "Move line down" },
 
         -- Yank file paths to clipboard
-        ["<Leader>y"] = {
-          desc = "Yank",
-          f = { "<cmd>let @+=expand('%:t')<cr>", "File name" },
-          p = { "<cmd>let @+=expand('%:p')<cr>", "File path" },
-          r = { "<cmd>let @+=expand('%')<cr>", "Relative path" },
-        },
+        ["<Leader>y"] = { "", desc = "Yank" },
+        ["<Leader>yf"] = { "<cmd>let @+=expand('%:t')<cr>", desc = "File name" },
+        ["<Leader>yp"] = { "<cmd>let @+=expand('%:p')<cr>", desc = "File path" },
+        ["<Leader>yr"] = { "<cmd>let @+=expand('%')<cr>", desc = "Relative path" },
 
         -- Panes
         ["<Leader>z"] = { "<cmd>wincmd |<cr>", desc = "Zoom Pane" },
 
         -- Manipulating tabs
+        ["<Leader>n"] = { "", desc = "New" },
         ["<Leader>nt"] = { "<cmd>tabnew<cr>", desc = "New Tab"},
         ["<Leader>nf"] = { "<cmd>enew<cr>", desc = "New File" },
+        ["<Leader>c"] = { "", desc = "Close" },
         ["<Leader>ct"] = { "<cmd>tabclose<cr>", desc = "Close Tab"},
+        ["<Leader>ce"] = { "<cmd>on<cr><cmd>tabonly<cr>", desc = "Close Everything Else"},
+        ["<Leader>co"] = { "", desc = "Close Other" },
         ["<Leader>cot"] = { "<cmd>tabonly<cr>", desc = "Close Other Tabs" },
-        ["<Leader>on"] = { "<cmd>on<cr>", desc = "Close Other Windows"},
-        ["<Leader>ce"] = { "<cmd>on<cr><cmd>tabonly<cr>", desc = "Close Other Tabs & Windows"},
+        ["<Leader>cow"] = { "<cmd>on<cr>", desc = "Close Other Windows"},
 
         -- Navigating tabs
         ["<Leader>1"] = { "1gt", desc = "Go to Tab 1" },
@@ -74,7 +76,7 @@ return {
         ["<Leader>7"] = { "7gt", desc = "Go to Tab 7" },
         ["<Leader>8"] = { "8gt", desc = "Go to Tab 8" },
         ["<Leader>9"] = { "9gt", desc = "Go to Tab 9" },
-        -- Switch to last active tab configured in init.lua
+        -- Switch to last active tab configured in polish.lua
 
         -- Terminal
         ["<C-f>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
@@ -84,46 +86,26 @@ return {
 
         ------------- Plugins -------------
 
-        -- CopilotChat.nvim
-        ["<Leader>a"] = {
-          desc = "Copilot Chat",
-          -- Toggle Copilot Chat
-          v = { "<cmd>CopilotChatToggle<cr>", "Toggle" },
-          -- Code related commands
-          e = { "<cmd>CopilotChatExplain<cr>", "Explain code" },
-          t = { "<cmd>CopilotChatTests<cr>", "Generate tests" },
-          r = { "<cmd>CopilotChatReview<cr>", "Review code" },
-          R = { "<cmd>CopilotChatRefactor<cr>", "Refactor code" },
-          n = { "<cmd>CopilotChatBetterNaming<cr>", "Better Naming" },
-          -- Fix the issue with diagnostic
-          f = { "<cmd>CopilotChatFixDiagnostic<cr>", "Fix Diagnostic" },
-          -- Clear buffer and chat history
-          l = { "<cmd>CopilotChatReset<cr>", "Clear buffer and chat history" },
-          -- Debug
-          d = { "<cmd>CopilotChatDebugInfo<cr>", "Debug Info" },
-        },
-
         -- ggandor/leap.nvim
         ["<Leader>w"] = { "<Plug>(leap-forward-to)", desc = "Leap Forward" },
         ["<Leader>W"] = { "<Plug>(leap-backward-to)", desc = "Leap Backward" },
-        ["<Leader>xw"] = { "<Plug>(leap-cross-window)", desc = "Leap Across Window" },
+        ["<Leader>X"] = { "<Plug>(leap-cross-window)", desc = "Leap Across Window" },
 
         -- nvim-tree/nvim-tree.lua
         ["<Leader>e"] = { "<cmd>NvimTreeToggle<cr>", desc = "Toggle Explorer" },
         ["<Leader>fe"] = { "<cmd>NvimTreeFindFile<cr>", desc = "Find File in Explorer" },
-        ["<Leader>ne"] = { "<cmd>tabnew<cr><cmd>NvimTreeOpen<cr>", desc = "Explorer in New Tab" },
+        ["<Leader>ne"] = { "<cmd>tabnew<cr><cmd>NvimTreeOpen<cr>", desc = "New Tab with Explorer" },
 
         -- nvim-pack/nvim-spectre
-        ["<Leader>fs"] = {
-          desc = "Search and Replace",
-          g = { "<cmd>lua require('spectre').open()<cr>", "Global Search & Replace" },
-          f = { "viw<cmd>lua require('spectre').open_file_search()<cr>", "File Search & Replace" },
-          w = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", "Search & Replace Current Word" },
-        },
+        ["<Leader>fs"] = { "", desc = "Search and Replace" },
+        ["<Leader>fsg"] = { "<cmd>lua require('spectre').open()<cr>", desc = "Global Search & Replace" },
+        ["<Leader>fsf"] = { "<cmd>lua require('spectre').open_file_search()<cr>", desc = "File Search & Replace" },
+        ["<Leader>fsw"] = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", desc = "Search & Replace Current Word" },
 
         -- codota/tabnine-nvim
-        ["<Leader>aa"] = { ":TabnineChat<cr>", desc = "Open Tabnine Chat" },
-        ["<Leader>ac"] = { ":TabnineChatClose<cr>", desc = "Close Tabnine Chat" },
+        ["<Leader>a"] = { "", desc = "AI Chat" },
+        ["<Leader>ao"] = { "<cmd>TabnineChat<cr>", desc = "Open Tabnine Chat" },
+        ["<Leader>ac"] = { "<cmd>TabnineChatClose<cr>", desc = "Close Tabnine Chat" },
 
         -- nvim-telescope/telescope.nvim
         ["<Leader>fc"] = { "<cmd>lua require('telescope-live-grep-args.shortcuts').grep_word_under_cursor()<cr>", desc = "Find word under cursor" },
@@ -137,30 +119,23 @@ return {
         ["<Leader>fu"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undotree" },
 
         -- vim-test/vim-test
-        -- Strategy and other executables are configured in polish.lua
-        ["<Leader>t"] = {
-          desc = "Tests",
-          n = { "<cmd>TestNearest<cr>", "Test Nearest"},
-          f = { "<cmd>TestFile<cr>", "Test File"},
-          s = { "<cmd>TestSuite<cr>", "Test Suite"},
-          l = { "<cmd>TestLast<cr>", "Test Last"},
-          d = {
-            desc = "Dry Run",
-            n = { "<cmd>TestNearest --dry-run<cr>", "Test Nearest Dry Run"},
-            f = { "<cmd>TestFile --dry-run<cr>", "Test File Dry Run"},
-            s = { "<cmd>TestSuite --dry-run<cr>", "Test Suite Dry Run"},
-          },
-          o = {
-            desc = "Only",
-            f = { '<cmd>TermExec cmd="bundle exec rspec --only-failures --format=documentation"<cr>', "Test Only Failures"},
-            o = {
-              desc = "Only One",
-              f = { '<cmd>TermExec cmd="bundle exec rspec --next-failure --format=documentation"<cr>', "Test Only One Failure"},
-            },
-          }
-        }
+        -- Strategy and executable are configured in polish.lua
+        ["<Leader>t"] = { "", desc = "Tests" },
+        ["<Leader>tn"] = { "<cmd>TestNearest<cr>", desc = "Test Nearest"},
+        ["<Leader>tf"] = { "<cmd>TestFile<cr>", desc = "Test File"},
+        ["<Leader>ts"] = { "<cmd>TestSuite<cr>", desc = "Test Suite"},
+        ["<Leader>tl"] = { "<cmd>TestLast<cr>", desc = "Test Last"},
+        ["<Leader>td"] = { "", desc = "Dry Run" },
+        ["<Leader>tdn"] = { "<cmd>TestNearest --dry-run<cr>", desc = "Test Nearest Dry Run"},
+        ["<Leader>tdf"] = { "<cmd>TestFile --dry-run<cr>", desc = "Test File Dry Run"},
+        ["<Leader>tds"] = { "<cmd>TestSuite --dry-run<cr>", desc = "Test Suite Dry Run"},
+        ["<Leader>to"] = { "", desc = "Only" },
+        ["<Leader>tof"] = { "<cmd>TermExec cmd='bundle exec rspec --only-failures --format=documentation'<cr>", desc = "Test Only Failures"},
+        ["<Leader>too"] = { "", desc = "Only One" },
+        ["<Leader>toof"] = { '<cmd>TermExec cmd="bundle exec rspec --next-failure --format=documentation"<cr>', desc = "Test Only One Failure"},
       },
       v = {
+        ["<Leader>f"] = { "", desc = "Find" },
         ["<leader>fv"] = { "<cmd>lua require('telescope-live-grep-args.shortcuts').grep_visual_selection()<cr>", desc = "Find word in visual selection" },
       },
       t = {
