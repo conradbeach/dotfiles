@@ -2,6 +2,9 @@
 -- things like custom filetypes. This just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
 
+-- TODO: According to the [migraiton guide](https://docs.astronvim.com/configuration/v4_migration/),
+-- there are new `autocmds` and `commands` keys that can be used for the below configuration.
+
 -- Switch to last active tab.
 vim.api.nvim_create_autocmd("TabLeave",  {
     pattern = "*",
