@@ -134,13 +134,6 @@ return {
 
   { "nvim-telescope/telescope-live-grep-args.nvim" },
 
-  {
-    "folke/todo-comments.nvim",
-    lazy = false,
-    dependencies = { "nvim-lua/plenary.nvim" },
-    opts = {},
-  },
-
   { "mbbill/undotree", lazy = false },
 
   { "tpope/vim-rails", lazy = false },

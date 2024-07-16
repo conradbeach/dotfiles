@@ -133,9 +133,6 @@ return {
         },
         ["<Leader>fw"] = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", desc = "Find words" },
 
-        -- folke/todo-comments.nvim
-        ["<Leader>fd"] = { ":TodoTelescope<cr>", desc = "Find TODOs, etc." },
-
         -- mbbill/undotree
         ["<Leader>fu"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undotree" },
 
