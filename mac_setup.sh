@@ -154,7 +154,7 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zs
 
 
 # Neovim
-ln -sf ~/development/dotfiles/astronvim_v4 ~/.config/astronvim_v4
+ln -sf ~/development/dotfiles/astronvim ~/.config/nvim
 nvim  --headless -c 'quitall'
 
 pip3 install pynvim
