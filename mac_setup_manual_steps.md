@@ -1,12 +1,14 @@
 # Manual Mac Setup
 
 ## Files
-- [ ] Copy '~/Downloads' folder from Time Machine backup onto this machine.
-- [ ] Copy relevant projects onto this machine from the '~/development' folder from Time Machine backup.
+- [ ] Copy '~/Downloads' folder from previous machine onto this machine.
+- [ ] Copy relevant projects in '~/development' from previous machine onto this machine.
 
 ## OS Settings
-
 - [ ] Confirm MacOS settings were applied correctly by the setup script
+
+### iCloud
+- [ ] Sign into iCloud
 
 ### Network
 - [ ] Enable Firewall
@@ -14,10 +16,6 @@
 ### General
 #### Software Update
 - [ ] In Automatic Updates, enable "Install macOS updates".
-
-#### Time Machine
-- [ ] Set up back up disk.
-- [ ] Set it to back up automatically daily.
 
 ### Control Center
 #### Control Center Modules
@@ -40,7 +38,7 @@
 #### Sensitive Content Warning
 - [ ] Enable
 - [ ] Enable for all available apps.
-- [ ] Enable "Improve Sensitive Content Warning"
+- [ ] Enable "Improve Sensitive Content Warning" if this is a personal machine.
 
 ### Desktop and Dock
 #### Widgets
@@ -150,4 +148,7 @@ Add these login items (In Settings > Users & Groups > Login Items):
 * Activity Monitor
 * BetterTouchTool
 * Dash
+* Microsoft Outlook if this is a Deseret Book machine.
+* Microsoft Teams if this is a Deseret Book machine.
 * Postgres.app
+* WhatsApp if this is a personal machine.

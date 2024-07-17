@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # This script is meant to be idempotent and should be safe to run multiple times.
+#
+# To install Deseret Book tooling, set the DESERET_BOOK environment variable.
+# e.g. DESERET_BOOK=true ./mac_setup.sh
 
 function print_header() {
   echo "**************************************************************************"
@@ -8,6 +11,13 @@ function print_header() {
   echo "**************************************************************************"
 }
 
+function is_deseret_book() {
+  if [[ -n "$DESERET_BOOK" ]]; then
+    return 0
+  else
+    return 1
+  fi
+}
 
 # Link Files
 print_header "Symlinking Files"
@@ -15,7 +25,7 @@ mkdir ~/.config
 mkdir ~/.config/solargraph
 mkdir ~/.ssh/
 ln -sf ~/development/dotfiles/ssh/config ~/.ssh/
-ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/
+if ! is_deseret_book; then ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/; fi
 ln -sf ~/development/dotfiles/tmuxinator ~/.config
 ln -sf ~/development/dotfiles/.agignore ~
 ln -sf ~/development/dotfiles/.asdfrc ~
@@ -23,7 +33,11 @@ ln -sf ~/development/dotfiles/.ctags ~
 ln -sf ~/development/dotfiles/.default-gems ~
 ln -sf ~/development/dotfiles/.default-npm-packages ~
 ln -sf ~/development/dotfiles/.fzf.zsh ~
-ln -sf ~/development/dotfiles/.gitconfig ~
+if is_deseret_book; then
+  ln -sf ~/development/dotfiles/.gitconfig_deseret_book ~/.gitconfig
+else
+  ln -sf ~/development/dotfiles/.gitconfig ~
+fi
 ln -sf ~/development/dotfiles/.gitignore_global ~
 ln -sf ~/development/dotfiles/.irbrc ~
 ln -sf ~/development/dotfiles/.pryrc ~
@@ -38,7 +52,6 @@ ln -sf ~/development/dotfiles/.zshrc ~
 ln -sf ~/development/dotfiles/git-commit-template.txt ~
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
 # in a certain way, so I need to link this file after gnupg runs once.
-
 
 # Brew
 print_header "Installing Brew"
@@ -90,24 +103,25 @@ brew install --cask font-hack-nerd-font
 ## Applications
 print_header "Installing Applications via Brew Cask"
 brew install --cask amazon-q
-brew install --cask balenaetcher
+if ! is_deseret_book; then brew install --cask balenaetcher; fi
 brew install --cask bettertouchtool
 brew install --cask bitwarden
 brew install --cask dash
 brew install --cask firefox@developer-edition
-brew install --cask gimp
+if ! is_deseret_book; then brew install --cask gimp; fi
 brew install --cask gitkraken
 brew install --cask google-chrome
 brew install --cask iterm2
+if is_deseret_book; then brew install --cask linear-linear; fi
 brew install --cask numi
 brew install --cask obsidian
 brew install --cask postgres-unofficial
 brew install --cask postman
-brew install --cask protonvpn
-brew install --cask slack
+if ! is_deseret_book; then brew install --cask protonvpn; fi
+if ! is_deseret_book; then brew install --cask slack; fi
 brew install --cask tableplus
 brew install --cask visual-studio-code
-brew install --cask whatsapp
+if ! is_deseret_book; then brew install --cask whatsapp; fi
 
 # Cargo
 print_header "Installing Cargo Packages"
@@ -180,7 +194,11 @@ xcode-select --install
 
 ## SSH
 print_header "Generating an SSH key"
-ssh-keygen -t ed25519 -C "conradbeach@hey.com"
+if is_deseret_book; then
+  ssh-keygen -t ed25519 -C "cbeach@deseretbook.com"
+else
+  ssh-keygen -t ed25519 -C "conradbeach@hey.com"
+fi
 eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 
@@ -188,6 +206,11 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 gpg --list-keys
 ln -sf ~/development/dotfiles/gpg-agent.conf ~/.gnupg/
 
+# Power Schedule
+## Set the computer to start up at 7:30 AM and shut down at 4:30 PM
+if is_deseret_book; then
+  sudo pmset repeat wakeorpoweron MTWRF 07:30:00 shutdown MTWRF 16:30:00
+fi
 
 # MacOS Settings
 
