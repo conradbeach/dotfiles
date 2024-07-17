@@ -11,7 +11,7 @@ return {
         "cssls",
         "html",
         "lua_ls",
-        "solargraph",
+        "ruby_lsp",
         "stimulus_ls",
         "tailwindcss",
         "tsserver",

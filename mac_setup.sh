@@ -22,7 +22,6 @@ function is_deseret_book() {
 # Link Files
 print_header "Symlinking Files"
 mkdir ~/.config
-mkdir ~/.config/solargraph
 mkdir ~/.ssh/
 ln -sf ~/development/dotfiles/ssh/config ~/.ssh/
 if ! is_deseret_book; then ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/; fi
@@ -45,7 +44,6 @@ ln -sf ~/development/dotfiles/.psqlrc ~
 ln -sf ~/development/dotfiles/.reek.yml ~
 ln -sf ~/development/dotfiles/.rspec ~
 ln -sf ~/development/dotfiles/.rubocop.yml ~
-ln -sf ~/development/dotfiles/.solargraph.yml ~/.config/solargraph/config.yml
 ln -sf ~/development/dotfiles/.tmux.conf ~
 ln -sf ~/development/dotfiles/.tool-versions ~
 ln -sf ~/development/dotfiles/.zshrc ~

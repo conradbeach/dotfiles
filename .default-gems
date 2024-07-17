@@ -12,6 +12,6 @@ rubocop-performance
 rubocop-rails
 rubocop-rspec
 ruby-beautify
+ruby-lsp
 rubycritic
-solargraph
 yard
