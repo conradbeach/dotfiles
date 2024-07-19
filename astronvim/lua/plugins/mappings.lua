@@ -51,6 +51,8 @@ return {
           ["<Leader>co"] = { "", desc = "Close Other" },
           ["<Leader>cot"] = { "<cmd>tabonly<cr>", desc = "Close Other Tabs" },
           ["<Leader>cow"] = { "<cmd>on<cr>", desc = "Close Other Windows"},
+          ["[T"] = { "<cmd>tabm -1<cr>", desc = "Move tab left"},
+          ["]T"] = { "<cmd>tabm +1<cr>", desc = "Move tab right"},
 
           -- Navigating tabs
           ["<Leader>1"] = { "1gt", desc = "Go to Tab 1" },
