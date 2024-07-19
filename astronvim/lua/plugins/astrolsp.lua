@@ -11,5 +11,15 @@ return {
         enabled = false, -- enable or disable format on save globally
       },
     },
+    mappings = {
+      n = {
+        -- Go to definition
+        ["gd"] = { "", desc = "Show the definition of current symbol", cond = "textDocument/definition", },
+        ["gdd"] = { "<cmd>lua vim.lsp.buf.definition()<cr>", desc = "In current window", cond = "textDocument/definition", },
+        ["gdt"] = { "<cmd>tab split | lua vim.lsp.buf.definition()<cr>", desc = "In a new tab", cond = "textDocument/definition", },
+        ["gdv"] = { "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>", desc = "In a vertical split", cond = "textDocument/definition", },
+        ["gdx"] = { "<cmd>split | lua vim.lsp.buf.definition()<cr>", desc = "In a horizontal split", cond = "textDocument/definition", },
+      }
+    },
   },
 }
