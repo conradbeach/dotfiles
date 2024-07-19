@@ -10,6 +10,7 @@ return {
       ensure_installed = {
         "cssls",
         "html",
+        "jsonls",
         "lua_ls",
         "ruby_lsp",
         "stimulus_ls",
