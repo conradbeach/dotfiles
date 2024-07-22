@@ -117,7 +117,7 @@ brew install --cask obsidian
 brew install --cask postgres-unofficial
 brew install --cask postman
 if ! is_deseret_book; then brew install --cask protonvpn; fi
-if ! is_deseret_book; then brew install --cask slack; fi
+brew install --cask slack
 brew install --cask tableplus
 brew install --cask visual-studio-code
 if ! is_deseret_book; then brew install --cask whatsapp; fi
