@@ -64,8 +64,8 @@ return {
     config = function()
       require("focus").setup({
         ui = {
-          cursorline = false, -- Display a cursorline in the focussed window only
-          signcolumn = false, -- Display signcolumn in the focussed window only
+          cursorline = false, -- Display a cursorline in the focused window only
+          signcolumn = false, -- Display signcolumn in the focused window only
         },
       })
     end,
