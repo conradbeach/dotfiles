@@ -41,7 +41,6 @@ ln -sf ~/development/dotfiles/.gitignore_global ~
 ln -sf ~/development/dotfiles/.irbrc ~
 ln -sf ~/development/dotfiles/.pryrc ~
 ln -sf ~/development/dotfiles/.psqlrc ~
-ln -sf ~/development/dotfiles/.reek.yml ~
 ln -sf ~/development/dotfiles/.rspec ~
 ln -sf ~/development/dotfiles/.rubocop.yml ~
 ln -sf ~/development/dotfiles/.tmux.conf ~

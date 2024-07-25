@@ -6,7 +6,6 @@ orbacle
 pry
 pry-doc
 rails
-reek
 rubocop
 rubocop-performance
 rubocop-rails
