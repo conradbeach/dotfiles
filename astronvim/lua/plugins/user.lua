@@ -30,11 +30,11 @@ return {
     "Pocco81/auto-save.nvim",
     lazy = false,
     config = function()
-       require("auto-save").setup {
-          execution_message = {
-            message = ""
-          },
-       }
+      require("auto-save").setup {
+        execution_message = {
+          message = "",
+        },
+      }
     end,
   },
 
@@ -42,17 +42,15 @@ return {
 
   {
     "akinsho/bufferline.nvim",
-    dependencies = 'nvim-tree/nvim-web-devicons',
+    dependencies = "nvim-tree/nvim-web-devicons",
     lazy = false,
     config = function()
-       require("bufferline").setup({
-          options = {
-            mode = "tabs",
-            numbers = function(opts)
-              return string.format('%s)', opts.ordinal)
-            end,
-          },
-       })
+      require("bufferline").setup {
+        options = {
+          mode = "tabs",
+          numbers = function(opts) return string.format("%s)", opts.ordinal) end,
+        },
+      }
     end,
   },
 
@@ -62,12 +60,12 @@ return {
     "nvim-focus/focus.nvim",
     lazy = false,
     config = function()
-      require("focus").setup({
+      require("focus").setup {
         ui = {
           cursorline = false, -- Display a cursorline in the focused window only
           signcolumn = false, -- Display signcolumn in the focused window only
         },
-      })
+      }
     end,
   },
 
@@ -80,14 +78,14 @@ return {
     dependencies = "nvim-tree/nvim-web-devicons", -- optional
     lazy = false,
     config = function()
-      require("nvim-tree").setup({
+      require("nvim-tree").setup {
         view = {
           width = {
             min = 30,
             max = 60,
           },
         },
-      })
+      }
     end,
   },
 
@@ -96,11 +94,11 @@ return {
   {
     "rmehri01/onenord.nvim",
     config = function()
-      require("onenord").setup({
+      require("onenord").setup {
         custom_colors = {
           bg = "#FFFFFF",
         },
-      })
+      }
     end,
   },
 
@@ -110,13 +108,13 @@ return {
     "supermaven-inc/supermaven-nvim",
     lazy = false,
     config = function()
-      require("supermaven-nvim").setup({
+      require("supermaven-nvim").setup {
         log_level = "warn",
         keymaps = {
           accept_suggestion = "<C-l>",
           accept_word = "<C-o>",
         },
-      })
+      }
     end,
   },
 
@@ -124,13 +122,17 @@ return {
     "codota/tabnine-nvim",
     lazy = false,
     build = "./dl_binaries.sh",
-    config = function()
-      require('tabnine').setup({})
-    end,
+    config = function() require("tabnine").setup {} end,
   },
 
-
   { "nvim-telescope/telescope-live-grep-args.nvim" },
+
+  {
+    "akinsho/toggleterm.nvim",
+    opts = {
+      direction = "float",
+    },
+  },
 
   { "mbbill/undotree", lazy = false },
 
