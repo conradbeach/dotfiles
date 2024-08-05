@@ -62,7 +62,6 @@ print_header "Installing Brew Packages"
 brew install ack
 brew install bat
 brew install cmake
-brew install ctags
 brew install diff-so-fancy
 brew install eza
 brew install fd
@@ -71,7 +70,6 @@ $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
 brew install git
 brew install gnu-sed
 brew install gnupg
-brew install imagemagick
 brew install neovim
 brew install pinentry-mac
 brew install pure
