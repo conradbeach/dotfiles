@@ -206,8 +206,9 @@ ln -sf ~/development/dotfiles/gpg-agent.conf ~/.gnupg/
 
 # Power Schedule
 if is_deseret_book; then
-  ## Set the computer to start up at 7:30 AM and shut down at 4:30 PM
-  sudo pmset repeat wakeorpoweron MTWRF 07:30:00 shutdown MTWRF 16:30:00
+  # Set the computer to restart 4:30 PM. This gives me a fresh environment each day, and minimizes the
+  # processes running outside of work hours, but doesn't result in the battery being charged to full.
+  sudo pmset repeat restart MTWRF 16:30:00
 fi
 
 # MacOS Settings
