@@ -28,3 +28,8 @@ vim.api.nvim_command("TabnineDisable") -- I only want chat.
 -- tpope/vim-rails
 -- Open the alternate file in a vertical split even if it doesn't exist.
 vim.cmd("command AC :vsplit | execute 'e ' . eval('rails#buffer().alternate()')")
+
+-- AndrewRadev/splitjoin.vim
+-- Adding these to the mappings table didn't work for some reason.
+vim.api.nvim_set_keymap('n', 'gJ', '<cmd>silent SplitjoinJoin<CR>', {})
+vim.api.nvim_set_keymap('n', 'gS', '<cmd>silent SplitjoinSplit<CR>', {})
