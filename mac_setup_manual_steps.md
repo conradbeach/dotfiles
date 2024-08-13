@@ -136,16 +136,14 @@
 * [ ] Obsidian
   * Symlink files into the Obsidian vault in iCloud Drive. We're doing this
     manually because the path to the vault in iCloud Drive is not typical.
-  * Use Finder to navigate to the Obsidian vault in iCloud Drive and then use
-    the context menu > Services > New iTerm2 Tab Here on the `.obsidian` folder.
-  * ```bash
-    for file in ~/development/dotfiles/.obsidian/*
-    do
-        if [ -f "$file" ] # Check if it's a regular file
-        then
-            ln -sf $file .
-        fi
-    done
+  * Use Finder to navigate to iCloud Drive and then use
+    the context menu > Services > New iTerm2 Tab Here on the "Obsidian" folder.
+  * Then run the following commands:
+    ```bash
+    trash ./.obsidian
+    trash ./.obsidian.vimrc
+    ln -sf ~/development/dotfiles/obsidian/.obsidian .
+    ln -sf ~/development/dotfiles/obsidian/.obsidian.vimrc .
     ```
 * [ ] TablePlus
   * Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
