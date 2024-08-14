@@ -133,18 +133,6 @@
   * Don't allow notifications.
 * [ ] Messages
   * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
-* [ ] Obsidian
-  * Symlink files into the Obsidian vault in iCloud Drive. We're doing this
-    manually because the path to the vault in iCloud Drive is not typical.
-  * Use Finder to navigate to iCloud Drive and then use
-    the context menu > Services > New iTerm2 Tab Here on the "Obsidian" folder.
-  * Then run the following commands:
-    ```bash
-    trash ./.obsidian
-    trash ./.obsidian.vimrc
-    ln -sf ~/development/dotfiles/obsidian/.obsidian .
-    ln -sf ~/development/dotfiles/obsidian/.obsidian.vimrc .
-    ```
 * [ ] TablePlus
   * Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
 * [ ] Visual Studio Code
