@@ -203,6 +203,13 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 gpg --list-keys
 ln -sf ~/development/dotfiles/gpg-agent.conf ~/.gnupg/
 
+# Power Schedule
+if is_deseret_book; then
+  # Set the computer to restart 4:30 PM. This gives me a fresh environment each day, and minimizes the
+  # processes running outside of work hours, but doesn't result in the battery being charged to full.
+  sudo pmset repeat restart MTWRF 07:45:00
+fi
+
 # MacOS Settings
 
 ## Example settings: https://github.com/mathiasbynens/dotfiles/blob/master/.macos
