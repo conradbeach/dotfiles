@@ -3,10 +3,10 @@ Host *
  UseKeychain yes
  IdentityFile ~/.ssh/id_ed25519
 
-Host irms-api-stage
+Host irms-api-util-stage
   Hostname 18.237.125.34
   User ubuntu
  
-Host irms-api-production
+Host irms-api-util-production
   Hostname 35.89.205.4
   User ubuntu
