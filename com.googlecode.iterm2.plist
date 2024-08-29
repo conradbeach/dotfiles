@@ -1377,6 +1377,8 @@
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>Mark Alert Action</key>
+	<string>Post Notification</string>
 	<key>NeverBlockSystemShutdown</key>
 	<true/>
 	<key>New Bookmarks</key>
