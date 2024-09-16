@@ -15,7 +15,7 @@ return {
         "ruby_lsp",
         "stimulus_ls",
         "tailwindcss",
-        "tsserver",
+        "ts_ls",
         "yamlls",
       },
     },
