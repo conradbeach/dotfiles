@@ -508,7 +508,7 @@ $("h1").each(function() {
 			<key>jbuilder</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-13T19:42:00Z</date>
+				<date>2024-09-15T23:13:06Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -522,7 +522,7 @@ $("h1").each(function() {
 			<key>jwt</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-20T02:56:56Z</date>
+				<date>2024-09-15T23:13:07Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
