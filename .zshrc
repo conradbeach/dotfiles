@@ -205,6 +205,14 @@ crs() {
   brakeman --no-pager
 }
 
+# Update Media API Database
+update_media_api_db() {
+  set -o xtrace
+  dropdb bookshelf_development
+  createdb bookshelf_development
+  time taskpolicy -c utility pg_restore -d bookshelf_development -j 6 $1
+}
+
 # Plugins
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
