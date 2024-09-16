@@ -1,0 +1,22 @@
+# /Users/conrad/.config/tmuxinator/media-api.yml
+
+name: media-api
+root: ~/development/media-api
+
+windows:
+  - editor: nvim
+  - console-server:
+      layout: 4abd,255x74,0,0{98x74,0,0,12,156x74,99,0,15}
+      panes:
+        - rails_console:
+          - bundle exec rails console
+        - rails_server:
+          - bundle exec rails server
+  - sidekiq:
+      layout: even-horizontal
+      panes:
+        # Running 2 instances to better mimic staging and production environments.
+        - sidekiq_1:
+          - bundle exec sidekiq
+        - sidekiq_2:
+          - bundle exec sidekiq
