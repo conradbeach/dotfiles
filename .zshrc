@@ -239,11 +239,6 @@ fpath+=$(brew --prefix)/share/zsh/site-functions
 autoload -U promptinit; promptinit
 prompt pure
 
-# asdf
-## This export shouldn't be necessary. It's to workaround this bug: https://github.com/asdf-vm/asdf/issues/1103
-export ASDF_DIR="$(brew --prefix asdf)/libexec"
-. $(brew --prefix asdf)/libexec/asdf.sh
-
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
