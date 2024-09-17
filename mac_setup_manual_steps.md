@@ -145,6 +145,7 @@ Remove all unwanted apps from Dock.
 
 ## AstroNvim
 - [ ] Run :checkhealth.
+- [ ] Create and populate ~/.anthropic_api_key.
 
 ## GPG
 - [ ] Generate a new GPG key. (Follow the GitHub docs: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
