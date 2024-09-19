@@ -82,6 +82,7 @@ brew install tldr
 brew install tmux
 brew install tmuxinator
 brew install trash
+brew install typos-cli
 brew install wget
 brew install yarn
 brew install zsh

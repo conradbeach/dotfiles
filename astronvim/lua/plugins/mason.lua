@@ -16,6 +16,7 @@ return {
         "stimulus_ls",
         "tailwindcss",
         "ts_ls",
+        "typos_lsp",
         "yamlls",
       },
     },
