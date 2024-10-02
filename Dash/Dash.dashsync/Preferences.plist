@@ -809,7 +809,7 @@ $("h1").each(function() {
 			<key>Tailwind_CSS</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-13T17:25:56Z</date>
+				<date>2024-10-01T19:10:00Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -1025,6 +1025,11 @@ $("h1").each(function() {
 				<key>date</key>
 				<date>2024-06-13T17:26:21Z</date>
 			</dict>
+			<key>http://kapeli.com/feeds/Ruby_on_Rails_5.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2024-10-01T20:10:11Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/Ruby_on_Rails_7.xml</key>
 			<dict>
 				<key>date</key>
@@ -1072,11 +1077,6 @@ $("h1").each(function() {
 			<dict>
 				<key>date</key>
 				<date>2021-05-14T21:39:50Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Ruby_on_Rails_5.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2024-06-11T21:21:03Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby_on_Rails_6.xml</key>
 			<dict>
