@@ -104,6 +104,22 @@ return {
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
 
   {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {
+      notify = { enabled = false }, -- Astronvim already handles this.
+      messages = {
+        view_search = false, -- I think I might like this, but it was buggy when I first tried it. Set to "virtualtext" to re-enable.
+      },
+      lsp = {
+        signature = { enabled = false }, -- This was causing a conflict.
+        hover = { enabled = false }, -- This was causing a conflict.
+      },
+    },
+    dependencies = { "MunifTanjim/nui.nvim" },
+  },
+
+  {
     "nvim-tree/nvim-tree.lua",
     dependencies = "nvim-tree/nvim-web-devicons", -- optional
     lazy = false,
