@@ -47,6 +47,11 @@ return {
         -- model = "claude-3-haiku-20240307",
         model = "claude-3-5-sonnet-20240620",
       },
+      mappings = {
+        diff = {
+          cursor = "cu", -- The default `cc` conflicts with my mapping to change the current line.
+        },
+      },
       windows = {
         width = 40, -- default % based on available width
       },
