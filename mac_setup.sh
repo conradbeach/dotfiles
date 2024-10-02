@@ -70,6 +70,7 @@ $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
 brew install git
 brew install gnu-sed
 brew install gnupg
+brew install luarocks
 brew install neovim
 brew install pinentry-mac
 brew install pure
