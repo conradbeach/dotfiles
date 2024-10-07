@@ -6,7 +6,7 @@ root: ~/development/media-api
 windows:
   - editor: nvim
   - console-server:
-      layout: 4abd,255x74,0,0{98x74,0,0,12,156x74,99,0,15}
+      layout: 08be,238x62,0,0{99x62,0,0,13,138x62,100,0,15}
       panes:
         - rails_console:
           - bundle exec rails console
