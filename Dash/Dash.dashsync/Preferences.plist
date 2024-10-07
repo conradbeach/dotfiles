@@ -302,7 +302,7 @@ $("h1").each(function() {
 			<key>ecto</key>
 			<dict>
 				<key>date</key>
-				<date>2024-09-09T14:03:15Z</date>
+				<date>2024-10-07T14:09:42Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -522,7 +522,7 @@ $("h1").each(function() {
 			<key>jwt</key>
 			<dict>
 				<key>date</key>
-				<date>2024-09-23T17:35:12Z</date>
+				<date>2024-10-03T19:10:00Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
