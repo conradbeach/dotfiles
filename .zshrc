@@ -139,6 +139,8 @@ alias gcf="git commit --fixup"
 alias gce="git commit --allow-empty"
 alias gcnv="git commit --no-verify"
 alias gpf="git push --force-with-lease"
+alias gs="git stash"
+alias gsp="git stash pop"
 ## Ember
 alias et="yarn test --serve -f"
 alias ehr_yarn="yarn && cd frontend && yarn && cd .."
