@@ -10,3 +10,13 @@ Host irms-api-util-stage
 Host irms-api-util-production
   Hostname 35.89.205.4
   User ubuntu
+
+Host bookshelf-util-stage-and-production
+  User ubuntu
+
+  # Hostname for direct connection, requires VPN or to be in office. Doesn't work currently.
+  # Hostname 172.31.31.159
+
+  # Hostname for AWS Session Manager, doesn't require VPN
+  Hostname i-0b57d3c628c9dabfa
+  ProxyCommand sh -c "aws ssm start-session --target %h --document-name AWS-StartSSHSession --parameters 'portNumber=%p'"
