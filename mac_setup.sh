@@ -74,7 +74,6 @@ brew install luarocks
 brew install neovim
 brew install pinentry-mac
 brew install pure
-brew install python
 brew install ripgrep
 brew install rust
 brew install spacer
@@ -147,6 +146,10 @@ asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 print_header "Installing NodeJS"
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 
+## Python
+print_header "Installing Python"
+asdf plugin-add python
+
 ## Install Global Versions
 print_header "Installing All Global Versions of Languages"
 asdf install
@@ -171,7 +174,7 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zs
 ln -sf ~/development/dotfiles/astronvim ~/.config/nvim
 nvim  --headless -c 'quitall'
 
-pip3 install pynvim
+pip install pynvim
 
 
 # Other Tools
