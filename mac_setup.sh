@@ -192,6 +192,12 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 print_header "Installing Xcode Command Line Tools"
 xcode-select --install
 
+## AWS CLI
+if is_deseret_book; then
+  print_header "Installing AWS CLI"
+  pip install aws-shell
+fi
+
 
 # Other Development Setup
 
