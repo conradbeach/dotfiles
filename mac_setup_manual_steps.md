@@ -42,7 +42,7 @@
 
 ### Desktop and Dock
 #### Widgets
-- [ ] Change default web browser to Firefox Developer Edition.
+- [ ] Change default web browser to Arc.
 
 #### Windows
 - [ ] Enable "Ask to keep changes when closing documents".
