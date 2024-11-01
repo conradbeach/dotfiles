@@ -45,7 +45,7 @@ return {
     opts = {
       claude = {
         -- model = "claude-3-haiku-20240307",
-        model = "claude-3-5-sonnet-20240620",
+        model = "claude-3-5-sonnet-latest",
       },
       mappings = {
         diff = {
