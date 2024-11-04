@@ -44,8 +44,8 @@ return {
     build = "make", -- This is Optional, only if you want to use tiktoken_core to calculate tokens count
     opts = {
       claude = {
-        -- model = "claude-3-haiku-20240307",
-        model = "claude-3-5-sonnet-latest",
+        model = "claude-3-5-haiku-latest",
+        -- model = "claude-3-5-sonnet-latest",
       },
       mappings = {
         diff = {
