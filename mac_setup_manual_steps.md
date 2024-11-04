@@ -46,6 +46,7 @@
 
 #### Windows
 - [ ] Enable "Ask to keep changes when closing documents".
+- [ ] Disable "Tiled windows have margins".
 
 #### Mission Control
 - [ ] Enable "Group windows by application".
