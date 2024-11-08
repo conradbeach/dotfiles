@@ -46,6 +46,7 @@ return {
       claude = {
         model = "claude-3-5-haiku-latest",
         -- model = "claude-3-5-sonnet-latest",
+        max_tokens = 8000, -- To match the config in https://github.com/yetone/avante.nvim/blob/main/lua/avante/config.lua
       },
       mappings = {
         diff = {
@@ -53,6 +54,9 @@ return {
         },
       },
       windows = {
+        ask = {
+          focus_on_apply = "theirs", -- which diff to focus after applying
+        },
         width = 40, -- default % based on available width
       },
     },
