@@ -43,6 +43,10 @@ return {
         n = {
           ["<Leader>ff"] = "<CMD>Find<CR>",
           ["<Leader>fw"] = "<CMD>call VSCodeNotify('workbench.action.findInFiles')<CR>",
+          ["<Leader>e"] = "<CMD>call VSCodeNotify('workbench.action.toggleSidebarVisibility')<CR>",
+          ["<Leader>fe"] = "<CMD>call VSCodeNotify('workbench.files.action.showActiveFileInExplorer')<CR>",
+          ["[t"] = "<CMD>call VSCodeNotify('workbench.action.previousEditor')<CR>",
+          ["]t"] = "<CMD>call VSCodeNotify('workbench.action.nextEditor')<CR>",
         },
       },
     },
