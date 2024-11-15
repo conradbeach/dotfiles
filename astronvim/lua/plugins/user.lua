@@ -124,6 +124,10 @@ return {
         signature = { enabled = false }, -- This was causing a conflict.
         hover = { enabled = false }, -- This was causing a conflict.
       },
+      routes = {
+        { filter = { event = "msg_show", find = "%d fewer lines" } },
+        { filter = { event = "msg_show", find = "%d more lines" } },
+      },
     },
     dependencies = { "MunifTanjim/nui.nvim" },
   },
