@@ -10,11 +10,17 @@ local plugins = {
   "astrocore",
   "astroui",
   "Comment.nvim",
+  "leap.nvim",
   "nvim-autopairs",
   "nvim-treesitter",
   "nvim-ts-autotag",
   "nvim-treesitter-textobjects",
   "nvim-ts-context-commentstring",
+  "splitjoin.vim",
+  "vim-rails",
+  "vim-surround",
+  "vim-swap",
+  "vim-repeat",
 }
 
 local Config = require("lazy.core.config")
@@ -37,7 +43,6 @@ return {
         n = {
           ["<Leader>ff"] = "<CMD>Find<CR>",
           ["<Leader>fw"] = "<CMD>call VSCodeNotify('workbench.action.findInFiles')<CR>",
-          ["<Leader>ls"] = "<CMD>call VSCodeNotify('workbench.action.gotoSymbol')<CR>",
         },
       },
     },

@@ -39,7 +39,9 @@ vim.cmd "let test#strategy = 'toggleterm'"
 vim.cmd "let test#ruby#rspec#executable = 'bundle exec rspec --format=documentation'"
 
 -- codota/tabnine-nvim
-vim.api.nvim_command "TabnineDisable" -- I only want chat.
+if not vim.g.vscode then
+  vim.api.nvim_command "TabnineDisable" -- I only want chat.
+end
 
 -- tpope/vim-rails
 -- Open the alternate file in a vertical split even if it doesn't exist.
