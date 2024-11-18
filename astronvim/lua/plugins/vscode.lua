@@ -52,9 +52,6 @@ return {
       maps.n["<C-K>"] = function() require("vscode-neovim").action "workbench.action.navigateUp" end
       maps.n["<C-L>"] = function() require("vscode-neovim").action "workbench.action.navigateRight" end
 
-      -- terminal
-      maps.n["<C-f>"] = function() require("vscode-neovim").action "workbench.action.terminal.toggleTerminal" end
-
       -- buffer management
       maps.n["]t"] = "<Cmd>Tabnext<CR>"
       maps.n["[t"] = "<Cmd>Tabprevious<CR>"
