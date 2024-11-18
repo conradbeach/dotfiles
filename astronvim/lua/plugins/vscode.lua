@@ -1,10 +1,10 @@
--- don't do anything in non-vscode instances
-if not vim.g.vscode then
-  return {}
-end
+-- Source: https://github.com/AstroNvim/astrocommunity/blob/main/lua/astrocommunity/recipes/vscode/init.lua
 
--- a list of known working plugins with vscode-neovim, update with your own plugins
-local plugins = {
+if not vim.g.vscode then return {} end -- don't do anything in non-vscode instances
+
+local enabled = {}
+vim.tbl_map(function(plugin) enabled[plugin] = true end, {
+  -- core plugins
   "lazy.nvim",
   "AstroNvim",
   "astrocore",
@@ -21,41 +21,84 @@ local plugins = {
   "vim-surround",
   "vim-swap",
   "vim-repeat",
-}
+})
 
-local Config = require("lazy.core.config")
+local Config = require "lazy.core.config"
 -- disable plugin update checking
 Config.options.checker.enabled = false
 Config.options.change_detection.enabled = false
 -- replace the default `cond`
-Config.options.defaults.cond = function(plugin)
-  return vim.tbl_contains(plugins, plugin.name)
-end
+Config.options.defaults.cond = function(plugin) return enabled[plugin.name] end
 
 ---@type LazySpec
 return {
-  -- add a few keybindings
+  -- add a few mappings and options
   {
     "AstroNvim/astrocore",
-    ---@type AstroCoreOpts
-    opts = {
-      mappings = {
-        n = {
-          ["<Leader>ff"] = "<CMD>Find<CR>",
-          ["<Leader>fw"] = "<CMD>call VSCodeNotify('workbench.action.findInFiles')<CR>",
-          ["<Leader>e"] = "<CMD>call VSCodeNotify('workbench.action.toggleSidebarVisibility')<CR>",
-          ["<Leader>fe"] = "<CMD>call VSCodeNotify('workbench.files.action.showActiveFileInExplorer')<CR>",
-          ["[t"] = "<CMD>call VSCodeNotify('workbench.action.previousEditor')<CR>",
-          ["]t"] = "<CMD>call VSCodeNotify('workbench.action.nextEditor')<CR>",
-        },
-      },
-    },
+    ---@param opts AstroCoreOpts
+    opts = function(_, opts)
+      local maps = assert(opts.mappings)
+
+      -- splits navigation
+      maps.n["|"] = function() require("vscode-neovim").action "workbench.action.splitEditor" end
+      maps.n["\\"] = function() require("vscode-neovim").action "workbench.action.splitEditorDown" end
+      maps.n["<C-H>"] = function() require("vscode-neovim").action "workbench.action.navigateLeft" end
+      maps.n["<C-J>"] = function() require("vscode-neovim").action "workbench.action.navigateDown" end
+      maps.n["<C-K>"] = function() require("vscode-neovim").action "workbench.action.navigateUp" end
+      maps.n["<C-L>"] = function() require("vscode-neovim").action "workbench.action.navigateRight" end
+
+      -- terminal
+      maps.n["<C-f>"] = function() require("vscode-neovim").action "workbench.action.terminal.toggleTerminal" end
+
+      -- buffer management
+      maps.n["]t"] = "<Cmd>Tabnext<CR>"
+      maps.n["[t"] = "<Cmd>Tabprevious<CR>"
+      maps.n["<Leader>ct"] = "<Cmd>Tabclose<CR>"
+
+      -- file explorer
+      maps.n["<Leader>e"] = function() require("vscode-neovim").action "workbench.files.action.focusFilesExplorer" end
+      maps.n["<Leader>fe"] = function() require("vscode-neovim").action "workbench.files.action.showActiveFileInExplorer" end
+
+      -- indentation
+      maps.v["<Tab>"] = function() require("vscode-neovim").action "editor.action.indentLines" end
+      maps.v["<S-Tab>"] = function() require("vscode-neovim").action "editor.action.outdentLines" end
+
+      -- diagnostics
+      maps.n["]d"] = function() require("vscode-neovim").action "editor.action.marker.nextInFiles" end
+      maps.n["[d"] = function() require("vscode-neovim").action "editor.action.marker.prevInFiles" end
+
+      -- pickers (emulate telescope mappings)
+      maps.n["<Leader>fC"] = function() require("vscode-neovim").action "workbench.action.showCommands" end
+      maps.n["<Leader>ff"] = function() require("vscode-neovim").action "workbench.action.quickOpen" end
+      maps.n["<Leader>fn"] = function() require("vscode-neovim").action "notifications.showList" end
+      maps.n["<Leader>fo"] = function() require("vscode-neovim").action "workbench.action.openRecent" end
+      maps.n["<Leader>ft"] = function() require("vscode-neovim").action "workbench.action.selectTheme" end
+      maps.n["<Leader>fw"] = function() require("vscode-neovim").action "workbench.action.findInFiles" end
+      maps.n["<Leader>fc"] = function()
+        require("vscode-neovim").action("workbench.action.findInFiles", { args = { query = vim.fn.expand "<cword>" } })
+      end
+
+      -- git client
+      maps.n["<Leader>gg"] = function() require("vscode-neovim").action "workbench.view.scm" end
+
+      -- LSP Mappings
+      maps.n["K"] = function() require("vscode-neovim").action "editor.action.showHover" end
+      maps.n["gI"] = function() require("vscode-neovim").action "editor.action.goToImplementation" end
+      maps.n["gd"] = function() require("vscode-neovim").action "editor.action.revealDefinition" end
+      maps.n["gD"] = function() require("vscode-neovim").action "editor.action.revealDeclaration" end
+      maps.n["gr"] = function() require("vscode-neovim").action "editor.action.goToReferences" end
+      maps.n["gy"] = function() require("vscode-neovim").action "editor.action.goToTypeDefinition" end
+      maps.n["<Leader>la"] = function() require("vscode-neovim").action "editor.action.quickFix" end
+      maps.n["<Leader>lG"] = function() require("vscode-neovim").action "workbench.action.showAllSymbols" end
+      maps.n["<Leader>lR"] = function() require("vscode-neovim").action "editor.action.goToReferences" end
+      maps.n["<Leader>lr"] = function() require("vscode-neovim").action "editor.action.rename" end
+      maps.n["<Leader>ls"] = function() require("vscode-neovim").action "workbench.action.gotoSymbol" end
+      maps.n["<Leader>lf"] = function() require("vscode-neovim").action "editor.action.formatDocument" end
+    end,
   },
+
   -- disable colorscheme setting
   { "AstroNvim/astroui", opts = { colorscheme = false } },
   -- disable treesitter highlighting
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = { highlight = { enable = false } },
-  },
+  { "nvim-treesitter/nvim-treesitter", opts = { highlight = { enable = false } } },
 }
