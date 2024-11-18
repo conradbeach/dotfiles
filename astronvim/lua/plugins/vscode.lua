@@ -37,8 +37,13 @@ return {
     "AstroNvim/astrocore",
     ---@param opts AstroCoreOpts
     opts = function(_, opts)
+      local options = assert(opts.options)
       local maps = assert(opts.mappings)
 
+      -- Options
+      options.opt.cmdheight = 10
+
+      -- Mappings
       -- splits navigation
       maps.n["|"] = function() require("vscode-neovim").action "workbench.action.splitEditor" end
       maps.n["\\"] = function() require("vscode-neovim").action "workbench.action.splitEditorDown" end
