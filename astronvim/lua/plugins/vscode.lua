@@ -52,11 +52,6 @@ return {
       maps.n["<C-K>"] = function() require("vscode-neovim").action "workbench.action.navigateUp" end
       maps.n["<C-L>"] = function() require("vscode-neovim").action "workbench.action.navigateRight" end
 
-      -- buffer management
-      maps.n["]t"] = "<Cmd>Tabnext<CR>"
-      maps.n["[t"] = "<Cmd>Tabprevious<CR>"
-      maps.n["<Leader>ct"] = "<Cmd>Tabclose<CR>"
-
       -- file explorer
       maps.n["<Leader>e"] = function() require("vscode-neovim").action "workbench.files.action.focusFilesExplorer" end
       maps.n["<Leader>fe"] = function() require("vscode-neovim").action "workbench.files.action.showActiveFileInExplorer" end
