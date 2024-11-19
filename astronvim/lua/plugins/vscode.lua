@@ -60,6 +60,11 @@ return {
       maps.v["<Tab>"] = function() require("vscode-neovim").action "editor.action.indentLines" end
       maps.v["<S-Tab>"] = function() require("vscode-neovim").action "editor.action.outdentLines" end
 
+      -- folds
+      maps.n["za"] = function() require("vscode-neovim").action "editor.toggleFold" end
+      maps.n["zM"] = function() require("vscode-neovim").action "editor.foldAll" end
+      maps.n["zR"] = function() require("vscode-neovim").action "editor.unfoldAll" end
+
       -- diagnostics
       maps.n["]d"] = function() require("vscode-neovim").action "editor.action.marker.nextInFiles" end
       maps.n["[d"] = function() require("vscode-neovim").action "editor.action.marker.prevInFiles" end
