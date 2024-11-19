@@ -125,8 +125,8 @@ return {
         hover = { enabled = false }, -- This was causing a conflict.
       },
       routes = {
-        { filter = { event = "msg_show", find = "%d fewer lines" } },
-        { filter = { event = "msg_show", find = "%d more lines" } },
+        { filter = { event = "msg_show", find = "%d fewer lines" } }, -- Hide "fewer lines" messages.
+        { filter = { event = "msg_show", find = "%d more lines" } }, -- Hide "more lines" messages.
       },
     },
     dependencies = { "MunifTanjim/nui.nvim" },
