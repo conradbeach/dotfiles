@@ -45,7 +45,30 @@ return {
       options.opt.cmdheight = 1
 
       -- Mappings
-      -- splits navigation
+      -- Move line up or down
+      maps.n["[e"] = function() require("vscode-neovim").action "editor.action.moveLinesUpAction" end
+      maps.n["]e"] = function() require("vscode-neovim").action "editor.action.moveLinesDownAction" end
+
+      -- Yank file paths to clipboard
+      maps.n["<Leader>yp"] = function() require("vscode-neovim").action "copyFilePath" end
+      maps.n["<Leader>yr"] = function() require("vscode-neovim").action "copyRelativeFilePath" end
+
+      -- Editors and Groups
+      maps.n["]t"] = "<Cmd>Tabnext<CR>"
+      maps.n["[t"] = "<Cmd>Tabprevious<CR>"
+      maps.n["[T"] = function() require("vscode-neovim").action "workbench.action.moveEditorLeftInGroup" end
+      maps.n["]T"] = function() require("vscode-neovim").action "workbench.action.moveEditorRightInGroup" end
+      maps.n["<Leader>nt"] = function() require("vscode-neovim").action "workbench.action.splitEditor" end
+      maps.n["<Leader>nf"] = function() require("vscode-neovim").action "workbench.action.files.newUntitledFile" end
+      maps.n["<Leader>ct"] = function() require("vscode-neovim").action "workbench.action.closeEditorsAndGroup" end
+      maps.n["<Leader>cow"] = function() require("vscode-neovim").action "workbench.action.closeOtherEditors" end
+      maps.n["<Leader>cot"] = function() require("vscode-neovim").action "workbench.action.closeEditorsInOtherGroups" end
+      maps.n["<Leader>ce"] = function()
+        require("vscode-neovim").action "workbench.action.closeEditorsInOtherGroups"
+        require("vscode-neovim").action "workbench.action.closeOtherEditors"
+      end
+
+      -- Splits navigation
       maps.n["|"] = function() require("vscode-neovim").action "workbench.action.splitEditor" end
       maps.n["\\"] = function() require("vscode-neovim").action "workbench.action.splitEditorDown" end
       maps.n["<C-H>"] = function() require("vscode-neovim").action "workbench.action.navigateLeft" end
@@ -53,31 +76,32 @@ return {
       maps.n["<C-K>"] = function() require("vscode-neovim").action "workbench.action.navigateUp" end
       maps.n["<C-L>"] = function() require("vscode-neovim").action "workbench.action.navigateRight" end
 
-      -- file explorer
+      -- File explorer
       maps.n["<Leader>e"] = function() require("vscode-neovim").action "workbench.files.action.focusFilesExplorer" end
       maps.n["<Leader>fe"] = function() require("vscode-neovim").action "workbench.files.action.showActiveFileInExplorer" end
 
-      -- indentation
+      -- Indentation
       maps.v["<Tab>"] = function() require("vscode-neovim").action "editor.action.indentLines" end
       maps.v["<S-Tab>"] = function() require("vscode-neovim").action "editor.action.outdentLines" end
 
-      -- folds
+      -- Folds
       maps.n["za"] = function() require("vscode-neovim").action "editor.toggleFold" end
       maps.n["zM"] = function() require("vscode-neovim").action "editor.foldAll" end
       maps.n["zR"] = function() require("vscode-neovim").action "editor.unfoldAll" end
 
-      -- diagnostics
+      -- Diagnostics
       maps.n["]d"] = function() require("vscode-neovim").action "editor.action.marker.nextInFiles" end
       maps.n["[d"] = function() require("vscode-neovim").action "editor.action.marker.prevInFiles" end
 
-      -- pickers (emulate telescope mappings)
-      maps.n["<Leader>fn"] = function() require("vscode-neovim").action "notifications.showList" end
+      -- Pickers (emulate Telescope mappings)
+      maps.n["<Leader>ff"] = function() require("vscode-neovim").action "workbench.action.quickOpen" end
+      maps.n["<Leader>fw"] = function() require("vscode-neovim").action "workbench.action.findInFiles" end
       maps.n["<Leader>fc"] = function()
         require("vscode-neovim").action("workbench.action.findInFiles", { args = { query = vim.fn.expand "<cword>" } })
       end
-
-      -- git client
-      maps.n["<Leader>gg"] = function() require("vscode-neovim").action "workbench.view.scm" end
+      maps.n["<Leader>fo"] = function() require("vscode-neovim").action "workbench.action.openPreviousEditorFromHistory" end
+      maps.n["<Leader>fn"] = function() require("vscode-neovim").action "notifications.showList" end
+      maps.n["<Leader>fC"] = function() require("vscode-neovim").action "workbench.action.showCommands" end
 
       -- LSP Mappings
       maps.n["K"] = function() require("vscode-neovim").action "editor.action.showHover" end
