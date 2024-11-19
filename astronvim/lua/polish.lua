@@ -35,7 +35,11 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- vim-test/vim-test
-vim.cmd "let test#strategy = 'toggleterm'"
+if vim.g.vscode then
+  vim.cmd "let test#strategy = 'neovim_vscode'"
+else
+  vim.cmd "let test#strategy = 'toggleterm'"
+end
 vim.cmd "let test#ruby#rspec#executable = 'bundle exec rspec --format=documentation'"
 
 -- codota/tabnine-nvim

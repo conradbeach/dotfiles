@@ -21,6 +21,7 @@ vim.tbl_map(function(plugin) enabled[plugin] = true end, {
   "vim-surround",
   "vim-swap",
   "vim-repeat",
+  "vim-test",
 })
 
 local Config = require "lazy.core.config"
