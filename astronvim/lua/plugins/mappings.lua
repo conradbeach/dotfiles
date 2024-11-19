@@ -122,9 +122,9 @@ return {
           ["<Leader>tdf"] = { "<cmd>TestFile --dry-run<cr>", desc = "Test File Dry Run"},
           ["<Leader>tds"] = { "<cmd>TestSuite --dry-run<cr>", desc = "Test Suite Dry Run"},
           ["<Leader>to"] = { "", desc = "Only" },
-          ["<Leader>tof"] = { "<cmd>TermExec cmd='bundle exec rspec --only-failures --format=documentation'<cr>", desc = "Test Only Failures"},
+          ["<Leader>tof"] = { "<cmd>TestSuite --only-failures<cr>", desc = "Test Only Failures"},
           ["<Leader>too"] = { "", desc = "Only One" },
-          ["<Leader>toof"] = { '<cmd>TermExec cmd="bundle exec rspec --next-failure --format=documentation"<cr>', desc = "Test Only One Failure"},
+          ["<Leader>toof"] = { '<cmd>TestSuite --next-failure<cr>', desc = "Test Only One Failure"},
         },
         v = {
           ["<Leader>f"] = { "", desc = "Find" },
