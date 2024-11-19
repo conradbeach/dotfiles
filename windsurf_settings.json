@@ -1,0 +1,19 @@
+{
+    "workbench.colorTheme": "Atom One Light",
+    "windsurf.autocompleteSpeed": "fast",
+    "editor.fontFamily": "Hack Nerd Font",
+    "editor.fontSize": 14,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "windsurf.cascadeOpenOnReload": false,
+    "files.autoSave": "onFocusChange",
+    "diffEditor.codeLens": true,
+    "vscode-neovim.compositeTimeout": 1000,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontSize": 14,
+    "vscode-neovim.logOutputToConsole": true,
+    "workbench.colorCustomizations": {
+       "editor.background": "#FFF" 
+    }
+}

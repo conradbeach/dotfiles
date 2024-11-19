@@ -45,6 +45,8 @@ ln -sf ~/development/dotfiles/.rspec ~
 ln -sf ~/development/dotfiles/.rubocop.yml ~
 ln -sf ~/development/dotfiles/.tmux.conf ~
 ln -sf ~/development/dotfiles/.tool-versions ~
+mkdir "/Users/cbeach/Library/Application Support/Windsurf/User"
+ln -sf ~/development/dotfiles/windsurf_settings.json "/Users/cbeach/Library/Application Support/Windsurf/User/settings.json"
 ln -sf ~/development/dotfiles/.zshrc ~
 ln -sf ~/development/dotfiles/git-commit-template.txt ~
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
