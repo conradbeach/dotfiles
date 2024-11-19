@@ -17,7 +17,6 @@ vim.tbl_map(function(plugin) enabled[plugin] = true end, {
   "nvim-treesitter-textobjects",
   "nvim-ts-context-commentstring",
   "splitjoin.vim",
-  "vim-rails",
   "vim-surround",
   "vim-swap",
   "vim-repeat",
