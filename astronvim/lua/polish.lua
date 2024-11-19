@@ -35,8 +35,20 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- vim-test/vim-test
+vim.cmd([[
+  " Modified from https://github.com/vim-test/vim-test/blob/master/autoload/test/strategy.vim
+  " I don't like that the built in one returns focus to the editor; I'd prefer it stay on the terminal.
+  function! ModifiedVSCodeNeovimStrategy(cmd)
+    call VSCodeNotify('workbench.action.terminal.focus')
+    call VSCodeNotify('workbench.action.terminal.sendSequence', { 'text': "clear\n" })
+    call VSCodeNotify('workbench.action.terminal.sendSequence', { 'text': a:cmd . "\n" })
+  endfunction
+
+  let g:test#custom_strategies = { 'modified_neovim_vscode': function('ModifiedVSCodeNeovimStrategy')}
+]])
+
 if vim.g.vscode then
-  vim.cmd "let test#strategy = 'neovim_vscode'"
+  vim.cmd "let test#strategy = 'modified_neovim_vscode'"
 else
   vim.cmd "let test#strategy = 'toggleterm'"
 end
