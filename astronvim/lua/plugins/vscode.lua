@@ -103,6 +103,12 @@ return {
       maps.n["<Leader>fn"] = function() require("vscode-neovim").action "notifications.showList" end
       maps.n["<Leader>fC"] = function() require("vscode-neovim").action "workbench.action.showCommands" end
 
+      -- Git
+      maps.v["<Leader>gr"] = function() require("vscode-neovim").action "git.revertSelectedRanges" end
+      maps.n["<Leader>gr"] = function() require("vscode-neovim").action "git.clean" end
+      maps.n["]g"] = function() require("vscode-neovim").action "workbench.action.editor.nextChange" end
+      maps.n["[g"] = function() require("vscode-neovim").action "workbench.action.editor.previousChange" end
+
       -- LSP Mappings
       maps.n["K"] = function() require("vscode-neovim").action "editor.action.showHover" end
       maps.n["gI"] = function() require("vscode-neovim").action "editor.action.goToImplementation" end
