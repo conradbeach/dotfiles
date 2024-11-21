@@ -41,7 +41,7 @@ return {
       local maps = assert(opts.mappings)
 
       -- Options
-      options.opt.cmdheight = 1
+      options.opt.cmdheight = 2
 
       -- Mappings
       -- Move line up or down
