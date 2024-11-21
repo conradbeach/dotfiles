@@ -49,6 +49,7 @@ mkdir "/Users/cbeach/Library/Application Support/Windsurf/User"
 ln -sf ~/development/dotfiles/windsurf_settings.json "/Users/cbeach/Library/Application Support/Windsurf/User/settings.json"
 ln -sf ~/development/dotfiles/.zshrc ~
 ln -sf ~/development/dotfiles/git-commit-template.txt ~
+ln -sf ~/development/dotfiles/zellij ~/.config
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
 # in a certain way, so I need to link this file after gnupg runs once.
 
@@ -122,6 +123,7 @@ if ! is_deseret_book; then brew install --cask protonvpn; fi
 brew install --cask slack
 brew install --cask tableplus
 brew install --cask visual-studio-code
+brew install zellij
 if ! is_deseret_book; then brew install --cask whatsapp; fi
 
 # Cargo
