@@ -2,30 +2,7 @@ return {
   {
     "yetone/avante.nvim",
     event = "VeryLazy",
-    build = "make", -- This is Optional, only if you want to use tiktoken_core to calculate tokens count
-    opts = {
-      claude = {
-        model = "claude-3-5-haiku-latest",
-        -- model = "claude-3-5-sonnet-latest",
-        max_tokens = 8000, -- To match the config in https://github.com/yetone/avante.nvim/blob/main/lua/avante/config.lua
-      },
-      behaviour = {
-        auto_apply_diff_after_generation = true,
-        support_paste_from_clipboard = false,
-      },
-      mappings = {
-        diff = {
-          cursor = "cu", -- The default `cc` conflicts with my mapping to change the current line.
-        },
-      },
-      windows = {
-        ask = {
-          focus_on_apply = "theirs", -- which diff to focus after applying
-          start_insert = false,
-        },
-        width = 40, -- default % based on available width
-      },
-    },
+    build = "make",
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
       "stevearc/dressing.nvim",
@@ -55,6 +32,29 @@ return {
           file_types = { "Avante" },
         },
         ft = { "Avante" },
+      },
+    },
+    opts = {
+      behaviour = {
+        auto_apply_diff_after_generation = true,
+        support_paste_from_clipboard = false,
+      },
+      claude = {
+        model = "claude-3-5-haiku-latest",
+        -- model = "claude-3-5-sonnet-latest",
+        max_tokens = 8000, -- To match the config in https://github.com/yetone/avante.nvim/blob/main/lua/avante/config.lua
+      },
+      mappings = {
+        diff = {
+          cursor = "cu", -- The default `cc` conflicts with my mapping to change the current line.
+        },
+      },
+      windows = {
+        ask = {
+          focus_on_apply = "theirs", -- which diff to focus after applying
+          start_insert = false,
+        },
+        width = 40, -- default % based on available width
       },
     },
   },
