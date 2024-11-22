@@ -94,6 +94,20 @@ return {
   },
 
   {
+    "petertriho/nvim-scrollbar",
+    dependencies = "kevinhwang91/nvim-hlslens",
+    lazy = false,
+    config = function()
+      require("scrollbar").setup {
+        handlers = {
+          gitsigns = true, -- Requires gitsigns
+          search = true, -- Requires hlslens
+        },
+      }
+    end,
+  },
+
+  {
     "nvim-tree/nvim-tree.lua",
     dependencies = "nvim-tree/nvim-web-devicons", -- optional
     lazy = false,

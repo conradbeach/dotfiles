@@ -64,6 +64,10 @@ return {
       filename = { modify = ":." }, -- Shows full file path relative to working directory.
       filetype = false
     }
+    opts.statusline[12] = status.component.nav {
+      percentage = false, -- nvim-scrollbar provides this functionality.
+      scrollbar = false, -- nvim-scrollbar provides this functionality.
+    }
     opts.statusline[13] = nil -- Remove mode indicator at the end of the status line
 
     opts.tabline = nil -- Remove tabline; using `akinsho/bufferline.nvim` instead.
