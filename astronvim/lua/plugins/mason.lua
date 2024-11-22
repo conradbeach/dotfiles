@@ -9,6 +9,7 @@ return {
     opts = {
       ensure_installed = {
         "cssls",
+        "harper_ls",
         "html",
         "jsonls",
         "lua_ls",
@@ -16,7 +17,6 @@ return {
         "stimulus_ls",
         "tailwindcss",
         "ts_ls",
-        "typos_lsp",
         "yamlls",
       },
     },
