@@ -15,5 +15,6 @@
     "vscode-neovim.logOutputToConsole": true,
     "workbench.colorCustomizations": {
        "editor.background": "#FFF" 
-    }
+    },
+    "editor.minimap.enabled": false
 }
