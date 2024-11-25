@@ -1,5 +1,8 @@
+tmp
 ebook
+RSpec
 ebooks
 Algolia
 indexable
+Guardfile
 audiobooks
