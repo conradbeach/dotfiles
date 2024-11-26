@@ -134,6 +134,8 @@
   * Don't allow notifications.
 * [ ] Messages
   * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
+* [ ] Obsidian
+  * Set up Obsidian Sync. Put the vault in ~/Obsidian.
 * [ ] TablePlus
   * Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
 * [ ] Visual Studio Code
