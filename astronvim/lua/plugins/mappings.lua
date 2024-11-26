@@ -74,6 +74,9 @@ return {
 
           ------------- Plugins -------------
 
+          -- yetone/avante.nvim
+          ["<Leader>a"] = { "", desc = "Avante" },
+
           -- ggandor/leap.nvim
           ["<Leader>w"] = { "<Plug>(leap-forward-to)", desc = "Leap Forward" },
           ["<Leader>W"] = { "<Plug>(leap-backward-to)", desc = "Leap Backward" },
@@ -89,11 +92,6 @@ return {
           ["<Leader>fsg"] = { "<cmd>lua require('spectre').open()<cr>", desc = "Global Search & Replace" },
           ["<Leader>fsf"] = { "<cmd>lua require('spectre').open_file_search()<cr>", desc = "File Search & Replace" },
           ["<Leader>fsw"] = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", desc = "Search & Replace Current Word" },
-
-          -- codota/tabnine-nvim
-          ["<Leader>a"] = { "", desc = "AI Chat" },
-          ["<Leader>ao"] = { "<cmd>TabnineChat<cr>", desc = "Open Tabnine Chat" },
-          ["<Leader>ac"] = { "<cmd>TabnineChatClose<cr>", desc = "Close Tabnine Chat" },
 
           -- nvim-telescope/telescope.nvim
           ["<Leader>fc"] = { "<cmd>lua require('telescope-live-grep-args.shortcuts').grep_word_under_cursor()<cr>", desc = "Find word under cursor" },

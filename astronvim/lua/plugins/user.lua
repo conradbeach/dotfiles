@@ -158,13 +158,6 @@ return {
     end,
   },
 
-  {
-    "codota/tabnine-nvim",
-    lazy = false,
-    build = "./dl_binaries.sh",
-    config = function() require("tabnine").setup {} end,
-  },
-
   { "nvim-telescope/telescope-live-grep-args.nvim" },
 
   {
