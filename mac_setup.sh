@@ -38,7 +38,6 @@ else
   ln -sf ~/development/dotfiles/.gitconfig ~
 fi
 ln -sf ~/development/dotfiles/.gitignore_global ~
-ln -sf ~/development/dotfiles/harper-ls ~/Library/Application\ Support
 ln -sf ~/development/dotfiles/.irbrc ~
 ln -sf ~/development/dotfiles/.pryrc ~
 ln -sf ~/development/dotfiles/.psqlrc ~
