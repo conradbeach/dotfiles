@@ -69,8 +69,8 @@ return {
           -- Terminal
           ["<C-f>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
 
-          -- VSCode
-          ["<Leader>K"] = { "<cmd>!code %<cr>", desc = "Open File in VSCode" },
+          -- Windsurf
+          ["<Leader>K"] = { "<cmd>!windsurf %<cr>", desc = "Open File in Windsurf" },
 
           ------------- Plugins -------------
 
