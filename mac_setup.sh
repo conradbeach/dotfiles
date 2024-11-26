@@ -39,6 +39,8 @@ else
 fi
 ln -sf ~/development/dotfiles/.gitignore_global ~
 ln -sf ~/development/dotfiles/.irbrc ~
+mkdir ~/Obsidian
+ln -sf ~/development/dotfiles/.obsidian.vimrc ~/Obsidian
 ln -sf ~/development/dotfiles/.pryrc ~
 ln -sf ~/development/dotfiles/.psqlrc ~
 ln -sf ~/development/dotfiles/.rspec ~
