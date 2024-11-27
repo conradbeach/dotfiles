@@ -18,8 +18,9 @@ return {
               forceStable = true,
             },
             linters = {
-              linking_verbs = true,
+              long_sentences = false,
               sentence_capitalization = false,
+              spaces = false,
             },
           },
         },
