@@ -10,6 +10,7 @@ return {
     options = {
       opt = { -- vim.opt.<key>
         colorcolumn = "+1", -- Make it obvious where 80 characters is.
+        laststatus = 3, -- For Avante
         scrolloff = 8, -- number of lines to keep above and below the cursor
         sidescrolloff = 8, -- number of columns to keep at the sides of the cursor
         relativenumber = false,
