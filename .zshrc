@@ -119,6 +119,8 @@ alias top="htop"
 alias find="fd -H"
 ## Ruby & Rails
 alias be="bundle exec"
+alias berc="bundle exec rubocop"
+alias bepr="bundle exec parallel_rspec"
 alias rdm="bundle exec rails db:migrate"
 alias rdr="bundle exec rails db:rollback"
 alias rdmr="bundle exec rails db:migrate:redo"
