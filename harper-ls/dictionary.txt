@@ -17,6 +17,7 @@ epub
 nvim
 SKUs
 skus
+woot
 ebook
 RSpec
 rspec
@@ -36,6 +37,7 @@ yetone
 mbbill
 keymap
 VSCode
+truthy
 Algolia
 Sidekiq
 sidekiq
@@ -44,6 +46,7 @@ rubocop
 ggandor
 spectre
 vimdocs
+algolia
 LazySpec
 AstroLSP
 capybara
@@ -63,6 +66,8 @@ audiobook
 behaviour
 typeahead
 AstroNvim
+TrueClass
+scopeable
 audiobooks
 Cloudwatch
 Solargraph
@@ -78,7 +83,12 @@ AstroLSPOpts
 therubyracer
 MediaProblems
 AstroCoreOpts
+AlgoliaSearch
+EpubSerializer
+LiveConnection
+EbookTextSearch
 IndexingResponse
 VariantSubscriptions
 AlreadyIncludedError
+NotificationSerializer
 EbookChangeNotificationWorker
