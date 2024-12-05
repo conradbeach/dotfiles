@@ -11,6 +11,7 @@ lua
 lhs
 rhs
 api
+irb
 json
 uuid
 epub
@@ -38,6 +39,7 @@ mbbill
 keymap
 VSCode
 truthy
+Params
 Algolia
 Sidekiq
 sidekiq
@@ -59,6 +61,7 @@ undotree
 Keycodes
 lefthand
 tempfile
+newrelic
 indexable
 Guardfile
 Chargebee
@@ -68,6 +71,7 @@ typeahead
 AstroNvim
 TrueClass
 scopeable
+objectIDs
 audiobooks
 Cloudwatch
 Solargraph
@@ -79,8 +83,10 @@ AstroNvim's
 encryptable
 EpubContent
 namespacing
+memoization
 AstroLSPOpts
 therubyracer
+facetFilters
 MediaProblems
 AstroCoreOpts
 AlgoliaSearch
@@ -88,7 +94,10 @@ EpubSerializer
 LiveConnection
 EbookTextSearch
 IndexingResponse
+stopIfEnoughMatches
 VariantSubscriptions
 AlreadyIncludedError
+ApplicationController
 NotificationSerializer
+MemoizedInstanceVariableName
 EbookChangeNotificationWorker
