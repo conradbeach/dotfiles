@@ -917,6 +917,8 @@ $("h1").each(function() {
 			<string>rails5:</string>
 			<key>~/Library/Application Support/Dash/DocSets/Ruby_on_Rails_6/Ruby on Rails.docset</key>
 			<string>rails</string>
+			<key>~/Library/Application Support/Dash/DocSets/Ruby_on_Rails_7/Ruby on Rails.docset</key>
+			<string>rails7:</string>
 			<key>~/Library/Application Support/Dash/Hex DocSets/ecto/ecto.docset</key>
 			<string>ecto:</string>
 			<key>~/Library/Application Support/Dash/Hex DocSets/httpoison/httpoison.docset</key>
@@ -1034,6 +1036,11 @@ $("h1").each(function() {
 			<dict>
 				<key>date</key>
 				<date>2024-06-13T17:26:23Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Ruby_on_Rails_8.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2024-12-06T15:18:54Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Rust.xml</key>
 			<dict>
