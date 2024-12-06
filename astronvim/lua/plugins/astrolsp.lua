@@ -21,6 +21,7 @@ return {
               long_sentences = false,
               sentence_capitalization = false,
               spaces = false,
+              terminating_conjunctions = false,
             },
           },
         },
