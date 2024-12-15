@@ -307,6 +307,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 ## Enable key repeat in VSCode and Windsurf
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.exafunction.windsurf ApplePressAndHoldEnabled -bool false
+defaults write md.obsidian ApplePressAndHoldEnabled -bool false
 
 ## Kill Dock and Finder
 for app in "Dock" "Finder"; do
