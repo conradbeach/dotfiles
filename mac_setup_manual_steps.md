@@ -95,51 +95,51 @@
 - [ ] Check "Remove items from trash after 30 days".
 
 ## Application Changes
-* [ ] Xcode
-  * Install this first since it's huge.
-* [ ] Amazon Q
-  * Sign in with AWS Builder account.
-* [ ] Authy
-  * Install the iPad version from Mac App Store.
-* [ ] Awair Home
-  * Install the iOS version from the Mac App Store.
-* [ ] BetterTouchTool
-  * Load license. (In iCloud Drive > Software Licenses and Such.)
-  * Load configuration. (In this repo.)
-  * Install process priority helper tool.
-* [ ] Bitdefender Virus Scanner
-  * [Install it manually.](https://www.bitdefender.com/solutions/virus-scanner-for-mac.html)
-  * Add these exceptions:
-    * /Volumes/Mac Backup
-    * /Volumes/.timemachine
-    * /Volumes/com.apple.TimeMachine.localsnapshots
-* [ ] Dash
-  * Activate subscription
-  * Set up syncing. (In this repo at ./Dash/Dash.dashsync)
-  * Set up snippets. (In this repo at ./Dash/Snippets.dash)
-  * Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
-* [ ] iTerm
-  * Load configuration. (In this repo. Change in Settings > General > Settings)
-* [ ] Firefox Developer Edition
-  * Sign in with Firefox account.
-* [ ] Maccy
-  * Turn on "Launch at login".
-  * Turn on "Check for updates automatically"
-  * Change keyboard shortcut to Option-Space
-  * Change "Search" to "Mixed"
-  * Change "Popup at" to "Screen center".
-  * Change "Number of items" to 15.
-  * Chagne "Preview delay" to 200.
-  * Add Bitwarden to Ignore > Applications.
-  * Don't allow notifications.
-* [ ] Messages
-  * Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
-* [ ] Obsidian
-  * Set up Obsidian Sync. Put the vault in ~/Obsidian.
-* [ ] TablePlus
-  * Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
-* [ ] Visual Studio Code
-  * Sign in to turn on Settings Sync. Sign in with GitHub.
+- [ ] Xcode
+  - Install this first since it's huge.
+- [ ] Amazon Q
+  - Sign in with AWS Builder account.
+- [ ] Authy
+  - Install the iPad version from Mac App Store.
+- [ ] Awair Home
+  - Install the iOS version from the Mac App Store.
+- [ ] BetterTouchTool
+  - Load license. (In iCloud Drive > Software Licenses and Such.)
+  - Load configuration. (In this repo.)
+  - Install process priority helper tool.
+- [ ] Bitdefender Virus Scanner
+  - [Install it manually.](https://www.bitdefender.com/solutions/virus-scanner-for-mac.html)
+  - Add these exceptions:
+    - /Volumes/Mac Backup
+    - /Volumes/.timemachine
+    - /Volumes/com.apple.TimeMachine.localsnapshots
+- [ ] Dash
+  - Activate subscription
+  - Set up syncing. (In this repo at ./Dash/Dash.dashsync)
+  - Set up snippets. (In this repo at ./Dash/Snippets.dash)
+  - Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
+- [ ] iTerm
+  - Load configuration. (In this repo. Change in Settings > General > Settings)
+- [ ] Firefox Developer Edition
+  - Sign in with Firefox account.
+- [ ] Maccy
+  - Turn on "Launch at login".
+  - Turn on "Check for updates automatically"
+  - Change keyboard shortcut to Option-Space
+  - Change "Search" to "Mixed"
+  - Change "Popup at" to "Screen center".
+  - Change "Number of items" to 15.
+  - Chagne "Preview delay" to 200.
+  - Add Bitwarden to Ignore > Applications.
+  - Don't allow notifications.
+- [ ] Messages
+  - Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
+- [ ] Obsidian
+  - Set up Obsidian Sync. Put the vault in ~/Obsidian.
+- [ ] TablePlus
+  - Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
+- [ ] Visual Studio Code
+  - Sign in to turn on Settings Sync. Sign in with GitHub.
 
 Remove all unwanted apps from Dock.
 
