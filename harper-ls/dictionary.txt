@@ -3,6 +3,7 @@ rb
 ok
 x.
 f.
+E.
 tmp
 sha
 aws
@@ -24,6 +25,8 @@ jpg
 img
 css
 toc
+Cmd
+CLI
 json
 uuid
 epub
@@ -45,6 +48,11 @@ ffmeg
 attrs
 param
 AMETA
+Maccy
+iTerm
+Awair
+Authy
+Xcode
 ebooks
 taglib
 Dedupe
@@ -57,6 +65,7 @@ keymap
 VSCode
 truthy
 Params
+iCloud
 Algolia
 Sidekiq
 sidekiq
@@ -69,6 +78,7 @@ algolia
 OpenAPI
 openapi
 reindex
+docsets
 LazySpec
 AstroLSP
 capybara
@@ -87,6 +97,9 @@ renderer
 titleart
 mimetype
 JWPlayer
+userbook
+iMessage
+dashsync
 indexable
 Guardfile
 Chargebee
@@ -100,6 +113,8 @@ objectIDs
 namespace
 Algolia's
 reindexes
+TablePlus
+Bitwarden
 audiobooks
 Cloudwatch
 Solargraph
@@ -116,6 +131,9 @@ namespacing
 memoization
 deseretbook
 reingesting
+TimeMachine
+timemachine
+Bitdefender
 AstroLSPOpts
 therubyracer
 facetFilters
@@ -127,8 +145,10 @@ ElasticSearch
 EpubSerializer
 LiveConnection
 Subdirectories
+localsnapshots
 EbookTextSearch
 UsersController
+BetterTouchTool
 IndexingResponse
 stopIfEnoughMatches
 VariantSubscriptions
