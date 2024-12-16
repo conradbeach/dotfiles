@@ -129,7 +129,7 @@
   - Change "Search" to "Mixed"
   - Change "Popup at" to "Screen center".
   - Change "Number of items" to 15.
-  - Chagne "Preview delay" to 200.
+  - Change "Preview delay" to 200.
   - Add Bitwarden to Ignore > Applications.
   - Don't allow notifications.
 - [ ] Messages
