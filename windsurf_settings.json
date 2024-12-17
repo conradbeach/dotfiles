@@ -1,20 +1,21 @@
 {
-    "workbench.colorTheme": "Atom One Light",
-    "windsurf.autocompleteSpeed": "fast",
-    "editor.fontFamily": "Hack Nerd Font",
-    "editor.fontSize": 14,
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
-    "windsurf.cascadeOpenOnReload": false,
-    "files.autoSave": "onFocusChange",
-    "diffEditor.codeLens": true,
-    "vscode-neovim.compositeTimeout": 1000,
-    "terminal.external.osxExec": "iTerm.app",
-    "terminal.integrated.fontSize": 14,
-    "vscode-neovim.logOutputToConsole": true,
-    "workbench.colorCustomizations": {
-       "editor.background": "#FFF" 
-    },
-    "editor.minimap.enabled": false
+  "diffEditor.codeLens": true,
+  "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "Hack Nerd Font",
+  "editor.fontSize": 14,
+  "editor.minimap.enabled": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "files.autoSave": "onFocusChange",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontSize": 14,
+  "vscode-neovim.compositeTimeout": 1000,
+  "vscode-neovim.logOutputToConsole": true,
+  "windsurf.autocompleteSpeed": "fast",
+  "windsurf.cascadeOpenOnReload": false,
+  "workbench.colorCustomizations": {
+    "editor.background": "#FFF"
+  },
+  "workbench.colorTheme": "Atom One Light"
 }
