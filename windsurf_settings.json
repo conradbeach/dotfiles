@@ -17,5 +17,8 @@
   "workbench.colorCustomizations": {
     "editor.background": "#FFF"
   },
-  "workbench.colorTheme": "Atom One Light"
+  "workbench.colorTheme": "Atom One Light",
+  "terminal.integrated.env.osx": {
+    "Q_NEW_SESSION": "1"
+  }
 }
