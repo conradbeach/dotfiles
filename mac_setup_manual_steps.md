@@ -65,9 +65,6 @@
 - [ ] Turn off Move left a space (control-left).
 - [ ] Turn off Move right a space (control-right).
 
-##### Modifier Keys
-- [ ] Map caps lock to escape on internal and external keyboards.
-
 #### Dictation
 - [ ] Turn on Dictation.
 
