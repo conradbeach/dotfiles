@@ -126,7 +126,6 @@
   - Set up Obsidian Sync. Put the vault in ~/Obsidian.
 - [ ] Perplexity
   - Install from Mac App Store.
-  - Turn on "Launch at login".
   - Disable all shortcuts.
   - Sign in with email. (No password required.)
 - [ ] TablePlus
