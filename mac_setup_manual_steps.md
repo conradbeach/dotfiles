@@ -127,8 +127,7 @@
 - [ ] Perplexity
   - Install from Mac App Store.
   - Turn on "Launch at login".
-  - Disable all shortcuts except "New Thread".
-  - Set "New Thread" shortcut to Cmd-Shift-E.
+  - Disable all shortcuts.
   - Sign in with email. (No password required.)
 - [ ] TablePlus
   - Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
