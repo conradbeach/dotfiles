@@ -121,6 +121,7 @@ iMessage
 dashsync
 railties
 objectID
+firenvim
 indexable
 Guardfile
 Chargebee

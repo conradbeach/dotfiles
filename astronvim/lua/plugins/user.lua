@@ -56,6 +56,8 @@ return {
 
   { "mattn/emmet-vim", lazy = false },
 
+  { 'glacambre/firenvim', build = ":call firenvim#install(0)" },
+
   {
     "nvim-focus/focus.nvim",
     lazy = false,
