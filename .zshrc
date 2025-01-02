@@ -121,7 +121,6 @@ alias find="fd -H"
 alias be="bundle exec"
 alias berc="bundle exec rubocop"
 alias bepr="bundle exec parallel_rspec"
-alias cma="bundle exec rubocop --config .rubocop.yml && bundle exec cucumber && bundle exec parallel_rspec"
 alias rdm="bundle exec rails db:migrate"
 alias rdr="bundle exec rails db:rollback"
 alias rdmr="bundle exec rails db:migrate:redo"
@@ -185,6 +184,16 @@ crs() {
   bundle audit check --update
   echo "\n---------- Running Brakeman ----------"
   brakeman --no-pager
+}
+
+# Check Media API
+cma() {
+  echo "\n---------- Running Rubocop ----------"
+  bundle exec rubocop --config .rubocop.yml
+  echo "\n---------- Running Cucumber ----------"
+  bundle exec cucumber
+  echo "\n---------- Running Parallel RSpec ----------"
+  bundle exec parallel_rspec
 }
 
 # Update Media API Database
