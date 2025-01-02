@@ -303,10 +303,11 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 ## Delay until key repeat. (System Preferences > Keyboard. This is as fast as it will go.)
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
-## Enable key repeat in VSCode and Windsurf
+## Enable key repeat for select applications
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.exafunction.windsurf ApplePressAndHoldEnabled -bool false
 defaults write md.obsidian ApplePressAndHoldEnabled -bool false
+defaults write com.todesktop.230313mzl4w4u92 ApplePressAndHoldEnabled -bool false
 
 ## Kill Dock and Finder
 for app in "Dock" "Finder"; do
