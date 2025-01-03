@@ -48,6 +48,7 @@ ajax
 etag
 APIs
 guid
+IRMS
 ebook
 RSpec
 rspec
@@ -175,6 +176,7 @@ localsnapshots
 subdirectories
 UsageReporting
 YYYYMMDDhhmmss
+PodcastEpisode
 EbookTextSearch
 UsersController
 BetterTouchTool
