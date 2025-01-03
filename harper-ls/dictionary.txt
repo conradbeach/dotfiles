@@ -5,6 +5,7 @@ ok
 x.
 f.
 E.
+ng
 tmp
 sha
 aws
@@ -48,6 +49,7 @@ ajax
 etag
 APIs
 guid
+IRMS
 ebook
 RSpec
 rspec
@@ -65,6 +67,7 @@ Authy
 Xcode
 RDBMS
 sassc
+async
 ebooks
 taglib
 Dedupe
@@ -122,6 +125,7 @@ dashsync
 railties
 objectID
 firenvim
+dotfiles
 indexable
 Guardfile
 Chargebee
@@ -138,6 +142,8 @@ reindexes
 TablePlus
 Bitwarden
 ActiveJob
+Anthropic
+symlinked
 audiobooks
 Cloudwatch
 Solargraph
@@ -175,6 +181,7 @@ localsnapshots
 subdirectories
 UsageReporting
 YYYYMMDDhhmmss
+PodcastEpisode
 EbookTextSearch
 UsersController
 BetterTouchTool
