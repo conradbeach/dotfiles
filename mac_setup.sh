@@ -106,7 +106,6 @@ brew install --cask arc
 if ! is_deseret_book; then brew install --cask balenaetcher; fi
 brew install --cask bettertouchtool
 brew install --cask bitwarden
-brew install --cask chatgpt
 brew install --cask dash
 brew install --cask firefox@developer-edition
 if ! is_deseret_book; then brew install --cask gimp; fi
