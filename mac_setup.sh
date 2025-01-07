@@ -28,7 +28,6 @@ if ! is_deseret_book; then ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/
 ln -sf ~/development/dotfiles/tmuxinator ~/.config
 ln -sf ~/development/dotfiles/.agignore ~
 ln -sf ~/development/dotfiles/.asdfrc ~
-ln -sf ~/development/dotfiles/.ctags ~
 ln -sf ~/development/dotfiles/.default-gems ~
 ln -sf ~/development/dotfiles/.default-npm-packages ~
 ln -sf ~/development/dotfiles/.fzf.zsh ~
