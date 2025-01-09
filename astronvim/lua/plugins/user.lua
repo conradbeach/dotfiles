@@ -67,17 +67,12 @@ return {
     "folke/noice.nvim",
     event = "VeryLazy",
     opts = {
-      notify = { enabled = false }, -- Astronvim already handles this.
-      messages = {
-        view_search = false, -- I think I might like this, but it was buggy when I first tried it. Set to "virtualtext" to re-enable.
-      },
+      notify = { enabled = false }, -- AstroNvim already handles this.
+      messages = { enabled = false }, -- AstroNvim already handles this.
       lsp = {
+        progress = { enabled = false }, -- AstroNvim already handles this.
         signature = { enabled = false }, -- This was causing a conflict.
         hover = { enabled = false }, -- This was causing a conflict.
-      },
-      routes = {
-        { filter = { event = "msg_show", find = "%d fewer lines" } }, -- Hide "fewer lines" messages.
-        { filter = { event = "msg_show", find = "%d more lines" } }, -- Hide "more lines" messages.
       },
     },
     dependencies = { "MunifTanjim/nui.nvim" },
