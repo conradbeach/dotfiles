@@ -26,18 +26,6 @@ return {
     end,
   },
 
-  {
-    "Pocco81/auto-save.nvim",
-    lazy = false,
-    config = function()
-      require("auto-save").setup {
-        execution_message = {
-          message = "",
-        },
-      }
-    end,
-  },
-
   { "max397574/better-escape.nvim", enabled = false },
 
   {
