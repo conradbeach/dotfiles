@@ -124,6 +124,7 @@ alias bepr="bundle exec parallel_rspec"
 alias rdm="bundle exec rails db:migrate"
 alias rdr="bundle exec rails db:rollback"
 alias rdmr="bundle exec rails db:migrate:redo"
+alias cmarc="bundle exec rubocop --config .rubocop.yml"
 ## Git
 alias grmaster="git rebase master -i --autosquash"
 alias grmain="git rebase main -i --autosquash"
