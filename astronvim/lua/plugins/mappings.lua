@@ -74,11 +74,6 @@ return {
 
           ------------- Plugins -------------
 
-          -- ggandor/leap.nvim
-          ["<Leader>w"] = { "<Plug>(leap-forward-to)", desc = "Leap Forward" },
-          ["<Leader>W"] = { "<Plug>(leap-backward-to)", desc = "Leap Backward" },
-          ["<Leader>X"] = { "<Plug>(leap-cross-window)", desc = "Leap Across Window" },
-
           -- nvim-tree/nvim-tree.lua
           ["<Leader>e"] = { "<cmd>NvimTreeToggle<cr>", desc = "Toggle Explorer" },
           ["<Leader>fe"] = { "<cmd>NvimTreeFindFile<cr>", desc = "Find File in Explorer" },

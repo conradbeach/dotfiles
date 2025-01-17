@@ -59,7 +59,22 @@ return {
     end,
   },
 
-  { "ggandor/leap.nvim", lazy = false },
+  {
+    "ggandor/leap.nvim",
+    lazy = false,
+    dependencies = {
+      "AstroNvim/astrocore",
+      opts = {
+        mappings = {
+          n = {
+            ["<Leader>w"] = { "<Plug>(leap-forward-to)", desc = "Leap Forward" },
+            ["<Leader>W"] = { "<Plug>(leap-backward-to)", desc = "Leap Backward" },
+            ["<Leader>X"] = { "<Plug>(leap-cross-window)", desc = "Leap Across Window" },
+          },
+        },
+      }
+    },
+  },
 
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
 
