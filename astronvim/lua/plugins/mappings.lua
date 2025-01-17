@@ -87,12 +87,6 @@ return {
           ["<Leader>fe"] = { "<cmd>NvimTreeFindFile<cr>", desc = "Find File in Explorer" },
           ["<Leader>ne"] = { "<cmd>tabnew<cr><cmd>NvimTreeOpen<cr>", desc = "New Tab with Explorer" },
 
-          -- nvim-pack/nvim-spectre
-          ["<Leader>fs"] = { "", desc = "Search and Replace" },
-          ["<Leader>fsg"] = { "<cmd>lua require('spectre').open()<cr>", desc = "Global Search & Replace" },
-          ["<Leader>fsf"] = { "<cmd>lua require('spectre').open_file_search()<cr>", desc = "File Search & Replace" },
-          ["<Leader>fsw"] = { "<cmd>lua require('spectre').open_visual({select_word=true})<cr>", desc = "Search & Replace Current Word" },
-
           -- nvim-telescope/telescope.nvim
           ["<Leader>fc"] = { "<cmd>lua require('telescope-live-grep-args.shortcuts').grep_word_under_cursor()<cr>", desc = "Find word under cursor" },
           ["<Leader>fi"] = { "", desc = "Find word under cursor in..." },

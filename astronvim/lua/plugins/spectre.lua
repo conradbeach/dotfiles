@@ -1,5 +1,32 @@
 return {
   "nvim-pack/nvim-spectre",
+  dependencies = {
+    { "AstroNvim/astroui", opts = { icons = { Spectre = "󰛔" } } },
+    {
+      "AstroNvim/astrocore",
+      opts = function(_, opts)
+        local maps = opts.mappings
+        local prefix = "<Leader>s"
+        local current_word_search = function() require("spectre").open_visual { select_word = true } end
+        local current_word_desc = "Current Word"
+
+        maps.n[prefix] = { desc = require("astroui").get_icon("Spectre", 1, true) .. "Search and Replace" }
+        maps.n[prefix .. "s"] = { function() require("spectre").open() end, desc = "Global" }
+        maps.n[prefix .. "f"] =
+          { function() require("spectre").open_file_search() end, desc = "Current File" }
+        maps.n[prefix .. "w"] = {
+          current_word_search,
+          desc = current_word_desc,
+        }
+
+        maps.x[prefix] = maps.n[prefix]
+        maps.x[prefix .. "w"] = {
+          current_word_search,
+          desc = current_word_desc,
+        }
+      end,
+    },
+  },
   config = function()
     require("spectre").setup {
       replace_engine = {
@@ -10,43 +37,6 @@ return {
             "",
             "-E",
           },
-        },
-      },
-      mapping = {
-        ["send_to_qf"] = {
-          map = "<leader>fsq",
-          cmd = "<cmd>lua require('spectre.actions').send_to_qf()<CR>",
-          desc = "send all item to quickfix",
-        },
-        ["replace_cmd"] = {
-          map = "<leader>fsc",
-          cmd = "<cmd>lua require('spectre.actions').replace_cmd()<CR>",
-          desc = "input replace vim command",
-        },
-        ["show_option_menu"] = {
-          map = "<leader>fso",
-          cmd = "<cmd>lua require('spectre').show_options()<CR>",
-          desc = "show option",
-        },
-        ["run_current_replace"] = {
-          map = "<leader>fsr",
-          cmd = "<cmd>lua require('spectre.actions').run_current_replace()<CR>",
-          desc = "replace current line",
-        },
-        ["run_replace"] = {
-          map = "<leader>fsR",
-          cmd = "<cmd>lua require('spectre.actions').run_replace()<CR>",
-          desc = "replace all",
-        },
-        ["change_view_mode"] = {
-          map = "<leader>fsv",
-          cmd = "<cmd>lua require('spectre').change_view()<CR>",
-          desc = "change result view mode",
-        },
-        ["resume_last_search"] = {
-          map = "<leader>fsl",
-          cmd = "<cmd>lua require('spectre').resume_last_search()<CR>",
-          desc = "resume last search before close",
         },
       },
     }
