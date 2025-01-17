@@ -1,5 +1,6 @@
 Host *
  AddKeysToAgent yes
+ ForwardAgent yes
  UseKeychain yes
  IdentityFile ~/.ssh/id_ed25519
 
@@ -13,7 +14,6 @@ Host irms-api-util-production
 
 Host bookshelf-util-stage-and-production
   User ubuntu
-  ForwardAgent yes
 
   # Hostname for direct connection, requires VPN or to be in office. Doesn't work currently.
   # Hostname 172.31.31.159
