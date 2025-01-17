@@ -184,6 +184,21 @@ return {
 
   {
     "akinsho/toggleterm.nvim",
+    dependencies = {
+      {
+        "AstroNvim/astrocore",
+        opts = {
+          mappings = {
+            n = {
+              ["<C-f>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+            },
+            t = {
+              ["<C-f>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+            },
+          },
+        },
+      },
+    },
     opts = {
       direction = "float",
     },

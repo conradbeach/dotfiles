@@ -66,14 +66,8 @@ return {
           ["<Leader>9"] = { "9gt", desc = "Go to Tab 9" },
           -- Switch to last active tab configured in polish.lua
 
-          -- Terminal
-          ["<C-f>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
-
           -- Windsurf
           ["<Leader>K"] = { "<cmd>!windsurf %<cr>", desc = "Open File in Windsurf" },
-        },
-        t = {
-          ["<C-f>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
         },
       },
     },
