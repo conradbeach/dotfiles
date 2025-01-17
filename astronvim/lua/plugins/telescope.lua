@@ -17,6 +17,10 @@ return {
             },
             ["<Leader>fw"] = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", desc = "Find words" },
           },
+          v = {
+            ["<Leader>f"] = { "", desc = "Find" },
+            ["<leader>fv"] = { "<cmd>lua require('telescope-live-grep-args.shortcuts').grep_visual_selection()<cr>", desc = "Find word in visual selection" },
+          },
         },
       },
     },
