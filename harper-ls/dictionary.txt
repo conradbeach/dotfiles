@@ -68,6 +68,7 @@ Xcode
 RDBMS
 sassc
 async
+epubs
 ebooks
 taglib
 Dedupe
@@ -153,6 +154,8 @@ ToggleTerm
 filesystem
 salesforce
 reindexing
+VariantSku
+variantSku
 AstroNvim's
 encryptable
 EpubContent
@@ -164,6 +167,7 @@ TimeMachine
 timemachine
 Bitdefender
 UsageRecord
+ActiveModel
 AstroLSPOpts
 therubyracer
 facetFilters
@@ -174,6 +178,7 @@ AstroCoreOpts
 AlgoliaSearch
 ElasticSearch
 StandardError
+episodeNumber
 EpubSerializer
 LiveConnection
 Subdirectories
@@ -188,6 +193,7 @@ BetterTouchTool
 IndexingResponse
 DeviceParameters
 VariantUsageRecord
+VideoSeriesEpisode
 stopIfEnoughMatches
 VariantSubscriptions
 AlreadyIncludedError
