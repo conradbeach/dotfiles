@@ -189,7 +189,22 @@ return {
     },
   },
 
-  { "mbbill/undotree", lazy = false },
+  {
+    "mbbill/undotree",
+    lazy = false,
+    dependencies = {
+      {
+        "AstroNvim/astrocore",
+        opts = {
+          mappings = {
+            n = {
+              ["<Leader>fu"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undotree" },
+            },
+          },
+        },
+      },
+    },
+  },
 
   { "tpope/vim-rails", lazy = false },
 

@@ -74,9 +74,6 @@ return {
 
           ------------- Plugins -------------
 
-          -- mbbill/undotree
-          ["<Leader>fu"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undotree" },
-
           -- vim-test/vim-test
           -- Strategy and executable are configured in polish.lua
           ["<Leader>t"] = { "", desc = "Tests" },
