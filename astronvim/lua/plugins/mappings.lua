@@ -74,11 +74,6 @@ return {
 
           ------------- Plugins -------------
 
-          -- nvim-tree/nvim-tree.lua
-          ["<Leader>e"] = { "<cmd>NvimTreeToggle<cr>", desc = "Toggle Explorer" },
-          ["<Leader>fe"] = { "<cmd>NvimTreeFindFile<cr>", desc = "Find File in Explorer" },
-          ["<Leader>ne"] = { "<cmd>tabnew<cr><cmd>NvimTreeOpen<cr>", desc = "New Tab with Explorer" },
-
           -- nvim-telescope/telescope.nvim
           ["<Leader>fc"] = { "<cmd>lua require('telescope-live-grep-args.shortcuts').grep_word_under_cursor()<cr>", desc = "Find word under cursor" },
           ["<Leader>fi"] = { "", desc = "Find word under cursor in..." },
