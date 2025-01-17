@@ -93,6 +93,14 @@ return {
   },
 
   {
+    "nvim-notify",
+    opts = {
+      stages = "slide",
+      timeout = 1000,
+    },
+  },
+
+  {
     "nvim-tree/nvim-tree.lua",
     dependencies = "nvim-tree/nvim-web-devicons", -- optional
     lazy = false,
