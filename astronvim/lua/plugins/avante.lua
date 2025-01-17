@@ -9,6 +9,12 @@ return {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
       --- The below dependencies are optional,
+      {
+        "AstroNvim/astrocore",
+        opts = function(_, opts)
+          opts.mappings.n["<Leader>a"] = { desc = " Avante" }
+        end,
+      },
       "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
       {
         -- support for image pasting
@@ -63,6 +69,9 @@ return {
         },
         width = 40, -- default % based on available width
       },
+    },
+    specs = { -- configure optional plugins
+      { "AstroNvim/astroui", opts = { icons = { Avante = "" } } },
     },
   },
 }

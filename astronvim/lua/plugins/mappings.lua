@@ -74,9 +74,6 @@ return {
 
           ------------- Plugins -------------
 
-          -- yetone/avante.nvim
-          ["<Leader>a"] = { "", desc = "Avante" },
-
           -- ggandor/leap.nvim
           ["<Leader>w"] = { "<Plug>(leap-forward-to)", desc = "Leap Forward" },
           ["<Leader>W"] = { "<Plug>(leap-backward-to)", desc = "Leap Backward" },
