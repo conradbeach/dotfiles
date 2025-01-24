@@ -159,10 +159,8 @@ Remove all unwanted apps from Dock.
 
 ## Login Items
 Add these login items (In Settings > Users & Groups > Login Items):
-* Activity Monitor
 * BetterTouchTool
 * Dash
 * Microsoft Outlook if this is a Deseret Book machine.
 * Microsoft Teams if this is a Deseret Book machine.
 * Postgres.app
-* WhatsApp if this is a personal machine.
