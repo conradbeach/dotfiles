@@ -36,6 +36,8 @@ ENV
 yml
 uid
 IOS
+GPG
+PIM
 json
 uuid
 epub
@@ -50,6 +52,8 @@ etag
 APIs
 guid
 IRMS
+Tmux
+Siri
 ebook
 RSpec
 rspec
@@ -69,6 +73,7 @@ RDBMS
 sassc
 async
 epubs
+macOS
 ebooks
 taglib
 Dedupe
@@ -84,6 +89,7 @@ Params
 iCloud
 params
 parens
+pbcopy
 Algolia
 Sidekiq
 sidekiq
@@ -102,6 +108,7 @@ Shopify
 FreeTDS
 Gemfile
 Deseret
+MacBook
 LazySpec
 AstroLSP
 capybara
@@ -127,6 +134,9 @@ railties
 objectID
 firenvim
 dotfiles
+Postgres
+WhatsApp
+Trackpad
 indexable
 Guardfile
 Chargebee
@@ -168,11 +178,13 @@ timemachine
 Bitdefender
 UsageRecord
 ActiveModel
+checkhealth
 AstroLSPOpts
 therubyracer
 facetFilters
 UnifiedTopic
 ActiveRecord
+VariableName
 MediaProblems
 AstroCoreOpts
 AlgoliaSearch
