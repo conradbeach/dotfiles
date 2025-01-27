@@ -67,8 +67,7 @@ return {
       opts = {
         mappings = {
           n = {
-            ["<Leader>w"] = { "<Plug>(leap-forward-to)", desc = "Leap Forward" },
-            ["<Leader>W"] = { "<Plug>(leap-backward-to)", desc = "Leap Backward" },
+            ["<Leader>w"] = { "<Plug>(leap)", desc = "Leap" },
             ["<Leader>X"] = { "<Plug>(leap-cross-window)", desc = "Leap Across Window" },
           },
         },
