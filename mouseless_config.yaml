@@ -1,12 +1,17 @@
-app_version: 0.2.2
+app_version: 0.3.0-preview.3
 behavior_configs:
-- hide_cursor_on_click: false
+- base_wheel_speed: 16
+  hide_cursor_on_click: false
   hide_location: bottom_left
   move_duration_ms: 100
   move_real_cursor_with_virtual: false
   multi_action_timeout_ms: 400
   name: behavior_config_1
   tap_threshold_ms: 200
+  wheel_mode_auto_off_s: 10
+  wheel_speed_multiplier: 4
+  wheel_step_size: 100
+  wheel_step_size_large: 500
 classname: AppConfig
 grid_configs:
 - always_show_subgrid: false
@@ -28,7 +33,7 @@ grid_configs:
   strategy: subgrid
   subgrid_dims:
   - 5
-  - 3
+  - 2
   subgrid_mouse_action_keys: QWERUIOPASDFJKL;ZXCVM,./
 keymaps:
 - entries:
@@ -62,12 +67,47 @@ style_configs:
   - 0.0
   - 0.0
   - 0.35
+  char_spacing_cell_width_ratio: 0.5
+  char_spacing_font_size_ratio: 0.5
+  char_spacing_strategy: cell_width_relative
+  cursor_drag_rgba:
+  - 1.0
+  - 0.5
+  - 0.0
+  - 0.7
+  cursor_move_rgba:
+  - 0.0
+  - 0.5
+  - 1.0
+  - 0.7
+  cursor_other_rgba:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 0.7
+  cursor_rgba:
+  - 0
+  - 1
+  - 0.3
+  - 0.7
+  cursor_right_button_rgba:
+  - 1.0
+  - 0.3
+  - 0.3
+  - 0.7
+  cursor_size: 7
   font_size_multiplier: 0.75
+  grid_line_style: lines
   grid_rgba:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+  highlight_rgba:
+  - 0.5
+  - 0.6
+  - 7
+  - 0.25
   name: style_config_1
   subgrid_font_size_multiplier: 1.0
   subgrid_rgba:
@@ -84,5 +124,14 @@ style_configs:
   - 1.0
   - 1.0
   - 1.0
+  - 0.75
+  text_shadow_blur_radius: 1
+  text_shadow_offset:
+  - 1
+  - -1
+  text_shadow_rgba:
+  - 0
+  - 0
+  - 0
   - 0.75
   window_opacity: 1.0
