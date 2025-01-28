@@ -8,7 +8,7 @@ behavior_configs:
   multi_action_timeout_ms: 400
   name: behavior_config_1
   tap_threshold_ms: 200
-  wheel_mode_auto_off_s: 10
+  wheel_mode_auto_off_s: 0
   wheel_speed_multiplier: 4
   wheel_step_size: 100
   wheel_step_size_large: 500
