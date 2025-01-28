@@ -155,6 +155,7 @@ Bitwarden
 ActiveJob
 Anthropic
 symlinked
+Mouseless
 audiobooks
 Cloudwatch
 Solargraph

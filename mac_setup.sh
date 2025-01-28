@@ -113,6 +113,7 @@ brew install --cask gitkraken
 brew install --cask google-chrome
 brew install --cask iterm2
 if is_deseret_book; then brew install --cask linear-linear; fi
+brew install --cask mouseless
 brew install --cask numi
 brew install --cask obsidian
 brew install --cask postgres-unofficial

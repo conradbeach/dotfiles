@@ -28,7 +28,7 @@ grid_configs:
   strategy: subgrid
   subgrid_dims:
   - 5
-  - 2
+  - 3
   subgrid_mouse_action_keys: QWERUIOPASDFJKL;ZXCVM,./
 keymaps:
 - entries:

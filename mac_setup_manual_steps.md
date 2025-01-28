@@ -130,6 +130,8 @@
   - Sign in with Firefox account.
 - [ ] Messages
   - Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
+- [ ] Mouseless
+  - Import config file from this repo.
 - [ ] Obsidian
   - Set up Obsidian Sync. Put the vault in ~/Obsidian.
 - [ ] Perplexity
@@ -163,4 +165,5 @@ Add these login items (In Settings > Users & Groups > Login Items):
 * Dash
 * Microsoft Outlook if this is a Deseret Book machine.
 * Microsoft Teams if this is a Deseret Book machine.
+* Mouseless
 * Postgres.app
