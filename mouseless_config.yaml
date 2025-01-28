@@ -27,8 +27,8 @@ grid_configs:
   name: grid_config_1
   strategy: subgrid
   subgrid_dims:
-  - 8
-  - 3
+  - 5
+  - 2
   subgrid_mouse_action_keys: QWERUIOPASDFJKL;ZXCVM,./
 keymaps:
 - entries:
@@ -38,7 +38,7 @@ keymaps:
     cycle mouse button: null
     edit config: Tab
     execute mouse action: Space
-    hide overlay: AltRight
+    hide overlay: Escape
     hold for drag: CommandLeft
     hold for move: AltLeft
     hold for right button: CommandRight
@@ -79,10 +79,10 @@ style_configs:
   - 1.0
   - 1.0
   - 1.0
-  - 0.5
+  - 0.75
   text_rgba:
   - 1.0
   - 1.0
   - 1.0
-  - 0.65
+  - 0.75
   window_opacity: 1.0
