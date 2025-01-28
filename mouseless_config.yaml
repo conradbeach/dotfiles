@@ -1,6 +1,6 @@
 app_version: 0.3.0-preview.3
 behavior_configs:
-- base_wheel_speed: 16
+- base_wheel_speed: 64
   hide_cursor_on_click: false
   hide_location: bottom_left
   move_duration_ms: 100
@@ -42,17 +42,43 @@ keymaps:
     cycle mouse action type: null
     cycle mouse button: null
     edit config: Tab
-    execute mouse action: Space
-    hide overlay: Escape
-    hold for drag: CommandLeft
-    hold for move: AltLeft
-    hold for right button: CommandRight
-    release hold/drag: AltRight
+    enter wheel mode: null
+    execute mouse action: Enter
+    execute mouse move: Space
+    exit wheel mode: Escape
+    hide overlay: CommandLeft tap
+    hold for drag: null
+    hold for move: null
+    hold for right button: AltLeft
+    hold for speed decrease: ShiftLeft
+    hold for speed increase: CommandLeft
+    jump to bottom: null
+    jump to left edge: null
+    jump to right edge: null
+    jump to top: null
+    release hold/drag: null
     repeat last mouse action: null
     show overlay: CommandLeft tap
-    switch monitor left: ShiftLeft tap
-    switch monitor right: ShiftRight tap
+    switch monitor left: null
+    switch monitor right: null
     toggle overlay: null
+    toggle wheel mode: OptionLeft tap
+    wheel down: J
+    wheel down fast: D
+    wheel left: H
+    wheel left fast: null
+    wheel right: L
+    wheel right fast: null
+    wheel step down: null
+    wheel step down large: null
+    wheel step left: null
+    wheel step left large: null
+    wheel step right: null
+    wheel step right large: null
+    wheel step up: null
+    wheel step up large: null
+    wheel up: K
+    wheel up fast: U
   name: keymap_1
 monitor_assignments: auto
 name: ''
@@ -67,7 +93,7 @@ style_configs:
   - 0.0
   - 0.0
   - 0.35
-  char_spacing_cell_width_ratio: 0.5
+  char_spacing_cell_width_ratio: 0.2
   char_spacing_font_size_ratio: 0.5
   char_spacing_strategy: cell_width_relative
   cursor_drag_rgba:
@@ -86,8 +112,8 @@ style_configs:
   - 1.0
   - 0.7
   cursor_rgba:
-  - 0
-  - 1
+  - 0.0
+  - 1.0
   - 0.3
   - 0.7
   cursor_right_button_rgba:
@@ -106,7 +132,7 @@ style_configs:
   highlight_rgba:
   - 0.5
   - 0.6
-  - 7
+  - 7.0
   - 0.25
   name: style_config_1
   subgrid_font_size_multiplier: 1.0
@@ -125,13 +151,13 @@ style_configs:
   - 1.0
   - 1.0
   - 0.75
-  text_shadow_blur_radius: 1
+  text_shadow_blur_radius: 1.0
   text_shadow_offset:
-  - 1
-  - -1
+  - 1.0
+  - -1.0
   text_shadow_rgba:
-  - 0
-  - 0
-  - 0
+  - 0.0
+  - 0.0
+  - 0.0
   - 0.75
   window_opacity: 1.0
