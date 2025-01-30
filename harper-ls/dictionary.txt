@@ -38,6 +38,7 @@ uid
 IOS
 GPG
 PIM
+SKU
 json
 uuid
 epub
@@ -74,6 +75,8 @@ sassc
 async
 epubs
 macOS
+d1234
+b1234
 ebooks
 taglib
 Dedupe
@@ -137,6 +140,7 @@ dotfiles
 Postgres
 WhatsApp
 Trackpad
+CHANGEME
 indexable
 Guardfile
 Chargebee
@@ -156,6 +160,7 @@ ActiveJob
 Anthropic
 symlinked
 Mouseless
+Paginator
 audiobooks
 Cloudwatch
 Solargraph
@@ -167,6 +172,8 @@ salesforce
 reindexing
 VariantSku
 variantSku
+Invalid123
+MixinUsage
 AstroNvim's
 encryptable
 EpubContent
@@ -186,6 +193,7 @@ facetFilters
 UnifiedTopic
 ActiveRecord
 VariableName
+deprecations
 MediaProblems
 AstroCoreOpts
 AlgoliaSearch
