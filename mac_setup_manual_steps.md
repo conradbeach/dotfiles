@@ -163,6 +163,7 @@ Remove all unwanted apps from Dock.
 Add these login items (In Settings > Users & Groups > Login Items):
 * BetterTouchTool
 * Dash
+* Karabiner Elements
 * Microsoft Outlook if this is a Deseret Book machine.
 * Microsoft Teams if this is a Deseret Book machine.
 * Mouseless

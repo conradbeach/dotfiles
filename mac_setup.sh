@@ -21,11 +21,6 @@ function is_deseret_book() {
 
 # Link Files
 print_header "Symlinking Files"
-mkdir ~/.config
-mkdir ~/.ssh/
-ln -sf ~/development/dotfiles/ssh/config ~/.ssh/
-if ! is_deseret_book; then ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/; fi
-ln -sf ~/development/dotfiles/tmuxinator ~/.config
 ln -sf ~/development/dotfiles/.agignore ~
 ln -sf ~/development/dotfiles/.asdfrc ~
 ln -sf ~/development/dotfiles/.default-gems ~
@@ -50,6 +45,12 @@ mkdir /Users/cbeach/Library/Application\ Support/Windsurf/User
 ln -sf ~/development/dotfiles/windsurf_settings.json /Users/cbeach/Library/Application\ Support/Windsurf/User/settings.json
 ln -sf ~/development/dotfiles/.zshrc ~
 ln -sf ~/development/dotfiles/git-commit-template.txt ~
+mkdir ~/.ssh/
+ln -sf ~/development/dotfiles/ssh/config ~/.ssh/
+if ! is_deseret_book; then ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/; fi
+mkdir ~/.config
+ln -sf ~/development/dotfiles/karabiner ~/.config
+ln -sf ~/development/dotfiles/tmuxinator ~/.config
 ln -sf ~/development/dotfiles/zellij ~/.config
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
 # in a certain way, so I need to link this file after gnupg runs once.
@@ -112,6 +113,7 @@ if ! is_deseret_book; then brew install --cask gimp; fi
 brew install --cask gitkraken
 brew install --cask google-chrome
 brew install --cask iterm2
+brew install --cask karabiner-elements
 if is_deseret_book; then brew install --cask linear-linear; fi
 brew install --cask mouseless
 brew install --cask numi
