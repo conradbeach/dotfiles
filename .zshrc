@@ -166,8 +166,6 @@ cra() {
   bundle exec bundler-audit check --update
   echo "\n---------- Running Brakeman ----------"
   bundle exec brakeman --no-pager
-  echo "\n---------- Running RubyCritic ----------"
-  rubycritic app
 }
 
 # Check Rails App with JS
