@@ -39,6 +39,11 @@ IOS
 GPG
 PIM
 SKU
+env
+usr
+SSL
+mem
+url
 json
 uuid
 epub
@@ -55,6 +60,9 @@ guid
 IRMS
 Tmux
 Siri
+http
+SMTP
+smtp
 ebook
 RSpec
 rspec
@@ -77,6 +85,7 @@ epubs
 macOS
 d1234
 b1234
+https
 ebooks
 taglib
 Dedupe
@@ -93,6 +102,9 @@ iCloud
 params
 parens
 pbcopy
+STDOUT
+resque
+stdout
 Algolia
 Sidekiq
 sidekiq
@@ -112,6 +124,7 @@ FreeTDS
 Gemfile
 Deseret
 MacBook
+Homerow
 LazySpec
 AstroLSP
 capybara
@@ -161,6 +174,7 @@ Anthropic
 symlinked
 Mouseless
 Paginator
+Karabiner
 audiobooks
 Cloudwatch
 Solargraph
@@ -174,6 +188,7 @@ VariantSku
 variantSku
 Invalid123
 MixinUsage
+nondigital
 AstroNvim's
 encryptable
 EpubContent
@@ -187,6 +202,7 @@ Bitdefender
 UsageRecord
 ActiveModel
 checkhealth
+stylesheets
 AstroLSPOpts
 therubyracer
 facetFilters
@@ -200,6 +216,7 @@ AlgoliaSearch
 ElasticSearch
 StandardError
 episodeNumber
+ActiveSupport
 EpubSerializer
 LiveConnection
 Subdirectories
