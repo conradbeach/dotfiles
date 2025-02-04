@@ -124,6 +124,17 @@
   - Set up syncing. (In this repo at ./Dash/Dash.dashsync)
   - Set up snippets. (In this repo at ./Dash/Snippets.dash)
   - Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
+- [ ] Homerow
+  - General
+    - Enable "Launch at login"
+  - Clicking
+    - Set shortcut to hyper key + ;
+    - Enable "Automatic click"
+    - Disable search shortcut
+  - Scrolling
+    - Set shortcut to hyper key + j
+    - Enable "Show scroll area numbers"
+    - Enable "Scroll commands"
 - [ ] iTerm
   - Load configuration. (In this repo. Change in Settings > General > Settings)
 - [ ] Firefox Developer Edition
@@ -163,6 +174,7 @@ Remove all unwanted apps from Dock.
 Add these login items (In Settings > Users & Groups > Login Items):
 * BetterTouchTool
 * Dash
+* Homerow
 * Karabiner Elements
 * Microsoft Outlook if this is a Deseret Book machine.
 * Microsoft Teams if this is a Deseret Book machine.
