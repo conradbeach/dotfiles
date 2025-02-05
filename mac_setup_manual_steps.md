@@ -124,17 +124,15 @@
   - Set up syncing. (In this repo at ./Dash/Dash.dashsync)
   - Set up snippets. (In this repo at ./Dash/Snippets.dash)
   - Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
+- [ ] Karabiner Elements
+  - Run Karabiner Elements and give it all necessary permissions.
 - [ ] Homerow
   - General
     - Enable "Launch at login"
   - Clicking
     - Set shortcut to hyper key + ;
-    - Enable "Automatic click"
-    - Disable search shortcut
   - Scrolling
     - Set shortcut to hyper key + j
-    - Enable "Show scroll area numbers"
-    - Enable "Scroll commands"
 - [ ] iTerm
   - Load configuration. (In this repo. Change in Settings > General > Settings)
 - [ ] Firefox Developer Edition
