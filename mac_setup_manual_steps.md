@@ -97,8 +97,6 @@
 - [ ] Amazon Q
   - Sign in with AWS Builder account.
   - Disable everything except CLI completions.
-- [ ] Authy
-  - Install the iPad version from Mac App Store.
 - [ ] Awair Home
   - Install the iOS version from the Mac App Store.
 - [ ] BetterTouchTool
