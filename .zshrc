@@ -7,6 +7,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export PATH="/Users/$USER/.cargo/bin:$PATH"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 export SHELL="/bin/zsh"
 
@@ -208,7 +209,7 @@ update_media_api_db() {
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages zsh-completions)
+plugins=(git colored-man-pages zsh-completions asdf)
 autoload -U compinit && compinit
 
 source $ZSH/plugins/history-substring-search/history-substring-search.zsh
@@ -228,11 +229,6 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 fpath+=$(brew --prefix)/share/zsh/site-functions
 autoload -U promptinit; promptinit
 prompt pure
-
-# asdf
-## This export shouldn't be necessary. It's to workaround this bug: https://github.com/asdf-vm/asdf/issues/1103
-export ASDF_DIR="$(brew --prefix asdf)/libexec"
-. $(brew --prefix asdf)/libexec/asdf.sh
 
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
