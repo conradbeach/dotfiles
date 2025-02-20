@@ -44,6 +44,7 @@ usr
 SSL
 mem
 url
+MP3
 json
 uuid
 epub
