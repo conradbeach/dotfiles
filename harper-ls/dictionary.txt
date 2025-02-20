@@ -44,6 +44,7 @@ usr
 SSL
 mem
 url
+MP3
 json
 uuid
 epub
@@ -86,6 +87,7 @@ macOS
 d1234
 b1234
 https
+FIXME
 ebooks
 taglib
 Dedupe
@@ -217,6 +219,7 @@ ElasticSearch
 StandardError
 episodeNumber
 ActiveSupport
+ExternalOrder
 EpubSerializer
 LiveConnection
 Subdirectories
@@ -230,6 +233,7 @@ UsersController
 BetterTouchTool
 IndexingResponse
 DeviceParameters
+ServiceController
 VariantUsageRecord
 VideoSeriesEpisode
 stopIfEnoughMatches
