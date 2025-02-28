@@ -131,11 +131,14 @@
   - Sign in with Firefox account.
 - [ ] Messages
   - Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
+- [ ] Microsoft Copilot (Deseret Book machines only)
+  - Install from the Mac App Store.
+  - Sign in with Deseret Book Microsoft account.
 - [ ] Mouseless
   - Import config file from this repo.
 - [ ] Obsidian
   - Set up Obsidian Sync. Put the vault in ~/Obsidian.
-- [ ] Perplexity
+- [ ] Perplexity (personal machines only)
   - Install from Mac App Store.
   - Disable all shortcuts.
   - Sign in with email. (No password required.)
