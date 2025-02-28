@@ -94,9 +94,6 @@
 ## Application Changes
 - [ ] Xcode
   - Install this first since it's huge.
-- [ ] Amazon Q
-  - Sign in with AWS Builder account.
-  - Disable everything except CLI completions.
 - [ ] Awair Home
   - Install the iOS version from the Mac App Store.
 - [ ] BetterTouchTool

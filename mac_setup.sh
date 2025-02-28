@@ -100,7 +100,6 @@ brew install --cask font-hack-nerd-font
 
 ## Applications
 print_header "Installing Applications via Brew Cask"
-brew install --cask amazon-q
 brew install --cask arc
 if ! is_deseret_book; then brew install --cask balenaetcher; fi
 brew install --cask bettertouchtool
