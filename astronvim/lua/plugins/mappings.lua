@@ -65,9 +65,6 @@ return {
           ["<Leader>8"] = { "8gt", desc = "Go to Tab 8" },
           ["<Leader>9"] = { "9gt", desc = "Go to Tab 9" },
           -- Switch to last active tab configured in polish.lua
-
-          -- Windsurf
-          ["<Leader>K"] = { "<cmd>!windsurf %<cr>", desc = "Open File in Windsurf" },
         },
       },
     },
