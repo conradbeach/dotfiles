@@ -157,43 +157,62 @@ configured_spacer() {
   faketty $@ | spacer --after 4 --padding 2
 }
 
+# Reports the result of a command with a checkmark or X
+# $1 - The name of the check
+# $2 - The status code to check
+report_result() {
+  echo "$1: $([ $2 = 0 ] && echo "✅ Passed" || echo "❌ Failed")"
+}
+
 # Check Rails App
 cra() {
   echo "\n---------- Running RSpec ----------"
   bundle exec rspec
+  rspec_status=$?
+
   echo "\n---------- Running Rubocop ----------"
   bundle exec rubocop --display-style-guide
+  rubocop_status=$?
+
   echo "\n---------- Running Bundler Audit ----------"
   bundle exec bundler-audit check --update
+  audit_status=$?
+
   echo "\n---------- Running Brakeman ----------"
   bundle exec brakeman --no-pager
-}
+  brakeman_status=$?
 
-# Check Rails App with JS
-crajs() {
-  cra
-  echo "\n---------- Running Cypress ----------"
-  rails cypress:run
-  echo "\n---------- Running Yarn Audit ----------"
-  yarn audit
-}
+  echo "\n---------- Results ----------"
+  report_result "RSpec" $rspec_status
+  report_result "Rubocop" $rubocop_status
+  report_result "Bundler Audit" $audit_status
+  report_result "Brakeman" $brakeman_status
 
-# Check Rails Security
-crs() {
-  echo "\n----------- Running Bundler Audit ----------"
-  bundle audit check --update
-  echo "\n---------- Running Brakeman ----------"
-  brakeman --no-pager
+  # Return overall success
+  return $(( rspec_status + rubocop_status + audit_status + brakeman_status ))
 }
 
 # Check Media API
 cma() {
   echo "\n---------- Running Rubocop ----------"
   bundle exec rubocop --config .rubocop.yml
+  rubocop_status=$?
+
   echo "\n---------- Running Cucumber ----------"
   bundle exec cucumber
+  cucumber_status=$?
+
   echo "\n---------- Running Parallel RSpec ----------"
   bundle exec parallel_rspec
+  rspec_status=$?
+
+  echo "\n---------- Results ----------"
+  report_result "Rubocop" $rubocop_status
+  report_result "Cucumber" $cucumber_status
+  report_result "RSpec" $rspec_status
+
+  # Return overall success
+  return $(( rubocop_status + cucumber_status + rspec_status ))
 }
 
 # Update Media API Database
