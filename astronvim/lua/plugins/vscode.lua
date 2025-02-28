@@ -121,6 +121,10 @@ return {
       maps.n["<Leader>lr"] = function() require("vscode-neovim").action "editor.action.rename" end
       maps.n["<Leader>ls"] = function() require("vscode-neovim").action "workbench.action.gotoSymbol" end
       maps.n["<Leader>lf"] = function() require("vscode-neovim").action "editor.action.formatDocument" end
+
+      -- Completion
+      maps.i["<C-l>"] = function() require("vscode-neovim").action "editor.action.accessibleViewAcceptInlineCompletion" end
+      maps.i["<C-o>"] = function() require("vscode-neovim").action "editor.action.inlineSuggest.acceptNextWord" end
     end,
   },
 
