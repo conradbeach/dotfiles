@@ -127,10 +127,15 @@
 - [ ] Homerow
   - General
     - Enable "Launch at login"
+    - Enable "Check for updates automatically"
+  - Appearance
+    - Set "Label size" to 5th position from the top
   - Clicking
     - Set shortcut to hyper key + ;
+    - Enable "Automatic click"
   - Scrolling
     - Set shortcut to hyper key + j
+    - Set "Dash speed" to 3rd from the top
 - [ ] iTerm
   - Load configuration. (In this repo. Change in Settings > General > Settings)
 - [ ] Firefox Developer Edition
