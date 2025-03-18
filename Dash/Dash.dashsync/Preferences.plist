@@ -382,7 +382,7 @@ $("h1").each(function() {
 			<key>activeadmin</key>
 			<dict>
 				<key>date</key>
-				<date>2024-09-09T14:03:20Z</date>
+				<date>2025-03-10T15:19:46Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1116,7 +1116,7 @@ $("h1").each(function() {
 			<key>name</key>
 			<string>Default</string>
 			<key>searchSnippets</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>icon</key>
