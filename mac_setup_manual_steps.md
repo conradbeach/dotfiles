@@ -42,7 +42,7 @@
 
 ### Desktop and Dock
 #### Widgets
-- [ ] Change default web browser to Arc.
+- [ ] Change default web browser to Zen.
 
 #### Windows
 - [ ] Enable "Ask to keep changes when closing documents".
@@ -146,6 +146,8 @@
   - Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
 - [ ] Visual Studio Code
   - Sign in to turn on Settings Sync. Sign in with GitHub.
+- [ ] Zen Browser
+  - Turn on syncing.
 
 Remove all unwanted apps from Dock.
 

@@ -87,6 +87,7 @@ brew install tmuxinator
 brew install trash
 brew install wget
 brew install yarn
+brew install zellij
 brew install zsh
 
 ## Services
@@ -100,7 +101,6 @@ brew install --cask font-hack-nerd-font
 
 ## Applications
 print_header "Installing Applications via Brew Cask"
-brew install --cask arc
 if ! is_deseret_book; then brew install --cask balenaetcher; fi
 brew install --cask bettertouchtool
 brew install --cask 1password
@@ -122,7 +122,7 @@ if ! is_deseret_book; then brew install --cask protonvpn; fi
 brew install --cask slack
 brew install --cask tableplus
 brew install --cask visual-studio-code
-brew install zellij
+brew install --cask zen-browser
 if ! is_deseret_book; then brew install --cask whatsapp; fi
 
 # Cargo
