@@ -210,7 +210,7 @@
     "BSTSnapAreaDefaultShowPictogram" : false,
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "89E8B966-3231-463C-B637-83018CD31DEA",
+  "BTTPresetUUID" : "381BC2D8-525B-4D30-AD68-7B388E1579DF",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "com.apple.finder",
@@ -269,7 +269,7 @@
       "BTTTriggers" : [
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1741799637.778621,
+          "BTTLastUpdatedAt" : 1742591159.8021801,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "05E674FB-4E8E-4D06-AC6E-32F3ECFFAA2A",
@@ -305,7 +305,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0181451,
+          "BTTLastUpdatedAt" : 1742591159.802212,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "6C00F004-CB36-45ED-B635-6BB44CC4AAED",
@@ -354,7 +354,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.018393,
+          "BTTLastUpdatedAt" : 1742591159.802237,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "A87A137C-BC58-496F-8C9B-1956098A5C65",
@@ -374,7 +374,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.01807,
+          "BTTLastUpdatedAt" : 1742591159.802201,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "85A1B3CB-68F8-4198-BE51-337FF655B6C9",
@@ -423,7 +423,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1742580866.526983,
+          "BTTLastUpdatedAt" : 1742591159.8022599,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "908CF734-7339-48C2-ACC4-5AA1178BE2A9",
@@ -1399,7 +1399,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0180941,
+          "BTTLastUpdatedAt" : 1742591159.802284,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "FB2360D0-20CF-4383-BBEC-F5F7B0B654D7",
@@ -1854,7 +1854,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0184741,
+          "BTTLastUpdatedAt" : 1742591159.8022709,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "AD5786B7-7DA2-4A64-A5B1-89AC7358F7DA",
@@ -1909,7 +1909,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0180268,
+          "BTTLastUpdatedAt" : 1742591159.802331,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "8F919639-C20B-4128-B0E1-372465BE0548",
@@ -2118,7 +2118,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0183091,
+          "BTTLastUpdatedAt" : 1742591159.8023419,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "9AFEC567-9FDF-41B6-A001-B14BF9FBF4F1",
@@ -2138,7 +2138,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0184619,
+          "BTTLastUpdatedAt" : 1742591159.8023629,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "B4CED711-58D5-4877-B297-DD6535F06694",
@@ -2173,7 +2173,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0182981,
+          "BTTLastUpdatedAt" : 1742591159.8023729,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "362B8795-A4F0-41F2-ABD6-5EC769CF706B",
@@ -2548,7 +2548,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.018193,
+          "BTTLastUpdatedAt" : 1742591159.8023829,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "93721BF0-F978-4121-B618-B5C6CD771E7C",
@@ -2877,7 +2877,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0182362,
+          "BTTLastUpdatedAt" : 1742591159.8023939,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "C15DA506-1C42-4553-A186-EF3E9A34E04A",
@@ -2912,7 +2912,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0181069,
+          "BTTLastUpdatedAt" : 1742591159.8023529,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "90C1C5FD-CE7C-41B0-84DE-9CA9E6D79A34",
@@ -2932,7 +2932,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0180821,
+          "BTTLastUpdatedAt" : 1742591159.8024039,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "7B7D5289-7DD3-451D-A9B8-56365CD7F5FA",
@@ -2952,7 +2952,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0181708,
+          "BTTLastUpdatedAt" : 1742591159.8024139,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "93188312-51C2-4612-9AF7-EED5C5ABCAF5",
@@ -2972,7 +2972,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.018183,
+          "BTTLastUpdatedAt" : 1742591159.802593,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "7F5B6EA7-07A5-4F98-B236-C5BA7F4C4F39",
@@ -2992,7 +2992,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.018275,
+          "BTTLastUpdatedAt" : 1742591159.8025579,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "0F417CF0-2275-4CC3-9217-F5EEB0F39CC5",
@@ -3012,7 +3012,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.01845,
+          "BTTLastUpdatedAt" : 1742591159.8024368,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "BD303EED-F54D-4784-84BF-032BF00228B1",
@@ -3032,7 +3032,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.018405,
+          "BTTLastUpdatedAt" : 1742591159.802459,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "B6E1E00C-278D-46E7-B855-DF8FB9DD97E9",
@@ -3069,7 +3069,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0183821,
+          "BTTLastUpdatedAt" : 1742591159.802537,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "19F3F452-ABE2-469E-81C3-573F61E32488",
@@ -3089,7 +3089,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.018286,
+          "BTTLastUpdatedAt" : 1742591159.8025479,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "9729149E-96C5-4114-B8EB-CA4904C8BEAF",
@@ -3109,7 +3109,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0183201,
+          "BTTLastUpdatedAt" : 1742591159.802448,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "4DE46419-E1BE-4311-8DA5-11FEFC7F521A",
@@ -3143,7 +3143,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.01825,
+          "BTTLastUpdatedAt" : 1742591159.8025699,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "4515A865-F35C-4AC4-B639-E2DA0AB1B35F",
@@ -3287,7 +3287,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0182629,
+          "BTTLastUpdatedAt" : 1742591159.802603,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "36B1249B-DECA-4B48-8E33-7EC9E57BEAD6",
@@ -3307,7 +3307,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0184278,
+          "BTTLastUpdatedAt" : 1742591159.802613,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "E9B1DDB6-AB31-47D8-B4DA-DF61AABAF0B1",
@@ -3327,7 +3327,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0180569,
+          "BTTLastUpdatedAt" : 1742591159.802623,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "74FC2D04-6ACA-4F72-B0B2-C7D80241AF39",

@@ -210,7 +210,7 @@
     "BSTSnapAreaDefaultShowPictogram" : false,
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "527B967E-B121-4989-911E-FFB4809DBB90",
+  "BTTPresetUUID" : "4D2667AA-E93D-4D6C-AF67-835CBD3406A9",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.L",
@@ -230,7 +230,7 @@
       "BTTTriggers" : [
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.0181201,
+          "BTTLastUpdatedAt" : 1742591159.802249,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "D3CB045F-0B57-4FD4-8B65-91C09C1B8171",
@@ -268,7 +268,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.018132,
+          "BTTLastUpdatedAt" : 1742591159.8024249,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "D17D6B6E-C5AF-428C-B33A-A2118EE16D8E",
@@ -306,100 +306,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760464.338362,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "21BB4DDC-7DF5-4750-8C43-5D1D075240CC",
-          "BTTPredefinedActionType" : 366,
-          "BTTPredefinedActionName" : "Empty Placeholder",
-          "BTTAdditionalConfiguration" : "1966123",
-          "BTTKeyboardShortcutKeyboardType" : 0,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "w",
-          "BTTEnabled" : 1,
-          "BTTEnabled2" : 1,
-          "BTTShortcutKeyCode" : 13,
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 21,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTAdditionalActions" : [
-            {
-              "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1742590641.871058,
-              "BTTTriggerParentUUID" : "21BB4DDC-7DF5-4750-8C43-5D1D075240CC",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "64F35C4F-FDD8-4545-AADA-AEAE8842A7DF",
-              "BTTPredefinedActionType" : 49,
-              "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
-              "BTTLaunchPath" : "\/Applications\/Zen.app",
-              "BTTKeyboardShortcutKeyboardType" : 0,
-              "BTTEnabled" : 1,
-              "BTTEnabled2" : 1,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 24,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            },
-            {
-              "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1740760311.312372,
-              "BTTTriggerParentUUID" : "21BB4DDC-7DF5-4750-8C43-5D1D075240CC",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "7AE22A94-4B56-449E-9C35-19D8FB97A2EC",
-              "BTTLayoutIndependentActionChar" : "2",
-              "BTTShortcutToSend" : "55,19",
-              "BTTKeyboardShortcutKeyboardType" : 0,
-              "BTTEnabled" : 1,
-              "BTTEnabled2" : 1,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 25,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Open Microsoft Copilot web"
-        },
-        {
-          "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760298.018044,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "7D1BFC31-DBDA-45EB-A7CF-B8821ED0C91D",
-          "BTTPredefinedActionType" : 366,
-          "BTTPredefinedActionName" : "Empty Placeholder",
-          "BTTAdditionalConfiguration" : "1966123",
-          "BTTKeyboardShortcutKeyboardType" : 0,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "s",
-          "BTTEnabled" : 1,
-          "BTTEnabled2" : 1,
-          "BTTShortcutKeyCode" : 1,
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 16,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTAdditionalActions" : [
-            {
-              "BTTActionCategory" : 0,
-              "BTTLastUpdatedAt" : 1738205376.0483298,
-              "BTTTriggerParentUUID" : "7D1BFC31-DBDA-45EB-A7CF-B8821ED0C91D",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "87A3A48A-2516-4FC3-AC79-40517E6AD58D",
-              "BTTPredefinedActionType" : 49,
-              "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
-              "BTTLaunchPath" : "\/Applications\/Microsoft Teams.app",
-              "BTTKeyboardShortcutKeyboardType" : 0,
-              "BTTEnabled" : 1,
-              "BTTEnabled2" : 1,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 16,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ]
-        },
-        {
-          "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1740760347.3723011,
+          "BTTLastUpdatedAt" : 1742591159.8022242,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "2D209F4C-9126-42B6-B6E4-59FC188BCC33",
@@ -451,6 +358,64 @@
             }
           ],
           "BTTGestureNotes" : "Open WhatsApp web"
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1742591159.802583,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "7D1BFC31-DBDA-45EB-A7CF-B8821ED0C91D",
+          "BTTPredefinedActionType" : 366,
+          "BTTPredefinedActionName" : "Empty Placeholder",
+          "BTTAdditionalConfiguration" : "1966123",
+          "BTTKeyboardShortcutKeyboardType" : 0,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "s",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTShortcutKeyCode" : 1,
+          "BTTShortcutModifierKeys" : 1966080,
+          "BTTOrder" : 16,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTActionCategory" : 0,
+              "BTTLastUpdatedAt" : 1738205376.0483298,
+              "BTTTriggerParentUUID" : "7D1BFC31-DBDA-45EB-A7CF-B8821ED0C91D",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "87A3A48A-2516-4FC3-AC79-40517E6AD58D",
+              "BTTPredefinedActionType" : 49,
+              "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
+              "BTTLaunchPath" : "\/Applications\/Microsoft Teams.app",
+              "BTTKeyboardShortcutKeyboardType" : 0,
+              "BTTEnabled" : 1,
+              "BTTEnabled2" : 1,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 16,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
+        },
+        {
+          "BTTActionCategory" : 0,
+          "BTTLastUpdatedAt" : 1742591172.116895,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "8C086028-3A82-4DAB-BF0B-EB00B775D90A",
+          "BTTPredefinedActionType" : 49,
+          "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
+          "BTTLaunchPath" : "\/Applications\/Copilot.app",
+          "BTTAdditionalConfiguration" : "1966123",
+          "BTTKeyboardShortcutKeyboardType" : 0,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "w",
+          "BTTEnabled" : 1,
+          "BTTEnabled2" : 1,
+          "BTTShortcutKeyCode" : 13,
+          "BTTShortcutModifierKeys" : 1966080,
+          "BTTOrder" : 21,
+          "BTTAutoAdaptToKeyboardLayout" : 0
         }
       ]
     },
