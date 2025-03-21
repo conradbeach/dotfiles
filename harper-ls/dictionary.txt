@@ -6,6 +6,7 @@ x.
 f.
 E.
 ng
+v7
 tmp
 sha
 aws
@@ -231,12 +232,14 @@ PodcastEpisode
 EbookTextSearch
 UsersController
 BetterTouchTool
+DuplicateBranch
 IndexingResponse
 DeviceParameters
 ServiceController
 VariantUsageRecord
 VideoSeriesEpisode
 stopIfEnoughMatches
+MethodObjectAsBlock
 VariantSubscriptions
 AlreadyIncludedError
 UnusedMethodArgument
