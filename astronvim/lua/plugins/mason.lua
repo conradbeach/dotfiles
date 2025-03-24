@@ -9,7 +9,6 @@ return {
     opts = {
       ensure_installed = {
         "cssls",
-        "harper_ls",
         "html",
         "jsonls",
         "lua_ls",
