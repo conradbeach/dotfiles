@@ -55,13 +55,8 @@ return {
           cursor = "cu", -- The default `cc` conflicts with my mapping to change the current line.
         },
       },
-      vendors = {
-        ollama = {
-          __inherited_from = "openai",
-          api_key_name = "",
-          endpoint = "http://127.0.0.1:11434/v1",
-          model = "qwen2.5-coder:32b-base-q2_K",
-        },
+      ollama = {
+        model = "qwen2.5-coder:32b-base-q2_K",
       },
       windows = {
         ask = {
