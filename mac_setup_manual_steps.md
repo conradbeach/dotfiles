@@ -142,6 +142,8 @@
   - Install from Mac App Store.
   - Disable all shortcuts.
   - Sign in with email. (No password required.)
+- [ ] Stillcolor
+  - Follow install instructions from [GitHub repo](https://github.com/aiaf/Stillcolor).
 - [ ] TablePlus
   - Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
 - [ ] Visual Studio Code
