@@ -5,7 +5,6 @@ return {
     build = "make",
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
-      "stevearc/dressing.nvim",
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
       --- The below dependencies are optional,
@@ -15,7 +14,7 @@ return {
           opts.mappings.n["<Leader>a"] = { desc = " Avante" }
         end,
       },
-      "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
+      "echasnovski/mini.icons",
       {
         -- support for image pasting
         "HakonHarnes/img-clip.nvim",

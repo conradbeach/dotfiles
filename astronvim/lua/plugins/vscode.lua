@@ -92,7 +92,7 @@ return {
       maps.n["]d"] = function() require("vscode-neovim").action "editor.action.marker.nextInFiles" end
       maps.n["[d"] = function() require("vscode-neovim").action "editor.action.marker.prevInFiles" end
 
-      -- Pickers (emulate Telescope mappings)
+      -- Pickers (emulate picker mappings)
       maps.n["<Leader>ff"] = function() require("vscode-neovim").action "workbench.action.quickOpen" end
       maps.n["<Leader>fw"] = function() require("vscode-neovim").action "workbench.action.findInFiles" end
       maps.n["<Leader>fc"] = function()

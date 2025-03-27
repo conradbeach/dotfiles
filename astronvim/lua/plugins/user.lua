@@ -3,34 +3,10 @@
 
 ---@type LazySpec
 return {
-  {
-    "goolord/alpha-nvim",
-    opts = function(_, opts)
-      -- customize the dashboard header
-      opts.section.header.val = {
-        " █████  ███████ ████████ ██████   ██████",
-        "██   ██ ██         ██    ██   ██ ██    ██",
-        "███████ ███████    ██    ██████  ██    ██",
-        "██   ██      ██    ██    ██   ██ ██    ██",
-        "██   ██ ███████    ██    ██   ██  ██████",
-        " ",
-        "    ███    ██ ██    ██ ██ ███    ███",
-        "    ████   ██ ██    ██ ██ ████  ████",
-        "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-        "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-        "    ██   ████   ████   ██ ██      ██",
-        "                                    ",
-        "          What would Jesus do?      ",
-      }
-      return opts
-    end,
-  },
-
   { "max397574/better-escape.nvim", enabled = false },
 
   {
     "akinsho/bufferline.nvim",
-    dependencies = "nvim-tree/nvim-web-devicons",
     lazy = false,
     config = function()
       require("bufferline").setup {
@@ -107,17 +83,8 @@ return {
   },
 
   {
-    "nvim-notify",
-    opts = {
-      stages = "slide",
-      timeout = 1000,
-    },
-  },
-
-  {
     "nvim-tree/nvim-tree.lua",
     dependencies = {
-      { "nvim-tree/nvim-web-devicons" }, -- optional
       {
         "AstroNvim/astrocore",
         opts = {
@@ -178,8 +145,6 @@ return {
       }
     end,
   },
-
-  { "nvim-telescope/telescope-live-grep-args.nvim" },
 
   {
     "akinsho/toggleterm.nvim",

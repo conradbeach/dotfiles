@@ -7,6 +7,5 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.editing-support.auto-save-nvim" },
-  { import = "astrocommunity.completion.blink-cmp" },
   -- import/override with your plugins folder
 }
