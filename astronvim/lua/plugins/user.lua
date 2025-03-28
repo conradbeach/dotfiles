@@ -151,6 +151,13 @@ return {
           }, "\n"),
         },
       },
+      picker = {
+        formatters = {
+          file = {
+            truncate = 1000, -- truncate the file path to (roughly) this length
+          },
+        },
+      },
     },
   },
 
