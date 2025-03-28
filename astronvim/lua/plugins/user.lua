@@ -1,5 +1,4 @@
 -- You can also add or configure plugins by creating files in this `plugins/` folder
--- Here are some examples:
 
 ---@type LazySpec
 return {
@@ -128,6 +127,31 @@ return {
         },
       }
     end,
+  },
+
+  {
+    "folke/snacks.nvim",
+    opts = {
+      dashboard = {
+        preset = {
+          header = table.concat({
+            " █████  ███████ ████████ ██████   ██████ ",
+            "██   ██ ██         ██    ██   ██ ██    ██",
+            "███████ ███████    ██    ██████  ██    ██",
+            "██   ██      ██    ██    ██   ██ ██    ██",
+            "██   ██ ███████    ██    ██   ██  ██████ ",
+            "",
+            "███    ██ ██    ██ ██ ███    ███",
+            "████   ██ ██    ██ ██ ████  ████",
+            "██ ██  ██ ██    ██ ██ ██ ████ ██",
+            "██  ██ ██  ██  ██  ██ ██  ██  ██",
+            "██   ████   ████   ██ ██      ██",
+            "                                ",
+            "       What would Jesus do?     ",
+          }, "\n"),
+        },
+      },
+    },
   },
 
   { "AndrewRadev/splitjoin.vim", lazy = false },
