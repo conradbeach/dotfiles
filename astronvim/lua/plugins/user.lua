@@ -159,6 +159,18 @@ return {
         },
       },
     },
+    dependencies = {
+      {
+        "AstroNvim/astrocore",
+        opts = {
+          mappings = {
+            n = {
+              ["<Leader>fu"] = { function() require("snacks").picker.undo() end, desc = "Undo history" },
+            },
+          },
+        },
+      },
+    },
   },
 
   { "AndrewRadev/splitjoin.vim", lazy = false },
@@ -196,23 +208,6 @@ return {
     },
     opts = {
       direction = "float",
-    },
-  },
-
-  {
-    "mbbill/undotree",
-    lazy = false,
-    dependencies = {
-      {
-        "AstroNvim/astrocore",
-        opts = {
-          mappings = {
-            n = {
-              ["<Leader>fu"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undotree" },
-            },
-          },
-        },
-      },
     },
   },
 
