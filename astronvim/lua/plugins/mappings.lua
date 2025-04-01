@@ -36,7 +36,7 @@ return {
           ["<Leader>y"] = { "", desc = "Yank" },
           ["<Leader>yf"] = { "<cmd>let @+=expand('%:t')<cr>", desc = "File name" },
           ["<Leader>yp"] = { "<cmd>let @+=expand('%:p')<cr>", desc = "File path" },
-          ["<Leader>yr"] = { "<cmd>let @+=expand('%')<cr>", desc = "Relative path" },
+          ["<Leader>yr"] = { "<cmd>let @+=fnamemodify(expand('%'), ':.')<cr>", desc = "Relative path" },
 
           -- Panes
           ["<Leader>z"] = { "<cmd>wincmd |<cr>", desc = "Zoom Pane" },
