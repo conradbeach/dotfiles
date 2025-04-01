@@ -12,8 +12,7 @@ return {
 
         maps.n[prefix] = { desc = require("astroui").get_icon("Spectre", 1, true) .. "Search and Replace" }
         maps.n[prefix .. "s"] = { function() require("spectre").open() end, desc = "Global" }
-        maps.n[prefix .. "f"] =
-          { function() require("spectre").open_file_search() end, desc = "Current File" }
+        maps.n[prefix .. "f"] = { function() require("spectre").open_file_search() end, desc = "Current File" }
         maps.n[prefix .. "w"] = {
           current_word_search,
           desc = current_word_desc,
