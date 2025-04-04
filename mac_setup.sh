@@ -23,8 +23,6 @@ function is_deseret_book() {
 print_header "Symlinking Files"
 ln -sf ~/development/dotfiles/.agignore ~
 ln -sf ~/development/dotfiles/.asdfrc ~
-mkdir -p ~/.cursor/extensions
-ln -sf ~/development/dotfiles/cursor/extensions.json ~/.cursor/extensions/
 mkdir -p ~/Library/Application\ Support/Cursor/User
 ln -sf ~/development/dotfiles/cursor/keybindings.json ~/Library/Application\ Support/Cursor/User/
 ln -sf ~/development/dotfiles/cursor/settings.json ~/Library/Application\ Support/Cursor/User/

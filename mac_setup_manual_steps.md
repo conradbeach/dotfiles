@@ -106,6 +106,12 @@
     - /Volumes/Mac Backup
     - /Volumes/.timemachine
     - /Volumes/com.apple.TimeMachine.localsnapshots
+- [ ] Cursor
+  - Install plugins:
+    - Atom One Light Theme (ID: akamud.vscode-theme-onelight)
+    - CodeSnap (ID: adpyke.codesnap)
+    - Ruby LSP (ID: shopify.ruby-lsp)
+    - VSCode Neovim (ID: asvetliakov.vscode-neovim)
 - [ ] Dash
   - Activate subscription
   - Set up syncing. (In this repo at ./Dash/Dash.dashsync)
