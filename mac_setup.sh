@@ -127,7 +127,6 @@ brew install --cask postman
 if ! is_deseret_book; then brew install --cask protonvpn; fi
 brew install --cask slack
 brew install --cask tableplus
-brew install --cask visual-studio-code
 brew install --cask zen-browser
 if ! is_deseret_book; then brew install --cask whatsapp; fi
 
