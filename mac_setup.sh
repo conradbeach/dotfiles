@@ -23,6 +23,11 @@ function is_deseret_book() {
 print_header "Symlinking Files"
 ln -sf ~/development/dotfiles/.agignore ~
 ln -sf ~/development/dotfiles/.asdfrc ~
+mkdir -p ~/.cursor/extensions
+ln -sf ~/development/dotfiles/cursor/extensions.json ~/.cursor/extensions/
+mkdir -p ~/Library/Application\ Support/Cursor/User
+ln -sf ~/development/dotfiles/cursor/keybindings.json ~/Library/Application\ Support/Cursor/User/
+ln -sf ~/development/dotfiles/cursor/settings.json ~/Library/Application\ Support/Cursor/User/
 ln -sf ~/development/dotfiles/.default-gems ~
 ln -sf ~/development/dotfiles/.default-npm-packages ~
 ln -sf ~/development/dotfiles/.fzf.zsh ~
@@ -104,6 +109,7 @@ print_header "Installing Applications via Brew Cask"
 if ! is_deseret_book; then brew install --cask balenaetcher; fi
 brew install --cask bettertouchtool
 brew install --cask 1password
+brew install --cask cursor
 brew install --cask dash
 brew install --cask firefox@developer-edition
 if ! is_deseret_book; then brew install --cask gimp; fi

@@ -1,0 +1,51 @@
+{
+  "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "Hack Nerd Font",
+  "editor.fontSize": 14,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.occurrencesHighlight": "off",
+  "editor.renderWhitespace": "none",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "files.autoSave": "afterDelay",
+  "git.openRepositoryInParentFolders": "always",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "asdf"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "tabnine.experimentalAutoImports": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1",
+    "Q_NEW_SESSION": "1"
+  },
+  "vscode-neovim.highlightGroups.highlights": {
+    "CurSearch": {
+      "backgroundColor": "theme.editor.findMatchBackground",
+      "borderColor": "theme.editor.findMatchBorder"
+    },
+    "IncSearch": {
+      "backgroundColor": "theme.editor.findMatchBackground",
+      "borderColor": "theme.editor.findMatchBorder"
+    },
+    "Search": {
+      "backgroundColor": "theme.editor.findMatchHighlightBackground",
+      "borderColor": "theme.editor.findMatchHighlightBorder"
+    }
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "editor.background": "#FFF",   
+  },
+  "workbench.settings.applyToAllProfiles": [
+    
+  ],
+  "cursor.cpp.enablePartialAccepts": true,
+  "terminal.integrated.fontSize": 14,
+  "window.customTitleBarVisibility": "windowed",
+  "workbench.colorTheme": "Atom One Light",
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.diffs.useCharacterLevelDiffs": true
+}
