@@ -42,5 +42,6 @@
   "window.customTitleBarVisibility": "windowed",
   "workbench.colorTheme": "Atom One Light",
   "cursor.composer.shouldChimeAfterChatFinishes": true,
-  "cursor.diffs.useCharacterLevelDiffs": true
+  "cursor.diffs.useCharacterLevelDiffs": true,
+  "window.commandCenter": 1
 }
