@@ -1,107 +1,85 @@
 [
-    {
-        "identifier": {
-            "id": "akamud.vscode-theme-onelight",
-            "uuid": "ee33fd31-7bb4-4252-8368-fdd5bcd94cf8"
-        },
-        "version": "2.3.0",
-        "location": {
-            "$mid": 1,
-            "path": "/Users/cbeach/.cursor/extensions/akamud.vscode-theme-onelight-2.3.0",
-            "scheme": "file"
-        },
-        "relativeLocation": "akamud.vscode-theme-onelight-2.3.0",
-        "metadata": {
-            "installedTimestamp": 1732030088022,
-            "pinned": false,
-            "source": "gallery",
-            "id": "ee33fd31-7bb4-4252-8368-fdd5bcd94cf8",
-            "publisherId": "1a680e61-b64e-4eff-bbbb-2085b0618f52",
-            "publisherDisplayName": "akamud",
-            "targetPlatform": "undefined",
-            "updated": false,
-            "isPreReleaseVersion": false,
-            "hasPreReleaseVersion": false
-        }
+  {
+    "identifier": {
+      "id": "akamud.vscode-theme-onelight",
+      "uuid": "ee33fd31-7bb4-4252-8368-fdd5bcd94cf8"
     },
-    {
-        "identifier": {
-            "id": "amazonwebservices.codewhisperer-for-command-line-companion"
-        },
-        "version": "1.6.3",
-        "location": {
-            "$mid": 1,
-            "path": "/Users/cbeach/.cursor/extensions/amazonwebservices.codewhisperer-for-command-line-companion-1.6.3",
-            "scheme": "file"
-        },
-        "relativeLocation": "amazonwebservices.codewhisperer-for-command-line-companion-1.6.3",
-        "metadata": {
-            "isApplicationScoped": false,
-            "isMachineScoped": false,
-            "isBuiltin": false,
-            "installedTimestamp": 1740146752705,
-            "pinned": true,
-            "source": "vsix"
-        }
+    "version": "2.3.0",
+    "location": {
+      "$mid": 1,
+      "path": "/Users/cbeach/.cursor/extensions/akamud.vscode-theme-onelight-2.3.0",
+      "scheme": "file"
     },
-    {
-        "identifier": {
-            "id": "asvetliakov.vscode-neovim",
-            "uuid": "caf8995c-5426-4bf7-9d01-f7968ebd49bb"
-        },
-        "version": "1.18.19",
-        "location": {
-            "$mid": 1,
-            "path": "/Users/cbeach/.cursor/extensions/asvetliakov.vscode-neovim-1.18.19",
-            "scheme": "file"
-        },
-        "relativeLocation": "asvetliakov.vscode-neovim-1.18.19",
-        "metadata": {
-            "isApplicationScoped": false,
-            "isMachineScoped": false,
-            "isBuiltin": false,
-            "installedTimestamp": 1742240266146,
-            "pinned": false,
-            "source": "gallery",
-            "id": "caf8995c-5426-4bf7-9d01-f7968ebd49bb",
-            "publisherId": "ce6190db-6762-4c9c-99c7-1717b9504159",
-            "publisherDisplayName": "Alexey Svetliakov",
-            "targetPlatform": "undefined",
-            "updated": true,
-            "isPreReleaseVersion": false,
-            "hasPreReleaseVersion": false,
-            "preRelease": false
-        }
-    },
-    {
-        "identifier": {
-            "id": "shopify.ruby-lsp",
-            "uuid": "ef656a13-3703-477b-9f36-672a0c949b96"
-        },
-        "version": "0.9.13",
-        "location": {
-            "$mid": 1,
-            "fsPath": "/Users/cbeach/.cursor/extensions/shopify.ruby-lsp-0.9.13",
-            "external": "file:///Users/cbeach/.cursor/extensions/shopify.ruby-lsp-0.9.13",
-            "path": "/Users/cbeach/.cursor/extensions/shopify.ruby-lsp-0.9.13",
-            "scheme": "file"
-        },
-        "relativeLocation": "shopify.ruby-lsp-0.9.13",
-        "metadata": {
-            "isApplicationScoped": false,
-            "isMachineScoped": false,
-            "isBuiltin": false,
-            "installedTimestamp": 1743184091315,
-            "pinned": false,
-            "source": "gallery",
-            "id": "ef656a13-3703-477b-9f36-672a0c949b96",
-            "publisherId": "1166cb6d-7867-45ca-9a40-f535976a40be",
-            "publisherDisplayName": "Shopify",
-            "targetPlatform": "undefined",
-            "updated": true,
-            "isPreReleaseVersion": false,
-            "hasPreReleaseVersion": false,
-            "preRelease": false
-        }
+    "relativeLocation": "akamud.vscode-theme-onelight-2.3.0",
+    "metadata": {
+      "installedTimestamp": 1732030088022,
+      "pinned": false,
+      "source": "gallery",
+      "id": "ee33fd31-7bb4-4252-8368-fdd5bcd94cf8",
+      "publisherId": "1a680e61-b64e-4eff-bbbb-2085b0618f52",
+      "publisherDisplayName": "akamud",
+      "targetPlatform": "undefined",
+      "updated": false,
+      "isPreReleaseVersion": false,
+      "hasPreReleaseVersion": false
     }
+  },
+  {
+    "identifier": {
+      "id": "asvetliakov.vscode-neovim",
+      "uuid": "caf8995c-5426-4bf7-9d01-f7968ebd49bb"
+    },
+    "version": "1.18.19",
+    "location": {
+      "$mid": 1,
+      "path": "/Users/cbeach/.cursor/extensions/asvetliakov.vscode-neovim-1.18.19",
+      "scheme": "file"
+    },
+    "relativeLocation": "asvetliakov.vscode-neovim-1.18.19",
+    "metadata": {
+      "isApplicationScoped": false,
+      "isMachineScoped": false,
+      "isBuiltin": false,
+      "installedTimestamp": 1742240266146,
+      "pinned": false,
+      "source": "gallery",
+      "id": "caf8995c-5426-4bf7-9d01-f7968ebd49bb",
+      "publisherId": "ce6190db-6762-4c9c-99c7-1717b9504159",
+      "publisherDisplayName": "Alexey Svetliakov",
+      "targetPlatform": "undefined",
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "hasPreReleaseVersion": false,
+      "preRelease": false
+    }
+  },
+  {
+    "identifier": {
+      "id": "shopify.ruby-lsp",
+      "uuid": "ef656a13-3703-477b-9f36-672a0c949b96"
+    },
+    "version": "0.9.13",
+    "location": {
+      "$mid": 1,
+      "path": "/Users/cbeach/.cursor/extensions/shopify.ruby-lsp-0.9.13",
+      "scheme": "file"
+    },
+    "relativeLocation": "shopify.ruby-lsp-0.9.13",
+    "metadata": {
+      "isApplicationScoped": false,
+      "isMachineScoped": false,
+      "isBuiltin": false,
+      "installedTimestamp": 1743184091315,
+      "pinned": false,
+      "source": "gallery",
+      "id": "ef656a13-3703-477b-9f36-672a0c949b96",
+      "publisherId": "1166cb6d-7867-45ca-9a40-f535976a40be",
+      "publisherDisplayName": "Shopify",
+      "targetPlatform": "undefined",
+      "updated": true,
+      "isPreReleaseVersion": false,
+      "hasPreReleaseVersion": false,
+      "preRelease": false
+    }
+  }
 ]

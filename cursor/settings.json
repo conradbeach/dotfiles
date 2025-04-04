@@ -16,11 +16,6 @@
     "identifier": "asdf"
   },
   "security.workspace.trust.untrustedFiles": "open",
-  "tabnine.experimentalAutoImports": true,
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1",
-    "Q_NEW_SESSION": "1"
-  },
   "vscode-neovim.highlightGroups.highlights": {
     "CurSearch": {
       "backgroundColor": "theme.editor.findMatchBackground",
@@ -37,7 +32,7 @@
   },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
-    "editor.background": "#FFF",   
+    "editor.background": "#FFF"
   },
   "workbench.settings.applyToAllProfiles": [
     
