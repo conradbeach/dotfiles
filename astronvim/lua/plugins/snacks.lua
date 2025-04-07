@@ -26,6 +26,7 @@ return {
           truncate = 1000, -- truncate the file path to (roughly) this length
         },
       },
+      layout = { layout = { backdrop = false } },
     },
   },
   dependencies = {
