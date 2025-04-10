@@ -15,7 +15,6 @@ return {
         "lua-language-server",
         "ruby-lsp",
         "selene",
-        "solargraph",
         "stimulus-language-server",
         "stylua",
         "tailwindcss-language-server",
