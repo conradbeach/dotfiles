@@ -34,6 +34,15 @@ vim.api.nvim_create_autocmd("FileType", {
   desc = "Disable focus autoresize for FileType",
 })
 
+-- AndrewRadev/splitjoin.vim
+-- Adding these to the mappings table didn't work for some reason.
+vim.api.nvim_set_keymap("n", "gJ", "<cmd>silent SplitjoinJoin<CR>", {})
+vim.api.nvim_set_keymap("n", "gS", "<cmd>silent SplitjoinSplit<CR>", {})
+
+-- tpope/vim-rails
+-- Open the alternate file in a vertical split even if it doesn't exist.
+vim.cmd "command AC :vsplit | execute 'e ' . eval('rails#buffer().alternate()')"
+
 -- vim-test/vim-test
 vim.cmd([[
   " Modified from https://github.com/vim-test/vim-test/blob/master/autoload/test/strategy.vim
@@ -53,12 +62,3 @@ else
   vim.cmd "let test#strategy = 'toggleterm'"
 end
 vim.cmd "let test#ruby#rspec#executable = 'bundle exec rspec --format=documentation'"
-
--- tpope/vim-rails
--- Open the alternate file in a vertical split even if it doesn't exist.
-vim.cmd "command AC :vsplit | execute 'e ' . eval('rails#buffer().alternate()')"
-
--- AndrewRadev/splitjoin.vim
--- Adding these to the mappings table didn't work for some reason.
-vim.api.nvim_set_keymap("n", "gJ", "<cmd>silent SplitjoinJoin<CR>", {})
-vim.api.nvim_set_keymap("n", "gS", "<cmd>silent SplitjoinSplit<CR>", {})
