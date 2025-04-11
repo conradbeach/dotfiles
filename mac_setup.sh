@@ -21,9 +21,12 @@ function is_deseret_book() {
 
 # Link Files
 print_header "Symlinking Files"
+mkdir -p ~/.config
+mkdir -p ~/Library/Application\ Support/Cursor/User
+mkdir -p ~/Obsidian
+mkdir -p ~/.ssh/
 ln -sf ~/development/dotfiles/.agignore ~
 ln -sf ~/development/dotfiles/.asdfrc ~
-mkdir -p ~/Library/Application\ Support/Cursor/User
 ln -sf ~/development/dotfiles/cursor/keybindings.json ~/Library/Application\ Support/Cursor/User/
 ln -sf ~/development/dotfiles/cursor/settings.json ~/Library/Application\ Support/Cursor/User/
 ln -sf ~/development/dotfiles/.default-gems ~
@@ -35,23 +38,20 @@ else
   ln -sf ~/development/dotfiles/.gitconfig ~
 fi
 ln -sf ~/development/dotfiles/.gitignore_global ~
+ln -sf ~/development/dotfiles/git-commit-template.txt ~
 ln -sf ~/development/dotfiles/.irbrc ~
-mkdir ~/Obsidian
+ln -sf ~/development/dotfiles/karabiner ~/.config
 ln -sf ~/development/dotfiles/.obsidian.vimrc ~/Obsidian
 ln -sf ~/development/dotfiles/.pryrc ~
 ln -sf ~/development/dotfiles/.psqlrc ~
 ln -sf ~/development/dotfiles/.rspec ~
 ln -sf ~/development/dotfiles/.rubocop.yml ~
-ln -sf ~/development/dotfiles/.tmux.conf ~
-ln -sf ~/development/dotfiles/.tool-versions ~
-ln -sf ~/development/dotfiles/.zshrc ~
-ln -sf ~/development/dotfiles/git-commit-template.txt ~
-mkdir ~/.ssh/
 ln -sf ~/development/dotfiles/ssh/config ~/.ssh/
 if ! is_deseret_book; then ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/; fi
-mkdir ~/.config
-ln -sf ~/development/dotfiles/karabiner ~/.config
+ln -sf ~/development/dotfiles/.tmux.conf ~
 ln -sf ~/development/dotfiles/tmuxinator ~/.config
+ln -sf ~/development/dotfiles/.tool-versions ~
+ln -sf ~/development/dotfiles/.zshrc ~
 ln -sf ~/development/dotfiles/zellij ~/.config
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
 # in a certain way, so I need to link this file after gnupg runs once.
