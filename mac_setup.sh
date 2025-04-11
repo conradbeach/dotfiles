@@ -21,12 +21,14 @@ function is_deseret_book() {
 
 # Link Files
 print_header "Symlinking Files"
+mkdir -p ~/.claude
 mkdir -p ~/.config
 mkdir -p ~/Library/Application\ Support/Cursor/User
 mkdir -p ~/Obsidian
 mkdir -p ~/.ssh/
 ln -sf ~/development/dotfiles/.agignore ~
 ln -sf ~/development/dotfiles/.asdfrc ~
+ln -sf ~/development/dotfiles/claude/GENERAL.md ~/.claude/CLAUDE.md
 ln -sf ~/development/dotfiles/cursor/keybindings.json ~/Library/Application\ Support/Cursor/User/
 ln -sf ~/development/dotfiles/cursor/settings.json ~/Library/Application\ Support/Cursor/User/
 ln -sf ~/development/dotfiles/.default-gems ~
@@ -73,6 +75,7 @@ brew install eza
 brew install fd
 brew install fzf
 $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
+brew install gh
 brew install git
 brew install gnu-sed
 brew install gnupg

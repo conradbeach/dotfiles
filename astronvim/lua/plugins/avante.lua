@@ -42,11 +42,12 @@ return {
     opts = {
       behaviour = {
         support_paste_from_clipboard = false,
-        enable_claude_text_editor_tool_mode = true,
+        enable_claude_text_editor_tool_mode = false,
       },
       claude = {
-        -- model = "claude-3-5-haiku-latest",
-        model = "claude-3-7-sonnet-latest",
+        model = "claude-3-5-haiku-latest",
+        -- model = "claude-3-7-sonnet-latest",
+        disable_tools = true
       },
       mappings = {
         diff = {
