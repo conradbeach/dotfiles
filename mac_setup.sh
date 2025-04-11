@@ -47,7 +47,6 @@ ln -sf ~/development/dotfiles/.obsidian.vimrc ~/Obsidian
 ln -sf ~/development/dotfiles/.pryrc ~
 ln -sf ~/development/dotfiles/.psqlrc ~
 ln -sf ~/development/dotfiles/.rspec ~
-ln -sf ~/development/dotfiles/.rubocop.yml ~
 ln -sf ~/development/dotfiles/ssh/config ~/.ssh/
 if ! is_deseret_book; then ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/; fi
 ln -sf ~/development/dotfiles/.tmux.conf ~

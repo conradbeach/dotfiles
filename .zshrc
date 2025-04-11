@@ -226,7 +226,7 @@ cgcs() {
 # Check Media API
 cma() {
   echo "\n---------- Running Rubocop ----------"
-  bundle exec rubocop --config .rubocop.yml
+  bundle exec rubocop
   rubocop_status=$?
 
   echo "\n---------- Running Cucumber ----------"
