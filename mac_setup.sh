@@ -206,6 +206,9 @@ if is_deseret_book; then
   pip install aws-shell
 fi
 
+## Claude Code
+claude config set --global preferredNotifChannel terminal_bell # Enable sound alerts when tasks complete
+
 
 # Other Development Setup
 
