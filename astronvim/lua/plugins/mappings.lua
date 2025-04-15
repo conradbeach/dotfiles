@@ -9,9 +9,14 @@ return {
       -- Keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
       mappings = {
         -- first key is the mode
-        n = {
+        v = {
           -- second key is the lefthand side of the map
-
+          ["<Leader>y"] = { "", desc = "Yank" },
+          ["<Leader>yc"] = { "", desc = "Context" },
+          ["<Leader>ycc"] = { "y<cmd>lua vim.fn.setreg('+', 'In `' .. vim.fn.fnamemodify(vim.fn.expand('%'), ':.') .. '` we have this code:\\n```\\n' .. vim.fn.getreg('\"') .. '\\n```')<cr>", desc = "Code block" },
+          ["<Leader>ycm"] = { "y<cmd>lua vim.fn.setreg('+', 'In `' .. vim.fn.fnamemodify(vim.fn.expand('%'), ':.') .. '` we have the method:\\n```\\n' .. vim.fn.getreg('\"') .. '\\n```')<cr>", desc = "Method" },
+        },
+        n = {
           -- Remove some mappings I don't want.
           ["<Leader>C"] = false, -- Force close buffer. I don't worry about buffers.
           ["<Leader>h"] = false, -- Home screen. I won't use this.
@@ -34,9 +39,12 @@ return {
 
           -- Yank file paths to clipboard
           ["<Leader>y"] = { "", desc = "Yank" },
+          ["<Leader>yc"] = { "", desc = "Context" },
           ["<Leader>yf"] = { "<cmd>let @+=expand('%:t')<cr>", desc = "File name" },
           ["<Leader>yp"] = { "<cmd>let @+=expand('%:p')<cr>", desc = "File path" },
           ["<Leader>yr"] = { "<cmd>let @+=fnamemodify(expand('%'), ':.')<cr>", desc = "Relative path" },
+          ["<Leader>ycl"] = { "<cmd>let @+='In `' . fnamemodify(expand('%'), ':.') . '` on line ' . line('.') . ', '<cr>", desc = "File and line" },
+          ["<Leader>yci"] = { "<cmd>let @+='In `' . fnamemodify(expand('%'), ':.') . '`, '<cr>", desc = "File" },
 
           -- Panes
           ["<Leader>z"] = { "<cmd>wincmd |<cr>", desc = "Zoom Pane" },
