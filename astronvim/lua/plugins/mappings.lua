@@ -13,8 +13,8 @@ return {
           -- second key is the lefthand side of the map
           ["<Leader>y"] = { "", desc = "Yank" },
           ["<Leader>yc"] = { "", desc = "Context" },
-          ["<Leader>ycc"] = { "y<cmd>lua vim.fn.setreg('+', 'In `' .. vim.fn.fnamemodify(vim.fn.expand('%'), ':.') .. '` we have this code:\\n```\\n' .. vim.fn.getreg('\"') .. '\\n```')<cr>", desc = "Code block" },
-          ["<Leader>ycm"] = { "y<cmd>lua vim.fn.setreg('+', 'In `' .. vim.fn.fnamemodify(vim.fn.expand('%'), ':.') .. '` we have the method:\\n```\\n' .. vim.fn.getreg('\"') .. '\\n```')<cr>", desc = "Method" },
+          ["<Leader>ycc"] = { "y<cmd>lua local start_line = vim.fn.line(\"'<\"); local end_line = vim.fn.line(\"'>\"); local line_text = start_line == end_line and (\"on line \" .. start_line) or (\"on lines \" .. start_line .. \" to \" .. end_line); vim.fn.setreg('+', 'In `' .. vim.fn.fnamemodify(vim.fn.expand('%'), ':.') .. '` ' .. line_text .. ', we have this code:\\n```\\n' .. vim.fn.getreg('\"') .. '\\n```')<cr>", desc = "Code block" },
+          ["<Leader>ycm"] = { "y<cmd>lua local start_line = vim.fn.line(\"'<\"); local end_line = vim.fn.line(\"'>\"); local line_text = start_line == end_line and (\"on line \" .. start_line) or (\"on lines \" .. start_line .. \" to \" .. end_line); vim.fn.setreg('+', 'In `' .. vim.fn.fnamemodify(vim.fn.expand('%'), ':.') .. '` ' .. line_text .. ', we have the method:\\n```\\n' .. vim.fn.getreg('\"') .. '\\n```')<cr>", desc = "Method" },
         },
         n = {
           -- Remove some mappings I don't want.
