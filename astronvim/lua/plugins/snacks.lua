@@ -41,16 +41,4 @@ return {
       },
     },
   },
-  dependencies = {
-    {
-      "AstroNvim/astrocore",
-      opts = {
-        mappings = {
-          n = {
-            ["<Leader>fu"] = { function() require("snacks").picker.undo() end, desc = "Undo history" },
-          },
-        },
-      },
-    },
-  },
 }
