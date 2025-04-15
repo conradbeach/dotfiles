@@ -1,3 +1,18 @@
+-- Utility function for code block yanking
+_G.yank_code_with_context = function(context_text)
+  local start_line = vim.fn.line "'<"
+  local end_line = vim.fn.line "'>"
+  local line_text = start_line == end_line and ("on line " .. start_line)
+    or ("on lines " .. start_line .. " to " .. end_line)
+
+  local file_path = vim.fn.fnamemodify(vim.fn.expand "%", ":.")
+  local code = vim.fn.getreg '"'
+
+  local result = string.format("In `%s` %s, we have %s:\n```\n%s\n```", file_path, line_text, context_text, code)
+
+  vim.fn.setreg("+", result)
+end
+
 return {
   {
     "AstroNvim/astrocore",
