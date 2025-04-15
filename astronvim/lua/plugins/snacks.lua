@@ -27,6 +27,18 @@ return {
         },
       },
       layout = { layout = { backdrop = false } },
+      win = {
+        input = {
+          keys = {
+            ["<c-x>"] = { "edit_split", mode = { "i", "n" } }, -- Default is "<c-s>" which conflicts with my tmux leader.
+          },
+        },
+        list = {
+          keys = {
+            ["<c-x>"] = { "edit_split", mode = { "i", "n" } }, -- Default is "<c-s>" which conflicts with my tmux leader.
+          },
+        },
+      },
     },
   },
   dependencies = {
