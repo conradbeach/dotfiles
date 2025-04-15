@@ -43,6 +43,28 @@ vim.api.nvim_set_keymap("n", "gS", "<cmd>silent SplitjoinSplit<CR>", {})
 -- Open the alternate file in a vertical split even if it doesn't exist.
 vim.cmd "command AC :vsplit | execute 'e ' . eval('rails#buffer().alternate()')"
 
+-- Utility function for code block yanking
+_G.yank_code_with_context = function(context_text)
+  local start_line = vim.fn.line("'<")
+  local end_line = vim.fn.line("'>")
+  local line_text = start_line == end_line 
+    and ("on line " .. start_line) 
+    or ("on lines " .. start_line .. " to " .. end_line)
+  
+  local file_path = vim.fn.fnamemodify(vim.fn.expand('%'), ':.')
+  local code = vim.fn.getreg('"')
+  
+  local result = string.format(
+    'In `%s` %s, we have %s:\n```\n%s\n```',
+    file_path,
+    line_text,
+    context_text,
+    code
+  )
+  
+  vim.fn.setreg('+', result)
+end
+
 -- vim-test/vim-test
 vim.cmd([[
   " Modified from https://github.com/vim-test/vim-test/blob/master/autoload/test/strategy.vim
