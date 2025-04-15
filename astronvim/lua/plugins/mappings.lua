@@ -43,8 +43,8 @@ return {
           ["<Leader>yf"] = { "<cmd>let @+=expand('%:t')<cr>", desc = "File name" },
           ["<Leader>yp"] = { "<cmd>let @+=expand('%:p')<cr>", desc = "File path" },
           ["<Leader>yr"] = { "<cmd>let @+=fnamemodify(expand('%'), ':.')<cr>", desc = "Relative path" },
+          ["<Leader>ycf"] = { "<cmd>let @+='In `' . fnamemodify(expand('%'), ':.') . '`, '<cr>", desc = "File" },
           ["<Leader>ycl"] = { "<cmd>let @+='In `' . fnamemodify(expand('%'), ':.') . '` on line ' . line('.') . ', '<cr>", desc = "File and line" },
-          ["<Leader>yci"] = { "<cmd>let @+='In `' . fnamemodify(expand('%'), ':.') . '`, '<cr>", desc = "File" },
 
           -- Panes
           ["<Leader>z"] = { "<cmd>wincmd |<cr>", desc = "Zoom Pane" },
