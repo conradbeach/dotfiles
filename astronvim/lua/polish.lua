@@ -19,8 +19,8 @@ vim.api.nvim_create_autocmd("TabLeave", {
 })
 
 -- nvim-focus/focus.nvim
-local ignore_filetypes = { 'NvimTree', 'Avante', 'aerial' }
-local augroup = vim.api.nvim_create_augroup('FocusDisable', { clear = true })
+local ignore_filetypes = { "NvimTree", "Avante", "aerial" }
+local augroup = vim.api.nvim_create_augroup("FocusDisable", { clear = true })
 
 vim.api.nvim_create_autocmd("FileType", {
   group = augroup,
@@ -45,28 +45,21 @@ vim.cmd "command AC :vsplit | execute 'e ' . eval('rails#buffer().alternate()')"
 
 -- Utility function for code block yanking
 _G.yank_code_with_context = function(context_text)
-  local start_line = vim.fn.line("'<")
-  local end_line = vim.fn.line("'>")
-  local line_text = start_line == end_line 
-    and ("on line " .. start_line) 
+  local start_line = vim.fn.line "'<"
+  local end_line = vim.fn.line "'>"
+  local line_text = start_line == end_line and ("on line " .. start_line)
     or ("on lines " .. start_line .. " to " .. end_line)
-  
-  local file_path = vim.fn.fnamemodify(vim.fn.expand('%'), ':.')
-  local code = vim.fn.getreg('"')
-  
-  local result = string.format(
-    'In `%s` %s, we have %s:\n```\n%s\n```',
-    file_path,
-    line_text,
-    context_text,
-    code
-  )
-  
-  vim.fn.setreg('+', result)
+
+  local file_path = vim.fn.fnamemodify(vim.fn.expand "%", ":.")
+  local code = vim.fn.getreg '"'
+
+  local result = string.format("In `%s` %s, we have %s:\n```\n%s\n```", file_path, line_text, context_text, code)
+
+  vim.fn.setreg("+", result)
 end
 
 -- vim-test/vim-test
-vim.cmd([[
+vim.cmd [[
   " Modified from https://github.com/vim-test/vim-test/blob/master/autoload/test/strategy.vim
   " I don't like that the built in one returns focus to the editor; I'd prefer it stay on the terminal.
   function! ModifiedVSCodeNeovimStrategy(cmd)
@@ -76,7 +69,7 @@ vim.cmd([[
   endfunction
 
   let g:test#custom_strategies = { 'modified_neovim_vscode': function('ModifiedVSCodeNeovimStrategy')}
-]])
+]]
 
 if vim.g.vscode then
   vim.cmd "let test#strategy = 'modified_neovim_vscode'"
