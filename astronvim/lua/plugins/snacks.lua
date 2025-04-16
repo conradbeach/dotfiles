@@ -1,5 +1,24 @@
 return {
   "folke/snacks.nvim",
+  dependencies = {
+    {
+      "AstroNvim/astrocore",
+      opts = {
+        mappings = {
+          n = {
+            -- The following mappings are provided by AstroNvim but they don't include hidden files which I want.
+            ["<Leader>fw"] = {
+              function() require("snacks").picker.grep { hidden = true } end, desc = "Find words",
+            },
+            ["<Leader>fc"] = {
+              function() require("snacks").picker.grep_word { hidden = true } end, desc = "Find word under cursor",
+            },
+            ["<Leader>fo"] = { function() require("snacks").picker.recent { hidden = true } end, desc = "Find old files" },
+          },
+        },
+      },
+    },
+  },
   opts = {
     dashboard = {
       preset = {
