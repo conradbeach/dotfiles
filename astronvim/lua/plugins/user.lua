@@ -34,30 +34,6 @@ return {
     end,
   },
 
-  {
-    "ggandor/leap.nvim",
-    lazy = false,
-    dependencies = {
-      "AstroNvim/astrocore",
-      opts = {
-        mappings = {
-          n = {
-            ["<Leader>w"] = { "<Plug>(leap)", desc = "Leap" },
-            ["<Leader>X"] = { "<Plug>(leap-cross-window)", desc = "Leap Across Window" },
-          },
-          x = {
-            ["<Leader>w"] = { "<Plug>(leap)", desc = "Leap" },
-            ["<Leader>X"] = { "<Plug>(leap-cross-window)", desc = "Leap Across Window" },
-          },
-          o = {
-            ["<Leader>w"] = { "<Plug>(leap)", desc = "Leap" },
-            ["<Leader>X"] = { "<Plug>(leap-cross-window)", desc = "Leap Across Window" },
-          },
-        },
-      }
-    },
-  },
-
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
 
   {
@@ -84,35 +60,6 @@ return {
         handlers = {
           gitsigns = true, -- Requires gitsigns
           search = true, -- Requires hlslens
-        },
-      }
-    end,
-  },
-
-  {
-    "nvim-tree/nvim-tree.lua",
-    dependencies = {
-      {
-        "AstroNvim/astrocore",
-        opts = {
-          mappings = {
-            n = {
-              ["<Leader>e"] = { "<cmd>NvimTreeToggle<cr>", desc = "Toggle Explorer" },
-              ["<Leader>fe"] = { "<cmd>NvimTreeFindFile<cr>", desc = "Find File in Explorer" },
-              ["<Leader>ne"] = { "<cmd>tabnew<cr><cmd>NvimTreeOpen<cr>", desc = "New Tab with Explorer" },
-            },
-          },
-        },
-      },
-    },
-    lazy = false,
-    config = function()
-      require("nvim-tree").setup {
-        view = {
-          width = {
-            min = 30,
-            max = 60,
-          },
         },
       }
     end,
