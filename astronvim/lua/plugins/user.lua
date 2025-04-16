@@ -110,8 +110,6 @@ return {
     end,
   },
 
-  { "nvim-treesitter/nvim-treesitter-context", lazy = false },
-
   {
     "rmehri01/onenord.nvim",
     config = function()
