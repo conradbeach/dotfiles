@@ -38,7 +38,7 @@ return {
 
   { "mattn/emmet-vim", lazy = false },
 
-  { 'glacambre/firenvim', build = ":call firenvim#install(0)" },
+  { "glacambre/firenvim", build = ":call firenvim#install(0)" },
 
   {
     "nvim-focus/focus.nvim",
@@ -58,7 +58,7 @@ return {
     "m4xshen/hardtime.nvim",
     opts = {
       max_count = 8, -- The default of 3 feels to restrictive.
-    }
+    },
   },
 
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
@@ -108,7 +108,6 @@ return {
       }
     end,
   },
-
 
   { "AndrewRadev/splitjoin.vim", lazy = false },
 
