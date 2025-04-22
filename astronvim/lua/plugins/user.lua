@@ -2,6 +2,25 @@
 
 ---@type LazySpec
 return {
+  {
+    "bloznelis/before.nvim",
+    event = { "InsertEnter", "TextChanged" },
+    dependencies = {
+      {
+        "AstroNvim/astrocore",
+        opts = {
+          mappings = {
+            n = {
+              ["]c"] = { function() require("before").jump_to_next_edit() end, desc = "Next edit" },
+              ["[c"] = { function() require("before").jump_to_last_edit() end, desc = "Previous edit" },
+            },
+          },
+        },
+      },
+    },
+    opts = {},
+  },
+
   { "max397574/better-escape.nvim", enabled = false },
 
   {
