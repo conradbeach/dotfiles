@@ -53,14 +53,6 @@ return {
     end,
   },
 
-  {
-    -- Also importing the community config in `community.lua`.
-    "m4xshen/hardtime.nvim",
-    opts = {
-      max_count = 8, -- The default of 3 feels to restrictive.
-    },
-  },
-
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
 
   {
