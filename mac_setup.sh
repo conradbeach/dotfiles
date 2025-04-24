@@ -52,6 +52,8 @@ if ! is_deseret_book; then ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/
 ln -sf ~/development/dotfiles/.tmux.conf ~
 ln -sf ~/development/dotfiles/tmuxinator ~/.config
 ln -sf ~/development/dotfiles/.tool-versions ~
+mkdir /Users/cbeach/Library/Application\ Support/Windsurf/User
+ln -sf ~/development/dotfiles/windsurf_settings.json /Users/cbeach/Library/Application\ Support/Windsurf/User/settings.json
 ln -sf ~/development/dotfiles/.zshrc ~
 ln -sf ~/development/dotfiles/zellij ~/.config
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
@@ -312,6 +314,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 ## Enable key repeat for select applications
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write com.exafunction.windsurf ApplePressAndHoldEnabled -bool false
 defaults write md.obsidian ApplePressAndHoldEnabled -bool false
 defaults write com.todesktop.230313mzl4w4u92 ApplePressAndHoldEnabled -bool false
 
