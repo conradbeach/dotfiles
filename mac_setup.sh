@@ -111,7 +111,6 @@ print_header "Installing Applications via Brew Cask"
 if ! is_deseret_book; then brew install --cask balenaetcher; fi
 brew install --cask bettertouchtool
 brew install --cask 1password
-brew install --cask cursor
 brew install --cask dash
 brew install --cask firefox@developer-edition
 if ! is_deseret_book; then brew install --cask gimp; fi
@@ -129,6 +128,7 @@ brew install --cask postman
 if ! is_deseret_book; then brew install --cask protonvpn; fi
 brew install --cask slack
 brew install --cask tableplus
+brew install --cask visual-studio-code
 brew install --cask zen-browser
 if ! is_deseret_book; then brew install --cask whatsapp; fi
 

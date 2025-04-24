@@ -90,7 +90,7 @@ return {
           -- Switch to last active tab configured in polish.lua
 
           -- Cursor
-          ["<Leader>K"] = { "<cmd>!cursor %<cr>", desc = "Open File in Cursor" },
+          ["<Leader>K"] = { "<cmd>!code %<cr>", desc = "Open File in Visual Studio Code" },
         },
       },
     },
