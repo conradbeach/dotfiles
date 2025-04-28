@@ -39,10 +39,6 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_set_keymap("n", "gJ", "<cmd>silent SplitjoinJoin<CR>", {})
 vim.api.nvim_set_keymap("n", "gS", "<cmd>silent SplitjoinSplit<CR>", {})
 
--- tpope/vim-rails
--- Open the alternate file in a vertical split even if it doesn't exist.
-vim.cmd "command AC :vsplit | execute 'e ' . eval('rails#buffer().alternate()')"
-
 -- vim-test/vim-test
 vim.cmd [[
   " Modified from https://github.com/vim-test/vim-test/blob/master/autoload/test/strategy.vim

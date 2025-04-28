@@ -139,8 +139,6 @@ return {
     },
   },
 
-  { "tpope/vim-rails", lazy = false },
-
   { "tpope/vim-surround", lazy = false },
 
   { "machakann/vim-swap", lazy = false },
