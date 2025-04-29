@@ -72,6 +72,7 @@ brew install ack
 brew install bat
 brew install cmake
 brew install diff-so-fancy
+brew install direnv
 brew install eza
 brew install fd
 brew install fzf
