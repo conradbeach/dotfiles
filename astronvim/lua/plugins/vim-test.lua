@@ -1,7 +1,7 @@
 return {
   -- Strategy and executable are configured in polish.lua
   "vim-test/vim-test",
-  lazy = false,
+  event = { "VeryLazy" },
   dependencies = {
     {
       "AstroNvim/astrocore",
