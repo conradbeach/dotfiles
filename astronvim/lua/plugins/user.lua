@@ -140,6 +140,4 @@ return {
   },
 
   { "machakann/vim-swap", lazy = false },
-
-  { "tpope/vim-repeat", lazy = false },
 }
