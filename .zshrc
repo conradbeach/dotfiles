@@ -291,6 +291,8 @@ export ANTHROPIC_API_KEY=$(cat ~/.anthropic_api_key)
 
 # Claude
 alias claude="~/.claude/local/claude"
+alias cc="claude"
+alias ccc="claude --continue"
 
 # direnv
 eval "$(direnv hook zsh)"
