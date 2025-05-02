@@ -232,17 +232,12 @@ cma() {
   bundle exec rubocop
   rubocop_status=$?
 
-  echo "\n---------- Running Cucumber ----------"
-  bundle exec cucumber
-  cucumber_status=$?
-
   echo "\n---------- Running Parallel RSpec ----------"
   bundle exec parallel_rspec
   rspec_status=$?
 
   echo "\n---------- Results ----------"
   report_result "Rubocop" $rubocop_status
-  report_result "Cucumber" $cucumber_status
   report_result "RSpec" $rspec_status
 
   # Return overall success
