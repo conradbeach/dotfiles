@@ -89,7 +89,7 @@ return {
           ["<Leader>9"] = { "9gt", desc = "Go to Tab 9" },
           -- Switch to last active tab configured in polish.lua
 
-          -- Cursor
+          -- Visual Studio Code
           ["<Leader>K"] = { "<cmd>!code %<cr>", desc = "Open File in Visual Studio Code" },
         },
       },
