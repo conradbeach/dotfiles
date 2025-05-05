@@ -210,7 +210,7 @@
     "BSTSnapAreaDefaultShowPictogram" : false,
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "21D782B7-0224-43BD-8884-E89541A3BD6E",
+  "BTTPresetUUID" : "704F6AD4-A014-4CDB-8A3F-9B0F15659425",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.L",
@@ -1539,13 +1539,13 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1745851303.3124571,
+          "BTTLastUpdatedAt" : 1746458008.992311,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "B4CED711-58D5-4877-B297-DD6535F06694",
           "BTTPredefinedActionType" : 49,
           "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
-          "BTTLaunchPath" : "\/Applications\/Cursor.app",
+          "BTTLaunchPath" : "\/Applications\/Visual Studio Code.app",
           "BTTAdditionalConfiguration" : "1966123",
           "BTTKeyboardShortcutKeyboardType" : 1571,
           "BTTTriggerOnDown" : 1,
