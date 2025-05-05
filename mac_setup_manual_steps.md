@@ -144,7 +144,7 @@
   - Import config file from this repo.
 - [ ] Obsidian
   - Set up Obsidian Sync. Put the vault in ~/Obsidian.
-- [ ] Perplexity (personal machines only)
+- [ ] Perplexity
   - Install from Mac App Store.
   - Disable all shortcuts.
   - Sign in with email. (No password required.)
