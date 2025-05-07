@@ -330,7 +330,7 @@ $("h1").each(function() {
 			<key>phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2025-04-30T14:33:05Z</date>
+				<date>2025-05-07T13:33:10Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -379,20 +379,6 @@ $("h1").each(function() {
 	<dict>
 		<key>installed</key>
 		<dict>
-			<key>activeadmin</key>
-			<dict>
-				<key>date</key>
-				<date>2025-03-10T15:19:46Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>activeadmin</string>
-					<key>platform</key>
-					<string>rubyGems</string>
-					<key>uniqueIdentifier</key>
-					<string>activeadmin</string>
-				</dict>
-			</dict>
 			<key>activerecord-import</key>
 			<dict>
 				<key>date</key>
@@ -433,20 +419,6 @@ $("h1").each(function() {
 					<string>rubyGems</string>
 					<key>uniqueIdentifier</key>
 					<string>capybara</string>
-				</dict>
-			</dict>
-			<key>clearance</key>
-			<dict>
-				<key>date</key>
-				<date>2025-03-31T14:18:19Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>clearance</string>
-					<key>platform</key>
-					<string>rubyGems</string>
-					<key>uniqueIdentifier</key>
-					<string>clearance</string>
 				</dict>
 			</dict>
 			<key>devise</key>
@@ -547,20 +519,6 @@ $("h1").each(function() {
 					<string>rspec</string>
 				</dict>
 			</dict>
-			<key>rspec_api_documentation</key>
-			<dict>
-				<key>date</key>
-				<date>2024-06-13T19:42:05Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>rspec_api_documentation</string>
-					<key>platform</key>
-					<string>rubyGems</string>
-					<key>uniqueIdentifier</key>
-					<string>rspec_api_documentation</string>
-				</dict>
-			</dict>
 			<key>shoulda-matchers</key>
 			<dict>
 				<key>date</key>
@@ -578,6 +536,20 @@ $("h1").each(function() {
 		</dict>
 		<key>uninstalled</key>
 		<dict>
+			<key>activeadmin</key>
+			<dict>
+				<key>date</key>
+				<date>2025-05-07T15:28:48Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>activeadmin</string>
+					<key>platform</key>
+					<string>rubyGems</string>
+					<key>uniqueIdentifier</key>
+					<string>activeadmin</string>
+				</dict>
+			</dict>
 			<key>aws-sdk-sns</key>
 			<dict>
 				<key>date</key>
@@ -590,6 +562,20 @@ $("h1").each(function() {
 					<string>rubyGems</string>
 					<key>uniqueIdentifier</key>
 					<string>aws-sdk-sns</string>
+				</dict>
+			</dict>
+			<key>clearance</key>
+			<dict>
+				<key>date</key>
+				<date>2025-05-07T15:28:54Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>clearance</string>
+					<key>platform</key>
+					<string>rubyGems</string>
+					<key>uniqueIdentifier</key>
+					<string>clearance</string>
 				</dict>
 			</dict>
 			<key>cucumber</key>
@@ -660,6 +646,20 @@ $("h1").each(function() {
 					<string>rubyGems</string>
 					<key>uniqueIdentifier</key>
 					<string>paperclip</string>
+				</dict>
+			</dict>
+			<key>rspec_api_documentation</key>
+			<dict>
+				<key>date</key>
+				<date>2025-05-07T15:28:44Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>rspec_api_documentation</string>
+					<key>platform</key>
+					<string>rubyGems</string>
+					<key>uniqueIdentifier</key>
+					<string>rspec_api_documentation</string>
 				</dict>
 			</dict>
 			<key>twilio-ruby</key>
@@ -830,26 +830,6 @@ $("h1").each(function() {
 					<string>Tailwind_CSS</string>
 				</dict>
 			</dict>
-			<key>Yarn</key>
-			<dict>
-				<key>date</key>
-				<date>2024-06-13T17:25:55Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>authorLinkHref</key>
-					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Yarn#readme</string>
-					<key>authorLinkText</key>
-					<string>Phill Ayers</string>
-					<key>name</key>
-					<string>Yarn</string>
-					<key>platform</key>
-					<string>usercontribYarn</string>
-					<key>uniqueIdentifier</key>
-					<string>Yarn</string>
-				</dict>
-			</dict>
 			<key>Zsh</key>
 			<dict>
 				<key>date</key>
@@ -872,7 +852,28 @@ $("h1").each(function() {
 			</dict>
 		</dict>
 		<key>uninstalled</key>
-		<dict/>
+		<dict>
+			<key>Yarn</key>
+			<dict>
+				<key>date</key>
+				<date>2025-05-07T15:28:19Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Yarn#readme</string>
+					<key>authorLinkText</key>
+					<string>Phill Ayers</string>
+					<key>name</key>
+					<string>Yarn</string>
+					<key>platform</key>
+					<string>usercontribYarn</string>
+					<key>uniqueIdentifier</key>
+					<string>Yarn</string>
+				</dict>
+			</dict>
+		</dict>
 	</dict>
 	<key>DHWebViewIsDark</key>
 	<false/>
@@ -971,6 +972,26 @@ $("h1").each(function() {
 			<string>will_paginate:</string>
 			<key>~/Library/Application Support/Dash/User Contributed/Tailwind CSS/Tailwind_CSS.docset</key>
 			<string>tailwind:</string>
+			<key>~/development/dotfiles/Dash/custom_dash_docsets/capybara-hints.docset</key>
+			<string>capybara:</string>
+			<key>~/development/dotfiles/Dash/custom_dash_docsets/factory_bot-hints.docset</key>
+			<string>factory_bot:</string>
+			<key>~/development/dotfiles/Dash/custom_dash_docsets/homebrew-hints.docset</key>
+			<string>homebrew:</string>
+			<key>~/development/dotfiles/Dash/custom_dash_docsets/markdown-hints.docset</key>
+			<string>markdown:</string>
+			<key>~/development/dotfiles/Dash/custom_dash_docsets/rails-i18n-hints.docset</key>
+			<string>rails-i18n:</string>
+			<key>~/development/dotfiles/Dash/custom_dash_docsets/rails-migrations-hints.docset</key>
+			<string>rails-migrations:</string>
+			<key>~/development/dotfiles/Dash/custom_dash_docsets/rails-models-hints.docset</key>
+			<string>rails-models:</string>
+			<key>~/development/dotfiles/Dash/custom_dash_docsets/rails-routes-hints.docset</key>
+			<string>rails-routes:</string>
+			<key>~/development/dotfiles/Dash/custom_dash_docsets/semver-hints.docset</key>
+			<string>semver:</string>
+			<key>~/development/dotfiles/Dash/custom_dash_docsets/yarn-hints.docset</key>
+			<string>yarn:</string>
 		</dict>
 	</dict>
 	<key>feeds</key>
@@ -986,11 +1007,6 @@ $("h1").each(function() {
 			<dict>
 				<key>date</key>
 				<date>2024-06-13T17:26:16Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Elixir.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2024-06-13T17:26:03Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/HTML.xml</key>
 			<dict>
@@ -1011,11 +1027,6 @@ $("h1").each(function() {
 			<dict>
 				<key>date</key>
 				<date>2024-06-13T17:26:12Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/React.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2024-06-13T17:26:13Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby_2.xml</key>
 			<dict>
@@ -1042,11 +1053,6 @@ $("h1").each(function() {
 				<key>date</key>
 				<date>2024-12-06T15:18:54Z</date>
 			</dict>
-			<key>http://kapeli.com/feeds/Rust.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2024-06-13T17:26:19Z</date>
-			</dict>
 			<key>http://kapeli.com/feeds/jQuery.xml</key>
 			<dict>
 				<key>date</key>
@@ -1065,6 +1071,11 @@ $("h1").each(function() {
 				<key>date</key>
 				<date>2021-06-03T14:56:31Z</date>
 			</dict>
+			<key>http://kapeli.com/feeds/Elixir.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2025-05-07T15:29:01Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/Erlang.xml</key>
 			<dict>
 				<key>date</key>
@@ -1074,6 +1085,11 @@ $("h1").each(function() {
 			<dict>
 				<key>date</key>
 				<date>2021-06-03T14:56:57Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/React.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2025-05-07T15:29:01Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Ruby.xml</key>
 			<dict>
@@ -1089,6 +1105,11 @@ $("h1").each(function() {
 			<dict>
 				<key>date</key>
 				<date>2024-06-11T21:21:06Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Rust.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2025-05-07T15:29:01Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/UnderscoreJS.xml</key>
 			<dict>
