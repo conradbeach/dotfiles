@@ -1,0 +1,8 @@
+theme = iTerm2 Light Background
+
+font-size = 14
+font-family = Hack Nerd Font Mono
+font-thicken = true  
+font-thicken-strength = 235
+
+fullscreen = true

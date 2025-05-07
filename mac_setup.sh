@@ -34,6 +34,7 @@ ln -sf ~/development/dotfiles/cursor/settings.json ~/Library/Application\ Suppor
 ln -sf ~/development/dotfiles/.default-gems ~
 ln -sf ~/development/dotfiles/.default-npm-packages ~
 ln -sf ~/development/dotfiles/.fzf.zsh ~
+ln -sf ~/development/dotfiles/ghostty ~/.config
 if is_deseret_book; then
   ln -sf ~/development/dotfiles/.gitconfig_deseret_book ~/.gitconfig
 else
@@ -114,6 +115,7 @@ if ! is_deseret_book; then brew install --cask balenaetcher; fi
 brew install --cask bettertouchtool
 brew install --cask dash
 brew install --cask firefox@developer-edition
+brew install --cask ghostty
 if ! is_deseret_book; then brew install --cask gimp; fi
 brew install --cask gitkraken
 brew install --cask google-chrome
