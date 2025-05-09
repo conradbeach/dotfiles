@@ -10,3 +10,6 @@
 ## Ruby on Rails
 - Strive to follow Rails best practices and conventions.
 - Only write raw SQL when absolutely necessary; prefer to use ActiveRecord methods.
+
+## Git
+- Don't commit your work. I prefer to do that myself.
