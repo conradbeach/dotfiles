@@ -27,7 +27,7 @@
 			<key>Emoji</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-13T17:25:54Z</date>
+				<date>2025-05-10T12:24:50Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -302,7 +302,7 @@ $("h1").each(function() {
 			<key>ecto</key>
 			<dict>
 				<key>date</key>
-				<date>2024-10-07T14:09:42Z</date>
+				<date>2025-05-10T12:24:53Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -316,7 +316,7 @@ $("h1").each(function() {
 			<key>httpoison</key>
 			<dict>
 				<key>date</key>
-				<date>2025-04-21T15:02:38Z</date>
+				<date>2025-05-10T12:24:53Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -330,7 +330,7 @@ $("h1").each(function() {
 			<key>phoenix</key>
 			<dict>
 				<key>date</key>
-				<date>2025-05-07T13:33:10Z</date>
+				<date>2025-05-10T12:24:53Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -344,7 +344,7 @@ $("h1").each(function() {
 			<key>poison</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-13T17:25:56Z</date>
+				<date>2025-05-10T12:24:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -382,7 +382,7 @@ $("h1").each(function() {
 			<key>activerecord-import</key>
 			<dict>
 				<key>date</key>
-				<date>2025-02-04T17:01:43Z</date>
+				<date>2025-05-10T12:24:53Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -396,7 +396,7 @@ $("h1").each(function() {
 			<key>arel</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-13T19:42:26Z</date>
+				<date>2025-05-10T12:24:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -424,7 +424,7 @@ $("h1").each(function() {
 			<key>devise</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-13T19:42:16Z</date>
+				<date>2025-05-10T12:24:54Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -494,7 +494,7 @@ $("h1").each(function() {
 			<key>jwt</key>
 			<dict>
 				<key>date</key>
-				<date>2025-01-02T15:12:10Z</date>
+				<date>2025-05-10T12:24:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -713,7 +713,7 @@ $("h1").each(function() {
 			<key>Bulma</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-13T17:25:55Z</date>
+				<date>2025-05-10T12:24:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -737,7 +737,7 @@ $("h1").each(function() {
 			<key>Enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-13T17:25:55Z</date>
+				<date>2025-05-10T12:24:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>authorLinkHref</key>
@@ -755,7 +755,7 @@ $("h1").each(function() {
 			<key>Jest</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-13T17:25:55Z</date>
+				<date>2025-05-10T12:24:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -833,7 +833,7 @@ $("h1").each(function() {
 			<key>Zsh</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-13T17:25:55Z</date>
+				<date>2025-05-10T12:24:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -1021,7 +1021,7 @@ $("h1").each(function() {
 			<key>http://kapeli.com/feeds/Lo-Dash.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-06-13T17:26:13Z</date>
+				<date>2025-05-10T12:24:51Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/PostgreSQL.xml</key>
 			<dict>
