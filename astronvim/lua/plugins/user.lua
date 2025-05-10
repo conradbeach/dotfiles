@@ -36,8 +36,6 @@ return {
     end,
   },
 
-  { "mattn/emmet-vim", lazy = false },
-
   { "glacambre/firenvim", build = ":call firenvim#install(0)" },
 
   {
