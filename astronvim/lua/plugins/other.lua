@@ -7,7 +7,7 @@ return {
   config = function()
     require("other-nvim").setup {
       mappings = {
-        -- built-in mapping support
+        -- built-in mappings
         "rails",
       },
       rememberBuffers = false,
