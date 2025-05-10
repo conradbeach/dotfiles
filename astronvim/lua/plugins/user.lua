@@ -103,18 +103,61 @@ return {
 
   { "AndrewRadev/splitjoin.vim", lazy = false },
 
+  -- {
+  --   "supermaven-inc/supermaven-nvim",
+  --   lazy = false,
+  --   config = function()
+  --     require("supermaven-nvim").setup {
+  --       log_level = "warn",
+  --       keymaps = {
+  --         accept_suggestion = "<C-l>",
+  --         accept_word = "<C-o>",
+  --       },
+  --     }
+  --   end,
+  -- },
+
   {
-    "supermaven-inc/supermaven-nvim",
-    lazy = false,
-    config = function()
-      require("supermaven-nvim").setup {
-        log_level = "warn",
-        keymaps = {
-          accept_suggestion = "<C-l>",
-          accept_word = "<C-o>",
-        },
+    "Saghen/blink.cmp",
+    opts = {
+      keymap = {
+        preset = "none",
+        ['<C-i>'] = {},
+        ['<C-p>'] = {},
       }
+    },
+  },
+
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup({
+        suggestion = {
+          auto_trigger = true,
+          keymap = {
+            accept = "<C-l>",
+            accept_word = "<C-o>",
+            accept_line = "<C-i>",
+          },
+        }
+      })
     end,
+    dependencies = {
+      {
+        "AstroNvim/astrocore",
+        opts = {
+          mappings = {
+            i = {
+              ["<C-l>"] = { function() require("copilot.suggestion").accept() end, desc = "Accept" },
+              ["<C-o>"] = { function() require("copilot.suggestion").accept_word() end, desc = "Accept word" },
+              ["<C-i>"] = { function() require("copilot.suggestion").accept_line() end, desc = "Accept line" }, -- Conflicts with blink_cmp I think.
+            },
+          },
+        },
+      },
+    },
   },
 
   {
