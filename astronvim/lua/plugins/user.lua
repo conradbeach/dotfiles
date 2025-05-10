@@ -125,10 +125,12 @@ return {
         opts = {
           mappings = {
             n = {
-              ["<C-f>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+              ["<C-f>"] = { "<cmd>1ToggleTerm<cr>", desc = "Toggle terminal" },
+              ["<C-y>"] = { "<cmd>2ToggleTerm size=90 direction=vertical<cr>", desc = "Toggle Claude Code" },
             },
             t = {
-              ["<C-f>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+              ["<C-f>"] = { "<cmd>1ToggleTerm<cr>", desc = "Toggle terminal" },
+              ["<C-y>"] = { "<cmd>2ToggleTerm<cr>", desc = "Toggle Claude Code" },
             },
           },
         },
