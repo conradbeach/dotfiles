@@ -19,14 +19,4 @@ return {
       width = 40, -- default % based on available width
     },
   },
-  dependencies = {
-    {
-      -- Make sure to set this up properly if you have lazy=true
-      'MeanderingProgrammer/render-markdown.nvim',
-      opts = {
-        file_types = { "Avante" },
-      },
-      ft = { "Avante" },
-    },
-  },
 }
