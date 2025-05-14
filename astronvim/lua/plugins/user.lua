@@ -99,8 +99,6 @@ return {
     end,
   },
 
-  { "AndrewRadev/splitjoin.vim", lazy = false },
-
   {
     "supermaven-inc/supermaven-nvim",
     lazy = false,
@@ -138,6 +136,31 @@ return {
       direction = "float",
     },
   },
+
+  {
+    "Wansmer/treesj",
+    event = "BufEnter",
+    keys = {},
+    dependencies = {
+      { "nvim-treesitter/nvim-treesitter" }, -- if you install parsers with `nvim-treesitter`
+      {
+        "AstroNvim/astrocore",
+        opts = {
+          mappings = {
+            n = {
+              ["gS"] = { "<cmd>TSJToggle<cr>", desc = "Split or join" },
+            },
+          },
+        },
+      },
+    },
+    config = function()
+      require("treesj").setup({
+        max_join_length = 999, -- Effectively disable line length limit.
+      })
+    end,
+  },
+
 
   { "machakann/vim-swap", lazy = false },
 }

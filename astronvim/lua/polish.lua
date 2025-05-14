@@ -34,11 +34,6 @@ vim.api.nvim_create_autocmd("FileType", {
   desc = "Disable focus autoresize for FileType",
 })
 
--- AndrewRadev/splitjoin.vim
--- Adding these to the mappings table didn't work for some reason.
-vim.api.nvim_set_keymap("n", "gJ", "<cmd>silent SplitjoinJoin<CR>", {})
-vim.api.nvim_set_keymap("n", "gS", "<cmd>silent SplitjoinSplit<CR>", {})
-
 -- vim-test/vim-test
 vim.cmd [[
   " Modified from https://github.com/vim-test/vim-test/blob/master/autoload/test/strategy.vim
