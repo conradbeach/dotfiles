@@ -9,6 +9,15 @@ return {
       mappings = {
         -- built-in mappings
         "rails",
+        -- custom mappings
+        {
+          pattern = "Gemfile$",
+          target = "Gemfile.lock",
+        },
+        {
+          pattern = "Gemfile.lock$",
+          target = "Gemfile",
+        },
       },
       rememberBuffers = false,
     }
