@@ -285,7 +285,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export ANTHROPIC_API_KEY=$(cat ~/.anthropic_api_key)
 
 # Claude
-alias claude="~/.claude/local/claude"
 alias cc="claude"
 alias ccc="claude --continue"
 
