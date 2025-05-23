@@ -12,4 +12,4 @@
 - Only write raw SQL when absolutely necessary; prefer to use ActiveRecord methods.
 
 ## Git
-- Don't commit your work. I prefer to do that myself.
+- Commit your work after every meaningful chunk of work.
