@@ -251,6 +251,14 @@ update_media_api_db() {
   time taskpolicy -c utility pg_restore -d bookshelf_development -j 6 $1
 }
 
+# Copy Git ignored files from the main Media API repo directory to a worktree directory.
+prep_media_api_worktree() {
+  cp -r ~/development/media-api/.claude ./
+  cp -r ~/development/media-api/CLAUDE.local.md ./
+  cp -r ~/development/media-api/.envrc ./
+  cp -r ~/development/media-api/config/application.rb ./config/
+}
+
 # Plugins
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
