@@ -88,13 +88,7 @@ return {
       require("onenord").setup {
         custom_colors = {
           bg = "#FFFFFF",
-        },
-        custom_highlights = {
-          light = {
-            AvanteConflictCurrent = { bg = "#F7F8FA" },
-            AvanteConflictIncoming = { bg = "#F7F8FA" },
-          },
-        },
+        }
       }
     end,
   },

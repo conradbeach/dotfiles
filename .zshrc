@@ -288,10 +288,6 @@ prompt pure
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# Neovim/Avante
-## This is intended for Avante, but it's a standard environment variable, so other software might use it too.
-export ANTHROPIC_API_KEY=$(cat ~/.anthropic_api_key)
-
 # Claude
 alias cc="claude"
 alias ccc="claude --continue"
