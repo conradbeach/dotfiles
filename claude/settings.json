@@ -6,6 +6,7 @@
       "Bash(bundle list:*)",
       "Bash(bundle show:*)",
       "Bash(bundle update:*)",
+      "Bash(chp)",
       "Bash(find:*)",
       "Bash(gem list:*)",
       "Bash(gh pr:*)",
