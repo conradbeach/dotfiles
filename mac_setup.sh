@@ -30,6 +30,7 @@ ln -sf ~/development/dotfiles/.agignore ~
 ln -sf ~/development/dotfiles/.asdfrc ~
 ln -sf ~/development/dotfiles/claude/GLOBAL.md ~/.claude/CLAUDE.md
 ln -sf ~/development/dotfiles/claude/commands ~/.claude
+ln -sf ~/development/dotfiles/claude/settings.json ~/.claude/settings.json
 ln -sf ~/development/dotfiles/cursor/keybindings.json ~/Library/Application\ Support/Cursor/User/
 ln -sf ~/development/dotfiles/cursor/settings.json ~/Library/Application\ Support/Cursor/User/
 ln -sf ~/development/dotfiles/.default-gems ~

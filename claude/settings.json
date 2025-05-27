@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle exec rspec:*)",
+      "Bash(bundle exec rubocop:*)",
+      "Bash(bundle list:*)",
+      "Bash(bundle show:*)",
+      "Bash(bundle update:*)",
+      "Bash(find:*)",
+      "Bash(gem list:*)",
+      "Bash(gh pr:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(grep:*)",
+      "WebFetch(domain:anthropic.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:ruby-lang.org)"
+    ],
+    "deny": []
+  }
+}
