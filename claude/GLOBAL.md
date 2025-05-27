@@ -18,4 +18,4 @@
 - Follow existing test patterns.
 
 ## Git
-- Commit your work after every meaningful chunk of work.
+- Don't commit your changes. A human will commit your changes after reviewing them.
