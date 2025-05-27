@@ -1,5 +1,7 @@
+CLAUDE.local.md
+.claude/settings.local.json
 .DS_Store
 npm-debug.log
+.supermaven/config.json
 .tern-port
 tags
-.supermaven/config.json
