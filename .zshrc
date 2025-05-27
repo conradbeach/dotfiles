@@ -311,7 +311,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # Claude
 alias cc="claude"
 alias ccc="claude --continue"
-alias cch="claude --resume"
+alias ccr="claude --resume"
 
 # direnv
 eval "$(direnv hook zsh)"
