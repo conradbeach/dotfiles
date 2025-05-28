@@ -382,7 +382,7 @@ $("h1").each(function() {
 			<key>activerecord-import</key>
 			<dict>
 				<key>date</key>
-				<date>2025-05-10T12:24:53Z</date>
+				<date>2025-05-28T15:00:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
