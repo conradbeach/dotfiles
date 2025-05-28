@@ -271,12 +271,18 @@ update_media_api_db() {
   time taskpolicy -c utility pg_restore -d bookshelf_development -j 6 $1
 }
 
-# Copy Git ignored files from the main Media API repo directory to a worktree directory.
-prep_media_api_worktree() {
-  cp -r ~/development/media-api/.claude ./
-  cp -r ~/development/media-api/CLAUDE.local.md ./
-  cp -r ~/development/media-api/.envrc ./
-  cp -r ~/development/media-api/config/application.rb ./config/
+# Create a new worktree and copy Git ignored files to the worktree directory.
+create_worktree() {
+  local worktree_dir="../${PWD##*/}.worktrees/$1"
+
+  git worktree add $worktree_dir -b $1
+
+  if [ -d .claude ]; then cp -r .claude $worktree_dir/; fi
+  if [ -f CLAUDE.local.md ]; then cp CLAUDE.local.md $worktree_dir/; fi
+  if [ -f .envrc ]; then cp .envrc $worktree_dir/; fi
+  if [ -f config/application.yml ]; then cp config/application.yml $worktree_dir/config/; fi
+
+  cd $worktree_dir
 }
 
 # Plugins
