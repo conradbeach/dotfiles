@@ -274,15 +274,28 @@ update_media_api_db() {
 # Create a new worktree and copy Git ignored files to the worktree directory.
 create_worktree() {
   local worktree_dir="../${PWD##*/}.worktrees/$1"
+  local current_branch=$(git branch --show-current)
+
+  echo -n "Create worktree based on branch '$current_branch'? (y/n): "
+  read -r response
+  if [[ ! "$response" =~ ^[Yy]$ ]]; then
+    echo "Worktree creation aborted."
+    return 1
+  fi
 
   git worktree add $worktree_dir -b $1
 
   if [ -d .claude ]; then cp -r .claude $worktree_dir/; fi
   if [ -f CLAUDE.local.md ]; then cp CLAUDE.local.md $worktree_dir/; fi
-  if [ -f .envrc ]; then cp .envrc $worktree_dir/; fi
   if [ -f config/application.yml ]; then cp config/application.yml $worktree_dir/config/; fi
+  if [ -f .envrc ]; then
+    cp .envrc $worktree_dir/
+    (cd $worktree_dir && direnv allow)
+  fi
 
-  cd $worktree_dir
+  echo -n "Navigate to the new worktree directory? (y/n): "
+  read -r response
+  if [[ "$response" =~ ^[Yy]$ ]]; then cd $worktree_dir; fi
 }
 
 # Plugins
