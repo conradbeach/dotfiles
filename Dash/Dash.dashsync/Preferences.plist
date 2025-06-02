@@ -438,7 +438,7 @@ $("h1").each(function() {
 			<key>factory_bot</key>
 			<dict>
 				<key>date</key>
-				<date>2025-01-31T15:11:01Z</date>
+				<date>2025-06-02T14:06:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -1162,7 +1162,7 @@ $("h1").each(function() {
 	<key>shouldShowStatusIcon</key>
 	<false/>
 	<key>shouldStartAtLogin</key>
-	<true/>
+	<false/>
 	<key>shouldSyncBookmarks</key>
 	<true/>
 	<key>shouldSyncDocsets</key>
