@@ -1,7 +1,6 @@
 ## Instructions
 Your task is to build the feature described in the requirements below from start to finish.
 
-- Use the Opus model for all your work.
 - Think hard and be thorough in your planned solution. Make sure you're searching the
 codebase for relevant information to confirm that your approach is correct.
 - Make sure your solution meets all the requirements.
