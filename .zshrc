@@ -136,6 +136,8 @@ alias gcnv="git commit --no-verify"
 alias gpf="git push --force-with-lease"
 alias gs="git stash"
 alias gsp="git stash pop"
+alias wt="git worktree"
+alias wtl="git worktree list"
 
 ## Functions
 
@@ -272,7 +274,7 @@ update_media_api_db() {
 }
 
 # Create a new worktree and copy Git ignored files to the worktree directory.
-create_worktree() {
+wtc() {
   local worktree_dir="../${PWD##*/}.worktrees/$1"
   local current_branch=$(git branch --show-current)
 
@@ -296,6 +298,23 @@ create_worktree() {
   echo -n "Navigate to the new worktree directory? (y/n): "
   read -r response
   if [[ "$response" =~ ^[Yy]$ ]]; then cd $worktree_dir; fi
+}
+
+# Navigate to a worktree directory by partial match
+wtcd() {
+  if [ -z "$1" ]; then
+    echo "Usage: wtcd <partial_worktree_name>"
+    return 1
+  fi
+
+  local worktree_path=$(git worktree list | grep "$1" | head -n 1 | awk '{print $1}')
+  
+  if [ -z "$worktree_path" ]; then
+    echo "No worktree found matching '$1'"
+    return 1
+  fi
+
+  cd "$worktree_path"
 }
 
 # Plugins
