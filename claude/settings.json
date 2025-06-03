@@ -26,5 +26,6 @@
       "WebFetch(domain:ruby-lang.org)"
     ],
     "deny": []
-  }
+  },
+  "model": "opus"
 }
