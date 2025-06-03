@@ -1,6 +1,7 @@
 {
   "permissions": {
     "allow": [
+      "Bash(bundle exec rails:*)",
       "Bash(bundle exec rspec:*)",
       "Bash(bundle exec rubocop:*)",
       "Bash(bundle list:*)",
@@ -15,9 +16,11 @@
       "Bash(grep:*)",
       "Bash(ls:*)",
       "Bash(rg:*)",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_console_messages",
       "mcp__playwright__browser_navigate",
-      "mcp__playwright__browser_take_screenshot",
       "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_take_screenshot",
       "WebFetch(domain:anthropic.com)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:ruby-lang.org)"
