@@ -217,7 +217,7 @@ fi
 claude config set --global preferredNotifChannel terminal_bell # Enable sound alerts when tasks complete
 
 ### Playwright MCP (https://github.com/microsoft/playwright-mcp)
-claude mcp add playwright npx @playwright/mcp@latest --scope user
+claude mcp add Playwright npx @playwright/mcp@latest --scope user
 
 ### rails-mcp-server (https://github.com/maquina-app/rails-mcp-server)
 claude mcp add Rails rails-mcp-server --scope user
