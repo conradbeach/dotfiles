@@ -1,9 +1,6 @@
 {
   "permissions": {
-    "allow": [
-      "Bash(nvim:*)",
-      "WebFetch(domain:docs.anthropic.com)"
-    ],
+    "allow": [],
     "deny": []
   },
   "enableAllProjectMcpServers": false
