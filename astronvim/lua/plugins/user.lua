@@ -36,6 +36,24 @@ return {
     end,
   },
 
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup({
+        suggestion = {
+          auto_trigger = true,
+          keymap = {
+            accept = nil,
+            accept_word = "<C-o>",
+            accept_line = "<C-l>",
+          },
+        }
+      })
+    end,
+  },
+
   { "glacambre/firenvim", build = ":call firenvim#install(0)" },
 
   {
@@ -89,20 +107,6 @@ return {
         custom_colors = {
           bg = "#FFFFFF",
         }
-      }
-    end,
-  },
-
-  {
-    "supermaven-inc/supermaven-nvim",
-    lazy = false,
-    config = function()
-      require("supermaven-nvim").setup {
-        log_level = "warn",
-        keymaps = {
-          accept_suggestion = "<C-l>",
-          accept_word = "<C-o>",
-        },
       }
     end,
   },
