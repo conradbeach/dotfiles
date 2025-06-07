@@ -222,10 +222,6 @@ claude mcp add Playwright npx @playwright/mcp@latest --scope user
 
 ### rails-mcp-server (https://github.com/maquina-app/rails-mcp-server)
 claude mcp add Rails rails-mcp-server --scope user
-rails-mcp-server-download-resources rails
-rails-mcp-server-download-resources stimulus
-rails-mcp-server-download-resources turbo
-rails-mcp-server-download-resources kamal
 ln -sf ~/development/dotfiles/rails-mcp-server/projects.yml ~/.config/rails-mcp/projects.yml
 
 
