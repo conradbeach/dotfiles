@@ -292,12 +292,30 @@ wtc() {
 
   echo -n "Create worktree based on branch '$current_branch'? (y/n): "
   read -r response
-  if [[ ! "$response" =~ ^[Yy]$ ]]; then
-    echo "Worktree creation aborted."
-    return 1
-  fi
 
-  git worktree add $worktree_dir -b $1
+  if [[ ! "$response" =~ ^[Yy]$ ]]; then
+    echo "Available branches:"
+    git branch | nl -w3 -s'. '
+    echo -n "Enter the number of the branch to base the worktree on (or 'q' to quit): "
+    read -r branch_num
+    
+    if [[ "$branch_num" == "q" ]]; then
+      echo "Worktree creation aborted."
+      return 1
+    fi
+    
+    selected_branch=$(git branch | sed -n "${branch_num}p" | sed 's/^[* ]*//')
+    
+    if [[ -z "$selected_branch" ]]; then
+      echo "Invalid selection. Worktree creation aborted."
+      return 1
+    fi
+    
+    echo "Creating worktree based on branch '$selected_branch'"
+    git worktree add $worktree_dir -b $1 $selected_branch
+  else
+    git worktree add $worktree_dir -b $1
+  fi
 
   if [ -d .claude ]; then cp -r .claude $worktree_dir/; fi
   if [ -f CLAUDE.local.md ]; then cp CLAUDE.local.md $worktree_dir/; fi
