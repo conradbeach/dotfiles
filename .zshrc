@@ -287,7 +287,10 @@ restore_media_api_dbs() {
 
 # Create a new worktree and copy Git ignored files to the worktree directory.
 wtc() {
-  local worktree_dir="../${PWD##*/}.worktrees/$1"
+  local git_dir=$(git rev-parse --git-common-dir)
+  local base_dir=$(dirname "$git_dir")
+  local repo_name=$(basename "$base_dir")
+  local worktree_dir="$base_dir/../${repo_name}.worktrees/$1"
   local current_branch=$(git branch --show-current)
 
   echo -n "Create worktree based on branch '$current_branch'? (y/n): "
@@ -304,7 +307,7 @@ wtc() {
       return 1
     fi
     
-    selected_branch=$(git branch | sed -n "${branch_num}p" | sed 's/^[* ]*//')
+    selected_branch=$(git branch | sed -n "${branch_num}p" | sed 's/^[*+ ]*//')
     
     if [[ -z "$selected_branch" ]]; then
       echo "Invalid selection. Worktree creation aborted."
