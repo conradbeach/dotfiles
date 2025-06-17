@@ -287,10 +287,19 @@ restore_media_api_dbs() {
 
 # Create a new worktree and copy Git ignored files to the worktree directory.
 wtc() {
-  local git_dir=$(git rev-parse --git-common-dir)
-  local base_dir=$(dirname "$git_dir")
-  local repo_name=$(basename "$base_dir")
-  local worktree_dir="$base_dir/../${repo_name}.worktrees/$1"
+  local git_common_dir=$(git rev-parse --git-common-dir)
+  local main_repo_dir
+  
+  if [[ "$git_common_dir" = ".git" ]]; then
+    # We're in the main repository
+    main_repo_dir=$(git rev-parse --show-toplevel)
+  else
+    # We're in a worktree, git_common_dir points to main repo's .git
+    main_repo_dir=$(dirname "$git_common_dir")
+  fi
+  
+  local repo_name=$(basename "$main_repo_dir")
+  local worktree_dir="${main_repo_dir}/../${repo_name}.worktrees/$1"
   local current_branch=$(git branch --show-current)
 
   echo -n "Create worktree based on branch '$current_branch'? (y/n): "
