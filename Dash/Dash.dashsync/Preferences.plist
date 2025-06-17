@@ -494,7 +494,7 @@ $("h1").each(function() {
 			<key>jwt</key>
 			<dict>
 				<key>date</key>
-				<date>2025-05-10T12:24:57Z</date>
+				<date>2025-06-16T17:35:42Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
