@@ -217,12 +217,11 @@ ln -sf ~/development/dotfiles/claude/settings.json ~/.claude/settings.json
 
 claude config set --global preferredNotifChannel terminal_bell # Enable sound alerts when tasks complete
 
+### Context7 (https://github.com/upstash/context7)
+claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
+
 ### Playwright MCP (https://github.com/microsoft/playwright-mcp)
 claude mcp add Playwright npx @playwright/mcp@latest --scope user
-
-### rails-mcp-server (https://github.com/maquina-app/rails-mcp-server)
-claude mcp add Rails rails-mcp-server --scope user
-ln -sf ~/development/dotfiles/rails-mcp-server/projects.yml ~/.config/rails-mcp/projects.yml
 
 
 # Other Development Setup
