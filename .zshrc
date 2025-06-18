@@ -329,12 +329,12 @@ wtc() {
     git worktree add $worktree_dir -b $1
   fi
 
-  if [ -d .claude ]; then cp -r .claude $worktree_dir/; fi
-  if [ -f CLAUDE.local.md ]; then cp CLAUDE.local.md $worktree_dir/; fi
-  if [ -f config/application.yml ]; then cp config/application.yml $worktree_dir/config/; fi
-  if [ -f .envrc ]; then
-    cp .envrc $worktree_dir/
-    (cd $worktree_dir && direnv allow)
+  if [ -d "$main_repo_dir/.claude" ]; then cp -r "$main_repo_dir/.claude" "$worktree_dir/"; fi
+  if [ -f "$main_repo_dir/CLAUDE.local.md" ]; then cp "$main_repo_dir/CLAUDE.local.md" "$worktree_dir/"; fi
+  if [ -f "$main_repo_dir/config/application.yml" ]; then cp "$main_repo_dir/config/application.yml" "$worktree_dir/config/"; fi
+  if [ -f "$main_repo_dir/.envrc" ]; then
+    cp "$main_repo_dir/.envrc" "$worktree_dir/"
+    (cd "$worktree_dir" && direnv allow)
   fi
 
   echo -n "Navigate to the new worktree directory? (y/n): "
