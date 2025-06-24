@@ -223,6 +223,9 @@ claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 ### Playwright MCP (https://github.com/microsoft/playwright-mcp)
 claude mcp add Playwright npx @playwright/mcp@latest --scope user
 
+### Linear MCP
+claude mcp add Linear https://mcp.linear.app/sse --transport sse --scope user
+
 
 # Other Development Setup
 
