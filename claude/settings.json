@@ -1,6 +1,7 @@
 {
   "permissions": {
     "allow": [
+      "Bash(bundle exec parallel_rspec:*)",
       "Bash(bundle exec rails:*)",
       "Bash(bundle exec rspec:*)",
       "Bash(bundle exec rubocop:*)",
@@ -16,6 +17,7 @@
       "Bash(git commit:*)",
       "Bash(grep:*)",
       "Bash(ls:*)",
+      "Bash(mkdir:*)",
       "Bash(rg:*)",
       "Bash(rm:*)",
       "Bash(ruby:*)",
@@ -23,6 +25,11 @@
       "Bash(y)",
       "mcp__Context7__resolve-library-id",
       "mcp__Context7__get-library-docs",
+      "mcp__Linear__list_issue_statuses",
+      "mcp__Linear__list_issues",
+      "mcp__Linear__list_my_issues",
+      "mcp__Linear__list_teams",
+      "mcp__Linear__list_users",
       "mcp__Playwright__browser_click",
       "mcp__Playwright__browser_console_messages",
       "mcp__Playwright__browser_navigate",
