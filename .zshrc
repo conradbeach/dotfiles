@@ -395,3 +395,6 @@ alias ccr="claude --resume"
 
 # direnv
 eval "$(direnv hook zsh)"
+
+# ripgrep
+export RIPGREP_CONFIG_PATH=~/.ripgreprc
