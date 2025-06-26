@@ -8,7 +8,8 @@ return {
             event = "TermOpen",
             callback = function()
               -- Enable clickable file paths in terminal mode
-              vim.keymap.set("n", "<LeftMouse>", function()
+              -- Map for both normal and terminal modes
+              vim.keymap.set({"n", "t"}, "<LeftMouse>", function()
                 local mouse_pos = vim.fn.getmousepos()
                 local win = mouse_pos.winid
                 local row = mouse_pos.line
@@ -60,6 +61,9 @@ return {
 
                   -- Check if file exists
                   if vim.fn.filereadable(file) == 1 then
+                    -- Remember the terminal window
+                    local term_win = vim.api.nvim_get_current_win()
+                    
                     -- Open in a new window or use existing
                     vim.cmd("wincmd p") -- Go to previous window
                     vim.cmd("edit " .. vim.fn.fnameescape(file))
@@ -71,6 +75,16 @@ return {
                         vim.cmd("normal! " .. col_num .. "|")
                       end
                     end
+                    
+                    -- Set up autocmd to return to insert mode when going back to terminal
+                    vim.api.nvim_create_autocmd("WinEnter", {
+                      callback = function()
+                        if vim.api.nvim_get_current_win() == term_win then
+                          vim.cmd("startinsert")
+                          return true -- Delete this autocmd after it runs
+                        end
+                      end,
+                    })
                   else
                     vim.notify("File not found: " .. file, vim.log.levels.WARN)
                   end
