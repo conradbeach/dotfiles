@@ -7,9 +7,9 @@ return {
           {
             event = "TermOpen",
             callback = function()
-              -- Enable clickable file paths in terminal mode
+              -- Enable clickable file paths in terminal mode with Ctrl+Click
               -- Map for both normal and terminal modes
-              vim.keymap.set({"n", "t"}, "<LeftMouse>", function()
+              vim.keymap.set({"n", "t"}, "<C-LeftMouse>", function()
                 local mouse_pos = vim.fn.getmousepos()
                 local win = mouse_pos.winid
                 local row = mouse_pos.line
