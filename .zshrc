@@ -337,7 +337,7 @@ wtc() {
     (cd "$worktree_dir" && direnv allow)
   fi
 
-  echo -n "Navigate to the new worktree directory? (y/n): "
+  echo -n "\nNavigate to the new worktree directory? (y/n): "
   read -r response
   if [[ "$response" =~ ^[Yy]$ ]]; then cd $worktree_dir; fi
 }
