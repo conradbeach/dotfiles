@@ -8,6 +8,8 @@
 
 ## Ruby
 - Use modern Ruby features and idioms.
+- Generally, lists of arguments, keys, includes, etc. should be in alphabetical
+  order.
 
 ## Ruby on Rails
 - Strive to follow Rails best practices and conventions.
