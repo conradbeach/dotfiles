@@ -49,9 +49,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # ripgrep
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
 
-## Starship (https://starship.rs)
-eval "$(starship init zsh)"
-
 # Zsh Syntax Highlighting (https://github.com/zsh-users/zsh-syntax-highlighting)
 # Needs to be sourced last.
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
