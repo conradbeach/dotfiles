@@ -274,25 +274,6 @@ wtcd() {
   cd "$worktree_path"
 }
 
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Homewbrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(lvim {})+abort'"
-alias preview="fzf --preview 'bat --color \"always\" {}'"
-
-# Pure Prompt
-fpath+=$(brew --prefix)/share/zsh/site-functions
-autoload -U promptinit; promptinit
-prompt pure
-
-# iTerm2 Shell Integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 # Claude
 alias cc="claude"
 alias ccc="claude --continue"
@@ -301,5 +282,26 @@ alias ccr="claude --resume"
 # direnv
 eval "$(direnv hook zsh)"
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(lvim {})+abort'"
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+
+# Homewbrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# iTerm2 Shell Integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Pure Prompt
+fpath+=$(brew --prefix)/share/zsh/site-functions
+autoload -U promptinit; promptinit
+prompt pure
+
 # ripgrep
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
+
+# Zsh Syntax Highlighting (https://github.com/zsh-users/zsh-syntax-highlighting)
+# Needs to be sourced last.
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
