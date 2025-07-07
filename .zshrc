@@ -46,6 +46,11 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 # Homewbrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Pure Prompt
+fpath+=$(brew --prefix)/share/zsh/site-functions
+autoload -U promptinit; promptinit
+prompt pure
+
 # ripgrep
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
 

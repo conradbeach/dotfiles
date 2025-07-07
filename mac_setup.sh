@@ -84,6 +84,7 @@ brew install gnupg
 brew install luarocks
 brew install neovim
 brew install pinentry-mac
+brew install pure
 brew install ripgrep
 brew install the_silver_searcher
 brew install tldr
