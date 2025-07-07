@@ -9,7 +9,8 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 export SHELL="/bin/zsh"
 
-# With this set, zsh sessions will append their history list to the history file, rather than replace it. Thus, multiple parallel zsh sessions will all have the new entries from their history lists added to the history file, in the order that they exit.
+# With this set, zsh sessions will append their history list to the history file, rather than replace it.
+# Thus, multiple parallel zsh sessions will all have the new entries from their history lists added to the history file, in the order that they exit.
 setopt appendhistory
 
 # Vi Mode (http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Keymaps-1)
@@ -24,7 +25,8 @@ else
   export EDITOR='nvim'
 fi
 
-# Increase file descriptor ulimit. This prevents [this issue](https://github.com/AstroNvim/AstroNvim/issues/1896) that I was running into.
+# Increase file descriptor ulimit. This prevents an AstroNvim issue I was running into.
+# https://github.com/AstroNvim/AstroNvim/issues/1896
 ulimit -n 1024
 
 # Claude
