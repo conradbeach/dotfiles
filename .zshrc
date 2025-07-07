@@ -9,11 +9,6 @@ export SHELL="/bin/zsh"
 # Allow [ or ] whereever you want
 unsetopt nomatch
 
-# Don't verify commands with history expansion. Normally, I would prefer the
-# extra safety this option offers, but I want to be able to easily run previous
-# commands with vim-tmux-runner, so I'm turning it off.
-unsetopt histverify
-
 # With this set, zsh sessions will append their history list to the history file, rather than replace it. Thus, multiple parallel zsh sessions will all have the new entries from their history lists added to the history file, in the order that they exit.
 setopt appendhistory
 
