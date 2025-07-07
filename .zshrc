@@ -1,3 +1,6 @@
+####################
+# Config
+####################
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
@@ -27,7 +30,43 @@ fi
 # Increase file descriptor ulimit. This prevents [this issue](https://github.com/AstroNvim/AstroNvim/issues/1896) that I was running into.
 ulimit -n 1024
 
+# Claude
+alias cc="claude"
+alias ccc="claude --continue"
+alias ccr="claude --resume"
+
+# direnv
+eval "$(direnv hook zsh)"
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(lvim {})+abort'"
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+
+# Homewbrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# iTerm2 Shell Integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Pure Prompt
+fpath+=$(brew --prefix)/share/zsh/site-functions
+autoload -U promptinit; promptinit
+prompt pure
+
+# ripgrep
+export RIPGREP_CONFIG_PATH=~/.ripgreprc
+
+# Zsh Syntax Highlighting (https://github.com/zsh-users/zsh-syntax-highlighting)
+# Needs to be sourced last.
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+####################
 # Aliases
+#####################
+
 ## General
 alias cp="cp -iv"
 alias rm="rm -iv"
@@ -72,7 +111,9 @@ alias gsp="git stash pop"
 alias wt="git worktree"
 alias wtl="git worktree list"
 
-## Functions
+####################
+# Functions
+####################
 
 # Reports the result of a command with a checkmark or X
 # $1 - The name of the check
@@ -273,35 +314,3 @@ wtcd() {
 
   cd "$worktree_path"
 }
-
-# Claude
-alias cc="claude"
-alias ccc="claude --continue"
-alias ccr="claude --resume"
-
-# direnv
-eval "$(direnv hook zsh)"
-
-# fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(lvim {})+abort'"
-alias preview="fzf --preview 'bat --color \"always\" {}'"
-
-# Homewbrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# iTerm2 Shell Integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# Pure Prompt
-fpath+=$(brew --prefix)/share/zsh/site-functions
-autoload -U promptinit; promptinit
-prompt pure
-
-# ripgrep
-export RIPGREP_CONFIG_PATH=~/.ripgreprc
-
-# Zsh Syntax Highlighting (https://github.com/zsh-users/zsh-syntax-highlighting)
-# Needs to be sourced last.
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
