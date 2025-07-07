@@ -162,17 +162,9 @@ asdf install
 
 # Zsh
 
-## Oh My Zsh
-print_header "Installing Oh My Zsh"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
-
 ## zsh-syntax-highlighting
 print_header "Installing zsh-syntax-highlighting"
 brew install zsh-syntax-highlighting
-
-## zsh-completions
-print_header "Installing zsh-completions"
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 
 
 # Neovim
