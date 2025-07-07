@@ -49,6 +49,7 @@ ln -sf ~/development/dotfiles/.ripgreprc ~
 ln -sf ~/development/dotfiles/.rspec ~
 ln -sf ~/development/dotfiles/ssh/config ~/.ssh/
 if ! is_deseret_book; then ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/; fi
+ln -sf ~/development/dotfiles/starship.toml ~/.config/starship.toml
 ln -sf ~/development/dotfiles/.tmux.conf ~
 ln -sf ~/development/dotfiles/tmuxinator ~/.config
 ln -sf ~/development/dotfiles/.tool-versions ~
@@ -85,6 +86,7 @@ brew install luarocks
 brew install neovim
 brew install pinentry-mac
 brew install ripgrep
+brew install starship
 brew install the_silver_searcher
 brew install tldr
 brew install tmux
