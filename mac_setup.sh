@@ -114,14 +114,13 @@ if ! is_deseret_book; then brew install --cask balenaetcher; fi
 brew install --cask bettertouchtool
 brew install --cask dash
 brew install --cask firefox@developer-edition
-brew install --cask ghostty
 if ! is_deseret_book; then brew install --cask gimp; fi
 brew install --cask gitkraken
 brew install --cask google-chrome
 brew install --cask homerow
 brew install --cask iterm2
 brew install --cask karabiner-elements
-if is_deseret_book; then brew install --cask linear-linear; fi
+brew install --cask linear-linear
 brew install --cask mouseless
 brew install --cask numi
 brew install --cask obsidian
