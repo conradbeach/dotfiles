@@ -86,8 +86,6 @@ brew install neovim
 brew install pinentry-mac
 brew install pure
 brew install ripgrep
-brew install rust
-brew install spacer
 brew install the_silver_searcher
 brew install tldr
 brew install tmux
@@ -133,10 +131,6 @@ brew install --cask visual-studio-code
 brew install --cask zen-browser
 if ! is_deseret_book; then brew install --cask whatsapp; fi
 
-# Cargo
-print_header "Installing Cargo Packages"
-cargo install faketty
-
 # asdf
 print_header "Installing asdf"
 rm -rf ~/.asdf
@@ -168,17 +162,9 @@ asdf install
 
 # Zsh
 
-## Oh My Zsh
-print_header "Installing Oh My Zsh"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
-
 ## zsh-syntax-highlighting
 print_header "Installing zsh-syntax-highlighting"
 brew install zsh-syntax-highlighting
-
-## zsh-completions
-print_header "Installing zsh-completions"
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 
 
 # Neovim
@@ -203,19 +189,11 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 print_header "Installing Xcode Command Line Tools"
 xcode-select --install
 
-## AWS CLI
-if is_deseret_book; then
-  print_header "Installing AWS CLI"
-  pip install aws-shell
-fi
-
 ## Claude Code
 mkdir -p ~/.claude
 ln -sf ~/development/dotfiles/claude/GLOBAL.md ~/.claude/CLAUDE.md
 ln -sf ~/development/dotfiles/claude/commands ~/.claude
 ln -sf ~/development/dotfiles/claude/settings.json ~/.claude/settings.json
-
-claude config set --global preferredNotifChannel terminal_bell # Enable sound alerts when tasks complete
 
 ### Context7 (https://github.com/upstash/context7)
 claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
@@ -242,13 +220,6 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ## gnupg
 gpg --list-keys
 ln -sf ~/development/dotfiles/gpg-agent.conf ~/.gnupg/
-
-# Power Schedule
-if is_deseret_book; then
-  # Set the computer to restart 4:30 PM. This gives me a fresh environment each day, and minimizes the
-  # processes running outside of work hours, but doesn't result in the battery being charged to full.
-  sudo pmset repeat restart MTWRF 07:45:00
-fi
 
 # MacOS Settings
 
