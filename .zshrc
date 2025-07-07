@@ -46,9 +46,6 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 # Homewbrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# iTerm2 Shell Integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 # Pure Prompt
 fpath+=$(brew --prefix)/share/zsh/site-functions
 autoload -U promptinit; promptinit
