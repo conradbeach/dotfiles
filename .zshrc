@@ -9,9 +9,6 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 export SHELL="/bin/zsh"
 
-# Allow [ or ] whereever you want
-unsetopt nomatch
-
 # With this set, zsh sessions will append their history list to the history file, rather than replace it. Thus, multiple parallel zsh sessions will all have the new entries from their history lists added to the history file, in the order that they exit.
 setopt appendhistory
 
