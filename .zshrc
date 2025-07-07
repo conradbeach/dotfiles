@@ -143,23 +143,6 @@ alias wtl="git worktree list"
 
 ## Functions
 
-# $1 - The name of the file.
-# $2 (optional) - The path to create the file at.
-new_md() {
-  if [ -z "$2" ]
-  then # No path was given.
-    new_file_path=$1.md
-  else
-    mkdir -p $2
-    new_file_path=$2/$1.md
-  fi
-  echo "# $1" >> $new_file_path
-}
-
-configured_spacer() {
-  faketty $@ | spacer --after 4 --padding 2
-}
-
 # Reports the result of a command with a checkmark or X
 # $1 - The name of the check
 # $2 - The status code to check

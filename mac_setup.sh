@@ -86,8 +86,6 @@ brew install neovim
 brew install pinentry-mac
 brew install pure
 brew install ripgrep
-brew install rust
-brew install spacer
 brew install the_silver_searcher
 brew install tldr
 brew install tmux
@@ -132,10 +130,6 @@ brew install --cask tableplus
 brew install --cask visual-studio-code
 brew install --cask zen-browser
 if ! is_deseret_book; then brew install --cask whatsapp; fi
-
-# Cargo
-print_header "Installing Cargo Packages"
-cargo install faketty
 
 # asdf
 print_header "Installing asdf"
