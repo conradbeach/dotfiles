@@ -195,8 +195,6 @@ ln -sf ~/development/dotfiles/claude/GLOBAL.md ~/.claude/CLAUDE.md
 ln -sf ~/development/dotfiles/claude/commands ~/.claude
 ln -sf ~/development/dotfiles/claude/settings.json ~/.claude/settings.json
 
-claude config set --global preferredNotifChannel terminal_bell # Enable sound alerts when tasks complete
-
 ### Context7 (https://github.com/upstash/context7)
 claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 
