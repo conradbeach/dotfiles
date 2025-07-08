@@ -54,7 +54,7 @@ ln -sf ~/development/dotfiles/tmuxinator ~/.config
 ln -sf ~/development/dotfiles/.tool-versions ~
 mkdir /Users/cbeach/Library/Application\ Support/Windsurf/User
 ln -sf ~/development/dotfiles/windsurf_settings.json /Users/cbeach/Library/Application\ Support/Windsurf/User/settings.json
-ln -sf ~/development/dotfiles/.zshrc ~
+ln -sf ~/development/dotfiles/zsh/.zshrc ~
 ln -sf ~/development/dotfiles/zellij ~/.config
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
 # in a certain way, so I need to link this file after gnupg runs once.
