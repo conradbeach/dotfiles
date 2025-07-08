@@ -25,6 +25,7 @@
       "Bash(y)",
       "mcp__Context7__resolve-library-id",
       "mcp__Context7__get-library-docs",
+      "mcp__Linear__get_issue",
       "mcp__Linear__list_issue_statuses",
       "mcp__Linear__list_issues",
       "mcp__Linear__list_my_issues",
@@ -36,6 +37,7 @@
       "mcp__Playwright__browser_snapshot",
       "mcp__Playwright__browser_take_screenshot",
       "mcp__Playwright__browser_type",
+      "mcp__Rollbar__get-item-details",
       "WebFetch(domain:anthropic.com)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:ruby-lang.org)"
