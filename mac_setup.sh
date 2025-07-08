@@ -204,6 +204,12 @@ claude mcp add Playwright npx @playwright/mcp@latest --scope user
 ### Linear MCP
 claude mcp add Linear https://mcp.linear.app/sse --transport sse --scope user
 
+### Rollbar MCP
+git clone git@github.com:rollbar/rollbar-mcp-server.git ~/development/rollbar-mcp-server
+(cd ~/development/rollbar-mcp-server/ && npm install && npm run build)
+# ROLLBAR_ACCESS_TOKEN must be set in the environment. See .zshrc.
+claude mcp add Rollbar --scope user -- node ~/development/rollbar-mcp-server/build/index.js
+
 
 # Other Development Setup
 
