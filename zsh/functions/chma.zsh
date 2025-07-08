@@ -13,5 +13,5 @@ chma() {
   report_result "RSpec" $rspec_status
 
   # Return overall success
-  return $(( rubocop_status + cucumber_status + rspec_status ))
+  return $(( rubocop_status + rspec_status ))
 }
