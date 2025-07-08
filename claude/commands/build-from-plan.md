@@ -3,6 +3,7 @@ Implement a feature based on a previously created plan.
 ## Instructions
 Your task is to implement the feature described in the `PLAN.md` file. The plan in this file has already been reviewed and approved by a human.
 
+- Think carefully as you proceed with the implementation. Ensure it's well thought through and handles edge cases.
 - ALL changes must be tested. Either by updating existing tests or adding new ones.
 - If making API changes, make sure to update the documentation.
 - If making visual front-end changes, take a screenshot with Playwright and make sure the UI looks good. Iterate 2-3 times if needed until you’re happy with it.
