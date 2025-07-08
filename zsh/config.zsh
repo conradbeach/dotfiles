@@ -26,11 +26,6 @@ fi
 # https://github.com/AstroNvim/AstroNvim/issues/1896
 ulimit -n 1024
 
-# Claude
-alias cc="claude"
-alias ccc="claude --continue"
-alias ccr="claude --resume"
-
 # direnv
 eval "$(direnv hook zsh)"
 
@@ -38,7 +33,6 @@ eval "$(direnv hook zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(lvim {})+abort'"
-alias preview="fzf --preview 'bat --color \"always\" {}'"
 
 # Homewbrew
 eval "$(/opt/homebrew/bin/brew shellenv)"

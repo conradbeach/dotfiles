@@ -41,3 +41,9 @@ alias gs="git stash"
 alias gsp="git stash pop"
 alias wt="git worktree"
 alias wtl="git worktree list"
+# Claude Code
+alias cc="claude"
+alias ccc="claude --continue"
+alias ccr="claude --resume"
+# fzf
+alias preview="fzf --preview 'bat --color \"always\" {}'"
