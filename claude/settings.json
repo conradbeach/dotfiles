@@ -44,5 +44,29 @@
     ],
     "deny": []
   },
-  "model": "opus"
+  "model": "opus",
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "osascript -e 'tell application \"System Events\" to set frontApp to name of first application process whose frontmost is true' | grep -q 'iTerm2' || terminal-notifier -title 'Claude Code' -message 'Claude is waiting for your response.'"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "osascript -e 'tell application \"System Events\" to set frontApp to name of first application process whose frontmost is true' | grep -q 'iTerm2' || terminal-notifier -title 'Claude Code' -message 'Claude is waiting for your response.'"
+          }
+        ]
+      }
+    ]
+  }
 }
