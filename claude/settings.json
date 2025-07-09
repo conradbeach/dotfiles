@@ -39,6 +39,7 @@
       "mcp__Playwright__browser_type",
       "mcp__Rollbar__get-item-details",
       "WebFetch(domain:anthropic.com)",
+      "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:ruby-lang.org)"
     ],
