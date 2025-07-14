@@ -5,3 +5,9 @@ npm-debug.log
 .supermaven/config.json
 .tern-port
 tags
+
+# ClaudeOnRails
+.claude-on-rails/**
+.claude-swarm/**
+claude-swarm.log
+claude-swarm.yml
