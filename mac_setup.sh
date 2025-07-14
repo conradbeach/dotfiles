@@ -204,6 +204,10 @@ claude mcp add Playwright npx @playwright/mcp@latest --scope user
 ### Linear MCP
 claude mcp add Linear https://mcp.linear.app/sse --transport sse --scope user
 
+### rails-mcp-server (https://github.com/maquina-app/rails-mcp-server)
+claude mcp add Rails rails-mcp-server --scope user
+ln -sf ~/development/dotfiles/rails-mcp-server/projects.yml ~/.config/rails-mcp/projects.yml
+
 ### Rollbar MCP
 git clone git@github.com:rollbar/rollbar-mcp-server.git ~/development/rollbar-mcp-server
 (cd ~/development/rollbar-mcp-server/ && npm install && npm run build)
