@@ -145,7 +145,10 @@ return {
         opts = {
           mappings = {
             n = {
-              ["gS"] = { "<cmd>TSJToggle<cr>", desc = "Split or join" },
+              ["gS"] = {
+                function() require('treesj').toggle() end,
+                desc = "Split or join",
+              },
             },
           },
         },
