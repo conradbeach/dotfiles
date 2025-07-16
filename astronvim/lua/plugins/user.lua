@@ -138,7 +138,6 @@ return {
   {
     "Wansmer/treesj",
     event = "BufEnter",
-    keys = {},
     dependencies = {
       { "nvim-treesitter/nvim-treesitter" }, -- if you install parsers with `nvim-treesitter`
       {
@@ -155,6 +154,7 @@ return {
     config = function()
       require("treesj").setup({
         max_join_length = 999, -- Effectively disable line length limit.
+        use_default_keymaps = false, -- It has a <space>s mapping that conflicts with my mappings.
       })
     end,
   },
