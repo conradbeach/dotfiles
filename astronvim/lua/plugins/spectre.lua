@@ -37,6 +37,10 @@ return {
     },
   },
   config = function()
-    require("spectre").setup {}
+    require("spectre").setup(
+      {
+        is_insert_mode = true
+      }
+    )
   end,
 }
