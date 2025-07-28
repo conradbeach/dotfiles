@@ -21,6 +21,7 @@
 - Mock only when absolutely necessary; use real models and data when possible.
 - Use FactoryBot to create test objects.
 - Follow existing test patterns.
+- Use request tests; don't use controller tests.
 
 ## Git
 - Don't commit your changes. A human will commit your changes after reviewing them.
