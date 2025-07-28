@@ -45,6 +45,5 @@ alias wtl="git worktree list"
 alias cc="claude"
 alias ccc="claude --continue"
 alias ccr="claude --resume"
-alias ccs="claude-swarm"
 # fzf
 alias preview="fzf --preview 'bat --color \"always\" {}'"
