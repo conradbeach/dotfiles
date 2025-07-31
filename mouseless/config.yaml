@@ -2,7 +2,7 @@ app_version: 0.4.0-preview.4
 behavior_configs:
 - base_move_speed: 5.0
   base_wheel_speed: 16.0
-  free_mode_auto_off_s: 10
+  free_mode_auto_off_s: 30
   grid_action_level: subgrid
   hide_cursor_on_click: false
   hide_location: bottom_left
@@ -48,7 +48,7 @@ grid_configs:
   nudges_per_cell: 4
   strategy: subgrid
   subgrid_dims:
-  - 8
+  - 6
   - 2
   subgrid_mouse_action_keys: QWER UIOP ASDF JKL; ZXCV M,./
 keyboard_layout:
@@ -295,10 +295,10 @@ keymaps:
     hold for speed decrease: CommandLeft
     hold for speed increase: ShiftLeft
     increase overlay opacity: ArrowUp
-    jump to bottom: null
+    jump to bottom: D
     jump to left edge: null
     jump to right edge: null
-    jump to top: null
+    jump to top: U
     left mouse button: Space
     left mouse button (w/o overlay): null
     middle mouse button: C
@@ -311,7 +311,7 @@ keymaps:
     repeat last mouse action: null
     right mouse button: V
     right mouse button (w/o overlay): null
-    show overlay: CommandLeft tap
+    show overlay: ShiftRight tap
     subgrid nudge down:
     - D
     - K
@@ -324,15 +324,17 @@ keymaps:
     subgrid nudge up:
     - E
     - I
-    switch monitor left: ShiftLeft tap
-    switch monitor right: ShiftRight tap
+    switch monitor left: null
+    switch monitor right: null
     toggle continuous mode: null
     toggle continuous mode until closed: '1'
-    toggle free mode: CommandRight tap
-    toggle overlay: CommandLeft tap
+    toggle free mode:
+    - CommandRight tap
+    - ShiftRight tap
+    toggle overlay: ShiftRight tap
     toggle overlay lock: null
     undo last key: Backspace
-    wheel down: D
+    wheel down: null
     wheel down fast: null
     wheel left: null
     wheel left fast: null
@@ -346,7 +348,7 @@ keymaps:
     wheel step right large: null
     wheel step up: null
     wheel step up large: null
-    wheel up: U
+    wheel up: null
     wheel up fast: null
   name: mac
 monitor_assignment_mode: auto
