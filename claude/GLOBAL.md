@@ -5,7 +5,7 @@
 - Whenever you make changes, update the tests accordingly.
 - Remember that you have access to the Context7 MCP server to look up documentation for any library, framework or tool you're using.
 - Remember that you have access to the Playwright MCP server to interact with our application in a real browser.
-- Proactively delegate tasks to sub agents where it makes sense to.
+- You must delegate tasks to sub agents when the task matches a sub agents area of expertise.
 - Once you've finished making changes, have the `code-reviewer` sub agent review all of your changes and make additional adjustments based on their feedback.
 
 ## Ruby
