@@ -10,6 +10,7 @@
       "Bash(bundle update:*)",
       "Bash(cat:*)",
       "Bash(chp)",
+      "Bash(exit)",
       "Bash(find:*)",
       "Bash(gem list:*)",
       "Bash(gh pr:*)",
