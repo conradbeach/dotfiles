@@ -14,7 +14,7 @@ to implement the issue correctly.
 - Make sure your solution meets all the requirements.
 - Ensure your solution is secure.
 - Consider whether or not your changes would be best placed behind a feature flag.
-- Plan how you will write automated tests for the changes. All changes must be tested. Either by updating existing tests or adding new ones. Use the `rails-automated-testing-specialist`.
+- Plan how you will write automated tests for the changes. All changes must be tested. Use the `rails-automated-testing-specialist`.
 - If making API changes, make sure to update the documentation.
 - If making visual front-end changes, take a screenshot with Playwright and make sure the UI looks good. Iterate 2-3 times if needed until you’re happy with it.
 - Manually test your changes through the web browser or by manually making API requests.
