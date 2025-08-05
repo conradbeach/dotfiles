@@ -19,6 +19,7 @@
       "Bash(git commit:*)",
       "Bash(grep:*)",
       "Bash(ls:*)",
+      "Bash(magick:*)",
       "Bash(mkdir:*)",
       "Bash(rg:*)",
       "Bash(rm:*)",
