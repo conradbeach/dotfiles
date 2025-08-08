@@ -3,8 +3,12 @@ Build a feature end to end.
 ## Instructions
 Your task is to build the feature described in the requirements below from start to finish.
 
+Before beginning, if you're given a Linear issue, fetch the Linear issue using the MCP server. Fetch any
+comments in the issue as well. This will provide you with the context you need to implement the issue correctly.
+
 - Think hard and be thorough in your planned solution.
 - Make sure you're searching the codebase for relevant information to confirm that your approach is correct.
+- Consider if there are better solutions than what way me described in the requirements. Suggestions for better solutions are always appreciated!
 - Ensure your solution is well thought through and handles edge cases.
 - Use the Context7 MCP server to look up any documentation you might need.
 - Make sure your solution meets all the requirements.
