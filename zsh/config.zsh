@@ -48,6 +48,7 @@ export RIPGREP_CONFIG_PATH=~/.ripgreprc
 # Rollbar
 ## This token powers the Rollbar MCP server for Claude Code.
 export ROLLBAR_ACCESS_TOKEN=$(cat ~/MEDIA_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt 2>/dev/null)
+# export ROLLBAR_ACCESS_TOKEN=$(cat ~/IRMS_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt 2>/dev/null)
 
 # Zsh Syntax Highlighting (https://github.com/zsh-users/zsh-syntax-highlighting)
 # Needs to be sourced last.
