@@ -105,6 +105,7 @@ print_header "Installing Applications via Brew Cask"
 brew install --cask 1password
 if ! is_deseret_book; then brew install --cask balenaetcher; fi
 brew install --cask bettertouchtool
+brew install --cask claude
 brew install --cask dash
 brew install --cask firefox@developer-edition
 if ! is_deseret_book; then brew install --cask gimp; fi
