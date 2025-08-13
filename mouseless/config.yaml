@@ -283,7 +283,9 @@ keymaps:
     enter free mode: null
     execute mouse action: Space
     execute mouse move: OptionLeft tap
-    exit free mode: Escape
+    exit free mode:
+    - Escape
+    - F12
     forward click: null
     forward mouse button: null
     forward mouse button (w/o overlay): null
@@ -315,7 +317,7 @@ keymaps:
     right click: null
     right mouse button: V
     right mouse button (w/o overlay): null
-    show overlay: ShiftRight tap
+    show overlay: F12
     subgrid nudge down:
     - D
     - K
@@ -333,10 +335,8 @@ keymaps:
     toggle app enabled: null
     toggle continuous mode: null
     toggle continuous mode until closed: '1'
-    toggle free mode:
-    - CommandRight tap
-    - ShiftRight tap
-    toggle overlay: ShiftRight tap
+    toggle free mode: CommandRight tap
+    toggle overlay: F12
     toggle overlay lock: null
     undo last key: Backspace
     wheel down: null
