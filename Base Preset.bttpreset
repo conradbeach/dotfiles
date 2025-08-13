@@ -210,7 +210,7 @@
     "BSTSnapAreaDefaultShowPictogram" : false,
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "7B40DBC1-6DE3-46AB-A136-D96451E7E0F3",
+  "BTTPresetUUID" : "893B3D21-CC39-474B-8342-5925CA4F90BF",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -1108,7 +1108,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1755096208.563432,
+          "BTTLastUpdatedAt" : 1755098102.2361541,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "4DE46419-E1BE-4311-8DA5-11FEFC7F521A",
@@ -1118,10 +1118,10 @@
           "BTTAdditionalConfiguration" : "1966123",
           "BTTKeyboardShortcutKeyboardType" : 1860,
           "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "'",
+          "BTTLayoutIndependentChar" : "u",
           "BTTEnabled" : 0,
           "BTTEnabled2" : 1,
-          "BTTShortcutKeyCode" : 39,
+          "BTTShortcutKeyCode" : 32,
           "BTTShortcutModifierKeys" : 1966080,
           "BTTOrder" : 24,
           "BTTAutoAdaptToKeyboardLayout" : 0
@@ -1716,26 +1716,6 @@
           "BTTShortcutKeyCode" : 2,
           "BTTShortcutModifierKeys" : 1966080,
           "BTTOrder" : 4,
-          "BTTAutoAdaptToKeyboardLayout" : 0
-        },
-        {
-          "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1755096191.785923,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "0F417CF0-2275-4CC3-9217-F5EEB0F39CC5",
-          "BTTPredefinedActionType" : 49,
-          "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
-          "BTTLaunchPath" : "file:\/\/\/System\/Applications\/Preview.app",
-          "BTTAdditionalConfiguration" : "1966123",
-          "BTTKeyboardShortcutKeyboardType" : 1860,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "u",
-          "BTTEnabled" : 1,
-          "BTTEnabled2" : 1,
-          "BTTShortcutKeyCode" : 32,
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 19,
           "BTTAutoAdaptToKeyboardLayout" : 0
         },
         {

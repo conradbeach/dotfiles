@@ -210,7 +210,7 @@
     "BSTSnapAreaDefaultShowPictogram" : false,
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "F73D346A-AF41-4ABE-A101-DED7C3641DEC",
+  "BTTPresetUUID" : "B49815C8-2CF9-4CCB-8E61-CED6F01D9138",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -604,7 +604,7 @@
         },
         {
           "BTTActionCategory" : 0,
-          "BTTLastUpdatedAt" : 1755096211.6802502,
+          "BTTLastUpdatedAt" : 1755098105.9320669,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "2D209F4C-9126-42B6-B6E4-59FC188BCC33",
@@ -613,10 +613,10 @@
           "BTTAdditionalConfiguration" : "1966123",
           "BTTKeyboardShortcutKeyboardType" : 1860,
           "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "'",
+          "BTTLayoutIndependentChar" : "u",
           "BTTEnabled" : 1,
           "BTTEnabled2" : 1,
-          "BTTShortcutKeyCode" : 39,
+          "BTTShortcutKeyCode" : 32,
           "BTTShortcutModifierKeys" : 1966080,
           "BTTOrder" : 25,
           "BTTAutoAdaptToKeyboardLayout" : 0,
