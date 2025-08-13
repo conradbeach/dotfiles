@@ -164,7 +164,7 @@ Remove all unwanted apps from Dock.
 - [ ] Run :checkhealth.
 
 ## Claude Code
-- [ ] Populate MEDIA_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt with a read only Rollbar access token.
+- [ ] Populate MEDIA_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt and IRMS_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt with read only Rollbar access tokens.
 
 ## GPG
 - [ ] Generate a new GPG key. (Follow the GitHub docs: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
