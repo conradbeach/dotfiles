@@ -1,4 +1,4 @@
-app_version: 0.4.0-preview.4
+app_version: 0.4.0-preview.6.3
 behavior_configs:
 - base_move_speed: 5.0
   base_wheel_speed: 16.0
@@ -45,7 +45,7 @@ grid_configs:
     num_cells_y: 1
   hold_subgrid_key_for_nudge: false
   name: position_based_16_9
-  nudges_per_cell: 4
+  nudges_per_cell: 8
   strategy: subgrid
   subgrid_dims:
   - 6
@@ -268,6 +268,7 @@ keyboard_layout:
     126: "\x1E"
 keymaps:
 - entries:
+    back click: null
     back mouse button: null
     back mouse button (w/o overlay): null
     close UI element: Escape
@@ -283,6 +284,7 @@ keymaps:
     execute mouse action: Space
     execute mouse move: OptionLeft tap
     exit free mode: Escape
+    forward click: null
     forward mouse button: null
     forward mouse button (w/o overlay): null
     hide overlay: Escape
@@ -301,6 +303,7 @@ keymaps:
     jump to top: U
     left mouse button: Space
     left mouse button (w/o overlay): null
+    middle click: null
     middle mouse button: C
     middle mouse button (w/o overlay): null
     move down: J
@@ -309,6 +312,7 @@ keymaps:
     move up: K
     release hold/drag: Escape
     repeat last mouse action: null
+    right click: null
     right mouse button: V
     right mouse button (w/o overlay): null
     show overlay: ShiftRight tap
@@ -326,6 +330,7 @@ keymaps:
     - I
     switch monitor left: null
     switch monitor right: null
+    toggle app enabled: null
     toggle continuous mode: null
     toggle continuous mode until closed: '1'
     toggle free mode:
