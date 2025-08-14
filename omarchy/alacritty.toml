@@ -1,0 +1,25 @@
+general.import = [ "~/.config/omarchy/current/theme/alacritty.toml" ]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+normal = { family = "CaskaydiaMono Nerd Font", style = "Regular" }
+bold = { family = "CaskaydiaMono Nerd Font", style = "Bold" }
+italic = { family = "CaskaydiaMono Nerd Font", style = "Italic" }
+size = 11
+
+[window]
+padding.x = 0
+padding.y = 0
+decorations = "None"
+opacity = 0.98
+
+[colors]
+[colors.primary]
+background = "#ffffff"
+
+[keyboard]
+bindings = [
+  { key = "F11", action = "ToggleFullscreen" }
+]

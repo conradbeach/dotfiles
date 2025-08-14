@@ -72,7 +72,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "osascript -e 'tell application \"System Events\" to set frontApp to name of first application process whose frontmost is true' | grep -q 'iTerm2' || terminal-notifier -title 'Claude Code' -message 'Claude is waiting for your response.'"
+            "command": "command -v osascript && (osascript -e 'tell application \"System Events\" to set frontApp to name of first application process whose frontmost is true' | grep -q 'iTerm2' || terminal-notifier -title 'Claude Code' -message 'Claude is waiting for your response.') || true"
           }
         ]
       }
@@ -83,7 +83,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "osascript -e 'tell application \"System Events\" to set frontApp to name of first application process whose frontmost is true' | grep -q 'iTerm2' || terminal-notifier -title 'Claude Code' -message 'Claude is waiting for your response.'"
+            "command": "command -v osascript && (osascript -e 'tell application \"System Events\" to set frontApp to name of first application process whose frontmost is true' | grep -q 'iTerm2' || terminal-notifier -title 'Claude Code' -message 'Claude is waiting for your response.') || true"
           }
         ]
       }

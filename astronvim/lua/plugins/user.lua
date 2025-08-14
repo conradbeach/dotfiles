@@ -36,23 +36,23 @@ return {
     end,
   },
 
-  {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "InsertEnter",
-    config = function()
-      require("copilot").setup({
-        suggestion = {
-          auto_trigger = true,
-          keymap = {
-            accept = nil,
-            accept_word = "<C-o>",
-            accept_line = "<C-l>",
-          },
-        }
-      })
-    end,
-  },
+  -- {
+  --   "zbirenbaum/copilot.lua",
+  --   cmd = "Copilot",
+  --   event = "InsertEnter",
+  --   config = function()
+  --     require("copilot").setup({
+  --       suggestion = {
+  --         auto_trigger = true,
+  --         keymap = {
+  --           accept = nil,
+  --           accept_word = "<C-o>",
+  --           accept_line = "<C-l>",
+  --         },
+  --       }
+  --     })
+  --   end,
+  -- },
 
   { "glacambre/firenvim", build = ":call firenvim#install(0)" },
 

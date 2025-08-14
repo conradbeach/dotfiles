@@ -1,0 +1,10 @@
+- [x] Add GPG signing key to global git config.
+- [x] Get my Neovim config set up. (Good enough to start; not everything working.)
+- [x] Get Claude Code set up.
+- [x] Configure Hyprland to mirror displays.
+- [x] Configure Hyprland to put all windows in the same workspace.
+  - This is especially good to try because if there's not an easy way to do it, Omarchy becomes much less appealing.
+- [ ] Get ZSH set up (gives me aliases and such)
+- [ ] Figure out why language servers aren't installing.
+- [ ] Figure out why Copilot.lua is broken.
+- [ ] Get SSH working for command line git.
