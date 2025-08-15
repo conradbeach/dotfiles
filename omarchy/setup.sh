@@ -1,7 +1,7 @@
 ln -sfn ~/development/dotfiles/omarchy/hypr/monitors.conf ~/.config/hypr/
 ln -sfn ~/development/dotfiles/omarchy/hypr/input.conf ~/.config/hypr/
 ln -sfn ~/development/dotfiles/alacritty.toml ~/.config/alacritty/
-ln -sf ~/development/dotfiles/.gitconfig ~
+ln -sfn ~/development/dotfiles/.gitconfig ~
 
 yay -Sy --noconfirm --needed \
   gitkraken \
