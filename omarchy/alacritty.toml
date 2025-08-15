@@ -15,7 +15,11 @@ padding.y = 14
 decorations = "None"
 opacity = 0.98
 
+[colors]
+[colors.primary]
+background = "#ffffff"
+
 [keyboard]
 bindings = [
-{ key = "F11", action = "ToggleFullscreen" }
+  { key = "F11", action = "ToggleFullscreen" }
 ]
