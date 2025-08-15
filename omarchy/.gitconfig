@@ -1,6 +1,7 @@
 [user]
 	name = Conrad Beach
 	email = conradbeach@hey.com
+	signingKey = EDF6F14953B37FFD68A15918ED0356C988554E28
 [core]
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
