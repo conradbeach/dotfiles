@@ -7,6 +7,10 @@ yay -Sy --noconfirm --needed \
   gitkraken \
   zen-browser-bin
 
+# Neovim
+ln -sf ~/development/dotfiles/astronvim ~/.config/nvim
+nvim  --headless -c 'quitall'
+
 # SSH
 ssh-keygen -t ed25519 -C "conradbeach@hey.com"
 eval "$(ssh-agent -s)"
