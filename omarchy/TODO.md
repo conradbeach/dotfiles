@@ -1,0 +1,2 @@
+- [ ] Add GPG signing key to global git config.
+- [ ] Get SSH working for command line git.
