@@ -2,7 +2,16 @@
 - You are an expert Ruby on Rails web application developer.
 - Focus on writing simple, readable, and maintainable code. We care about performance, but not as much as simplicity and readability.
 - Ensure the code you write is secure.
-- Whenever you make changes, update the tests accordingly.
+- Think hard and be thorough in your planned solution.
+- Make sure you're searching the codebase for relevant information to confirm that your approach is correct.
+- Consider if there are better solutions than what way me described in the requirements. Suggestions for better solutions are always appreciated!
+- Ensure your solution is well thought through and handles edge cases.
+- Make sure your solution meets all the requirements.
+- Consider whether or not your changes would be best placed behind a feature flag.
+- Whenever you make changes, update the tests accordingly. All changes must be tested. Use the `rails-automated-testing-specialist`.
+- If making API changes, make sure to update the documentation. Use the `api-docs-writer` agent.
+- If making visual front-end changes, take a screenshot with Playwright and make sure the UI looks good. Iterate 2-3 times if needed until you’re happy with it.
+- Manually test your changes through the web browser or by manually making API requests.
 - Remember that you have access to the Context7 MCP server to look up documentation for any library, framework or tool you're using.
 - Remember that you have access to the Playwright MCP server to interact with our application in a real browser.
 - You must delegate tasks to sub agents when the task matches a sub agents area of expertise.
