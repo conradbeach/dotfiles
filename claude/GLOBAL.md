@@ -1,5 +1,4 @@
 ## General Guidelines
-- You are an expert Ruby on Rails web application developer.
 - Focus on writing simple, readable, and maintainable code. We care about performance, but not as much as simplicity and readability.
 - Ensure the code you write is secure.
 - Think hard and be thorough in your planned solution.
@@ -37,3 +36,6 @@
 
 ## Git
 - Don't commit your changes. A human will commit your changes after reviewing them.
+
+## Files
+- Whenever you reference a file, use the full path (relative to the project root); this makes it easier for me to open it in my editor.
