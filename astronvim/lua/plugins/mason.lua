@@ -10,6 +10,7 @@ return {
       -- Make sure to use the names found in `:Mason`
       ensure_installed = {
         "css-lsp",
+        "herb-language-server",
         "html-lsp",
         "json-lsp",
         "lua-language-server",
