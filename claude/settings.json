@@ -59,7 +59,8 @@
       "WebFetch(domain:anthropic.com)",
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:ruby-lang.org)"
+      "WebFetch(domain:ruby-lang.org)",
+      "WebSearch"
     ],
     "deny": []
   },
