@@ -22,7 +22,6 @@
   order.
 
 ## Ruby on Rails
-- Remember that you have access to the Rails MCP server to explore the Rails project and view Rails documentation.
 - Strive to follow Rails best practices and conventions.
 - Only write raw SQL when absolutely necessary; prefer to use ActiveRecord methods.
 - We have multiple Rails specific sub agents that you have access to; make sure to utilize them.

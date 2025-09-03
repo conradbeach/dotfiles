@@ -6,7 +6,6 @@ orbacle
 pry
 pry-doc
 rails
-rails-mcp-server
 rubocop
 rubocop-performance
 rubocop-rails
