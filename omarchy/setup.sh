@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# TODO:
+# - I wonder if I should use whatever tool DHH recommended for managing
+# dotfiles rather than manually symlinking them myself.
+# - Rather than using asdf, I should probably try mise which comes with Omarchy.
+
 # This script is meant to be idempotent and should be safe to run multiple times.
 #
 # To install Deseret Book tooling, set the DESERET_BOOK environment variable.
@@ -37,6 +42,7 @@ ln -sfn ~/development/dotfiles/.gitignore_global ~
 ln -sfn ~/development/dotfiles/git-commit-template.txt ~
 
 # asdf
+# TODO: Use mise instead.
 ln -sfn ~/development/dotfiles/.asdfrc ~
 ln -sfn ~/development/dotfiles/.default-gems ~
 ln -sfn ~/development/dotfiles/.default-npm-packages ~
@@ -68,6 +74,9 @@ ln -sf ~/development/dotfiles/omarchy/ssh/config ~/.ssh/
 ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/
 
 # Applications
+# TODO: Consider just installing these manually with Omarchy install tooling
+# rather than setting a command. It won't take much longer and than you would be
+# using whatever approach Omarchy currently uses.
 print_header "Installing Applications"
 yay -Sy --noconfirm --needed \
   firefox-developer-edition \
