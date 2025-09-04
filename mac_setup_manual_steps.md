@@ -116,18 +116,6 @@
   - Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
 - [ ] Karabiner Elements
   - Run Karabiner Elements and give it all necessary permissions.
-- [ ] Homerow
-  - General
-    - Enable "Launch at login"
-    - Enable "Check for updates automatically"
-  - Appearance
-    - Set "Label size" to 5th position from the top
-  - Clicking
-    - Set shortcut to hyper key + ;
-    - Enable "Automatic click"
-  - Scrolling
-    - Set shortcut to hyper key + j
-    - Set "Dash speed" to 3rd from the top
 - [ ] iTerm
   - Load configuration. (In this repo. Change in Settings > General > Settings)
 - [ ] Firefox Developer Edition
@@ -176,7 +164,6 @@ Remove all unwanted apps from Dock.
 ## Login Items
 Add these login items (In Settings > Users & Groups > Login Items):
 * BetterTouchTool
-* Homerow
 * Karabiner Elements
 * Microsoft Outlook if this is a Deseret Book machine.
 * Microsoft Teams if this is a Deseret Book machine.
