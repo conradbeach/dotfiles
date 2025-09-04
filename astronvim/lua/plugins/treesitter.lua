@@ -12,8 +12,10 @@ return {
       "json",
       "lua",
       "markdown",
+      "markdown_inline",
       "regex",
       "ruby",
+      "yaml",
       -- add more arguments for adding more treesitter parsers
     },
   },
