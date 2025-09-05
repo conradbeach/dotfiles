@@ -13,6 +13,83 @@ _G.yank_code_with_context = function(context_text)
   vim.fn.setreg("+", result)
 end
 
+-- Utility function for yanking git diff of current file
+_G.yank_git_diff = function()
+  local file_path = vim.fn.fnamemodify(vim.fn.expand "%", ":.")
+  local git_diff = vim.fn.system("git diff " .. vim.fn.shellescape(file_path))
+
+  if vim.v.shell_error == 0 and git_diff ~= "" then
+    local result = string.format(
+      "In `%s`, we have these changes:\n```diff\n%s```\nPlease evaluate these changes.",
+      file_path,
+      git_diff
+    )
+    vim.fn.setreg("+", result)
+  else
+    print("No git diff found for " .. file_path)
+  end
+end
+
+-- Utility function for yanking all changes in current file compared to base branch
+_G.yank_git_diff_from_base = function()
+  local file_path = vim.fn.fnamemodify(vim.fn.expand "%", ":.")
+
+  -- Check for main or master branch
+  local base_branch = "main"
+  local check = vim.fn.system "git rev-parse --verify main 2>/dev/null"
+  if vim.v.shell_error ~= 0 then base_branch = "master" end
+
+  -- Get diff from base branch including all changes (committed and uncommitted)
+  local git_diff = vim.fn.system("git diff " .. base_branch .. " " .. vim.fn.shellescape(file_path))
+
+  if vim.v.shell_error == 0 and git_diff ~= "" then
+    local result = string.format(
+      "In `%s`, we have these changes compared to %s:\n```diff\n%s```\nPlease evaluate these changes.",
+      file_path,
+      base_branch,
+      git_diff
+    )
+    vim.fn.setreg("+", result)
+  else
+    print("No git diff found for " .. file_path .. " compared to " .. base_branch)
+  end
+end
+
+-- Utility function for yanking all uncommitted changes
+_G.yank_all_git_diff = function()
+  local git_diff = vim.fn.system "git diff"
+
+  if vim.v.shell_error == 0 and git_diff ~= "" then
+    local result =
+      string.format("We have these uncommitted changes:\n```diff\n%s```\nPlease evaluate these changes.", git_diff)
+    vim.fn.setreg("+", result)
+  else
+    print "No uncommitted changes found"
+  end
+end
+
+-- Utility function for yanking all changes compared to base branch
+_G.yank_all_git_diff_from_base = function()
+  -- Check for main or master branch
+  local base_branch = "main"
+  local check = vim.fn.system "git rev-parse --verify main 2>/dev/null"
+  if vim.v.shell_error ~= 0 then base_branch = "master" end
+
+  -- Get diff from base branch including all changes (committed and uncommitted)
+  local git_diff = vim.fn.system("git diff " .. base_branch)
+
+  if vim.v.shell_error == 0 and git_diff ~= "" then
+    local result = string.format(
+      "We have these changes compared to %s:\n```diff\n%s```\nPlease evaluate these changes.",
+      base_branch,
+      git_diff
+    )
+    vim.fn.setreg("+", result)
+  else
+    print("No changes found compared to " .. base_branch)
+  end
+end
+
 return {
   {
     "AstroNvim/astrocore",
@@ -55,27 +132,36 @@ return {
           -- Yank file paths to clipboard
           ["<Leader>y"] = { "", desc = "Yank" },
           ["<Leader>yc"] = { "", desc = "Context" },
+          ["<Leader>ycd"] = { "", desc = "Diff" },
+          ["<Leader>ycdb"] = { "", desc = "Compare to base branch" },
           ["<Leader>yf"] = { "<cmd>let @+=expand('%:t')<cr>", desc = "File name" },
           ["<Leader>yp"] = { "<cmd>let @+=expand('%:p')<cr>", desc = "File path" },
           ["<Leader>yr"] = { "<cmd>let @+=fnamemodify(expand('%'), ':.')<cr>", desc = "Relative path" },
           ["<Leader>ycf"] = { "<cmd>let @+='In `' . fnamemodify(expand('%'), ':.') . '`, '<cr>", desc = "File" },
-          ["<Leader>ycl"] = { "<cmd>let @+='In `' . fnamemodify(expand('%'), ':.') . '` on line ' . line('.') . ', '<cr>", desc = "File and line" },
+          ["<Leader>ycl"] = {
+            "<cmd>let @+='In `' . fnamemodify(expand('%'), ':.') . '` on line ' . line('.') . ', '<cr>",
+            desc = "File and line",
+          },
+          ["<Leader>ycdf"] = { "<cmd>lua yank_git_diff()<cr>", desc = "File" },
+          ["<Leader>ycdbf"] = { "<cmd>lua yank_git_diff_from_base()<cr>", desc = "File" },
+          ["<Leader>ycda"] = { "<cmd>lua yank_all_git_diff()<cr>", desc = "All files" },
+          ["<Leader>ycdba"] = { "<cmd>lua yank_all_git_diff_from_base()<cr>", desc = "All files" },
 
           -- Panes
           ["<Leader>z"] = { "<cmd>wincmd |<cr>", desc = "Zoom Pane" },
 
           -- Manipulating tabs
           ["<Leader>n"] = { "", desc = "New" },
-          ["<Leader>nt"] = { "<cmd>tabnew<cr>", desc = "New Tab"},
+          ["<Leader>nt"] = { "<cmd>tabnew<cr>", desc = "New Tab" },
           ["<Leader>nf"] = { "<cmd>enew<cr>", desc = "New File" },
           ["<Leader>c"] = { "", desc = "Close" },
-          ["<Leader>ct"] = { "<cmd>tabclose<cr>", desc = "Close Tab"},
-          ["<Leader>ce"] = { "<cmd>on<cr><cmd>tabonly<cr>", desc = "Close Everything Else"},
+          ["<Leader>ct"] = { "<cmd>tabclose<cr>", desc = "Close Tab" },
+          ["<Leader>ce"] = { "<cmd>on<cr><cmd>tabonly<cr>", desc = "Close Everything Else" },
           ["<Leader>co"] = { "", desc = "Close Other" },
           ["<Leader>cot"] = { "<cmd>tabonly<cr>", desc = "Close Other Tabs" },
-          ["<Leader>cow"] = { "<cmd>on<cr>", desc = "Close Other Windows"},
-          ["[T"] = { "<cmd>tabm -1<cr>", desc = "Move tab left"},
-          ["]T"] = { "<cmd>tabm +1<cr>", desc = "Move tab right"},
+          ["<Leader>cow"] = { "<cmd>on<cr>", desc = "Close Other Windows" },
+          ["[T"] = { "<cmd>tabm -1<cr>", desc = "Move tab left" },
+          ["]T"] = { "<cmd>tabm +1<cr>", desc = "Move tab right" },
 
           -- Navigating tabs
           ["<Leader>1"] = { "1gt", desc = "Go to Tab 1" },
@@ -102,12 +188,28 @@ return {
       mappings = {
         n = {
           -- Go to definition
-          ["gd"] = { "", desc = "Show the definition of current symbol", cond = "textDocument/definition", },
-          ["gdd"] = { "<cmd>lua vim.lsp.buf.definition()<cr>", desc = "In current window", cond = "textDocument/definition", },
-          ["gdt"] = { "<cmd>tab split | lua vim.lsp.buf.definition()<cr>", desc = "In a new tab", cond = "textDocument/definition", },
-          ["gdv"] = { "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>", desc = "In a vertical split", cond = "textDocument/definition", },
-          ["gdx"] = { "<cmd>split | lua vim.lsp.buf.definition()<cr>", desc = "In a horizontal split", cond = "textDocument/definition", },
-        }
+          ["gd"] = { "", desc = "Show the definition of current symbol", cond = "textDocument/definition" },
+          ["gdd"] = {
+            "<cmd>lua vim.lsp.buf.definition()<cr>",
+            desc = "In current window",
+            cond = "textDocument/definition",
+          },
+          ["gdt"] = {
+            "<cmd>tab split | lua vim.lsp.buf.definition()<cr>",
+            desc = "In a new tab",
+            cond = "textDocument/definition",
+          },
+          ["gdv"] = {
+            "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>",
+            desc = "In a vertical split",
+            cond = "textDocument/definition",
+          },
+          ["gdx"] = {
+            "<cmd>split | lua vim.lsp.buf.definition()<cr>",
+            desc = "In a horizontal split",
+            cond = "textDocument/definition",
+          },
+        },
       },
     },
   },
