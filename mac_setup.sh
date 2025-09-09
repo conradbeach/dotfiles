@@ -76,6 +76,7 @@ brew install gh
 brew install git
 brew install gnu-sed
 brew install gnupg
+brew install lazygit
 brew install luarocks
 brew install neovim
 brew install pinentry-mac

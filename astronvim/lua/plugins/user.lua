@@ -112,30 +112,6 @@ return {
   },
 
   {
-    "akinsho/toggleterm.nvim",
-    dependencies = {
-      {
-        "AstroNvim/astrocore",
-        opts = {
-          mappings = {
-            n = {
-              ["<C-f>"] = { "<cmd>1ToggleTerm<cr>", desc = "Toggle terminal" },
-              ["<C-y>"] = { "<cmd>2ToggleTerm size=90 direction=vertical<cr>", desc = "Toggle Claude Code" },
-            },
-            t = {
-              ["<C-f>"] = { "<cmd>1ToggleTerm<cr>", desc = "Toggle terminal" },
-              ["<C-y>"] = { "<cmd>2ToggleTerm<cr>", desc = "Toggle Claude Code" },
-            },
-          },
-        },
-      },
-    },
-    opts = {
-      direction = "float",
-    },
-  },
-
-  {
     "Wansmer/treesj",
     event = "BufEnter",
     dependencies = {

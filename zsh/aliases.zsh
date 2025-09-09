@@ -40,6 +40,7 @@ alias gpl="git pull"
 alias gpf="git push --force-with-lease"
 alias gs="git stash"
 alias gsp="git stash pop"
+alias lg="lazygit"
 alias wt="git worktree"
 alias wtl="git worktree list"
 # Claude Code
