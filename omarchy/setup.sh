@@ -32,6 +32,9 @@ ln -sfn ~/development/dotfiles/alacritty.toml ~/.config/alacritty/
 ln -sfn ~/development/dotfiles/omarchy/.gitconfig ~
 
 # zsh
+# TODO Consider just using vanilla bash. That's what Omarchy uses and I'm not
+# sure exactly what I use in zsh that's different from bash. Bash might meet my
+# needs just fine and would simplify things.
 yay -Sy --noconfirm --needed zsh
 ln -sfn ~/development/dotfiles/zsh/.zshrc ~
 ln -sfn ~/development/dotfiles/.fzf.zsh ~
