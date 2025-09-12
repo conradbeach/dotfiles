@@ -1,6 +1,7 @@
 CLAUDE.local.md
 .claude/settings.local.json
 Context_from_Claude.md
+Plan_from_Claude.md
 .DS_Store
 npm-debug.log
 .supermaven/config.json
