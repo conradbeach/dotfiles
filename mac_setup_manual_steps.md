@@ -108,7 +108,8 @@
     - /Volumes/com.apple.TimeMachine.localsnapshots
 - [ ] Claude Desktop
   - Set to run on startup. (Settings > General)
-  - Set Quick Entry keyboard shortcut to Ctrl-Space. (Settings > General)
+  - Disable "Quick Entry Keyboard Shortcut" (Settings > General)
+  - Disable "Show Claude in the menu bar" (Settings > General)
 - [ ] Dash
   - Activate subscription
   - Set up syncing. (In this repo at ./Dash/Dash.dashsync)
