@@ -164,8 +164,6 @@ brew install zsh-syntax-highlighting
 ln -sf ~/development/dotfiles/astronvim ~/.config/nvim
 nvim  --headless -c 'quitall'
 
-pip install pynvim
-
 
 # Other Tools
 
