@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Check Media API
 chma() {
   echo "\n---------- Running Rubocop ----------"

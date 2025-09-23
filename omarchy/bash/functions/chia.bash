@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Check irms-api
 chia() {
   echo "\n---------- Running RSpec ----------"

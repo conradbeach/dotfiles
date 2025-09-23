@@ -1,7 +1,9 @@
+#!/usr/bin/env bash
+
 # Check Current Project - Automatically detect project and run appropriate checks.
 chp() {
   local current_dir=$(pwd)
-  
+
   if [[ "$current_dir" == *"irms-api"* ]]; then
     echo "Detected irms-api, running chia..."
     chia

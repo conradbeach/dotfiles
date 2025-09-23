@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Attach or create tmux session named the same as current directory.
 tat() {
   path_name="$(basename "$PWD" | tr . -)"

@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Check Grand Central Station
 chgcs() {
   echo "\n---------- Running RSpec ----------"

@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Reports the result of a command with a checkmark or X
 # $1 - The name of the check
 # $2 - The status code to check
