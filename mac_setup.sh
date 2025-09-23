@@ -169,11 +169,6 @@ pip install pynvim
 
 # Other Tools
 
-## tat
-print_header "Installing tat"
-sudo mkdir /usr/local/bin
-sudo curl https://raw.githubusercontent.com/thoughtbot/dotfiles/master/bin/tat -o /usr/local/bin/tat && sudo chmod +x /usr/local/bin/tat
-
 ## Tmux Plugin Manager
 print_header "Installing Tmux Plugin Manager"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
