@@ -37,10 +37,8 @@ else
 fi
 ln -sf ~/development/dotfiles/.gitignore_global ~
 ln -sf ~/development/dotfiles/git-commit-template.txt ~
-ln -sf ~/development/dotfiles/.irbrc ~
 ln -sf ~/development/dotfiles/karabiner ~/.config
 ln -sf ~/development/dotfiles/.obsidian.vimrc ~/Obsidian
-ln -sf ~/development/dotfiles/.pryrc ~
 ln -sf ~/development/dotfiles/.psqlrc ~
 ln -sf ~/development/dotfiles/.ripgreprc ~
 ln -sf ~/development/dotfiles/.rspec ~
