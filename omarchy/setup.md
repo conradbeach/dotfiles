@@ -27,6 +27,60 @@ ln -sfn ~/development/dotfiles/omarchy/hypr/monitors.conf ~/.config/hypr/
 ln -sfn ~/development/dotfiles/omarchy/hypr/windows.conf ~/.config/hypr/
 ```
 
+## Packages
+Install:
+- `ripgrep` (check if Omarchy already installs this)
+- `tlrc-bin` (tldr command line tool)
+- `tmux`
+
+## Services
+Install:
+- Postgres
+- Redis
+
+## Languages
+Install:
+- NodeJS
+- Python
+- Ruby
+
+## Applications
+Install:
+- Claude (desktop app or web app)
+- `gitkraken`
+- Linear (desktop or web app)
+- Mouseless (once it's available for wayland)
+- `postman-bin`
+- Slack (desktop or web app)
+- `tableplus`
+  - Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
+- `visual-studio-code-bin` (Omarchy might come with this out of the box.)
+- `zen-browser-bin`
+  - Turn on syncing.
+- WhatsApp (web app)
+
+### Obsidian
+```
+mkdir -p ~/Obsidian
+ln -sfn ~/development/dotfiles/.obsidian.vimrc ~/Obsidian
+```
+
+Log into Obsidian Sync and set up vault in `~/Obsidian`
+
+## Claude Code
+```
+mkdir -p ~/.claude
+ln -sfn ~/development/dotfiles/claude/GLOBAL.md ~/.claude/CLAUDE.md
+ln -sfn ~/development/dotfiles/claude/agents ~/.claude
+ln -sfn ~/development/dotfiles/claude/commands ~/.claude
+ln -sfn ~/development/dotfiles/claude/settings.json ~/.claude/settings.json
+```
+
+### Context7 (https://github.com/upstash/context7)
+```
+claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
+```
+
 ## Git
 ```
 ln -sfn ~/development/dotfiles/.gitignore_global ~
@@ -56,9 +110,10 @@ ln -sfn ~/development/dotfiles/.rspec ~
 
 ## tmux
 ```
-# - [ ] Install tmux somehow
-
 ln -sfn ~/development/dotfiles/.tmux.conf ~
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Hit `<prefix>+I` in tmux to install plugins.
 ```
 
 ## Neovim
@@ -67,47 +122,26 @@ ln -sfn ~/development/dotfiles/astronvim ~/.config/nvim
 nvim  --headless -c 'quitall'
 
 ln -sfn ~/development/dotfiles/.ripgreprc ~
+
+# Run :checkhealth inside Neovim.
 ```
 
 ## SSH
 See [GitHub's instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 for up to date information. The below commands are a summary as of 2025.
 ```
+# Check if there's already an SSH key created by Omarchy.
+
 ssh-keygen -t ed25519 -C "<your-email>"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
-ln -sf ~/development/dotfiles/omarchy/ssh/config ~/.ssh/
-ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/
+ln -sfn ~/development/dotfiles/omarchy/ssh/config ~/.ssh/
+ln -sfn ~/development/dotfiles/ssh/known_hosts ~/.ssh/
 ```
 
-## Packages
-Install:
-- `tlrc-bin` (tldr command line tool)
-- `ripgrep`
-- `neovim`
+Add the SSH key to GitHub.
 
-## Services
-Install:
-- Postgres
-- Redis
-
-## Applications
-Install:
-- Claude (desktop app or web app)
-- `gitkraken`
-- Linear (desktop or web app)
-- Mouseless (once it's available for wayland)
-- `postman-bin`
-- Slack (desktop or web app)
-- `tableplus`
-- `visual-studio-code-bin`
-- `zen-browser-bin`
-- WhatsApp (web app)
-
-### Obsidian
-```
-mkdir -p ~/Obsidian
-ln -sfn ~/development/dotfiles/.obsidian.vimrc ~/Obsidian
-```
-
-Log into Obsidian Sync and set up vault in `~/Obsidian`
+## GPG
+- Generate a new GPG key. (Follow the GitHub docs: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+  - Add summary like SSH section has.
+- Add the new GPG key to your GitHub account.
