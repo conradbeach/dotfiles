@@ -80,7 +80,6 @@ brew install neovim
 brew install pinentry-mac
 brew install pure
 brew install ripgrep
-brew install the_silver_searcher
 brew install tldr
 brew install tmux
 brew install tmuxinator
