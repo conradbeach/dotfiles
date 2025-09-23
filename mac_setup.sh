@@ -80,7 +80,7 @@ brew install neovim
 brew install pinentry-mac
 brew install pure
 brew install ripgrep
-brew install tldr
+brew install tlrc
 brew install tmux
 brew install tmuxinator
 brew install trash
