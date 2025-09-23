@@ -6,9 +6,6 @@
 	excludesfile = /Users/cbeach/.gitignore_global
 	autocrlf = input
 	editor = nvim
-	pager = diff-so-fancy | less --tabs=2 -RFX
-[credential]
-	helper = osxkeychain
 [commit]
 	gpgSign = true
 	template = /Users/cbeach/git-commit-template.txt
