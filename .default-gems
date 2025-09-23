@@ -2,16 +2,6 @@ brakeman
 bundler
 bundler-audit
 neovim
-orbacle
-pry
-pry-doc
 rails
-rubocop
-rubocop-performance
-rubocop-rails
-rubocop-rspec
-ruby-beautify
 ruby-lsp
-rubycritic
 terminal-notifier
-yard
