@@ -56,6 +56,8 @@ ln -sfn ~/development/dotfiles/.rspec ~
 
 ## tmux
 ```
+# - [ ] Install tmux somehow
+
 ln -sfn ~/development/dotfiles/.tmux.conf ~
 ```
 
@@ -78,15 +80,34 @@ ln -sf ~/development/dotfiles/omarchy/ssh/config ~/.ssh/
 ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/
 ```
 
-## Install Applications
+## Packages
+Install:
+- `tlrc-bin` (tldr command line tool)
+- `ripgrep`
+- `neovim`
+
+## Services
+Install:
+- Postgres
+- Redis
+
+## Applications
+Install:
+- Claude (desktop app or web app)
 - `gitkraken`
+- Linear (desktop or web app)
+- Mouseless (once it's available for wayland)
 - `postman-bin`
+- Slack (desktop or web app)
 - `tableplus`
 - `visual-studio-code-bin`
 - `zen-browser-bin`
+- WhatsApp (web app)
 
 ### Obsidian
 ```
 mkdir -p ~/Obsidian
 ln -sfn ~/development/dotfiles/.obsidian.vimrc ~/Obsidian
 ```
+
+Log into Obsidian Sync and set up vault in `~/Obsidian`
