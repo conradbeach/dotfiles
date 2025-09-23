@@ -7,41 +7,9 @@
 	autocrlf = input
 	editor = nvim
 	pager = diff-so-fancy | less --tabs=2 -RFX
-[push]
-	default = simple
-[alias]
-	co = checkout
-	s = status
-	lg = log --oneline --decorate --all --graph
-  commend = commit --amend --no-edit
-[pull]
-	rebase = true
-[rerere]
-	enabled = true
-[branch]
-	autosetuprebase = always
 [credential]
 	helper = osxkeychain
-[filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-	required = true
-[color]
-	ui = true
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[color "diff"]
-	meta = yellow
-	frag = magenta bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
 [commit]
-	verbose = true
 	gpgSign = true
 	template = /Users/conrad/git-commit-template.txt
 	cleanup = strip
