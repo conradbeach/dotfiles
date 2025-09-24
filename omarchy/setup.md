@@ -23,8 +23,8 @@ ln -sfn ~/development/dotfiles/omarchy/hypr/hyprland.conf ~/.config/hypr/
 ln -sfn ~/development/dotfiles/omarchy/hypr/hyprlock.conf ~/.config/hypr/
 ln -sfn ~/development/dotfiles/omarchy/hypr/hyprsunset.conf ~/.config/hypr/
 ln -sfn ~/development/dotfiles/omarchy/hypr/input.conf ~/.config/hypr/
+ln -sfn ~/development/dotfiles/omarchy/hypr/looknfeel.conf ~/.config/hypr/
 ln -sfn ~/development/dotfiles/omarchy/hypr/monitors.conf ~/.config/hypr/
-ln -sfn ~/development/dotfiles/omarchy/hypr/windows.conf ~/.config/hypr/
 ```
 
 ## Packages
