@@ -3,6 +3,9 @@
 ## TODO
 - [ ] Mise provides [environments](https://mise.jdx.dev/environments/) which can
 replace my current use of direnv.
+- [ ] Starship config
+  - Second line for prompt.
+  - Show run time for long running commands.
 
 ## Notes
 - Using bash instead of zsh.
