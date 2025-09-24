@@ -119,6 +119,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ## Neovim
 ```
+rm -rf ~/.config/nvim
 ln -sfn ~/development/dotfiles/astronvim ~/.config/nvim
 nvim  --headless -c 'quitall'
 
