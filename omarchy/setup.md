@@ -29,8 +29,6 @@ ln -sfn ~/development/dotfiles/omarchy/hypr/monitors.conf ~/.config/hypr/
 
 ## Packages
 Install:
-- `ripgrep` (check if Omarchy already installs this)
-- `tlrc-bin` (tldr command line tool)
 - `tmux`
 
 ## Services
