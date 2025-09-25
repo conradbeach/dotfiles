@@ -11,10 +11,15 @@
 - If making API changes, make sure to update the documentation. Use the `api-docs-writer` agent.
 - If making visual front-end changes, take a screenshot with Playwright and make sure the UI looks good. Iterate 2-3 times if needed until you’re happy with it.
 - Manually test your changes through the web browser or by manually making API requests.
-- Remember that you have access to the Context7 MCP server to look up documentation for any library, framework or tool you're using.
-- Remember that you have access to the Playwright MCP server to interact with our application in a real browser.
 - You must delegate tasks to sub agents when the task matches a sub agents area of expertise.
 - Once you've finished making changes, have the `code-reviewer` sub agent review all of your changes and make additional adjustments based on their feedback.
+
+## MCP Tools
+- Remember that you have access to the following MCP tools:
+  - Context7 to look up documentation for any library, framework or tool you're using.
+  - Serena for efficient codebase navigation and editing.
+    - Make sure that the current project has been activated with Serena and onboarding has been performed.
+  - Playwright to interact with our application in a real browser.
 
 ## Ruby
 - Use modern Ruby features and idioms.

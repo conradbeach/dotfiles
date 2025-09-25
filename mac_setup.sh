@@ -197,6 +197,9 @@ git clone git@github.com:rollbar/rollbar-mcp-server.git ~/development/rollbar-mc
 # ROLLBAR_ACCESS_TOKEN must be set in the environment. See .zshrc.
 claude mcp add Rollbar --scope user -- node ~/development/rollbar-mcp-server/build/index.js
 
+### Serena MCP
+curl -LsSf https://astral.sh/uv/install.sh | sh
+claude mcp add Serena --scope user -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context ide-assistant
 
 # Other Development Setup
 

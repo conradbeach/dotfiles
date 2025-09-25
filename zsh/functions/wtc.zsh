@@ -50,6 +50,8 @@ wtc() {
     (cd "$worktree_dir" && direnv allow)
   fi
 
+  (cd "$worktree_dir" && uvx --from git+https://github.com/oraios/serena serena project index)
+
   echo -n "\nNavigate to the new worktree directory? (y/n): "
   read -r response
   if [[ "$response" =~ ^[Yy]$ ]]; then cd $worktree_dir; fi
