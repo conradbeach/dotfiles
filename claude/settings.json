@@ -12,6 +12,7 @@
       "Bash(cat:*)",
       "Bash(chp)",
       "Bash(exit)",
+      "Bash(fd:*)",
       "Bash(find:*)",
       "Bash(gem list:*)",
       "Bash(gh pr:*)",
