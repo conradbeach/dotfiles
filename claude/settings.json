@@ -4,6 +4,7 @@
     "allow": [
       "Bash(bundle exec parallel_rspec:*)",
       "Bash(bundle exec rails:*)",
+      "Bash(bundle exec rake:*)",
       "Bash(bundle exec rspec:*)",
       "Bash(bundle exec rubocop:*)",
       "Bash(bundle list:*)",
@@ -25,6 +26,7 @@
       "Bash(mkdir:*)",
       "Bash(npx @redocly/cli build-docs:*)",
       "Bash(npx @redocly/cli lint:*)",
+      "Bash(rails:*)",
       "Bash(rg:*)",
       "Bash(rm:*)",
       "Bash(ruby:*)",
