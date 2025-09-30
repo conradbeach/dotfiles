@@ -105,7 +105,7 @@
     "type": "command",
     "command": "input=$(cat); model_name=$(echo \"$input\" | jq -r '.model.display_name'); printf \"\\033[34m%s\\033[0m\" \"$model_name\""
   },
-  "alwaysThinkingEnabled": false,
+  "alwaysThinkingEnabled": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754086011803
   }
