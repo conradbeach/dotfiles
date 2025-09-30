@@ -43,3 +43,6 @@
 
 ## Files
 - Whenever you reference a file, use the full path (relative to the project root); this makes it easier for me to open it in my editor.
+
+## Project Context 
+See @.serena/memories/ for project specific context.
