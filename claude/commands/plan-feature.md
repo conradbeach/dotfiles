@@ -6,7 +6,7 @@ Your task is to create a plan to implement the feature described in the requirem
 If you're given a Linear issue, fetch the Linear issue using the MCP server. Fetch any
 comments in the issue as well. This will provide you with the context you need to explain things correctly.
 
-- Review `Context_from_Claude.md` if it exists; this file was created during a
+- Review @Context_from_Claude.md if it exists; this file was created during a
 previous research phase you did and provides helpful context for the work we're doing.
 - Think hard and be thorough in your planned solution. Make sure you're searching the
 codebase for relevant information to confirm that your approach is correct.
