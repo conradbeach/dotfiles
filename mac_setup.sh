@@ -200,6 +200,8 @@ claude mcp add Rollbar --scope user -- node ~/development/rollbar-mcp-server/bui
 ### Serena MCP
 curl -LsSf https://astral.sh/uv/install.sh | sh
 claude mcp add Serena --scope user -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context ide-assistant
+mkdir -p ~/.serena
+ln -sfn ~/development/dotfiles/serena/serena_config.yml ~/.serena
 
 # Other Development Setup
 
