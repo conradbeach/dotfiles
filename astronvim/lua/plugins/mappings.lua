@@ -6,9 +6,10 @@ _G.yank_code_with_context = function()
     or ("on lines " .. start_line .. " to " .. end_line)
 
   local file_path = vim.fn.fnamemodify(vim.fn.expand "%", ":.")
+  local filetype = vim.bo.filetype
   local code = vim.fn.getreg '"'
 
-  local result = string.format("In `%s` %s, we have:\n```\n%s\n```\n", file_path, line_text, code)
+  local result = string.format("In `%s` %s, we have:\n```%s\n%s\n```\n", file_path, line_text, filetype, code)
 
   vim.fn.setreg("+", result)
 end
