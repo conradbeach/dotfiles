@@ -1,5 +1,5 @@
 -- Utility function for code block yanking
-_G.yank_code_with_context = function(context_text)
+_G.yank_code_with_context = function()
   local start_line = vim.fn.line "'<"
   local end_line = vim.fn.line "'>"
   local line_text = start_line == end_line and ("on line " .. start_line)
@@ -8,7 +8,7 @@ _G.yank_code_with_context = function(context_text)
   local file_path = vim.fn.fnamemodify(vim.fn.expand "%", ":.")
   local code = vim.fn.getreg '"'
 
-  local result = string.format("In `%s` %s, we have %s:\n```\n%s\n```\n", file_path, line_text, context_text, code)
+  local result = string.format("In `%s` %s, we have:\n```\n%s\n```\n", file_path, line_text, code)
 
   vim.fn.setreg("+", result)
 end
@@ -105,8 +105,7 @@ return {
           -- second key is the lefthand side of the map
           ["<Leader>y"] = { "", desc = "Yank" },
           ["<Leader>yc"] = { "", desc = "Context" },
-          ["<Leader>ycc"] = { "y<cmd>lua yank_code_with_context('this code')<cr>", desc = "Code block" },
-          ["<Leader>ycm"] = { "y<cmd>lua yank_code_with_context('the method')<cr>", desc = "Method" },
+          ["<Leader>ycc"] = { "y<cmd>lua yank_code_with_context()<cr>", desc = "Code block" },
         },
         n = {
           -- Remove some mappings I don't want.
