@@ -20,6 +20,7 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git log:*)",
+      "Bash(git mv:*)",
       "Bash(grep:*)",
       "Bash(ls:*)",
       "Bash(magick:*)",
