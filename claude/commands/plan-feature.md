@@ -3,15 +3,16 @@ Create a plan to implement a feature/change
 ## Instructions
 Your task is to create a plan to implement the feature described in the requirements below.
 
-If you're given a Linear issue, fetch the Linear issue using the MCP server. Fetch any
-comments in the issue as well. This will provide you with the context you need to explain things correctly.
+If you're given a Linear issue, fetch the Linear issue using the MCP server. Fetch
+any comments in the issue as well.
 
 - Review @Context_from_Claude.md if it exists; this file was created during a
 previous research phase you did and provides helpful context for the work we're doing.
 - Think hard and be thorough in your planned solution. Make sure you're searching the
 codebase for relevant information to confirm that your approach is correct.
+- Ensure you're considering higher level architecture when deciding on your approach.
 - Use the Context7 MCP server to look up any documentation you might need.
-- Make sure your solution meets all the requirements.
+- Ensure your solution meets all the requirements.
 - Ensure your solution is secure.
 - Consider whether or not your changes would be best placed behind a feature flag.
 - Be detailed in your plan but also succinct.
