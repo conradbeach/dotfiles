@@ -7,15 +7,6 @@ replace my current use of direnv.
   - Second line for prompt.
   - Show run time for long running commands.
 
-## Notes
-- Using bash instead of zsh.
-  - Not sure how much value I'm getting out of zsh as opposed to Bash. Bash is
-  default in Omarchy and it will probably meet my needs just fine. Using Bash
-  makes things simpler.
-- Using mise instead of asdf.
-  - I still really like asdf, but it seems like mise is a better but still very
-  compatible version of asdf. And it's the default in Omarchy.
-
 ## Omarchy
 ```
 ln -sfn ~/development/dotfiles/omarchy/hypr/autostart.conf ~/.config/hypr/
@@ -28,6 +19,26 @@ ln -sfn ~/development/dotfiles/omarchy/hypr/hyprsunset.conf ~/.config/hypr/
 ln -sfn ~/development/dotfiles/omarchy/hypr/input.conf ~/.config/hypr/
 ln -sfn ~/development/dotfiles/omarchy/hypr/looknfeel.conf ~/.config/hypr/
 ln -sfn ~/development/dotfiles/omarchy/hypr/monitors.conf ~/.config/hypr/
+```
+
+## Neovim
+```
+rm -rf ~/.config/nvim
+ln -sfn ~/development/dotfiles/astronvim ~/.config/nvim
+nvim  --headless -c 'quitall'
+
+ln -sfn ~/development/dotfiles/.ripgreprc ~
+
+# Run :checkhealth inside Neovim.
+```
+
+## Bash
+Add contents of `./omarchy/bash/.bashrc_addendum` to bottom of `~/.bashrc`.
+
+## Mise
+```
+ln -sfn ~/development/dotfiles/.default-gems ~
+ln -sfn ~/development/dotfiles/.default-npm-packages ~
 ```
 
 ## Packages
@@ -84,7 +95,6 @@ claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 
 ### Serena MCP
 ```
-curl -LsSf https://astral.sh/uv/install.sh | sh
 claude mcp add serena -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context ide-assistant
 mkdir -p ~/.serena
 ln -sfn ~/development/dotfiles/serena/serena_config.yml ~/.serena
@@ -106,12 +116,6 @@ On a Deseret Book machine:
 ln -sfn ~/development/dotfiles/omarchy/.gitconfig_deseret_book ~/.gitconfig
 ```
 
-## Mise
-```
-ln -sfn ~/development/dotfiles/.default-gems ~
-ln -sfn ~/development/dotfiles/.default-npm-packages ~
-```
-
 ## Ruby
 ```
 ln -sfn ~/development/dotfiles/.rspec ~
@@ -123,17 +127,6 @@ ln -sfn ~/development/dotfiles/.tmux.conf ~
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Hit `<prefix>+I` in tmux to install plugins.
-```
-
-## Neovim
-```
-rm -rf ~/.config/nvim
-ln -sfn ~/development/dotfiles/astronvim ~/.config/nvim
-nvim  --headless -c 'quitall'
-
-ln -sfn ~/development/dotfiles/.ripgreprc ~
-
-# Run :checkhealth inside Neovim.
 ```
 
 ## SSH
