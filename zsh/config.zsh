@@ -3,7 +3,6 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH" # For uv
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export PATH="/Users/$USER/.cargo/bin:$PATH"
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 export SHELL="/bin/zsh"
 
@@ -27,8 +26,8 @@ fi
 # https://github.com/AstroNvim/AstroNvim/issues/1896
 ulimit -n 1024
 
-# direnv
-eval "$(direnv hook zsh)"
+# mise
+eval "$(mise activate zsh)"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

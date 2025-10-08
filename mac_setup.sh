@@ -25,9 +25,6 @@ mkdir -p ~/.config
 mkdir -p ~/Obsidian
 mkdir -p ~/.ssh/
 ln -sf ~/development/dotfiles/.agignore ~
-ln -sf ~/development/dotfiles/.asdfrc ~
-ln -sf ~/development/dotfiles/.default-gems ~
-ln -sf ~/development/dotfiles/.default-npm-packages ~
 ln -sf ~/development/dotfiles/.fzf.zsh ~
 ln -sf ~/development/dotfiles/ghostty ~/.config
 if is_deseret_book; then
@@ -38,6 +35,11 @@ fi
 ln -sf ~/development/dotfiles/.gitignore_global ~
 ln -sf ~/development/dotfiles/git-commit-template.txt ~
 ln -sf ~/development/dotfiles/karabiner ~/.config
+mkdir -p ~/.config/mise
+ln -sf ~/development/dotfiles/mise/config.toml ~/.config/mise
+ln -sf ~/development/dotfiles/mise/.default-gems ~
+ln -sf ~/development/dotfiles/mise/.default-npm-packages ~
+ln -sf ~/development/dotfiles/mise/.default-python-packages ~
 ln -sf ~/development/dotfiles/.obsidian.vimrc ~/Obsidian
 ln -sf ~/development/dotfiles/.psqlrc ~
 ln -sf ~/development/dotfiles/.ripgreprc ~
@@ -65,7 +67,6 @@ brew install ack
 brew install bat
 brew install cmake
 brew install diff-so-fancy
-brew install direnv
 brew install eza
 brew install fd
 brew install fzf
@@ -124,33 +125,14 @@ brew install --cask visual-studio-code
 brew install --cask zen-browser
 if ! is_deseret_book; then brew install --cask whatsapp; fi
 
-# asdf
-print_header "Installing asdf"
-rm -rf ~/.asdf
-brew install asdf
+# mise
+print_header "Installing mise"
+brew install mise
 source ~/.zshrc
-
-## Dependencies
-print_header "Installing Dependencies"
-xcode-select --install
-brew install coreutils curl git
-
-## Ruby
-print_header "Installing Ruby"
-brew install openssl@3 readline libyaml gmp
-asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
-
-## NodeJS
-print_header "Installing NodeJS"
-asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-
-## Python
-print_header "Installing Python"
-asdf plugin add python https://github.com/asdf-community/asdf-python.git
 
 ## Install Global Versions
 print_header "Installing All Global Versions of Languages"
-asdf install
+mise install
 
 
 # Zsh
