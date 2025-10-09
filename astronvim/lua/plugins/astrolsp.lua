@@ -6,6 +6,13 @@ return {
   "AstroNvim/astrolsp",
   ---@type AstroLSPOpts
   opts = {
+    config = {
+      ruby_lsp = {
+        cmd = {
+          "ruby-lsp",
+        }
+      }
+    },
     formatting = {
       format_on_save = {
         enabled = false, -- enable or disable format on save globally
