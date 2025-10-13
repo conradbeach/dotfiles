@@ -92,8 +92,10 @@ return {
           ["<Leader>9"] = { "9gt", desc = "Go to Tab 9" },
           -- Switch to last active tab configured in polish.lua
 
-          -- Visual Studio Code
+          -- Open file elsewhere
           ["<Leader>K"] = { "<cmd>!code %<cr>", desc = "Open File in Visual Studio Code" },
+          ["<Leader>O"] = { "<cmd>!open %<cr>", desc = "Open in Default Application" },
+          ["<Leader>F"] = { "<cmd>!open .<cr>", desc = "Open the current directory in Finder" },
         },
       },
     },
