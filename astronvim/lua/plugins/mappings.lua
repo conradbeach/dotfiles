@@ -93,9 +93,12 @@ return {
           -- Switch to last active tab configured in polish.lua
 
           -- Open file elsewhere
-          ["<Leader>K"] = { "<cmd>!code %<cr>", desc = "Open File in Visual Studio Code" },
-          ["<Leader>O"] = { "<cmd>!open %<cr>", desc = "Open in Default Application" },
-          ["<Leader>F"] = { "<cmd>!open .<cr>", desc = "Open the current directory in Finder" },
+          ["<Leader>K"] = { "<cmd>silent !code %<cr>", desc = "Open in Visual Studio Code" },
+          ["<Leader>O"] = { "<cmd>silent !open %<cr>", desc = "Open in default application" },
+          ["<Leader>F"] = {
+            function() vim.cmd("silent !open " .. vim.fn.expand "%:p:h") end,
+            desc = "Open in Finder",
+          },
         },
       },
     },
