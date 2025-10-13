@@ -98,6 +98,13 @@ claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 claude mcp add serena -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context ide-assistant
 ```
 
+### Plugin Marketplaces
+
+**Run this in Claude Code:**
+```
+/plugin marketplace add anthropics/claude-code
+```
+
 ## Git
 ```
 ln -sfn ~/development/dotfiles/.gitignore_global ~
