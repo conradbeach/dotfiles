@@ -183,6 +183,13 @@ claude mcp add Rollbar --scope user -- node ~/development/rollbar-mcp-server/bui
 curl -LsSf https://astral.sh/uv/install.sh | sh
 claude mcp add Serena --scope user -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context ide-assistant
 
+### Plugin Marketplaces
+
+# Run this in Claude Code:
+```
+/plugin marketplace add anthropics/claude-code
+```
+
 # Other Development Setup
 
 ## SSH
