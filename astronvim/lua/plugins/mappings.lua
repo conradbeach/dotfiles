@@ -9,7 +9,7 @@ _G.yank_code_with_context = function()
   local filetype = vim.bo.filetype
   local code = vim.fn.getreg '"'
 
-  local result = string.format("In `%s` %s, we have:\n```%s\n%s\n```\n", file_path, line_text, filetype, code)
+  local result = string.format("In `%s` %s, we have:\n```%s\n%s```\n", file_path, line_text, filetype, code)
 
   vim.fn.setreg("+", result)
 end
