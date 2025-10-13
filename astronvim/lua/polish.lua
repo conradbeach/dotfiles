@@ -19,7 +19,7 @@ vim.api.nvim_create_autocmd("TabLeave", {
 })
 
 -- nvim-focus/focus.nvim
-local ignore_filetypes = { "NvimTree", "aerial", "toggleterm" }
+local ignore_filetypes = { "NvimTree", "aerial", "toggleterm", "qf" }
 local augroup = vim.api.nvim_create_augroup("FocusDisable", { clear = true })
 
 vim.api.nvim_create_autocmd("FileType", {
