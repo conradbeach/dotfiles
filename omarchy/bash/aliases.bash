@@ -44,6 +44,7 @@ alias lg="lazygit"
 alias wt="git worktree"
 alias wtl="git worktree list"
 # Claude Code
+alias cc="claude"
 alias ccc="claude --continue"
 alias ccr="claude --resume"
 # fzf
