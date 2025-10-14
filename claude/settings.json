@@ -73,6 +73,7 @@
       "mcp__Serena__think_about_task_adherence",
       "mcp__Serena__think_about_whether_you_are_done",
       "mcp__Serena__write_memory",
+      "SlashCommand(/pr-review-toolkit:review-pr code comments)",
       "WebFetch(domain:anthropic.com)",
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:github.com)",
