@@ -8,6 +8,8 @@ code, flows or architecture that might inform how I implement the given feature/
 If you're given a Linear issue, fetch the Linear issue using the MCP server. Fetch
 any comments in the issue as well.
 
+Use the @agent-Explore to explore the codebase as needed.
+
 I'm not asking you to provide guidance on implementation, just provide context
 that you think is relevant and helpful to be aware of before I begin my implementation.
 
