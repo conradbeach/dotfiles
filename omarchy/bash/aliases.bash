@@ -23,6 +23,7 @@ alias bepr="bundle exec parallel_rspec"
 alias rdm="bundle exec rails db:migrate"
 alias rdr="bundle exec rails db:rollback"
 alias rdmr="bundle exec rails db:migrate:redo"
+alias rdms="bundle exec rails db:migrate:status"
 alias tof="bundle exec rspec --format=documentation --only-failures"
 alias toof="bundle exec rspec --format=documentation --next-failure"
 ## Git
