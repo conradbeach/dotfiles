@@ -110,10 +110,6 @@
       }
     ]
   },
-  "sandbox": {
-    "enabled": true,
-    "autoAllowBashIfSandboxed": true
-  },
   "statusLine": {
     "type": "command",
     "command": "input=$(cat); model_name=$(echo \"$input\" | jq -r '.model.display_name'); printf \"\\033[34m%s\\033[0m\" \"$model_name\""
@@ -121,7 +117,12 @@
   "enabledPlugins": {
     "pr-review-toolkit@claude-code-plugins": true,
     "feature-dev@claude-code-plugins": true,
-    "security-guidance@claude-code-plugins": true
+    "security-guidance@claude-code-plugins": true,
+    "superpowers@superpowers-marketplace": true
+  },
+  "sandbox": {
+    "autoAllowBashIfSandboxed": true,
+    "enabled": true
   },
   "alwaysThinkingEnabled": true,
   "feedbackSurveyState": {

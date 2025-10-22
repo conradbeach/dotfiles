@@ -103,6 +103,9 @@ claude mcp add serena -- uvx --from git+https://github.com/oraios/serena serena 
 **Run this in Claude Code:**
 ```
 /plugin marketplace add anthropics/claude-code
+
+/plugin marketplace add obra/superpowers-marketplace
+/plugin install superpowers@superpowers-marketplace
 ```
 
 ## Git
