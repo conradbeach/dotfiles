@@ -117,8 +117,7 @@
   "enabledPlugins": {
     "pr-review-toolkit@claude-code-plugins": true,
     "feature-dev@claude-code-plugins": true,
-    "security-guidance@claude-code-plugins": true,
-    "superpowers@superpowers-marketplace": true
+    "security-guidance@claude-code-plugins": true
   },
   "sandbox": {
     "autoAllowBashIfSandboxed": true,

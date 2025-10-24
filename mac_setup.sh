@@ -188,9 +188,6 @@ claude mcp add Serena --scope user -- uvx --from git+https://github.com/oraios/s
 # Run this in Claude Code:
 ```
 /plugin marketplace add anthropics/claude-code
-
-/plugin marketplace add obra/superpowers-marketplace
-/plugin install superpowers@superpowers-marketplace
 ```
 
 # Other Development Setup
