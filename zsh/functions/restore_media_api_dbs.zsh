@@ -3,9 +3,9 @@ restore_media_api_dbs() {
   set -o xtrace
   
   # Always update bookshelf_development
-  dropdb bookshelf_development
-  createdb bookshelf_development
-  time pg_restore -d bookshelf_development -j 6 $1
+  dropdb bookshelf
+  createdb bookshelf
+  time pg_restore -d bookshelf -j 6 $1
   # Using taskpolicy, it took 24 minutes to restore both databases.
   # Test without taskpolicy.
   
