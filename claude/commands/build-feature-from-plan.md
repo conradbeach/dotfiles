@@ -3,8 +3,7 @@ Build a feature from the plan
 ## Instructions
 Your task is to implement the feature described in the requirements below.
 
-If you're given a Linear issue, fetch the Linear issue using the MCP server. Fetch
-any comments in the issue as well.
+If you're given a Linear issue, fetch the Linear issue using the `linear_fetch_issue` bash command.
 
 Also take a look at @Context_from_Claude.md if it exists; this file was created during a
 previous research phase you did and provides helpful context for the work we're doing.

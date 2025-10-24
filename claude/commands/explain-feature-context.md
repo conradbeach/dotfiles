@@ -5,8 +5,7 @@ Please take a look at the requirements given below and investigate the current s
 related to the feature we're building or the changes we're making. I want to understand any existing
 code, flows or architecture that might inform how I implement the given feature/changes.
 
-If you're given a Linear issue, fetch the Linear issue using the MCP server. Fetch
-any comments in the issue as well.
+If you're given a Linear issue, fetch the Linear issue using the `linear_fetch_issue` bash command.
 
 Use the @agent-Explore to explore the codebase as needed.
 

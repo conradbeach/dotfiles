@@ -1,0 +1,124 @@
+#!/usr/bin/env ruby
+
+# Fetch a Linear issue and its comments via GraphQL API
+# Usage: linear_fetch_issue <issue-id>
+# Example: linear_fetch_issue PROJ-123
+# Requires: ~/.linear_api_key file containing your Linear API key
+
+require 'json'
+require 'net/http'
+require 'uri'
+
+def main
+  if ARGV.empty?
+    puts "Usage: linear_fetch_issue <issue-id>"
+    puts "Example: linear_fetch_issue PROJ-123"
+    exit 1
+  end
+
+  api_key_file = File.expand_path('~/.linear_api_key')
+
+  unless File.exist?(api_key_file)
+    puts "❌ API key file not found: #{api_key_file}"
+    puts "Create the file and add your API key from: https://linear.app/settings/api"
+    exit 1
+  end
+
+  api_key = File.read(api_key_file).strip
+
+  if api_key.empty?
+    puts "❌ API key file is empty: #{api_key_file}"
+    puts "Add your API key from: https://linear.app/settings/api"
+    exit 1
+  end
+
+  issue_id = ARGV[0]
+
+  api_endpoint = URI('https://api.linear.app/graphql')
+
+  query = <<~GRAPHQL
+    query GetIssue($issueId: String!) {
+      issue(id: $issueId) {
+        identifier
+        title
+        description
+        url
+        comments {
+          nodes {
+            body
+            createdAt
+            user {
+              name
+            }
+          }
+        }
+      }
+    }
+  GRAPHQL
+
+  payload = {
+    query: query,
+    variables: { issueId: issue_id }
+  }
+
+  begin
+    http = Net::HTTP.new(api_endpoint.host, api_endpoint.port)
+    http.use_ssl = true
+
+    request = Net::HTTP::Post.new(api_endpoint)
+    request['Authorization'] = api_key
+    request['Content-Type'] = 'application/json'
+    request.body = payload.to_json
+
+    response = http.request(request)
+    data = JSON.parse(response.body)
+
+    # Check for errors
+    if data['errors']
+      puts "❌ Error fetching issue:"
+      puts data['errors'][0]['message']
+      exit 1
+    end
+
+    issue = data['data']['issue']
+
+    # Display the issue in LLM-friendly format
+    puts "ISSUE: #{issue['identifier']}"
+    puts "TITLE: #{issue['title']}"
+    puts "URL: #{issue['url']}"
+
+    description = issue['description'] || 'No description'
+    puts "\nDESCRIPTION:"
+    puts description
+
+    # Display comments
+    comments = issue.dig('comments', 'nodes') || []
+
+    if comments.any?
+      puts "\nCOMMENTS:"
+      comments.each_with_index do |comment, index|
+        user = comment['user'] || {}
+        user_name = user['name'] || 'Unknown'
+        puts "\nComment #{index + 1}:"
+        puts "Author: #{user_name}"
+        puts "Date: #{comment['createdAt']}"
+        puts "Body:"
+        puts comment['body']
+      end
+    else
+      puts "\nCOMMENTS: None"
+    end
+
+  rescue Net::HTTPError => e
+    puts "❌ HTTP Error: #{e.message}"
+    exit 1
+  rescue JSON::ParserError => e
+    puts "❌ JSON parsing error: #{e.message}"
+    exit 1
+  rescue StandardError => e
+    puts "❌ Unexpected error: #{e.message}"
+    exit 1
+  end
+end
+
+main if __FILE__ == $PROGRAM_NAME

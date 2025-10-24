@@ -22,6 +22,7 @@ function is_deseret_book() {
 # Link Files
 print_header "Symlinking Files"
 mkdir -p ~/.config
+mkdir -p ~/.local/bin
 mkdir -p ~/Obsidian
 mkdir -p ~/.ssh/
 ln -sf ~/development/dotfiles/.agignore ~
@@ -35,6 +36,7 @@ fi
 ln -sf ~/development/dotfiles/.gitignore_global ~
 ln -sf ~/development/dotfiles/git-commit-template.txt ~
 ln -sf ~/development/dotfiles/karabiner ~/.config
+ln -sf ~/development/dotfiles/bin/linear_fetch_issue ~/.local/bin/
 mkdir -p ~/.config/mise
 ln -sf ~/development/dotfiles/mise/config.toml ~/.config/mise
 ln -sf ~/development/dotfiles/mise/.default-gems ~
@@ -169,9 +171,6 @@ claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 
 ### Playwright MCP (https://github.com/microsoft/playwright-mcp)
 claude mcp add Playwright npx @playwright/mcp@latest --scope user
-
-### Linear MCP
-claude mcp add Linear https://mcp.linear.app/sse --transport sse --scope user
 
 ### Rollbar MCP
 git clone git@github.com:rollbar/rollbar-mcp-server.git ~/development/rollbar-mcp-server

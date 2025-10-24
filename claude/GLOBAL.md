@@ -44,5 +44,9 @@
 ## Files
 - Whenever you reference a file, use the full path (relative to the project root); this makes it easier for me to open it in my editor.
 
+## Linear
+If a Linear issue is referenced, you can view it by using the `linear_fetch_issue` bash command.
+Linear issue IDs look like `DEV-7892`.
+
 ## Project Context 
 See @.serena/memories/ for project specific context.
