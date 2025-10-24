@@ -169,9 +169,6 @@ ln -sf ~/development/dotfiles/claude/settings.json ~/.claude/settings.json
 ### Context7 (https://github.com/upstash/context7)
 claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 
-### Playwright MCP (https://github.com/microsoft/playwright-mcp)
-claude mcp add Playwright npx @playwright/mcp@latest --scope user
-
 ### Serena MCP
 curl -LsSf https://astral.sh/uv/install.sh | sh
 claude mcp add Serena --scope user -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context ide-assistant
