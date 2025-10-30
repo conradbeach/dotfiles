@@ -7,6 +7,7 @@
       "Bash(bundle exec rake:*)",
       "Bash(bundle exec rspec:*)",
       "Bash(bundle exec rubocop:*)",
+      "Bash(bundle install:*)",
       "Bash(bundle list:*)",
       "Bash(bundle show:*)",
       "Bash(bundle update:*)",
@@ -81,6 +82,7 @@
       "WebFetch(domain:anthropic.com)",
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.meilisearch.com)",
       "WebFetch(domain:ruby-lang.org)",
       "WebSearch"
     ],
