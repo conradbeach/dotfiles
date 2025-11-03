@@ -134,6 +134,9 @@
   - Install from Mac App Store.
   - Disable all shortcuts.
   - Sign in with email. (No password required.)
+- [ ] Proton Authenticator
+  - Install from Mac App Store.
+  - Log in and restore from iCloud.
 - [ ] TablePlus
   - Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
 - [ ] Visual Studio Code

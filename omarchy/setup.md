@@ -63,6 +63,7 @@ Install:
 - Linear (desktop or web app)
 - Mouseless (once it's available for wayland)
 - `postman-bin`
+- Proton Authenticator
 - Slack (desktop or web app)
 - `tableplus`
   - Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
