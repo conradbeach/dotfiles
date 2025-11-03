@@ -8,6 +8,10 @@ chma() {
   bundle exec rake rubocop:changed_files_todo_disabled
   rubocop_no_todo_status=$?
 
+  echo "\n---------- Running Redocly Linter ----------"
+  script/redocly.sh lint doc/api/v2/v2.openapi.yaml
+  redocly_status=$?
+
   echo "\n---------- Running Parallel RSpec ----------"
   bundle exec parallel_rspec
   rspec_status=$?
@@ -15,8 +19,9 @@ chma() {
   echo "\n---------- Results ----------"
   report_result "Rubocop" $rubocop_status
   report_result "Rubocop with Todo Disabled" $rubocop_no_todo_status
+  report_result "Redocly Linter" $redocly_status
   report_result "RSpec" $rspec_status
 
   # Return overall success
-  return $(( rubocop_status + rubocop_no_todo_status + rspec_status ))
+  return $(( rubocop_status + rubocop_no_todo_status + redocly_status + rspec_status ))
 }
