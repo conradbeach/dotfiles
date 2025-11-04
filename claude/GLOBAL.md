@@ -47,6 +47,3 @@
 ## Linear
 If a Linear issue is referenced, you can view it by using the `linear_fetch_issue` bash command.
 Linear issue IDs look like `DEV-7892`.
-
-## Project Context 
-See @.serena/memories/ for project specific context.
