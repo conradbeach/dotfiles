@@ -128,7 +128,10 @@
   },
   "sandbox": {
     "autoAllowBashIfSandboxed": true,
-    "enabled": true
+    "enabled": true,
+    "network": {
+      "allowLocalBinding": true
+    }
   },
   "alwaysThinkingEnabled": true,
   "feedbackSurveyState": {
