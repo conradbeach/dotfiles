@@ -83,10 +83,12 @@
       "mcp__Serena__write_memory",
       "SlashCommand(/pr-review-toolkit:review-pr:*)",
       "WebFetch(domain:anthropic.com)",
-      "WebFetch(domain:api.linear.app)",
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:api.linear.app)",
       "WebFetch(domain:www.meilisearch.com)",
+      "WebFetch(domain:guides.rubyonrails.org)",
       "WebFetch(domain:ruby-lang.org)",
       "WebSearch"
     ],
