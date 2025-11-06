@@ -47,6 +47,7 @@ wtc() {
   if [ -d "$main_repo_dir/.serena/cache" ]; then cp -r "$main_repo_dir/.serena/cache" "$worktree_dir/.serena/"; fi
   if [ -d "$main_repo_dir/.serena/memories" ]; then cp -r "$main_repo_dir/.serena/memories" "$worktree_dir/.serena/"; fi
   if [ -f "$main_repo_dir/config/application.yml" ]; then cp "$main_repo_dir/config/application.yml" "$worktree_dir/config/"; fi
+  if [ -f "$main_repo_dir/config/master.key" ]; then cp "$main_repo_dir/config/master.key" "$worktree_dir/config/"; fi
   if [ -f "$main_repo_dir/mise.local.toml" ]; then
     cp "$main_repo_dir/mise.local.toml" "$worktree_dir/"
     (cd "$worktree_dir" && mise trust)
