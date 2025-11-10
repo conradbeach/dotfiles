@@ -48,7 +48,7 @@
                                 "description": "Change tab to command+control+option+shift.",
                                 "from": {
                                     "key_code": "tab",
-                                    "modifiers": { "optional": ["control", "shift", "option", "caps_lock", "fn"] }
+                                    "modifiers": { "optional": [] }
                                 },
                                 "to": [
                                     {
