@@ -57,7 +57,7 @@
     "BSTDontShowSnapAreasWhileModMoving" : 0,
     "BTTDrawingAreaHeight" : 626,
     "BTTLeaveSystemAppsInControlStrip" : true,
-    "BTTNumberOfStarts" : 26530,
+    "BTTNumberOfStarts" : 26555,
     "BTTTouchBarHapticFeedback" : 1,
     "BTTStageManagerLeftSnappingAreaIncreasePercentage" : 0.125,
     "showKeyboardTab" : true,
@@ -185,7 +185,7 @@
     "BTTDrawingsRestoreMousePosition" : true,
     "singleFingerTapRight" : 0.05000000074505806,
     "singleFingerTapLeft" : 0.44999998807907104,
-    "BTTDidRegisterForUpdateStats" : "5.631",
+    "BTTDidRegisterForUpdateStats" : "5.750",
     "BTTHandleThumbsRestingOnTopEdgeAndCorners" : true,
     "BTTLastScreenshotOptions" : "-t;;png;;\/Users\/Jason\/Desktop\/Screen Shot {datetime}.png;;",
     "BSTBrokenAPICheckEnabled" : false,
@@ -210,8 +210,16 @@
     "BSTSnapAreaDefaultShowPictogram" : false,
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000149011612
   },
-  "BTTPresetUUID" : "849CAA2D-D256-4818-BCD4-43813C3C45B2",
+  "BTTPresetUUID" : "33864094-DB67-49F3-A4D4-CFE7DF62444A",
   "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "BT.L",
+      "BTTAppName" : "Recently Used",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
     {
       "BTTAppBundleIdentifier" : "BT.G",
       "BTTAppName" : "Global",
@@ -521,35 +529,49 @@
           }
         },
         {
-          "BTTLastUpdatedAt" : 1758725709.975975,
+          "BTTLastUpdatedAt" : 1758725709.976253,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "7D1BFC31-DBDA-45EB-A7CF-B8821ED0C91D",
+          "BTTUUID" : "2D209F4C-9126-42B6-B6E4-59FC188BCC33",
           "BTTAdditionalConfiguration" : "1966123",
           "BTTShortcutKeyboardType" : 1860,
           "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "s",
-          "BTTShortcutKeyCode" : 1,
+          "BTTLayoutIndependentChar" : "u",
+          "BTTShortcutKeyCode" : 32,
           "BTTShortcutAdvancedModifierKeys" : "1966123",
           "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 16,
+          "BTTOrder" : 23,
           "BTTAutoAdaptToKeyboardLayout" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1757099492.8577089,
-              "BTTTriggerParentUUID" : "7D1BFC31-DBDA-45EB-A7CF-B8821ED0C91D",
+              "BTTLastUpdatedAt" : 1757099492.8554389,
+              "BTTTriggerParentUUID" : "2D209F4C-9126-42B6-B6E4-59FC188BCC33",
               "BTTIsPureAction" : true,
               "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "87A3A48A-2516-4FC3-AC79-40517E6AD58D",
+              "BTTUUID" : "AF4FF8E9-B576-4E9C-A06B-68C2997284B5",
               "BTTPredefinedActionType" : 49,
               "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
-              "BTTLaunchPath" : "\/Applications\/Microsoft Teams.app",
+              "BTTLaunchPath" : "\/Applications\/Zen.app",
               "BTTShortcutKeyboardType" : 0,
               "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 16,
+              "BTTOrder" : 24,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            },
+            {
+              "BTTLastUpdatedAt" : 1757099492.855685,
+              "BTTTriggerParentUUID" : "2D209F4C-9126-42B6-B6E4-59FC188BCC33",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "3B932FF8-23C9-4DE5-A06A-B0D28204E2FE",
+              "BTTLayoutIndependentActionChar" : "1",
+              "BTTShortcutToSend" : "55,18",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 25,
               "BTTAutoAdaptToKeyboardLayout" : 0
             }
-          ]
+          ],
+          "BTTGestureNotes" : "Open WhatsApp web"
         },
         {
           "BTTLastUpdatedAt" : 1761069622.8516788,
@@ -700,6 +722,68 @@
               }
             ]
           }
+        },
+        {
+          "BTTLastUpdatedAt" : 1758725709.975975,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "7D1BFC31-DBDA-45EB-A7CF-B8821ED0C91D",
+          "BTTAdditionalConfiguration" : "1966123",
+          "BTTShortcutKeyboardType" : 1860,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "s",
+          "BTTShortcutKeyCode" : 1,
+          "BTTShortcutAdvancedModifierKeys" : "1966123",
+          "BTTShortcutModifierKeys" : 1966080,
+          "BTTOrder" : 16,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1757099492.8577089,
+              "BTTTriggerParentUUID" : "7D1BFC31-DBDA-45EB-A7CF-B8821ED0C91D",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "87A3A48A-2516-4FC3-AC79-40517E6AD58D",
+              "BTTPredefinedActionType" : 49,
+              "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
+              "BTTLaunchPath" : "\/Applications\/Microsoft Teams.app",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 16,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1758725709.976125,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "D3CB045F-0B57-4FD4-8B65-91C09C1B8171",
+          "BTTAdditionalConfiguration" : "1966123",
+          "BTTShortcutKeyboardType" : 1860,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "l",
+          "BTTShortcutKeyCode" : 37,
+          "BTTShortcutAdvancedModifierKeys" : "1966123",
+          "BTTShortcutModifierKeys" : 1966080,
+          "BTTOrder" : 11,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1757099492.855942,
+              "BTTTriggerParentUUID" : "D3CB045F-0B57-4FD4-8B65-91C09C1B8171",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "AED0B28A-A45D-4F89-8B5E-C6E0EAC797EF",
+              "BTTPredefinedActionType" : 49,
+              "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
+              "BTTLaunchPath" : "\/Applications\/Microsoft Outlook.app",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 10,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
         },
         {
           "BTTLastUpdatedAt" : 1761069622.8515759,
@@ -880,51 +964,6 @@
           }
         },
         {
-          "BTTLastUpdatedAt" : 1758725709.976253,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "2D209F4C-9126-42B6-B6E4-59FC188BCC33",
-          "BTTAdditionalConfiguration" : "1966123",
-          "BTTShortcutKeyboardType" : 1860,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "u",
-          "BTTShortcutKeyCode" : 32,
-          "BTTShortcutAdvancedModifierKeys" : "1966123",
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 23,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1757099492.8554389,
-              "BTTTriggerParentUUID" : "2D209F4C-9126-42B6-B6E4-59FC188BCC33",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "AF4FF8E9-B576-4E9C-A06B-68C2997284B5",
-              "BTTPredefinedActionType" : 49,
-              "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
-              "BTTLaunchPath" : "\/Applications\/Zen.app",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 24,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            },
-            {
-              "BTTLastUpdatedAt" : 1757099492.855685,
-              "BTTTriggerParentUUID" : "2D209F4C-9126-42B6-B6E4-59FC188BCC33",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "3B932FF8-23C9-4DE5-A06A-B0D28204E2FE",
-              "BTTLayoutIndependentActionChar" : "1",
-              "BTTShortcutToSend" : "55,18",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 25,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ],
-          "BTTGestureNotes" : "Open WhatsApp web"
-        },
-        {
           "BTTLastUpdatedAt" : 1761069622.8517289,
           "BTTTriggerType" : 624,
           "BTTTriggerTypeDescriptionReadOnly" : "Please Select a Trigger ",
@@ -1101,46 +1140,7 @@
               }
             ]
           }
-        },
-        {
-          "BTTLastUpdatedAt" : 1758725709.976125,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "D3CB045F-0B57-4FD4-8B65-91C09C1B8171",
-          "BTTAdditionalConfiguration" : "1966123",
-          "BTTShortcutKeyboardType" : 1860,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "l",
-          "BTTShortcutKeyCode" : 37,
-          "BTTShortcutAdvancedModifierKeys" : "1966123",
-          "BTTShortcutModifierKeys" : 1966080,
-          "BTTOrder" : 11,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1757099492.855942,
-              "BTTTriggerParentUUID" : "D3CB045F-0B57-4FD4-8B65-91C09C1B8171",
-              "BTTIsPureAction" : true,
-              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-              "BTTUUID" : "AED0B28A-A45D-4F89-8B5E-C6E0EAC797EF",
-              "BTTPredefinedActionType" : 49,
-              "BTTPredefinedActionName" : "Launch Application  or  Open File  or  Start Apple Script …",
-              "BTTLaunchPath" : "\/Applications\/Microsoft Outlook.app",
-              "BTTShortcutKeyboardType" : 0,
-              "BTTShortcutKeyCode" : -1,
-              "BTTOrder" : 10,
-              "BTTAutoAdaptToKeyboardLayout" : 0
-            }
-          ]
         }
-      ]
-    },
-    {
-      "BTTAppBundleIdentifier" : "BT.L",
-      "BTTAppName" : "Recently Used",
-      "BTTAppAutoInvertIcon" : 1,
-      "BTTTriggers" : [
-
       ]
     }
   ],
