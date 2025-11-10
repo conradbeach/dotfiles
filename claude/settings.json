@@ -89,6 +89,7 @@
       "WebFetch(domain:api.linear.app)",
       "WebFetch(domain:www.meilisearch.com)",
       "WebFetch(domain:guides.rubyonrails.org)",
+      "WebFetch(domain:rubygems.org)",
       "WebFetch(domain:ruby-lang.org)",
       "WebSearch"
     ],
@@ -129,11 +130,11 @@
     "security-guidance@claude-code-plugins": true
   },
   "sandbox": {
-    "autoAllowBashIfSandboxed": true,
-    "enabled": true,
     "network": {
       "allowLocalBinding": true
-    }
+    },
+    "autoAllowBashIfSandboxed": true,
+    "enabled": true
   },
   "alwaysThinkingEnabled": true,
   "feedbackSurveyState": {
