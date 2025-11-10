@@ -60,6 +60,7 @@ Install:
 Install:
 - Claude (desktop app or web app)
 - `gitkraken`
+- Discord
 - Linear (desktop or web app)
 - Mouseless (once it's available for wayland)
 - `postman-bin`

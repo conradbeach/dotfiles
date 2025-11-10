@@ -108,6 +108,7 @@ if ! is_deseret_book; then brew install --cask balenaetcher; fi
 brew install --cask bettertouchtool
 brew install --cask claude
 brew install --cask dash
+if ! is_deseret_book; then brew install --cask discord; fi
 brew install --cask firefox@developer-edition
 if ! is_deseret_book; then brew install --cask gimp; fi
 brew install --cask gitkraken
