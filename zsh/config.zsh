@@ -53,3 +53,7 @@ export ROLLBAR_ACCESS_TOKEN=$(cat ~/MEDIA_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt
 # Zsh Syntax Highlighting (https://github.com/zsh-users/zsh-syntax-highlighting)
 # Needs to be sourced last.
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Atuin
+. "$HOME/.atuin/bin/env"
+eval "$(atuin init zsh)"

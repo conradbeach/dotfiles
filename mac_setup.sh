@@ -26,6 +26,8 @@ mkdir -p ~/.local/bin
 mkdir -p ~/Obsidian
 mkdir -p ~/.ssh/
 ln -sf ~/development/dotfiles/.agignore ~
+mkdir -p ~/.config/atuin/
+ln -sf ~/development/dotfiles/atuin/config.toml ~/.config/atuin/
 ln -sf ~/development/dotfiles/.fzf.zsh ~
 ln -sf ~/development/dotfiles/ghostty ~/.config
 if is_deseret_book; then
@@ -163,6 +165,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ## xcode-select
 print_header "Installing Xcode Command Line Tools"
 xcode-select --install
+
+## Atuin Shell History
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 ## Claude Code
 mkdir -p ~/.claude
