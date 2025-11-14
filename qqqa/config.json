@@ -1,0 +1,105 @@
+{
+  "default_profile": "claude_cli",
+  "model_providers": {
+    "openrouter": {
+      "name": "OpenRouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "env_key": "OPENROUTER_API_KEY",
+      "api_key": null,
+      "local": false,
+      "mode": "http"
+    },
+    "ollama": {
+      "name": "Ollama",
+      "base_url": "http://127.0.0.1:11434/v1",
+      "env_key": "OLLAMA_API_KEY",
+      "api_key": null,
+      "local": true,
+      "mode": "http"
+    },
+    "codex": {
+      "name": "Codex CLI",
+      "base_url": "cli://codex",
+      "env_key": "CODEX_CLI_API_KEY",
+      "api_key": null,
+      "local": true,
+      "mode": "cli",
+      "cli": {
+        "engine": "codex",
+        "binary": "codex",
+        "base_args": [
+          "exec"
+        ]
+      }
+    },
+    "claude_cli": {
+      "name": "Claude Code CLI",
+      "base_url": "cli://claude",
+      "env_key": "CLAUDE_CLI_API_KEY",
+      "api_key": null,
+      "local": true,
+      "mode": "cli",
+      "cli": {
+        "engine": "claude",
+        "binary": "claude"
+      }
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "base_url": "https://api.anthropic.com/v1",
+      "env_key": "ANTHROPIC_API_KEY",
+      "api_key": null,
+      "local": false,
+      "mode": "http"
+    },
+    "groq": {
+      "name": "Groq",
+      "base_url": "https://api.groq.com/openai/v1",
+      "env_key": "GROQ_API_KEY",
+      "api_key": null,
+      "local": false,
+      "mode": "http"
+    },
+    "openai": {
+      "name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "env_key": "OPENAI_API_KEY",
+      "api_key": null,
+      "local": false,
+      "mode": "http"
+    }
+  },
+  "profiles": {
+    "openai": {
+      "model_provider": "openai",
+      "model": "gpt-5-mini"
+    },
+    "ollama": {
+      "model_provider": "ollama",
+      "model": "llama3.1"
+    },
+    "claude_cli": {
+      "model_provider": "claude_cli",
+      "model": "haiku"
+    },
+    "groq": {
+      "model_provider": "groq",
+      "model": "openai/gpt-oss-20b"
+    },
+    "anthropic": {
+      "model_provider": "anthropic",
+      "model": "claude-3-5-sonnet-20241022"
+    },
+    "codex": {
+      "model_provider": "codex",
+      "model": "gpt-5",
+      "reasoning_effort": "minimal"
+    },
+    "openrouter": {
+      "model_provider": "openrouter",
+      "model": "openai/gpt-4.1-nano"
+    }
+  },
+  "include_history": true,
+  "copy_first_command": true
+}

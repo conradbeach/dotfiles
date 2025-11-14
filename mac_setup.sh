@@ -44,6 +44,8 @@ ln -sf ~/development/dotfiles/mise/.default-npm-packages ~
 ln -sf ~/development/dotfiles/mise/.default-python-packages ~
 ln -sf ~/development/dotfiles/.obsidian.vimrc ~/Obsidian
 ln -sf ~/development/dotfiles/.psqlrc ~
+mkdir -p ~/.qq
+ln -sf ~/development/dotfiles/qqqa/config.json ~/.qq
 ln -sf ~/development/dotfiles/.ripgreprc ~
 ln -sf ~/development/dotfiles/.rspec ~
 ln -sf ~/development/dotfiles/ssh/config ~/.ssh/
@@ -82,6 +84,8 @@ brew install luarocks
 brew install neovim
 brew install pinentry-mac
 brew install pure
+brew tap iagooar/qqqa
+brew install qqqa
 brew install ripgrep
 brew install tlrc
 brew install tmux
