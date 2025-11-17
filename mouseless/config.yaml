@@ -2,7 +2,7 @@ app_version: 0.4.0
 behavior_configs:
 - base_move_speed: 5.0
   base_wheel_speed: 16.0
-  free_mode_auto_off_s: 30
+  free_mode_auto_off_s: 100
   grid_action_level: subgrid
   hide_cursor_on_click: false
   hide_location: bottom_left
