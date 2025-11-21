@@ -9,7 +9,7 @@ chma() {
   rubocop_no_todo_status=$?
 
   echo "\n---------- Running Redocly Linter ----------"
-  script/redocly.sh lint doc/api/v2/v2.openapi.yaml
+  script/redocly.sh lint doc/api/v2/openapi.yaml
   redocly_status=$?
 
   echo "\n---------- Running Parallel RSpec ----------"
