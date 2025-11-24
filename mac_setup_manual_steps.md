@@ -115,6 +115,8 @@
   - Set up syncing. (In this repo at ./Dash/Dash.dashsync)
   - Set up snippets. (In this repo at ./Dash/Snippets.dash)
   - Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
+- [ ] HEY
+  - Install somehow.
 - [ ] Karabiner Elements
   - Run Karabiner Elements and give it all necessary permissions.
 - [ ] iTerm
@@ -129,7 +131,7 @@
 - [ ] Mouseless
   - Import config file from this repo.
 - [ ] Obsidian
-  - Set up Obsidian Sync. Put the vault in ~/Obsidian.
+  - Set up Obsidian Sync. Put the vault in ~/Conrad and name it "Obsidian".
 - [ ] Perplexity
   - Install from Mac App Store.
   - Disable all shortcuts.
