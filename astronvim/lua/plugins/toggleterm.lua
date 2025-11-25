@@ -14,12 +14,10 @@ return {
         mappings = {
           n = {
             ["<C-f>"] = { "<cmd>1ToggleTerm direction=float<cr>", desc = "Toggle terminal" },
-            ["<C-y>"] = { "<cmd>2ToggleTerm direction=vertical size=90<cr>", desc = "Toggle Claude Code" },
             ["<C-u>"] = { _lazygit_toggle, desc = "Toggle lazygit" },
           },
           t = {
             ["<C-f>"] = { "<cmd>1ToggleTerm<cr>", desc = "Toggle terminal" },
-            ["<C-y>"] = { "<cmd>2ToggleTerm<cr>", desc = "Toggle Claude Code" },
             ["<C-u>"] = { _lazygit_toggle, desc = "Toggle lazygit" },
           },
         },
