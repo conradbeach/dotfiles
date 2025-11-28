@@ -1,6 +1,6 @@
 app_version: 0.4.0
 behavior_configs:
-- base_move_speed: 5.0
+- base_move_speed: 4
   base_wheel_speed: 16.0
   free_mode_auto_off_s: 100
   grid_action_level: subgrid
@@ -10,7 +10,7 @@ behavior_configs:
   initial_overlay_monitor: with_mouse
   move_duration_ms: 100
   move_real_cursor_with_virtual: false
-  move_speed_multiplier: 3.0
+  move_speed_multiplier: 6
   movement_easing: 0.3
   multi_action_timeout_ms: 400
   name: main_behavior
@@ -271,7 +271,7 @@ keymaps:
     back click: null
     back mouse button: null
     back mouse button (w/o overlay): null
-    close UI element: Escape
+    close UI element: null
     cycle click count: null
     cycle font: '3'
     cycle font reverse: shift+3
@@ -279,7 +279,7 @@ keymaps:
     cycle mouse action type: null
     cycle mouse button: null
     decrease overlay opacity: ArrowDown
-    edit config: Tab
+    edit config: null
     enter free mode: null
     execute mouse action: Space
     execute mouse move: OptionLeft tap
@@ -291,13 +291,13 @@ keymaps:
     forward mouse button (w/o overlay): null
     hide overlay: Escape
     hold for back button: null
-    hold for drag: null
+    hold for drag: OptionRight
     hold for forward button: null
     hold for middle button: null
     hold for move: OptionLeft
     hold for right button: CommandRight
     hold for speed decrease: CommandLeft
-    hold for speed increase: ShiftLeft
+    hold for speed increase: Shift
     increase overlay opacity: ArrowUp
     jump to bottom: null
     jump to left edge: null
@@ -314,7 +314,7 @@ keymaps:
     move up: K
     release hold/drag: Escape
     repeat last mouse action: null
-    right click: null
+    right click: Control tap
     right mouse button: V
     right mouse button (w/o overlay): null
     show overlay: null
@@ -353,7 +353,7 @@ keymaps:
     wheel step right large: null
     wheel step up: null
     wheel step up large: null
-    wheel up: U
+    wheel up: E
     wheel up fast: null
   name: mac
 monitor_assignment_mode: auto
