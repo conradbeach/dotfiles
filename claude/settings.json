@@ -105,11 +105,7 @@
     "type": "command",
     "command": "input=$(cat); model_name=$(echo \"$input\" | jq -r '.model.display_name'); printf \"\\033[34m%s\\033[0m\" \"$model_name\""
   },
-  "enabledPlugins": {
-    "feature-dev@claude-code-plugins": true,
-    "pr-review-toolkit@claude-code-plugins": true,
-    "security-guidance@claude-code-plugins": true
-  },
+  "enabledPlugins": {},
   "sandbox": {
     "enabled": true,
     "autoAllowBashIfSandboxed": true,
