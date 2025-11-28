@@ -179,10 +179,6 @@ ln -sf ~/development/dotfiles/claude/settings.json ~/.claude/settings.json
 ### Context7 (https://github.com/upstash/context7)
 claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 
-### Serena MCP
-curl -LsSf https://astral.sh/uv/install.sh | sh
-claude mcp add Serena --scope user -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context ide-assistant
-
 ### Plugin Marketplaces
 
 # Run this in Claude Code:

@@ -17,8 +17,6 @@
 ## MCP Tools
 - Remember that you have access to the following MCP tools:
   - Context7 to look up documentation for any library, framework or tool you're using.
-  - Serena for efficient codebase navigation and editing.
-    - Make sure that the current project has been activated with Serena and onboarding has been performed.
   - Playwright to interact with our application in a real browser.
 
 ## Ruby

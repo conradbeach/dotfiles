@@ -46,8 +46,6 @@ wtc() {
 
   if [ -f "$main_repo_dir/CLAUDE.local.md" ]; then cp "$main_repo_dir/CLAUDE.local.md" "$worktree_dir/"; fi
   if [ -d "$main_repo_dir/.claude" ]; then cp -r "$main_repo_dir/.claude" "$worktree_dir/"; fi
-  if [ -d "$main_repo_dir/.serena/cache" ]; then cp -r "$main_repo_dir/.serena/cache" "$worktree_dir/.serena/"; fi
-  if [ -d "$main_repo_dir/.serena/memories" ]; then cp -r "$main_repo_dir/.serena/memories" "$worktree_dir/.serena/"; fi
   if [ -f "$main_repo_dir/config/application.yml" ]; then cp "$main_repo_dir/config/application.yml" "$worktree_dir/config/"; fi
   if [ -f "$main_repo_dir/mise.local.toml" ]; then
     cp "$main_repo_dir/mise.local.toml" "$worktree_dir/"

@@ -95,11 +95,6 @@ ln -sfn ~/development/dotfiles/claude/settings.json ~/.claude/settings.json
 claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 ```
 
-### Serena MCP
-```
-claude mcp add serena -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context ide-assistant
-```
-
 ### Plugin Marketplaces
 
 **Run this in Claude Code:**
