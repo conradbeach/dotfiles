@@ -21,7 +21,7 @@
 	<key>AiMaxTokens</key>
 	<integer>200000</integer>
 	<key>AiModel</key>
-	<string>claude-sonnet-4-0</string>
+	<string>claude-sonnet-4-5</string>
 	<key>AiResponseMaxTokens</key>
 	<integer>64000</integer>
 	<key>AitermURL</key>
@@ -1683,6 +1683,8 @@
 			</dict>
 			<key>Guid</key>
 			<string>6ED8945F-1BAE-4E94-B937-75922D828FBD</string>
+			<key>Hide After Opening</key>
+			<false/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>Idle Code</key>
@@ -1956,7 +1958,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>12</integer>
 			<key>Working Directory</key>
 			<string>/Users/cbeach</string>
 		</dict>
@@ -2007,6 +2009,8 @@
 		</dict>
 	</dict>
 	<key>Print In Black And White</key>
+	<true/>
+	<key>SeparateWindowTitlePerTab</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
