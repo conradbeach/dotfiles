@@ -17,6 +17,9 @@
 #### Software Update
 - [ ] In Automatic Updates, enable "Install macOS updates".
 
+### Menu Bar
+- [ ] Set "Automatically hide and show the menu bar" to "Always"
+
 ### Control Center
 #### Control Center Modules
 - [ ] Set Bluetooth to "Show in Menu Bar"
