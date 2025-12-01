@@ -76,7 +76,6 @@
     ],
     "deny": []
   },
-  "model": "haiku",
   "hooks": {
     "Notification": [
       {
