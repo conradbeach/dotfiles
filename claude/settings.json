@@ -24,6 +24,8 @@
       "Bash(fd:*)",
       "Bash(find:*)",
       "Bash(gem list:*)",
+      "Bash(gem search:*)",
+      "Bash(gem specification:*)",
       "Bash(gh pr:*)",
       "Bash(git add:*)",
       "Bash(git checkout:*)",
