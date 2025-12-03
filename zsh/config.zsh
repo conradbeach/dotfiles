@@ -22,6 +22,11 @@ else
   export EDITOR='nvim'
 fi
 
+# Set window title to current directory basename (e.g., "irms-api")
+precmd() {
+  print -Pn "\e]2;%1~\a"
+}
+
 # Increase file descriptor ulimit. This prevents an AstroNvim issue I was running into.
 # https://github.com/AstroNvim/AstroNvim/issues/1896
 ulimit -n 1024

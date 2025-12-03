@@ -2,6 +2,10 @@
 -- things like custom filetypes. This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
 
+-- Set window title to directory + filename (e.g., "irms-api: schema.rb")
+vim.opt.title = true
+vim.opt.titlestring = "%{fnamemodify(getcwd(), ':t')}: %t"
+
 -- TODO: According to the [migraiton guide](https://docs.astronvim.com/configuration/v4_migration/),
 -- there are new `autocmds` and `commands` keys that can be used for the below configuration.
 
