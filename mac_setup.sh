@@ -30,6 +30,8 @@ mkdir -p ~/.config/atuin/
 ln -sf ~/development/dotfiles/atuin/config.toml ~/.config/atuin/
 ln -sf ~/development/dotfiles/.fzf.zsh ~
 ln -sf ~/development/dotfiles/ghostty ~/.config
+mkdir -p ~/Library/Application\ Support/iTerm2/Scripts/AutoLaunch
+ln -sf ~/development/dotfiles/iterm2/toggle_split.py ~/Library/Application\ Support/iTerm2/Scripts/AutoLaunch/
 if is_deseret_book; then
   ln -sf ~/development/dotfiles/.gitconfig_deseret_book ~/.gitconfig
 else
