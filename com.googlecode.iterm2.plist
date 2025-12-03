@@ -1983,7 +1983,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>12</integer>
+			<integer>15</integer>
 			<key>Working Directory</key>
 			<string>/Users/cbeach</string>
 		</dict>
