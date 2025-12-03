@@ -80,30 +80,6 @@
     ],
     "deny": []
   },
-  "hooks": {
-    "Notification": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "command -v osascript && (osascript -e 'tell application \"System Events\" to set frontApp to name of first application process whose frontmost is true' | grep -q 'iTerm2' || terminal-notifier -title 'Claude Code' -message 'Claude is waiting for your response.') || true"
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "command -v osascript && (osascript -e 'tell application \"System Events\" to set frontApp to name of first application process whose frontmost is true' | grep -q 'iTerm2' || terminal-notifier -title 'Claude Code' -message 'Claude is waiting for your response.') || true"
-          }
-        ]
-      }
-    ]
-  },
   "statusLine": {
     "type": "command",
     "command": "input=$(cat); model_name=$(echo \"$input\" | jq -r '.model.display_name'); printf \"\\033[34m%s\\033[0m\" \"$model_name\""
