@@ -26,6 +26,9 @@ fi
 # https://github.com/AstroNvim/AstroNvim/issues/1896
 ulimit -n 1024
 
+# Homebrew (must come before mise since mise is installed via Homebrew)
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # mise
 eval "$(mise activate zsh)"
 
@@ -33,9 +36,6 @@ eval "$(mise activate zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(lvim {})+abort'"
-
-# Homewbrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Pure Prompt
 fpath+=$(brew --prefix)/share/zsh/site-functions
