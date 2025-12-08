@@ -7,49 +7,33 @@
 ## OS Settings
 - [ ] Confirm MacOS settings were applied correctly by the setup script
 
-### iCloud
-- [ ] Sign into iCloud
-
 ### Network
 - [ ] Enable Firewall
 
 ### General
-#### Software Update
-- [ ] In Automatic Updates, enable "Install macOS updates".
-
 ### Menu Bar
 - [ ] Set "Automatically hide and show the menu bar" to "Always"
 
-### Control Center
-#### Control Center Modules
-- [ ] Set Bluetooth to "Show in Menu Bar"
-- [ ] Set Focus to "Always Show in Menu Bar"
-- [ ] Set Sound to "Always Show in Menu Bar"
-
-#### Other Modules
-- [ ] Set Battery to "Show Percentage".
-- [ ] Set Music Recognition to "Always Show in Control Center"
-
-#### Menu Bar Only
+#### Menu Bar Controls
 - [ ] In Clock Options, enable "Display the time with seconds"
-- [ ] Set Spotlight to Don't Show in Menu Bar
+- [ ] Disable Spotlight control.
+- [ ] Enable Bluetooth control.
+- [ ] Set Battery to "Show Percentage".
+- [ ] Set Focus to "Always Show"
+- [ ] Set Sound to "Always Show"
 
-### Siri and Spotlight
-- [ ] Enable Ask Siri
-
-### Privacy and Security
-#### Sensitive Content Warning
-- [ ] Enable
-- [ ] Enable for all available apps.
-- [ ] Enable "Improve Sensitive Content Warning" if this is a personal machine.
+### Apple Intelligence and Siri
+- [ ] Enable Siri
 
 ### Desktop and Dock
+#### Dock
+- [ ] Enable "Automatically hide and show the Dock".
+
 #### Widgets
 - [ ] Change default web browser to Zen.
 
 #### Windows
 - [ ] Enable "Ask to keep changes when closing documents".
-- [ ] Disable "Tiled windows have margins".
 
 #### Mission Control
 - [ ] Enable "Group windows by application".
@@ -57,19 +41,11 @@
 ### Lock Screen
 - [ ] Require password after 5 seconds of sleep or screen saver.
 
-### Keyboard
-#### Keyboard Shortcuts
-##### Launchpad & Dock
-- [ ] Turn off Turn Dock Hiding On/Off (option-command-d)
-
-##### Mission Control
-- [ ] Turn off Mission Control (control-up).
-- [ ] Turn off Application windows (control-down).
-- [ ] Turn off Move left a space (control-left).
-- [ ] Turn off Move right a space (control-right).
-
-#### Dictation
-- [ ] Turn on Dictation.
+### Privacy and Security
+#### Sensitive Content Warning
+- [ ] Enable
+- [ ] Enable for all available apps.
+- [ ] Enable "Improve Sensitive Content Warning" if this is a personal machine.
 
 ### Trackpad
 #### More Gestures
@@ -77,9 +53,6 @@
 - [ ] Change Swipe between full screen apps to four fingers.
 - [ ] Change Mission Control to four fingers.
 - [ ] Change App Expose to four fingers.
-
-### Touch ID
-- [ ] Set up Touch ID.
 
 
 ## Finder Settings
@@ -89,63 +62,54 @@
 
 ### Sidebar
 - [ ] Change 'Favorites' sidebar list to: home folder, development, Downloads, Applications, Air Drop.
-- [ ] Change 'Locations' sidebar list to: Conrad's MacBook Pro, External disks
+- [ ] Change 'Locations' sidebar list to: iCloud Drive, Conrad's MacBook Pro, External disks
 
 ### Advanced
 - [ ] Check "Remove items from trash after 30 days".
 
 ## Application Changes
-- [ ] Xcode
-  - Install this first since it's huge.
 - [ ] Awair Home
   - Install the iOS version from the Mac App Store.
 - [ ] BetterTouchTool
   - Load license. (In iCloud Drive > Software Licenses and Such.)
   - Load configuration. (In this repo.)
   - Install process priority helper tool.
-- [ ] Bitdefender Virus Scanner
-  - [Install it manually.](https://www.bitdefender.com/solutions/virus-scanner-for-mac.html)
-  - Add these exceptions:
-    - /Volumes/Mac Backup
-    - /Volumes/.timemachine
-    - /Volumes/com.apple.TimeMachine.localsnapshots
+- [ ] Chrome
+  - Install Claude for Chrome extension and sign in.
 - [ ] Claude Desktop
   - Set to run on startup. (Settings > General)
-  - Disable "Quick Entry Keyboard Shortcut" (Settings > General)
+  - Disable "Quick access shortcut" (Settings > General)
   - Disable "Show Claude in the menu bar" (Settings > General)
 - [ ] Dash
   - Activate subscription
-  - Set up syncing. (In this repo at ./Dash/Dash.dashsync)
-  - Set up snippets. (In this repo at ./Dash/Snippets.dash)
-  - Load custom docsets (In this repo at ./Dash/custom_dash_docsets)
-- [ ] HEY
-  - Install somehow.
 - [ ] Karabiner Elements
   - Run Karabiner Elements and give it all necessary permissions.
 - [ ] iTerm
   - Load configuration. (In this repo. Change in Settings > General > Settings)
-- [ ] Firefox Developer Edition
-  - Sign in with Firefox account.
-- [ ] Messages
-  - Turn on "Enable Messages in iCloud". (In Settings > iMessage.)
-- [ ] Microsoft Copilot (Deseret Book machines only)
-  - Install from the Mac App Store.
-  - Sign in with Deseret Book Microsoft account.
+- [ ] Monologue
+  - [Install](https://www.monologue.to/download)
+  - Copy Instructions and Dictionary from another machine.
+  - Settings
+    - General
+      - Enable recommended "Paste last transcript" shortcut.
+    - Mic & Audio
+      - Set microphone to use default source.
+    - System
+      - Disable "Show dock icon".
+      - Disable "Show monophone".
+    - Data & privacy
+      - Enable "Deep context".
 - [ ] Mouseless
   - Import config file from this repo.
 - [ ] Obsidian
   - Set up Obsidian Sync. Put the vault in ~/Conrad and name it "Obsidian".
-- [ ] Perplexity
-  - Install from Mac App Store.
-  - Disable all shortcuts.
-  - Sign in with email. (No password required.)
+- [ ] Postgres.app
+  - Initialize a Postgres server with the latest version.
 - [ ] Proton Authenticator
   - Install from Mac App Store.
-  - Log in and restore from iCloud.
+  - Enable iCloud sync.
 - [ ] TablePlus
   - Enable Alert Mode 2. Warn before sending queries to the server except SELECT type queries. Change in Preferences > Security > Default Safe Mode for new connection.
-- [ ] Visual Studio Code
-  - Sign in to turn on Settings Sync. Sign in with GitHub.
 - [ ] Zen Browser
   - Turn on syncing.
 
@@ -168,11 +132,10 @@ Remove all unwanted apps from Dock.
 - [ ] Copy your SSH key by running 'pbcopy < ~/.ssh/id_ed25519.pub' and add it to GitHub.
 
 ## Login Items
-Add these login items (In Settings > Users & Groups > Login Items):
+Add these login items (In Settings > Login Items & Extensions):
 * BetterTouchTool
-* Karabiner Elements
+* Claude
 * Microsoft Outlook if this is a Deseret Book machine.
 * Microsoft Teams if this is a Deseret Book machine.
+* Monologue
 * Mouseless
-* Postgres.app
-* Stillcolor

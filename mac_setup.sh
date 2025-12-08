@@ -121,6 +121,7 @@ brew install --cask firefox@developer-edition
 if ! is_deseret_book; then brew install --cask gimp; fi
 brew install --cask gitkraken
 brew install --cask google-chrome
+if ! is_deseret_book; then brew install --cask hey-desktop; fi
 brew install --cask iterm2
 brew install --cask karabiner-elements
 brew install --cask linear-linear
