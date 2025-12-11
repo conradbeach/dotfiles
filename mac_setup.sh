@@ -187,6 +187,11 @@ claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 # Run this in Claude Code:
 ```
 /plugin marketplace add anthropics/claude-code
+# Install the following plugins in the user scope:
+#   - frontend-design
+#   - feature-dev
+#   - code-review
+#   - security-guidance
 ```
 
 # Other Development Setup
