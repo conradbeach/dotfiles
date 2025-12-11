@@ -98,6 +98,7 @@ brew install trash
 brew install wget
 brew install yarn
 brew install zellij
+brew install zoxide
 brew install zsh
 
 ## Services
