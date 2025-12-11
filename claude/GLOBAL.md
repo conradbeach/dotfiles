@@ -45,6 +45,6 @@
 ## Files
 - Whenever you reference a file, use the full path (relative to the project root); this makes it easier for me to open it in my editor.
 
-## Linear
-If a Linear issue is referenced, you can view it by using the `linear_fetch_issue` bash command.
-Linear issue IDs look like `DEV-7892`.
+## Tasks/Issues
+- If a Linear issue is referenced, you can view it by using the `linear_fetch_issue` bash command. Linear issue IDs look like `DEV-7892`.
+- Whenever we're working on a task, check the `~/Obsidian/Conrad/Work/Deseret Book/Development/Tasks` directory for a file containing the identifier of the task. Write your todos in this file under the "Tasks" header. Mark them as done once you complete them. You don't need to include implementation details in this list.
