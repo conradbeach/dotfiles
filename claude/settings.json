@@ -50,8 +50,8 @@
       "Bash(rm:*)",
       "Bash(ruby:*)",
       "Bash(sed:*)",
-      "Bash(tof)",
-      "Bash(toof)",
+      "Bash(tof:*)",
+      "Bash(toof:*)",
       "Bash(y)",
       "mcp__Context7__resolve-library-id",
       "mcp__Context7__get-library-docs",
@@ -84,7 +84,9 @@
       "WebFetch(domain:www.ruby-lang.org)",
       "WebSearch"
     ],
-    "deny": []
+    "deny": [
+      "Bash(gh pr comment:*)"
+    ]
   },
   "statusLine": {
     "type": "command",
