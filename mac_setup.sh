@@ -174,6 +174,8 @@ xcode-select --install
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 ## Claude Code
+curl -fsSL https://claude.ai/install.sh | bash
+
 mkdir -p ~/.claude
 ln -sf ~/development/dotfiles/claude/GLOBAL.md ~/.claude/CLAUDE.md
 ln -sf ~/development/dotfiles/claude/agents ~/.claude
