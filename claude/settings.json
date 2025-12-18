@@ -66,6 +66,7 @@
       "mcp__Playwright__browser_snapshot",
       "mcp__Playwright__browser_take_screenshot",
       "mcp__Playwright__browser_type",
+      "mcp__plugin_claude-mem_mem-search__get_observations",
       "mcp__Rollbar__get-item-details",
       "mcp__Rollbar__list-items",
       "SlashCommand(/pr-review-toolkit:review-pr:*)",
@@ -96,7 +97,8 @@
     "frontend-design@claude-code-plugins": true,
     "feature-dev@claude-code-plugins": true,
     "code-review@claude-code-plugins": true,
-    "security-guidance@claude-code-plugins": true
+    "security-guidance@claude-code-plugins": true,
+    "claude-mem@thedotmack": true
   },
   "sandbox": {
     "enabled": true,

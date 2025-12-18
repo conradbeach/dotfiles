@@ -195,6 +195,9 @@ claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 #   - feature-dev
 #   - code-review
 #   - security-guidance
+
+/plugin marketplace add thedotmack/claude-mem
+/plugin install claude-mem
 ```
 
 # Other Development Setup

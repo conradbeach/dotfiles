@@ -62,6 +62,13 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Zoxide
 eval "$(zoxide init zsh)"
 
+# bun is for claude-mem Claude Codeplugin
+# bun completions
+[ -s "/Users/cbeach/.bun/_bun" ] && source "/Users/cbeach/.bun/_bun"
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # Atuin
 . "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh --disable-up-arrow)"
