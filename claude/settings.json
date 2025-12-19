@@ -70,6 +70,7 @@
       "mcp__Rollbar__get-item-details",
       "mcp__Rollbar__list-items",
       "SlashCommand(/pr-review-toolkit:review-pr:*)",
+      "Skill(ast-grep:ast-grep)",
       "WebFetch(domain:anthropic.com)",
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:github.com)",
@@ -96,7 +97,8 @@
   "enabledPlugins": {
     "frontend-design@claude-code-plugins": true,
     "security-guidance@claude-code-plugins": true,
-    "claude-mem@thedotmack": true
+    "claude-mem@thedotmack": true,
+    "ast-grep@ast-grep-marketplace": true
   },
   "sandbox": {
     "enabled": true,

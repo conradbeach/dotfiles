@@ -72,6 +72,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ## Packages
 print_header "Installing Brew Packages"
 brew install ack
+brew install ast-grep
 brew install bat
 brew install cmake
 brew install diff-so-fancy
@@ -195,6 +196,9 @@ claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 
 /plugin marketplace add thedotmack/claude-mem
 /plugin install claude-mem
+
+/plugin marketplace add ast-grep/claude-skill
+/plugin install ast-grep
 ```
 
 # Other Development Setup
