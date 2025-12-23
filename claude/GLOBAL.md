@@ -25,10 +25,6 @@
 - Generally, lists of arguments, keys, includes, etc. should be in alphabetical
   order.
 
-## Ruby on Rails
-- Strive to follow Rails best practices and conventions.
-- Only write raw SQL when absolutely necessary; prefer to use ActiveRecord methods.
-
 ## Testing
 - Mock only when absolutely necessary; use real models and data when possible.
 - Follow existing test patterns.
