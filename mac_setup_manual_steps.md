@@ -123,6 +123,7 @@ Remove all unwanted apps from Dock.
 
 ## Claude Code
 - [ ] Populate MEDIA_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt and IRMS_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt with read only Rollbar access tokens.
+- [ ] Run `/terminal-setup` in Claude Code.
 
 ### Plugin Marketplaces
 ```
