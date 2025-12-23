@@ -9,7 +9,7 @@ return {
     config = {
       ruby_lsp = {
         cmd = {
-          "ruby-lsp",
+          vim.fn.expand("~/.local/share/mise/shims/ruby-lsp"),
         }
       }
     },
