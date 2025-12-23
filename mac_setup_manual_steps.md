@@ -149,6 +149,7 @@ Remove all unwanted apps from Dock.
 ## Login Items
 Add these login items (In Settings > Login Items & Extensions):
 * BetterTouchTool
+* Chrome (for Claude in Chrome)
 * Claude
 * Microsoft Outlook if this is a Deseret Book machine.
 * Microsoft Teams if this is a Deseret Book machine.
