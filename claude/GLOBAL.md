@@ -8,7 +8,7 @@
 - Consider whether or not your changes would be best placed behind a feature flag.
 - Whenever you make changes, update the tests accordingly. All changes must be tested.
 - If making API changes, make sure to update the documentation.
-- If making visual front-end changes, take a screenshot with Playwright and make sure the UI looks good. Iterate 2-3 times if needed until you’re happy with it.
+- If making visual front-end changes, open the page in Chrome and make sure the UI looks good. Iterate 2-3 times if needed until you’re happy with it.
 - Manually test your changes through the web browser or by manually making API requests.
 - Once you've finished making changes, review all of your changes and make additional adjustments based on their feedback.
 
@@ -23,7 +23,6 @@
 ## MCP Tools
 - Remember that you have access to the following MCP tools:
   - Context7 to look up documentation for any library, framework or tool you're using.
-  - Playwright to interact with our application in a real browser.
 
 ## Ruby
 - Use modern Ruby features and idioms.

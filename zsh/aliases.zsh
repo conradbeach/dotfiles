@@ -45,7 +45,8 @@ alias lg="lazygit"
 alias wt="git worktree"
 alias wtl="git worktree list"
 # Claude Code
-alias ccc="claude --continue"
-alias ccr="claude --resume"
+alias cc="claude --chrome"
+alias ccc="claude --chrome --continue"
+alias ccr="claude --chrome --resume"
 # fzf
 alias preview="fzf --preview 'bat --color \"always\" {}'"
