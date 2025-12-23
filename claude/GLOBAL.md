@@ -20,10 +20,6 @@
 - Clear intent over clever code. Be boring and obvious.
 - Pragmatic over dogmatic. Adapt to project realities.
 
-## MCP Tools
-- Remember that you have access to the following MCP tools:
-  - Context7 to look up documentation for any library, framework or tool you're using.
-
 ## Ruby
 - Use modern Ruby features and idioms.
 - Generally, lists of arguments, keys, includes, etc. should be in alphabetical
