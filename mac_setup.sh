@@ -186,21 +186,6 @@ ln -sf ~/development/dotfiles/claude/settings.json ~/.claude/settings.json
 ### Context7 (https://github.com/upstash/context7)
 claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 
-### Plugin Marketplaces
-
-# Run this in Claude Code:
-```
-/plugin marketplace add anthropics/claude-code
-/plugin install frontend-design
-/plugin install security-guidance
-
-/plugin marketplace add thedotmack/claude-mem
-/plugin install claude-mem
-
-/plugin marketplace add ast-grep/claude-skill
-/plugin install ast-grep
-```
-
 # Other Development Setup
 
 ## SSH

@@ -124,6 +124,20 @@ Remove all unwanted apps from Dock.
 ## Claude Code
 - [ ] Populate MEDIA_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt and IRMS_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt with read only Rollbar access tokens.
 
+### Plugin Marketplaces
+```
+# Run this in Claude Code:
+/plugin marketplace add anthropics/claude-code
+/plugin install frontend-design
+/plugin install security-guidance
+
+/plugin marketplace add thedotmack/claude-mem
+/plugin install claude-mem
+
+/plugin marketplace add ast-grep/claude-skill
+/plugin install ast-grep
+```
+
 ## GPG
 - [ ] Generate a new GPG key. (Follow the GitHub docs: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
 - [ ] Add the new GPG key to your GitHub account.
