@@ -1,6 +1,6 @@
 ---
 name: 37signals-rails-style
-description: Apply 37signals/DHH Rails conventions when writing Ruby on Rails code. Use when building Rails applications, reviewing Rails code, or making architectural decisions. Covers vanilla Rails over abstractions, rich models over service objects, CRUD controllers, concerns for behavior sharing, state as records not booleans, database-backed infrastructure (Solid Queue/Cache/Cable), custom auth over Devise, Hotwire/Turbo/Stimulus patterns, modern CSS without preprocessors, and Minitest with fixtures.
+description: Apply 37signals/DHH Rails conventions when writing Ruby on Rails code. Use when building Rails applications, reviewing Rails code, or making architectural decisions. Covers various aspects of Rails application architecture, design and dependencies.
 ---
 
 # 37signals/DHH Rails Style Guide
@@ -22,7 +22,7 @@ description: Apply 37signals/DHH Rails conventions when writing Ruby on Rails co
 ### Use
 - Rails (edge), turbo-rails, stimulus-rails, importmap-rails, propshaft, solid_queue, solid_cache, solid_cable (database-backed, NO Redis), geared_pagination, bcrypt, rqrcode, redcarpet
 
-### DO NOT Use
+### Avoid
 
 | Gem/Pattern            | Why                               |
 |------------------------|-----------------------------------|
@@ -37,21 +37,23 @@ description: Apply 37signals/DHH Rails conventions when writing Ruby on Rails co
 
 ## Routing: Everything is CRUD
 
-Every action maps to a CRUD verb. When something doesn't fit, **create a new resource**.
+Every action maps to a CRUD verb. Create new resources instead of custom actions:
 
 ```ruby
-# BAD: Custom actions
+# Avoid: Custom actions
 resources :cards do
   post :close
 end
 
-# GOOD: New resources for state changes
+# Good: State changes as resources
 resources :cards do
   resource :closure      # POST to close, DELETE to reopen
+  resource :pin          # POST to pin, DELETE to unpin
+  resource :watch        # POST to watch, DELETE to unwatch
 end
 ```
 
-Use `scope module:` to namespace nested resources. Use `resolve` for custom polymorphic URL generation.
+Use `scope module:` for namespaced nested resources. Use `resolve` for custom polymorphic URL generation.
 
 ---
 
@@ -62,7 +64,6 @@ Use `scope module:` to namespace nested resources. Use `resolve` for custom poly
 Controllers orchestrate; business logic lives in models.
 
 ```ruby
-# Controller just calls model methods
 def create
   @card.close  # All logic in model
   respond_to do |format|
@@ -105,7 +106,6 @@ Each concern is self-contained with associations, scopes, and methods:
 ```ruby
 class Card < ApplicationRecord
   include Assignable, Closeable, Eventable, Pinnable, Watchable
-  # Minimal model code - behavior is in concerns
 end
 ```
 
@@ -122,6 +122,7 @@ module Card::Closeable
   end
 
   def closed? = closure.present?
+
   def close(user: Current.user)
     create_closure!(user: user) unless closed?
   end
@@ -137,7 +138,7 @@ belongs_to :creator, class_name: "User", default: -> { Current.user }
 
 ### Current for Request Context
 
-Use `ActiveSupport::CurrentAttributes` to store session, user, identity, account, and request metadata.
+Use `ActiveSupport::CurrentAttributes` for session, user, identity, account, and request metadata.
 
 ### POROs (Plain Old Ruby Objects)
 
@@ -154,7 +155,7 @@ POROs are model-adjacent, NOT controller-adjacent (that would be a service objec
 
 ## State as Records, Not Booleans
 
-Instead of `closed: boolean`, create a separate record:
+Create separate records instead of boolean columns:
 
 ```ruby
 # Separate record gives you: timestamp, who did it, easy scoping
@@ -163,12 +164,16 @@ class Closure < ApplicationRecord
   belongs_to :user, optional: true
 end
 
+card.closure.present?     # Is it closed?
+card.closure.user         # Who closed it?
+card.closure.created_at   # When?
+
 # Scoping
 Card.closed  # joins(:closure)
 Card.open    # where.missing(:closure)
 ```
 
-Examples: `Closure`, `Goldness`, `NotNow`, `Publication`, `Pin`, `Watch`
+Examples: `Closure`, `Pin`, `Watch`, `Publication`, `Goldness`
 
 ---
 
@@ -196,7 +201,7 @@ Key components:
 ## Background Jobs
 
 - **Shallow jobs, rich models** - jobs just call model methods
-- **`_later` and `_now` convention** - `mark_as_read_later` vs `mark_as_read_now`
+- **`_later` and `_now` convention** - `mark_as_read_later` queues job, `mark_as_read_now` executes immediately
 - **Solid Queue** - database-backed, no Redis
 - **Recurring jobs** via `config/recurring.yml`
 
@@ -205,6 +210,7 @@ Key components:
 ## Testing
 
 - **Request specs** for controllers (not controller specs)
+- **Ship tests with features** in the same commit
 - Use `change { }`, `as: :turbo_stream`, `as: :json`
 
 ---
@@ -220,9 +226,9 @@ Key components:
 
 ## Naming Conventions
 
-## Methods
-- **Verbs for actions**: `close`, `reopen`, `gild`, `publish`
-- **Predicates for state**: `closed?`, `golden?`, `postponed?`
+### Methods
+- **Verbs for actions**: `close`, `reopen`, `publish`
+- **Predicates for state**: `closed?`, `published?`
 
 ### Concerns
 Adjectives describing capability: `Closeable`, `Publishable`, `Watchable`, `Searchable`
@@ -255,8 +261,8 @@ Nouns matching the resource: `Cards::ClosuresController`, `Boards::PublicationsC
 
 - **UUIDs** for primary keys
 - **Every model has `account_id`** for multi-tenancy
-- **No foreign key constraints** - removed for flexibility
 - **URL-based multi-tenancy**: `/{account_id}/boards/...`
+- **No foreign key constraints** - removed for flexibility
 
 ---
 
@@ -271,19 +277,18 @@ Nouns matching the resource: `Cards::ClosuresController`, `Boards::PublicationsC
 
 ## API Design
 
-- Same controllers, different format (`respond_to`)
+- Same controllers, different format via `respond_to`
 - Response codes: Create → `201 Created` + Location, Update/Delete → `204 No Content`
 - Bearer token authentication
-
 
 ---
 
 ## Callbacks
 
-Used sparingly (~38 occurrences across 30 files):
+Use sparingly:
 - `after_commit :relay_later, on: :create` for async work
 - `before_save :set_defaults` for derived data
-- Avoid complex chains, synchronous external calls
+- Avoid complex chains, avoid synchronous external calls
 
 ---
 
@@ -298,10 +303,10 @@ Used sparingly (~38 occurrences across 30 files):
 7. **Build before buying** - Auth, search, jobs - all custom
 8. **Database is king** - No Redis, no Elasticsearch
 9. **Test with fixtures** - Deterministic, fast, simple
-10. **Ship incrementally** - Commit history shows many small changes
+10. **Ship incrementally** - Many small commits
 11. **Tests ship with features** - Not TDD, not afterthought, but together
 12. **Refactor toward consistency** - Establish patterns, then update old code
-13. **CSS uses the platform** - Native CSS layers, nesting, OKLCH - no preprocessors
+13. **CSS uses the platform** - Native layers, nesting, OKLCH - no preprocessors
 14. **Design tokens everywhere** - CSS variables for colors, spacing, typography
 
-The best code is the code you don't write. The second best is the code that's obviously correct. The 37signals codebase optimizes for both.
+The best code is the code you don't write. The second best is the code that's obviously correct.
