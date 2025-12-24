@@ -1,19 +1,9 @@
 ---
 name: manual-testing
-description: Manually verify code changes work as expected. Use after completing implementation work, in addition to automated tests. Covers visual UI testing in Chrome, API endpoint testing, and Rails console verification. Activates when changes are complete and ready for verification.
+description: Manually verify code changes work as expected. Use after implementing a feature or bug fix, after making visual/UI changes, after modifying API endpoints, or before considering work "done". All functional changes must be manually verified, even small changes. This is in addition to automated tests.
 ---
 
 # Manual Testing
-
-After completing a set of changes, manually verify that the code functions as expected. This is in addition to writing automated tests.
-All functional changes must be manually verified, even small changes.
-
-## When to Manually Test
-
-- After implementing a feature or bug fix
-- After making visual/UI changes
-- After modifying API endpoints
-- Before considering work "done"
 
 ## Testing Approaches
 
@@ -29,23 +19,7 @@ For front-end changes, use the Chrome browser to verify the UI:
 
 ### API Endpoints
 
-For API changes, make requests to verify the endpoint works:
-
-```bash
-# GET request
-curl -s http://localhost:3000/api/endpoint | jq
-
-# POST request with JSON
-curl -s -X POST http://localhost:3000/api/endpoint \
-  -H "Content-Type: application/json" \
-  -d '{"key": "value"}' | jq
-
-# With authentication (if needed)
-curl -s http://localhost:3000/api/endpoint \
-  -H "Authorization: Bearer TOKEN" | jq
-```
-
-Key things to verify:
+Use curl to verify endpoints work. Key things to verify:
 - Correct HTTP status codes
 - Expected response structure
 - Error handling for invalid inputs
@@ -53,22 +27,13 @@ Key things to verify:
 
 ### Rails Console
 
-For backend logic, use the Rails console or Rails runner to verify behavior.
-
-Useful console techniques:
-- Create/find records to test with
-- Call methods directly and inspect results
-- Check database state after operations
-- Verify associations and validations
-
+For backend logic, use `rails console` or `rails runner` to call methods directly and verify database state.
 
 ## Verification Checklist
 
 Before marking work as complete:
-
-- [ ] Happy path works as expected
-- [ ] Edge cases handled appropriately
-- [ ] Error states display correctly
-- [ ] No console errors in browser
-- [ ] No unexpected server errors in logs
-- [ ] Changes match the requirements
+- Happy path works as expected
+- Edge cases handled appropriately
+- Error states display correctly
+- No console errors in browser
+- No unexpected server errors in logs

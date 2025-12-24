@@ -5,8 +5,6 @@ description: Apply 37signals/DHH Rails conventions when writing Ruby on Rails co
 
 # 37signals/DHH Rails Style Guide
 
-Based on analysis of [Fizzy](https://github.com/basecamp/fizzy) - 37signals' open-source project management tool.
-
 ## Core Philosophy
 
 - **"Vanilla Rails is plenty."** Maximize what Rails gives you, minimize dependencies, resist abstractions until necessary.
