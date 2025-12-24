@@ -63,6 +63,7 @@
       "mcp__Rollbar__get-item-details",
       "mcp__Rollbar__list-items",
       "Skill(ast-grep:ast-grep)",
+      "Skill(skill-creator)",
       "WebFetch(domain:anthropic.com)",
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:github.com)",
