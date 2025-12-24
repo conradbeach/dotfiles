@@ -128,7 +128,7 @@ Remove all unwanted apps from Dock.
 ### Plugin Marketplaces
 ```
 # Run this in Claude Code:
-/plugin marketplace add anthropics/claude-code
+/plugin install code-review
 /plugin install frontend-design
 /plugin install security-guidance
 
