@@ -129,7 +129,9 @@ Remove all unwanted apps from Dock.
 ```
 # Run this in Claude Code:
 /plugin install code-review
+/plugin install feature-dev
 /plugin install frontend-design
+/plugin install pr-review-toolkit
 /plugin install security-guidance
 
 /plugin marketplace add thedotmack/claude-mem
