@@ -1,15 +1,21 @@
 ## Development Workflow
-This is the workflow you should follow when building software.
-- Plan
+For any non-trivial change, follow the below steps. You must complete each step.
+1. Plan
   - We'll use your built in planning mode.
-- Build
-  - Be thoughtful and thorough.
-- Manual testing
-  - All functional changes must be manually verified, even small changes.
-- Automated testing
-  - All changes need to be backed by automated tests.
-- Self-review
-  - Once your work is complete, carefully review the changes you've made.
+2. Build
+  - See the planning-and-building skill.
+3. Manual testing
+  - See the manual-testing skill.
+4. Automated testing
+  - See the automated-testing skill.
+5. Code review
+  - Once your work is complete, have the @code-reviewer agent review your changes.
+6. Functionality review
+  - Have the @manual-tester agent test your changes.
+7. Test coverage review
+  - Have the @test-coverage-reviewer agent confirm your code has sufficient coverage.
+8. Security Review
+  - Have the @security-reviewer agent check for security concerns in the changes.
 
 ## Documentation
 - If making API changes, make sure to update the API documentation.
