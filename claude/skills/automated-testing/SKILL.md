@@ -7,6 +7,8 @@ description: Write automated tests following a pragmatic, integration-focused ph
 
 ## Core Philosophy
 
+**Comprehensive coverage.** Almost all code should be covered by tests. However, you aren't striving for 100% coverage or testing every edge case—your goal is to ensure solid, practical coverage that validates the code works as expected.
+
 **Test enough to be confident, then stop.** Tests have maintenance costs. Write enough tests to be very confident the implementation works correctly, but not more. Additional tests beyond that point are a liability.
 
 ## Principles
