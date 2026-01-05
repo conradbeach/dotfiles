@@ -10,6 +10,8 @@ description: Approach for planning and implementing code changes. Use when start
 1. **Learn first** - Study the codebase before implementing. Search for similar functionality to understand how problems are typically solved in this project.
 2. **Verify approach** - Search for relevant code to confirm your approach matches existing patterns. Don't assume—verify with existing code.
 3. **Consider improvements** - Consider if there's a better solution than what was described.
+4. **Be thorough** - Take the time to thoroughly consider and confirm your solution. Be very confident before writing any code.
+5. **Ask questions** - Ask as many clarifying questions as needed to fully understand the requirements and the desired solution. Better to ask too many questions than too few.
 
 ## Correctness
 - It is very important that changes are correct.
