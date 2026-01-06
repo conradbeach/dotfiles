@@ -48,6 +48,5 @@ alias wtl="git worktree list"
 alias cc="claude --chrome"
 alias ccc="claude --chrome --continue"
 alias ccr="claude --chrome --resume"
-alias claude-mem='/Users/conrad/.bun/bin/bun "/Users/conrad/.claude/plugins/marketplaces/thedotmack/plugin/scripts/worker-service.cjs"' # Added automatically by claude-mem
 # fzf
 alias preview="fzf --preview 'bat --color \"always\" {}'"

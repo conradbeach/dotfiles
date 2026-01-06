@@ -133,9 +133,6 @@ Remove all unwanted apps from Dock.
 /plugin install frontend-design
 /plugin install pr-review-toolkit
 
-/plugin marketplace add thedotmack/claude-mem
-/plugin install claude-mem
-
 /plugin marketplace add ast-grep/claude-skill
 /plugin install ast-grep
 ```
