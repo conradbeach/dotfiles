@@ -187,6 +187,9 @@ ln -sf ~/development/dotfiles/claude/skills/ ~/.claude
 ### Context7 (https://github.com/upstash/context7)
 claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 
+## Mantic (https://github.com/marcoaapfortes/Mantic.sh)
+claude mcp add Mantic --scope user -- npx -y mantic.sh@latest server
+
 # Other Development Setup
 
 ## SSH

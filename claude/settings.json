@@ -58,6 +58,8 @@
       "mcp__Linear__get_issue",
       "mcp__Linear__list_comments",
       "mcp__Linear__list_issues",
+      "mcp__Mantic__analyze_intent",
+      "mcp__Mantic__search_files",
       "mcp__Rollbar__get-item-details",
       "mcp__Rollbar__list-items",
       "Skill(ast-grep:ast-grep)",
