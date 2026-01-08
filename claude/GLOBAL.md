@@ -19,6 +19,9 @@ For any non-trivial change, follow the below steps. You must complete each step.
 9. Security Review
   - Have the @security-reviewer agent check for security concerns in the changes.
 
+Add the above steps to your task list and confirm with me that you completed them
+when you're done working.
+
 ## Documentation
 - If making API changes, make sure to update the API documentation.
 - Comments can be helpful when it's hard to make the code fully clear on its own or there's some context the code can't explain. However, generally, adding comments should be unnecessary.
