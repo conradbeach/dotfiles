@@ -18,6 +18,8 @@ For any non-trivial change, follow the below steps. You must complete each step.
   - Have the @test-coverage-reviewer agent confirm your code has sufficient coverage.
 9. Security Review
   - Have the @security-reviewer agent check for security concerns in the changes.
+10. CI checks
+  - Confirm that tests, linters, etc. are all green. In most of my projects `chp` will do this for you.
 
 Add the above steps to your task list and confirm with me that you completed them
 when you're done working.
