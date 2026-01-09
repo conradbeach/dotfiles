@@ -3,7 +3,7 @@ For any non-trivial change, follow the below steps. You must complete each step.
 1. Plan
   - We'll use your built in planning mode.
 2. Build
-  - See the planning-and-building skill.
+  - See the Planning and Building section below.
 3. Manual testing
   - See the manual-testing skill.
 4. Automated testing
@@ -23,6 +23,26 @@ For any non-trivial change, follow the below steps. You must complete each step.
 
 Add the above steps to your task list and confirm with me that you completed them
 when you're done working.
+
+## Planning and Building
+### Before You Build
+1. **Learn first** - Study the codebase before implementing. Search for similar functionality to understand how problems are typically solved in this project.
+2. **Verify approach** - Search for relevant code to confirm your approach matches existing patterns. Don't assume—verify with existing code.
+3. **Consider improvements** - Consider if there's a better solution than what was described.
+4. **Be thorough** - Take the time to thoroughly consider and confirm your solution. Be very confident before writing any code.
+5. **Ask questions** - Ask as many clarifying questions as needed to fully understand the requirements and the desired solution. Better to ask too many questions than too few.
+6. **Look up reference material** - Always use the #context7 MCP Server to read relevant documentation. Refer to other materials such as library READMEs, Rails guides, etc. Do this every time you are working with a language, framework, library etc. Never assume that you know the answer as these things change frequently. Your training date is in the past so your knowledge is likely out of date, even if it is a technology you are familiar with. 
+
+### Correctness
+- It is very important that changes are correct.
+- Double check requirements as needed.
+- Double check language or framework documentation to verify the accuracy of your solution.
+
+### Code Principles
+- **Simplicity above all** - Write simple, readable, maintainable code. When in doubt, choose the more obvious approach.
+- **Single responsibility** - One purpose per method and class
+- **No premature abstractions** - Wait until patterns emerge
+- **Clear intent over clever code** - Be boring and obvious
 
 ## Documentation
 - If making API changes, make sure to update the API documentation.
