@@ -31,7 +31,7 @@ when you're done working.
 3. **Consider improvements** - Consider if there's a better solution than what was described.
 4. **Be thorough** - Take the time to thoroughly consider and confirm your solution. Be very confident before writing any code.
 5. **Ask questions** - Ask as many clarifying questions as needed to fully understand the requirements and the desired solution. Better to ask too many questions than too few.
-6. **Look up reference material** - Always use the #context7 MCP Server to read relevant documentation. Refer to other materials such as library READMEs, Rails guides, etc. Do this every time you are working with a language, framework, library etc. Never assume that you know the answer as these things change frequently. Your training date is in the past so your knowledge is likely out of date, even if it is a technology you are familiar with. 
+6. **Look up reference material** - Always read relevant documentation. Use the #context7 MCP Server to look things up. Refer to other materials such as library READMEs, Rails guides, etc. Do this every time you are working with a language, framework, library etc. Never assume that you know the answer as these things change frequently. Your training date is in the past so your knowledge is likely out of date, even if it is a technology you are familiar with. 
 
 ### Correctness
 - It is very important that changes are correct.
