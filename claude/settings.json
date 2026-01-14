@@ -55,6 +55,7 @@
       "Bash(y)",
       "mcp__Context7__resolve-library-id",
       "mcp__Context7__get-library-docs",
+      "mcp__Context7__query-docs",
       "mcp__Linear__get_issue",
       "mcp__Linear__list_comments",
       "mcp__Linear__list_issues",
