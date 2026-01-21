@@ -5,9 +5,9 @@ For any non-trivial change, follow the below steps. You must complete each step.
 2. Build
   - See the Planning and Building section below.
 3. Manual testing
-  - See the manual-testing skill.
+  - See the /manual-testing skill.
 4. Automated testing
-  - See the automated-testing skill.
+  - See the /automated-testing skill.
 5. Code review
   - Once your work is complete, have the @code-reviewer agent review your changes.
 6. Simplicity review
@@ -37,6 +37,7 @@ when you're done working.
 - It is very important that changes are correct.
 - Double check requirements as needed.
 - Double check language or framework documentation to verify the accuracy of your solution.
+- Don't guess. For example, if I ask you to upgrade the application to Ruby 3.4, don't guess what the latest 3.4.x version is; look it up.
 
 ### Code Principles
 - **Simplicity above all** - Write simple, readable, maintainable code. When in doubt, choose the more obvious approach.
