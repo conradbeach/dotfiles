@@ -1,6 +1,6 @@
 app_version: 0.4.0
 behavior_configs:
-- base_move_speed: 4
+- base_move_speed: 4.0
   base_wheel_speed: 16.0
   free_mode_auto_off_s: 100
   grid_action_level: subgrid
@@ -10,7 +10,7 @@ behavior_configs:
   initial_overlay_monitor: with_mouse
   move_duration_ms: 100
   move_real_cursor_with_virtual: false
-  move_speed_multiplier: 6
+  move_speed_multiplier: 6.0
   movement_easing: 0.3
   multi_action_timeout_ms: 400
   name: main_behavior
@@ -299,10 +299,10 @@ keymaps:
     hold for speed decrease: CommandLeft
     hold for speed increase: Shift
     increase overlay opacity: ArrowUp
-    jump to bottom: null
+    jump to bottom: b
     jump to left edge: null
     jump to right edge: null
-    jump to top: null
+    jump to top: t
     left mouse button: Space
     left mouse button (w/o overlay): null
     middle click: null
