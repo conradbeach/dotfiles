@@ -40,6 +40,7 @@
       "Bash(linear_fetch_issue:*)",
       "Bash(ls:*)",
       "Bash(magick:*)",
+      "Bash(mise exec:*)",
       "Bash(mise install:*)",
       "Bash(mkdir:*)",
       "Bash(npx @redocly/cli build-docs:*)",
@@ -75,6 +76,8 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:api.github.com)",
       "WebFetch(domain:gorails.com)",
+      "WebFetch(domain:api.iterable.com)",
+      "WebFetch(domain:support.iterable.com)",
       "WebFetch(domain:iterm2.com)",
       "WebFetch(domain:api.linear.app)",
       "WebFetch(domain:www.meilisearch.com)",
@@ -84,6 +87,7 @@
       "WebFetch(domain:rubygems.org)",
       "WebFetch(domain:index.rubygems.org)",
       "WebFetch(domain:www.ruby-lang.org)",
+      "WebFetch(domain:docs.ruby-lang.org)",
       "WebSearch"
     ],
     "deny": [
