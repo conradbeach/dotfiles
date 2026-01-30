@@ -135,6 +135,9 @@ Remove all unwanted apps from Dock.
 
 /plugin marketplace add ast-grep/claude-skill
 /plugin install ast-grep
+
+/plugin marketplace add backnotprop/plannotator
+/plugin install plannotator@plannotator
 ```
 
 ## GPG

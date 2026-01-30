@@ -102,7 +102,8 @@
     "ast-grep@ast-grep-marketplace": true,
     "frontend-design@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true,
-    "feature-dev@claude-plugins-official": true
+    "feature-dev@claude-plugins-official": true,
+    "plannotator@plannotator": true
   },
   "sandbox": {
     "enabled": true,
