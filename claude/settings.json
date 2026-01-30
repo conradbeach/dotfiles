@@ -108,7 +108,7 @@
     "plannotator@plannotator": true
   },
   "sandbox": {
-    "enabled": true,
+    "enabled": false,
     "autoAllowBashIfSandboxed": true,
     "network": {
       "allowLocalBinding": true
