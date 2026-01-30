@@ -140,6 +140,9 @@ Remove all unwanted apps from Dock.
 
 /plugin marketplace add backnotprop/plannotator
 /plugin install plannotator@plannotator
+
+/plugin marketplace add maquina-app/rails-claude-code
+/plugin install rails-simplifier@rails
 ```
 
 ## GPG

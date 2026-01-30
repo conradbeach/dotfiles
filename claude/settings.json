@@ -108,6 +108,7 @@
     "plannotator@plannotator": true,
     "claude-md-management@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
+    "rails-simplifier@rails": true
   },
   "sandbox": {
     "enabled": false,

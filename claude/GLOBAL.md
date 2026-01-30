@@ -12,6 +12,7 @@ For any non-trivial change, follow the below steps. You must complete each step.
   - Once your work is complete, have the @code-reviewer agent review your changes.
 6. Simplicity review
   - Have the @pr-review-toolkit:code-simplifier agent review your changes for opportunities to simplify.
+  - If you're in a Rails project, have the @rails-simplifier:rails-simplifier agent review your changes for opportunities to simplify.
 7. Functionality review
   - Have the @manual-tester agent test your changes.
 8. Test coverage review
