@@ -283,9 +283,7 @@ keymaps:
     enter free mode: null
     execute mouse action: Space
     execute mouse move: OptionLeft tap
-    exit free mode:
-    - Escape
-    - F11
+    exit free mode: F12
     forward click: null
     forward mouse button: null
     forward mouse button (w/o overlay): null
