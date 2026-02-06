@@ -1,7 +1,7 @@
 ## Development Workflow
 For any non-trivial change, follow the below steps. You must complete each step.
 1. Plan
-  - We'll use your built in planning mode.
+  - Use the Planning Team approach described in the "Planning Team" section below.
 2. Build
   - See the Planning and Building section below.
 3. Manual testing
@@ -24,6 +24,37 @@ For any non-trivial change, follow the below steps. You must complete each step.
 
 Add the above steps to your task list and confirm with me that you completed them
 when you're done working.
+
+## Planning Team
+For the planning step, create a team with three agents. Then synthesize their findings into a formal plan.
+
+### Team Roles
+
+**Codebase Explorer** (subagent_type: `Explore`)
+- Deep-dive into existing code relevant to the task
+- Map relevant files, trace execution paths, identify existing patterns and conventions
+- Identify dependencies, potential conflicts, and constraints
+- Answers: "What do we have today and how does it work?"
+
+**Best Practices Researcher** (subagent_type: `general-purpose`)
+- Look up framework/library documentation using Context7 and web search
+- Find community patterns, recommended approaches, and security considerations
+- Check for version-specific APIs or recent changes that affect the approach
+- Answers: "What's the right way to do this according to docs and community standards?"
+
+**Plan Critic** (subagent_type: `general-purpose`)
+- Wait for the Codebase Explorer and Best Practices Researcher to finish (set `blockedBy` on their tasks)
+- Review their findings and the proposed approach
+- Challenge assumptions, identify gaps or risks, and suggest simpler alternatives
+- Look for over-engineering, missing edge cases, and security concerns
+- Answers: "What could go wrong, what's missing, and is there a simpler way?"
+
+### Synthesis
+After all three agents complete, the main thread should:
+1. Read all agent findings.
+2. Resolve any conflicts between recommendations.
+3. Create the plan.
+4. Present the plan to the user for review.
 
 ## Planning and Building
 ### Before You Build
