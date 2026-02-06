@@ -8,8 +8,8 @@ vim.tbl_map(function(plugin) enabled[plugin] = true end, {
   "firenvim",
   "AstroNvim",
   "astrocore",
-  "vim-surround",
-  "vim-repeat",
+  "nvim-surround",
+  "leap.nvim",
 })
 
 local Config = require "lazy.core.config"
@@ -18,3 +18,20 @@ Config.options.checker.enabled = false
 Config.options.change_detection.enabled = false
 -- replace the default `cond`
 Config.options.defaults.cond = function(plugin) return enabled[plugin.name] end
+
+vim.o.background = "light"
+vim.api.nvim_create_autocmd("UIEnter", {
+  once = true,
+  callback = function() vim.api.nvim_set_hl(0, "Normal", { bg = "#EBEBEB" }) end,
+})
+
+-- Set up mappings directly since astrocore may not process them in firenvim
+local map = vim.keymap.set
+map("n", "^", "0")
+map("n", "0", "^")
+map("n", "j", "gj")
+map("n", "k", "gk")
+map("n", "[e", "<cmd>m -2<cr>")
+map("n", "]e", "<cmd>m +1<cr>")
+map({ "n", "x", "o" }, "<Leader>w", "<Plug>(leap)")
+map({ "n", "x", "o" }, "<Leader>X", "<Plug>(leap-cross-window)")
