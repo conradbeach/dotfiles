@@ -6,6 +6,8 @@
   "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
+      "Bash(bundle exec brakeman:*)",
+      "Bash(bundle exec bundler-audit:*)",
       "Bash(bundle exec parallel_rspec:*)",
       "Bash(bundle exec rails:*)",
       "Bash(bundle exec rake:*)",
@@ -78,6 +80,8 @@
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:www.chargebee.com)",
       "WebFetch(domain:apidocs.chargebee.com)",
+      "WebFetch(domain:endoflife.date)",
+      "WebFetch(domain:www.fastruby.io)",
       "WebFetch(domain:www.flippercloud.io)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:gist.github.com)",
@@ -93,11 +97,12 @@
       "WebFetch(domain:www.meilisearch.com)",
       "WebFetch(domain:docs.rollbar.com)",
       "WebFetch(domain:rspec.info)",
-      "WebFetch(domain:guides.rubyonrails.org)",
       "WebFetch(domain:rubygems.org)",
       "WebFetch(domain:index.rubygems.org)",
       "WebFetch(domain:www.ruby-lang.org)",
       "WebFetch(domain:docs.ruby-lang.org)",
+      "WebFetch(domain:rubyonrails.org)",
+      "WebFetch(domain:guides.rubyonrails.org)",
       "WebFetch(domain:www.rudderstack.com)",
       "WebSearch"
     ],
