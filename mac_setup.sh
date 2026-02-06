@@ -187,11 +187,14 @@ ln -sf ~/development/dotfiles/claude/skills/ ~/.claude
 ### Context7 (https://github.com/upstash/context7)
 claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 
-## Mantic (https://github.com/marcoaapfortes/Mantic.sh)
+### Mantic (https://github.com/marcoaapfortes/Mantic.sh)
 claude mcp add Mantic --scope user -- npx -y mantic.sh@latest server
 
-## Plannotator (https://github.com/backnotprop/plannotator)
+### Plannotator (https://github.com/backnotprop/plannotator)
 curl -fsSL https://plannotator.ai/install.sh | bash
+
+### it2 (for controlling iTerm2, used by Claude Code agent teams)
+pip install it2
 
 # Other Development Setup
 
