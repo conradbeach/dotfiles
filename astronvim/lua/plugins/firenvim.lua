@@ -2,6 +2,14 @@
 
 if not vim.g.started_by_firenvim then return {} end -- Don't do anything in non-firenvim instances
 
+vim.g.firenvim_config = {
+  globalSettings = { alt = "all" },
+  localSettings = {
+    [".*"] = { takeover = "never", priority = 0 },
+    ["https?://github\\.com/"] = { takeover = "always", priority = 1 },
+  },
+}
+
 local enabled = {}
 vim.tbl_map(function(plugin) enabled[plugin] = true end, {
   "lazy.nvim",
@@ -41,3 +49,5 @@ map({ "n", "x", "o" }, "<Leader>X", "<Plug>(leap-cross-window)")
 map({ "n", "x" }, "<D-v>", '"+p')
 map("i", "<D-v>", '<C-r>+')
 map("c", "<D-v>", '<C-r>+')
+
+return { "glacambre/firenvim", build = ":call firenvim#install(0)" }
