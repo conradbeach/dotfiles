@@ -20,6 +20,7 @@ Config.options.change_detection.enabled = false
 Config.options.defaults.cond = function(plugin) return enabled[plugin.name] end
 
 vim.o.background = "light"
+vim.o.clipboard = "unnamedplus"
 vim.api.nvim_create_autocmd("UIEnter", {
   once = true,
   callback = function() vim.api.nvim_set_hl(0, "Normal", { bg = "#EBEBEB" }) end,
@@ -35,3 +36,6 @@ map("n", "[e", "<cmd>m -2<cr>")
 map("n", "]e", "<cmd>m +1<cr>")
 map({ "n", "x", "o" }, "<Leader>w", "<Plug>(leap)")
 map({ "n", "x", "o" }, "<Leader>X", "<Plug>(leap-cross-window)")
+map({ "n", "x" }, "<D-v>", '"+p')
+map("i", "<D-v>", '<C-r>+')
+map("c", "<D-v>", '<C-r>+')
