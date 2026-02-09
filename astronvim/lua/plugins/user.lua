@@ -54,7 +54,19 @@ return {
     end,
   },
 
-  { "glacambre/firenvim", build = ":call firenvim#install(0)" },
+  {
+    "glacambre/firenvim",
+    build = ":call firenvim#install(0)",
+    init = function()
+      vim.g.firenvim_config = {
+        globalSettings = { alt = "all" },
+        localSettings = {
+          [".*"] = { takeover = "never", priority = 0 },
+          ["https?://github\\.com/"] = { takeover = "always", priority = 1 },
+        },
+      }
+    end,
+  },
 
   {
     "nvim-focus/focus.nvim",
