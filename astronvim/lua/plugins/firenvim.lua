@@ -21,6 +21,8 @@ Config.options.defaults.cond = function(plugin) return enabled[plugin.name] end
 
 vim.o.background = "light"
 vim.o.clipboard = "unnamedplus"
+vim.o.ignorecase = true
+vim.o.smartcase = true
 vim.api.nvim_create_autocmd("UIEnter", {
   once = true,
   callback = function() vim.api.nvim_set_hl(0, "Normal", { bg = "#EBEBEB" }) end,
