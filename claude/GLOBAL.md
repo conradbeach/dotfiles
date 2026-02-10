@@ -8,19 +8,22 @@ For any non-trivial change, follow the below steps. You must complete each step.
   - See the /manual-testing skill.
 4. Automated testing
   - See the /automated-testing skill.
-5. Code review
-  - Once your work is complete, have the @code-reviewer agent review your changes.
-6. Simplicity review
-  - Have the @pr-review-toolkit:code-simplifier agent review your changes for opportunities to simplify.
-  - If you're in a Rails project, have the @rails-simplifier:rails-simplifier agent review your changes for opportunities to simplify.
-7. Functionality review
-  - Have the @manual-tester agent test your changes.
-8. Test coverage review
-  - Have the @test-coverage-reviewer agent confirm your code has sufficient coverage.
-9. Security Review
-  - Have the @security-reviewer agent check for security concerns in the changes.
-10. CI checks
+5. CI checks
   - Confirm that tests, linters, etc. are all green. In most of my projects `chp` will do this for you.
+6. Review
+   1. Code review
+      - Once your work is complete, have the @code-reviewer agent review your changes.
+   2. Simplicity review
+      - Have the @pr-review-toolkit:code-simplifier agent review your changes for opportunities to simplify.
+      - If you're in a Rails project, have the @rails-simplifier:rails-simplifier agent review your changes for opportunities to simplify.
+   3. Functionality review
+      - Have the @manual-tester agent test your changes.
+   4. Test coverage review
+      - Have the @test-coverage-reviewer agent confirm your code has sufficient coverage.
+   5. Documentation review
+      - Have the @docs-reviewer agent check for adequate and correct documentation.
+   6. Security Review
+      - Have the @security-reviewer agent check for security concerns in the changes.
 
 Add the above steps to your task list and confirm with me that you completed them
 when you're done working.
