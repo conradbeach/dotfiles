@@ -85,8 +85,8 @@ After all three agents complete, the main thread should:
 - Confirm that you're referencing documentation for the correct version. Use modern patterns.
 
 ## Documentation
-- If making API changes, make sure to update the API documentation.
-- Comments can be helpful when it's hard to make the code fully clear on its own or there's some context the code can't explain. However, generally, adding comments should be unnecessary.
+- If making API changes, make sure to update the API documentation. This is the most important form a documentation.
+- Code comments can be helpful when it's hard to make the code fully clear on its own or there's some context the code can't explain. However, generally, adding comments should be unnecessary.
 
 ## Git
 - Don't commit your changes. A human will commit your changes after reviewing them.
