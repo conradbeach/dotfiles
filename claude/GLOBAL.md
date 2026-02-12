@@ -80,6 +80,10 @@ After all three agents complete, the main thread should:
 - **No premature abstractions** - Wait until patterns emerge
 - **Clear intent over clever code** - Be boring and obvious
 
+## Dependencies
+- Always double check what the latest version available for a dependency is. Don't assume you know what's current.
+- Confirm that you're referencing documentation for the correct version. Use modern patterns.
+
 ## Documentation
 - If making API changes, make sure to update the API documentation.
 - Comments can be helpful when it's hard to make the code fully clear on its own or there's some context the code can't explain. However, generally, adding comments should be unnecessary.
