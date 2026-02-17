@@ -18,15 +18,20 @@ For any non-trivial change, follow the below steps. You must complete each step.
       - If you're in a Rails project, have the @rails-simplifier:rails-simplifier agent review your changes for opportunities to simplify.
    3. Functionality review
       - Have the @manual-tester agent test your changes.
-   4. Test coverage review
+   4. Architecture review
+      - Have the @architecture-strategist review the changes.
+   5. Test coverage review
       - Have the @test-coverage-reviewer agent confirm your code has sufficient coverage.
-   5. Documentation review
+   6. Documentation review
       - Have the @docs-reviewer agent check for adequate and correct documentation.
-   6. Security Review
+   7. Security Review
       - Have the @security-reviewer agent check for security concerns in the changes.
+7. Changes from review
+   - Use your best judgement to evaluate the changes recommended by the other agents during the review phase and incorporate the ones that makes sense.
+   - Ask the human for feedback if you're unsure about anything.
+   - After making changes, ask for follow up reviews from subagents if it seems appropriate or helpful.
 
-Add the above steps to your task list and confirm with me that you completed them
-when you're done working.
+Add the above steps to your task list and confirm with me that you completed them when you're done working.
 
 ## Planning Team
 For the planning step, create a team with three agents. Then synthesize their findings into a formal plan.
@@ -39,14 +44,16 @@ For the planning step, create a team with three agents. Then synthesize their fi
 - Identify dependencies, potential conflicts, and constraints
 - Answers: "What do we have today and how does it work?"
 
-**Best Practices Researcher** (subagent_type: `general-purpose`)
-- Look up framework/library documentation using Context7 and web search
-- Find community patterns, recommended approaches, and security considerations
-- Check for version-specific APIs or recent changes that affect the approach
+**Best Practices Researcher** (subagent_type: `best-practices-researcher`)
+- Use the @best-practices-researcher agent to evaluate best practices for the work being planned.
 - Answers: "What's the right way to do this according to docs and community standards?"
 
+**Architecture Strategist** (subagent_type: `architecture-strategist`)
+- Use the @architecture-strategist agent to evaluate appropriate and effective architectural approaches for the work being planned.
+- Answers: "What is the best architectural approach and what fits best into our current architecture?"
+
 **Plan Critic** (subagent_type: `general-purpose`)
-- Wait for the Codebase Explorer and Best Practices Researcher to finish (set `blockedBy` on their tasks)
+- Wait for the Codebase Explorer, Best Practices Researcher and Architecture Strategist to finish before running this agent (set `blockedBy` on their tasks)
 - Review their findings and the proposed approach
 - Challenge assumptions, identify gaps or risks, and suggest simpler alternatives
 - Look for over-engineering, missing edge cases, and security concerns
