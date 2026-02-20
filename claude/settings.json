@@ -70,6 +70,7 @@
       "mcp__Mantic__search_files",
       "mcp__Rollbar__get-item-details",
       "mcp__Rollbar__list-items",
+      "mcp__shopify-dev-mcp__learn_shopify_api",
       "Skill(ast-grep:ast-grep)",
       "Skill(automated-testing)",
       "Skill(manual-testing)",
@@ -120,10 +121,10 @@
     "frontend-design@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
-    "plannotator@plannotator": true,
     "claude-md-management@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
-    "rails-simplifier@rails": true
+    "rails-simplifier@rails": true,
+    "plannotator@plannotator": true
   },
   "sandbox": {
     "enabled": false,
@@ -133,9 +134,9 @@
     }
   },
   "alwaysThinkingEnabled": true,
+  "skipDangerousModePermissionPrompt": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754086011803
   },
-  "teammateMode": "tmux",
-  "skipDangerousModePermissionPrompt": true
+  "teammateMode": "tmux"
 }
