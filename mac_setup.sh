@@ -190,6 +190,9 @@ claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 ### Mantic (https://github.com/marcoaapfortes/Mantic.sh)
 claude mcp add Mantic --scope user -- npx -y mantic.sh@latest server
 
+### Shopify (https://shopify.dev/docs/apps/build/devmcp)
+claude mcp add --scope user --transport stdio ShopifyDev -- npx -y @shopify/dev-mcp@latest
+
 ### Plannotator (https://github.com/backnotprop/plannotator)
 curl -fsSL https://plannotator.ai/install.sh | bash
 
