@@ -6,6 +6,12 @@ export PATH="/Users/$USER/.cargo/bin:$PATH"
 
 export SHELL="/bin/zsh"
 
+# Microsoft Foundry in Claude Code (Deseret Book machines only)
+if [[ -n "$DESERET_BOOK" ]]; then
+  export CLAUDE_CODE_USE_FOUNDRY=1
+  export ANTHROPIC_FOUNDRY_RESOURCE=dbc-engineering-ai
+fi
+
 # With this set, zsh sessions will append their history list to the history file, rather than replace it.
 # Thus, multiple parallel zsh sessions will all have the new entries from their history lists added to the history file, in the order that they exit.
 setopt appendhistory

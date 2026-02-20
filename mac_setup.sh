@@ -2,8 +2,12 @@
 
 # This script is meant to be idempotent and should be safe to run multiple times.
 #
-# To install Deseret Book tooling, set the DESERET_BOOK environment variable.
-# e.g. DESERET_BOOK=true ./mac_setup.sh
+# If this is a Deseret Book machine, create `~/.zshenv` with:
+# ```
+# export DESERET_BOOK=true
+# ```
+# This will install Deseret Book tooling while this script runs and it's used as
+# a flag for other configuration.
 
 function print_header() {
   echo "**************************************************************************"
