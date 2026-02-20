@@ -134,6 +134,7 @@ Remove all unwanted apps from Dock.
 /plugin install pr-review-toolkit
 /plugin install claude-md-management
 /plugin install claude-code-setup
+/plugin install superpowers
 
 /plugin marketplace add ast-grep/claude-skill
 /plugin install ast-grep

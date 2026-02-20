@@ -124,7 +124,8 @@
     "claude-md-management@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
     "rails-simplifier@rails": true,
-    "plannotator@plannotator": true
+    "plannotator@plannotator": true,
+    "superpowers@claude-plugins-official": true
   },
   "sandbox": {
     "enabled": false,
