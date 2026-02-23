@@ -1,7 +1,6 @@
 ---
 name: docs-reviewer
 description: "Use this agent when code changes have been made and you need to evaluate whether documentation updates are needed. This includes checking if README files, API documentation, or other standalone documentation files need to be created or updated to reflect the changes. The agent also provides light suggestions on inline comments where code clarity would benefit.
-model: opus
 memory: user
 ---
 

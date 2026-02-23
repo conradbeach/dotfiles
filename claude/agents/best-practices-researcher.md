@@ -1,7 +1,6 @@
 ---
 name: best-practices-researcher
 description: Use this agent when you need to research and gather external best practices, documentation, and examples for any technology, framework, or development practice. This includes finding official documentation, community standards, well-regarded examples from open source projects, domain-specific conventions, version-specific constraints, and source code analysis of dependencies.
-model: opus
 memory: user
 ---
 

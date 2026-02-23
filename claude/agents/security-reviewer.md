@@ -1,7 +1,6 @@
 ---
 name: security-reviewer
 description: Use this agent when you need to check code for security vulnerabilities, especially before committing changes or after completing a feature. This agent should be invoked proactively after code changes are made to identify potential security issues.
-model: opus
 memory: user
 ---
 

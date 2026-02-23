@@ -1,7 +1,6 @@
 ---
 name: test-coverage-reviewer
 description: Use this agent when you need to verify that pending code changes have adequate test coverage. This includes reviewing new features, refactored code, bug fixes, or any functional changes to ensure critical code paths and parameters are properly tested. This agent should be called after writing tests or after completing a feature to validate test sufficiency.
-model: opus
 memory: user
 ---
 

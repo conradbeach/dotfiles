@@ -1,7 +1,6 @@
 ---
 name: manual-tester
 description: Use this agent when you need to manually verify the behavior of code changes. This includes testing new features, bug fixes, refactors, or any functional changes to ensure they work correctly and meet requirements. This agent should be used after building/implementing changes. Provide the agent with a copy of the feature requirements so it knows what we're trying to achieve.
-model: opus
 memory: user
 ---
 
