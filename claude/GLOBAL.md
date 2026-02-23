@@ -36,7 +36,7 @@ Add the above steps to your task list and confirm with me that you completed the
 ## Planning Team
 For the planning step, create a team with three agents. Then synthesize their findings into a formal plan.
 
-### Team Roles
+### Team Members
 
 **Codebase Explorer** (subagent_type: `Explore`)
 - Deep-dive into existing code relevant to the task
@@ -59,11 +59,12 @@ For the planning step, create a team with three agents. Then synthesize their fi
 - Look for over-engineering, missing edge cases, and security concerns
 - Answers: "What could go wrong, what's missing, and is there a simpler way?"
 
-### Synthesis
-After all three agents complete, the main thread should:
-1. Read all agent findings.
-2. Resolve any conflicts between recommendations.
-3. Create the plan.
+### Creating the Plan
+1. Start the Codebase Explorer, Best Practices Reseracher and Architecture Strategist team members.
+2. Once all 3 finish their work, read their findings and resolve any conflicts between recommendations.
+3. Create a plan.
+4. Present the plan to the Plan Critic.
+5. Make updates to the plan based on the Plan Critic's feedback. Do additional research if needed.
 4. Present the plan to the user for review.
 
 ## Planning and Building
