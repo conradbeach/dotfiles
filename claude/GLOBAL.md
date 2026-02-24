@@ -85,6 +85,10 @@ Write simple, readable, maintainable code. When in doubt, choose the more obviou
 
 Ask yourself: "Would a senior engineer say this is overcomplicated?" If yes, simplify.
 
+### TDD
+TDD should lead to more rigor and better results. Always build using red-green-refactor TDD.
+Read the /test-driven-development skill.
+
 ### Goal-Driven Execution
 
 Define success criteria. Loop until verified.
