@@ -90,7 +90,6 @@ TDD should lead to more rigor and better results. Always build using red-green-r
 Read the /test-driven-development skill.
 
 ### Goal-Driven Execution
-
 Define success criteria. Loop until verified.
 
 Transform tasks into verifiable goals:
@@ -105,11 +104,6 @@ For multi-step tasks, state a brief plan:
 3. [Step] → verify: [check]
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
-
-### Code Principles
-- **Simplicity above all** - Write simple, readable, maintainable code. When in doubt, choose the more obvious approach.
-- **Single responsibility** - One purpose per method and class
-- **Clear intent over clever code** - Be boring and obvious
 
 ## Dependencies
 - Always double check what the latest version available for a dependency is. Don't assume you know what's current.
