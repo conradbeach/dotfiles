@@ -42,12 +42,12 @@ For the planning step, create a team with three agents. Then synthesize their fi
 - Answers: "What could go wrong, what's missing, and is there a simpler way?"
 
 ### Creating the Plan
-1. Start the Codebase Explorer, Best Practices Reseracher and Architecture Strategist team members.
+1. Start the Codebase Explorer, Best Practices Researcher and Architecture Strategist team members.
 2. Once all 3 finish their work, read their findings and resolve any conflicts between recommendations.
 3. Create a plan.
 4. Present the plan to the Plan Critic.
 5. Make updates to the plan based on the Plan Critic's feedback. Do additional research if needed.
-4. Present the plan to the user for review.
+6. Present the plan to the user for review.
 
 ## Planning and Building
 ### Before You Build
@@ -112,7 +112,7 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 - Confirm that you're referencing documentation for the correct version. Use modern patterns.
 
 ## Documentation
-- If making API changes, make sure to update the API documentation. This is the most important form a documentation.
+- If making API changes, make sure to update the API documentation. This is the most important form of documentation.
 - Code comments can be helpful when it's hard to make the code fully clear on its own or there's some context the code can't explain. However, generally, adding comments should be unnecessary.
 
 ## Git
