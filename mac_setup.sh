@@ -99,6 +99,7 @@ brew install ripgrep
 brew install tlrc
 brew install tmux
 brew install tmuxinator
+brew install gitleaks
 brew install trash
 brew install wget
 brew install yarn

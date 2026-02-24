@@ -13,6 +13,8 @@
 	gpgSign = true
 	template = /Users/conrad/git-commit-template.txt
 	cleanup = strip
+[init]
+	templateDir = ~/development/dotfiles/git-template
 [rebase]
 	autosquash = true
 [tag]
