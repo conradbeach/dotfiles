@@ -116,7 +116,8 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 - Code comments can be helpful when it's hard to make the code fully clear on its own or there's some context the code can't explain. However, generally, adding comments should be unnecessary.
 
 ## Git
-- Don't commit your changes. A human will commit your changes after reviewing them.
+- Commit regularly — after each logical chunk of work (a completed step, fix, or feature increment). roborev will review each commit automatically in the background.
+- Don't push your changes. A human will review and push.
 
 ## Files
 - Whenever you reference a file, use the full path (relative to the project root); this makes it easier for me to open it in my editor.

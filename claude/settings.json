@@ -49,6 +49,7 @@
       "Bash(RAILS_ENV=test bundle exec rake:*)",
       "Bash(rg:*)",
       "Bash(rm:*)",
+      "Bash(roborev:*)",
       "Bash(ruby:*)",
       "Bash(sed:*)",
       "Bash(tail:*)",

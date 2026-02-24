@@ -54,6 +54,8 @@ ln -sf ~/development/dotfiles/.obsidian.vimrc ~/Obsidian
 ln -sf ~/development/dotfiles/.psqlrc ~
 mkdir -p ~/.qq
 ln -sf ~/development/dotfiles/qqqa/config.json ~/.qq
+mkdir -p ~/.roborev
+ln -sf ~/development/dotfiles/roborev/config.toml ~/.roborev/
 ln -sf ~/development/dotfiles/.ripgreprc ~
 ln -sf ~/development/dotfiles/.rspec ~
 ln -sf ~/development/dotfiles/ssh/config ~/.ssh/
@@ -95,6 +97,8 @@ brew install pinentry-mac
 brew install pure
 brew tap iagooar/qqqa
 brew install qqqa
+brew tap roborev-dev/tap
+brew install roborev
 brew install ripgrep
 brew install tlrc
 brew install tmux
@@ -203,6 +207,9 @@ curl -fsSL https://plannotator.ai/install.sh | bash
 
 ### it2 (for controlling iTerm2, used by Claude Code agent teams)
 pip install it2
+
+### roborev (https://roborev.io)
+roborev skills install
 
 # Other Development Setup
 
