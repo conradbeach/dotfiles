@@ -71,6 +71,7 @@
       "Skill(automated-testing)",
       "Skill(manual-testing)",
       "Skill(plannotator-review)",
+      "Skill(pr-review-toolkit:review-pr)",
       "Skill(skill-creator)",
       "WebFetch(domain:docs.amazonaws.cn)",
       "WebFetch(domain:anthropic.com)",

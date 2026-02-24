@@ -11,25 +11,7 @@ For any non-trivial change, follow the below steps. You must complete each step.
 5. CI checks
   - Confirm that tests, linters, etc. are all green. In most of my projects `chp` will do this for you.
 6. Review
-   1. Code review
-      - Once your work is complete, have the @code-reviewer agent review your changes.
-   2. Simplicity review
-      - Have the @pr-review-toolkit:code-simplifier agent review your changes for opportunities to simplify.
-      - If you're in a Rails project, have the @rails-simplifier:rails-simplifier agent review your changes for opportunities to simplify.
-   3. Functionality review
-      - Have the @manual-tester agent test your changes.
-   4. Architecture review
-      - Have the @architecture-strategist review the changes.
-   5. Test coverage review
-      - Have the @test-coverage-reviewer agent confirm your code has sufficient coverage.
-   6. Documentation review
-      - Have the @docs-reviewer agent check for adequate and correct documentation.
-   7. Security Review
-      - Have the @security-reviewer agent check for security concerns in the changes.
-7. Changes from review
-   - Use your best judgement to evaluate the changes recommended by the other agents during the review phase and incorporate the ones that makes sense.
-   - Ask the human for feedback if you're unsure about anything.
-   - After making changes, ask for follow up reviews from subagents if it seems appropriate or helpful.
+   - Run the /review skill.
 
 Add the above steps to your task list and confirm with me that you completed them when you're done working.
 
