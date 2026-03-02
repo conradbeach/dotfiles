@@ -88,7 +88,6 @@
   - Load configuration. (In this repo. Change in Settings > General > Settings)
 - [ ] Monologue
   - [Install](https://www.monologue.to/download)
-  - Copy Instructions and Dictionary from another machine.
   - Settings
     - General
       - Enable recommended "Paste last transcript" shortcut.
