@@ -37,10 +37,10 @@ precmd() {
 # https://github.com/AstroNvim/AstroNvim/issues/1896
 ulimit -n 1024
 
-# Homebrew (must come before mise since mise is installed via Homebrew)
+# Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# mise
+# mise (must come after Homebrew)
 eval "$(mise activate zsh)"
 
 # fzf
@@ -52,6 +52,10 @@ export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(lvim {})+abort'"
 fpath+=$(brew --prefix)/share/zsh/site-functions
 autoload -U promptinit; promptinit
 prompt pure
+
+# Zsh completions (must come after Homebrew)
+fpath=($(brew --prefix)/share/zsh-completions $fpath)
+autoload -Uz compinit && compinit
 
 # ripgrep
 export RIPGREP_CONFIG_PATH=~/.ripgreprc

@@ -113,6 +113,10 @@ brew install yarn
 brew install zellij
 brew install zoxide
 brew install zsh
+brew install zsh-completions
+brew install zsh-syntax-highlighting
+# Remove group/other write permissions so zsh's compinit security check doesn't flag this directory.
+chmod go-w "$(brew --prefix)/share"
 
 ## Services
 print_header "Installing Brew Services"
@@ -159,13 +163,6 @@ source ~/.zshrc
 ## Install Global Versions
 print_header "Installing All Global Versions of Languages"
 mise install
-
-
-# Zsh
-
-## zsh-syntax-highlighting
-print_header "Installing zsh-syntax-highlighting"
-brew install zsh-syntax-highlighting
 
 
 # Neovim
