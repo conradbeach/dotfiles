@@ -1,0 +1,18 @@
+worktree-path = "{{ repo_path }}/.worktrees/{{ branch | sanitize }}"
+
+[list]
+summary = true
+
+[commit.generation]
+command = "CLAUDECODE= MAX_THINKING_TOKENS=0 claude -p --model=haiku --tools='' --disable-slash-commands --setting-sources='' --system-prompt=''"
+
+[post-create]
+copy-ignored = """
+main=$(dirname "$(git rev-parse --git-common-dir)")
+[ -f "$main/CLAUDE.local.md" ] && cp "$main/CLAUDE.local.md" .
+[ -d "$main/.claude" ] && cp -r "$main/.claude" .
+[ -f "$main/config/application.yml" ] && cp "$main/config/application.yml" config/
+[ -f "$main/config/master.key" ] && cp "$main/config/master.key" config/
+[ -f "$main/mise.local.toml" ] && { cp "$main/mise.local.toml" . && mise trust; }
+true
+"""

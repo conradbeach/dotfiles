@@ -63,6 +63,8 @@ if ! is_deseret_book; then ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/
 ln -sf ~/development/dotfiles/.tmux.conf ~
 ln -sf ~/development/dotfiles/tmuxinator ~/.config
 ln -sf ~/development/dotfiles/.tool-versions ~
+mkdir -p ~/.config/worktrunk
+ln -sf ~/development/dotfiles/worktrunk/config.toml ~/.config/worktrunk/
 ln -sf ~/development/dotfiles/zsh/.zshrc ~
 ln -sf ~/development/dotfiles/zellij ~/.config
 # gpg-agent.conf is linked later on this script because gnupg sets up the ~/.gnupg directory
@@ -106,6 +108,7 @@ brew install tmuxinator
 brew install gitleaks
 brew install trash
 brew install wget
+brew install worktrunk
 brew install yarn
 brew install zellij
 brew install zoxide
@@ -210,6 +213,10 @@ pip install it2
 
 ### roborev (https://roborev.io)
 roborev skills install
+
+### Worktrunk (https://worktrunk.dev)
+claude plugin marketplace add max-sixty/worktrunk
+claude plugin install worktrunk@worktrunk
 
 # Other Development Setup
 

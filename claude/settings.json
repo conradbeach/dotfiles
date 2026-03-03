@@ -106,6 +106,7 @@
       "WebFetch(domain:guides.rubyonrails.org)",
       "WebFetch(domain:www.rudderstack.com)",
       "WebFetch(domain:trufflesecurity.com)",
+      "WebFetch(domain:worktrunk.dev)",
       "WebSearch"
     ],
     "deny": [
@@ -126,7 +127,16 @@
     "claude-md-management@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
     "rails-simplifier@rails": true,
-    "plannotator@plannotator": true
+    "plannotator@plannotator": true,
+    "worktrunk@worktrunk": true
+  },
+  "extraKnownMarketplaces": {
+    "worktrunk": {
+      "source": {
+        "source": "github",
+        "repo": "max-sixty/worktrunk"
+      }
+    }
   },
   "sandbox": {
     "enabled": false,
