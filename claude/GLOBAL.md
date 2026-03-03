@@ -10,7 +10,9 @@ For any non-trivial change, follow the below steps. You must complete each step.
   - See the /automated-testing skill.
 5. CI checks
   - Confirm that tests, linters, etc. are all green. In most of my projects `chp` will do this for you.
-6. Review
+6. Simplify
+  - Run the /simplify skill.
+7. Review
    - Run the /review skill.
 
 Add the above steps to your task list and confirm with me that you completed them when you're done working.
