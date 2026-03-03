@@ -12,7 +12,7 @@ wtc() {
   fi
   
   local repo_name=$(basename "$main_repo_dir")
-  local worktree_dir="${main_repo_dir}/../${repo_name}.worktrees/$1"
+  local worktree_dir="${main_repo_dir}/.worktrees/$1"
   local current_branch=$(git branch --show-current)
 
   echo -n "Create worktree based on branch '$current_branch'? (y/n): "
