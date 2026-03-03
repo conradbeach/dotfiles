@@ -214,7 +214,23 @@ pip install it2
 ### roborev (https://roborev.io)
 roborev skills install
 
-### Worktrunk (https://worktrunk.dev)
+### Plugins
+claude plugin install code-review
+claude plugin install feature-dev
+claude plugin install frontend-design
+claude plugin install pr-review-toolkit
+claude plugin install claude-md-management
+claude plugin install claude-code-setup
+
+claude plugin marketplace add ast-grep/claude-skill
+claude plugin install ast-grep
+
+claude plugin marketplace add backnotprop/plannotator
+claude plugin install plannotator@plannotator
+
+claude plugin marketplace add maquina-app/rails-claude-code
+claude plugin install rails-simplifier@rails
+
 claude plugin marketplace add max-sixty/worktrunk
 claude plugin install worktrunk@worktrunk
 

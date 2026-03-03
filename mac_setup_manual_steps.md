@@ -124,26 +124,6 @@ Remove all unwanted apps from Dock.
 - [ ] Populate MEDIA_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt and IRMS_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt with read only Rollbar access tokens.
 - [ ] Run `/terminal-setup` in Claude Code.
 
-### Plugin Marketplaces
-```
-# Run this in Claude Code:
-/plugin install code-review
-/plugin install feature-dev
-/plugin install frontend-design
-/plugin install pr-review-toolkit
-/plugin install claude-md-management
-/plugin install claude-code-setup
-
-/plugin marketplace add ast-grep/claude-skill
-/plugin install ast-grep
-
-/plugin marketplace add backnotprop/plannotator
-/plugin install plannotator@plannotator
-
-/plugin marketplace add maquina-app/rails-claude-code
-/plugin install rails-simplifier@rails
-```
-
 ## GPG
 - [ ] Generate a new GPG key. (Follow the GitHub docs: https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
 - [ ] Add the new GPG key to your GitHub account.
