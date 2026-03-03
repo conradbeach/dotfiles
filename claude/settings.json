@@ -110,7 +110,8 @@
     ],
     "deny": [
       "Bash(gh pr comment:*)"
-    ]
+    ],
+    "defaultMode": "acceptEdits"
   },
   "model": "claude-sonnet-4-6[1m]",
   "statusLine": {
