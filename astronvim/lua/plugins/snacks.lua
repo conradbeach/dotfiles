@@ -22,6 +22,7 @@ return {
     },
     picker = {
       exclude = { -- Folder names to exclude from the picker.
+        ".worktrees",
         "coverage",
         "log",
         "node_modules",
