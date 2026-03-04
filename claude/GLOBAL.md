@@ -119,6 +119,7 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 - Commit regularly — after each logical chunk of work (a completed step, fix, or feature increment).
 - roborev will review each commit automatically in the background. Fix any feedback from roborev.
 - Don't push your changes. A human will review and push.
+- Projects use git worktrees stored in `.worktrees/` inside the repository root. Typically you will be working inside a worktree, but if you are working in the repository root, ignore the `.worktrees/` directory — do not read, modify, or commit anything inside it.
 
 ## Files
 - Whenever you reference a file, use the full path (relative to the project root); this makes it easier for me to open it in my editor.
