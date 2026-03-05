@@ -111,6 +111,9 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 - Always double check what the latest version available for a dependency is. Don't assume you know what's current.
 - Confirm that you're referencing documentation for the correct version. Use modern patterns.
 
+## Code Reviews
+- Don't flag every possible edge case. Only raise error handling concerns that are genuinely likely or have meaningful consequences. Avoid defensive coding suggestions for low-probability scenarios.
+
 ## Documentation
 - If making API changes, make sure to update the API documentation. This is the most important form of documentation.
 - Code comments can be helpful when it's hard to make the code fully clear on its own or there's some context the code can't explain. However, generally, adding comments should be unnecessary.
