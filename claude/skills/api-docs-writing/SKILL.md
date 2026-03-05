@@ -3,7 +3,7 @@ name: api-docs-writing
 description: Update or create API documentation after making changes to the public interface of an API. Use when modifying existing endpoints, introducing new endpoints, or when API implementation changes are complete and tested.
 ---
 
-# API Documentation Writer
+# Writing API Documentation
 
 Specialist guidance for creating clear, accurate, and developer-friendly API documentation.
 
