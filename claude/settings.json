@@ -76,6 +76,7 @@
       "Skill(skill-creator)",
       "WebFetch(domain:docs.amazonaws.cn)",
       "WebFetch(domain:anthropic.com)",
+      "WebFetch(domain:diffs.com)",
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:www.chargebee.com)",
       "WebFetch(domain:apidocs.chargebee.com)",
