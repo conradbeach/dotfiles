@@ -14,6 +14,18 @@ _G.yank_code_with_context = function()
   vim.fn.setreg("+", result)
 end
 
+-- In floating terminals, move via tmux directly to avoid closing the float.
+-- In normal splits, delegate to smart-splits as usual.
+local function terminal_move(smart_splits_fn, tmux_dir)
+  return function()
+    if vim.api.nvim_win_get_config(0).relative ~= "" then
+      vim.fn.system("tmux select-pane " .. tmux_dir)
+    else
+      require("smart-splits")[smart_splits_fn]()
+    end
+  end
+end
+
 return {
   {
     "AstroNvim/astrocore",
@@ -25,6 +37,14 @@ return {
       -- Keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
       mappings = {
         -- first key is the mode
+        t = {
+          -- Navigate tmux panes from terminal mode, same as normal mode.
+          -- Uses tmux directly for floating terminals to keep them open.
+          ["<C-h>"] = { terminal_move("move_cursor_left", "-L"), desc = "Move to left split" },
+          ["<C-j>"] = { terminal_move("move_cursor_down", "-D"), desc = "Move to below split" },
+          ["<C-k>"] = { terminal_move("move_cursor_up", "-U"), desc = "Move to above split" },
+          ["<C-l>"] = { terminal_move("move_cursor_right", "-R"), desc = "Move to right split" },
+        },
         v = {
           -- second key is the lefthand side of the map
           ["<Leader>y"] = { "", desc = "Yank" },
