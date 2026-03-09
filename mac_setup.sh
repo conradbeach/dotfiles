@@ -85,7 +85,6 @@ brew install bat
 brew install cmake
 brew install diff-so-fancy
 brew install eza
-brew install fd
 brew install fzf
 $(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc
 brew install gh

@@ -15,7 +15,6 @@ alias home="cd && clear"
 alias ls="eza --all --group-directories-first --icons"
 alias cat="bat --theme=OneHalfLight"
 alias top="htop"
-alias find="fd -H"
 ## Ruby & Rails
 alias be="bundle exec"
 alias berc="bundle exec rubocop"
