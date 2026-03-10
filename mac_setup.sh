@@ -80,7 +80,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ## Packages
 print_header "Installing Brew Packages"
 brew install ack
-brew install ast-grep
 brew install bat
 brew install cmake
 brew install diff-so-fancy
@@ -195,9 +194,6 @@ ln -sf ~/development/dotfiles/claude/skills/ ~/.claude
 ### Context7 (https://github.com/upstash/context7)
 claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
 
-### Mantic (https://github.com/marcoaapfortes/Mantic.sh)
-claude mcp add Mantic --scope user -- npx -y mantic.sh@latest server
-
 ### Shopify (https://shopify.dev/docs/apps/build/devmcp)
 claude mcp add --scope user --transport stdio ShopifyDev -- npx -y @shopify/dev-mcp@latest
 
@@ -217,9 +213,6 @@ claude plugin install frontend-design
 claude plugin install pr-review-toolkit
 claude plugin install claude-md-management
 claude plugin install claude-code-setup
-
-claude plugin marketplace add ast-grep/claude-skill
-claude plugin install ast-grep
 
 claude plugin marketplace add backnotprop/plannotator
 claude plugin install plannotator@plannotator

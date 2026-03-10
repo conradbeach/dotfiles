@@ -62,13 +62,9 @@
       "mcp__Linear__get_issue",
       "mcp__Linear__list_comments",
       "mcp__Linear__list_issues",
-      "mcp__Mantic__analyze_intent",
-      "mcp__Mantic__find_references",
-      "mcp__Mantic__search_files",
       "mcp__Rollbar__get-item-details",
       "mcp__Rollbar__list-items",
       "mcp__shopify-dev-mcp__learn_shopify_api",
-      "Skill(ast-grep:ast-grep)",
       "Skill(automated-testing)",
       "Skill(manual-testing)",
       "Skill(plannotator-review)",
@@ -121,7 +117,6 @@
     "command": "input=$(cat); model_name=$(echo \"$input\" | jq -r '.model.display_name'); pct=$(echo \"$input\" | jq -r '.context_window.used_percentage // empty'); if [ -n \"$pct\" ]; then result=$(printf \"\\033[34m%s\\033[0m | \\033[33m%d%% context\\033[0m\" \"$model_name\" \"$pct\"); else result=$(printf \"\\033[34m%s\\033[0m\" \"$model_name\"); fi; result=$(printf \"%s | \\033[35mReminders: TDD\\033[0m\" \"$result\"); echo \"$result\""
   },
   "enabledPlugins": {
-    "ast-grep@ast-grep-marketplace": true,
     "frontend-design@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
