@@ -23,6 +23,9 @@ Add the above steps to your task list and confirm with me that you completed the
 - If making API changes, make sure to update the API documentation. This is the most important form of documentation.
 - Code comments can be helpful when it's hard to make the code fully clear on its own or there's some context the code can't explain. However, generally, adding comments should be unnecessary.
 
+## LSP
+Remember you have access to LSP servers. Leverage their tools to navigate the codebase more effectively.
+
 ## Files
 - Whenever you reference a file, use the full path (relative to the project root); this makes it easier for me to open it in my editor.
 

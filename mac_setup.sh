@@ -208,12 +208,13 @@ pip install it2
 roborev skills install
 
 ### Plugins
+claude plugin install claude-md-management
+claude plugin install claude-code-setup
 claude plugin install code-review
 claude plugin install feature-dev
 claude plugin install frontend-design
 claude plugin install pr-review-toolkit
-claude plugin install claude-md-management
-claude plugin install claude-code-setup
+claude plugin install ruby-lsp
 
 claude plugin marketplace add backnotprop/plannotator
 claude plugin install plannotator@plannotator
