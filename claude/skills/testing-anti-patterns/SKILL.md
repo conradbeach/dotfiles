@@ -1,3 +1,8 @@
+---
+name: testing-anti-patterns
+description: Reference for common testing anti-patterns. Use when writing or changing tests, adding mocks, or when tempted to add test-only methods to production code.
+---
+
 # Testing Anti-Patterns
 
 **Load this reference when:** writing or changing tests, adding mocks, or tempted to add test-only methods to production code.
