@@ -5,9 +5,9 @@ For any non-trivial change, follow the below steps. You must complete each step.
 2. Build
   - See the Planning and Building section below.
 3. Manual testing
-  - See the /manual-testing skill.
+  - Follow the Manual Testing guidelines.
 4. Automated testing
-  - See the /automated-testing skill.
+  - Follow the Automated Testing guidelines.
 5. CI checks
   - Confirm that tests, linters, etc. are all green. In most of my projects `chp` will do this for you.
 6. Simplify
@@ -89,7 +89,7 @@ Ask yourself: "Would a senior engineer say this is overcomplicated?" If yes, sim
 
 ### TDD
 TDD should lead to more rigor and better results. Always build using red-green-refactor TDD.
-Read the /test-driven-development skill.
+Follow the Test-Driven Development guidelines.
 
 ### Goal-Driven Execution
 Define success criteria. Loop until verified.

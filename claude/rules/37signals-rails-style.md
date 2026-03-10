@@ -1,8 +1,3 @@
----
-name: 37signals-rails-style
-description: Apply 37signals/DHH Rails conventions when writing Ruby on Rails code. Use when building Rails applications, reviewing Rails code, or making architectural decisions. Covers various aspects of Rails application architecture, design and dependencies.
----
-
 # 37signals/DHH Rails Style Guide
 
 ## Core Philosophy

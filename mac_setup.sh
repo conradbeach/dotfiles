@@ -189,6 +189,7 @@ ln -sf ~/development/dotfiles/claude/GLOBAL.md ~/.claude/CLAUDE.md
 ln -sf ~/development/dotfiles/claude/settings.json ~/.claude/settings.json
 ln -sf ~/development/dotfiles/claude/agents ~/.claude
 ln -sf ~/development/dotfiles/claude/commands ~/.claude
+ln -sf ~/development/dotfiles/claude/rules ~/.claude
 ln -sf ~/development/dotfiles/claude/skills/ ~/.claude
 
 ### Context7 (https://github.com/upstash/context7)

@@ -1,8 +1,3 @@
----
-name: manual-testing
-description: Manually verify code changes work as expected. Use after implementing a feature or bug fix, after making visual/UI changes, after modifying API endpoints, or before considering work "done". All functional changes must be manually verified, even small changes. This is in addition to automated tests.
----
-
 # Manual Testing
 
 ## Testing Approaches

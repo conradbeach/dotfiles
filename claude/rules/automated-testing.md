@@ -1,8 +1,3 @@
----
-name: automated-testing
-description: Write automated tests following a pragmatic, integration-focused philosophy. Use when writing tests for new features, writing tests for bug fixes, adding test coverage, or deciding what/how to test. Emphasizes confidence over coverage, real objects over mocks, integration over isolation, and simplicity over dogma.
----
-
 # Automated Testing
 
 ## Core Philosophy
