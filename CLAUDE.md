@@ -23,3 +23,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Code Organization
 - Config files are symlinked from this repo to their system locations
 - Follow existing directory structure and naming conventions
+
+## Setup Script
+- `mac_setup.sh` is the canonical setup script for a new machine
+- Whenever adding tools, MCP servers, plugins, or other dependencies to the dotfiles, update `mac_setup.sh` so new machines get the same setup.
