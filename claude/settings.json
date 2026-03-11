@@ -90,6 +90,7 @@
       "WebFetch(domain:iterm2.com)",
       "WebFetch(domain:api.linear.app)",
       "WebFetch(domain:www.meilisearch.com)",
+      "WebFetch(domain:plytix.com)",
       "WebFetch(domain:roborev.io)",
       "WebFetch(domain:docs.rollbar.com)",
       "WebFetch(domain:rspec.info)",
