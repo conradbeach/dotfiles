@@ -192,9 +192,6 @@ ln -sf ~/development/dotfiles/claude/commands ~/.claude
 ln -sf ~/development/dotfiles/claude/rules ~/.claude
 ln -sf ~/development/dotfiles/claude/skills/ ~/.claude
 
-### Context7 (https://github.com/upstash/context7)
-claude mcp add Context7 --scope user -- npx -y @upstash/context7-mcp
-
 ### Shopify (https://shopify.dev/docs/apps/build/devmcp)
 claude mcp add --scope user --transport stdio ShopifyDev -- npx -y @shopify/dev-mcp@latest
 
@@ -211,7 +208,7 @@ roborev skills install
 claude plugin install claude-md-management
 claude plugin install claude-code-setup
 claude plugin install code-review
-claude plugin install feature-dev
+claude plugin install context7
 claude plugin install frontend-design
 claude plugin install pr-review-toolkit
 claude plugin install ruby-lsp

@@ -124,7 +124,8 @@
     "rails-simplifier@rails": true,
     "plannotator@plannotator": true,
     "worktrunk@worktrunk": true,
-    "ruby-lsp@claude-plugins-official": true
+    "ruby-lsp@claude-plugins-official": true,
+    "context7@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "worktrunk": {
