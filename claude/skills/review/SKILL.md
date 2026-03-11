@@ -1,6 +1,6 @@
 ---
 name: review
-description: "Run the full code review suite after completing a feature or fix. Use when work is complete and ready for review, when the user invokes /review, or when the Development Workflow calls for the review step. Runs 7 specialized review agents in parallel, addresses their feedback, then does a final PR review pass."
+description: Run the full code review suite after completing a feature or fix. Use when work is complete and ready for review, when the user invokes /review, or when the Development Workflow calls for the review step. Runs 7 specialized review agents in parallel, addresses their feedback, then does a final PR review pass.
 ---
 
 # Review

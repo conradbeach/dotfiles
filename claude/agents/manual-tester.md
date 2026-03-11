@@ -27,7 +27,7 @@ You are an expert QA engineer specializing in manual software testing and verifi
 
 ## Testing Methodology
 
-See the `manual-testing` skill.
+See the Manual Testing guidelines.
 
 ## Output Format
 
