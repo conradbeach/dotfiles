@@ -192,17 +192,21 @@ ln -sf ~/development/dotfiles/claude/commands ~/.claude
 ln -sf ~/development/dotfiles/claude/rules ~/.claude
 ln -sf ~/development/dotfiles/claude/skills/ ~/.claude
 
-### Shopify (https://shopify.dev/docs/apps/build/devmcp)
-claude mcp add --scope user --transport stdio ShopifyDev -- npx -y @shopify/dev-mcp@latest
+### it2 (for controlling iTerm2, used by Claude Code agent teams)
+pip install it2
 
 ### Plannotator (https://github.com/backnotprop/plannotator)
 curl -fsSL https://plannotator.ai/install.sh | bash
 
-### it2 (for controlling iTerm2, used by Claude Code agent teams)
-pip install it2
-
 ### roborev (https://roborev.io)
 roborev skills install
+
+### Semgrep (https://semgrep.dev/docs/mcp)
+brew install semgrep
+claude mcp add semgrep --scope user -- semgrep mcp
+
+### Shopify (https://shopify.dev/docs/apps/build/devmcp)
+claude mcp add --scope user --transport stdio ShopifyDev -- npx -y @shopify/dev-mcp@latest
 
 ### Plugins
 claude plugin install claude-md-management

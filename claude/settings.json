@@ -101,6 +101,7 @@
       "WebFetch(domain:rubyonrails.org)",
       "WebFetch(domain:guides.rubyonrails.org)",
       "WebFetch(domain:www.rudderstack.com)",
+      "WebFetch(domain:semgrep.dev)",
       "WebFetch(domain:trufflesecurity.com)",
       "WebFetch(domain:worktrunk.dev)",
       "WebSearch"
