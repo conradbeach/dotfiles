@@ -19,8 +19,7 @@ For the planning step, create a team with three agents. Then synthesize their fi
 - Answers: "What is the best architectural approach and what fits best into our current architecture?"
 
 **Plan Critic** (subagent_type: `general-purpose`)
-- Wait for the Codebase Explorer, Best Practices Researcher and Architecture Strategist to finish before running this agent (set `blockedBy` on their tasks)
-- Review their findings and the proposed approach
+- Review the proposed plan
 - Challenge assumptions, identify gaps or risks, and suggest simpler alternatives
 - Look for over-engineering, missing edge cases, and security concerns
 - Answers: "What could go wrong, what's missing, and is there a simpler way?"
