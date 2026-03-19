@@ -17,6 +17,7 @@ alias cat="bat --theme=OneHalfLight"
 alias top="htop"
 ## Ruby & Rails
 alias be="bundle exec"
+alias bi="bundle install"
 alias berc="bundle exec rubocop"
 alias bepr="bundle exec parallel_rspec"
 alias rdm="bundle exec rails db:migrate"
