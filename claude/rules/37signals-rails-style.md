@@ -1,3 +1,13 @@
+---
+paths:
+  - "**/*.rb"
+  - "**/*.erb"
+  - "**/*.rake"
+  - "**/Gemfile"
+  - "**/Rakefile"
+  - "**/config.ru"
+---
+
 # 37signals/DHH Rails Style Guide
 
 ## Core Philosophy
