@@ -46,8 +46,8 @@ alias wtc="wt switch --create"
 alias wtl="wt list"
 alias wts="wt switch"
 # Claude Code
-alias cc="claude --chrome"
-alias ccc="claude --chrome --continue"
-alias ccr="claude --chrome --resume"
+alias cc="claude"
+alias ccc="claude --continue"
+alias ccr="claude --resume"
 # fzf
 alias preview="fzf --preview 'bat --color \"always\" {}'"
