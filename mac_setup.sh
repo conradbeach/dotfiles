@@ -197,6 +197,8 @@ pip install it2
 
 ### Plannotator (https://github.com/backnotprop/plannotator)
 curl -fsSL https://plannotator.ai/install.sh | bash
+mkdir -p ~/.plannotator
+ln -sf ~/development/dotfiles/plannotator/config.json ~/.plannotator/config.json
 
 ### roborev (https://roborev.io)
 roborev skills install
