@@ -135,13 +135,20 @@
     "plannotator@plannotator": true,
     "worktrunk@worktrunk": true,
     "ruby-lsp@claude-plugins-official": true,
-    "context7@claude-plugins-official": true
+    "context7@claude-plugins-official": true,
+    "codeguard-security@project-codeguard": true
   },
   "extraKnownMarketplaces": {
     "worktrunk": {
       "source": {
         "source": "github",
         "repo": "max-sixty/worktrunk"
+      }
+    },
+    "project-codeguard": {
+      "source": {
+        "source": "github",
+        "repo": "cosai-oasis/project-codeguard"
       }
     }
   },
