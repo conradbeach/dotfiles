@@ -190,6 +190,7 @@ ln -sf ~/development/dotfiles/claude/settings.json ~/.claude/settings.json
 ln -sf ~/development/dotfiles/claude/agents ~/.claude
 ln -sf ~/development/dotfiles/claude/commands ~/.claude
 ln -sf ~/development/dotfiles/claude/rules ~/.claude
+ln -sf ~/development/dotfiles/claude/hooks ~/.claude
 ln -sf ~/development/dotfiles/claude/skills/ ~/.claude
 
 ### it2 (for controlling iTerm2, used by Claude Code agent teams)

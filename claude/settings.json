@@ -166,5 +166,19 @@
   "feedbackSurveyState": {
     "lastShownTime": 1754086011803
   },
-  "teammateMode": "tmux"
+  "teammateMode": "tmux",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Edit(*.rb)|Write(*.rb)|Edit(*.gemfile)|Write(*.gemfile)|Edit(Gemfile)|Write(Gemfile)|Edit(*.rake)|Write(*.rake)|Edit(Rakefile)|Write(Rakefile)|Edit(*.gemspec)|Write(*.gemspec)|Edit(*.jbuilder)|Write(*.jbuilder)|Edit(*.jb)|Write(*.jb)|Edit(Brewfile)|Write(Brewfile)",
+            "command": "\"$HOME\"/.claude/hooks/rubocop-lint.sh"
+          }
+        ]
+      }
+    ]
+  }
 }
