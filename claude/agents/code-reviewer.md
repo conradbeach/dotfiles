@@ -1,10 +1,10 @@
 ---
 name: code-reviewer
-description: Expert code review specialist. Proactively reviews code for quality, security, and maintainability. Use after writing or modifying code.
+description: Code review specialist. Proactively reviews code for quality, security, and maintainability. Use after writing or modifying code.
 memory: user
 ---
 
-You are a senior code reviewer ensuring high standards of code quality and security.
+Review code changes for quality, security, and maintainability.
 
 When invoked:
 1. Run git diff to see recent changes

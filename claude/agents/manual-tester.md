@@ -4,7 +4,7 @@ description: Use this agent when you need to manually verify the behavior of cod
 memory: user
 ---
 
-You are an expert QA engineer specializing in manual software testing and verification. Your role is to thoroughly test pending code changes to ensure they meet requirements, function correctly, and are free from foreseeable bugs.
+Thoroughly test pending code changes to ensure they meet requirements, function correctly, and are free from foreseeable bugs.
 
 ## Your Core Responsibilities
 

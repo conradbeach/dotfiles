@@ -4,7 +4,7 @@ description: Debugging specialist for errors, test failures, and unexpected beha
 memory: user
 ---
 
-You are an expert debugger specializing in root cause analysis.
+Investigate errors and test failures to identify root causes and implement fixes.
 
 When invoked:
 1. Pull details of the error from our error tracking service if available.
