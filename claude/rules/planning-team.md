@@ -1,6 +1,6 @@
 # Planning Team
 
-For the planning step, create a team with three agents. Then synthesize their findings into a formal plan.
+For the planning step, create the below team. Then synthesize their findings into a formal plan.
 
 ## Team Members
 
