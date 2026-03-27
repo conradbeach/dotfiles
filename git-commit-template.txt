@@ -1,9 +1,10 @@
 
 # <type>: (If applied, this commit will...) <subject>
 
-# Explain why this change is being made. Explain what and why vs. how.
+# Explain why this change is being made. Explain what and why instead of how.
 # Provide links or keys to any relevant tickets, articles or other resources.
-# |<----   Try To Limit Each Line to a Maximum Of 72 Characters   ---->|
+# The message body should probably be 10 lines or less.
+# |<----   Limit Each Line to a Maximum Of 72 Characters   ---->|
 
 
 # Uncomment the below line if you want to skip CI checks.
@@ -14,10 +15,6 @@
 # Co-authored-by: CO-AUTHOR NAME 2 <co-author2@example.com>
 
 # --- COMMIT END ---
-# Before committing:
-#   - Are changes tested?
-#   - Are changes documented?
-# --------------------
 # <type> can be 
 #    feature  (new feature)
 #    fix      (bug fix)
@@ -25,7 +22,7 @@
 #    style    (formatting, missing semi colons, etc; no code change)
 #    docs     (changes to documentation)
 #    tests    (adding or refactoring tests; no production code change)
-#    chore    (updating grunt tasks etc; no production code change)
+#    chore    (updating task files etc; no production code change)
 # --------------------
 # Remember to
 #    Capitalize the subject line
