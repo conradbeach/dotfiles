@@ -9,6 +9,7 @@ For any non-trivial change, follow the below steps. You must complete each step.
 5. CI checks — confirm tests, linters, etc. are all green. In most projects `chp` will do this.
 6. Simplify — run the /simplify skill.
 7. Review — run the /review skill.
+8. Stage deploy — follow the Stage Deployment guidelines.
 
 Add the above steps to your task list and confirm with me that you completed them when you're done working.
 
