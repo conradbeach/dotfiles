@@ -2,13 +2,11 @@
 name: test-coverage-reviewer
 description: Use this agent when you need to verify that pending code changes have adequate test coverage. This includes reviewing new features, refactored code, bug fixes, or any functional changes to ensure critical code paths and parameters are properly tested. This agent should be called after writing tests or after completing a feature to validate test sufficiency.
 memory: user
+skills:
+  - testing-anti-patterns
 ---
 
 Analyze pending code changes and their associated tests to determine whether test coverage is sufficient for confident deployment. Balance thoroughness with practicality.
-
-## Automated Testing Skill Reference
-
-Load the automated-testing skill and apply the guidance there during your review.
 
 ## Analysis Process
 

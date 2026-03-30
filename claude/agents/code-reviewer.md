@@ -2,6 +2,8 @@
 name: code-reviewer
 description: Code review specialist. Proactively reviews code for quality, security, and maintainability. Use after writing or modifying code.
 memory: user
+skills:
+  - testing-anti-patterns
 ---
 
 Review code changes for quality, security, and maintainability.
