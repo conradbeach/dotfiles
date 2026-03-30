@@ -1,3 +1,7 @@
 {
-  "displayName": "Conrad Beach"
+  "displayName": "Conrad Beach",
+  "diffOptions": {
+    "overflow": "wrap",
+    "diffStyle": "unified"
+  }
 }
