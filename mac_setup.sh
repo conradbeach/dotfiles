@@ -204,6 +204,13 @@ ln -sf ~/development/dotfiles/plannotator/config.json ~/.plannotator/config.json
 ### roborev (https://roborev.io)
 roborev skills install
 
+### Rollbar (https://github.com/rollbar/rollbar-mcp-server)
+claude mcp add --scope user --transport stdio Rollbar -- npx -y @rollbar/mcp-server@latest
+if [ ! -f ~/.rollbar-mcp.json ]; then
+  curl -sL https://raw.githubusercontent.com/rollbar/rollbar-mcp-server/main/rollbar-mcp-example.json -o ~/.rollbar-mcp.json
+  echo "Created example ~/.rollbar-mcp.json."
+fi
+
 ### Semgrep (https://semgrep.dev/docs/mcp)
 brew install semgrep
 claude mcp add semgrep --scope user -- semgrep mcp

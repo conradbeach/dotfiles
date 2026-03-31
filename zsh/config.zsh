@@ -54,11 +54,6 @@ autoload -Uz compinit && compinit
 # ripgrep
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
 
-# Rollbar
-## This token powers the Rollbar MCP server for Claude Code.
-export ROLLBAR_ACCESS_TOKEN=$(cat ~/MEDIA_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt 2>/dev/null)
-# export ROLLBAR_ACCESS_TOKEN=$(cat ~/IRMS_API_READ_ONLY_ROLLBAR_ACCESS_TOKEN.txt 2>/dev/null)
-
 # Worktrunk (https://worktrunk.dev)
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
 
