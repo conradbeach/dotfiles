@@ -11,6 +11,7 @@ Once you're confident your work is complete, deploy the feature branch to stage 
 3. **Push** — Push the `stage` branch to the remote.
 4. **Watch the deployment** — Use `/loop` to monitor the deployment until it succeeds. Check deployment status using `gh` (e.g., `gh run list --branch stage`, `gh run watch`). Poll until the deployment run completes successfully.
 5. **Report** — Once the deployment is confirmed successful, tell the user: the feature has been tested, looks good, and is on stage ready for them to test.
+6. **Monitor for errors** — Check Rollbar at 5 minutes and 10 minutes after the deploy for any new errors that might be related to the deployed changes. Report findings to the user.
 
 ## Important
 
