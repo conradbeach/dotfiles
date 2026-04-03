@@ -54,6 +54,9 @@ autoload -Uz compinit && compinit
 # ripgrep
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
 
+# Gitleaks (https://github.com/gitleaks/gitleaks)
+export GITLEAKS_CONFIG=~/development/dotfiles/gitleaks.toml
+
 # Worktrunk (https://worktrunk.dev)
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
 

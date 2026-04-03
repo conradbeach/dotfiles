@@ -1,0 +1,11 @@
+title = "Global gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Ignore Rails encrypted credentials files"
+paths = [
+  '''config/credentials\.yml\.enc$''',
+  '''config/credentials/.*\.yml\.enc$''',
+]
