@@ -91,6 +91,7 @@
       "WebFetch(domain:api.iterable.com)",
       "WebFetch(domain:support.iterable.com)",
       "WebFetch(domain:iterm2.com)",
+      "WebFetch(domain:karabiner-elements.pqrs.org)",
       "WebFetch(domain:api.linear.app)",
       "WebFetch(domain:www.meilisearch.com)",
       "WebFetch(domain:docs.newstore.com)",
