@@ -6,6 +6,8 @@ export PATH="/Users/$USER/.cargo/bin:$PATH"
 
 export SHELL="/bin/zsh"
 
+export CLAUDE_CODE_NO_FLICKER=1
+
 # With this set, zsh sessions will append their history list to the history file, rather than replace it.
 # Thus, multiple parallel zsh sessions will all have the new entries from their history lists added to the history file, in the order that they exit.
 setopt appendhistory
