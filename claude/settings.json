@@ -178,11 +178,11 @@
     }
   },
   "alwaysThinkingEnabled": true,
-  "effortLevel": "medium",
   "voiceEnabled": true,
   "skipDangerousModePermissionPrompt": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754086011803
   },
-  "teammateMode": "tmux"
+  "teammateMode": "tmux",
+  "effortLevel": "high"
 }
