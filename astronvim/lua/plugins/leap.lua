@@ -1,5 +1,5 @@
 return {
-  "ggandor/leap.nvim",
+  url = "https://codeberg.org/andyg/leap.nvim",
   lazy = false,
   dependencies = {
     "AstroNvim/astrocore",
