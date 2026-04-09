@@ -215,6 +215,9 @@ fi
 brew install semgrep
 claude mcp add semgrep --scope user -- semgrep mcp
 
+### Postman (https://learning.postman.com/docs/developer/postman-api/postman-mcp-server/postman-mcp-remote-server)
+claude mcp add --scope user --transport http postman https://mcp.postman.com/code
+
 ### Shopify (https://shopify.dev/docs/apps/build/devmcp)
 claude mcp add --scope user --transport stdio ShopifyDev -- npx -y @shopify/dev-mcp@latest
 

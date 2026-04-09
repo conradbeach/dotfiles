@@ -35,3 +35,6 @@ Remember you have access to LSP servers. Leverage their tools to navigate the co
 
 ## Tasks/Issues
 - If a Linear issue is referenced, you can view it by using the `linear_fetch_issue` bash command. Linear issue IDs look like `DEV-7892`.
+
+## Postman
+- When interacting with Postman via the MCP server, default to using the personal workspace rather than the team workspace.
