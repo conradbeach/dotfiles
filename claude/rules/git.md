@@ -7,3 +7,4 @@
 - Projects use git worktrees stored in `.worktrees/` inside the repository root. Typically you will be working inside a worktree, but if you are working in the repository root, ignore the `.worktrees/` directory — do not read, modify, or commit anything inside it.
 - For commit messages, read and follow the Git commit template.
   - Add yourself (Claude) as a co-author.
+  - Do not include Linear issue IDs or other ticket references in commit messages.

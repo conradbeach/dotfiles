@@ -38,3 +38,6 @@ Remember you have access to LSP servers. Leverage their tools to navigate the co
 
 ## Postman
 - When interacting with Postman via the MCP server, default to using the personal workspace rather than the team workspace.
+
+## Watching
+When you're watching processes like deployments or CI runs, remember that you have the `Monitor` tool; it's likely the best tool for that type of job.
