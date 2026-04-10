@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+# Opens the file path under the mouse cursor in Neovim.
+# Called by tmux's S-MouseDown1Pane binding.
+#
+# Usage: tmux-open-file-at-cursor <mouse_x> <mouse_y> <pane_id> <pane_current_path>
+
+set -euo pipefail
+
+MOUSE_X="$1"
+MOUSE_Y="$2"
+PANE_ID="$3"
+PANE_PATH="$4"
+
+cd "$PANE_PATH"
+
+LINE=$(tmux capture-pane -p -t "$PANE_ID" -S "$MOUSE_Y" -E "$MOUSE_Y")
+[[ -z "$LINE" ]] && exit 0
+
+# Find the file path match spanning the cursor position and parse it into
+# file:line:col components. All text processing is done in perl to avoid
+# PATH issues in tmux's run-shell context.
+# NOTE: This pattern is also in .tmux.conf (@fingers-pattern-0).
+# A similar but less capable version is in astronvim/lua/plugins/terminal-links.lua.
+PERL_OUT=$(perl -e '
+  my $line = $ARGV[0];
+  my $mouse_x = $ARGV[1];
+  my $pattern = qr{((?:[\w.\-~/$@]+/[\w.\-/]+|\.[a-zA-Z][\w\-]*)\.\w+)(?::(\d+)(?:[:\-](\d+))?)?};
+  while ($line =~ /$pattern/g) {
+    my $start = $-[0];
+    my $end = $+[0];
+    if ($mouse_x >= $start && $mouse_x < $end) {
+      my ($file, $ln, $col) = ($1, $2 // "", $3 // "");
+      print "$file $ln $col";
+      exit 0;
+    }
+  }
+  exit 1;
+' "$LINE" "$MOUSE_X") || exit 0
+read -r FILE LINE_NUM COL_NUM <<< "$PERL_OUT"
+
+[[ -z "$FILE" ]] && exit 0
+
+FILE="${FILE/#\~/$HOME}"
+
+# Resolve the file, stripping git diff prefixes if needed.
+if [[ -f "$FILE" ]]; then
+  : # already resolved
+elif [[ -f "${FILE#a/}" ]]; then
+  FILE="${FILE#a/}"
+elif [[ -f "${FILE#b/}" ]]; then
+  FILE="${FILE#b/}"
+else
+  exit 0
+fi
+
+TON_ARG="$FILE"
+[[ -n "$LINE_NUM" ]] && TON_ARG="$TON_ARG:$LINE_NUM"
+[[ -n "$COL_NUM" ]] && TON_ARG="$TON_ARG:$COL_NUM"
+
+exec ~/.tmux/plugins/tmux-open-nvim/scripts/ton "$TON_ARG"

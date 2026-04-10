@@ -8,7 +8,6 @@ return {
             event = "TermOpen",
             callback = function()
               -- Enable clickable file paths in terminal mode with Ctrl+Click
-              -- Map for both normal and terminal modes
               vim.keymap.set({"n", "t"}, "<C-LeftMouse>", function()
                 local mouse_pos = vim.fn.getmousepos()
                 local win = mouse_pos.winid
@@ -24,6 +23,8 @@ return {
 
                 -- Pattern to match file paths with optional line numbers
                 -- Matches: path/to/file.ext:123:45 or path/to/file.ext:123 or path/to/file.ext
+                -- NOTE: Similar patterns in .tmux.conf (@fingers-pattern-0) and
+                -- tmux/scripts/tmux-open-file-at-cursor (Perl/PCRE, more capable).
                 local patterns = {
                   -- Full path with line and column
                   "([%w%-%._~/]+/[%w%-%._/]+%.%w+):(%d+):(%d+)",

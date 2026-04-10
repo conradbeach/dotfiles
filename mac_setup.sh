@@ -61,6 +61,8 @@ ln -sf ~/development/dotfiles/.rspec ~
 ln -sf ~/development/dotfiles/ssh/config ~/.ssh/
 if ! is_deseret_book; then ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/; fi
 ln -sf ~/development/dotfiles/.tmux.conf ~
+mkdir -p ~/.tmux/scripts
+ln -sf ~/development/dotfiles/tmux/scripts/tmux-open-file-at-cursor ~/.tmux/scripts/
 ln -sf ~/development/dotfiles/tmuxinator ~/.config
 ln -sf ~/development/dotfiles/.tool-versions ~
 mkdir -p ~/.config/worktrunk
@@ -102,6 +104,7 @@ brew install roborev
 brew install ripgrep
 brew install tlrc
 brew install tmux
+brew install tmux-fingers
 brew install tmuxinator
 brew install gitleaks
 brew install trash
