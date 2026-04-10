@@ -13,6 +13,7 @@ main=$(dirname "$(git rev-parse --git-common-dir)")
 [ -d "$main/.claude" ] && cp -r "$main/.claude" .
 [ -f "$main/config/application.yml" ] && cp "$main/config/application.yml" config/
 [ -f "$main/config/master.key" ] && cp "$main/config/master.key" config/
+[ -f "$main/config/credentials/development.key" ] && cp "$main/config/credentials/development.key" config/credentials/
 [ -f "$main/config/credentials/stage.key" ] && cp "$main/config/credentials/stage.key" config/credentials/
 [ -f "$main/config/credentials/production.key" ] && cp "$main/config/credentials/production.key" config/credentials/
 [ -f "$main/mise.local.toml" ] && { cp "$main/mise.local.toml" . && mise trust; }
