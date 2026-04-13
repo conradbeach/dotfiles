@@ -2,6 +2,7 @@
   "displayName": "Conrad Beach",
   "diffOptions": {
     "overflow": "wrap",
-    "diffStyle": "unified"
+    "diffStyle": "unified",
+    "defaultDiffType": "unstaged"
   }
 }
