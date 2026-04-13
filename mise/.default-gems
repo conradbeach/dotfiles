@@ -4,3 +4,4 @@ bundler-audit
 neovim
 rails
 ruby-lsp
+rubycritic
