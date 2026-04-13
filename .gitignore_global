@@ -1,6 +1,7 @@
 .worktrees/
 CLAUDE.local.md
 .claude/settings.local.json
+.claude/scheduled_tasks.lock
 .DS_Store
 mise.local.toml
 npm-debug.log
