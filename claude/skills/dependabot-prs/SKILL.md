@@ -35,6 +35,7 @@ For each PR:
 3. **Assess risk:**
    - **Safe (minor/patch, no breaking changes):** Proceed to merge into stage.
    - **Needs attention (major version bump, breaking changes, deprecations):** If reasonable and not too large, address the compatibility issues in a new commit on the dependabot branch and push it up. If you're unsure of how to proceed safely, add a comment to the PR describing the specific compatibility concerns and ask the user for guidance.
+4. If appropriate, do some manual testing to verify things are still working correctly. For example, if we're upgrading the pagination gem, manually test pagination using Chrome.
 
 ### 3. Merge Safe PRs into Stage
 
