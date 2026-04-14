@@ -142,7 +142,7 @@
       "WebSearch"
     ],
     "deny": [],
-    "defaultMode": "acceptEdits"
+    "defaultMode": "auto"
   },
   "model": "opus[1m]",
   "hooks": {
@@ -197,11 +197,12 @@
     }
   },
   "alwaysThinkingEnabled": true,
+  "effortLevel": "high",
   "voiceEnabled": true,
   "skipDangerousModePermissionPrompt": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754086011803
   },
   "teammateMode": "tmux",
-  "effortLevel": "high"
+  "skipAutoPermissionPrompt": true
 }
