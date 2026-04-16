@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Opens the file path under the mouse cursor in Neovim.
-# Called by tmux's S-MouseDown1Pane binding.
+# Called by tmux's C-MouseDown1Pane binding.
 #
 # Usage: tmux-open-file-at-cursor <mouse_x> <mouse_y> <pane_id> <pane_current_path>
 
