@@ -48,3 +48,12 @@ When you're watching processes like deployments or CI runs, remember that you ha
 
 ## External Communication
 - When posting comments, messages, or other communication on my behalf (PR comments, issue comments, chat messages, etc.), make it clear the message is from Claude acting on my behalf.
+
+## Accuracy and Verification
+I interact with you like you're a competent colleague. It's very important to me
+that I can trust your recommendations, statements, and analysis. But I can only
+have that trust in you if you have taken the time to think through what you're
+saying and you have taken the time to verify it. Do not make assumptions about
+how you think things are. Confirm it in the code. Confirm it with documentation.
+Check the API. Whatever you need to do, verify what you believe to be correct.
+And take extra time to do it if you need to.
