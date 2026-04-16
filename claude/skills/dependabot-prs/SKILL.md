@@ -51,7 +51,6 @@ After pushing, monitor the deployment in GitHub CI and confirm it succeeds.
 
 After merging into stage, add a brief comment to the PR via `gh pr comment`. The comment should:
 
-- Make clear it's from Claude acting on the user's behalf
 - State the risk level and any specific concerns
 - Note it was merged into stage and how long it will stay there before being eligible for production
 - Be succinct — a few sentences, not a formatted report

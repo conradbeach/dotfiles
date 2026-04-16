@@ -45,3 +45,6 @@ Remember you have access to LSP servers. Leverage their tools to navigate the co
 
 ## Watching
 When you're watching processes like deployments or CI runs, remember that you have the `Monitor` tool; it's likely the best tool for that type of job.
+
+## External Communication
+- When posting comments, messages, or other communication on my behalf (PR comments, issue comments, chat messages, etc.), make it clear the message is from Claude acting on my behalf.
