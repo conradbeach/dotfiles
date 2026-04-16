@@ -12,6 +12,7 @@ For the planning step, create the below team. Then synthesize their findings int
 
 **Best Practices Researcher** (subagent_type: `best-practices-researcher`)
 - Use the @best-practices-researcher agent to evaluate best practices for the work being planned.
+- Name the sources to consult: consider Context7 MCP, the project's installed-version docs (Gemfile.lock, package.json), repo READMEs and changelogs, and well-regarded open source examples. Cite the version alongside each recommendation.
 - Answers: "What's the right way to do this according to docs and community standards?"
 
 **Architecture Strategist** (subagent_type: `architecture-strategist`)
