@@ -9,7 +9,7 @@
       "Bash(aws elasticbeanstalk describe-environment-health:*)",
       "Bash(bundle:*)",
       "Bash(cat:*)",
-      "Bash(chp)",
+      "Bash(chp:*)",
       "Bash(col:*)",
       "Bash(claude mcp list:*)",
       "Bash(defaults read:*)",
@@ -43,6 +43,7 @@
       "Bash(nvim:*)",
       "Bash(rails:*)",
       "Bash(bin/rails:*)",
+      "Bash(RAILS_ENV=test bundle exec rake:*)",
       "Bash(rg:*)",
       "Bash(rm:*)",
       "Bash(roborev:*)",
@@ -54,6 +55,9 @@
       "Bash(toof:*)",
       "Bash(wc:*)",
       "Bash(y)",
+      "mcp__claude-in-chrome__get_page_text",
+      "mcp__claude-in-chrome__read_page",
+      "mcp__claude-in-chrome__tabs_context_mcp",
       "mcp__plugin_context7_context7__resolve-library-id",
       "mcp__plugin_context7_context7__get-library-docs",
       "mcp__plugin_context7_context7__query-docs",
@@ -198,11 +202,11 @@
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
-  "voiceEnabled": true,
   "skipDangerousModePermissionPrompt": true,
+  "skipAutoPermissionPrompt": true,
+  "voiceEnabled": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754086011803
   },
-  "teammateMode": "tmux",
-  "skipAutoPermissionPrompt": true
+  "teammateMode": "tmux"
 }
