@@ -238,9 +238,6 @@ claude plugin install rails-simplifier@rails
 claude plugin marketplace add max-sixty/worktrunk
 claude plugin install worktrunk@worktrunk
 
-claude plugin marketplace add cosai-oasis/project-codeguard
-claude plugin install codeguard-security@project-codeguard
-
 # Other Development Setup
 
 ## SSH
