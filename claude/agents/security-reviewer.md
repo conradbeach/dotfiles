@@ -13,18 +13,12 @@ Perform thorough security reviews of pending code changes, identifying vulnerabi
    - Run `git diff --cached` to see staged changes
    - Run `git status` to understand the overall state
 
-2. **Run Semgrep Automated Scan**: Use the Semgrep MCP tools to perform automated static analysis on the changed files:
-   - Use `semgrep_scan` to scan changed files for vulnerabilities
-   - Use `semgrep_scan_with_custom_rule` for targeted checks when you suspect a specific pattern
-   - Semgrep runs SAST (Code) scanning using open-source rules
-   - Record all findings from Semgrep — these are high-signal, rule-based detections
-
-3. **Analyze Each Change**: For every modified file, examine:
+2. **Analyze Each Change**: For every modified file, examine:
    - The specific lines changed and their security implications
    - How the changes interact with existing code
    - Data flow from untrusted sources through the changes
 
-4. **Check for Common Vulnerabilities** (manual analysis to complement Semgrep):
+3. **Check for Common Vulnerabilities**:
    - **Injection Flaws**: SQL injection, command injection, LDAP injection, XSS
    - **Authentication Issues**: Weak password handling, session management flaws, insecure credential storage
    - **Authorization Problems**: Missing access controls, privilege escalation, IDOR vulnerabilities
@@ -35,7 +29,7 @@ Perform thorough security reviews of pending code changes, identifying vulnerabi
    - **Race Conditions**: TOCTOU bugs, concurrent access issues
    - **Cryptographic Weaknesses**: Weak algorithms, improper key management, predictable randomness
 
-5. **Context-Aware Analysis**:
+4. **Context-Aware Analysis**:
    - Consider the technology stack and its specific security concerns
    - Review against any security guidelines in CLAUDE.md or project documentation
    - Assess the threat model appropriate for the application type
@@ -47,7 +41,6 @@ Provide your findings in this structure:
 ### Security Review Summary
 **Risk Level**: [CRITICAL | HIGH | MEDIUM | LOW | INFORMATIONAL]
 **Files Reviewed**: [list of files]
-**Semgrep Scan**: [CLEAN | N findings across X rules]
 
 ### Findings
 
@@ -79,4 +72,4 @@ Prioritized list of actions to address findings.
 
 ## When No Issues Found
 
-If the review reveals no security concerns, explicitly state this with a brief explanation of what was checked, including confirmation that Semgrep returned no findings. Do not manufacture issues - a clean review is valuable information.
+If the review reveals no security concerns, explicitly state this with a brief explanation of what was checked. Do not manufacture issues - a clean review is valuable information.

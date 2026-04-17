@@ -214,10 +214,6 @@ if [ ! -f ~/.rollbar-mcp.json ]; then
   echo "Created example ~/.rollbar-mcp.json."
 fi
 
-### Semgrep (https://semgrep.dev/docs/mcp)
-brew install semgrep
-claude mcp add semgrep --scope user -- semgrep mcp
-
 ### Postman (https://learning.postman.com/docs/developer/postman-api/postman-mcp-server/postman-mcp-remote-server)
 claude mcp add --scope user --transport http postman https://mcp.postman.com/code
 
