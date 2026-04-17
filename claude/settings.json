@@ -7,6 +7,7 @@
   "permissions": {
     "allow": [
       "Bash(aws elasticbeanstalk describe-environment-health:*)",
+      "Bash(bin/rspec)",
       "Bash(bundle:*)",
       "Bash(cat:*)",
       "Bash(chp:*)",
