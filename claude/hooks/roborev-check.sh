@@ -70,7 +70,7 @@ fi
   fi
   if [ -n "$unaddressed" ]; then
     echo "- Unaddressed failing reviews (IDs: $unaddressed) — inspect each with \`roborev show --job <id>\`, then either:"
-    echo "    * fix the finding and run \`roborev close <id>\` (or use the /roborev:fix skill to batch them), or"
+    echo "    * fix the finding and run \`roborev close <id>\`, or"
     echo "    * if the finding is a false positive or intentional, leave a short explanation with \`roborev comment --job <id> \"<why>\"\` and then \`roborev close <id>\`."
   fi
   echo

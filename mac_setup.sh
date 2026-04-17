@@ -204,9 +204,6 @@ curl -fsSL https://plannotator.ai/install.sh | bash
 mkdir -p ~/.plannotator
 ln -sf ~/development/dotfiles/plannotator/config.json ~/.plannotator/config.json
 
-### roborev (https://roborev.io)
-roborev skills install
-
 ### Rollbar (https://github.com/rollbar/rollbar-mcp-server)
 claude mcp add --scope user --transport stdio Rollbar -- npx -y @rollbar/mcp-server@latest
 if [ ! -f ~/.rollbar-mcp.json ]; then
