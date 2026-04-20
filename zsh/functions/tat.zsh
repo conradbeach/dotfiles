@@ -41,7 +41,12 @@ tat() {
       if ! session_exists; then
         create_detached_session
       fi
-      tmux switch-client -t "$session_name"
+      local current_session current_pane
+      current_session="$(tmux display-message -p '#S')"
+      current_pane="$(tmux display-message -p '#{pane_id}')"
+      if tmux switch-client -t "$session_name" && [ "$current_session" != "$session_name" ]; then
+        tmux kill-pane -t "$current_pane"
+      fi
     fi
   }
 
