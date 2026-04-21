@@ -79,7 +79,6 @@
       "mcp__ShopifyDev__search_docs_chunks",
       "Skill(plannotator-review)",
       "Skill(testing-anti-patterns)",
-      "Skill(pr-review-toolkit:review-pr)",
       "Skill(skill-creator)",
       "WebFetch(domain:help.acumatica.com)",
       "WebFetch(domain:aws.amazon.com)",
@@ -213,7 +212,6 @@
   },
   "enabledPlugins": {
     "frontend-design@claude-plugins-official": true,
-    "pr-review-toolkit@claude-plugins-official": true,
     "claude-md-management@claude-plugins-official": true,
     "claude-code-setup@claude-plugins-official": true,
     "rails-simplifier@rails": true,

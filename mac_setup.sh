@@ -225,7 +225,6 @@ claude plugin install claude-code-setup
 claude plugin install code-review
 claude plugin install context7
 claude plugin install frontend-design
-claude plugin install pr-review-toolkit
 claude plugin install ruby-lsp
 
 claude plugin marketplace add backnotprop/plannotator

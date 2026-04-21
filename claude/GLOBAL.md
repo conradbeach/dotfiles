@@ -7,7 +7,7 @@ For any non-trivial change, follow the below steps. You must complete each step.
 3. Manual testing — follow the Manual Testing guidelines.
 4. Automated testing — follow the Automated Testing guidelines.
 5. CI checks — confirm tests, linters, etc. are all green. In most projects `chp` will do this.
-6. Simplify — run the /simplify skill.
+6. Simplify — run the /simplify skill. For Rails projects, also launch `@rails-simplifier:rails-simplifier` in parallel.
 7. Code quality — follow the Code Quality guidelines.
 8. Review — run the /review skill.
 9. Stage deploy — follow the Stage Deployment guidelines.

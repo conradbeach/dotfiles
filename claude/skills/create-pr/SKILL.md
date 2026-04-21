@@ -92,7 +92,7 @@ Contributes to [TASK_ID](task_url)
 - [ ] Deploy to stage.
 - [ ] Add pull request link to project management ticket or confirm it was automatically linked.
 - [ ] Fill in description template.
-- [ ] Have Claude Code review the changes. (`/pr-review-toolkit:review-pr`)
+- [ ] Have Claude Code review the changes if not done already. (`/review`)
 - [ ] Review all of the changes. (Add comments as helpful.)
 - [ ] Ensure changes are tested well.
     - Go through each implementation file and compare it to related test files. Ensure there's good coverage.
