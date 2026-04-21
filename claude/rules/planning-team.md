@@ -27,9 +27,10 @@ For the planning step, create the below team. Then synthesize their findings int
 
 ## Creating the Plan
 
-1. Start the Codebase Explorer, Best Practices Researcher and Architecture Strategist team members.
-2. Once all 3 finish their work, read their findings and resolve any conflicts between recommendations.
-3. Create a plan.
-4. Present the plan to the Plan Critic.
-5. Make updates to the plan based on the Plan Critic's feedback. Do additional research if needed.
-6. Present the plan to the user for review.
+1. Verify the task has a documentation section. The instructions you were given — or the Linear issue description, if the task came from one — should include links to relevant documentation (framework docs, API references, internal runbooks, etc.). Having docs upfront improves plan quality. If no documentation was provided, that's likely an oversight by the user. Identify what documentation would be relevant and helpful for this task, then ask the user to provide it before proceeding.
+2. Start the Codebase Explorer, Best Practices Researcher and Architecture Strategist team members.
+3. Once all 3 finish their work, read their findings and resolve any conflicts between recommendations.
+4. Create a plan.
+5. Present the plan to the Plan Critic.
+6. Make updates to the plan based on the Plan Critic's feedback. Do additional research if needed.
+7. Present the plan to the user for review.
