@@ -3,6 +3,7 @@
 ## Files
 - [ ] Copy '~/Downloads' folder from previous machine onto this machine.
 - [ ] Copy relevant projects in '~/development' from previous machine onto this machine.
+  - [ ] Especially git-ignored files such as `CLAUDE.local.md`. Maybe only git-ignored files.
 - [ ] Copy relevant Claude Code project memories from the previous machine. Each project's memories live at '~/.claude/projects/<slugified-project-path>/memory/' (e.g. '~/.claude/projects/-Users-cbeach-development-dotfiles/memory/'). Copy the `memory/` subfolder for each project you want to preserve onto the new machine at the same path.
 
 ## OS Settings
