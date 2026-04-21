@@ -1,5 +1,4 @@
 # Git
-
 - Commit regularly — after each logical chunk of work (a completed step, fix, or feature increment).
 - When you make changes as a result of feedback/review, always do it in a new commit. This makes it easier to follow your changes.
 - roborev will review each commit automatically in the background. Fix any feedback from roborev.
@@ -8,3 +7,6 @@
 - For commit messages, read and follow the Git commit template.
   - Add yourself (Claude) as a co-author.
   - Do not include Linear issue IDs or other ticket references in commit messages.
+
+## Pull Requests
+- Do not open a pull request unless I explicitly ask for one. Even if the work appears finished and pushed, wait for an explicit request before running `gh pr create` or equivalent.
