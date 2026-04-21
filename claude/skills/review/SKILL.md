@@ -22,4 +22,4 @@ After making changes, ask for follow-up reviews from specific subagents if it se
 
 ## Round 2: Final PR Review
 
-After Round 1 feedback has been addressed, run `/pr-review-toolkit:review-pr` for a final comprehensive pass.
+After Round 1 feedback has been addressed, run `/pr-review-toolkit:review-pr` for a final comprehensive pass. Do this even if we haven't opened a PR yet.
