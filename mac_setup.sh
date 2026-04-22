@@ -61,10 +61,8 @@ ln -sf ~/development/dotfiles/.rspec ~
 ln -sf ~/development/dotfiles/ssh/config ~/.ssh/
 if ! is_deseret_book; then ln -sf ~/development/dotfiles/ssh/known_hosts ~/.ssh/; fi
 ln -sf ~/development/dotfiles/.tmux.conf ~
-mkdir -p ~/.tmux/scripts
-ln -sf ~/development/dotfiles/tmux/scripts/tmux-open-file-at-cursor ~/.tmux/scripts/
-ln -sf ~/development/dotfiles/tmux/scripts/claude-status.sh ~/.tmux/scripts/
-ln -sf ~/development/dotfiles/tmux/scripts/claude-status-clear.sh ~/.tmux/scripts/
+mkdir -p ~/.tmux
+ln -sf ~/development/dotfiles/tmux/scripts ~/.tmux/scripts
 ln -sf ~/development/dotfiles/tmuxinator ~/.config
 ln -sf ~/development/dotfiles/.tool-versions ~
 mkdir -p ~/.config/worktrunk
