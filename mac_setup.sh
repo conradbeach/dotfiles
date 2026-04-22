@@ -196,7 +196,7 @@ ln -sf ~/development/dotfiles/claude/rules ~/.claude
 ln -sf ~/development/dotfiles/claude/hooks ~/.claude
 ln -sf ~/development/dotfiles/claude/skills/ ~/.claude
 
-### Monologue
+### Monologue (https://help.monologue.to/en/articles/14666520-connect-monologue-to-chatgpt-claude-and-other-ai-apps-with-mcp)
 claude mcp add --scope user --transport http monologue https://api.monologue.to/mcp
 
 ### Plannotator (https://github.com/backnotprop/plannotator)
