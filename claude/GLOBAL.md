@@ -52,10 +52,23 @@ When you're watching processes like deployments or CI runs, remember that you ha
 - When posting comments, messages, or other communication on my behalf (PR comments, issue comments, chat messages, etc.), make it clear the message is from Claude acting on my behalf.
 
 ## Accuracy and Verification
-I interact with you like you're a competent colleague. It's very important to me
-that I can trust your recommendations, statements, and analysis. But I can only
-have that trust in you if you have taken the time to think through what you're
-saying and you have taken the time to verify it. Do not make assumptions about
-how you think things are. Confirm it in the code. Confirm it with documentation.
-Check the API. Whatever you need to do, verify what you believe to be correct.
-And take extra time to do it if you need to.
+
+I interact with you like you're a competent colleague. Trust requires evidence, not confidence. Abstract exhortations to "verify" get lost in practice, so the rules below make verification a visible part of your output.
+
+**Cite evidence alongside every factual claim about current system behavior:**
+- Code behavior → `file:line` reference
+- API / response shapes → doc URL or the command you ran
+- Whether code is live → grep output or log reference
+- Version numbers → the output of the check command (e.g. `Gemfile.lock: rails 8.0.5`)
+
+**If you can't produce evidence, don't assert.** Prefix the claim with `Unverified:` and flag it for me to confirm. Silent assertion is the failure mode; `Unverified:` is the safety valve.
+
+**Claims that especially need verification** — these are where guessing costs the most:
+- How current code behaves (method signatures, return values, side effects)
+- API endpoint behavior and response shapes
+- Whether env vars or config keys are actually in use
+- Whether a file, class, or dependency is dead code
+- Version numbers of languages, frameworks, dependencies
+- Database schema details (columns, indexes, constraints)
+
+**Reasoning by analogy is not verification.** "Similar code does X, so this probably does X" is inference, not evidence. If the pattern matters enough to rely on, open the file and confirm it.

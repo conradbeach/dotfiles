@@ -31,6 +31,7 @@ For the planning step, create the below team. Then synthesize their findings int
 2. Start the Codebase Explorer, Best Practices Researcher and Architecture Strategist team members.
 3. Once all 3 finish their work, read their findings and resolve any conflicts between recommendations.
 4. Create a plan.
-5. Present the plan to the Plan Critic.
-6. Make updates to the plan based on the Plan Critic's feedback. Do additional research if needed.
-7. Present the plan to the user for review.
+5. Verification audit — re-read the plan before sharing it. For every factual claim about current system behavior, either append its evidence citation (`file:line`, doc URL, command output) or prefix the claim with `Unverified:`. For every item in the scope / Files-to-Modify list, add a one-sentence rationale explaining why it belongs. Include an "Out of scope (and why)" section listing anything deliberately excluded and the reason for excluding it. This step exists because abstract rules to "verify" and "justify scope" get skipped during drafting — the audit is a dedicated pass that forces the missing artifacts to become visible.
+6. Present the plan to the Plan Critic.
+7. Make updates to the plan based on the Plan Critic's feedback. Do additional research if needed.
+8. Present the plan to the user for review.
