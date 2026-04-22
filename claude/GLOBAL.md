@@ -2,15 +2,16 @@
 
 For any non-trivial change, follow the below steps. You must complete each step.
 
-1. Plan — use the Planning Team approach.
-2. Build — follow the Planning and Building guidelines.
-3. Manual testing — follow the Manual Testing guidelines.
-4. Automated testing — follow the Automated Testing guidelines.
-5. CI checks — confirm tests, linters, etc. are all green. In most projects `chp` will do this.
-6. Simplify — run the /simplify skill. For Rails projects, also launch `@rails-simplifier:rails-simplifier` in parallel.
-7. Code quality — follow the Code Quality guidelines.
-8. Review — run the /review skill.
-9. Stage deploy — follow the Stage Deployment guidelines.
+1. Rename — the Claude Code session should be named after the task or ticket. If the session hasn't been given a custom name like that, prompt me to add one or suggest one.
+2. Plan — use the Planning Team approach.
+3. Build — follow the Planning and Building guidelines.
+4. Manual testing — follow the Manual Testing guidelines.
+5. Automated testing — follow the Automated Testing guidelines.
+6. CI checks — confirm tests, linters, etc. are all green. In most projects `chp` will do this.
+7. Simplify — run the /simplify skill. For Rails projects, also launch `@rails-simplifier:rails-simplifier` in parallel.
+8. Code quality — follow the Code Quality guidelines.
+9. Review — run the /review skill.
+10. Stage deploy — follow the Stage Deployment guidelines.
 
 Add the above steps to your task list and confirm with me that you completed them when you're done working.
 
