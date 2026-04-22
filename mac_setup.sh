@@ -199,6 +199,9 @@ ln -sf ~/development/dotfiles/claude/skills/ ~/.claude
 ### it2 (for controlling iTerm2, used by Claude Code agent teams)
 pip install it2
 
+### Monologue
+claude mcp add --scope user --transport http monologue https://api.monologue.to/mcp
+
 ### Plannotator (https://github.com/backnotprop/plannotator)
 curl -fsSL https://plannotator.ai/install.sh | bash
 mkdir -p ~/.plannotator
