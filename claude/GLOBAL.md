@@ -12,6 +12,7 @@ For any non-trivial change, follow the below steps. You must complete each step.
 8. Code quality — follow the Code Quality guidelines.
 9. Review — run the /review skill.
 10. Stage deploy — follow the Stage Deployment guidelines.
+11. Retrospective — ask me whether anything about your approach was off, and whether anything worked unusually well. Save any corrections or validated judgment calls to memory so you don't need the same feedback twice. Suggest that I run /plannotator-compound.
 
 Add the above steps to your task list and confirm with me that you completed them when you're done working.
 
