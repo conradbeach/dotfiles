@@ -204,15 +204,15 @@ curl -fsSL https://plannotator.ai/install.sh | bash
 mkdir -p ~/.plannotator
 ln -sf ~/development/dotfiles/plannotator/config.json ~/.plannotator/config.json
 
+### Postman (https://learning.postman.com/docs/developer/postman-api/postman-mcp-server/postman-mcp-remote-server)
+claude mcp add --scope user --transport http postman https://mcp.postman.com/code
+
 ### Rollbar (https://github.com/rollbar/rollbar-mcp-server)
 claude mcp add --scope user --transport stdio Rollbar -- npx -y @rollbar/mcp-server@latest
 if [ ! -f ~/.rollbar-mcp.json ]; then
   curl -sfL https://raw.githubusercontent.com/rollbar/rollbar-mcp-server/main/rollbar-mcp-example.json -o ~/.rollbar-mcp.json
   echo "Created example ~/.rollbar-mcp.json."
 fi
-
-### Postman (https://learning.postman.com/docs/developer/postman-api/postman-mcp-server/postman-mcp-remote-server)
-claude mcp add --scope user --transport http postman https://mcp.postman.com/code
 
 ### Shopify (https://shopify.dev/docs/apps/build/devmcp)
 claude mcp add --scope user --transport stdio ShopifyDev -- npx -y @shopify/dev-mcp@latest
