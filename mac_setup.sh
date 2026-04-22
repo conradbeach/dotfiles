@@ -196,9 +196,6 @@ ln -sf ~/development/dotfiles/claude/rules ~/.claude
 ln -sf ~/development/dotfiles/claude/hooks ~/.claude
 ln -sf ~/development/dotfiles/claude/skills/ ~/.claude
 
-### it2 (for controlling iTerm2, used by Claude Code agent teams)
-pip install it2
-
 ### Monologue
 claude mcp add --scope user --transport http monologue https://api.monologue.to/mcp
 
