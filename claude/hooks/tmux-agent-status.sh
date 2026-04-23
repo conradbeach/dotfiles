@@ -37,11 +37,12 @@ case "$event" in
     echo working >"$state_file"
     ;;
   PreToolUse)
-    # AskUserQuestion blocks for a user response between PreToolUse and
-    # PostToolUse with no intermediate event, so treat it as waiting.
+    # AskUserQuestion and ExitPlanMode block for a user response between
+    # PreToolUse and PostToolUse with no intermediate event, so treat them
+    # as waiting.
     tool_name=$(jq -r '.tool_name // empty' 2>/dev/null) || tool_name=""
     case "$tool_name" in
-      AskUserQuestion)
+      AskUserQuestion|ExitPlanMode)
         mark_waiting_unless_viewed
         ;;
       *)
