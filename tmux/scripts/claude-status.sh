@@ -38,4 +38,8 @@ if [ "$working" -gt 0 ]; then
   output+="#[fg=colour0,bg=colour250] $working working #[default]"
 fi
 
-printf '%s' "$output"
+[ -z "$output" ] && exit 0
+
+# Wrap in a user-defined range so MouseDown1Status can recognize clicks on
+# just this segment (handled in .tmux.conf).
+printf '#[range=user|claude-agents]%s#[norange]' "$output"
