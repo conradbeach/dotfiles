@@ -93,7 +93,7 @@ Run the project's full check command (typically `chp` or equivalent) and confirm
 
 Invoke the `/create-pr` skill to open the PR in the current repository. Provide this context to that skill:
 
-- **Title:** `Ruby app refactor: <file path> (<old_grade> → <new_grade>)`
+- **Title:** `Automated Refactor by Claude: <file name>` (Include 1 or 2 parent directories if using just the base file name would be ambiguous.)
 - **No ticket** — this is an automated code health pass, not a ticketed change. Skip the "Contributes to..." line in the description.
 - **Body highlights:**
   - Which smells RubyCritic flagged (Reek warnings, Flog score, duplication) and how the refactor addresses them
