@@ -234,6 +234,21 @@ claude plugin install rails-simplifier@rails
 claude plugin marketplace add max-sixty/worktrunk
 claude plugin install worktrunk@worktrunk
 
+### Scheduled jobs (launchd)
+mkdir -p ~/.local/bin
+mkdir -p ~/Library/LaunchAgents
+mkdir -p ~/Library/Logs/claude-scheduled
+
+ln -sf ~/development/dotfiles/claude/scheduled/ruby-app-refactor.sh ~/.local/bin/ruby-app-refactor
+sed "s|__HOME__|$HOME|g" ~/development/dotfiles/claude/scheduled/ruby-app-refactor.plist.template > ~/Library/LaunchAgents/com.local.ruby-app-refactor.plist
+launchctl unload ~/Library/LaunchAgents/com.local.ruby-app-refactor.plist 2>/dev/null || true
+launchctl load ~/Library/LaunchAgents/com.local.ruby-app-refactor.plist
+
+ln -sf ~/development/dotfiles/claude/scheduled/dependabot-prs.sh ~/.local/bin/dependabot-prs
+sed "s|__HOME__|$HOME|g" ~/development/dotfiles/claude/scheduled/dependabot-prs.plist.template > ~/Library/LaunchAgents/com.local.dependabot-prs.plist
+launchctl unload ~/Library/LaunchAgents/com.local.dependabot-prs.plist 2>/dev/null || true
+launchctl load ~/Library/LaunchAgents/com.local.dependabot-prs.plist
+
 # Other Development Setup
 
 ## SSH
