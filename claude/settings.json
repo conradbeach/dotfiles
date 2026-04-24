@@ -238,10 +238,14 @@
   "alwaysThinkingEnabled": true,
   "effortLevel": "xhigh",
   "skipDangerousModePermissionPrompt": true,
+  "teammateMode": "tmux",
   "skipAutoPermissionPrompt": true,
   "voiceEnabled": true,
   "feedbackSurveyState": {
     "lastShownTime": 1754086011803
   },
-  "teammateMode": "tmux"
+  "theme": "auto",
+  "preferredNotifChannel": "notifications_disabled",
+  "remoteControlAtStartup": true,
+  "agentPushNotifEnabled": true
 }
