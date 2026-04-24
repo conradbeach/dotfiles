@@ -120,6 +120,7 @@ Contributes to [TASK_ID](task_url)
 - Omit sections that aren't relevant (e.g., skip "Tradeoffs & Alternatives" if there's nothing notable, skip "Demo" if not applicable).
 - The "After Creating Pull Request" checklist is always included verbatim.
 - Use a HEREDOC to pass the body to `gh pr create` for correct formatting.
+- Add a short note at the top of the description making clear the PR was created by Claude on Conrad's behalf (e.g. "_Created by Claude on Conrad's behalf._").
 
 ### 5. Report Results
 
